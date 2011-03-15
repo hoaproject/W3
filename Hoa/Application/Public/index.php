@@ -12,8 +12,7 @@ from('Hoa')
 
 \Hoa\Core::getInstance()->initialize(array(
     'protocol.Application'                    => '../',
-    'protocol.Application/Public/Classic/Css' => 'Css/',
-    'protocol.Application/External'           => '../External/'
+    'protocol.Application/Public/Classic/Css' => 'Css/'
 ));
 
 
