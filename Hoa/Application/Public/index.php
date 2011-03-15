@@ -11,17 +11,21 @@ from('Hoa')
 -> import('Controller.Router');
 
 \Hoa\Core::getInstance()->initialize(array(
-    'protocol.Application' => '../',
-    'protocol.Application/Public/Classic/Css' => 'Css/'
+    'protocol.Application'                    => '../',
+    'protocol.Application/Public/Classic/Css' => 'Css/',
+    'protocol.Application/External'           => '../External/'
 ));
 
 
-$router     = new \Hoa\Controller\Router(array('rewrited' => true));
-$router->addRule('v', 'Video/Praspel\.html', 'video',   'praspel')
-       ->addRule('g', '(?<all>.*)',          'default', 'default')
-       // --
-       ->addPrivateRule('_css', '/Css/(?<sheet>)')
-       ->addPrivateRule('dl',   'http://download.hoa-project.net/(?<file>)');
+$router     = new \Hoa\Controller\Router();
+$router->setParameter('rewrited', true);
+$router
+   ->addRule('v', '/Video/Praspel\.html', 'video',   'praspel')
+   ->addRule('l', '/Literature/(?<action>\w+)\.html', 'literature')
+   ->addRule('g', '(?<all>.*)',          'default', 'default')
+   // --
+   ->addPrivateRule('_css', '/Css/(?<sheet>)')
+   ->addPrivateRule('dl',   'http://download.hoa-project.net/(?<file>)');
 
 $dispatcher = new \Hoa\Controller\Dispatcher\Basic();
 $xyl        = new \Hoa\Xyl(
