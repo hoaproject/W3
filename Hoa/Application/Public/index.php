@@ -21,7 +21,7 @@ $router->setParameter('rewrited', true);
 $router
    ->addRule('v', '/Video/Praspel\.html', 'video',   'praspel')
    ->addRule('l', '/Literature/(?<action>\w+)\.html', 'literature')
-   ->addRule('g', '(?<all>.*)',          'default', 'default')
+   ->addRule('g', '/(?<all>.*)', 'default', 'default')
    // --
    ->addPrivateRule('_css', '/Css/(?<sheet>)')
    ->addPrivateRule('dl',   'http://download.hoa-project.net/(?<file>)');

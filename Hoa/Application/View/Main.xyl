@@ -10,7 +10,7 @@
 
     <box id="menu">
       <ulist>
-        <item><link href="/">Accueil</link></item>
+        <item><link href="@g:all=">Accueil</link></item>
         <!--item><link href="#">Téléchargement</link></item-->
         <item><link href="@l:action=Learn">Littérature</link></item>
         <item><link href="http://hoa-project.net/Forum/">Communauté</link></item>
