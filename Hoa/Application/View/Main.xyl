@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xyl-stylesheet href="hoa://Library/Xyl/Css/Core.css"?>
+<?xyl-stylesheet href="hoa://Application/Public/Css/UI.css"?>
+
+<document xmlns="http://hoa-project.net/xyl/xylophone">
+  <title>Hoa, un ensemble de bibliothèques PHP</title>
+
+  <navigation>
+    <link id="floatmenu" href="javascript:menu()">Menu</link>
+
+    <box id="menu">
+      <ulist>
+        <item><link href="/">Accueil</link></item>
+        <!--item><link href="#">Téléchargement</link></item-->
+        <!--item><link href="#">Littérature</link></item-->
+        <item><link href="http://hoa-project.net/Forum/">Communauté</link></item>
+      </ulist>
+      <hseparator />
+      <tableofcontents id="menu-toc" depth-min="1" depth-max="1" />
+    </box>
+  </navigation>
+
+  <header>
+    <!--image href="hoa://Application/Public/Media/Image/Hoa.png"
+           alt="Hoa" /-->
+    <image href="http://hoa-project.net/Media/Image/Hoa.png"
+           alt="Hoa" />
+  </header>
+
+  <content>
+    <page />
+  </content>
+
+  <footer>
+    <p>Hoa est la création de Ivan Enderlin, tous droits réservés.</p>
+  </footer>
+
+  <script>
+    function menu ( ) {
+
+        var fmenu = document.getElementById("floatmenu");
+
+        if("on" == fmenu.className)
+            fmenu.className = "";
+        else
+            fmenu.className = "on";
+
+        return;
+    }
+
+    (function ( ) {
+
+        var toc = document.querySelectorAll("#menu .toc a");
+        for(var i = 0, m = toc.length; i &amp;lt; m; ++i)
+            toc.item(i).addEventListener(
+                "click",
+                function ( e ) {
+
+                    window.setTimeout(menu, 401);
+                },
+                false
+            );
+    })();
+  </script>
+</document>

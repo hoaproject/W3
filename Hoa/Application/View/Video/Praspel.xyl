@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<definition xmlns="http://hoa-project.net/xyl/xylophone">
+  <yield name="page">
+    <section1 id="Praspel" for="menu-toc">
+      <title>Praspel</title>
+
+      <p>Please, follow this link: <link href="http://www.dailymotion.com/video/xhcrol_hoa-y-praspel-a-contract-based-testing-language_tech">Praspel,
+      a contract-based testing language</link> on Dailymotion.</p>
+    </section1>
+  </yield>
+</definition>

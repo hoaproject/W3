@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<definition xmlns="http://hoa-project.net/xyl/xylophone">
+  <yield name="page">
+    <p>Hoa est un ensemble de bibliothèques PHP <strong>puissantes</strong>,
+    <strong>rapides</strong>, hautement <strong>modulaires</strong>,
+    <strong>sécuritaires</strong>, <strong>innovantes</strong> et respectueuses
+    des <strong>standards</strong>, sous licence GNU GPL v3.</p>
+    <p>Hoa est également un pont entre le monde de la <strong>recherche</strong>
+    et le monde de l'<strong>entreprise</strong>.</p>
+
+    <box class="download">
+      <section1>
+        <title>Téléchargement</title>
+
+        <ulist>
+          <item><link href="@dl:file=Tags/Hoa_v-1.0.0b1.7z">.7z</link></item>
+          <item><link href="@dl:file=Tags/Hoa_v-1.0.0b1.tar.bz2">.tar.bz2</link></item>
+          <item><link href="@dl:file=Tags/Hoa_v-1.0.0b1.tar.gz">.tar.gz</link></item>
+          <item><link href="@dl:file=Tags/Hoa_v-1.0.0b1.zip">.zip</link></item>
+          <item><link href="http://hg.hoa-project.net/Central">hg</link></item>
+        </ulist>
+      </section1>
+    </box>
+
+    <grid>
+      <grows>
+        <grow>
+          <section1 id="Bibliotheque" for="menu-toc">
+            <title>Bibliothèque</title>
+
+            <p>Hoa est découpé en bibliothèques regroupées autour d'un
+            <strong>noyau</strong>. Hoa propose un mécanisme
+            (<strong>Hoathis</strong>) pour créer vos propres bibliothèques
+            autour de ce même noyau et ainsi assurer la même <strong>qualité</strong>
+            que les bibliothèques natives.</p>
+            <box class="code left">
+            <blockcode language="php">from('Hoathis') -> import('MyStream.Write');
+event('hoa://Event/Log/Test/Praspel')->attach(
+    new Hoathis\MyStream\Write()
+);</blockcode>
+            </box>
+          </section1>
+
+          <section1 id="Modularite" for="menu-toc">
+            <title>Modularité</title>
+
+            <p>Le noyau de Hoa s'assure de la modularité en gérant toutes les
+            <strong>dépendances</strong>, <strong>importations</strong>,
+            <strong>paramétrages</strong>, <strong>chemins abstraits</strong>
+            etc.</p>
+            <box class="code right">
+            <blockcode language="php">from('Hoa') -> import('File.Read');
+$file = new Hoa\File\Read(
+    'hoa://Data/Temporary/Foo.txt'
+);</blockcode>
+            </box>
+          </section1>
+        </grow>
+
+        <grow>
+          <section1 id="Rapidite_et_puissance" for="menu-toc">
+            <title>Rapidité et puissance</title>
+
+            <p>Hoa requiert <strong>PHP 5.3</strong> minimum, la plus puissante
+            des versions de PHP. De plus, Hoa est optimisé selon les
+            <strong>complexités algorithmiques</strong> et l'<strong>espace
+            mémoire</strong>. Enfin, des bibliothèques proposent plusieurs
+            systèmes de <strong>caches</strong> à plusieurs niveaux : PHP, base
+            de données, <em>gateway</em> etc.</p>
+          </section1>
+
+          <section1 id="Innovation" for="menu-toc">
+            <title>Innovation</title>
+
+            <p>Hoa s'efforce de constamment <strong>innover</strong>. L'objectif
+            est d'offrir le maximum de puissance à l'utilisateur de la manière la
+            plus intuitive possible. De plus, Hoa est utilisé pour des
+            <strong>recherches</strong> au
+            <link href="http://lifc.univ-fcomte.fr/" id="a">LIFC</link> et à
+            l'<link href="http://www.inria.fr/">INRIA</link>. Cela se répercute sur
+            les solutions que proposent Hoa.</p>
+            <box class="code right">
+            <ulist>
+              <item>XYL : langage d'interface graphique ;</item>
+              <item>Praspel : langage de spécification ;</item>
+              <item>zFormat : langage de paramétrage.</item>
+            </ulist>
+            </box>
+          </section1>
+        </grow>
+
+        <grow>
+          <section1 id="Securite" for="menu-toc">
+            <title>Sécurité</title>
+
+            <p>Des travaux de recherche concernant les <strong>tests</strong>
+            sont développés dans Hoa. On trouve entre autre un
+            <strong>générateur automatique de tests unitaires</strong>. Un
+            rapport de recherche et des articles ont été publiés.</p>
+            <box class="code left">
+            <blockcode>/**
+ * @requires  i: even(boundinteger(0, 53)) and
+ *            j: array([to boolean()], 7);
+ * @ensures   \result: boolean();
+ * @throwable FooException;
+ */</blockcode>
+            </box>
+          </section1>
+
+          <section1 id="Standards" for="menu-toc">
+            <title>Standards</title>
+
+            <p>Hoa participe entre autre au
+            <link href="http://w3.org">W3C</link> dans les groupes de travail
+            HTML, CSS et WebApp. Hoa est très respectueux de ces normes, ainsi
+            que celles du RFC, ISO, POSIX etc ; ce qui assure une homogénéité,
+            interopérabilité et pérennité de vos projets.</p>
+          </section1>
+        </grow>
+      </grows>
+    </grid>
+  </yield>
+</definition>
