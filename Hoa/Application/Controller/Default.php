@@ -1,11 +1,11 @@
 <?php
 
-class DefaultController {
+class DefaultController extends \Hoa\Controller\Application {
 
-    public function DefaultAction ( \Hoa\Controller\Application $_this )  {
+    public function DefaultAction ( )  {
 
-        $_this->view->addUse('hoa://Application/View/Welcome.xyl');
-        $_this->view->render();
+        $this->view->addUse('hoa://Application/View/Welcome.xyl');
+        $this->view->render();
 
         return;
     }

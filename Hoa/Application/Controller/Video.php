@@ -1,11 +1,11 @@
 <?php
 
-class VideoController {
+class VideoController extends \Hoa\Controller\Application {
 
-    public function PraspelAction ( \Hoa\Controller\Application $_this )  {
+    public function PraspelAction ( )  {
 
-        $_this->view->addUse('hoa://Application/View/Video/Praspel.xyl');
-        $_this->view->render();
+        $this->view->addUse('hoa://Application/View/Video/Praspel.xyl');
+        $this->view->render();
 
         return;
     }
