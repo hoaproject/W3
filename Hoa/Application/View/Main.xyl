@@ -12,7 +12,8 @@
       <ulist>
         <item><link href="@g:all=">Accueil</link></item>
         <!--item><link href="#">Téléchargement</link></item-->
-        <item><link href="@l:action=Learn">Littérature</link></item>
+        <item><link href="@l">Littérature</link></item>
+        <item><link href="@v">Vidéo</link></item>
         <item><link href="http://hoa-project.net/Forum/">Communauté</link></item>
       </ulist>
       <hseparator />
