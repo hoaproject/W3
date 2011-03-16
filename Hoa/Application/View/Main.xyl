@@ -27,9 +27,7 @@
            alt="Hoa" />
   </header>
 
-  <content>
-    <page />
-  </content>
+  <content id="content" />
 
   <footer>
     <p>Hoa est la création de Ivan Enderlin, tous droits réservés.</p>

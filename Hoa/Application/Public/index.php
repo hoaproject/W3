@@ -40,6 +40,6 @@ try {
 }
 catch ( \Hoa\Core\Exception $e ) {
 
-    $xyl->addUse('hoa://Application/View/Error.xyl');
+    $xyl->addOverlay('hoa://Application/View/Error.xyl');
     $xyl->render();
 }

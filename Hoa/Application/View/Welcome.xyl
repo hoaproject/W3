@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<definition xmlns="http://hoa-project.net/xyl/xylophone">
-  <yield name="page">
+<overlay xmlns="http://hoa-project.net/xyl/xylophone">
+  <content id="content">
     <p>Hoa est un ensemble de bibliothèques PHP <strong>puissantes</strong>,
     <strong>rapides</strong>, hautement <strong>modulaires</strong>,
     <strong>sécuritaires</strong>, <strong>innovantes</strong> et respectueuses
@@ -120,5 +120,5 @@ $file = new Hoa\File\Read(
         </grow>
       </grows>
     </grid>
-  </yield>
-</definition>
+  </content>
+</overlay>

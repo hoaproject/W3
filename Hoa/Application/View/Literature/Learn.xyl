@@ -2,12 +2,12 @@
 <?xyl-use href="hoa://Application/External/Literature/Learn/Index.xyl"?>
 <?xyl-stylesheet href="hoa://Application/Public/Css/Literature.css"?>
 
-<definition xmlns="http://hoa-project.net/xyl/xylophone">
-  <yield name="page">
+<overlay xmlns="http://hoa-project.net/xyl/xylophone">
+  <content id="content">
     <section1>
       <title>Manuel d'apprentissage</title>
 
       <chapter />
     </section1>
-  </yield>
-</definition>
+  </content>
+</overlay>
