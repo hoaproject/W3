@@ -19,9 +19,11 @@ from('Hoa')
 $router     = new \Hoa\Controller\Router();
 //$router->setParameter('rewrited', true);
 $router
-   ->addRule('v', '/Video/Praspel\.html', 'video',   'praspel')
-   ->addRule('l', '/Literature/(?<action>\w+)\.html', 'literature')
-   ->addRule('g', '/(?<all>.*)', 'default', 'default')
+   ->addRule('l',  '/Literature\.html', 'literature', 'default')
+   ->addRule('l+', '/Literature/(?<action>\w+)\.html', 'literature')
+   ->addRule('v',  '/Video\.html', 'video', 'default')
+   ->addRule('v+', '/Video/(?<action>\w+)\.html', 'video')
+   ->addRule('g',  '/(?<all>.*)', 'default', 'default')
    // --
    ->addPrivateRule('_css', '/Css/(?<sheet>)')
    ->addPrivateRule('dl',   'http://download.hoa-project.net/(?<file>)');
