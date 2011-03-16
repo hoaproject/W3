@@ -17,7 +17,7 @@ from('Hoa')
 
 
 $router     = new \Hoa\Controller\Router();
-$router->setParameter('rewrited', true);
+//$router->setParameter('rewrited', true);
 $router
    ->addRule('v', '/Video/Praspel\.html', 'video',   'praspel')
    ->addRule('l', '/Literature/(?<action>\w+)\.html', 'literature')
