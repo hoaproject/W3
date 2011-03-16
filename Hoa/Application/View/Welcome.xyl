@@ -2,12 +2,13 @@
 
 <overlay xmlns="http://hoa-project.net/xyl/xylophone">
   <content id="content">
-    <p>Hoa est un ensemble de bibliothèques PHP <strong>puissantes</strong>,
-    <strong>rapides</strong>, hautement <strong>modulaires</strong>,
-    <strong>sécuritaires</strong>, <strong>innovantes</strong> et respectueuses
-    des <strong>standards</strong>, sous licence GNU GPL v3.</p>
-    <p>Hoa est également un pont entre le monde de la <strong>recherche</strong>
-    et le monde de l'<strong>entreprise</strong>.</p>
+    <p class="text-center">Hoa est un ensemble de bibliothèques PHP
+    <strong>puissantes</strong>, <strong>rapides</strong>, hautement
+    <strong>modulaires</strong>, <strong>sécuritaires</strong>,
+    <strong>innovantes</strong> et respectueuses des <strong>standards</strong>,
+    sous licence GNU GPL v3.</p> <p>Hoa est également un pont entre le monde de
+    la <strong>recherche</strong> et le monde de
+    l'<strong>entreprise</strong>.</p>
 
     <box class="download">
       <section1>
