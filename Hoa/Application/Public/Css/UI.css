@@ -98,6 +98,7 @@ title {
 
 h1 {
     font: 180%/1.8em Section;
+    text-align: center;
     padding: 0 0 0 
 }
 
@@ -375,6 +376,7 @@ pre {
     }
 
     .gcell h1 {
+        text-align: left;
         margin-top: 0;
     }
 
