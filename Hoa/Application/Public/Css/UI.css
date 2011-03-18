@@ -186,15 +186,20 @@ pre {
     overflow: hidden;
     border: 1px #795290 solid;
 
+    opacity: .6;
+
     border-radius: 0 1em 0 1em;
     -moz-border-radius: 0 1em 0 1em;
     -webkit-border-radius: 0 1em 0 1em;
 
-    transition: color .5s ease .4s, background .5s ease .4s, text-shadow .5 ease .4;
-    -moz-transition: color .5s ease .4s, background .5s ease .4s, text-shadow .5 ease .4;
-    -webkit-transition: color .5s ease .4s, background .5s ease .4s, text-shadow .5 ease .4;
-    -o-transition: color .5s ease .4s, background .5s ease .4s, text-shadow .5 ease .4;
+    -moz-transition: opacity 1s ease 4s;
 }
+
+    #floatmenu:hover, #floatmenu.on {
+        opacity: 1;
+
+        -moz-transition: opacity .5s;
+    }
 
     #floatmenu.on {
         color: #efe6f5;
