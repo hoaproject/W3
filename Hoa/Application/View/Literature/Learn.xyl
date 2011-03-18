@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xyl-use href="hoa://Application/External/Literature/Learn/Index.xyl"?>
-<?xyl-stylesheet href="hoa://Application/Public/Css/Literature.css"?>
 
 <overlay xmlns="http://hoa-project.net/xyl/xylophone">
   <content id="content">
