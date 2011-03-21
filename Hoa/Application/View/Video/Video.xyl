@@ -2,7 +2,7 @@
 
 <overlay xmlns="http://hoa-project.net/xyl/xylophone">
   <content id="content">
-    <section1 id="Praspel" for="menu-toc">
+    <section1 id="Praspel">
       <title>Vidéo</title>
 
       <p>Plusieurs tutoriels sont présents sous format vidéos. Actuellement,
