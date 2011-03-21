@@ -17,7 +17,7 @@ from('Hoa')
 
 
 $router     = new \Hoa\Controller\Router();
-//$router->setParameter('rewrited', true);
+$router->setParameter('rewrited', true);
 $router
    ->addRule('l',  '/Literature\.html', 'literature', 'default')
    ->addRule('l+', '/Literature/(?<action>\w+)\.html', 'literature')
