@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<overlay xmlns="http://hoa-project.net/xyl/xylophone">
+  <content id="content">
+    <section1>
+      <title>Contact</title>
+
+      <p>Pour contacter Ivan Enderlin, fondateur et développeur principal de
+      Hoa, plusieurs moyens, dans l'ordre :</p>
+      <ulist>
+        <item>Email : <em>prénom</em>.<em>nom</em>@hoa-project.net ;</item>
+        <item>Twitter : <link href="http://twitter.com/hoaproject">@hoaproject</link> ;</item>
+        <item>Forum : voir <em>Communauté</em> dans <link href="#menu">le
+        menu</link> ;</item>
+        <item>IRL : en France (majoritairement Besançon, Paris, Lyon) ou en
+        Suisse (majoritairement Yverdon-les-Bains, Lausanne, Genève), et dans
+        les salons ou forums à travers le monde ;</item>
+        <item>Flatland : pas loin de <em>spaceland</em> ;</item>
+        <item>… d'une manière générale : devant un écran et/ou un
+        clavier.</item>
+      </ulist>
+    </section1>
+  </content>
+</overlay>

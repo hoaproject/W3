@@ -15,7 +15,6 @@ from('Hoa')
     'protocol.Application/Public/Classic/Css' => 'Css/'
 ));
 
-
 $router     = new \Hoa\Controller\Router();
 $router->setParameter('rewrited', true);
 $router
@@ -23,6 +22,7 @@ $router
    ->addRule('l+', '/Literature/(?<action>\w+)\.html', 'literature')
    ->addRule('v',  '/Video\.html', 'video', 'default')
    ->addRule('v+', '/Video/(?<action>\w+)\.html', 'video')
+   ->addRule('c',  '/Contact\.html', 'default', 'contact')
    ->addRule('g',  '/(?<all>.*)', 'default', 'default')
    // --
    ->addPrivateRule('_css', '/Css/(?<sheet>)')

@@ -9,4 +9,12 @@ class DefaultController extends \Hoa\Controller\Application {
 
         return;
     }
+
+    public function ContactAction ( ) {
+
+        $this->view->addOverlay('hoa://Application/View/Contact.xyl');
+        $this->view->render();
+
+        return;
+    }
 }
