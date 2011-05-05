@@ -34,7 +34,7 @@ body {
     text-align: justify;
     margin: 0;
     padding: 0;
-    background: #fff url("../Media/Image/Background.jpg") 50% 0 no-repeat;
+    background: url("../Media/Image/Background_paper.png");
 }
 
 #body {
@@ -130,6 +130,10 @@ p {
     margin: 1em 0;
 }
 
+li {
+    text-align: left;
+}
+
 strong {
     color: #de8300;
 }
@@ -139,17 +143,23 @@ code {
     color: #3b6898;
 }
 
+    code em {
+        color: #6695c8;
+    }
+
 pre {
     font-size: 1.1em;
     color: #452745;
     margin: auto -8em;
     padding: 1em 9em;
+    line-height: 1.4em;
+    overflow-y: auto;
 
     box-shadow: inset 0 0 5px #d4c6b0;
     -moz-box-shadow: inset 0 0 5px #d4c6b0;
     -webkit-box-shadow: inset 0 0 5px #d4c6b0;
 
-    background: #f2ede3;
+    background: #f2ede3 url("../Media/Image/Background_pre.png");
 }
 
     pre code {
@@ -303,7 +313,7 @@ pre {
     text-align: center;
     text-shadow: #341d44 1px 1px;
     margin: 2em auto;
-    width: 400px;
+    width: 450px;
     height: 80px;
     line-height: 80px;
     box-shadow: inset 0 0 1.2em #222,
@@ -341,8 +351,9 @@ pre {
         -o-transition: margin-left .6s ease .2s; /* delay of .2s to remove a bug */
     }
 
+    .download h1:target,
     .download:hover h1 {
-        margin-left: 90%;
+        margin-left: 92%;
     }
 
     .download ul {
