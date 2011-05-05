@@ -1,6 +1,6 @@
 <?php
 
-class LiteratureController extends \Hoa\Controller\Application {
+class LiteratureController extends \Hoa\Dispatcher\Kit {
 
     public function DefaultAction ( )  {
 
@@ -13,6 +13,15 @@ class LiteratureController extends \Hoa\Controller\Application {
     public function LearnAction ( )  {
 
         $this->view->addOverlay('hoa://Application/View/Literature/Learn.xyl');
+        $this->view->render();
+
+        return;
+    }
+
+    public function Learn_Action ( $chapter ) {
+
+        $this->view->addUse('hoa://Application/External/Literature/Learn/' . ucfirst($chapter) . '.xyl');
+        $this->view->addOverlay('hoa://Application/View/Literature/Learn_.xyl');
         $this->view->render();
 
         return;

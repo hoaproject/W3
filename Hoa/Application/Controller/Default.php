@@ -1,6 +1,6 @@
 <?php
 
-class DefaultController extends \Hoa\Controller\Application {
+class DefaultController extends \Hoa\Dispatcher\Kit {
 
     public function DefaultAction ( )  {
 

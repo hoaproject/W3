@@ -1,6 +1,6 @@
 <?php
 
-class VideoController extends \Hoa\Controller\Application {
+class VideoController extends \Hoa\Dispatcher\Kit {
 
     public function DefaultAction ( ) {
 
