@@ -11,14 +11,15 @@
     <strong>recherche</strong> et le monde de l'<strong>entreprise</strong>.</p>
 
     <box class="download">
-      <section1>
+      <section1 id="Telechargement" for="menu-toc">
         <title>Téléchargement</title>
 
         <ulist>
-          <item><link href="@dl:file=Tags/Hoa_v-1.0.0b2.7z">.7z</link></item>
-          <item><link href="@dl:file=Tags/Hoa_v-1.0.0b2.tar.bz2">.tar.bz2</link></item>
-          <item><link href="@dl:file=Tags/Hoa_v-1.0.0b2.tar.gz">.tar.gz</link></item>
-          <item><link href="@dl:file=Tags/Hoa_v-1.0.0b2.zip">.zip</link></item>
+          <item><link href="@dl:file=Tags/Hoa_v-1.0.0b3.7z">.7z</link></item>
+          <item><link href="@dl:file=Tags/Hoa_v-1.0.0b3.tar.bz2">.tar.bz2</link></item>
+          <item><link href="@dl:file=Tags/Hoa_v-1.0.0b3.tar.gz">.tar.gz</link></item>
+          <item><link href="@dl:file=Tags/Hoa_v-1.0.0b3.zip">.zip</link></item>
+          <item><link href="@dl:file=Tags/Hoa_v-1.0.0b3.phar">.phar</link></item>
           <item><link href="http://hg.hoa-project.net/Central">hg</link></item>
         </ulist>
       </section1>
