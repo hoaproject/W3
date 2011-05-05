@@ -25,9 +25,20 @@
         résultats <strong>concrets</strong>. Ce manuel a également pour objectif
         de faire un tour d'horizon des bibliothèques les plus importantes de Hoa
         pour savoir quoi approfondir avec le manuel de référence.</p>
-        <p class="text-center">
-          <link href="@l+:action=Learn">Lire le manuel d'apprentissage</link>
-        </p>
+        <tableofcontents>
+          <link href="@ll:chapter=(!title)"
+                sref="hoa://Application/External/Literature/Learn/Introduction.xyl"
+                sref-title="//__current_ns:section1/@id">Introduction</link>
+          <link href="@ll:chapter=(!title)"
+                sref="hoa://Application/External/Literature/Learn/Discover.xyl"
+                sref-title="//__current_ns:section1/@id">À la découverte de Hoa</link>
+          <link href="@ll:chapter=(!title)"
+                sref="hoa://Application/External/Literature/Learn/Install.xyl"
+                sref-title="//__current_ns:section1/@id">Installation</link>
+          <link href="@ll:chapter=(!title)"
+                sref="hoa://Application/External/Literature/Learn/Core.xyl"
+                sref-title="//__current_ns:section1/@id">Exploration du noyau</link>
+        </tableofcontents>
       </section2>
 
       <section2 id="Manuel_de_reference" for="menu-toc">

@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xyl-use href="hoa://Application/External/Literature/Learn/Index.xyl"?>
 
 <overlay xmlns="http://hoa-project.net/xyl/xylophone">
   <content id="content">
-    <section1>
-      <title>Manuel d'apprentissage</title>
-
-      <chapter />
-    </section1>
+    <chapter />
   </content>
 </overlay>
