@@ -1,34 +1,34 @@
 <?php
 
-require_once '/var/lib/hoa/Core/Core.php';
+require_once '/usr/local/lib/hoa/Core/Core.php';
 
 from('Hoa')
 -> import('Xyl.~')
 -> import('Xyl.Interpreter.Html.~')
 -> import('File.Read')
 -> import('Http.Response')
--> import('Controller.Dispatcher.Basic')
--> import('Controller.Router');
+-> import('Dispatcher.Basic')
+-> import('Router.Http');
 
 \Hoa\Core::getInstance()->initialize(array(
-    'protocol.Application'                    => '../',
-    'protocol.Application/Public/Classic/Css' => 'Css/'
+    'protocol.Application'                => '../',
+    'protocol.Application/Public/Classic' => './'
 ));
 
-$router     = new \Hoa\Controller\Router();
-$router->setParameter('rewrited', true);
+$dispatcher = new \Hoa\Dispatcher\Basic();
+$router     = new \Hoa\Router\Http();
 $router
-   ->addRule('l',  '/Literature\.html', 'literature', 'default')
-   ->addRule('l+', '/Literature/(?<action>\w+)\.html', 'literature')
-   ->addRule('v',  '/Video\.html', 'video', 'default')
-   ->addRule('v+', '/Video/(?<action>\w+)\.html', 'video')
-   ->addRule('c',  '/Contact\.html', 'default', 'contact')
-   ->addRule('g',  '/(?<all>.*)', 'default', 'default')
+   ->get('l',  '/Literature\.html', 'literature', 'default')
+   ->get('l+', '/Literature/(?<_able>\w+)\.html', 'literature')
+   ->get('ll', '/Literature/Learn/(?<chapter>[^\.]+)\.html', 'literature', 'learn_')
+   ->get('v',  '/Video\.html', 'video', 'default')
+   ->get('v+', '/Video/(?<_able>\w+)\.html', 'video')
+   ->get('c',  '/Contact\.html', 'default', 'contact')
+   ->get('g',  '/(?<all>.*)', 'default', 'default')
    // --
-   ->addPrivateRule('_css', '/Css/(?<sheet>)')
-   ->addPrivateRule('dl',   'http://download.hoa-project.net/(?<file>)');
+   ->_get('_css', '/Css/(?<sheet>)')
+   ->_get('dl',   'http://download.hoa-project.net/(?<file>)');
 
-$dispatcher = new \Hoa\Controller\Dispatcher\Basic();
 $xyl        = new \Hoa\Xyl(
     new \Hoa\File\Read('hoa://Application/View/Main.xyl'),
     new \Hoa\Http\Response(),
