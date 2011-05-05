@@ -19,8 +19,7 @@ $dispatcher = new \Hoa\Dispatcher\Basic();
 $router     = new \Hoa\Router\Http();
 $router
    ->get('l',  '/Literature\.html', 'literature', 'default')
-   ->get('l+', '/Literature/(?<_able>\w+)\.html', 'literature')
-   ->get('ll', '/Literature/Learn/(?<chapter>[^\.]+)\.html', 'literature', 'learn_')
+   ->get('ll', '/Literature/Learn/(?<chapter>\w+)\.html', 'literature', 'learn')
    ->get('v',  '/Video\.html', 'video', 'default')
    ->get('v+', '/Video/(?<_able>\w+)\.html', 'video')
    ->get('c',  '/Contact\.html', 'default', 'contact')
