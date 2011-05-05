@@ -23,10 +23,7 @@
   </navigation>
 
   <header>
-    <!--image href="hoa://Application/Public/Media/Image/Hoa.png"
-           alt="Hoa" /-->
-    <image href="http://hoa-project.net/Media/Image/Hoa.png"
-           alt="Hoa" />
+    <image href="/Media/Image/Hoa.png" alt="Hoa" />
   </header>
 
   <content id="content" />
