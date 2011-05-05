@@ -1,6 +1,8 @@
 <?php
 
-require_once '/usr/local/lib/hoa/Core/Core.php';
+require dirname(dirname(__DIR__)) .
+        DIRECTORY_SEPARATOR . 'Data' .
+        DIRECTORY_SEPARATOR . 'Core.link.php';
 
 from('Hoa')
 -> import('Xyl.~')
@@ -11,7 +13,8 @@ from('Hoa')
 -> import('Router.Http');
 
 \Hoa\Core::getInstance()->initialize(array(
-    'protocol.Application'                => '../',
+    'root.application'                    => dirname(__DIR__),
+    'root.data'                           => dirname(dirname(__DIR__)) . DS . 'Data',
     'protocol.Application/Public/Classic' => './'
 ));
 
