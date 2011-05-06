@@ -4,9 +4,9 @@
   <content id="content">
     <p class="text-center">Hoa est un ensemble de bibliothèques PHP
     <strong>puissantes</strong>, <strong>rapides</strong>, hautement
-    <strong>modulaires</strong>, <strong>sécuritaires</strong>,
-    <strong>innovantes</strong> et respectueuses des <strong>standards</strong>,
-    sous <em>New BSD License</em>.</p>
+    <strong>modulaires</strong>, <strong>sûres</strong>,
+    <strong>sécurisées</strong>, <strong>innovantes</strong> et respectueuses
+    des <strong>standards</strong>, sous <em>New BSD License</em>.</p>
     <p class="text-center">Hoa est également un pont entre le monde de la
     <strong>recherche</strong> et le monde de l'<strong>entreprise</strong>.</p>
 
