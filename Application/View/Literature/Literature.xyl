@@ -20,11 +20,12 @@
         <p>Ce manuel est dédié à l'<strong>apprentissage</strong> de Hoa, pas à
         pas, à travers une série de <strong>tutoriels</strong> et
         d'<strong>exemples</strong>. Les bibliothèques sont expliquées dans un
-        ordre pédagogique et ne sont pas forcément très détaillées. L'objectif
-        est de se mettre le pied à l'étriller, de commencer à produire des
-        résultats <strong>concrets</strong>. Ce manuel a également pour objectif
-        de faire un tour d'horizon des bibliothèques les plus importantes de Hoa
-        pour savoir quoi approfondir avec le manuel de référence.</p>
+        ordre pédagogique et ne sont pas forcément expliquées dans les moindres
+        détails. L'objectif est de se mettre le pied à l'étrier, de commencer à
+        produire des résultats <strong>concrets</strong>. Ce manuel a également
+        pour objectif de faire un tour d'horizon des bibliothèques les plus
+        importantes de Hoa pour savoir quoi approfondir avec le manuel de
+        référence.</p>
         <tableofcontents>
           <link href="@ll:chapter=(!title)"
                 sref="hoa://Application/External/Literature/Learn/Introduction.xyl"
