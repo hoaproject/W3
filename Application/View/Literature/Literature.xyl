@@ -51,10 +51,10 @@
         manuel d'apprentissage. Les explications relatives à chaque bibliothèque
         peuvent prendre différentes formes : leçons, tutoriels, descriptions
         etc. L'objectif étant d'<strong>approfondir</strong> au maximum les
-        solutions que les bibliothèques proposent. Enfin, des annexes sont
-        présents en tant que compléments. Ils ne concernent pas nécessairement
-        Hoa mais peuvent être utiles pour comprendre et manipuler des outils,
-        des protocoles, des architectures etc.</p>
+        solutions que les bibliothèques proposent. Enfin, les annexes ne
+        concernent pas nécessairement Hoa mais peuvent être utiles pour
+        comprendre et manipuler des outils, des protocoles, des architectures
+        etc.</p>
       </section2>
 
       <section2 id="Documentation_API" for="menu-toc">
