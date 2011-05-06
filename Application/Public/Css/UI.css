@@ -44,6 +44,14 @@ body {
     overflow-x: hidden;
 }
 
+::-moz-selection {
+    background: #e4cbf4;
+}
+
+::selection {
+    background: #e4cbf4;
+}
+
 nav {
     margin: 0;
     padding: 0;
