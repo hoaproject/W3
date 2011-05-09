@@ -427,3 +427,20 @@ pre {
 .text-center {
     text-align: center;
 }
+
+ul.prev_next {
+    margin: 2em 0;
+    padding: 0;
+    overflow: hidden;
+    list-style: none;
+}
+
+ul.prev_next > li {
+    float: left;
+    margin: 0;
+    padding: 0;
+}
+
+ul.prev_next > li + li {
+    float: right;
+}
