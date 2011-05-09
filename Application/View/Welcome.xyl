@@ -113,6 +113,26 @@ $file = new Hoa\File\Read(
           </section1>
         </grow>
       </grows>
+
+      <grows>
+        <grow>
+          <section1 id="Qui_l-utilise" for="menu-toc">
+            <title>Qui l'utilise ?</title>
+
+            <ulist id="whouse">
+              <item>
+                <link href="http://mozilla.org/"><image href="/Media/Image/WhoUse/Mozilla.png" alt="Mozilla" /></link>
+              </item>
+              <item>
+                <link href="http://lifc.univ-fcomte.fr/"><image href="/Media/Image/WhoUse/LIFC.png" alt="LIFC" /></link>
+              </item>
+              <item>
+                <link href="http://www.inria.fr/"><image href="/Media/Image/WhoUse/INRIA.png" alt="INRIA" /></link>
+              </item>
+            </ulist>
+          </section1>
+        </grow>
+      </grows>
     </grid>
   </content>
 </overlay>
