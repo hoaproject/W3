@@ -93,7 +93,6 @@ h1, h2, h3, h4, h5, h6 {
     h1:target, h2:target, h3:target, h4:target, h5:target, h6:target {
         padding: 0 0 0 1em;
         border-radius: 12px;
-        -moz-border-radius: 12px;
         -webkit-border-radius: 12px;
         background: #f2ede3;
     }
@@ -203,7 +202,6 @@ pre {
     opacity: .6;
 
     border-radius: 0 1em 0 1em;
-    -moz-border-radius: 0 1em 0 1em;
     -webkit-border-radius: 0 1em 0 1em;
 
     -moz-transition: opacity 1s ease 4s;
@@ -232,7 +230,6 @@ pre {
     border: 2px #fff solid;
 
     border-radius: 15px;
-    -moz-border-radius: 15px;
     -webkit-border-radius: 15px;
 
     box-shadow: 0 0 5px #000;
@@ -298,7 +295,6 @@ pre {
 
     #menu a:hover {
         border-radius: 8px;
-        -moz-border-radius: 8px;
         -webkit-border-radius: 8px;
         background: #795290;
     }
@@ -327,7 +323,6 @@ pre {
     -webkit-box-shadow: inset 0 0 1.2em #222,
                               0 0  .2em #000;
     border-radius: 20px;
-    -moz-border-radius: 20px;
     -webkit-border-radius: 20px;
     background: #4f2c68;
 }
@@ -342,7 +337,6 @@ pre {
         padding: 0;
         width: 100%;
         border-radius: 20px;
-        -moz-border-radius: 20px;
         -webkit-border-radius: 20px;
         background: linear-gradient(top, #704c87, #472b59) !important;
         background: -moz-linear-gradient(top, #704c87, #472b59) !important;
@@ -379,7 +373,6 @@ pre {
 
     .download ul li a:hover {
         border-radius: 8px;
-        -moz-border-radius: 8px;
         -webkit-border-radius: 8px;
         background: #795290;
     }
@@ -411,7 +404,6 @@ pre {
         margin-right: -9.3em;
 
         border-radius: 0 12px 12px 0;
-        -moz-border-radius: 0 12px 12px 0;
         -webkit-border-radius: 0 12px 12px 0;
     }
 
@@ -420,7 +412,6 @@ pre {
         margin-left: -9.3em;
 
         border-radius: 12px 0 0 12px;
-        -moz-border-radius: 12px 0 0 12px;
         -webkit-border-radius: 12px 0 0 12px;
     }
 
@@ -444,3 +435,42 @@ ul.prev_next > li {
 ul.prev_next > li + li {
     float: right;
 }
+
+ul#whouse {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+    ul#whouse > li {
+        float: left;
+        margin: 0 1em 1em 0;
+    }
+
+    ul#whouse > li > a {
+        color: transparent;
+        background: transparent;
+    }
+
+    ul#whouse > li > a > img {
+        padding: .5em;
+        border-radius: 3px;
+        transition: .3s box-shadow ease, .3s background ease;
+        -moz-transition: .3s -moz-box-shadow ease, .3s background ease;
+        -webkit-transition: .3s -webkit-box-shadow ease, .3s background ease;
+        -o-transition: .3s box-shadow ease, .3s background ease;
+    }
+
+    ul#whouse > li > a:hover,
+    ul#whouse > li > a:active {
+        color: transparent;
+        background: transparent;
+    }
+
+    ul#whouse > li > a:hover > img,
+    ul#whouse > li > a:active > img {
+        box-shadow: inset 0 0 5px #4f2c68;
+        -moz-box-shadow: inset 0 0 5px #4f2c68;
+        -webkit-box-shadow: inset 0 0 5px #4f2c68;
+        background: #efe6f5;
+    }
