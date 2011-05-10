@@ -39,6 +39,22 @@
           <link href="@ll:chapter=(!title)"
                 sref="hoa://Application/External/Literature/Learn/Core.xyl"
                 sref-title="//__current_ns:section1/@id">Exploration du noyau</link>
+          <link href="@ll:chapter=(!title)"
+                sref="hoa://Application/External/Literature/Learn/Framework.xyl"
+                sref-title="//__current_ns:section1/@id">Aspect framework</link>
+          <link href="@ll:chapter=(!title)"
+                sref="hoa://Application/External/Literature/Learn/RouterDispatcher.xyl"
+                sref-title="//__current_ns:section1/@id">Router + Dispatcher = ♥</link>
+          <link href="@ll:chapter=(!title)"
+                sref="hoa://Application/External/Literature/Learn/Stream.xyl"
+                sref-title="//__current_ns:section1/@id">Une histoire de flux</link>
+        </tableofcontents>
+        <p>Annexes :</p>
+        <tableofcontents>
+          <link href="@ll:chapter=(!title)"
+                sref="hoa://Application/External/Literature/Learn/Appendix_Standards.xyl"
+                sref-title="//__current_ns:section1/@id">Conventions de
+                codage et de nommage</link>
         </tableofcontents>
       </section2>
 
