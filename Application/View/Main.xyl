@@ -14,7 +14,7 @@
         <!--item><link href="#">Téléchargement</link></item-->
         <item><link href="@l">Littérature</link></item>
         <item><link href="@v">Vidéo</link></item>
-        <item><link href="http://hoa-project.net/Forum/">Communauté</link></item>
+        <item><link href="http://forum.hoa-project.net/">Communauté</link></item>
         <item><link href="@c">Contact</link></item>
       </ulist>
       <hseparator />
