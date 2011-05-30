@@ -25,8 +25,8 @@ $router
    ->get('ll', '/Literature/Learn/(?<chapter>\w+)\.html', 'literature', 'learn')
    ->get('v',  '/Video\.html', 'video', 'default')
    ->get('v+', '/Video/(?<_able>\w+)\.html', 'video')
-   ->get('c',  '/Contact\.html', 'default', 'contact')
-   ->get('g',  '/(?<all>.*)', 'default', 'default')
+   ->get('c',  '/Contact\.html', 'index', 'contact')
+   ->get('g',  '/(?<all>.*)', 'index', 'default')
    // --
    ->_get('_css', '/Css/(?<sheet>)')
    ->_get('dl',   'http://download.hoa-project.net/(?<file>)');

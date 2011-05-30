@@ -1,6 +1,8 @@
 <?php
 
-class DefaultController extends \Hoa\Dispatcher\Kit {
+namespace Application\Controller {
+
+class Index extends \Hoa\Dispatcher\Kit {
 
     public function DefaultAction ( )  {
 
@@ -17,4 +19,6 @@ class DefaultController extends \Hoa\Dispatcher\Kit {
 
         return;
     }
+}
+
 }

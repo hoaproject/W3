@@ -1,6 +1,8 @@
 <?php
 
-class LiteratureController extends \Hoa\Dispatcher\Kit {
+namespace Application\Controller {
+
+class Literature extends \Hoa\Dispatcher\Kit {
 
     public function DefaultAction ( )  {
 
@@ -18,4 +20,6 @@ class LiteratureController extends \Hoa\Dispatcher\Kit {
 
         return;
     }
+}
+
 }

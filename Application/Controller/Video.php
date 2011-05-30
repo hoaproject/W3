@@ -1,6 +1,8 @@
 <?php
 
-class VideoController extends \Hoa\Dispatcher\Kit {
+namespace Application\Controller {
+
+class Video extends \Hoa\Dispatcher\Kit {
 
     public function DefaultAction ( ) {
 
@@ -17,4 +19,6 @@ class VideoController extends \Hoa\Dispatcher\Kit {
 
         return;
     }
+}
+
 }
