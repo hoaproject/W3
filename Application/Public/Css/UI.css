@@ -82,6 +82,11 @@ a {
         background: #795290;
     }
 
+    a:hover code,
+    a:active code {
+        color: #efe6f5;
+    }
+
 h1, h2, h3, h4, h5, h6 {
     color: #ab3e00;
     margin: 1.7em 0 0 0;
