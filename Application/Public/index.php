@@ -13,8 +13,6 @@ from('Hoa')
 -> import('Router.Http');
 
 \Hoa\Core::getInstance()->initialize(array(
-    'root.application'                    => dirname(__DIR__),
-    'root.data'                           => dirname(dirname(__DIR__)) . DS . 'Data',
     'protocol.Application/Public/Classic' => './'
 ));
 
