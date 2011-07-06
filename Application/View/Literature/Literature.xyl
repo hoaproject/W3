@@ -14,6 +14,14 @@
       solutions génériques produit de biens meilleurs résultats. C'est pourquoi
       Hoa propose différents manuels.</p>
 
+      <section2 id="Mini-tutoriel" for="menu-toc">
+        <title>Mini-tutoriel</title>
+
+        <p>Ce mini-tutoriel est dédié aux personnes <strong>impatientes</strong>
+        qui veulent avoir un aperçu de Hoa en quelques minutes, notamment sur
+        l'aspect framework : <link href="@lt">lire le mini-tutoriel</link>.</p>
+      </section2>
+
       <section2 id="Manuel_d-apprentissage" for="menu-toc">
         <title>Manuel d'apprentissage</title>
 

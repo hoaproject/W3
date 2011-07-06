@@ -12,6 +12,16 @@ class Literature extends \Hoa\Dispatcher\Kit {
         return;
     }
 
+    public function MinitutorialAction ( ) {
+
+        $this->view->addOverlay(
+            'hoa://Application/External/Literature/MiniTutorial/Index.xyl'
+        );
+        $this->view->render();
+
+        return;
+    }
+
     public function LearnAction ( $chapter ) {
 
         $this->view->addUse('hoa://Application/External/Literature/Learn/' . ucfirst($chapter) . '.xyl');

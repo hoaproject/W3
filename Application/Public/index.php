@@ -20,6 +20,7 @@ $dispatcher = new \Hoa\Dispatcher\Basic();
 $router     = new \Hoa\Router\Http();
 $router
    ->get('l',  '/Literature\.html', 'literature', 'default')
+   ->get('lt', '/Literature/Mini-tutorial\.html', 'literature', 'minitutorial')
    ->get('ll', '/Literature/Learn/(?<chapter>\w+)\.html', 'literature', 'learn')
    ->get('v',  '/Video\.html', 'video', 'default')
    ->get('v+', '/Video/(?<_able>\w+)\.html', 'video')
