@@ -1,0 +1,16 @@
+{
+    /**
+     * Keywords.
+     */
+    "keywords": {},
+
+    /**
+     * Parameters.
+     */
+    "parameters": {
+        "integer.min": null,
+        "integer.max": null,
+        "float.min"  : null,
+        "float.max"  : null
+    }
+}
