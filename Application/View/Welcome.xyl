@@ -15,11 +15,11 @@
         <title>Téléchargement</title>
 
         <ulist>
-          <item><link href="@dl:file=Central/Hoa_v-1.0.0b4.7z">.7z</link></item>
-          <item><link href="@dl:file=Central/Hoa_v-1.0.0b4.tar.bz2">.tar.bz2</link></item>
-          <item><link href="@dl:file=Central/Hoa_v-1.0.0b4.tar.gz">.tar.gz</link></item>
-          <item><link href="@dl:file=Central/Hoa_v-1.0.0b4.zip">.zip</link></item>
-          <item><link href="@dl:file=Central/Hoa_v-1.0.0b4.phar">.phar</link></item>
+          <item><link href="@dl:file=Central/Hoa_v-?.?.???.7z">.7z</link></item>
+          <item><link href="@dl:file=Central/Hoa_v-?.?.???.tar.bz2">.tar.bz2</link></item>
+          <item><link href="@dl:file=Central/Hoa_v-?.?.???.tar.gz">.tar.gz</link></item>
+          <item><link href="@dl:file=Central/Hoa_v-?.?.???.zip">.zip</link></item>
+          <item><link href="@dl:file=Central/Hoa_v-?.?.???.phar">.phar</link></item>
           <item><link href="http://hg.hoa-project.net/Central">hg</link></item>
         </ulist>
       </section1>
