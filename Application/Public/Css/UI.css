@@ -32,6 +32,7 @@ body {
     color: #341d44;
     font: 1.1em/1.4em Text;
     text-align: justify;
+    -moz-hyphens: auto;
     margin: 0;
     padding: 0;
     background: url("../Media/Image/Background_paper.png");
