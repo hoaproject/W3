@@ -8,7 +8,7 @@ from('Hoa')
 -> import('Xyl.~')
 -> import('Xyl.Interpreter.Html.~')
 -> import('File.Read')
--> import('Http.Response')
+-> import('Http.Response.~')
 -> import('Dispatcher.Basic')
 -> import('Router.Http');
 
