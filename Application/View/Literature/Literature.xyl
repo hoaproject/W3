@@ -48,17 +48,14 @@
                 sref="hoa://Application/External/Literature/Learn/Core.xyl"
                 sref-title="//__current_ns:section1/@id">Exploration du noyau</link>
           <link href="@ll:chapter=(!title)"
-                sref="hoa://Application/External/Literature/Learn/Tools.xyl"
-                sref-title="//__current_ns:section1/@id">Outils autour de Hoa</link>
-          <link href="@ll:chapter=(!title)"
                 sref="hoa://Application/External/Literature/Learn/Framework.xyl"
                 sref-title="//__current_ns:section1/@id">Aspect framework</link>
           <link href="@ll:chapter=(!title)"
                 sref="hoa://Application/External/Literature/Learn/Routerdispatcher.xyl"
                 sref-title="//__current_ns:section1/@id">Router + Dispatcher = ♥</link>
           <link href="@ll:chapter=(!title)"
-                sref="hoa://Application/External/Literature/Learn/Stream.xyl"
-                sref-title="//__current_ns:section1/@id">Une histoire de flux</link>
+                sref="hoa://Application/External/Literature/Learn/Model.xyl"
+                sref-title="//__current_ns:section1/@id">Modèle de données</link>
         </tableofcontents>
         <p>Annexes :</p>
         <tableofcontents>
@@ -66,6 +63,9 @@
                 sref="hoa://Application/External/Literature/Learn/Appendix_standards.xyl"
                 sref-title="//__current_ns:section1/@id">Conventions de
                 codage et de nommage</link>
+          <link href="@ll:chapter=(!title)"
+                sref="hoa://Application/External/Literature/Learn/Appendix_tools.xyl"
+                sref-title="//__current_ns:section1/@id">Outils autour de Hoa</link>
         </tableofcontents>
       </section2>
 
