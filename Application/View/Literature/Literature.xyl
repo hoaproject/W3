@@ -90,6 +90,23 @@
         recul sur le code et de mieux voir comment il s'articule et tout ce qui
         entre en jeu.</p>
       </section2>
+
+      <section2 id="Articles_presentations_et_autres_documents" for="menu-toc">
+        <title>Articles, présentations et autres documents</title>
+
+        <p><ulist>
+          <item><link href="@dl:file=Laboratory/Conference/Ictss11.pdf"><em>Praspel:
+          A Specification Language for Contract-Driven Testing in
+          PHP</em></link>, article présenté à la conférence
+          <link href="http://ictss2011.lri.fr/"><em>The 23<sup>rd</sup> IFIP Int.
+          Conference on Testing Software and Systems
+          (ICTSS'11)</em></link> ;</item>
+          <item><link href="@dl:file=Laboratory/MasterThesis/MasterThesis.pdf">Domaines
+          réalistes pour la génération de tests unitaires dirigés par les
+          contrats</link>, mémoire de Master sur Praspel et les domaines
+          réalistes.</item>
+        </ulist></p>
+      </section2>
     </section1>
   </content>
 </overlay>
