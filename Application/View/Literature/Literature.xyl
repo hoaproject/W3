@@ -19,7 +19,7 @@
 
         <p>Ce mini-tutoriel est dédié aux personnes <strong>impatientes</strong>
         qui veulent avoir un aperçu de Hoa en quelques minutes, notamment sur
-        l'aspect framework : <link href="@lt">lire le mini-tutoriel</link>.</p>
+        l'aspect framework : (revient bientôt !)<!--link href="@lt">lire le mini-tutoriel</link-->.</p>
       </section2>
 
       <section2 id="Manuel_d-apprentissage" for="menu-toc">
@@ -63,9 +63,6 @@
                 sref="hoa://Application/External/Literature/Learn/Appendix_standards.xyl"
                 sref-title="//__current_ns:section1/@id">Conventions de
                 codage et de nommage</link>
-          <link href="@ll:chapter=(!title)"
-                sref="hoa://Application/External/Literature/Learn/Appendix_tools.xyl"
-                sref-title="//__current_ns:section1/@id">Outils autour de Hoa</link>
         </tableofcontents>
       </section2>
 
