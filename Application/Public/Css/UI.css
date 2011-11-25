@@ -480,3 +480,10 @@ ul#whouse {
         -webkit-box-shadow: inset 0 0 5px #4f2c68;
         background: #efe6f5;
     }
+
+iframe {
+    height: 500px;
+    width: 100%;
+    margin: 1em 0;
+    border: 0;
+}

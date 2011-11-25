@@ -95,6 +95,10 @@
         <title>Articles, présentations et autres documents</title>
 
         <p><ulist>
+          <item><link href="@lk:keynote=PHPTour11">Hoa, un ensemble de
+          bibliothèques</link>, présentée au
+          <link href="http://afup.org/pages/phptourlille2011/">PHPTour 2011 à
+          Lille</link> ;</item>
           <item><link href="@dl:file=Laboratory/Conference/Ictss11.pdf"><em>Praspel:
           A Specification Language for Contract-Driven Testing in
           PHP</em></link>, article présenté à la conférence

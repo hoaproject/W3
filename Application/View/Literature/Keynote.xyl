@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xyl-stylesheet href="hoa://Application/Public/Css/Literature.css"?>
+
+<overlay xmlns="http://hoa-project.net/xyl/xylophone">
+  <content id="content">
+    <section1 bind="?keynote" id="Keynote" for="menu-toc">
+      <title><value bind="?title" /></title>
+
+      <iframe href="@key:shell=Embedder&amp;keynote=(?id)" />
+    </section1>
+  </content>
+</overlay>

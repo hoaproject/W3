@@ -30,6 +30,16 @@ class Literature extends \Hoa\Dispatcher\Kit {
 
         return;
     }
+
+    public function KeynoteAction ( $keynote ) {
+
+        $this->data->keynote[0]->id    = 'PHPTour11';
+        $this->data->keynote[0]->title = 'PHPTour\'11';
+        $this->view->addOverlay('hoa://Application/View/Literature/Keynote.xyl');
+        $this->view->render();
+
+        return;
+    }
 }
 
 }
