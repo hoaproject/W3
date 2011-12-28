@@ -38,6 +38,7 @@
       <a href="@ll:chapter=Framework">Aspect framework</a>
       <a href="@ll:chapter=Routerdispatcher">Router + Dispatcher = ♥</a>
       <a href="@ll:chapter=Model">Modèle de données</a>
+      <a href="@ll:chapter=Xyl">XYL</a>
     </tableofcontents>
     <p>Annexes :</p>
     <tableofcontents>
