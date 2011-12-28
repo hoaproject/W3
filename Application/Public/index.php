@@ -29,8 +29,8 @@ $router
    ->get('g',  '/(?<all>.*)', 'index', 'default')
    // --
    ->_get('_css', '/Css/(?<sheet>)')
-   ->_get('dl',   'http://download.hoa-project.net/(?<file>)')
-   ->_get('key',  'http://keynote.hoa-project.net/Shells/(?<shell>).html#http://keynote.hoa-project.net/(?<keynote>).html');
+   ->_get('dl',   'http://download\.hoa-project\.net/(?<file>)')
+   ->_get('key',  'http://keynote\.hoa-project\.net/Shells/(?<shell>)\.html#http://keynote\.hoa-project\.net/(?<keynote>)\.html');
 
 $xyl        = new \Hoa\Xyl(
     new \Hoa\File\Read('hoa://Application/View/Main.xyl'),

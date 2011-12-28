@@ -2,115 +2,87 @@
 <?xyl-stylesheet href="hoa://Application/Public/Css/Literature.css"?>
 
 <overlay xmlns="http://hoa-project.net/xyl/xylophone">
-  <content id="content">
-    <section1>
-      <title>Manuels</title>
+  <article id="content">
+    <h1>Manuels</h1>
 
-      <p>Hoa insiste beaucoup sur le fait qu'il faut <strong>comprendre les
-      problèmes</strong> avant de <strong>comprendre les solutions</strong>. En
-      effet, un des objectifs de Hoa est d'<strong>enseigner</strong> à ses
-      utilisateurs, car apprendre sans comprendre n'a pas de sens et
-      l'expérience montre que la compréhension d'un problème couplée à des
-      solutions génériques produit de biens meilleurs résultats. C'est pourquoi
-      Hoa propose différents manuels.</p>
+    <p>Hoa insiste beaucoup sur le fait qu'il faut <strong>comprendre les
+    problèmes</strong> avant de <strong>comprendre les solutions</strong>. En
+    effet, un des objectifs de Hoa est d'<strong>enseigner</strong> à ses
+    utilisateurs, car apprendre sans comprendre n'a pas de sens et l'expérience
+    montre que la compréhension d'un problème couplée à des solutions génériques
+    produit de biens meilleurs résultats. C'est pourquoi Hoa propose différents
+    manuels.</p>
 
-      <section2 id="Mini-tutoriel" for="menu-toc">
-        <title>Mini-tutoriel</title>
+    <h2 id="Mini-tutoriel" for="menu-toc">Mini-tutoriel</h2>
 
-        <p>Ce mini-tutoriel est dédié aux personnes <strong>impatientes</strong>
-        qui veulent avoir un aperçu de Hoa en quelques minutes, notamment sur
-        l'aspect framework : (revient bientôt !)<!--link href="@lt">lire le mini-tutoriel</link-->.</p>
-      </section2>
+    <p>Ce mini-tutoriel est dédié aux personnes <strong>impatientes</strong> qui
+    veulent avoir un aperçu de Hoa en quelques minutes, notamment sur l'aspect
+    framework : (revient bientôt !)<!--a href="@lt">lire le
+    mini-tutoriel</a-->.</p>
 
-      <section2 id="Manuel_d-apprentissage" for="menu-toc">
-        <title>Manuel d'apprentissage</title>
+    <h2 id="Manuel_d-apprentissage" for="menu-toc">Manuel d'apprentissage</h2>
 
-        <p>Ce manuel est dédié à l'<strong>apprentissage</strong> de Hoa, pas à
-        pas, à travers une série de <strong>tutoriels</strong> et
-        d'<strong>exemples</strong>. Les bibliothèques sont expliquées dans un
-        ordre pédagogique et ne sont pas forcément expliquées dans les moindres
-        détails. L'objectif est de se mettre le pied à l'étrier, de commencer à
-        produire des résultats <strong>concrets</strong>. Ce manuel a également
-        pour objectif de faire un tour d'horizon des bibliothèques les plus
-        importantes de Hoa pour savoir quoi approfondir avec le manuel de
-        référence.</p>
-        <tableofcontents>
-          <link href="@ll:chapter=(!title)"
-                sref="hoa://Application/External/Literature/Learn/Introduction.xyl"
-                sref-title="//__current_ns:section1/@id">Introduction</link>
-          <link href="@ll:chapter=(!title)"
-                sref="hoa://Application/External/Literature/Learn/Discover.xyl"
-                sref-title="//__current_ns:section1/@id">À la découverte de Hoa</link>
-          <link href="@ll:chapter=(!title)"
-                sref="hoa://Application/External/Literature/Learn/Install.xyl"
-                sref-title="//__current_ns:section1/@id">Installation</link>
-          <link href="@ll:chapter=(!title)"
-                sref="hoa://Application/External/Literature/Learn/Core.xyl"
-                sref-title="//__current_ns:section1/@id">Exploration du noyau</link>
-          <link href="@ll:chapter=(!title)"
-                sref="hoa://Application/External/Literature/Learn/Framework.xyl"
-                sref-title="//__current_ns:section1/@id">Aspect framework</link>
-          <link href="@ll:chapter=(!title)"
-                sref="hoa://Application/External/Literature/Learn/Routerdispatcher.xyl"
-                sref-title="//__current_ns:section1/@id">Router + Dispatcher = ♥</link>
-          <link href="@ll:chapter=(!title)"
-                sref="hoa://Application/External/Literature/Learn/Model.xyl"
-                sref-title="//__current_ns:section1/@id">Modèle de données</link>
-        </tableofcontents>
-        <p>Annexes :</p>
-        <tableofcontents>
-          <link href="@ll:chapter=(!title)"
-                sref="hoa://Application/External/Literature/Learn/Appendix_standards.xyl"
-                sref-title="//__current_ns:section1/@id">Conventions de
-                codage et de nommage</link>
-        </tableofcontents>
-      </section2>
+    <p>Ce manuel est dédié à l'<strong>apprentissage</strong> de Hoa, pas à pas,
+    à travers une série de <strong>tutoriels</strong> et
+    d'<strong>exemples</strong>. Les bibliothèques sont expliquées dans un ordre
+    pédagogique et ne sont pas forcément expliquées dans les moindres détails.
+    L'objectif est de se mettre le pied à l'étrier, de commencer à produire des
+    résultats <strong>concrets</strong>. Ce manuel a également pour objectif de
+    faire un tour d'horizon des bibliothèques les plus importantes de Hoa pour
+    savoir quoi approfondir avec le manuel de référence.</p>
+    <tableofcontents>
+      <a href="@ll:chapter=Introduction">Introduction</a>
+      <a href="@ll:chapter=Discover">À la découverte de Hoa</a>
+      <a href="@ll:chapter=Install">Installation</a>
+      <a href="@ll:chapter=Core">Exploration du noyau</a>
+      <a href="@ll:chapter=Framework">Aspect framework</a>
+      <a href="@ll:chapter=Routerdispatcher">Router + Dispatcher = ♥</a>
+      <a href="@ll:chapter=Model">Modèle de données</a>
+    </tableofcontents>
+    <p>Annexes :</p>
+    <tableofcontents>
+      <a href="@ll:chapter=Appendix_standards">Conventions de codage et de
+      nommage</a>
+    </tableofcontents>
 
-      <section2 id="Manuel_de_reference" for="menu-toc">
-        <title>Manuel de référence</title>
+    <h2 id="Manuel_de_reference" for="menu-toc">Manuel de référence</h2>
 
-        <p>Ce manuel est dit de référence car il propose des explications
-        <strong>très détaillées</strong> de toutes les bibliothèques. L'ordre de
-        présentation des bibliothèque est alphabétique, <em>a contrario</em> du
-        manuel d'apprentissage. Les explications relatives à chaque bibliothèque
-        peuvent prendre différentes formes : leçons, tutoriels, descriptions
-        etc. L'objectif étant d'<strong>approfondir</strong> au maximum les
-        solutions que les bibliothèques proposent. Enfin, les annexes ne
-        concernent pas nécessairement Hoa mais peuvent être utiles pour
-        comprendre et manipuler des outils, des protocoles, des architectures
-        etc.</p>
-      </section2>
+    <p>Ce manuel est dit de référence car il propose des explications
+    <strong>très détaillées</strong> de toutes les bibliothèques. L'ordre de
+    présentation des bibliothèque est alphabétique, <em>a contrario</em> du
+    manuel d'apprentissage. Les explications relatives à chaque bibliothèque
+    peuvent prendre différentes formes : leçons, tutoriels, descriptions etc.
+    L'objectif étant d'<strong>approfondir</strong> au maximum les solutions que
+    les bibliothèques proposent. Enfin, les annexes ne concernent pas
+    nécessairement Hoa mais peuvent être utiles pour comprendre et manipuler des
+    outils, des protocoles, des architectures etc.</p>
 
-      <section2 id="Documentation_API" for="menu-toc">
-        <title>Documentation API</title>
+    <h2 id="Documentation_API" for="menu-toc">Documentation API</h2>
 
-        <p>Cette documentation est dite de <strong>bas-niveau</strong>,
-        <em>i.e.</em> au niveau du code. Elle permet d'explorer le code, de
-        suivre la trace des méthodes, des classes etc. Elle permet de prendre du
-        recul sur le code et de mieux voir comment il s'articule et tout ce qui
-        entre en jeu.</p>
-      </section2>
+    <p>Cette documentation est dite de <strong>bas-niveau</strong>,
+    <em>i.e.</em> au niveau du code. Elle permet d'explorer le code, de suivre
+    la trace des méthodes, des classes etc. Elle permet de prendre du recul sur
+    le code et de mieux voir comment il s'articule et tout ce qui entre en
+    jeu.</p>
 
-      <section2 id="Articles_presentations_et_autres_documents" for="menu-toc">
-        <title>Articles, présentations et autres documents</title>
+    <h2 id="Articles_presentations_et_autres_documents" for="menu-toc">Articles,
+    présentations et autres documents</h2>
 
-        <p><ulist>
-          <item><link href="@lk:keynote=PHPTour11">Hoa, un ensemble de
-          bibliothèques</link>, présentée au
-          <link href="http://afup.org/pages/phptourlille2011/">PHPTour 2011 à
-          Lille</link> ;</item>
-          <item><link href="@dl:file=Laboratory/Conference/Ictss11.pdf"><em>Praspel:
-          A Specification Language for Contract-Driven Testing in
-          PHP</em></link>, article présenté à la conférence
-          <link href="http://ictss2011.lri.fr/"><em>The 23<sup>rd</sup> IFIP Int.
-          Conference on Testing Software and Systems
-          (ICTSS'11)</em></link> ;</item>
-          <item><link href="@dl:file=Laboratory/MasterThesis/MasterThesis.pdf">Domaines
-          réalistes pour la génération de tests unitaires dirigés par les
-          contrats</link>, mémoire de Master sur Praspel et les domaines
-          réalistes.</item>
-        </ulist></p>
-      </section2>
-    </section1>
-  </content>
+    <p><ul>
+      <li><a href="@lk:keynote=PHPTour11">Hoa, un ensemble de
+      bibliothèques</a>, présentée au
+      <a href="http://afup.org/pages/phptourlille2011/">PHPTour 2011 à
+      Lille</a> ;</li>
+      <li><a href="@dl:file=Laboratory/Conference/Ictss11.pdf"><em>Praspel:
+      A Specification Language for Contract-Driven Testing in
+      PHP</em></a>, article présenté à la conférence
+      <a href="http://ictss2011.lri.fr/"><em>The 23<sup>rd</sup> IFIP Int.
+      Conference on Testing Software and Systems
+      (ICTSS'11)</em></a> ;</li>
+      <li><a href="@dl:file=Laboratory/MasterThesis/MasterThesis.pdf">Domaines
+      réalistes pour la génération de tests unitaires dirigés par les
+      contrats</a>, mémoire de Master sur Praspel et les domaines
+      réalistes.</li>
+    </ul></p>
+  </article>
 </overlay>

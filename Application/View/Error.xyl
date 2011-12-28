@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <overlay xmlns="http://hoa-project.net/xyl/xylophone">
-  <content id="content">
+  <article id="content">
     <p>Erreur :-)</p>
-  </content>
+  </article>
 </overlay>

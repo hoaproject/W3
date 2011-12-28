@@ -1,16 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <overlay xmlns="http://hoa-project.net/xyl/xylophone">
-  <content id="content">
-    <section1 id="Praspel">
-      <title>Vidéo</title>
+  <article id="content">
+    <h1 id="Praspel">Vidéo</h1>
 
-      <p>Plusieurs tutoriels sont présents sous format vidéos. Actuellement,
-      seule une vidéo de démonstration de Praspel, en tant que complément à un
-      article, est disponible :</p>
-      <ulist>
-        <item><link href="@v+:_able=Praspel">Praspel</link>.</item>
-      </ulist>
-    </section1>
-  </content>
+    <p>Plusieurs tutoriels sont présents sous format vidéos. Actuellement, seule
+    une vidéo de démonstration de Praspel, en tant que complément à un article,
+    est disponible :</p>
+    <ul>
+      <li><a href="@v+:_able=Praspel">Praspel</a>.</li>
+    </ul>
+  </article>
 </overlay>

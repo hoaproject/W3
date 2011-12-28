@@ -2,11 +2,9 @@
 <?xyl-stylesheet href="hoa://Application/Public/Css/Literature.css"?>
 
 <overlay xmlns="http://hoa-project.net/xyl/xylophone">
-  <content id="content">
-    <section1 bind="?keynote" id="Keynote" for="menu-toc">
-      <title><value bind="?title" /></title>
+  <article id="content" bind="?keynote">
+    <h1 id="Keynote" for="menu-toc"><value bind="?title" /></h1>
 
-      <iframe href="@key:shell=Embedder&amp;keynote=(?id)" />
-    </section1>
-  </content>
+    <iframe src="@key:shell=Embedder&amp;keynote=(?id)" />
+  </article>
 </overlay>

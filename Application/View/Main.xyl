@@ -5,28 +5,28 @@
 <document xmlns="http://hoa-project.net/xyl/xylophone">
   <title>Hoa, un ensemble de bibliothèques PHP</title>
 
-  <navigation>
-    <link id="floatmenu" href="javascript:menu()">Menu</link>
+  <nav>
+    <a id="floatmenu" href="javascript:menu()">Menu</a>
 
-    <box id="menu">
-      <ulist>
-        <item><link href="@g:all=">Accueil</link></item>
-        <!--item><link href="#">Téléchargement</link></item-->
-        <item><link href="@l">Littérature</link></item>
-        <item><link href="@v">Vidéo</link></item>
-        <item><link href="http://forum.hoa-project.net/">Communauté</link></item>
-        <item><link href="@c">Contact</link></item>
-      </ulist>
-      <hseparator />
-      <tableofcontents id="menu-toc" depth-min="1" depth-max="2" />
-    </box>
-  </navigation>
+    <div id="menu">
+      <ul>
+        <li><a href="@g:all=">Accueil</a></li>
+        <!--li><a href="#">Téléchargement</a></li-->
+        <li><a href="@l">Littérature</a></li>
+        <li><a href="@v">Vidéo</a></li>
+        <li><a href="http://forum.hoa-project.net/">Communauté</a></li>
+        <li><a href="@c">Contact</a></li>
+      </ul>
+      <hr />
+      <tableofcontents id="menu-toc" />
+    </div>
+  </nav>
 
   <header>
-    <image href="/Media/Image/Hoa.png" alt="Hoa" />
+    <img src="/Media/Image/Hoa.png" alt="Hoa" />
   </header>
 
-  <content id="content" />
+  <article id="content" />
 
   <footer>
     <p>Hoa est la création de Ivan Enderlin, tous droits réservés.</p>
@@ -48,7 +48,7 @@
     (function ( ) {
 
         var toc = document.querySelectorAll("#menu .toc a");
-        for(var i = 0, m = toc.length; i &amp;lt; m; ++i)
+        for(var i = 0, m = toc.length; i &lt; m; ++i)
             toc.item(i).addEventListener(
                 "click",
                 function ( e ) {

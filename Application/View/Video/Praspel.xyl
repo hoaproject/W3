@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <overlay xmlns="http://hoa-project.net/xyl/xylophone">
-  <content id="content">
-    <section1 id="Praspel" for="menu-toc">
-      <title>Praspel</title>
+  <article id="content">
+    <h1 id="Praspel" for="menu-toc">Praspel</h1>
 
-      <p>Please, follow this link: <link href="http://www.dailymotion.com/video/xhcrol_hoa-y-praspel-a-contract-based-testing-language_tech">Praspel,
-      a contract-based testing language</link> on Dailymotion.</p>
-    </section1>
-  </content>
+    <p>Please, follow this link: <a href="http://www.dailymotion.com/video/xhcrol_hoa-y-praspel-a-contract-based-testing-language_tech">Praspel,
+    a contract-based testing language</a> on Dailymotion.</p>
+  </article>
 </overlay>
