@@ -20,10 +20,10 @@
 
 @font-face {
     font-family: Section;
-    src: url("../Font/Fanwood_italic.eot")     format("eot"),
-         url("../Font/Fanwood_italic.woff")    format("woff"),
-         url("../Font/Fanwood_italic.ttf")     format("truetype"),
-         url("../Font/Fanwood_italic.svg#foo") format("svg");
+    src: url("../Font/GoudyStM_italic.eot")     format("eot"),
+         url("../Font/GoudyStM_italic.woff")    format("woff"),
+         url("../Font/GoudyStM_italic.ttf")     format("truetype"),
+         url("../Font/GoudyStM_italic.svg#foo") format("svg");
     font-weight: normal;
     font-style: normal;
 }
