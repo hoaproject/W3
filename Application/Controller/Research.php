@@ -39,7 +39,7 @@ class Research extends \Hoa\Dispatcher\Kit {
     public function ebgd12Xp ( ) {
 
         $this->view->addOverlay('hoa://Application/View/Research/Ebgd12/Experimentation.xyl');
-        $this->data->ebgd12[0]->result = '(no result)';
+        $this->data->ebgd12->result = '(no result)';
         $this->view->interprete();
 
         $form = $this->view->xpath('//__current_ns:*[@id="experimentation"]');
@@ -48,7 +48,6 @@ class Research extends \Hoa\Dispatcher\Kit {
 
         if($form->isValid() && !empty($data)) {
 
-            dump(true);
             $grammar  = new \Hoa\StringBuffer\Read();
             $grammar->initializeWith($data['grammar']);
             $n        = $data['size'];
@@ -65,7 +64,7 @@ class Research extends \Hoa\Dispatcher\Kit {
                     $_meta->getRuleAst($_grammar->getRootRule())
                 );
             }
-            catch ( \Exception $e ) {
+            catch ( \Hoa\Compiler\Exception $e ) {
 
                 $this->data->ebgd12[0]->result[0] = $e->getFormattedMessage();
             }
