@@ -6,38 +6,56 @@
     <h1><em>Grammar-based Testing using Realistic Domains in PHP</em></h1>
 
     <form id="experimentation" action="#" method="POST">
-      <p><select id="selection" name="selection">
-        <option value="basic">Basic</option>
-        <option value="json">JSON (Javascript)</option>
-        <option value="pcre">PCRE (regular expressions)</option>
-      </select></p>
-      <p><textarea id="grammar" name="grammar" class="editor">%skip  space \s
-%token add   \+
-%token sub   \-
-%token mult  \*
-%token numb  [0-9]
+      <p><span class="left"><label for="selection" class="left">exemples : </label>
+        <select id="selection" name="selection">
+          <option value="basic">Basic</option>
+          <option value="json">JSON (Javascript)</option>
+          <option value="pcre">PCRE (regular expressions)</option>
+        </select></span>
+      <span class="right">
+      <label for="size" class="left">taille : </label>
+      <input type="text" id="size" name="size" value="9"
+             validate="boundinteger(1, 11)" onerror="error_size" />
+      <error id="error_size">Size should belongs to [1, 11].</error>
+      </span></p>
+      <p><textarea id="grammar" name="grammar" class="editor" bind="?grammar" /></p>
 
-root:
-    number() ( ( ::add:: #add | ::sub:: #sub | ::mult:: #mult ) number() ) +
+      <p class="verdict-(?verdict) text-center">
+        <input type="submit" name="sample"    value="générer ⬇" />
+        <input type="submit" name="predicate" value="⬆ valider" />
+      </p>
 
-#number:
-    &lt;numb&gt;</textarea></p>
-      <p><label for="size">Size:</label>
-         <input type="text" id="size" name="size" value="9"
-                validate="boundinteger(1, 11)" onerror="error_size" />
-         <error id="error_size">Size should belongs to [1, 11].</error></p>
-      <p><input type="submit" /></p>
+      <p><textarea id="data" name="data" class="editor" bind="?data" /></p>
+      <p>Erreurs :</p>
+      <pre bind="?result" />
     </form>
-
-    <pre id="result" bind="?result"></pre>
   </article>
 
   <document id="document">
     <script src="/Script/Codemirror.js"></script>
     <script>
-      var editor = CodeMirror.fromTextArea(document.getElementById('grammar'), {
-        lineNumbers: true
-      });
+      var _editors = document.getElementsByClassName('editor');
+      var editors  = [];
+
+      var activeLine = function ( editor ) {
+
+          var line = editor.setLineClass(0, 'CodeMirror-activeline');
+
+          return function ( ) {
+              editor.setLineClass(line, null);
+              line = editor.setLineClass(
+                editor.getCursor().line,
+                'CodeMirror-activeline'
+              );
+          }
+      }
+
+      for(var i = 0; i &lt; _editors.length; ++i) {
+
+        editors[i] = CodeMirror.fromTextArea(_editors.item(i));
+        editors[i].setOption('lineNumbers', true);
+        editors[i].setOption('onCursorActivity', activeLine(editors[i]));
+      }
 
       var select = document.getElementById('selection');
 

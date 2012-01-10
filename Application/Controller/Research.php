@@ -39,7 +39,22 @@ class Research extends \Hoa\Dispatcher\Kit {
     public function ebgd12Xp ( ) {
 
         $this->view->addOverlay('hoa://Application/View/Research/Ebgd12/Experimentation.xyl');
-        $this->data->ebgd12->result = '(no result)';
+        $this->data->ebgd12->result  = '(no error)';
+        $this->data->ebgd12->data    = '(no result)';
+        $this->data->ebgd12->verdict = 'none';
+        $this->data->ebgd12->grammar = <<<GRAMMAR
+%skip  space \s
+%token add   \+
+%token sub   \-
+%token mult  \*
+%token numb  [0-9]
+
+root:
+    number() ( ( ::add:: | ::sub:: | ::mult:: ) number() )*
+
+number:
+    <numb>
+GRAMMAR;
         $this->view->interprete();
 
         $form = $this->view->xpath('//__current_ns:*[@id="experimentation"]');
@@ -48,25 +63,37 @@ class Research extends \Hoa\Dispatcher\Kit {
 
         if($form->isValid() && !empty($data)) {
 
-            $grammar  = new \Hoa\StringBuffer\Read();
-            $grammar->initializeWith($data['grammar']);
-            $n        = $data['size'];
-
             try {
 
+                $this->data->ebgd12[0]->grammar[0] = $data['grammar'];
+                $this->data->ebgd12[0]->data[0]    = $data['data'];
+                $grammar  = new \Hoa\StringBuffer\Read();
+                $grammar->initializeWith($data['grammar']);
                 $_grammar = \Hoa\Compiler\Llk::load($grammar);
-                $_meta    = new \Hoa\Compiler\Visitor\Meta(
-                    $_grammar,
-                    new \Hoa\Test\Sampler\Random(),
-                    $n
-                );
-                $this->data->ebgd12[0]->result[0] = $_meta->visit(
-                    $_meta->getRuleAst($_grammar->getRootRule())
-                );
+
+                if(isset($data['sample'])) {
+
+                    $n     = $data['size'];
+                    $_meta = new \Hoa\Compiler\Visitor\Meta(
+                        $_grammar,
+                        new \Hoa\Test\Sampler\Random(),
+                        $n
+                    );
+                    $this->data->ebgd12[0]->data[0] = $_meta->visit(
+                        $_meta->getRuleAst($_grammar->getRootRule())
+                    );
+                }
+                elseif(isset($data['predicate'])) {
+
+                    $_grammar->parse($data['data'], null, false);
+                }
+
+                $this->data->ebgd12[0]->verdict[0] = 'true';
             }
             catch ( \Hoa\Compiler\Exception $e ) {
 
-                $this->data->ebgd12[0]->result[0] = $e->getFormattedMessage();
+                $this->data->ebgd12[0]->verdict[0] = 'false';
+                $this->data->ebgd12[0]->result[0]  = $e->getFormattedMessage();
             }
         }
 

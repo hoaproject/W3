@@ -141,6 +141,7 @@ h4 {
 
 p {
     margin: 1em 0;
+    clear: both;
 }
 
 strong {
@@ -156,7 +157,8 @@ code {
         color: #6695c8;
     }
 
-pre {
+pre,
+.CodeMirror {
     font-size: 1.1em;
     color: #452745;
     margin: auto -8em;
@@ -164,8 +166,8 @@ pre {
     line-height: 1.4em;
     overflow-y: auto;
 
-    box-shadow: inset 0 0 5px #d4c6b0;
-    -moz-box-shadow: inset 0 0 5px #d4c6b0;
+    box-shadow:         inset 0 0 5px #d4c6b0;
+    -moz-box-shadow:    inset 0 0 5px #d4c6b0;
     -webkit-box-shadow: inset 0 0 5px #d4c6b0;
 
     background: #f2ede3 url("../Media/Image/Background_pre.png");
@@ -486,4 +488,83 @@ iframe {
     width: 100%;
     margin: 1em 0;
     border: 0;
+}
+
+.CodeMirror {
+    height: 100%;
+}
+
+    .CodeMirror pre {
+        box-shadow:         none;
+        -moz-box-shadow:    none;
+        -webkit-box-shadow: none;
+        background: transparent;
+    }
+
+    .CodeMirror-scroll {
+        position: relative;
+        left: -4em;
+        margin-right: -5em;
+        height: 100% !important;
+    }
+
+    .CodeMirror-gutter {
+        border: 0 !important;
+        background: transparent !important;
+    }
+
+    .CodeMirror-gutter-text > pre {
+        color: #3b6898 !important;
+    }
+
+    .CodeMirror-lines {
+        padding-left: 2.1em !important;
+    }
+
+    .CodeMirror-focused .CodeMirror-activeline {
+        background: rgba(249, 247, 232, .5) !important;
+    }
+
+    .CodeMirror-cursor {
+        border: #d6c85c solid !important;
+        border-width: 0 0 0 2px !important;
+    }
+
+    .CodeMirror-selected {
+        margin: -1px !important;
+        border: 1px #d6c85c solid !important;
+        background: rgba(214, 200, 92, .1) !important;
+    }
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+input, select {
+    display: inline-block;
+    font: .9em/1.4em Text;
+    margin: -3em 0 0 0;
+    padding: .2em .4em;
+    border: 2px #cdc3d4 solid;
+    background: none;
+}
+
+#experimentation p:first-child {
+    padding: 0 0 1em 0;
+}
+
+#experimentation input[name="size"] {
+    width: 2em;
+}
+
+#experimentation .verdict-true input {
+    border-color: green;
+}
+
+#experimentation .verdict-false input {
+    border-color: red;
 }
