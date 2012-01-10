@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<overlay xmlns="http://hoa-project.net/xyl/xylophone">
+  <article id="content">
+    <h1>Recherche</h1>
+
+    <p>Dans l'ordre chronologique.</p>
+
+    <h2 id="Grammar-based_Testing_using_Realistic_Domains_in_PHP"><em>Grammar-based
+    Testing using Realistic Domains in PHP</em></h2>
+
+    <ul>
+      <li>présentation</li>
+      <li>article</li>
+      <li><a href="@rx:article=EBGD12">expérimentation</a></li>
+    </ul>
+
+    <h2 id="Praspel_A_Specification_Language_for_Contract-Driven_Testing"
+        for="menu-toc"><em>Praspel: A Specification Language for Contract-Driven
+    Testing in PHP</em></h2>
+
+    <p>liste des auteurs, abstract (anglais et français)</p>
+
+    <ul>
+      <li><a href="@dl:file=/Laboratory/Conference/Ictss11.pdf">présentation</a></li>
+      <li>article</li>
+    </ul>
+      <!--
+      <li><a href="@dl:file=Laboratory/Conference/Ictss11.pdf"><em>Praspel:
+      A Specification Language for Contract-Driven Testing in
+      PHP</em></a>, article présenté à la conférence
+      <a href="http://ictss2011.lri.fr/"><em>The 23<sup>rd</sup> IFIP Int.
+      Conference on Testing Software and Systems
+      (ICTSS'11)</em></a> ;</li>
+      <li><a href="@dl:file=Laboratory/MasterThesis/MasterThesis.pdf">Domaines
+      réalistes pour la génération de tests unitaires dirigés par les
+      contrats</a>, mémoire de Master sur Praspel et les domaines
+      réalistes.</li>
+    </ul></p!-->
+  </article>
+</overlay>

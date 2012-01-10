@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xyl-stylesheet href="hoa://Application/Public/Css/Codemirror.css"?>
+
+<overlay xmlns="http://hoa-project.net/xyl/xylophone">
+  <article id="content" bind="?ebgd12">
+    <h1><em>Grammar-based Testing using Realistic Domains in PHP</em></h1>
+
+    <form id="experimentation" action="#" method="POST">
+      <p><select id="selection" name="selection">
+        <option value="basic">Basic</option>
+        <option value="json">JSON (Javascript)</option>
+        <option value="pcre">PCRE (regular expressions)</option>
+      </select></p>
+      <p><textarea id="grammar" name="grammar" class="editor">%skip  space \s
+%token add   \+
+%token sub   \-
+%token mult  \*
+%token numb  [0-9]
+
+root:
+    number() ( ( ::add:: #add | ::sub:: #sub | ::mult:: #mult ) number() ) +
+
+#number:
+    &lt;numb&gt;</textarea></p>
+      <p><label for="size">Size:</label>
+         <input type="text" id="size" name="size" value="9"
+                validate="boundinteger(1, 11)" onerror="error_size" />
+         <error id="error_size">Size should belongs to [1, 11].</error></p>
+      <p><input type="submit" /></p>
+    </form>
+
+    <pre id="result" bind="?result"></pre>
+  </article>
+
+  <document id="document">
+    <script src="/Script/Codemirror.js"></script>
+    <script>
+      var editor = CodeMirror.fromTextArea(document.getElementById('grammar'), {
+        lineNumbers: true
+      });
+
+      var select = document.getElementById('selection');
+
+      select.addEventListener('change', function ( ) {
+
+        var request = new XMLHttpRequest();
+        request.open('POST', '/Research/EBGD12/Experimentation.html', false);
+        request.setRequestHeader('X-Requested-With', 'XMLHttpRequest');
+        var data    = new FormData();
+
+        switch(select.value) {
+
+          case 'basic':
+            editor.setValue(':-)');
+            break;
+
+          case 'json':
+            editor.setValue('X-)');
+            break;
+
+          case 'pcre':
+            data.append('grammar', 'pcre');
+            request.send(data);
+
+            if(200 == request.status)
+              editor.setValue(request.responseText);
+            break;
+        }
+      });
+    </script>
+  </document>
+</overlay>
