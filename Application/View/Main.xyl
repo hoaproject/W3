@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xyl-stylesheet href="hoa://Library/Xyl/Css/Core.css"?>
+<?xyl-stylesheet href="hoa://Application/Public/Css/Core.css"?>
 <?xyl-stylesheet href="hoa://Application/Public/Css/UI.css"?>
 
 <document xmlns="http://hoa-project.net/xyl/xylophone" id="document">
