@@ -12,10 +12,6 @@ from('Hoa')
 -> import('Dispatcher.Basic')
 -> import('Router.Http');
 
-\Hoa\Core::getInstance()->initialize(array(
-    'protocol.Application/Public/Classic' => './'
-));
-
 $dispatcher = new \Hoa\Dispatcher\Basic();
 $router     = new \Hoa\Router\Http();
 $router
@@ -30,7 +26,7 @@ $router
    ->get('c',  '/Contact\.html', 'index', 'contact')
    ->get('g',  '/(?<all>.*)', 'index', 'default')
    // --
-   ->_get('_css', '/Css/(?<sheet>)')
+   ->_get('_resource', '/(?<resource>)')
    ->_get('dl',   'http://download\.hoa-project\.net/(?<file>)')
    ->_get('key',  'http://keynote\.hoa-project\.net/Shells/(?<shell>)\.html#http://keynote\.hoa-project\.net/(?<keynote>)\.html');
 
