@@ -5,7 +5,7 @@
   <article id="content" bind="?ebgd12">
     <h1><em>Grammar-based Testing using Realistic Domains in PHP</em></h1>
 
-    <form id="experimentation" action="#" method="POST">
+    <form id="experimentation" action="#experimentation" method="POST">
       <p><span class="left"><label for="selection" class="left">exemples : </label>
         <select id="selection" name="selection">
           <option value="basic">Basic</option>
