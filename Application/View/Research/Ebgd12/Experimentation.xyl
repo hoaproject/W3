@@ -5,6 +5,8 @@
   <article id="content" bind="?ebgd12">
     <h1><em>Grammar-based Testing using Realistic Domains in PHP</em></h1>
 
+    <h2 id="En_direct" for="menu-toc">En direct</h2>
+
     <form id="experimentation" action="#experimentation" method="POST">
       <p><span class="left"><label for="selection" class="left">exemples : </label>
         <select id="selection" name="selection">
@@ -29,6 +31,10 @@
       <p>Erreurs :</p>
       <pre bind="?result" />
     </form>
+
+    <h2 id="En_ligne_de_commande" for="menu-toc">En ligne de commande</h2>
+
+    <p>Foobar</p>
   </article>
 
   <document id="document">
