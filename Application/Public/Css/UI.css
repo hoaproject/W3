@@ -85,7 +85,7 @@ a {
 
     a:hover code,
     a:active code {
-        color: #efe6f5;
+        color: inherit;
     }
 
 h1, h2, h3, h4, h5, h6 {
@@ -174,7 +174,7 @@ pre,
 }
 
     pre code {
-        color: #452745;
+        color: inherit;
     }
 
     .token-keyword {
