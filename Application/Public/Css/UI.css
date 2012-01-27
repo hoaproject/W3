@@ -402,22 +402,21 @@ pre,
     }
 
     .gcell pre.left, .gcell pre.right {
-        position: relative;
         margin: 0;
-        padding: 1em 0 1em 2em;
+        padding: 0;
+        width: 100%;
+        padding: 1em;
     }
 
     .gcell pre.left {
-        left: -9.3em;
-        margin-right: -9.3em;
+        margin-left: -2em;
 
         border-radius: 0 12px 12px 0;
         -webkit-border-radius: 0 12px 12px 0;
     }
 
     .gcell pre.right {
-        right: -9.3em;
-        margin-left: -9.3em;
+        margin-right: -2em;
 
         border-radius: 12px 0 0 12px;
         -webkit-border-radius: 12px 0 0 12px;
