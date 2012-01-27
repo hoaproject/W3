@@ -14,11 +14,11 @@
       <h1 id="Telechargement" for="menu-toc">Téléchargement</h1>
 
       <ul>
-        <li><a href="@dl:file=Central/Hoa_v-1.0.0b6.7z">.7z</a></li>
-        <li><a href="@dl:file=Central/Hoa_v-1.0.0b6.tar.bz2">.tar.bz2</a></li>
-        <li><a href="@dl:file=Central/Hoa_v-1.0.0b6.tar.gz">.tar.gz</a></li>
-        <li><a href="@dl:file=Central/Hoa_v-1.0.0b6.zip">.zip</a></li>
-        <li><a href="@dl:file=Central/Hoa_v-1.0.0b6.phar">.phar</a></li>
+        <li><a href="@dl:file=Central/Hoa_v-1.0.0b7.7z">.7z</a></li>
+        <li><a href="@dl:file=Central/Hoa_v-1.0.0b7.tar.bz2">.tar.bz2</a></li>
+        <li><a href="@dl:file=Central/Hoa_v-1.0.0b7.tar.gz">.tar.gz</a></li>
+        <li><a href="@dl:file=Central/Hoa_v-1.0.0b7.zip">.zip</a></li>
+        <li><a href="@dl:file=Central/Hoa_v-1.0.0b7.phar">.phar</a></li>
         <li><a href="http://hg.hoa-project.net/Central">hg</a></li>
       </ul>
     </div>
@@ -33,7 +33,7 @@
           (<strong>Hoathis</strong>) pour créer vos propres bibliothèques
           autour de ce même noyau et ainsi assurer la même <strong>qualité</strong>
           que les bibliothèques natives.</p>
-          <pre><code language="php" class="left">from('Hoathis') -> import('MyStream.Write');
+          <pre class="left"><code language="php">from('Hoathis') -> import('MyStream.Write');
 event('hoa://Event/Log/Test/Praspel')->attach(
     new Hoathis\MyStream\Write()
 );</code></pre>
@@ -46,7 +46,7 @@ event('hoa://Event/Log/Test/Praspel')->attach(
           <strong>dépendances</strong>, <strong>importations</strong>,
           <strong>paramétrages</strong>, <strong>chemins abstraits</strong>
           etc.</p>
-          <pre><code language="php" class="right">from('Hoa') -> import('File.Read');
+          <pre class="right"><code language="php">from('Hoa') -> import('File.Read');
 $file = new Hoa\File\Read(
     'hoa://Data/Temporary/Foo.txt'
 );</code></pre>
@@ -91,7 +91,7 @@ $file = new Hoa\File\Read(
           sont développés dans Hoa. On trouve entre autre un
           <strong>générateur automatique de tests unitaires</strong>. Un
           rapport de recherche et des articles ont été publiés.</p>
-          <pre><code class="left">/**
+          <pre class="left"><code>/**
  * @requires  i: even(boundinteger(0, 53)) and
  *            j: array([to boolean()], 7);
  * @ensures   \result: boolean();
