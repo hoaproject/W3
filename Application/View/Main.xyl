@@ -13,7 +13,7 @@
         <li><a href="@g:all=">Accueil</a></li>
         <!--li><a href="#">Téléchargement</a></li-->
         <li><a href="@l">Littérature</a></li>
-        <li><a href="@r">Recherche</a></li>
+        <!--li><a href="@r">Recherche</a></li-->
         <li><a href="@v">Vidéo</a></li>
         <li><a href="http://forum.hoa-project.net/">Communauté</a></li>
         <li><a href="@c">Contact</a></li>
