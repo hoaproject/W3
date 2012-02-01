@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xyl-stylesheet href="hoa://Application/Public/Css/Codemirror.css"?>
+<?xyl-stylesheet href="hoa://Application/Public/Css/Codemirror.css" position="1"?>
 
 <overlay xmlns="http://hoa-project.net/xyl/xylophone">
-  <article id="content" bind="?ebgd12">
+  <article id="content" bind="?edgb12">
     <h1><em>Grammar-based Testing using Realistic Domains in PHP</em></h1>
 
-    <h2 id="En_direct" for="menu-toc">En direct</h2>
+    <h2 id="On_stage" for="menu-toc">On stage</h2>
 
     <form id="experimentation" action="#experimentation" method="POST">
-      <p><span class="left"><label for="selection" class="left">exemples : </label>
+      <p><!--span class="left"><label for="selection" class="left">exemples : </label>
         <select id="selection" name="selection">
           <option value="basic">Basic</option>
           <option value="json">JSON (Javascript)</option>
           <option value="pcre">PCRE (regular expressions)</option>
-        </select></span>
+        </select></span-->
       <span class="right">
-      <label for="size" class="left">taille : </label>
+      <label for="size" class="left">size : </label>
       <input type="text" id="size" name="size" value="9"
              validate="boundinteger(1, 11)" onerror="error_size" />
       <error id="error_size">Size should belongs to [1, 11].</error>
@@ -23,18 +23,14 @@
       <p><textarea id="grammar" name="grammar" class="editor" bind="?grammar" /></p>
 
       <p class="verdict-(?verdict) text-center">
-        <input type="submit" name="sample"    value="générer ⬇" />
-        <input type="submit" name="predicate" value="⬆ valider" />
+        <input type="submit" name="sample"    value="sample ⬇" />
+        <input type="submit" name="predicate" value="⬆ validate" />
       </p>
 
       <p><textarea id="data" name="data" class="editor" bind="?data" /></p>
-      <p>Erreurs :</p>
+      <p>Errors :</p>
       <pre bind="?result" />
     </form>
-
-    <h2 id="En_ligne_de_commande" for="menu-toc">En ligne de commande</h2>
-
-    <p>Foobar</p>
   </article>
 
   <document id="document">
