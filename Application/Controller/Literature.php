@@ -40,6 +40,15 @@ class Literature extends \Hoa\Dispatcher\Kit {
 
         return;
     }
+
+    public function PopcodeAction ( $code ) {
+
+        $this->view->addUse('hoa://Application/External/Literature/Popcode/' .  ucfirst($code) . '.xyl');
+        $this->view->addOverlay('hoa://Application/View/Literature/Popcode.xyl');
+        $this->view->render();
+
+        return;
+    }
 }
 
 }

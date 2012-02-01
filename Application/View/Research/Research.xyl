@@ -12,7 +12,7 @@
     <ul>
       <li>présentation</li>
       <li>article</li>
-      <li><a href="@rx:article=EBGD12">expérimentation</a></li>
+      <li><a href="@rx:article=EDGB12">expérimentation</a></li>
     </ul>
 
     <h2 id="Praspel_A_Specification_Language_for_Contract-Driven_Testing"

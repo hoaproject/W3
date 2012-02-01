@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xyl-stylesheet href="hoa://Application/Public/Css/Core.css"?>
-<?xyl-stylesheet href="hoa://Application/Public/Css/UI.css"?>
+<?xyl-stylesheet href="hoa://Application/Public/Css/Core.css" position="10"?>
+<?xyl-stylesheet href="hoa://Application/Public/Css/UI.css" position="last()"?>
 
 <document xmlns="http://hoa-project.net/xyl/xylophone" id="document">
   <title>Hoa, un ensemble de bibliothèques PHP</title>

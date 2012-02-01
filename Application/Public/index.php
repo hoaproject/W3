@@ -19,6 +19,7 @@ $router
    ->get('lt', '/Literature/Mini-tutorial\.html', 'literature', 'minitutorial')
    ->get('ll', '/Literature/Learn/(?<chapter>\w+)\.html', 'literature', 'learn')
    ->get('lk', '/Literature/Keynote/(?<keynote>\w+)\.html', 'literature', 'keynote')
+   ->get('lp', '/Literature/Popcode/(?<code>\w+)\.html', 'literature', 'popcode')
    ->get('r',  '/Research\.html', 'research', 'default')
    ->get_post('rx', '/Research/(?<article>\w+)/Experimentation\.html', 'research', 'experimentation')
    ->get('v',  '/Video\.html', 'video', 'default')

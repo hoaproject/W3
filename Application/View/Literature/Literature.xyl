@@ -16,7 +16,8 @@
 
     <p>Ce mini-tutoriel est dédié aux personnes <strong>impatientes</strong> qui
     veulent avoir un aperçu de Hoa en quelques minutes, notamment sur l'aspect
-    framework : <a href="@lt">lire le mini-tutoriel</a>.</p>
+    framework : <!--a href="@lt">lire le mini-tutoriel</a-->(temporairement
+    fermé).</p>
 
     <h2 id="Manuel_d-apprentissage" for="menu-toc">Manuel d'apprentissage</h2>
 

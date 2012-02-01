@@ -504,35 +504,35 @@ iframe {
         position: relative;
         left: -4em;
         margin-right: -5em;
-        height: 100% !important;
+        height: 100%;
     }
 
     .CodeMirror-gutter {
-        border: 0 !important;
-        background: transparent !important;
+        border: 0;
+        background: transparent;
     }
 
     .CodeMirror-gutter-text > pre {
-        color: #3b6898 !important;
+        color: #3b6898;
     }
 
     .CodeMirror-lines {
-        padding-left: 2.1em !important;
+        padding-left: 2.1em;
     }
 
     .CodeMirror-focused .CodeMirror-activeline {
-        background: rgba(249, 247, 232, .5) !important;
+        background: rgba(249, 247, 232, .5);
     }
 
     .CodeMirror-cursor {
-        border: #d6c85c solid !important;
-        border-width: 0 0 0 2px !important;
+        border: #d6c85c solid;
+        border-width: 0 0 0 2px;
     }
 
     .CodeMirror-selected {
-        margin: -1px !important;
-        border: 1px #d6c85c solid !important;
-        background: rgba(214, 200, 92, .1) !important;
+        margin: -1px;
+        border: 1px #d6c85c solid;
+        background: rgba(214, 200, 92, .1);
     }
 
 .left {

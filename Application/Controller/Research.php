@@ -5,7 +5,7 @@ namespace {
 from('Hoa')
 -> import('StringBuffer.Read')
 -> import('Compiler.Llk')
--> import('Compiler.Visitor.Meta')
+-> import('Compiler.Visitor.Uniform')
 -> import('Test.Sampler.Random');
 
 }
@@ -24,25 +24,25 @@ class Research extends \Hoa\Dispatcher\Kit {
 
     public function ExperimentationAction ( $article ) {
 
-        $this->ebgd12Xp();
+        $this->edgb12Xp();
 
         return;
     }
 
     public function ExperimentationActionAsync ( $article ) {
 
-        $this->ebgd12XpAsync();
+        $this->edgb12XpAsync();
 
         return;
     }
 
-    public function ebgd12Xp ( ) {
+    public function edgb12Xp ( ) {
 
-        $this->view->addOverlay('hoa://Application/View/Research/Ebgd12/Experimentation.xyl');
-        $this->data->ebgd12->result  = '(no error)';
-        $this->data->ebgd12->data    = '(no result)';
-        $this->data->ebgd12->verdict = 'none';
-        $this->data->ebgd12->grammar = <<<GRAMMAR
+        $this->view->addOverlay('hoa://Application/View/Research/Edgb12/Experimentation.xyl');
+        $this->data->edgb12->result  = '(no error)';
+        $this->data->edgb12->data    = '(no result)';
+        $this->data->edgb12->verdict = 'none';
+        $this->data->edgb12->grammar = <<<GRAMMAR
 %skip  space \s
 %token add   \+
 %token sub   \-
@@ -65,22 +65,21 @@ GRAMMAR;
 
             try {
 
-                $this->data->ebgd12[0]->grammar[0] = $data['grammar'];
-                $this->data->ebgd12[0]->data[0]    = $data['data'];
+                $this->data->edgb12[0]->grammar[0] = $data['grammar'];
+                $this->data->edgb12[0]->data[0]    = $data['data'];
                 $grammar  = new \Hoa\StringBuffer\Read();
                 $grammar->initializeWith($data['grammar']);
                 $_grammar = \Hoa\Compiler\Llk::load($grammar);
 
                 if(isset($data['sample'])) {
 
-                    $n     = $data['size'];
-                    $_meta = new \Hoa\Compiler\Visitor\Meta(
+                    $_sampler = new \Hoa\Compiler\Visitor\Uniform(
                         $_grammar,
-                        new \Hoa\Test\Sampler\Random(),
-                        $n
+                        null,
+                        $data['size']
                     );
-                    $this->data->ebgd12[0]->data[0] = $_meta->visit(
-                        $_meta->getRuleAst($_grammar->getRootRule())
+                    $this->data->edgb12[0]->data[0] = $_sampler->visit(
+                        $_sampler->getRootRule()
                     );
                 }
                 elseif(isset($data['predicate'])) {
@@ -88,12 +87,12 @@ GRAMMAR;
                     $_grammar->parse($data['data'], null, false);
                 }
 
-                $this->data->ebgd12[0]->verdict[0] = 'true';
+                $this->data->edgb12[0]->verdict[0] = 'true';
             }
             catch ( \Hoa\Compiler\Exception $e ) {
 
-                $this->data->ebgd12[0]->verdict[0] = 'false';
-                $this->data->ebgd12[0]->result[0]  = $e->getFormattedMessage();
+                $this->data->edgb12[0]->verdict[0] = 'false';
+                $this->data->edgb12[0]->result[0]  = $e->getFormattedMessage();
             }
         }
 
@@ -102,7 +101,7 @@ GRAMMAR;
         return;
     }
 
-    public function ebgd12XpAsync ( ) {
+    public function edgb12XpAsync ( ) {
 
         $rule      = $this->router->getTheRule();
         $variables = $rule[\Hoa\Router\Http::RULE_VARIABLES];
