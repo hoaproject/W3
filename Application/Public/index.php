@@ -30,6 +30,7 @@ $router
    // --
    ->_get('_resource', '/(?<resource>)')
    ->_get('dl',   'http://download\.hoa-project\.net/(?<file>)')
+   ->_get('key.', 'http://keynote\.hoa-project\.net/(?<keynote>)')
    ->_get('key',  'http://keynote\.hoa-project\.net/Shells/(?<shell>)\.html#http://keynote\.hoa-project\.net/(?<keynote>)\.html');
 
 $xyl        = new \Hoa\Xyl(
