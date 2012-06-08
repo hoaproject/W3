@@ -14,21 +14,23 @@
 
     <h2 id="Mini-tutoriel" for="menu-toc">Mini-tutoriel</h2>
 
-    <p>Ce mini-tutoriel est dédié aux personnes <strong>impatientes</strong> qui
+    <p>Le mini-tutoriel est dédié aux personnes <strong>impatientes</strong> qui
     veulent avoir un aperçu de Hoa en quelques minutes, notamment sur l'aspect
-    framework : <!--a href="@lt">lire le mini-tutoriel</a-->(temporairement
-    fermé).</p>
+    <strong>framework</strong> : <a href="@lt">lire le mini-tutoriel</a>. Ce
+    mini-tutoriel reprend le manuel d'apprentissage mais dans un format plus
+    compressé.</p>
 
     <h2 id="Manuel_d-apprentissage" for="menu-toc">Manuel d'apprentissage</h2>
 
-    <p>Ce manuel est dédié à l'<strong>apprentissage</strong> de Hoa, pas à pas,
-    à travers une série de <strong>tutoriels</strong> et
-    d'<strong>exemples</strong>. Les bibliothèques sont expliquées dans un ordre
-    pédagogique et ne sont pas forcément expliquées dans les moindres détails.
-    L'objectif est de se mettre le pied à l'étrier, de commencer à produire des
-    résultats <strong>concrets</strong>. Ce manuel a également pour objectif de
-    faire un tour d'horizon des bibliothèques les plus importantes de Hoa pour
-    savoir quoi approfondir avec le manuel de référence.</p>
+    <p>Le manuel d'apprentissage est dédié à l'<strong>apprentissage</strong> de
+    Hoa, pas à pas, à travers un exemple <strong>fil rouge</strong> et de
+    nombreux <strong>exemples</strong>. Les bibliothèques sont expliquées dans
+    un ordre pédagogique et ne sont pas forcément expliquées dans les moindres
+    détails.  L'objectif est de se mettre le pied à l'étrier, de commencer à
+    produire des résultats <strong>concrets</strong>. Ce manuel a également pour
+    objectif de faire un tour d'horizon des bibliothèques les plus importantes
+    de Hoa pour savoir quoi approfondir avec le <em lang="en">hack
+    book</em>.</p>
     <tableofcontents>
       <a href="@ll:chapter=Introduction">Introduction</a>
       <a href="@ll:chapter=Discover">À la découverte de Hoa</a>
@@ -45,33 +47,59 @@
       nommage</a>
     </tableofcontents>
 
-    <h2 id="Manuel_de_reference" for="menu-toc">Manuel de référence</h2>
+    <h2 id="Hack_book" for="menu-toc"><em lang="en">Hack book</em></h2>
 
-    <p>Ce manuel est dit de référence car il propose des explications
-    <strong>très détaillées</strong> de toutes les bibliothèques. L'ordre de
-    présentation des bibliothèque est alphabétique, <em>a contrario</em> du
-    manuel d'apprentissage. Les explications relatives à chaque bibliothèque
-    peuvent prendre différentes formes : leçons, tutoriels, descriptions etc.
-    L'objectif étant d'<strong>approfondir</strong> au maximum les solutions que
-    les bibliothèques proposent. Enfin, les annexes ne concernent pas
-    nécessairement Hoa mais peuvent être utiles pour comprendre et manipuler des
-    outils, des protocoles, des architectures etc.</p>
+    <p>Le <em lang="en">hack book</em> contient des explications (très)
+    <strong>détaillées</strong> sur toutes les bibliothèques de Hoa. Les parties
+    sont non-ordonnées. Toutes les bibliothèques n'auront plus aucun secret pour
+    vous et ainsi vous pourrez les <strong>bidouiller</strong> !</p>
+    <ul>
+      <li><a href="@lh:chapter=Core">Core</a> :
+        <ul>
+          <li><a href="@lh:chapter=Consistency">Consistency</a> ;</li>
+          <li><a href="@lh:chapter=Protocol">Protocol</a>.</li>
+        </ul>
+      </li>
+      <li><a href="@lh:chapter=Bench">Bench</a> ;</li>
+      <li><a href="@lh:chapter=Compiler">Compiler</a> ;</li>
+      <li><a href="@lh:chapter=Dns">Dns</a> ;</li>
+      <li><a href="@lh:chapter=FastCgi">FastCgi</a> ;</li>
+      <li><a href="@lh:chapter=Http">Http</a> ;</li>
+      <li><a href="@lh:chapter=Router">Router</a> ;</li>
+      <li><a href="@lh:chapter=Websocket">Websocket</a> ;</li>
+      <li><a href="@lh:chapter=Worker">Worker</a> ;</li>
+      <li><a href="@lh:chapter=Zombie">Zombie</a>.</li>
+      <li><a href="@lh:chapter=Ghost"> </a>.</li>
+    </ul>
 
     <h2 id="Documentation_API" for="menu-toc">Documentation API</h2>
 
     <p>Cette documentation est dite de <strong>bas-niveau</strong>,
     <em>i.e.</em> au niveau du code. Elle permet d'explorer le code, de suivre
-    la trace des méthodes, des classes etc. Elle permet de prendre du recul sur
-    le code et de mieux voir comment il s'articule et tout ce qui entre en
-    jeu.</p>
+    la trace des méthodes, des classes etc.</p>
 
     <h2 id="Presentations" for="menu-toc">Présentations</h2>
 
+    <p>Les présentations industrielles :</p>
     <ul>
-      <li><a href="@lk:keynote=PHPTour11">Hoa, un ensemble de
-      bibliothèques</a>, présentée au
-      <a href="http://afup.org/pages/phptourlille2011/">PHPTour 2011 à
-      Lille</a> ;</li>
+      <li><a href="@key.:keynote=ForumPHP12/"><cite>Anatomie du test</cite></a>, présentée au
+      <a href="http://afup.org/pages/forumphp2012/">ForumPHP 2012</a> à Paris
+      (France) ;</li>
+      <li><a href="@lk:keynote=PHPTour11"><cite>Hoa, un ensemble de
+      bibliothèques</cite></a>, présentée au
+      <a href="http://afup.org/pages/phptourlille2011/">PHPTour 2011</a> à Lille
+      (France).</li>
+    </ul>
+    <p>Les présentations scientifiques :</p>
+    <ul>
+      <li><a href="@key.:keynote=Amost12/EDGB12.pdf"><cite lang="en">Grammar-Based
+      Testing using Realistic Domains in PHP</cite></a>, présentée à
+      <a href="https://sites.google.com/site/amost2012/">A-MOST 2012</a> à
+      Montréal (Canada) ;</li>
+      <li><a href="@key.:keynote=Ictss11/EDGB11.pdf"><cite lang="en">Praspel: A
+      Specification Language for Contract-Driven Testing in PHP</cite></a>,
+      présentée ) <a href="http://ictss2011.lri.fr/">ICTSS 2011</a> à Paris
+      (France).</li>
     </ul>
   </article>
 </overlay>
