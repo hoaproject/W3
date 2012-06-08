@@ -31,6 +31,15 @@ class Literature extends \Hoa\Dispatcher\Kit {
         return;
     }
 
+    public function HackAction ( $chapter ) {
+
+        $this->view->addUse('hoa://Application/External/Literature/Hack/' . ucfirst($chapter) . '.xyl');
+        $this->view->addOverlay('hoa://Application/View/Literature/Learn.xyl');
+        $this->view->render();
+
+        return;
+    }
+
     public function KeynoteAction ( $keynote ) {
 
         $this->data->keynote[0]->id    = 'PHPTour11';

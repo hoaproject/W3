@@ -18,6 +18,7 @@ $router
    ->get('l',  '/Literature\.html', 'literature', 'default')
    ->get('lt', '/Literature/Mini-tutorial\.html', 'literature', 'minitutorial')
    ->get('ll', '/Literature/Learn/(?<chapter>\w+)\.html', 'literature', 'learn')
+   ->get('lh', '/Literature/Hack/(?<chapter>\w+)\.html', 'literature', 'hack')
    ->get('lk', '/Literature/Keynote/(?<keynote>\w+)\.html', 'literature', 'keynote')
    ->get('lp', '/Literature/Popcode/(?<code>\w+)\.html', 'literature', 'popcode')
    ->get('r',  '/Research\.html', 'research', 'default')
