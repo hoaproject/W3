@@ -23,14 +23,14 @@
     <h2 id="Manuel_d-apprentissage" for="menu-toc">Manuel d'apprentissage</h2>
 
     <p>Le manuel d'apprentissage est dédié à l'<strong>apprentissage</strong> de
-    Hoa, pas à pas, à travers un exemple <strong>fil rouge</strong> et de
-    nombreux <strong>exemples</strong>. Les bibliothèques sont expliquées dans
-    un ordre pédagogique et ne sont pas forcément expliquées dans les moindres
-    détails.  L'objectif est de se mettre le pied à l'étrier, de commencer à
-    produire des résultats <strong>concrets</strong>. Ce manuel a également pour
-    objectif de faire un tour d'horizon des bibliothèques les plus importantes
-    de Hoa pour savoir quoi approfondir avec le <em lang="en">hack
-    book</em>.</p>
+    Hoa, pas à pas, à travers un exemple <strong>fil rouge</strong> ainsi que de
+    nombreux autres petits <strong>exemples</strong>, <strong>schémas</strong>
+    etc. Les bibliothèques sont expliquées dans un ordre pédagogique et pas
+    forcément dans les moindres détails. L'objectif est de se mettre le pied à
+    l'étrier, de commencer à produire des résultats <strong>concrets</strong>.
+    Ce manuel a également pour objectif de faire un tour d'horizon des
+    bibliothèques les plus importantes de Hoa pour savoir quoi approfondir par
+    la suite avec le <em lang="en">hack book</em>.</p>
     <tableofcontents>
       <a href="@ll:chapter=Introduction">Introduction</a>
       <a href="@ll:chapter=Discover">À la découverte de Hoa</a>
