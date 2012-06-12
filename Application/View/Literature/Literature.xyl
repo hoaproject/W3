@@ -49,26 +49,26 @@
     <h2 id="Hack_book" for="menu-toc"><em lang="en">Hack book</em></h2>
 
     <p>Le <em lang="en">hack book</em> contient des explications (très)
-    <strong>détaillées</strong> sur toutes les bibliothèques de Hoa. Les parties
-    sont non-ordonnées. Toutes les bibliothèques n'auront plus aucun secret pour
-    vous et ainsi vous pourrez les <strong>bidouiller</strong> !</p>
+    <strong>détaillées</strong> sur toutes les bibliothèques de Hoa. Les
+    chapitres sont non-ordonnées. Toutes les bibliothèques n'auront plus aucun
+    secret pour vous et ainsi vous pourrez les <strong>bidouiller</strong> !</p>
     <ul>
-      <li><a href="@lh:chapter=Core">Core</a> :
+      <li><a href="@lh:chapter=Core"><code>Core</code></a> :
         <ul>
-          <li><a href="@lh:chapter=Consistency">Consistency</a> ;</li>
-          <li><a href="@lh:chapter=Protocol">Protocol</a>.</li>
+          <li><a href="@lh:chapter=Consistency"><code>Consistency</code></a> ;</li>
+          <li><a href="@lh:chapter=Protocol"><code>Protocol</code></a>.</li>
         </ul>
       </li>
-      <li><a href="@lh:chapter=Bench">Bench</a> ;</li>
-      <li><a href="@lh:chapter=Compiler">Compiler</a> ;</li>
-      <li><a href="@lh:chapter=Dns">Dns</a> ;</li>
-      <li><a href="@lh:chapter=FastCgi">FastCgi</a> ;</li>
-      <li><a href="@lh:chapter=Http">Http</a> ;</li>
-      <li><a href="@lh:chapter=Router">Router</a> ;</li>
-      <li><a href="@lh:chapter=Websocket">Websocket</a> ;</li>
-      <li><a href="@lh:chapter=Worker">Worker</a> ;</li>
-      <li><a href="@lh:chapter=Zombie">Zombie</a>.</li>
-      <li><a href="@lh:chapter=Ghost"> </a>.</li>
+      <li><a href="@lh:chapter=Bench"><code>Bench</code></a> ;</li>
+      <li><a href="@lh:chapter=Compiler"><code>Compiler</code></a> ;</li>
+      <li><a href="@lh:chapter=Dns"><code>Dns</code></a> ;</li>
+      <li><a href="@lh:chapter=FastCgi"><code>FastCgi</code></a> ;</li>
+      <li><a href="@lh:chapter=Http"><code>Http</code></a> ;</li>
+      <li><a href="@lh:chapter=Router"><code>Router</code></a> ;</li>
+      <li><a href="@lh:chapter=Websocket"><code>Websocket</code></a> ;</li>
+      <li><a href="@lh:chapter=Worker"><code>Worker</code></a> ;</li>
+      <li><a href="@lh:chapter=Zombie"><code>Zombie</code></a> ;</li>
+      <li><a href="@lh:chapter=Ghost"><code> </code></a>.</li>
     </ul>
 
     <h2 id="Documentation_API" for="menu-toc">Documentation API</h2>
