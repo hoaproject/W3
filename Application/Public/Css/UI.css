@@ -157,21 +157,23 @@ code {
         color: #6695c8;
     }
 
+div.verbatim,
 pre,
 .CodeMirror {
     font-size: 1.1em;
     color: #452745;
     margin: auto -8em;
     padding: 1em 9em;
-    line-height: 1.4em;
-    overflow-y: auto;
-
-    box-shadow:         inset 0 0 5px #d4c6b0;
-    -moz-box-shadow:    inset 0 0 5px #d4c6b0;
-    -webkit-box-shadow: inset 0 0 5px #d4c6b0;
-
-    background: #f2ede3 url("../Media/Image/Background_pre.png");
 }
+
+    pre,
+    .CodeMirror {
+        overflow-y: auto;
+        line-height: 1.4em;
+        box-shadow:         inset 0 0 5px #d4c6b0;
+        -webkit-box-shadow: inset 0 0 5px #d4c6b0;
+        background: #f2ede3 url("../Media/Image/Background_pre.png");
+    }
 
     pre code {
         color: inherit;
@@ -194,7 +196,7 @@ pre,
     }
 
 #floatmenu {
-    z-index: 1;
+    z-index: 42;
     position: fixed;
     top: 1em;
     right: 2em;
@@ -228,7 +230,7 @@ pre,
     }
 
 #menu {
-    z-index: 1;
+    z-index: 42;
     position: fixed;
     top: 9.5em;
     right: -100%; /* emulate pointer-events: none; */
@@ -567,3 +569,128 @@ input, select {
 #experimentation .verdict-false input {
     border-color: red;
 }
+
+[data-checkpoint].sticky {
+    position: relative;
+    margin-top: 1em;
+}
+
+.schema {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: auto;
+    z-index: 41;
+}
+
+.schema > div {
+    margin: 0 auto 0 50%;
+}
+
+.schema > div > svg {
+    margin-left: -50%;
+}
+
+    [data-checkpoint].sticky.floatting .schema {
+        position: fixed;
+        background: rgba(249, 248, 247, .9);
+        background: url('../Media/Image/Schema_background.png') repeat-x bottom left;
+    }
+
+    [data-checkpoint].sticky.border .schema {
+        top: auto;
+        bottom: 0;
+        background: url('../Media/Image/Schema_background.png') repeat-x bottom left;
+    }
+
+/*
+.schema svg rect {
+    stroke-linejoin: round;
+    stroke-linecap: round;
+}
+
+.schema svg rect.box {
+    fill: url('UI.svg#boxFill');
+    stroke: #fff;
+    stroke-width: 2px;
+    filter: url('UI.svg#shadow')
+}
+
+.schema svg rect.group {
+    fill: none;
+    stroke: #000;
+    stroke-width: 1px;
+}
+
+.schema svg path {
+    stroke: #000;
+    stroke-linejoin: round;
+}
+
+    .schema svg path.link {
+        stroke-width: 1px;
+        marker-end: url('UI.svg#arrow');
+    }
+
+.schema svg text {
+    fill: #341d44;
+    text-anchor: middle !important;
+    dominant-baseline: middle;
+}
+
+    .schema svg text.start {
+        dominant-baseline: start !important;
+    }
+
+    .schema svg text.end {
+        dominant-baseline: end !important;
+    }
+
+.schema svg text tspan {
+    font: 1em/1.4em Text;
+}
+
+    .schema svg text.link {
+        fill: #f18d05;
+    }
+
+    .schema svg rect.text {
+        fill: rgba(249, 248, 247, .8);
+        stroke: none;
+    }
+
+    .schema svg text.in-box {
+        fill: #ffffbe;
+    }
+
+    .schema svg text.in-box tspan {
+        text-shadow: #000 1px 1px;
+    }
+
+.schema svg path.arrow {
+    fill: #000;
+    stroke-width: 3px;
+}
+
+.schema svg text {
+    font-size: 13pt !important;
+}
+
+.schema svg.step-by-step path,
+.schema svg.step-by-step rect,
+.schema svg.step-by-step circle,
+.schema svg.step-by-step ellipse,
+.schema svg.step-by-step polyline,
+.schema svg.step-by-step polygon,
+.schema svg.step-by-step text,
+.schema svg.step-by-step tspan,
+.schema svg.step-by-step tref,
+.schema svg.step-by-step textPath {
+    -moz-transition: stroke-width .3s ease;
+}
+
+.schema svg.step-by-step rect[aria-selected],
+.schema svg.step-by-step path[aria-selected] {
+}
+*/
