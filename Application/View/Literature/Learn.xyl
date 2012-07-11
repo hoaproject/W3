@@ -3,5 +3,7 @@
 <overlay xmlns="http://hoa-project.net/xyl/xylophone">
   <article id="content">
     <chapter />
+    <script src="hoa://Application/Public/Javascript/Hoa.Graph.js"></script>
+    <script src="hoa://Application/Public/Javascript/Hoa.Graph.style.js"></script>
   </article>
 </overlay>
