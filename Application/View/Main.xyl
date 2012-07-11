@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xyl-stylesheet href="hoa://Application/Public/Css/Core.css" position="10"?>
+<?xyl-stylesheet href="hoa://Library/Xyl/Css/Core.css" position="10"?>
 <?xyl-stylesheet href="hoa://Application/Public/Css/UI.css" position="last()"?>
 
 <document xmlns="http://hoa-project.net/xyl/xylophone" id="document">
@@ -33,6 +33,7 @@
     <p>Hoa est la création de Ivan Enderlin, tous droits réservés.</p>
   </footer>
 
+  <script src="hoa://Library/Xyl/Javascript/Hoa.js"></script>
   <script>
     function menu ( ) {
 
