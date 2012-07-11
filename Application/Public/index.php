@@ -39,6 +39,7 @@ $xyl        = new \Hoa\Xyl(
     new \Hoa\Xyl\Interpreter\Html(),
     $router
 );
+$xyl->setTheme('');
 
 try {
 
