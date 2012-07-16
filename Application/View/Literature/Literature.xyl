@@ -62,7 +62,7 @@
       <li><a href="@lh:chapter=Bench"><code>Bench</code></a> ;</li>
       <li><a href="@lh:chapter=Compiler"><code>Compiler</code></a> ;</li>
       <li><a href="@lh:chapter=Dns"><code>Dns</code></a> ;</li>
-      <li><a href="@lh:chapter=FastCgi"><code>FastCgi</code></a> ;</li>
+      <li><a href="@lh:chapter=Fastcgi"><code>FastCgi</code></a> ;</li>
       <li><a href="@lh:chapter=Http"><code>Http</code></a> ;</li>
       <li><a href="@lh:chapter=Router"><code>Router</code></a> ;</li>
       <li><a href="@lh:chapter=Websocket"><code>Websocket</code></a> ;</li>
