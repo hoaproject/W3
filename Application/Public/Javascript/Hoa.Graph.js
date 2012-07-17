@@ -137,6 +137,19 @@ Hoa.Graph = (Hoa.Graph || function ( __document__, __width__, __height__ ) {
         return group;
     };
 
+    this.circle = function ( cx, cy, r ) {
+
+        var circle = new Element('circle');
+        circle.attr({
+            cx: cx,
+            cy: cy,
+            r : r || 10
+        });
+        svg.append(circle);
+
+        return circle;
+    };
+
     this.text = function ( x, y, text ) {
 
         var text_ = new Element('text');
@@ -202,7 +215,7 @@ Hoa.Graph = (Hoa.Graph || function ( __document__, __width__, __height__ ) {
                     if(undefined === iy)
                         position = ix || null;
                     else if(undefined !== ix)
-                        position = ix * columns + iy;
+                        position = iy * columns + ix;
 
                     if(null === position)
                         position = lastPosition + 1;
@@ -228,26 +241,38 @@ Hoa.Graph = (Hoa.Graph || function ( __document__, __width__, __height__ ) {
 
             var fromBbox = from.getBBox();
             var toBbox   = to.getBBox();
-
-            var fx  = fromBbox.x;
-            var fy  = fromBbox.y;
-            var fw  = fromBbox.width;
-            var fh  = fromBbox.height;
-            var tx  = toBbox.x;
-            var fw2 = fw / 2;
-            var fh2 = fh / 2;
-            var ax  = fx + fw2;
-            var by  = toBbox.y + toBbox.height / 2;
-            var cx  = tx       + toBbox.width  / 2;
-            var cy  = fy + fh2;
-            var d   = fw2 / (cx - ax) * (cy - by);
+            var fx       = fromBbox.x;
+            var fy       = fromBbox.y;
+            var fw       = fromBbox.width;
+            var fh       = fromBbox.height;
+            var tx       = toBbox.x;
+            var tw       = toBbox.width;
+            var fw2      = fw / 2;
+            var fh2      = fh / 2;
+            var ax       = fx + fw2;
+            var by       = toBbox.y + toBbox.height / 2;
+            var cx       = tx       + tw            / 2;
+            var cy       = fy + fh2;
+            var d        = fw2 / (cx - ax) * (cy - by);
 
             var points = {
-                fromX: fx + fw,
-                fromY: (fy + fh / 2) - d,
-                toX  : tx,
-                toY  : by + d
+                fromX  : fx + fw,
+                fromY  : (fy + fh / 2) - d,
+                toX    : tx,
+                toY    : by + d,
+                markerX: 1
             };
+
+            if(points.fromX > points.toX) {
+
+                var dd          = d * 2;
+                points.fromX   -= fw;
+                points.fromY   += dd;
+                points.toX     += tw;
+                points.toY     -= dd;
+                points.markerX  = -1;
+            }
+
             points.fromCX = points.toX - (points.toX - points.fromX) / 2;
             points.fromCY = points.fromY;
             points.toCX   = points.fromCX;
@@ -275,10 +300,11 @@ Hoa.Graph = (Hoa.Graph || function ( __document__, __width__, __height__ ) {
 
                     var points = compute(from, to);
                     line.attr({
-                        d: 'M ' + points.fromX     + ',' + points.fromY  +
-                           ' C' + points.fromCX    + ',' + points.fromCY +
-                           ' '  + points.toCX      + ',' + points.toCY   +
-                           ' '  + (points.toX - 8) + ',' + points.toY
+                        d: 'M ' + points.fromX  + ',' + points.fromY  +
+                           ' C' + points.fromCX + ',' + points.fromCY +
+                           ' '  + points.toCX   + ',' + points.toCY   +
+                           ' '  + (points.toX - 8 * points.markerX)
+                                                + ',' + points.toY
                     });
 
                     if(null !== textBox)
