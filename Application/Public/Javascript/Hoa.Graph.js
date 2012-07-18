@@ -52,35 +52,30 @@ Hoa.Graph = (Hoa.Graph || function ( __document__, __width__, __height__ ) {
             if(null === translate)
                 return bbox;
 
-            var out = {
+            return {
                 height: bbox.height,
                 width : bbox.width,
                 x     : bbox.x + translate.x,
                 y     : bbox.y + translate.y
             };
-
-            return out;
         };
 
         this.move = function ( x, y ) {
 
-            if('path' === that.type) {
-
-                that.attr({transform: 'translate(' + x + ', ' + y + ')'});
-                translate = {x: x, y: y};
-
-                return that;
-            }
-
+            var dx   = null;
+            var dy   = null;
             var bbox = that.getBBox();
-            var sign = null;
+            var type = that.type;
 
             if('string' === typeof x) {
 
                 sign = x.charAt(0);
 
-                if('+' === sign || '-' === sign)
-                    x = bbox.x + parseInt(x);
+                if('+' === sign || '-' === sign) {
+
+                    dx = parseInt(x);
+                    x  = bbox.x + dx;
+                }
                 else
                     x = parseInt(x);
             }
@@ -89,22 +84,54 @@ Hoa.Graph = (Hoa.Graph || function ( __document__, __width__, __height__ ) {
 
                 sign = y.charAt(0);
 
-                if('+' === sign || '-' === sign)
-                    y = bbox.y + parseInt(y);
+                if('+' === sign || '-' === sign) {
+
+                    dy = parseInt(y);
+                    y  = bbox.y + dy;
+                }
                 else
                     y = parseInt(y);
             }
 
-            if('g' === that.type) {
+            if('g' === type || 'path' === type) {
 
-                that.attr({transform: 'translate(' + x + ', ' + y + ')'});
-                translate = {x: x, y: y};
+                if(null === dx)
+                    dx = x - bbox.x;
+
+                if(null === dy)
+                    dy = y - bbox.y;
+
+                if(null === translate)
+                    translate = {x: dx, y: dy};
+                else {
+
+                    translate.x += dx;
+                    translate.y += dy;
+                }
+
+                that.attr({
+                    transform: 'translate(' +
+                        translate.x + ', ' +
+                        translate.y +
+                    ')'
+                });
+
+                return that;
             }
-            else
-                that.attr({x: x, y: y});
+
+            if('text' === type) {
+
+                if(null !== dx)
+                    x += dx + bbox.width / 2;
+
+                if(null !== dy)
+                    y += dy + bbox.height / 2;
+            }
+
+            that.attr({x: x, y: y});
 
             return that;
-        }
+        };
 
         return this;
     };
