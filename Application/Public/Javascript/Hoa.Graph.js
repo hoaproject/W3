@@ -326,7 +326,10 @@ Hoa.Graph = (Hoa.Graph || function ( __document__, __width__, __height__ ) {
 
             if(undefined !== text)
                 textBox = paper.text(0, 0, text)
-                               .attr({fill: '#f18d05'})
+                               .attr({
+                                   fill: '#f18d05',
+                                   'font-size': '80%'
+                               })
 
             var out     = {};
             out.element = link;
