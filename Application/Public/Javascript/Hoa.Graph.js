@@ -64,6 +64,14 @@ Hoa.Graph = (Hoa.Graph || function ( __document__, __width__, __height__ ) {
 
         this.move = function ( x, y ) {
 
+            if('path' === that.type) {
+
+                that.attr({transform: 'translate(' + x + ', ' + y + ')'});
+                translate = {x: x, y: y};
+
+                return that;
+            }
+
             var bbox = that.getBBox();
             var sign = null;
 
@@ -89,11 +97,13 @@ Hoa.Graph = (Hoa.Graph || function ( __document__, __width__, __height__ ) {
 
             if('g' === that.type) {
 
-                that.attr({transform: 'translate(' + x + ', ' + y +')'});
+                that.attr({transform: 'translate(' + x + ', ' + y + ')'});
                 translate = {x: x, y: y};
             }
             else
                 that.attr({x: x, y: y});
+
+            return that;
         }
 
         return this;
