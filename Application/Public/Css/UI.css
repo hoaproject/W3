@@ -158,6 +158,7 @@ code {
     }
 
 blockquote {
+    pointer-events: none;
     position: relative;
     padding: 1.5em 3em;
     border-radius: 3px;
