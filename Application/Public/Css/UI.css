@@ -157,6 +157,24 @@ code {
         color: #6695c8;
     }
 
+blockquote {
+    position: relative;
+    padding: 1.5em 3em;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    background: #f2ede3;
+}
+
+    blockquote::before {
+        content: "“";
+        position: absolute;
+        font-family: Section;
+        opacity: .1;
+        top: 60px;
+        left: -40px;
+        font-size: 1000%;
+    }
+
 div.verbatim,
 pre,
 .CodeMirror {
