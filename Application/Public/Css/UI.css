@@ -169,8 +169,8 @@ blockquote {
     blockquote::before {
         content: "“";
         position: absolute;
+        color: #e6e3e6;
         font-family: Section;
-        opacity: .1;
         top: 60px;
         left: -40px;
         font-size: 1000%;
