@@ -214,6 +214,10 @@ pre,
         color: #b97e3d;
     }
 
+    .token-comment {
+        color: #939393;
+    }
+
 #floatmenu {
     z-index: 42;
     position: fixed;
