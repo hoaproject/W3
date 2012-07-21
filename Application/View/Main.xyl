@@ -1,64 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xyl-stylesheet href="hoa://Library/Xyl/Css/Core.css" position="10"?>
+<!--<?xyl-stylesheet href="hoa://Library/Xyl/Css/Core.css" position="10"?>-->
 <?xyl-stylesheet href="hoa://Application/Public/Css/UI.css" position="last()"?>
 
 <document xmlns="http://hoa-project.net/xyl/xylophone" id="document">
   <title>Hoa, un ensemble de bibliothèques PHP</title>
 
-  <nav>
-    <a id="floatmenu" href="javascript:menu()">Menu</a>
-
-    <div id="menu">
-      <ul>
-        <li><a href="@g:all=">Accueil</a></li>
-        <!--li><a href="#">Téléchargement</a></li-->
-        <li><a href="@l">Littérature</a></li>
-        <!--li><a href="@r">Recherche</a></li-->
-        <li><a href="@v">Vidéo</a></li>
-        <li><a href="http://forum.hoa-project.net/">Communauté</a></li>
-        <li><a href="@c">Contact</a></li>
+  <nav id="menu">
+    <div>
+      <ul id="nav-top">
+        <li><a href="@g:all=" class="home">Accueil</a></li>
+        <li><a href="#" class="download">Téléchargement</a></li>
+        <li><a href="@l" class="literature">Littérature</a></li>
+        <li><a href="@v" class="video">Vidéo</a></li>
+        <li><a href="http://forum.hoa-project.net/" class="community">Communauté</a></li>
       </ul>
-      <hr />
-      <tableofcontents id="menu-toc" />
+
+      <ul id="nav-bottom">
+        <li><a href="#" class="about">À propos</a></li>
+        <li><a href="@c" class="contact">Contact</a></li>
+      </ul>
     </div>
   </nav>
 
-  <header>
-    <img src="/Media/Image/Hoa.png" alt="Hoa" />
-  </header>
+  <div id="body">
 
-  <article id="content" />
+    <header>
+      <img src="hoa://Application/Public/Media/Image/Hoa.png" alt="Hoa" />
+    </header>
 
-  <footer>
-    <p>Hoa est la création de Ivan Enderlin, tous droits réservés.</p>
-  </footer>
+    <article id="content" />
+  </div>
 
   <script src="hoa://Library/Xyl/Javascript/Hoa.js"></script>
-  <script>
-    function menu ( ) {
-
-        var fmenu = document.getElementById("floatmenu");
-
-        if("on" == fmenu.className)
-            fmenu.className = "";
-        else
-            fmenu.className = "on";
-
-        return;
-    }
-
-    (function ( ) {
-
-        var toc = document.querySelectorAll("#menu .toc a");
-        for(var i = 0, m = toc.length; i &lt; m; ++i)
-            toc.item(i).addEventListener(
-                "click",
-                function ( e ) {
-
-                    window.setTimeout(menu, 401);
-                },
-                false
-            );
-    })();
-  </script>
 </document>

@@ -28,44 +28,124 @@
     font-style: normal;
 }
 
+/*
+html, body {
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+}
+*/
+
 body {
     color: #341d44;
     font: 1.1em/1.4em Text;
     text-align: justify;
     -moz-hyphens: auto;
-    margin: 0;
-    padding: 0;
-    background: url("../Media/Image/Background_paper.png");
-}
 
-#body {
-    margin: 0;
-    padding: 2em 6em 1em 6em;
-    min-height: 100%;
     overflow-x: hidden;
-}
-
-::-moz-selection {
-    background: #e4cbf4;
-}
-
-::selection {
-    background: #e4cbf4;
+    background: #eee url('../Media/Image/Background.png');
 }
 
 nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 50px;
+    bottom: 0;
+
+    color: #fff;
+
+    transition: width .5s ease;
+    -o-transition: width .5s ease;
+    -webkit-transition: width .5s ease;
+}
+
+    nav:hover {
+        width: 200px;
+    }
+
+    nav:hover ~ #body {
+        left: 200px;
+        right: -150px;
+    }
+
+    nav > div {
+        position: relative;
+        height: 100%;
+        width: 200px;
+    }
+
+    nav ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+
+    nav ul > li {
+        line-height: 2em;
+        border: 1px transparent solid;
+        border-width: 1px 0;
+    }
+
+    nav ul > li:hover {
+        border-color: #ddd;
+        background: rgba(255, 255, 255, .1);
+    }
+
+    nav a {
+        color: inherit;
+        background: none;
+        display: inline-block;
+        width: 100%;
+        padding-left: 60px;
+    }
+
+    nav a:hover {
+        color: inherit;
+        background: none;
+    }
+
+    nav a.home { background: url('../Media/Image/Icon_home.svg') 8px 50% no-repeat; }
+    nav a.download { background: url('../Media/Image/Icon_download.svg') 8px 50% no-repeat; }
+    nav a.literature { background: url('../Media/Image/Icon_literature.svg') 8px 50% no-repeat; }
+    nav a.video { background: url('../Media/Image/Icon_video.svg') 8px 50% no-repeat; }
+    nav a.community { background: url('../Media/Image/Icon_community.svg') 8px 50% no-repeat; }
+    nav a.about { background: url('../Media/Image/Icon_about.svg') 8px 50% no-repeat; }
+    nav a.contact { background: url('../Media/Image/Icon_contact.svg') 8px 50% no-repeat; }
+
+    #nav-top {
+        position: absolute;
+        top: 15px;
+    }
+
+    #nav-bottom {
+        position: absolute;
+        bottom: 15px;
+    }
+
+#body {
+    position: absolute;
+    top: 0;
+    left: 50px;
+    right: 0;
+    min-height: 100%;
     margin: 0;
     padding: 0;
+    border-radius: 15px;
+    background: #fff url('../Media/Image/Background_paper.png');
+
+    transition: left .5s ease, right .5s ease;
+    -o-transition: left .5s ease, right .5s ease;
+    -webkit-transition: left .5s ease, right .5s ease;
 }
+
+    #content {
+        margin: 1em 40px;
+    }
 
 header {
-    margin-bottom: 3em;
-    text-align: center;
-}
-
-footer {
-    margin-top: 4em;
-    font-size: 75%;
+    margin: 2em;
     text-align: center;
 }
 
@@ -93,13 +173,14 @@ h1, h2, h3, h4, h5, h6 {
     margin: 1.7em 0 0 0;
     padding: 0;
 
-    -moz-transition: padding .3s, background .3s;
+    transition: padding .3s, background .3s;
+    -o-transition: padding .3s, background .3s;
+    -webkit-transition: padding .3s, background .3s;
 }
 
     h1:target, h2:target, h3:target, h4:target, h5:target, h6:target {
         padding: 0 0 0 1em;
         border-radius: 12px;
-        -webkit-border-radius: 12px;
         background: #f2ede3;
     }
 
@@ -181,8 +262,8 @@ pre,
 .CodeMirror {
     font-size: 1.1em;
     color: #452745;
-    margin: auto -8em;
-    padding: 1em 9em;
+    margin: auto -45px auto -40px;
+    padding: 1em 60px;
 }
 
     pre,
@@ -218,502 +299,5 @@ pre,
         color: #939393;
     }
 
-#floatmenu {
-    z-index: 42;
-    position: fixed;
-    top: 1em;
-    right: 2em;
-    display: block;
-    font-size: 150%;
-    width: 3em;
-    height: 2em;
-    line-height: 2em;
-    text-align: center;
-    overflow: hidden;
-    border: 1px #795290 solid;
-
-    opacity: .6;
-
-    border-radius: 0 1em 0 1em;
-    -webkit-border-radius: 0 1em 0 1em;
-
-    -moz-transition: opacity 1s ease 4s;
-}
-
-    #floatmenu:hover, #floatmenu.on {
-        opacity: 1;
-
-        -moz-transition: opacity .5s;
-    }
-
-    #floatmenu.on {
-        color: #efe6f5;
-        text-shadow: #341d44 0 1px;
-        background: #795290;
-    }
-
-#menu {
-    z-index: 42;
-    position: fixed;
-    top: 9.5em;
-    right: -100%; /* emulate pointer-events: none; */
-    opacity: 0;
-    width: 280px;
-    padding: 1em .5em;
-    border: 2px #fff solid;
-
-    border-radius: 15px;
-    -webkit-border-radius: 15px;
-
-    box-shadow: 0 0 5px #000;
-    -moz-box-shadow: 0 0 5px #000;
-    -webkit-box-shadow: 0 0 5px #000;
-
-    background: linear-gradient(top, #704c87, rgba(71, 43, 89, .95)) !important;
-    background: -moz-linear-gradient(top, #704c87, rgba(71, 43, 89, .95)) !important;
-    background: -webkit-linear-gradient(top, #704c87, rgba(71, 43, 89, .95)) !important;
-    background: #472b59 url("../Media/Image/Menu_background.png") repeat-x;
-
-    transition: opacity .5s ease .4s, top .5s ease .4s, right 0s ease 1s;
-    -moz-transition: opacity .5s ease .4s, top .5s ease .4s, right 0s ease 1s;
-    -webkit-transition: opacity .5s ease .4s, top .5s ease .4s;
-    /* Webkit doesn't well support right property modification with transitions */
-    -o-transition: opacity .5s ease .4s, top .5s ease .4s, right 0s ease 1s;
-}
-
-    #menu:after {
-        position: absolute;
-        top: -28px;
-        right: 50px;
-        display: block;
-        content: "";
-        width: 56px;
-        height: 30px;
-        background: transparent url("../Media/Image/Menu_arrow.png") no-repeat;
-    }
-
-    /*#floatmenu:focus + #menu,*/ /* does not well supported by Webkit */
-    #floatmenu.on + #menu,
-    #menu:target {
-        top: 7em;
-        right: 1em;
-        opacity: 1;
-
-        transition-delay: 0s;
-        -moz-transition-delay: 0s;
-        -webkit-transition-delay: 0s;
-        -o-transition-delay: 0s;
-    }
-
-    #menu ul,
-    #menu ol.toc {
-        list-style-type: none;
-        text-align: left;
-    }
-
-    #menu ul, #menu ol.toc, #menu li {
-        margin: 0;
-        padding: 0;
-    }
-
-    #menu a {
-        display: block;
-        font-size: 85%;
-        color: #f4e4cd;
-        text-shadow: #341d44 1px 1px;
-        margin: .2em 0;
-        padding: .3em 1em;
-        background: none;
-    }
-
-    #menu a:hover {
-        border-radius: 8px;
-        -webkit-border-radius: 8px;
-        background: #795290;
-    }
-
-    #menu hr {
-        height: 1px;
-        border: none;
-        background: #341d44;
-    }
-
-.download {
-    position: relative;
-    overflow: hidden;
-
-    color: #de8300;
-    text-align: center;
-    text-shadow: #341d44 1px 1px;
-    margin: 2em auto;
-    width: 450px;
-    height: 80px;
-    line-height: 80px;
-    box-shadow: inset 0 0 1.2em #222,
-                      0 0  .2em #000;
-    -moz-box-shadow: inset 0 0 1.2em #222,
-                           0 0  .2em #000;
-    -webkit-box-shadow: inset 0 0 1.2em #222,
-                              0 0  .2em #000;
-    border-radius: 20px;
-    -webkit-border-radius: 20px;
-    background: #4f2c68;
-}
-
-    .download h1 {
-        position: absolute;
-
-        color: #de8300;
-        font: 140% Text;
-        line-height: 80px;
-        margin: 0;
-        padding: 0;
-        width: 100%;
-        border-radius: 20px;
-        -webkit-border-radius: 20px;
-        background: linear-gradient(top, #704c87, #472b59) !important;
-        background: -moz-linear-gradient(top, #704c87, #472b59) !important;
-        background: -webkit-linear-gradient(top, #704c87, #472b59) !important;
-        background: url("../Media/Image/Download_foreground.png") repeat-x;
-
-        transition: margin-left .6s ease;
-        -moz-transition: margin-left .6s ease;
-        -webkit-transition: margin-left .6s ease;
-        -o-transition: margin-left .6s ease .2s; /* delay of .2s to remove a bug */
-    }
-
-    .download h1:target,
-    .download:hover h1 {
-        margin-left: 92%;
-    }
-
-    .download ul {
-        display: inline-block;
-        margin: 0;
-        padding: 0;
-        list-style-type: none;
-    }
-
-    .download ul li {
-        float: left;
-    }
-
-    .download ul li a {
-        color: #de8300;
-        padding: .3em .6em;
-        background: none;
-    }
-
-    .download ul li a:hover {
-        border-radius: 8px;
-        -webkit-border-radius: 8px;
-        background: #795290;
-    }
-
-.grid {
-    width: 100%;
-    border-spacing: 1.5em;
-}
-
-    .gcell {
-        font-size: 95%;
-        text-align: justify;
-        width: 50%;
-    }
-
-    .gcell h1 {
-        text-align: left;
-        margin-top: 0;
-    }
-
-    .gcell pre.left, .gcell pre.right {
-        margin: 0;
-        padding: 0;
-        width: 100%;
-        padding: 1em;
-    }
-
-    .gcell pre.left {
-        margin-left: -2em;
-
-        border-radius: 0 12px 12px 0;
-        -webkit-border-radius: 0 12px 12px 0;
-    }
-
-    .gcell pre.right {
-        margin-right: -2em;
-
-        border-radius: 12px 0 0 12px;
-        -webkit-border-radius: 12px 0 0 12px;
-    }
-
-.text-center {
-    text-align: center;
-}
-
-ul.prev_next {
-    margin: 2em 0;
-    padding: 0;
-    overflow: hidden;
-    list-style: none;
-}
-
-ul.prev_next > li {
-    float: left;
-    margin: 0;
-    padding: 0;
-}
-
-ul.prev_next > li + li {
-    float: right;
-}
-
-ul#whouse {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-
-    ul#whouse > li {
-        float: left;
-        margin: 0 1em 1em 0;
-    }
-
-    ul#whouse > li > a {
-        color: transparent;
-        background: transparent;
-    }
-
-    ul#whouse > li > a > img {
-        padding: .5em;
-        border-radius: 3px;
-        transition: .3s box-shadow ease, .3s background ease;
-        -moz-transition: .3s -moz-box-shadow ease, .3s background ease;
-        -webkit-transition: .3s -webkit-box-shadow ease, .3s background ease;
-        -o-transition: .3s box-shadow ease, .3s background ease;
-    }
-
-    ul#whouse > li > a:hover,
-    ul#whouse > li > a:active {
-        color: transparent;
-        background: transparent;
-    }
-
-    ul#whouse > li > a:hover > img,
-    ul#whouse > li > a:active > img {
-        box-shadow: inset 0 0 5px #4f2c68;
-        -moz-box-shadow: inset 0 0 5px #4f2c68;
-        -webkit-box-shadow: inset 0 0 5px #4f2c68;
-        background: #efe6f5;
-    }
-
-iframe {
-    height: 500px;
-    width: 100%;
-    margin: 1em 0;
-    border: 0;
-}
-
-.CodeMirror {
-    height: 100%;
-}
-
-    .CodeMirror pre {
-        box-shadow:         none;
-        -moz-box-shadow:    none;
-        -webkit-box-shadow: none;
-        background: transparent;
-    }
-
-    .CodeMirror-scroll {
-        position: relative;
-        left: -4em;
-        margin-right: -5em;
-        height: 100%;
-    }
-
-    .CodeMirror-gutter {
-        border: 0;
-        background: transparent;
-    }
-
-    .CodeMirror-gutter-text > pre {
-        color: #3b6898;
-    }
-
-    .CodeMirror-lines {
-        padding-left: 2.1em;
-    }
-
-    .CodeMirror-focused .CodeMirror-activeline {
-        background: rgba(249, 247, 232, .5);
-    }
-
-    .CodeMirror-cursor {
-        border: #d6c85c solid;
-        border-width: 0 0 0 2px;
-    }
-
-    .CodeMirror-selected {
-        margin: -1px;
-        border: 1px #d6c85c solid;
-        background: rgba(214, 200, 92, .1);
-    }
-
-.left {
-    float: left;
-}
-
-.right {
-    float: right;
-}
-
-input, select {
-    display: inline-block;
-    font: .9em/1.4em Text;
-    margin: -3em 0 0 0;
-    padding: .2em .4em;
-    border: 2px #cdc3d4 solid;
-    background: none;
-}
-
-#experimentation p:first-child {
-    padding: 0 0 1em 0;
-}
-
-#experimentation input[name="size"] {
-    width: 2em;
-}
-
-#experimentation .verdict-true input {
-    border-color: green;
-}
-
-#experimentation .verdict-false input {
-    border-color: red;
-}
-
-[data-checkpoint].sticky {
-    position: relative;
-    margin-top: 1em;
-}
-
-.schema {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: auto;
-    z-index: 41;
-}
-
-.schema > div {
-    margin: 0 auto 0 50%;
-}
-
-.schema > div > svg {
-    margin-left: -50%;
-}
-
-    [data-checkpoint].sticky.floatting .schema {
-        position: fixed;
-        background: rgba(249, 248, 247, .9);
-        background: url('../Media/Image/Schema_background.png') repeat-x bottom left;
-    }
-
-    [data-checkpoint].sticky.border .schema {
-        top: auto;
-        bottom: 0;
-        background: url('../Media/Image/Schema_background.png') repeat-x bottom left;
-    }
-
-/*
-.schema svg rect {
-    stroke-linejoin: round;
-    stroke-linecap: round;
-}
-
-.schema svg rect.box {
-    fill: url('UI.svg#boxFill');
-    stroke: #fff;
-    stroke-width: 2px;
-    filter: url('UI.svg#shadow')
-}
-
-.schema svg rect.group {
-    fill: none;
-    stroke: #000;
-    stroke-width: 1px;
-}
-
-.schema svg path {
-    stroke: #000;
-    stroke-linejoin: round;
-}
-
-    .schema svg path.link {
-        stroke-width: 1px;
-        marker-end: url('UI.svg#arrow');
-    }
-
-.schema svg text {
-    fill: #341d44;
-    text-anchor: middle !important;
-    dominant-baseline: middle;
-}
-
-    .schema svg text.start {
-        dominant-baseline: start !important;
-    }
-
-    .schema svg text.end {
-        dominant-baseline: end !important;
-    }
-
-.schema svg text tspan {
-    font: 1em/1.4em Text;
-}
-
-    .schema svg text.link {
-        fill: #f18d05;
-    }
-
-    .schema svg rect.text {
-        fill: rgba(249, 248, 247, .8);
-        stroke: none;
-    }
-
-    .schema svg text.in-box {
-        fill: #ffffbe;
-    }
-
-    .schema svg text.in-box tspan {
-        text-shadow: #000 1px 1px;
-    }
-
-.schema svg path.arrow {
-    fill: #000;
-    stroke-width: 3px;
-}
-
-.schema svg text {
-    font-size: 13pt !important;
-}
-
-.schema svg.step-by-step path,
-.schema svg.step-by-step rect,
-.schema svg.step-by-step circle,
-.schema svg.step-by-step ellipse,
-.schema svg.step-by-step polyline,
-.schema svg.step-by-step polygon,
-.schema svg.step-by-step text,
-.schema svg.step-by-step tspan,
-.schema svg.step-by-step tref,
-.schema svg.step-by-step textPath {
-    -moz-transition: stroke-width .3s ease;
-}
-
-.schema svg.step-by-step rect[aria-selected],
-.schema svg.step-by-step path[aria-selected] {
-}
-*/
+::-moz-selection { background: #e4cbf4 }
+::selection      { background: #e4cbf4 }
