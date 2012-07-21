@@ -28,14 +28,6 @@
     font-style: normal;
 }
 
-/*
-html, body {
-    margin: 0;
-    padding: 0;
-    min-height: 100%;
-}
-*/
-
 body {
     color: #341d44;
     font: 1.1em/1.4em Text;
@@ -50,29 +42,15 @@ nav {
     position: fixed;
     top: 0;
     left: 0;
-    width: 50px;
     bottom: 0;
 
     color: #fff;
-
-    transition: width .5s ease;
-    -o-transition: width .5s ease;
-    -webkit-transition: width .5s ease;
 }
-
-    nav:hover {
-        width: 200px;
-    }
-
-    nav:hover ~ #body {
-        left: 200px;
-        right: -150px;
-    }
 
     nav > div {
         position: relative;
         height: 100%;
-        width: 200px;
+        width: 250px;
     }
 
     nav ul {
@@ -83,14 +61,15 @@ nav {
     }
 
     nav ul > li {
-        line-height: 2em;
-        border: 1px transparent solid;
-        border-width: 1px 0;
+        text-shadow: #000 1px 1px;
+        margin: 0 0 0 -3em;
+        padding: 0 0 0 3em;
+        line-height: 2.3em;
     }
 
     nav ul > li:hover {
-        border-color: #ddd;
-        background: rgba(255, 255, 255, .1);
+        box-shadow: inset 0 0 1.5em rgba(0, 0, 0, .5);
+        background: rgba(50, 50, 50, .1);
     }
 
     nav a {
@@ -104,49 +83,66 @@ nav {
     nav a:hover {
         color: inherit;
         background: none;
+        text-shadow: #c3fffd 0 0 5px;
     }
 
-    nav a.home { background: url('../Media/Image/Icon_home.svg') 8px 50% no-repeat; }
-    nav a.download { background: url('../Media/Image/Icon_download.svg') 8px 50% no-repeat; }
-    nav a.literature { background: url('../Media/Image/Icon_literature.svg') 8px 50% no-repeat; }
-    nav a.video { background: url('../Media/Image/Icon_video.svg') 8px 50% no-repeat; }
-    nav a.community { background: url('../Media/Image/Icon_community.svg') 8px 50% no-repeat; }
-    nav a.about { background: url('../Media/Image/Icon_about.svg') 8px 50% no-repeat; }
-    nav a.contact { background: url('../Media/Image/Icon_contact.svg') 8px 50% no-repeat; }
+    nav a.home { background: url('../Media/Image/Icon_home.svg') 8px 6px no-repeat; }
+    nav a.download { background: url('../Media/Image/Icon_download.svg') 8px 6px no-repeat; }
+    nav a.literature { background: url('../Media/Image/Icon_literature.svg') 8px 6px no-repeat; }
+    nav a.video { background: url('../Media/Image/Icon_video.svg') 8px 6px no-repeat; }
+    nav a.community { background: url('../Media/Image/Icon_community.svg') 8px 6px no-repeat; }
+    nav a.about { background: url('../Media/Image/Icon_about.svg') 8px 6px no-repeat; }
+    nav a.contact { background: url('../Media/Image/Icon_contact.svg') 8px 6px no-repeat; }
 
     #nav-top {
         position: absolute;
-        top: 15px;
+        top: 20px;
     }
 
     #nav-bottom {
         position: absolute;
-        bottom: 15px;
+        bottom: 20px;
     }
 
 #body {
     position: absolute;
-    top: 0;
+    top: 5px;
     left: 50px;
-    right: 0;
+    right: 5px;
     min-height: 100%;
     margin: 0;
     padding: 0;
     border-radius: 15px;
     background: #fff url('../Media/Image/Background_paper.png');
 
-    transition: left .5s ease, right .5s ease;
-    -o-transition: left .5s ease, right .5s ease;
-    -webkit-transition: left .5s ease, right .5s ease;
+    transition: left .4s ease 0s, right .4s ease 0s;
+    -o-transition: left .4s ease 0s, right .4s ease 0s;
+    -webkit-transition: left .4s ease 0s, right .4s ease 0s;
 }
 
+    nav:hover ~ #body {
+        left: 230px;
+        right: -175px;
+        transition-delay: 1s;
+        -o-transition-delay: 1s;
+        -webkit-transition-delay: 1s;
+    }
+
     #content {
-        margin: 1em 40px;
+        margin: 1em 40px 5em;
     }
 
 header {
     margin: 2em;
     text-align: center;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    font-size: 70%;
+    text-align: center;
+    width: 100%;
 }
 
 a {
@@ -243,7 +239,6 @@ blockquote {
     position: relative;
     padding: 1.5em 3em;
     border-radius: 3px;
-    -webkit-border-radius: 3px;
     background: #f2ede3;
 }
 
@@ -256,6 +251,54 @@ blockquote {
         left: -40px;
         font-size: 1000%;
     }
+
+[data-tabs] {
+    min-height: 10em;
+    margin: 2em 0 0 0;
+    padding: 0 1em 1em 1em;
+    border: 1px transparent solid; /* avoid collapsing */
+    border-radius: 5px;
+
+    box-shadow: inset 0 0 5px #d4c6b0;
+    background: #f2ede3 url("../Media/Image/Background_pre.png");
+}
+
+[data-tabs] > ul[role="tablist"] {
+    margin: -.8em 0 1em 0;
+    line-height: 1.6em;
+    text-align: center;
+}
+
+[data-tabs] > ul[role="tablist"] > li > a[role="tab"]{
+    color: #000;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    min-width: 4em;
+    border: 1px #999 solid;
+    border-radius: 5px 0 0 5px;
+    background: #eee;
+    outline: none;
+}
+
+[data-tabs] > ul[role="tablist"] > li + li > a[role="tab"] {
+    padding: 0 .5em;
+    border-radius: 0;
+    border-width: 1px 1px 1px 0;
+}
+
+[data-tabs] > ul[role="tablist"] > li:last-of-type > a[role="tab"] {
+    border-radius: 0 5px 5px 0;
+}
+
+[data-tabs] > ul[role="tablist"] > li > a[aria-selected="true"] {
+    color: #fff;
+    box-shadow: inset 0 0 1.5em rgba(0, 0, 0, .5);
+    background: #999;
+}
+
+[data-tabs] > div[role="tabpanel"] {
+}
 
 div.verbatim,
 pre,
@@ -270,8 +313,7 @@ pre,
     .CodeMirror {
         overflow-y: auto;
         line-height: 1.4em;
-        box-shadow:         inset 0 0 5px #d4c6b0;
-        -webkit-box-shadow: inset 0 0 5px #d4c6b0;
+        box-shadow: inset 0 0 5px #d4c6b0;
         background: #f2ede3 url("../Media/Image/Background_pre.png");
     }
 
@@ -298,6 +340,121 @@ pre,
     .token-comment {
         color: #939393;
     }
+
+[data-checkpoint].sticky {
+    position: relative;
+    margin-top: 1em;
+}
+
+.schema {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: auto;
+    z-index: 41;
+}
+
+/*
+.schema > div {
+    margin: 0 auto 0 50%;
+}
+
+.schema > div > svg {
+    margin-left: -50%;
+}
+
+    [data-checkpoint].sticky.floatting .schema {
+        position: fixed;
+        background: url('../Media/Image/Schema_background.png') repeat-x bottom left;
+    }
+
+    [data-checkpoint].sticky.border .schema {
+        top: auto;
+        bottom: 0;
+        background: url('../Media/Image/Schema_background.png') repeat-x bottom left;
+    }
+*/
+
+.download-box {
+    position: relative;
+    overflow: hidden;
+
+    color: #de8300;
+    text-align: center;
+    text-shadow: #341d44 1px 1px;
+    margin: 2em auto;
+    width: 450px;
+    height: 80px;
+    line-height: 80px;
+    box-shadow: inset 0 0 1.2em #222,
+                      0 0  .2em #000;
+    border-radius: 20px;
+    background: #4f2c68;
+}
+
+    .download-box h1 {
+        position: absolute;
+        color: #de8300;
+        font: 140% Text;
+        line-height: 80px;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        border-radius: 20px;
+        background: linear-gradient(top, #704c87, #472b59) !important;
+        background: -moz-linear-gradient(top, #704c87, #472b59) !important;
+        background: -webkit-linear-gradient(top, #704c87, #472b59) !important;
+        background: url("../Media/Image/Download_foreground.png") repeat-x;
+
+        transition: margin-left .6s ease;
+        -o-transition: margin-left .6s ease .2s; /* delay of .2s to remove a bug */
+        -webkit-transition: margin-left .6s ease;
+    }
+
+    .download-box h1:target,
+    .download-box:hover h1 {
+        margin-left: 92%;
+    }
+
+    .download-box ul {
+        display: inline-block;
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+    }
+
+    .download-box ul li {
+        float: left;
+    }
+
+    .download-box ul li a {
+        color: #de8300;
+        padding: .3em .6em;
+        background: none;
+    }
+
+    .download-box ul li a:hover {
+        border-radius: 8px;
+        background: #795290;
+    }
+
+ul.prev_next {
+    margin: 2em 0;
+    padding: 0;
+    overflow: hidden;
+    list-style: none;
+}
+
+ul.prev_next > li {
+    float: left;
+    margin: 0;
+    padding: 0;
+}
+
+ul.prev_next > li + li {
+    float: right;
+}
 
 ::-moz-selection { background: #e4cbf4 }
 ::selection      { background: #e4cbf4 }

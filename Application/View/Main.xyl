@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--<?xyl-stylesheet href="hoa://Library/Xyl/Css/Core.css" position="10"?>-->
+<?xyl-stylesheet href="hoa://Library/Xyl/Css/Core.css" position="10"?>
 <?xyl-stylesheet href="hoa://Application/Public/Css/UI.css" position="last()"?>
 
 <document xmlns="http://hoa-project.net/xyl/xylophone" id="document">
   <title>Hoa, un ensemble de bibliothèques PHP</title>
+
+  <script src="hoa://Library/Xyl/Javascript/Hoa.js"></script>
 
   <nav id="menu">
     <div>
@@ -29,7 +31,9 @@
     </header>
 
     <article id="content" />
-  </div>
 
-  <script src="hoa://Library/Xyl/Javascript/Hoa.js"></script>
+    <footer>
+      <p>Hoa est la création de Ivan Enderlin, tous droits réservés.</p>
+    </footer>
+  </div>
 </document>
