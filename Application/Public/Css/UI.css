@@ -106,11 +106,12 @@ nav {
 
 #body {
     position: absolute;
-    top: 5px;
+    top: 0;
     left: 50px;
     right: 5px;
+    min-height: calc(100% - 10px) !important;
     min-height: 100%;
-    margin: 0;
+    margin: 5px 0;
     padding: 0;
     border-radius: 15px;
     background: #fff url('../Media/Image/Background_paper.png');
@@ -252,15 +253,28 @@ blockquote {
         font-size: 1000%;
     }
 
+video {
+    display: block;
+    margin: 1em auto 3em auto;
+    box-shadow: 0 0 1em #333;
+}
+
 [data-tabs] {
     min-height: 10em;
     margin: 2em 0 0 0;
     padding: 0 1em 1em 1em;
     border: 1px transparent solid; /* avoid collapsing */
     border-radius: 5px;
-
     box-shadow: inset 0 0 5px #d4c6b0;
     background: #f2ede3 url("../Media/Image/Background_pre.png");
+}
+
+[data-tabs].plain {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-shadow: none;
+    background: transparent;
 }
 
 [data-tabs] > ul[role="tablist"] {
@@ -268,6 +282,10 @@ blockquote {
     line-height: 1.6em;
     text-align: center;
 }
+
+    [data-tabs].plain > ul[role="tablist"] {
+        margin: 0 0 -.8em 0;
+    }
 
 [data-tabs] > ul[role="tablist"] > li > a[role="tab"]{
     color: #000;
@@ -281,6 +299,18 @@ blockquote {
     outline: none;
 }
 
+    [data-tabs] > ul[role="tablist"] > li > a[role="tab"]:active {
+        color: #fff;
+        box-shadow: inset 0 0 5px rgba(0, 0, 0, .3);
+        background: #ccc;
+    }
+
+    [data-tabs] > ul[role="tablist"] > li > a[aria-selected="true"] {
+        color: #fff;
+        box-shadow: inset 0 0 1.5em rgba(0, 0, 0, .5);
+        background: #999;
+    }
+
 [data-tabs] > ul[role="tablist"] > li + li > a[role="tab"] {
     padding: 0 .5em;
     border-radius: 0;
@@ -291,21 +321,23 @@ blockquote {
     border-radius: 0 5px 5px 0;
 }
 
-[data-tabs] > ul[role="tablist"] > li > a[aria-selected="true"] {
-    color: #fff;
-    box-shadow: inset 0 0 1.5em rgba(0, 0, 0, .5);
-    background: #999;
+[data-tabs].plain > div[role="tabpanel"] > * {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 2em;
 }
 
-[data-tabs] > div[role="tabpanel"] {
+.verbatim,
+pre,
+.CodeMirror {
+    margin-left: -40px;
+    margin-right: -40px;
 }
 
-div.verbatim,
 pre,
 .CodeMirror {
     font-size: 1.1em;
     color: #452745;
-    margin: auto -40px;
     padding: 1em 60px;
 }
 
