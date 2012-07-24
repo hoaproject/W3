@@ -19,6 +19,14 @@ class Video extends \Hoa\Dispatcher\Kit {
 
         return;
     }
+
+    public function PopcodeAction ( )  {
+
+        $this->view->addOverlay('hoa://Application/View/Video/Popcode.xyl');
+        $this->view->render();
+
+        return;
+    }
 }
 
 }
