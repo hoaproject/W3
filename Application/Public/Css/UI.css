@@ -291,9 +291,9 @@ video {
     color: #5c4716;
     display: inline-block;
     margin: 0 .8px;
-    padding: 0 .8em;
-    line-height: 2em;
-    height: 2em;
+    padding: .4em .8em 0;
+    line-height: 1.8em;
+    height: 1.8em;
     min-width: 5em;
     border-radius: 0 0 0 5px;
     background: transparent url('../Media/Image/Tab.png') repeat-x;
