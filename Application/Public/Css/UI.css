@@ -61,7 +61,7 @@ nav {
     }
 
     nav ul > li {
-        text-shadow: #000 1px 1px;
+        text-shadow: 1px 1px #000;
         margin: 0 0 0 -3em;
         padding: 0 0 0 3em;
         line-height: 2.3em;
@@ -83,7 +83,7 @@ nav {
     nav a:hover {
         color: inherit;
         background: none;
-        text-shadow: #c3fffd 0 0 5px;
+        text-shadow: 0 0 3px #c3fffd;
     }
 
     nav a.home { background: url('../Media/Image/Icon_home.svg') 8px 6px no-repeat; }
@@ -156,7 +156,7 @@ a {
     a:hover,
     a:active {
         color: #efe6f5;
-        text-shadow: #341d44 0 1px;
+        text-shadow: 0 1px #341d44;
         background: #795290;
     }
 
@@ -269,62 +269,63 @@ video {
     background: #f2ede3 url("../Media/Image/Background_pre.png");
 }
 
-[data-tabs].plain {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    box-shadow: none;
-    background: transparent;
-}
+    /* no style */
+    [data-tabs].plain {
+        padding: 0;
+        border: 0;
+        box-shadow: none;
+        background: transparent;
+    }
 
 [data-tabs] > ul[role="tablist"] {
-    margin: -.8em 0 1em 0;
-    line-height: 1.6em;
+    margin: -1em 0 1em 0;
     text-align: center;
+    height: 2.4em;
 }
 
     [data-tabs].plain > ul[role="tablist"] {
-        margin: 0 0 -.8em 0;
+        margin-bottom: -1.5em;
     }
 
 [data-tabs] > ul[role="tablist"] > li > a[role="tab"]{
-    color: #000;
+    color: #5c4716;
     display: inline-block;
-    margin: 0;
-    padding: 0;
-    min-width: 4em;
-    border: 1px #999 solid;
-    border-radius: 5px 0 0 5px;
-    background: #eee;
+    margin: 0 .8px;
+    padding: 0 .8em;
+    line-height: 2em;
+    height: 2em;
+    min-width: 5em;
+    border-radius: 0 0 0 5px;
+    background: transparent url('../Media/Image/Tab.png') repeat-x;
     outline: none;
+    box-shadow: 0 2px 2px #d0bd9f;
+
+    transition: height .1s ease, border-radius .1s ease;
+    -o-transition: height .1s ease, border-radius .1s ease;
+    -webkit-transition: height .5s ease, border-radius .5s ease;
 }
 
-    [data-tabs] > ul[role="tablist"] > li > a[role="tab"]:active {
-        color: #fff;
-        box-shadow: inset 0 0 5px rgba(0, 0, 0, .3);
-        background: #ccc;
+    [data-tabs] > ul[role="tablist"] > li + li > a[role="tab"] {
+        border-radius: 0;
+        border-width: 1px 1px 1px 0;
     }
 
+    [data-tabs] > ul[role="tablist"] > li:last-of-type > a[role="tab"] {
+        border-radius: 0 0 5px 0;
+    }
+
+    [data-tabs] > ul[role="tablist"] > li > a[role="tab"]:active,
+    [data-tabs] > ul[role="tablist"] > li > a[role="tab"]:hover,
     [data-tabs] > ul[role="tablist"] > li > a[aria-selected="true"] {
-        color: #fff;
-        box-shadow: inset 0 0 1.5em rgba(0, 0, 0, .5);
-        background: #999;
+        text-shadow: 0 1px 1px #c6b48a;
+        height: 100%;
+        border-radius: 0 0 5px 5px !important;
     }
-
-[data-tabs] > ul[role="tablist"] > li + li > a[role="tab"] {
-    padding: 0 .5em;
-    border-radius: 0;
-    border-width: 1px 1px 1px 0;
-}
-
-[data-tabs] > ul[role="tablist"] > li:last-of-type > a[role="tab"] {
-    border-radius: 0 5px 5px 0;
-}
 
 [data-tabs].plain > div[role="tabpanel"] > * {
     margin-top: 0;
     margin-bottom: 0;
-    padding-top: 2em;
+    padding-top: 2.2em;
 }
 
 .verbatim,
@@ -414,7 +415,7 @@ pre,
 
     color: #de8300;
     text-align: center;
-    text-shadow: #341d44 1px 1px;
+    text-shadow: 1px 1px #341d44;
     margin: 2em auto;
     width: 450px;
     height: 80px;
