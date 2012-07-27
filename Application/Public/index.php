@@ -13,25 +13,6 @@ $dispatcher = new \Hoa\Dispatcher\Basic(array(
 ));
 $router     = new \Hoa\Router\Http();
 $router
-
-    /*
-    ->get('_', '/Foo', function ( $_this ) use ( $router ) {
-
-        $xyl = new \Hoa\Xyl(
-            new \Hoa\File\Read('hoa://Application/View/Main.fragment.xyl'),
-            new \Hoa\Http\Response(),
-            new \Hoa\Xyl\Interpreter\Html(),
-            $router
-        );
-        $xyl->addOverlay('hoa://Application/View/Welcome.xyl');
-        $xyl->interprete();
-        $xyl->render($xyl->getSnippet('async_content'));
-
-        return;
-    })
-    */
-
-
     ->get('l',  '/Literature\.html', 'literature', 'default')
     ->get('lt', '/Literature/Mini-tutorial\.html', 'literature', 'minitutorial')
     ->get('ll', '/Literature/Learn/(?<chapter>\w+)\.html', 'literature', 'learn')
