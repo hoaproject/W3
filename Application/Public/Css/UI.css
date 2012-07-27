@@ -118,24 +118,11 @@ nav {
     background: #fff url('../Media/Image/Background_paper.png');
     box-shadow: 0 0 15px #000;
 
-    transition: left         .4s ease 0s,
-                right        .4s ease 0s,
-                margin-left  .8s ease 0s,
-                margin-right .8s ease 0s;
+    transition: left .4s ease 0s, right .4s ease 0s;
+    -o-transition: left .4s ease 0s, right .4s ease 0s;
+    -webkit-transition: left .4s ease 0s, right .4s ease 0s;
 }
 
-    .body.old,
-    .body.current {
-        margin-left: 0;
-        margin-right: 0;
-    }
-
-    .body.new {
-        margin-left: 110%;
-        margin-right: -110%;
-    }
-
-    /*
     nav:hover ~ .body {
         left: 200px;
         right: -145px;
@@ -151,13 +138,10 @@ nav {
             right: 5px !important;
         }
     }
-    */
 
-    article {
-        margin: 1em 40px 5em;
-    }
-
-
+article {
+    margin: 1em 40px 5em;
+}
 
 header {
     margin: 2em;
