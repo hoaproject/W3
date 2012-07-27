@@ -45,6 +45,7 @@ nav {
     bottom: 0;
 
     color: #fff;
+    font-size: 90%;
 }
 
     nav > div {
@@ -122,11 +123,19 @@ nav {
 }
 
     nav:hover ~ #body {
-        left: 230px;
-        right: -175px;
+        left: 200px;
+        right: -145px;
         transition-delay: 1s;
         -o-transition-delay: 1s;
         -webkit-transition-delay: 1s;
+    }
+
+    @media all and (min-width: 1400px) {
+
+        #body {
+            left: 200px;
+            right: 5px !important;
+        }
     }
 
     #content {
@@ -271,6 +280,7 @@ video {
 
     /* no style */
     [data-tabs].plain {
+        min-height: 0;
         padding: 0;
         border: 0;
         box-shadow: none;
