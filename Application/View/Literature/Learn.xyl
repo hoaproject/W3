@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <overlay xmlns="http://hoa-project.net/xyl/xylophone">
-  <article id="content">
+  <yield id="yContent">
     <chapter />
     <script src="hoa://Application/Public/Javascript/Hoa.Graph.js"></script>
     <script src="hoa://Application/Public/Javascript/Hoa.Graph.style.js"></script>
-  </article>
+  </yield>
 </overlay>

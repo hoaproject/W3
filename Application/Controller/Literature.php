@@ -1,13 +1,20 @@
 <?php
 
+namespace {
+
+from('Application')
+-> import('Controller.Generic');
+
+}
+
 namespace Application\Controller {
 
-class Literature extends \Hoa\Dispatcher\Kit {
+class Literature extends Generic {
 
     public function DefaultAction ( )  {
 
         $this->view->addOverlay('hoa://Application/View/Literature/Literature.xyl');
-        $this->view->render();
+        $this->render();
 
         return;
     }
@@ -17,7 +24,7 @@ class Literature extends \Hoa\Dispatcher\Kit {
         $this->view->addOverlay(
             'hoa://Application/External/Literature/MiniTutorial/Index.xyl'
         );
-        $this->view->render();
+        $this->render();
 
         return;
     }
@@ -26,7 +33,7 @@ class Literature extends \Hoa\Dispatcher\Kit {
 
         $this->view->addUse('hoa://Application/External/Literature/Learn/' . ucfirst($chapter) . '.xyl');
         $this->view->addOverlay('hoa://Application/View/Literature/Learn.xyl');
-        $this->view->render();
+        $this->render();
 
         return;
     }
@@ -35,7 +42,7 @@ class Literature extends \Hoa\Dispatcher\Kit {
 
         $this->view->addUse('hoa://Application/External/Literature/Hack/' . ucfirst($chapter) . '.xyl');
         $this->view->addOverlay('hoa://Application/View/Literature/Learn.xyl');
-        $this->view->render();
+        $this->render();
 
         return;
     }
@@ -45,7 +52,7 @@ class Literature extends \Hoa\Dispatcher\Kit {
         $this->data->keynote[0]->id    = 'PHPTour11';
         $this->data->keynote[0]->title = 'PHPTour\'11';
         $this->view->addOverlay('hoa://Application/View/Literature/Keynote.xyl');
-        $this->view->render();
+        $this->render();
 
         return;
     }
@@ -54,7 +61,7 @@ class Literature extends \Hoa\Dispatcher\Kit {
 
         $this->view->addUse('hoa://Application/External/Literature/Popcode/' .  ucfirst($code) . '.xyl');
         $this->view->addOverlay('hoa://Application/View/Literature/Popcode.xyl');
-        $this->view->render();
+        $this->render();
 
         return;
     }

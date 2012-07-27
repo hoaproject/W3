@@ -1,13 +1,20 @@
 <?php
 
+namespace {
+
+from('Application')
+-> import('Controller.Generic');
+
+}
+
 namespace Application\Controller {
 
-class Index extends \Hoa\Dispatcher\Kit {
+class Index extends Generic {
 
     public function DefaultAction ( )  {
 
         $this->view->addOverlay('hoa://Application/View/Welcome.xyl');
-        $this->view->render();
+        $this->render();
 
         return;
     }
@@ -15,7 +22,7 @@ class Index extends \Hoa\Dispatcher\Kit {
     public function ContactAction ( ) {
 
         $this->view->addOverlay('hoa://Application/View/Contact.xyl');
-        $this->view->render();
+        $this->render();
 
         return;
     }

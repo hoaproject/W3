@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <overlay xmlns="http://hoa-project.net/xyl/xylophone">
-  <article id="content">
+  <yield id="yContent">
     <h1>Recherche</h1>
 
     <p>Dans l'ordre chronologique.</p>
@@ -37,5 +37,5 @@
       contrats</a>, mémoire de Master sur Praspel et les domaines
       réalistes.</li>
     </ul></p!-->
-  </article>
+  </yield>
 </overlay>

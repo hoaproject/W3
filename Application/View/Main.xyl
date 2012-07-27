@@ -9,31 +9,132 @@
 
   <nav id="menu">
     <div>
-      <ul id="nav-top">
-        <li><a href="@g:all=" class="home">Accueil</a></li>
-        <li><a href="#" class="download">Téléchargement</a></li>
-        <li><a href="@l" class="literature">Littérature</a></li>
-        <li><a href="@v" class="video">Vidéo</a></li>
-        <li><a href="http://forum.hoa-project.net/" class="community">Communauté</a></li>
-      </ul>
+      <async id="menu_async">
+        <ul id="nav-top">
+          <li><a href="@g:all=" class="home">Accueil</a></li>
+          <li><a href="#" class="download">Téléchargement</a></li>
+          <li><a href="@l" class="literature">Littérature</a></li>
+          <li><a href="@v" class="video">Vidéo</a></li>
+          <li><a href="http://forum.hoa-project.net/" class="community">Communauté</a></li>
+        </ul>
 
-      <ul id="nav-bottom">
-        <li><a href="#" class="about">À propos</a></li>
-        <li><a href="@c" class="contact">Contact</a></li>
-      </ul>
+        <ul id="nav-bottom">
+          <li><a href="#" class="about">À propos</a></li>
+          <li><a href="@c" class="contact">Contact</a></li>
+        </ul>
+      </async>
     </div>
   </nav>
 
-  <div id="body">
+  <div class="body current">
 
     <header>
       <img src="hoa://Application/Public/Media/Image/Hoa.png" alt="Hoa" />
     </header>
 
-    <article id="content" />
+    <article>
+      <yield id="yContent" />
+    </article>
 
     <footer>
       <p>Hoa est la création de Ivan Enderlin, tous droits réservés.</p>
     </footer>
   </div>
+
+  <script>
+    Hoa.Document.onReady(function ( ) {
+
+        var menuAsync = Hoa.$('#menu_async');
+        var body      = {
+            old    : null,
+            current: Hoa.$('div.body.current'),
+            new    : null
+        };
+
+        menuAsync.hoa.async.addEventListener(
+            'pushstate',
+            function ( evt, data ) {
+
+                if(window.location.pathname === data.uri) {
+
+                    data.uri = null;
+                    return;
+                }
+
+                data.state.pathname = data.uri;
+
+                return;
+            }
+        );
+
+        menuAsync.hoa.async.addEventListener(
+            'readystatechange',
+            function ( evt, data ) {
+
+                if(   this.STATE_DONE !== this.readyState
+                   ||             200 !== this.status)
+                    return;
+
+                window.scroll(0, 0);
+                body.old           = body.current;
+                body.old.classList.remove('current');
+                body.old.classList.add('old');
+
+                var article        = Hoa.DOM.article();
+                article.innerHTML  = this.responseText;
+                body.new           = Hoa.DOM.div(undefined, {class: 'body new'});
+                body.new.appendChild(
+                    Hoa.$('header', body.old).cloneNode(true)
+                );
+                body.new.appendChild(article);
+                body.new.appendChild(
+                    Hoa.$('footer', body.old).cloneNode(true)
+                );
+                document.body.appendChild(body.new);
+
+                var q = new Hoa.Concurrent.Scheduler();
+                var o = body.old;
+                var n = body.new;
+                q.wait(10)
+                 .schedule(function ( ) {
+
+                    body.current = body.new;
+                    body.current.classList.remove('new');
+                    body.current.classList.remove('current');
+                 })
+                 .wait(700)
+                 .schedule(function ( ) {
+
+                    o.parentNode.removeChild(o);
+                 });
+                q.spawn();
+            }
+        );
+
+        Hoa.History.replace(
+            {
+                formId: 'menu_async',
+                pathname: window.location.pathname + ''
+            },
+            document.title,
+            window.location.pathname + ''
+        );
+
+        menuAsync.hoa.async.addEventListener(
+            'popstate',
+            function ( evt ) {
+
+                console.dir(evt.state);
+                var state = evt.state;
+                Hoa.Async.sendForm(
+                    Hoa.$('#' + state.formId),
+                    'get',
+                    state.pathname,
+                    {link: true},
+                    {'Content-Type': document.contentType || 'text/html'}
+                );
+            }
+        );
+    });
+  </script>
 </document>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<fragment xmlns="http://hoa-project.net/xyl/xylophone">
+  <snippet id="async_content">
+    <yield id="yContent" />
+  </snippet>
+</fragment>

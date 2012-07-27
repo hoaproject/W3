@@ -1,13 +1,20 @@
 <?php
 
+namespace {
+
+from('Application')
+-> import('Controller.Generic');
+
+}
+
 namespace Application\Controller {
 
-class Video extends \Hoa\Dispatcher\Kit {
+class Video extends Generic {
 
     public function DefaultAction ( ) {
 
         $this->view->addOverlay('hoa://Application/View/Video/Video.xyl');
-        $this->view->render();
+        $this->render();
 
         return;
     }
@@ -15,7 +22,7 @@ class Video extends \Hoa\Dispatcher\Kit {
     public function PraspelAction ( )  {
 
         $this->view->addOverlay('hoa://Application/View/Video/Praspel.xyl');
-        $this->view->render();
+        $this->render();
 
         return;
     }
@@ -23,7 +30,7 @@ class Video extends \Hoa\Dispatcher\Kit {
     public function PopcodeAction ( )  {
 
         $this->view->addOverlay('hoa://Application/View/Video/Popcode.xyl');
-        $this->view->render();
+        $this->render();
 
         return;
     }

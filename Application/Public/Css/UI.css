@@ -105,7 +105,7 @@ nav {
         bottom: 20px;
     }
 
-#body {
+.body {
     position: absolute;
     top: 0;
     left: 50px;
@@ -116,13 +116,27 @@ nav {
     padding: 0;
     border-radius: 15px;
     background: #fff url('../Media/Image/Background_paper.png');
+    box-shadow: 0 0 15px #000;
 
-    transition: left .4s ease 0s, right .4s ease 0s;
-    -o-transition: left .4s ease 0s, right .4s ease 0s;
-    -webkit-transition: left .4s ease 0s, right .4s ease 0s;
+    transition: left         .4s ease 0s,
+                right        .4s ease 0s,
+                margin-left  .8s ease 0s,
+                margin-right .8s ease 0s;
 }
 
-    nav:hover ~ #body {
+    .body.old,
+    .body.current {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .body.new {
+        margin-left: 110%;
+        margin-right: -110%;
+    }
+
+    /*
+    nav:hover ~ .body {
         left: 200px;
         right: -145px;
         transition-delay: 1s;
@@ -132,15 +146,18 @@ nav {
 
     @media all and (min-width: 1400px) {
 
-        #body {
+        .body {
             left: 200px;
             right: 5px !important;
         }
     }
+    */
 
-    #content {
+    article {
         margin: 1em 40px 5em;
     }
+
+
 
 header {
     margin: 2em;

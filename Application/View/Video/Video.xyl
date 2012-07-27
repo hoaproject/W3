@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <overlay xmlns="http://hoa-project.net/xyl/xylophone">
-  <article id="content">
+  <yield id="yContent">
     <h1 id="Praspel">Vidéo</h1>
 
     <p>Plusieurs tutoriels sont présents sous format vidéos. Actuellement, seule
@@ -10,5 +10,5 @@
     <ul>
       <li><a href="@v+:_able=Praspel">Praspel</a>.</li>
     </ul>
-  </article>
+  </yield>
 </overlay>

@@ -8,16 +8,19 @@ from('Hoa')
 -> import('Compiler.Visitor.Uniform')
 -> import('Test.Sampler.Random');
 
+from('Application')
+-> import('Controller.Generic');
+
 }
 
 namespace Application\Controller {
 
-class Research extends \Hoa\Dispatcher\Kit {
+class Research extends Generic {
 
     public function DefaultAction ( )  {
 
         $this->view->addOverlay('hoa://Application/View/Research/Research.xyl');
-        $this->view->render();
+        $this->render();
 
         return;
     }
@@ -96,7 +99,7 @@ GRAMMAR;
             }
         }
 
-        $this->view->render();
+        $this->render();
 
         return;
     }

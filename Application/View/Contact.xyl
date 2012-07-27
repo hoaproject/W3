@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <overlay xmlns="http://hoa-project.net/xyl/xylophone">
-  <article id="content">
+  <yield id="yContent">
     <h1>Contact</h1>
 
     <p>Pour contacter Ivan Enderlin, fondateur et développeur principal de
@@ -17,5 +17,5 @@
       <li>Flatland : pas loin de <em>spaceland</em> ;</li>
       <li>… d'une manière générale : devant un écran et/ou un clavier.</li>
     </ul>
-  </article>
+  </yield>
 </overlay>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <overlay xmlns="http://hoa-project.net/xyl/xylophone">
-  <article id="content">
+  <yield id="yContent">
     <h1>Manuels</h1>
 
     <p>Hoa insiste beaucoup sur le fait qu'il faut <strong>comprendre les
@@ -100,5 +100,5 @@
       présentée ) <a href="http://ictss2011.lri.fr/">ICTSS 2011</a> à Paris
       (France).</li>
     </ul>
-  </article>
+  </yield>
 </overlay>
