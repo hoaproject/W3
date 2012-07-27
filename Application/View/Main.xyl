@@ -124,7 +124,6 @@
             'popstate',
             function ( evt ) {
 
-                console.dir(evt.state);
                 var state = evt.state;
                 Hoa.Async.sendForm(
                     Hoa.$('#' + state.formId),
