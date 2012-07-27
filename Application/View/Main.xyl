@@ -7,9 +7,9 @@
 
   <script src="hoa://Library/Xyl/Javascript/Hoa.js"></script>
 
-  <nav id="menu">
-    <div>
-      <async id="menu_async">
+  <async id="content_async" scope="?q:#content">
+    <nav id="menu">
+      <div>
         <ul id="nav-top">
           <li><a href="@g:all=" class="home">Accueil</a></li>
           <li><a href="#" class="download">Téléchargement</a></li>
@@ -22,36 +22,32 @@
           <li><a href="#" class="about">À propos</a></li>
           <li><a href="@c" class="contact">Contact</a></li>
         </ul>
-      </async>
+      </div>
+    </nav>
+
+    <div class="body">
+
+      <header>
+        <img src="hoa://Application/Public/Media/Image/Hoa.png" alt="Hoa" />
+      </header>
+
+      <article id="content">
+        <yield id="yContent" />
+      </article>
+
+      <footer>
+        <p>Hoa est la création de Ivan Enderlin, tous droits réservés.</p>
+      </footer>
+
     </div>
-  </nav>
-
-  <div class="body current">
-
-    <header>
-      <img src="hoa://Application/Public/Media/Image/Hoa.png" alt="Hoa" />
-    </header>
-
-    <article>
-      <yield id="yContent" />
-    </article>
-
-    <footer>
-      <p>Hoa est la création de Ivan Enderlin, tous droits réservés.</p>
-    </footer>
-  </div>
+  </async>
 
   <script>
     Hoa.Document.onReady(function ( ) {
 
-        var menuAsync = Hoa.$('#menu_async');
-        var body      = {
-            old    : null,
-            current: Hoa.$('div.body.current'),
-            new    : null
-        };
+        var contentAsync = Hoa.$('#content_async');
 
-        menuAsync.hoa.async.addEventListener(
+        contentAsync.hoa.async.addEventListener(
             'pushstate',
             function ( evt, data ) {
 
@@ -67,69 +63,28 @@
             }
         );
 
-        menuAsync.hoa.async.addEventListener(
-            'readystatechange',
-            function ( evt, data ) {
-
-                if(   this.STATE_DONE !== this.readyState
-                   ||             200 !== this.status)
-                    return;
-
-                window.scroll(0, 0);
-                body.old           = body.current;
-                body.old.classList.remove('current');
-                body.old.classList.add('old');
-
-                var article        = Hoa.DOM.article();
-                article.innerHTML  = this.responseText;
-                body.new           = Hoa.DOM.div(undefined, {class: 'body new'});
-                body.new.appendChild(
-                    Hoa.$('header', body.old).cloneNode(true)
-                );
-                body.new.appendChild(article);
-                body.new.appendChild(
-                    Hoa.$('footer', body.old).cloneNode(true)
-                );
-                document.body.appendChild(body.new);
-
-                var q = new Hoa.Concurrent.Scheduler();
-                var o = body.old;
-                var n = body.new;
-                q.wait(10)
-                 .schedule(function ( ) {
-
-                    body.current = body.new;
-                    body.current.classList.remove('new');
-                    body.current.classList.remove('current');
-                 })
-                 .wait(700)
-                 .schedule(function ( ) {
-
-                    o.parentNode.removeChild(o);
-                 });
-                q.spawn();
-            }
-        );
-
         Hoa.History.replace(
             {
-                formId: 'menu_async',
+                formId: 'content_async',
                 pathname: window.location.pathname + ''
             },
             document.title,
             window.location.pathname + ''
         );
 
-        menuAsync.hoa.async.addEventListener(
+        contentAsync.hoa.async.addEventListener(
             'popstate',
             function ( evt ) {
 
                 var state = evt.state;
                 Hoa.Async.sendForm(
-                    Hoa.$('#' + state.formId),
+                    contentAsync,
                     'get',
                     state.pathname,
-                    {link: true},
+                    {
+                        link  : true,
+                        scoped: contentAsync.hoa.async.getScopedElements()
+                    },
                     {'Content-Type': document.contentType || 'text/html'}
                 );
             }
