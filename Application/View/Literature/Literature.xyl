@@ -44,6 +44,8 @@
     <tableofcontents>
       <a href="@ll:chapter=Appendix_standards">Conventions de codage et de
       nommage</a>
+      <a href="@ll:chapter=Appendix_HTTP_servers">Configuration des serveurs
+      HTTP</a>
     </tableofcontents>
 
     <h2 id="Hack_book" for="menu-toc"><em lang="en">Hack book</em></h2>
