@@ -399,7 +399,6 @@ pre,
     z-index: 41;
 }
 
-/*
 .schema > div {
     margin: 0 auto 0 50%;
 }
@@ -407,18 +406,6 @@ pre,
 .schema > div > svg {
     margin-left: -50%;
 }
-
-    [data-checkpoint].sticky.floatting .schema {
-        position: fixed;
-        background: url('../Media/Image/Schema_background.png') repeat-x bottom left;
-    }
-
-    [data-checkpoint].sticky.border .schema {
-        top: auto;
-        bottom: 0;
-        background: url('../Media/Image/Schema_background.png') repeat-x bottom left;
-    }
-*/
 
 .download-box {
     position: relative;
