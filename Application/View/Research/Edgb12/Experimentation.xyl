@@ -5,7 +5,7 @@
   <yield id="yContent" bind="?edgb12">
     <h1><em>Grammar-based Testing using Realistic Domains in PHP</em></h1>
 
-    <h2 id="On_stage" for="menu-toc">On stage</h2>
+    <h2 id="On_stage">On stage</h2>
 
     <form id="experimentation" action="#experimentation" method="POST">
       <p><!--span class="left"><label for="selection" class="left">exemples : </label>

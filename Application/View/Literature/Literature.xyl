@@ -12,14 +12,14 @@
     produit de biens meilleurs résultats. C'est pourquoi Hoa propose différents
     manuels.</p>
 
-    <h2 id="Mini-tutoriel" for="menu-toc">Mini-tutoriel</h2>
+    <h2 id="Mini-tutoriel">Mini-tutoriel</h2>
 
     <p>Le mini-tutoriel est dédié aux personnes <strong>impatientes</strong> qui
     veulent avoir un aperçu de Hoa en quelques minutes, notamment sur l'aspect
     <strong>framework</strong> : <a href="@lt">lire le mini-tutoriel</a>. Ce
     mini-tutoriel reprend les exemples pratiques du manuel d'apprentissage.</p>
 
-    <h2 id="Manuel_d-apprentissage" for="menu-toc">Manuel d'apprentissage</h2>
+    <h2 id="Manuel_d-apprentissage">Manuel d'apprentissage</h2>
 
     <p>Le manuel d'apprentissage est dédié à l'<strong>apprentissage</strong> de
     Hoa, pas à pas, à travers un exemple <strong>fil rouge</strong> ainsi que de
@@ -44,11 +44,11 @@
     <tableofcontents>
       <a href="@ll:chapter=Appendix_standards">Conventions de codage et de
       nommage</a>
-      <a href="@ll:chapter=Appendix_HTTP_servers">Configuration des serveurs
+      <a href="@ll:chapter=Appendx_http_servers">Configuration des serveurs
       HTTP</a>
     </tableofcontents>
 
-    <h2 id="Hack_book" for="menu-toc"><em lang="en">Hack book</em></h2>
+    <h2 id="Hack_book"><em lang="en">Hack book</em></h2>
 
     <p>Le <em lang="en">hack book</em> contient des explications (très)
     <strong>détaillées</strong> sur toutes les bibliothèques de Hoa. Les
@@ -73,13 +73,13 @@
       <li><a href="@lh:chapter=Ghost"><code> </code></a>.</li>
     </ul>
 
-    <h2 id="Documentation_API" for="menu-toc">Documentation API</h2>
+    <h2 id="Documentation_API">Documentation API</h2>
 
     <p>Cette documentation est dite de <strong>bas-niveau</strong>,
     <em>i.e.</em> au niveau du code. Elle permet d'explorer le code, de suivre
     la trace des méthodes, des classes etc.</p>
 
-    <h2 id="Presentations" for="menu-toc">Présentations</h2>
+    <h2 id="Presentations">Présentations</h2>
 
     <p>Les présentations industrielles :</p>
     <ul>

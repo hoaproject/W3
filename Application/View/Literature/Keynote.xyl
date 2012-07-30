@@ -2,7 +2,7 @@
 
 <overlay xmlns="http://hoa-project.net/xyl/xylophone">
   <article id="content" bind="?keynote">
-    <h1 id="Keynote" for="menu-toc"><value bind="?title" /></h1>
+    <h1 id="Keynote"><value bind="?title" /></h1>
 
     <iframe src="@key:shell=Embedder&amp;keynote=(?id)" />
   </article>

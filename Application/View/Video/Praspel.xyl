@@ -2,7 +2,7 @@
 
 <overlay xmlns="http://hoa-project.net/xyl/xylophone">
   <yield id="yContent">
-    <h1 id="Praspel" for="menu-toc">Praspel</h1>
+    <h1 id="Praspel">Praspel</h1>
 
     <p>Please, follow this link: <a href="http://www.dailymotion.com/video/xhcrol_hoa-y-praspel-a-contract-based-testing-language_tech">Praspel,
     a contract-based testing language</a> on Dailymotion.</p>

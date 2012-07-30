@@ -2,7 +2,7 @@
 
 <overlay xmlns="http://hoa-project.net/xyl/xylophone">
   <yield id="yContent">
-    <h1 id="Popcode" for="menu-toc">Popcode (test)</h1>
+    <h1 id="Popcode">Popcode (test)</h1>
 
       <video width="720" id="video" controls="true">
         <source src="hoa://Application/Public/Media/Video/Foo.webm" />

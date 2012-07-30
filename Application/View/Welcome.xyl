@@ -11,7 +11,7 @@
     <strong>recherche</strong> et le monde de l'<strong>entreprise</strong>.</p>
 
     <div class="download-box">
-      <h1 id="Telechargement" for="menu-toc">Téléchargement</h1>
+      <h1 id="Telechargement">Téléchargement</h1>
 
       <ul>
         <li><a href="@dl:file=Central/Hoa_v-1.0.0b7.7z">.7z</a></li>
@@ -26,7 +26,7 @@
     <div class="grid">
       <div class="grow">
         <div class="gcell">
-          <h1 id="Bibliotheque" for="menu-toc">Bibliothèque</h1>
+          <h1 id="Bibliotheque">Bibliothèque</h1>
 
           <p>Hoa est découpé en bibliothèques regroupées autour d'un
           <strong>noyau</strong>. Hoa propose un mécanisme
@@ -40,7 +40,7 @@ event('hoa://Event/Log/Test/Praspel')->attach(
         </div>
 
         <div class="gcell">
-          <h1 id="Modularite" for="menu-toc">Modularité</h1>
+          <h1 id="Modularite">Modularité</h1>
 
           <p>Le noyau de Hoa s'assure de la modularité en gérant toutes les
           <strong>dépendances</strong>, <strong>importations</strong>,
@@ -55,7 +55,7 @@ $file = new Hoa\File\Read(
 
       <div class="grow">
         <div class="gcell">
-          <h1 id="Rapidite_et_puissance" for="menu-toc">Rapidité et puissance</h1>
+          <h1 id="Rapidite_et_puissance">Rapidité et puissance</h1>
 
           <p>Hoa requiert <strong>PHP 5.3</strong> minimum, la plus puissante
           des versions de PHP. De plus, Hoa est optimisé selon les
@@ -66,7 +66,7 @@ $file = new Hoa\File\Read(
         </div>
 
         <div class="gcell">
-          <h1 id="Innovation" for="menu-toc">Innovation</h1>
+          <h1 id="Innovation">Innovation</h1>
 
           <p>Hoa s'efforce de constamment <strong>innover</strong>. L'objectif
           est d'offrir le maximum de puissance à l'utilisateur de la manière la
@@ -85,7 +85,7 @@ $file = new Hoa\File\Read(
 
       <div class="grow">
         <div class="gcell">
-          <h1 id="Securite" for="menu-toc">Sécurité</h1>
+          <h1 id="Securite">Sécurité</h1>
 
           <p>Des travaux de recherche concernant les <strong>tests</strong>
           sont développés dans Hoa. On trouve entre autre un
@@ -100,7 +100,7 @@ $file = new Hoa\File\Read(
         </div>
 
         <div class="gcell">
-          <h1 id="Standards" for="menu-toc">Standards</h1>
+          <h1 id="Standards">Standards</h1>
 
           <p>Hoa participe entre autre au
           <a href="http://w3.org">W3C</a> dans les groupes de travail
@@ -112,7 +112,7 @@ $file = new Hoa\File\Read(
 
       <div class="grow">
         <div class="gcell">
-          <h1 id="Qui_l-utilise" for="menu-toc">Qui l'utilise ?</h1>
+          <h1 id="Qui_l-utilise">Qui l'utilise ?</h1>
 
           <ul id="whouse">
             <li>
