@@ -790,6 +790,9 @@ Hoa.Async = Hoa.Async || new function ( ) {
                 return;
             }
 
+            if('#' === pushstate.uri.charAt(0))
+                return;
+
             try {
 
                 Hoa.History.push(
@@ -828,7 +831,7 @@ Hoa.Async = Hoa.Async || new function ( ) {
 
             var state = evt.state;
 
-            if(undefined === state.formId)
+            if(null === state || undefined === state.formId)
                 return;
 
             var form = Hoa.$('#' + state.formId);
@@ -866,20 +869,41 @@ Hoa.Async = Hoa.Async || new function ( ) {
             return function ( ) { return new handle('Microsoft.XMLHTTP') };
     };
 
-    this.defaultReadyStateChangeEvent = function ( evt, data ) {
+    this.defaultReadyStateChangeEvent = function ( ) {
 
-        if(   this.STATE_DONE != this.readyState
-           ||             200 != this.status)
+        var delay = null;
+
+        return function ( evt, data ) {
+
+            var scoped = data.scoped;
+
+            if(null == scoped)
+                return;
+
+            var s = scoped.item(0);
+
+            if(this.STATE_OPENED == this.readyState) {
+
+                delay = delay || Hoa.Concurrent.after(250, function ( ) {
+
+                    s.setAttribute('data-latency', '>250');
+                });
+                s.setAttribute('aria-busy', 'true');
+
+                return;
+            }
+
+            if(   this.STATE_DONE != this.readyState
+               ||             200 != this.status)
+                return;
+
+            clearTimeout(delay);
+            s.innerHTML = this.responseText;
+            s.setAttribute('aria-busy', 'false');
+            s.removeAttribute('data-latency');
+
             return;
-
-        var scoped = data.scoped;
-
-        if(null == scoped)
-            return;
-
-        scoped[0].innerHTML = this.responseText;
-
-        return;
+        };
     };
 
     Hoa.ℙ(1) && (this.sendForm = function ( form, method, action, extra,
@@ -898,7 +922,7 @@ Hoa.Async = Hoa.Async || new function ( ) {
         if(undefined === form._hoa)
             handle = [{
                 type      : 'readystatechange',
-                listener  : this.defaultReadyStateChangeEvent,
+                listener  : this.defaultReadyStateChangeEvent(),
                 useCapture: false
             }];
         else {
@@ -911,7 +935,7 @@ Hoa.Async = Hoa.Async || new function ( ) {
             if(0 === handle.length)
                 handle = [{
                     type      : 'readystatechange',
-                    listener  : this.defaultReadyStateChangeEvent,
+                    listener  : this.defaultReadyStateChangeEvent(),
                     useCapture: false
                 }];
         }
@@ -941,7 +965,7 @@ Hoa.Async = Hoa.Async || new function ( ) {
             request.setRequestHeader(name, headers[name]);
         });
 
-        var ariaBusy = null !== form.getAttribute('aria-busy');
+        var ariaBusy = form.hasAttribute('data-formasync')
 
         if(true === ariaBusy)
             form.setAttribute('aria-busy', 'true');

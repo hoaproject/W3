@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<svg xmlns="http://www.w3.org/2000/svg"
+     xmlns:xlink="http://www.w3.org/1999/xlink"
+     width="100" height="100">
+  <style>
+    line {
+        stroke: #000;
+        stroke-width: 6px;
+        stroke-linecap: round;
+    }
+  </style>
+
+  <defs>
+    <line id="part" x1="50" y1="10" x2="50" y2="25" />
+  </defs>
+
+  <g>
+    <animateTransform
+        attributeType="XML" attributeName="transform" type="rotate"
+        values="
+              0 50 50;
+             30 50 50;
+             60 50 50;
+             90 50 50;
+            120 50 50;
+            150 50 50;
+            180 50 50;
+            210 50 50;
+            240 50 50;
+            270 50 50;
+            300 50 50;
+            330 50 50;
+            360 50 50"
+        calcMode="discrete" dur="1s" repeatCount="indefinite" />
+    <use xlink:href="#part" opacity="0" />
+    <use xlink:href="#part" opacity=".02" transform="rotate( 30, 50, 50)" />
+    <use xlink:href="#part" opacity=".05" transform="rotate( 60, 50, 50)" />
+    <use xlink:href="#part" opacity=".10" transform="rotate( 90, 50, 50)" />
+    <use xlink:href="#part" opacity=".15" transform="rotate(120, 50, 50)" />
+    <use xlink:href="#part" opacity=".2"  transform="rotate(150, 50, 50)" />
+    <use xlink:href="#part" opacity=".3"  transform="rotate(180, 50, 50)" />
+    <use xlink:href="#part" opacity=".4"  transform="rotate(210, 50, 50)" />
+    <use xlink:href="#part" opacity=".5"  transform="rotate(240, 50, 50)" />
+    <use xlink:href="#part" opacity=".6"  transform="rotate(270, 50, 50)" />
+    <use xlink:href="#part" opacity=".7"  transform="rotate(300, 50, 50)" />
+    <use xlink:href="#part" opacity=".8"  transform="rotate(330, 50, 50)" />
+  </g>
+</svg>

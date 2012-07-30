@@ -141,7 +141,21 @@ nav {
 
 article {
     margin: 1em 40px 5em;
+    position: relative;
 }
+
+    article[data-latency=">250"]::before {
+        content: ' ';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(255, 255, 255, .5)
+                    url('../Media/Image/Loader.svg')
+                    50% 50% no-repeat;
+        background-size: 80px;
+    }
 
 header {
     margin: 2em;
