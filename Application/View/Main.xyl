@@ -63,7 +63,7 @@
             }
         );
 
-        Hoa.History.replace(
+        window.history.replaceState(
             {
                 formId: 'content_async',
                 pathname: window.location.pathname + ''
