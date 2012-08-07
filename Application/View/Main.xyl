@@ -45,11 +45,16 @@
   <script>
     Hoa.Document.onReady(function ( ) {
 
+        if(undefined === window.history)
+            return;
+
         var contentAsync = Hoa.$('#content_async');
 
         contentAsync.hoa.async.addEventListener(
             'pushstate',
             function ( evt, data ) {
+
+                window.scrollTo(0, 0);
 
                 if(window.location.pathname === data.uri) {
 
@@ -77,6 +82,7 @@
             function ( evt ) {
 
                 var state = evt.state;
+                window.scrollTo(0, 0);
                 Hoa.Async.sendForm(
                     contentAsync,
                     'get',
