@@ -175,6 +175,7 @@ a {
     color: #795290;
     text-decoration: none;
     padding: 2px 5px;
+    border-radius: 3px;
     background: #efe6f5;
 }
 
@@ -247,6 +248,10 @@ p {
     clear: both;
 }
 
+em em {
+    font-style: normal;
+}
+
 strong {
     color: #de8300;
 }
@@ -259,6 +264,74 @@ code {
     code em {
         color: #6695c8;
     }
+
+li {
+    position: relative;
+    list-style: none;
+    margin: .2em 0 .2em 1em;
+    padding: 0;
+}
+
+    li::before {
+        position: absolute;
+        left: -2em;
+        cursor: default;
+        color: #795290;
+        height: 100%;
+        width: 1.3em;
+        text-align: center;
+        border-radius: 3px;
+        background: #efe6f5;
+    }
+
+    li:hover::before {
+        color: #efe6f5;
+        text-shadow: 0 1px #341d44;
+        background: #795290;
+    }
+
+ul { }
+
+    ul > li::before {
+        content: "•";
+    }
+
+    ul > li[data-item]::before {
+        content: attr(data-item);
+    }
+
+        ul > li[data-item="->"]::before {
+            content: "➜";
+        }
+
+        ul > li[data-item="+"]::before {
+            content: "✔";
+        }
+
+        ul > li[data-item="-"]::before {
+            content: "✖";
+        }
+
+ol {
+    counter-reset: ol 0;
+}
+
+    ol > li {
+        counter-increment: ol;
+    }
+
+    ol > li::before {
+        content: counter(ol);
+    }
+
+dl, dt, dd {
+    margin: 0;
+    padding: 0;
+}
+
+dt, dd {
+    display: block;
+}
 
 blockquote {
     pointer-events: none;
@@ -276,7 +349,7 @@ blockquote {
         top: 60px;
         left: -40px;
         font-size: 1000%;
-        text-shadow: 0 0 1px #555;
+        text-shadow: 0 0 2px #555;
     }
 
 video {
