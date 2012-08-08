@@ -541,11 +541,18 @@ pre,
         display: inline-block;
         margin: 0;
         padding: 0;
-        list-style-type: none;
+        list-style: none;
     }
 
     .download-box ul li {
         float: left;
+        position: static;
+        margin: 0;
+    }
+
+    .download-box ul li::before {
+        content: "";
+        display: none;
     }
 
     .download-box ul li a {
