@@ -39,6 +39,7 @@
       <a href="@ll:chapter=Routerdispatcher">Router + Dispatcher = ♥</a>
       <a href="@ll:chapter=Model">Modèle de données</a>
       <a href="@ll:chapter=Xyl">XYL</a>
+      <a href="@ll:chapter=Xyl_advanced">XYL avancé</a>
     </tableofcontents>
     <p>Annexes :</p>
     <tableofcontents>
@@ -99,7 +100,7 @@
       Montréal (Canada) ;</li>
       <li><a href="@key.:keynote=Ictss11/EDGB11.pdf"><cite lang="en">Praspel: A
       Specification Language for Contract-Driven Testing in PHP</cite></a>,
-      présentée ) <a href="http://ictss2011.lri.fr/">ICTSS 2011</a> à Paris
+      présentée à <a href="http://ictss2011.lri.fr/">ICTSS 2011</a> à Paris
       (France).</li>
     </ul>
   </yield>
