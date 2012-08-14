@@ -54,8 +54,6 @@
             'pushstate',
             function ( evt, data ) {
 
-                window.scrollTo(0, 0);
-
                 if(window.location.pathname === data.uri) {
 
                     data.uri = null;
@@ -82,7 +80,6 @@
             function ( evt ) {
 
                 var state = evt.state;
-                window.scrollTo(0, 0);
                 Hoa.Async.sendForm(
                     contentAsync,
                     'get',
