@@ -1,8 +1,8 @@
 <?php
 
-require dirname(dirname(__DIR__)) .
-        DIRECTORY_SEPARATOR . 'Data' .
-        DIRECTORY_SEPARATOR . 'Core.link.php';
+require_once dirname(dirname(__DIR__)) .
+             DIRECTORY_SEPARATOR . 'Data' .
+             DIRECTORY_SEPARATOR . 'Core.link.php';
 
 from('Hoa')
 -> import('Dispatcher.Basic')
