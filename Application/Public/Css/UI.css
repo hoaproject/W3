@@ -391,23 +391,27 @@ video {
         margin-bottom: -1.5em;
     }
 
-[data-tabs] > ul[role="tablist"] > li > a[role="tab"]{
-    color: #5c4716;
-    display: inline-block;
-    margin: 0 .8px;
-    padding: .4em .8em 0;
-    line-height: 1.8em;
-    height: 1.8em;
-    min-width: 5em;
-    border-radius: 0 0 0 5px;
-    background: transparent url('../Media/Image/Tab.png') repeat-x;
-    outline: none;
-    box-shadow: 0 2px 2px #d0bd9f;
-
-    transition: height .1s ease, border-radius .1s ease;
-    -o-transition: height .1s ease, border-radius .1s ease;
-    -webkit-transition: height .5s ease, border-radius .5s ease;
+[data-tabs] > ul[role="tablist"] > li::before {
+    display: none;
 }
+
+    [data-tabs] > ul[role="tablist"] > li > a[role="tab"]{
+        color: #5c4716;
+        display: inline-block;
+        margin: 0 .8px;
+        padding: .4em .8em 0;
+        line-height: 1.8em;
+        height: 1.8em;
+        min-width: 5em;
+        border-radius: 0 0 0 5px;
+        background: transparent url('../Media/Image/Tab.png') repeat-x;
+        outline: none;
+        box-shadow: 0 2px 2px #d0bd9f;
+
+        transition: height .1s ease, border-radius .1s ease;
+        -o-transition: height .1s ease, border-radius .1s ease;
+        -webkit-transition: height .5s ease, border-radius .5s ease;
+    }
 
     [data-tabs] > ul[role="tablist"] > li + li > a[role="tab"] {
         border-radius: 0;
