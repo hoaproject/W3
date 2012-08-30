@@ -32,7 +32,6 @@
     la suite avec le <em lang="en">hack book</em>.</p>
     <tableofcontents>
       <a href="@ll:chapter=Introduction">Introduction</a>
-      <a href="@ll:chapter=Discover">À la découverte de Hoa</a>
       <a href="@ll:chapter=Install">Installation</a>
       <a href="@ll:chapter=Core">Exploration du noyau</a>
       <a href="@ll:chapter=Framework">Aspect framework</a>
