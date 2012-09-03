@@ -26,6 +26,28 @@ class Index extends Generic {
 
         return;
     }
+
+    public function ErrorAction ( \Hoa\Core\Exception $exception ) {
+
+        switch(get_class($exception)) {
+
+            case 'Hoa\Router\Exception\NotFound':
+                $this->view->getOutputStream()->sendStatus(
+                    \Hoa\Http\Response::STATUS_NOT_FOUND
+                );
+              break;
+
+            default:
+                $this->view->getOutputStream()->sendStatus(
+                    \Hoa\Http\Response::STATUS_INTERNAL_SERVER_ERROR
+                );
+        }
+
+        $this->view->addOverlay('hoa://Application/View/Error.xyl');
+        $this->render();
+
+        return;
+    }
 }
 
 }

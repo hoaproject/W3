@@ -24,7 +24,8 @@ $router
     ->get('v',  '/Video\.html', 'video', 'default')
     ->get('v+', '/Video/(?<_able>\w+)\.html', 'video')
     ->get('c',  '/Contact\.html', 'index', 'contact')
-    ->get('g',  '/(?<all>.*)', 'index', 'default')
+    ->get('e',  '/Error\.html', 'index', 'error')
+    ->get('g',  '/', 'index', 'default')
     // --
     ->_get('_resource', '/(?<resource>)')
     ->_get('dl',   'http://download\.hoa-project\.net/(?<file>)')
@@ -37,9 +38,8 @@ try {
 }
 catch ( \Hoa\Core\Exception $e ) {
 
-    var_dump($e->getFormattedMessage());
-    /*
-    $xyl->addOverlay('hoa://Application/View/Error.xyl');
-    $xyl->render();
-    */
+    $router->route('/Error.html');
+    $rule                                                = &$router->getTheRule();
+    $rule[\Hoa\Router\Http::RULE_VARIABLES]['exception'] = $e;
+    $dispatcher->dispatch($router);
 }
