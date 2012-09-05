@@ -10,7 +10,7 @@ return array (
   ),
   'parameters' => 
   array (
-    'base' => NULL,
+    'prefix' => NULL,
     'rules.public' => array(
     ),
     'rules.private' => array(

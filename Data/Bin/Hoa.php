@@ -8,7 +8,7 @@
  *
  * New BSD License
  *
- * Copyright © 2007-2011, Ivan Enderlin. All rights reserved.
+ * Copyright © 2007-2012, Ivan Enderlin. All rights reserved.
  *
  * Redistribution and use in source and binary forms, with or without
  * modification, are permitted provided that the following conditions are met:
@@ -38,7 +38,7 @@ namespace {
 
 /**
  * @author     Ivan Enderlin <ivan.enderlin@hoa-project.net>
- * @copyright  Copyright © 2007-2011 Ivan Enderlin.
+ * @copyright  Copyright © 2007-2012 Ivan Enderlin.
  */
 
 /**
@@ -47,14 +47,8 @@ namespace {
 require dirname(__DIR__) . DIRECTORY_SEPARATOR . 'Core.link.php';
 
 /**
- * Deleguate hoa://Bin/Hoa.php to configure this tools.
- */
-define('HOA_DATA',        dirname(__DIR__));
-define('HOA_APPLICATION', dirname(dirname(__DIR__)) . DS . 'Application');
-
-/**
  * Call the real Hoa.php ;-).
  */
-require 'hoa://Bin/Hoa.php';
+require 'hoa://Library/Core/Bin/Hoa.php';
 
 }
