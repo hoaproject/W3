@@ -12,27 +12,23 @@ from('Hoa')
 
 $router = new Hoa\Router\Http();
 $router
-    ->get('i', '(|.*\.html)', function ( ) {
-
-        require 'index.php';
-    })
     ->get('a', '.*', function ( Hoa\Dispatcher\Kit $_this ) {
 
-        $file = __DIR__ . DS . $_this->router->getURI();
+        $uri  = $_this->router->getURI();
+        $file = __DIR__ . DS . $uri;
 
-        if(true === file_exists($file)) {
+        if(!empty($uri) && true === file_exists($file)) {
 
             $stream = new Hoa\File\Read($file);
             $mime   = new Hoa\Mime($stream);
 
             header('Content-Type: ' . $mime->getMime());
             echo $stream->readAll();
-        }
-        else {
 
-            header('Status: 500 Internal Server Error');
-            echo '500';
+            return;
         }
+
+        require 'index.php';
     });
 
 $dispatcher = new Hoa\Dispatcher\Basic();
