@@ -8,7 +8,7 @@ Foundry     : Ascender Corporation
 Foundry URL : httpwwwascendercorpcom
 </metadata>
 <defs>
-<font id="webfontq63XZdUr" horiz-adv-x="1228" >
+<font id="foo" horiz-adv-x="1228" >
 <font-face units-per-em="2048" ascent="1638" descent="-410" />
 <missing-glyph horiz-adv-x="500" />
 <glyph unicode=" " />
