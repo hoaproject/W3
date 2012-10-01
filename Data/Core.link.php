@@ -42,7 +42,7 @@ namespace {
  */
 
 // If your system does not support symlink:
-require_once '/usr/local/lib/hoa/Core/Core.php';
+require_once '/usr/local/lib/Hoa/Core/Core.php';
 
 // Else, this file will be deleted and replaced by a symlink.
 
