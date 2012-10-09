@@ -382,52 +382,56 @@ video {
     }
 
 [data-tabs] > ul[role="tablist"] {
-    margin: -1em 0 1em 0;
+    margin: -1em 0 -1.5em 0;
     text-align: center;
     height: 2.4em;
 }
 
-    [data-tabs].plain > ul[role="tablist"] {
-        margin-bottom: -1.5em;
-    }
+[data-tabs] > ul[role="tablist"] > li {
+    margin: 0;
+}
 
 [data-tabs] > ul[role="tablist"] > li::before {
     display: none;
 }
 
-    [data-tabs] > ul[role="tablist"] > li > a[role="tab"]{
+    [data-tabs] > ul[role="tablist"] > li > a[role="tab"] {
         color: #5c4716;
         display: inline-block;
-        margin: 0 .8px;
-        padding: .4em .8em 0;
+        margin: 0;
+        padding: .05em .8em;
         line-height: 1.8em;
-        height: 1.8em;
-        min-width: 5em;
-        border-radius: 0 0 0 5px;
-        background: transparent url('../Media/Image/Tab.png') repeat-x;
+        border: 1px #a28b3d solid;
+        border-width: 1px 0 1px 1px;
+        border-radius: 5px 0 0 5px;
+        text-shadow: none;
         outline: none;
-        box-shadow: 0 2px 2px #d0bd9f;
-
-        transition: height .1s ease, border-radius .1s ease;
-        -o-transition: height .1s ease, border-radius .1s ease;
-        -webkit-transition: height .5s ease, border-radius .5s ease;
+        background: #f2ede3;
+        transition: box-shadow .2s ease;
+        -o-transition: box-shadow .2s ease;
+        -webkit-transition: -webkit-box-shadow .2s ease;
     }
 
     [data-tabs] > ul[role="tablist"] > li + li > a[role="tab"] {
+        border-width: 1px 0 1px 1px;
         border-radius: 0;
-        border-width: 1px 1px 1px 0;
     }
 
     [data-tabs] > ul[role="tablist"] > li:last-of-type > a[role="tab"] {
-        border-radius: 0 0 5px 0;
+        border-width: 1px;
+        border-radius: 0 5px 5px 0;
     }
 
     [data-tabs] > ul[role="tablist"] > li > a[role="tab"]:active,
-    [data-tabs] > ul[role="tablist"] > li > a[role="tab"]:hover,
+    [data-tabs] > ul[role="tablist"] > li > a[role="tab"]:hover {
+        box-shadow: inset 0 0 2px #af9873;
+        -webkit-box-shadow: inset 0 0 2px #af9873;
+    }
+
     [data-tabs] > ul[role="tablist"] > li > a[aria-selected="true"] {
-        text-shadow: 0 1px 1px #c6b48a;
-        height: 100%;
-        border-radius: 0 0 5px 5px !important;
+        background: #f1deb9 !important;
+        box-shadow: inset 0 0 15px #b69d78 !important;
+        -webkit-box-shadow: inset 0 0 15px #b69d78 !important;
     }
 
 [data-tabs].plain > div[role="tabpanel"] > * {
