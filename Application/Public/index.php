@@ -28,9 +28,11 @@ $router
     ->get('g',  '/', 'index', 'default')
     // --
     ->_get('_resource', '/(?<resource>)')
-    ->_get('dl',   'http://download\.hoa-project\.net/(?<file>)')
-    ->_get('key.', 'http://keynote\.hoa-project\.net/(?<keynote>)')
-    ->_get('key',  'http://keynote\.hoa-project\.net/Shells/(?<shell>)\.html#http://keynote\.hoa-project\.net/(?<keynote>)\.html');
+    ->_get('dl',     'http://download\.hoa-project\.net/(?<file>)')
+    ->_get('git',    'http://git\.hoa\-project\.net/\?p=(?<repository>)\.git')
+    ->_get('github', 'https://github.com/hoaproject/(?<repository>)/')
+    ->_get('key.',   'http://keynote\.hoa-project\.net/(?<keynote>)')
+    ->_get('key',    'http://keynote\.hoa-project\.net/Shells/(?<shell>)\.html#http://keynote\.hoa-project\.net/(?<keynote>)\.html');
 
 try {
 
