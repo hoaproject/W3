@@ -600,3 +600,7 @@ ul.prev_next > li + li {
 
 ::-moz-selection { background: #e4cbf4 }
 ::selection      { background: #e4cbf4 }
+
+.tcenter {
+    text-align: center;
+}

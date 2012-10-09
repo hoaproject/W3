@@ -2,7 +2,7 @@
 
 <overlay xmlns="http://hoa-project.net/xyl/xylophone">
   <yield id="yContent">
-    <p class="text-center">Hoa est un ensemble de bibliothèques PHP
+    <p class="tcenter">Hoa est un ensemble de bibliothèques PHP
     <strong>modulaires</strong>, <strong>extensibles</strong> et
     <strong>structurées</strong>. De plus, Hoa souhaite être un pont entre le
     monde de la recherche et de l'industrie.</p>
