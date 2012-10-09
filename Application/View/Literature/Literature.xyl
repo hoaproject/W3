@@ -34,7 +34,7 @@
       <a href="@ll:chapter=Introduction">Introduction</a>
       <a href="@ll:chapter=Install">Installation</a>
       <a href="@ll:chapter=Core">Exploration du noyau</a>
-      <a href="@ll:chapter=Framework">Aspect framework</a>
+      <a href="@ll:chapter=Embryo">Squelette d'application</a>
       <a href="@ll:chapter=Routerdispatcher">Router + Dispatcher = ♥</a>
       <a href="@ll:chapter=Model">Modèle de données</a>
       <a href="@ll:chapter=Xyl">XYL</a>
