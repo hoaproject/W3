@@ -606,8 +606,11 @@ ul.prev_next > li + li {
     float: right;
 }
 
-::-moz-selection { background: #e4cbf4 }
-::selection      { background: #e4cbf4 }
+.columns[data-columns="2"] { -moz-columns: 2 }
+.columns[data-columns="3"] { -moz-columns: 3 }
+.columns[data-columns="4"] { -moz-columns: 4 }
+.columns[data-columns="5"] { -moz-columns: 5 }
+.columns[data-columns="6"] { -moz-columns: 6 }
 
 .tcenter {
     text-align: center;
@@ -625,3 +628,6 @@ ul.prev_next > li + li {
         margin-bottom: 1em;
         margin-left: 1em;
     }
+
+::-moz-selection { background: #e4cbf4 }
+::selection      { background: #e4cbf4 }
