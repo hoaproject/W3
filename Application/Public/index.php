@@ -21,6 +21,7 @@ $router
     ->get('lp', '/Literature/Popcode/(?<code>\w+)\.html', 'literature', 'popcode')
     ->get('r',  '/Research\.html', 'research', 'default')
     ->get_post('rx', '/Research/(?<article>\w+)/Experimentation\.html', 'research', 'experimentation')
+    ->get('s',  '/Source\.html', 'index', 'source')
     ->get('v',  '/Video\.html', 'video', 'default')
     ->get('v+', '/Video/(?<_able>\w+)\.html', 'video')
     ->get('c',  '/Contact\.html', 'index', 'contact')

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<overlay xmlns="http://hoa-project.net/xyl/xylophone">
+  <yield id="yContent">
+    <h1>Sources</h1>
+
+    <p>Hoa distribue les projets suivants :</p>
+    <ul>
+      <li><code>Central</code> : l'ensemble de toutes les bibliothèques
+      Hoa ;</li>
+      <li><code>Library/<em>*</em></code> : bibliothèques isolées ;</li>
+      <li><code>Embryo</code> : squelette d'application pour démarrer
+      rapidement ;</li>
+      <li><code>Literature</code> : tous les manuels et documentations ;</li>
+      <li><code>Keynote</code> : toutes les présentations ;</li>
+      <li><code>W3</code> : le site Web de Hoa ;</li>
+      <li><code>Bhoat</code> : le robot qui maintient les différents projets de
+      Hoa.</li>
+    </ul>
+
+    <h2 id="Gestionnaire_de_versions">Gestionnaire de versions</h2>
+
+    <p><img src="hoa://Application/Public/Media/Image/Git.png" alt="Logo de Git"
+            class="fright" />
+    Hoa utilise <a href="http://git-scm.com/">Git</a> pour tous ses projets.
+    L'index des dépôts se trouve à l'adresse :
+    <a href="http://git.hoa-project.net">git.hoa-project.net</a>. Les dépôts
+    sont nommés <code><em>project</em>.git</code>. Ainsi, pour
+    obtenir les sources du projet <code>Central</code> :</p>
+    <pre><code language="shell">$ git clone http://git.hoa-project.net/Central.git</code></pre>
+    <p>Pour obtenir une bibliothèque, par exemple <code>Hoa\Core</code> :</p>
+    <pre><code language="shell">$ git clone http://git.hoa-project.net/Library/Core.git</code></pre>
+    <p>Il est recommandé de <a href="http://git-scm.com/documentation">lire la
+    documentation de Git</a> si vous n'êtes pas familié avec cet outil.</p>
+    <p><img src="hoa://Application/Public/Media/Image/Github.png"
+           alt="Logo de Github" class="fright" />
+    Des miroirs existent pour la plupart des projets, notamment sur
+    <a href="http://github.com/hoaproject">Github</a>. Les noms des projets sont
+    identiques autant que possible. La plus grosse différence est pour les
+    bibliothèques : l'accès se fait sans le préfixe <code>Library/</code>.
+    Ainsi :</p>
+    <pre><code language="shell">$ git clone https://github.com/hoaproject/Core.git</code></pre>
+    <p>Les miroirs sont en permanence synchronisés, vous n'aurez jamais de
+    différences.</p>
+
+    <h2 id="Gestionnaire_de_dependances">Gestionnaire de dépendances</h2>
+
+    <p><img src="hoa://Application/Public/Media/Image/Composer.png"
+            alt="Logo de Composer" class="fright" />
+    Pour gérer les dépendances entre les bibliothèques de Hoa, nous
+    recommandons l'outil <a href="http://getcomposer.org/">Composer</a>. Toutes
+    les dépendances gérées avec Composer sont enregistrées auprès du dépôt
+    <a href="http://packagist.org/">Packagist</a> sous les noms
+    <code>hoa/<em>library</em></code>. Ainsi, par exemple, pour installer la
+    bibliothèque <code>Hoa\Compiler</code>, il faudra écrire dans un fichier
+    <code>composer.json</code> :</p>
+    <pre><code>{
+    "require": {
+        "hoa/compiler": "master"
+    },
+    "minimum-stability": "dev"
+}</code></pre>
+    <p>Puis pour installer les dépendances :</p>
+    <pre><code language="shell">$ composer install</code></pre>
+    <p>Il est recommandé de <a href="https://getcomposer.org/doc/">lire la
+    documentation de Composer</a> si vous n'êtes pas familié avec cet outil.</p>
+
+    <h2>Archives</h2>
+
+    <p>Des archives sont produites à chaque mise à jour des projets. L'index des
+    archives se trouve à l'adresse :
+    <a href="http://download.hoa-project.net">download.hoa-project.net</a>.
+    Elles suivent également le nommage des projets. Plusieurs formats sont
+    disponibles : <code>.zip</code>, <code>.tar.gz</code> et
+    <code>.phar</code> (pour les <a href="http://php.net/phar">les archives
+    PHP</a>).</p>
+    <p>Le protocole WebDAV permet également d'accéder aux archives, à
+    l'adresse : <a href="http://dav.hoa-project.net">dav.hoa-project.net</a>.</p>
+
+  </yield>
+</overlay>

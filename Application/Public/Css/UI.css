@@ -93,7 +93,7 @@ nav {
     }
 
     nav a.home { background: url('../Media/Image/Icon_home.svg') 8px 6px no-repeat; }
-    nav a.download { background: url('../Media/Image/Icon_download.svg') 8px 6px no-repeat; }
+    nav a.source { background: url('../Media/Image/Icon_package.svg') 8px 6px no-repeat; }
     nav a.literature { background: url('../Media/Image/Icon_literature.svg') 8px 6px no-repeat; }
     nav a.video { background: url('../Media/Image/Icon_video.svg') 8px 6px no-repeat; }
     nav a.community { background: url('../Media/Image/Icon_community.svg') 8px 6px no-repeat; }
@@ -446,6 +446,7 @@ video {
 .verbatim,
 pre,
 .CodeMirror {
+    clear: both;
     margin-left: -40px;
     margin-right: -40px;
 }
@@ -611,3 +612,16 @@ ul.prev_next > li + li {
 .tcenter {
     text-align: center;
 }
+
+.fleft {
+    float: left;
+}
+
+.fright {
+    float: right;
+}
+
+    img.fright {
+        margin-bottom: 1em;
+        margin-left: 1em;
+    }

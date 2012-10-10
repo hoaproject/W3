@@ -14,7 +14,7 @@
       <div>
         <ul id="nav-top">
           <li><a href="@g:all=" class="home">Accueil</a></li>
-          <li><a href="#" class="download">Téléchargement</a></li>
+          <li><a href="@s" class="source">Sources</a></li>
           <li><a href="@l" class="literature">Littérature</a></li>
           <li><a href="@v" class="video">Vidéo</a></li>
           <li><a href="http://forum.hoa-project.net/" class="community">Communauté</a></li>

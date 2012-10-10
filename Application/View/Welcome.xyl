@@ -18,6 +18,7 @@
         <li><a href="@github:repository=Central">
               <img src="hoa://Application/Public/Media/Image/Icon_github.svg"
                    alt="Github" width="30px" height="30px" /></a></li>
+        <li><a href="@s" title="Voir toutes les sources">…</a></li>
       </ul>
     </div>
 
