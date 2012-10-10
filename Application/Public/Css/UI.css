@@ -401,7 +401,7 @@ video {
         margin: 0;
         padding: .05em .8em;
         line-height: 1.8em;
-        border: 1px #a28b3d solid;
+        border: 1px #b8a76c solid;
         border-width: 1px 0 1px 1px;
         border-radius: 5px 0 0 5px;
         text-shadow: none;
@@ -429,7 +429,7 @@ video {
     }
 
     [data-tabs] > ul[role="tablist"] > li > a[aria-selected="true"] {
-        background: #f1deb9 !important;
+        background: #f1e3c8;
         box-shadow: inset 0 0 15px #b69d78 !important;
         -webkit-box-shadow: inset 0 0 15px #b69d78 !important;
     }
