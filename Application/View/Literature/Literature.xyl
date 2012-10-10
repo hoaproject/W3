@@ -55,22 +55,13 @@
     chapitres sont non-ordonnées. Toutes les bibliothèques n'auront plus aucun
     secret pour vous et ainsi vous pourrez les <strong>bidouiller</strong> !</p>
     <ul>
-      <li><a href="@lh:chapter=Core"><code>Core</code></a> :
-        <ul>
-          <li><a href="@lh:chapter=Consistency"><code>Consistency</code></a> ;</li>
-          <li><a href="@lh:chapter=Protocol"><code>Protocol</code></a>.</li>
-        </ul>
-      </li>
       <li><a href="@lh:chapter=Bench"><code>Bench</code></a> ;</li>
       <li><a href="@lh:chapter=Compiler"><code>Compiler</code></a> ;</li>
       <li><a href="@lh:chapter=Dns"><code>Dns</code></a> ;</li>
       <li><a href="@lh:chapter=Fastcgi"><code>Fastcgi</code></a> ;</li>
       <li><a href="@lh:chapter=Http"><code>Http</code></a> ;</li>
-      <li><a href="@lh:chapter=Router"><code>Router</code></a> ;</li>
-      <li><a href="@lh:chapter=Websocket"><code>Websocket</code></a> ;</li>
       <li><a href="@lh:chapter=Worker"><code>Worker</code></a> ;</li>
-      <li><a href="@lh:chapter=Zombie"><code>Zombie</code></a> ;</li>
-      <li><a href="@lh:chapter=Ghost"><code> </code></a>.</li>
+      <li><a href="@lh:chapter=Zombie"><code>Zombie</code></a>.</li>
     </ul>
 
     <h2 id="Documentation_API">Documentation API</h2>
