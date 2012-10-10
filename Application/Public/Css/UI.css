@@ -184,14 +184,17 @@ a {
 }
 
     a:hover,
-    a:active {
+    a:active,
+    a:focus {
         color: #efe6f5;
         text-shadow: 0 1px #341d44;
+        outline: none;
         background: #795290;
     }
 
     a:hover code,
-    a:active code {
+    a:active code,
+    a:focus code {
         color: inherit;
     }
 
