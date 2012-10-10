@@ -59,7 +59,6 @@
       <li><a href="@lh:chapter=Compiler"><code>Compiler</code></a> ;</li>
       <li><a href="@lh:chapter=Dns"><code>Dns</code></a> ;</li>
       <li><a href="@lh:chapter=Fastcgi"><code>Fastcgi</code></a> ;</li>
-      <li><a href="@lh:chapter=Http"><code>Http</code></a> ;</li>
       <li><a href="@lh:chapter=Worker"><code>Worker</code></a> ;</li>
       <li><a href="@lh:chapter=Zombie"><code>Zombie</code></a>.</li>
     </ul>
