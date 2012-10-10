@@ -4,18 +4,22 @@
   <yield id="yContent">
     <h1>Contact</h1>
 
-    <p>Pour contacter Ivan Enderlin, fondateur et développeur principal de
-    Hoa, plusieurs moyens, dans l'ordre :</p>
+    <p>Hoa est constitué de quatre co-gérants de communauté :</p>
     <ul>
-      <li>Email : <em>prénom</em>.<em>nom</em>@hoa-project.net ;</li>
-      <li>Twitter : <a href="http://twitter.com/hoaproject">@hoaproject</a> ;</li>
-      <li>Forum : voir <em>Communauté</em> dans <a href="#menu">le
-      menu</a> ;</li>
-      <li>IRL : en France (majoritairement Besançon, Paris, Lyon) ou en
-      Suisse (majoritairement Yverdon-les-Bains, Lausanne, Genève), et dans
-      les salons ou forums à travers le monde ;</li>
-      <li>Flatland : pas loin de <em>spaceland</em> ;</li>
-      <li>… d'une manière générale : devant un écran et/ou un clavier.</li>
+      <li>Ivan Enderlin (hywan)</li>
+      <li>Raphaël Emourgeon (iraphael)</li>
+      <li>Matthieu Codron (circlecode)</li>
+      <li>Julien Clauzel (thehawk)</li>
     </ul>
+    <p>Vous pouvez les contacter aux adresses
+    <code><em>prénom</em>.<em>nom</em>@hoa-project.net</code> ou
+    <code><em>pseudo</em>@hoa-project.net</code>. Les prénoms et noms ne doivent
+    pas comporter d'accents.</p>
+    <p>D'autres moyons sont mis à votre disposition, comme
+    <a href="@forum">le forum</a> ou
+    <a href="https://twitter.com/hoaproject/">le compte Twitter</a>. Enfin, dans
+    la matrice, vous pouvez nous rencontrer facilement dans les villes
+    suivantes : Paris, Lyon, Besançon pour la France et Lausanne, Genève,
+    Neuchâtel pour la Suisse.</p>
   </yield>
 </overlay>
