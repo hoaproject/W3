@@ -276,12 +276,12 @@ li {
     position: relative;
     list-style: none;
     margin: .2em 0 .2em 1em;
-    padding: 0;
+    padding: 0 0 0 1em;
 }
 
     li::before {
         position: absolute;
-        left: -2em;
+        left: -1em;
         cursor: default;
         color: #795290;
         height: 100%;
@@ -295,6 +295,15 @@ li {
         color: #efe6f5;
         text-shadow: 0 1px #341d44;
         background: #795290;
+    }
+
+    li li {
+        margin: .2em 0 .2em 1em;
+        padding: 0;
+    }
+
+    li li::before {
+        left: -2em;
     }
 
 ul { }
@@ -606,11 +615,31 @@ ul.prev_next > li + li {
     float: right;
 }
 
-.columns[data-columns="2"] { -moz-columns: 2 }
-.columns[data-columns="3"] { -moz-columns: 3 }
-.columns[data-columns="4"] { -moz-columns: 4 }
-.columns[data-columns="5"] { -moz-columns: 5 }
-.columns[data-columns="6"] { -moz-columns: 6 }
+.columns { }
+
+    .columns[data-columns="2"] {
+        columns: 2
+        -moz-columns: 2;
+        -webkit-columns: 2;
+    }
+
+    .columns[data-columns="3"] {
+        columns: 3
+        -moz-columns: 3;
+        -webkit-columns: 3;
+    }
+
+    .columns[data-columns="4"] {
+        columns: 4;
+        -moz-columns: 4;
+        -webkit-columns: 4;
+    }
+
+    .columns[data-columns="5"] {
+        columns: 5
+        -moz-columns: 5;
+        -webkit-columns: 5;
+    }
 
 .tcenter {
     text-align: center;
