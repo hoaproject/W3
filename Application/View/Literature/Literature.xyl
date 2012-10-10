@@ -42,8 +42,6 @@
     </tableofcontents>
     <p>Annexes :</p>
     <tableofcontents>
-      <a href="@ll:chapter=Appendix_standards">Conventions de codage et de
-      nommage</a>
       <a href="@ll:chapter=Appendix_http_servers">Configuration des serveurs
       HTTP</a>
     </tableofcontents>
