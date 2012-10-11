@@ -3,6 +3,7 @@
 namespace {
 
 from('Hoa')
+-> import('Dispatcher.Kit')
 -> import('File.Read')
 -> import('Http.Response.~')
 -> import('Xyl.~')
