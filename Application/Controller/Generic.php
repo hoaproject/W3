@@ -3,7 +3,6 @@
 namespace {
 
 from('Hoa')
--> import('Dispatcher.Basic.Controller')
 -> import('File.Read')
 -> import('Http.Response.~')
 -> import('Xyl.~')
@@ -13,7 +12,7 @@ from('Hoa')
 
 namespace Application\Controller {
 
-class Generic extends \Hoa\Dispatcher\Basic\Controller {
+class Generic extends \Hoa\Dispatcher\Kit {
 
     public function construct ( ) {
 
