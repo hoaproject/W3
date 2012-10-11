@@ -5,7 +5,7 @@ require_once dirname(dirname(__DIR__)) .
              DIRECTORY_SEPARATOR . 'Core.link.php';
 
 from('Hoa')
--> import('Dispatcher.Basic')
+-> import('Dispatcher.Basic.~')
 -> import('Router.Http');
 
 $dispatcher = new \Hoa\Dispatcher\Basic(array(
