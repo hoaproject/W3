@@ -19,6 +19,7 @@ $router
     ->get('lh', '/Literature/Hack/(?<chapter>\w+)\.html', 'literature', 'hack')
     ->get('lk', '/Literature/Keynote/(?<keynote>\w+)\.html', 'literature', 'keynote')
     ->get('lp', '/Literature/Popcode/(?<code>\w+)\.html', 'literature', 'popcode')
+    ->get('lc', '/Literature/Contributor/Guide\.html', 'literature', 'contributor')
     ->get('r',  '/Research\.html', 'research', 'default')
     ->get_post('rx', '/Research/(?<article>\w+)/Experimentation\.html', 'research', 'experimentation')
     ->get('s',  '/Source\.html', 'index', 'source')

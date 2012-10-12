@@ -65,6 +65,15 @@ class Literature extends Generic {
 
         return;
     }
+
+    public function ContributorAction ( ) {
+
+        $this->view->addUse('hoa://Application/External/Literature/Contributor/Guide.xyl');
+        $this->view->addOverlay('hoa://Application/View/Literature/Learn.xyl');
+        $this->render();
+
+        return;
+    }
 }
 
 }
