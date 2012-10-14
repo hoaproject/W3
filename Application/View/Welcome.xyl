@@ -11,9 +11,9 @@
       <h1 id="Telechargement">Téléchargement</h1>
 
       <ul>
-        <li><a href="@dl:file=Central/Hoa_v-1.0.0b8.zip">zip</a></li>
-        <li><a href="@dl:file=Central/Hoa_v-1.0.0b8.tar.gz">tar.gz</a></li>
-        <li><a href="@dl:file=Central/Hoa_v-1.0.0b8.phar">phar</a></li>
+        <li><a href="@dl:file=Central/Hoa_central.next.zip">zip</a></li>
+        <li><a href="@dl:file=Central/Hoa_central.next.tar.gz">tar.gz</a></li>
+        <li>phar</li>
         <li><a href="@git:repository=Central">git</a></li>
         <li><a href="@github:repository=Central">
               <img src="hoa://Application/Public/Media/Image/Icon_github.svg"
