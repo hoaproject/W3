@@ -184,7 +184,7 @@ check(
 
 try {
 
-    if(true === function_exists('symlink'))
+    if(true !== function_exists('symlink'))
         throw new Hoa\Core\Exception\Idle('** goto-like **');
 
     check(

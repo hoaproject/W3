@@ -46,6 +46,13 @@ namespace {
  */
 require dirname(__DIR__) . DIRECTORY_SEPARATOR . 'Core.link.php';
 
+$core = Hoa\Core::getInstance();
+$core->getParameters()->setParameter(
+    'root.application',
+    '(:cwd:hh:)/Application'
+);
+$core->setProtocol();
+
 /**
  * Call the real Hoa.php ;-).
  */

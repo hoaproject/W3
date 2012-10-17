@@ -3,7 +3,7 @@
      * Keywords.
      */
     "keywords": {
-        "hoa"                            : null,
+        "root"                           : null,
         "cwd"                            : null
     },
 
@@ -11,39 +11,29 @@
      * Parameters.
      */
     "parameters": {
+        "root.hoa"                       : "(:root:)",
         "root.application"               : "(:cwd:h:)",
         "root.data"                      : "(:%root.application:h:)/Data",
-        "root.hoa"                       : "(:hoa:)",
-
-        "hoa.bin"                        : "(:%root.hoa:)/Bin",
-        "hoa.core"                       : "(:%root.hoa:)/Core",
-        "hoa.library"                    : "(:%root.hoa:)/Library",
-        "hoa.module"                     : "(:%root.hoa:)/Module",
-
-        "data.module"                    : "(:%root.data:)/Module",
 
         "protocol.Application"           : "(:%root.application:)/",
-        "protocol.Application/Public"    : "(:%protocol.Application:)Public/",
-        "protocol.Bin"                   : "(:%hoa.bin:)/",
+        "protocol.Application/Public"    : "Public/",
         "protocol.Data"                  : "(:%root.data:)/",
-        "protocol.Data/Etc"              : "(:%protocol.Data:)Etc/",
-        "protocol.Data/Etc/Configuration": "(:%protocol.Data/Etc:)Configuration/",
-        "protocol.Data/Etc/Locale"       : "(:%protocol.Data/Etc:)Locale/",
-        "protocol.Data/Lost+found"       : "(:%protocol.Data:)Lost+found/",
-        "protocol.Data/Module"           : "(:%data.module:)/",
-        "protocol.Data/Temporary"        : "(:%protocol.Data:)Temporary/",
-        "protocol.Data/Variable"         : "(:%protocol.Data:)Variable/",
-        "protocol.Data/Variable/Cache"   : "(:%protocol.Data/Variable:)Cache/",
-        "protocol.Data/Variable/Database": "(:%protocol.Data/Variable:)Database/",
-        "protocol.Data/Variable/Log"     : "(:%protocol.Data/Variable:)Log/",
-        "protocol.Data/Variable/Private" : "(:%protocol.Data/Variable:)Private/",
-        "protocol.Data/Variable/Run"     : "(:%protocol.Data/Variable:)Run/",
-        "protocol.Data/Variable/Test"    : "(:%protocol.Data/Variable:)Test/",
-        "protocol.Data"                  : "(:%root.data:)/",
-        "protocol.Library"               : "(:%hoa.library:)/",
+        "protocol.Data/Etc"              : "Etc/",
+        "protocol.Data/Etc/Configuration": "Configuration/",
+        "protocol.Data/Etc/Locale"       : "Locale/",
+        "protocol.Data/Library"          : "Library/Hoathis/;Library/Hoa/",
+        "protocol.Data/Lost+found"       : "Lost+found/",
+        "protocol.Data/Temporary"        : "Temporary/",
+        "protocol.Data/Variable"         : "Variable/",
+        "protocol.Data/Variable/Cache"   : "Cache/",
+        "protocol.Data/Variable/Database": "Database/",
+        "protocol.Data/Variable/Log"     : "Log/",
+        "protocol.Data/Variable/Private" : "Private/",
+        "protocol.Data/Variable/Run"     : "Run/",
+        "protocol.Data/Variable/Test"    : "Test/",
+        "protocol.Library"               : "(:%protocol.Data:)Library/Hoathis/;(:%protocol.Data:)Library/Hoa/;(:%root.hoa:)/Hoathis/;(:%root.hoa:)/Hoa/",
 
-        "namespace.prefix.Hoa"           : "(:%hoa.library:)",
-        "namespace.prefix.Hoathis"       : "(:%data.module:);(:%hoa.module:)/"
-        "namespace.prefix.Application"   : "(:%root.application:)"
+        "namespace.prefix.*"             : "(:%protocol.Data:)Library/;(:%root.hoa:)/",
+        "namespace.prefix.Application"   : "(:%root.application:h:)/"
     }
 }
