@@ -38,7 +38,8 @@
       <a href="@ll:chapter=Routerdispatcher">Router + Dispatcher = ♥</a>
       <a href="@ll:chapter=Model">Modèle de données</a>
       <a href="@ll:chapter=Xyl">XYL</a>
-      <a href="@ll:chapter=Xyl_advanced">XYL avancé</a>
+      <a href="@ll:chapter=Form">Formulaire</a>
+      <a href="@ll:chapter=Fragment_async">Fragment et asynchrone</a>
     </tableofcontents>
     <p>Annexes :</p>
     <tableofcontents>
