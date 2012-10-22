@@ -345,8 +345,38 @@ dl, dt, dd {
     padding: 0;
 }
 
+dl {
+    margin-top: 2em;
+}
+
 dt, dd {
     display: block;
+}
+
+    dl.dialog > dt {
+        color: #de8300;
+        font-weight: bold;
+    }
+
+    dl.dialog > dd,
+    dl.dialog > dt {
+        position: relative;
+        min-height: 80px;
+        padding-top: 1em;
+        padding-bottom: 1em;
+    }
+
+    dl.dialog p {
+        margin-left: 110px;
+    }
+
+    dl.dialog div.avatar {
+        position: absolute;
+        top: .25em;
+    }
+
+q::before, q::after {
+    content: '';
 }
 
 blockquote {
@@ -366,6 +396,35 @@ blockquote {
         left: -40px;
         font-size: 1000%;
         text-shadow: 1px 1px 1px rgba(0, 0, 0, .5);
+    }
+
+img {
+    vertical-align: middle;
+    border: 0;
+}
+
+    div.avatar {
+        position: relative;
+        width: 80px;
+        height: 80px;
+        box-shadow: 0 0 10px #000;
+        border-radius: 50%;
+        border: 2px #fff solid;
+    }
+
+    div.avatar > img {
+        border-radius: 40px; /* 50% does not work with Presto */
+    }
+
+    div.avatar::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        border-radius: 50%;
+        box-shadow: inset 0 0 12px #000;
     }
 
 video {

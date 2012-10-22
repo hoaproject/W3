@@ -35,6 +35,14 @@ class Index extends Generic {
         return;
     }
 
+    public function WhouseAction ( $who ) {
+
+        $this->view->addOverlay('hoa://Application/View/Whouse/' . ucfirst($who) . '.xyl');
+        $this->render();
+
+        return;
+    }
+
     public function ErrorAction ( \Hoa\Core\Exception $exception ) {
 
         switch(get_class($exception)) {

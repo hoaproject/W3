@@ -26,6 +26,7 @@ $router
     ->get('v',  '/Video\.html', 'video', 'default')
     ->get('v+', '/Video/(?<_able>\w+)\.html', 'video')
     ->get('c',  '/Contact\.html', 'index', 'contact')
+    ->get('u',  '/Whouse/(?<who>\w+)\.html', 'index', 'whouse')
     ->get('e',  '/Error\.html', 'index', 'error')
     ->get('g',  '/', 'index', 'default')
     // --

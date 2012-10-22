@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<overlay xmlns="http://hoa-project.net/xyl/xylophone">
+  <yield id="yContent">
+    <h1><img src="hoa://Application/Public/Media/Image/WhoUse/Verylastroom.png"
+             alt="VeryLastRoom" /> utilise Hoa</h1>
+
+    <p><a href="http://verylastroom.com/">VeryLastRoom</a> propose tous les
+    jours les meilleurs prix en permanence dans son offre hôtelière au sein de
+    ses applications mobiles. C'est dans ce cadre que VeryLastRoom a eu
+    l'occasion d'utiliser Hoa.</p>
+    <p>L'intégration a été <strong>rapide</strong> et <strong>efficace</strong>,
+    et les <strong>performances</strong> sont au rendez-vous. VeryLastRoom
+    recommande à tous les développeurs PHP de considérer l'utilisation de Hoa
+    dans leurs projets.</p>
+
+    <dl class="dialog">
+      <dt>
+        <div class="avatar">
+          <img src="hoa://Application/Public/Media/Image/Avatar/Hywan.png"
+               alt="Ivan :" />
+        </div>
+        <p>Bonjour Sébastien, peux-tu te présenter en quelques mots ?</p>
+      </dt>
+      <dd>
+        <div class="avatar">
+          <img src="hoa://Application/Public/Media/Image/Avatar/Shouze.png"
+               alt="Sébastien :" />
+        </div>
+        <p>Bonjour, je suis Sébastien Houzé, directeur technique de
+        VeryLastRoom, une application mobile de réservation de chambres d'hôtels
+        à la <strong>dernière</strong> minute et à prix
+        <strong>cassé</strong>.</p>
+      </dd>
+
+      <dt>
+        <div class="avatar">
+          <img src="hoa://Application/Public/Media/Image/Avatar/Hywan.png"
+               alt="Ivan :" />
+        </div>
+        <p>Quelle est ton histoire avec PHP ?</p>
+      </dt>
+      <dd>
+        <div class="avatar">
+          <img src="hoa://Application/Public/Media/Image/Avatar/Shouze.png"
+               alt="Sébastien :" />
+        </div>
+        <p>J'ai plus de 10 ans d'expérience avec PHP. J'ai été amené tout au
+        long de ces années à m'essayer à Perl, Python, Erlang, Java, C, C++ ou
+        encore Objective C. Pas encore de contribution au cœur de PHP à ce jour
+        même si mon passé en C/C++ m'en a souvent donné l'envie.</p>
+        <p>J'ai toujours porté un regard bienveillant sur PHP malgré ce qu'on
+        peut lui reprocher, notamment pour une raison simple : rares sont les
+        projets qui se montent seuls et PHP est l'un des très rares langages ici
+        en France (en plus de Java et .Net) à avoir un <strong>grand
+        vivier</strong> de développeurs, souvent
+        <strong>talentueux</strong>.</p>
+      </dd>
+
+      <dt>
+        <div class="avatar">
+          <img src="hoa://Application/Public/Media/Image/Avatar/Hywan.png"
+               alt="Ivan :" />
+        </div>
+        <p>Dans quel cadre as-tu utilisé Hoa ?</p>
+      </dt>
+      <dd>
+        <div class="avatar">
+          <img src="hoa://Application/Public/Media/Image/Avatar/Shouze.png"
+               alt="Sébastien :" />
+        </div>
+        <p>Chez VeryLastRoom, l'une des originalités des chambres d'hôtels que
+        nous proposons tous les jours entre midi et 2h du matin, c'est que
+        durant cette même période le prix des chambres descend en <strong>temps
+        réel</strong>. C'est tombé comme une évidence pour nous : <q>« moins tu
+        restes, moins tu payes »</q>.</p>
+        <p>Pour mettre en œuvre ce prix qui descend en temps réel, nous avons
+        modélisé mathématiquement un algorithme, une recette gardée au moins
+        aussi <strong>secrètement</strong> que celle d'un célèbre soda toujours
+        copié mais jamais égalé !<br />
+        Au démarrage du projet VeryLastRoom, j'ai écrit un programme en C++
+        capable de prendre en charge cet algorithme car j'avais réussi à
+        rassembler des bibliothèques qui pouvaient me faire gagner du temps. Je
+        ne concevais pas à ce moment là qu'il soit possible de réaliser une
+        telle chose en PHP, d'une part à cause du manque de bibliothèques et
+        d'autre part pour des raisons de performances.</p>
+        <p>Puis il y a quelques mois … nous avons découvert Hoa. Même s'il est
+        jeune, il peut d'ores et déjà <strong>rivaliser</strong> avec
+        <a href="http://framework.zend.com/">Zend Framework</a> ou même
+        <a href="http://symfony.com/">Symfony</a>. Dans notre cas, nous avions
+        déjà fait le choix de Symfony et nous capitalisions une trop grande
+        expérience sur ce framework pour y renoncer immédiatement. Nous avons
+        donc cherché à <strong>mixer</strong> Hoa et Symfony. Et c'est justement
+        la <strong>qualité</strong> de Hoa ! Il est composé de
+        <strong>bibliothèques indépendantes</strong>,
+        <strong>installables</strong> comme nous le souhaitons, et même
+        <a href="@s#Gestionnaire_de_dependances">via Composer</a>.
+        Il ne nous manquait que ça pour nous y mettre et utiliser
+        <code>Hoa\Math</code> ainsi que <code>Hoa\Compiler</code>.</p>
+        <p>Cela a été aussi pour nous l'occasion de <strong>contribuer</strong>
+        au projet et d'enrichir <code>Hoa\Math</code>.</p>
+        <p>Au final, avec <code>Hoa\Math</code>, nous avons pu totalement
+        <strong>remplacer</strong> notre programme C++ par une solution
+        <strong>intégrée</strong> en PHP, plus facilement
+        <strong>maintenable</strong> et <strong>évolutive</strong>, mais aussi
+        plus <strong>performante</strong> côté serveur et côté client car il a
+        été plus simple de mettre au point certaines optimisations qui ont eu
+        des répercutions côté client.</p>
+      </dd>
+
+      <dt>
+        <div class="avatar">
+          <img src="hoa://Application/Public/Media/Image/Avatar/Hywan.png"
+               alt="Ivan :" />
+        </div>
+        <p>Quel bilan en tirez-vous ?</p>
+      </dt>
+      <dd>
+        <div class="avatar">
+          <img src="hoa://Application/Public/Media/Image/Avatar/Shouze.png"
+               alt="Sébastien :" />
+        </div>
+        <p>Très <strong>positif</strong> !</p>
+        <p>Le premier point intéressant c'est qu'au final la solution
+        implémentée en PHP est plus performante que l'ancienne solution écrite
+        en C++ : environ <strong>20% plus rapide</strong>. Cela s'explique en
+        bonne partie par l'économie du coût de création du processus C++ depuis
+        PHP.</p>
+        <p>De plus, la charge de nos services n'a pas augmenté alors que le
+        volume de nos requêtes continue de progresser. C'est un beau
+        <strong>laisser-passer</strong> pour Hoa dans le domaine de la
+        <strong>production</strong>.</p>
+        <p>Enfin, nous avons contribué à Hoa, et Ivan Enderlin (le fondateur du
+        projet) ainsi que les contributeurs de Hoa ont toujours été
+        <strong>disponibles</strong> et de <strong>bon conseil</strong> sur IRC.
+        Un grand merci à eux pour nous avoir aidé à aboutir à une solution
+        <strong>pratique</strong> et <strong>efficace</strong> !</p>
+      </dd>
+
+      <dt>
+        <div class="avatar">
+          <img src="hoa://Application/Public/Media/Image/Avatar/Hywan.png"
+               alt="Ivan :" />
+        </div>
+        <p>Plus généralement, quels sont les points forts de Hoa d'après
+        toi ?</p>
+      </dt>
+      <dd>
+        <div class="avatar">
+          <img src="hoa://Application/Public/Media/Image/Avatar/Shouze.png"
+               alt="Sébastien :" />
+        </div>
+        <p>Sans doute son approche <strong>bibliothèques</strong>. Il n'y a
+        aucune boîte noire, nous comprenons toujours ce que nous faisons. Nous
+        écrivons vraiment du code, nous assemblons, nous développons … Les
+        bibliothèques sont conçues et optimisées pour fonctionner ensemble,
+        c'est <strong>harmonieux</strong>. Nous sentons une certaine
+        <strong>rigueur</strong> dans le projet et son développement.</p>
+        <p>La <a href="@l">documentation</a> est également <strong>bien
+        écrite</strong>. Il y a en pour tous les goûts comme avec le manuel
+        d'apprentissage, le <em lang="en">hack book</em> etc. Ce dernier, même
+        s'il est technique, peut être lu comme un <strong>roman</strong> et
+        c'est un atout <strong>indéniable</strong> pour tout nouvel
+        arrivant !</p>
+        <p>Et enfin la <strong>vision</strong> de son créateur. Chaque point est
+        réfléchi et reste <strong>ouvert</strong> à débat, d'autant plus que la
+        première version complète et réputée 1.0 n'est pas sortie. Cela
+        n'empêche en rien de l'utiliser dès maintenant, c'est au contraire une
+        <strong>incroyable</strong> opportunité et je conseille
+        <strong>vivement</strong> à tous les développeurs PHP de considérer
+        l'utilisation de Hoa dans leurs projets !</p>
+      </dd>
+    </dl>
+
+    <p>Entrevue réalisée le <time datetime="2012-10-23">23 octobre 2012</time>.
+    Les bibliothèques principales que VeryLastRoom a utilisé cette fois-ci
+    sont : <code>Hoa\Math</code> et
+    <a href="@lh:chapter=Compiler"><code>Hoa\Compiler</code></a>.</p>
+  </yield>
+</overlay>
