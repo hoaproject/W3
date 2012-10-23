@@ -141,9 +141,10 @@
         <strong>production</strong>.</p>
         <p>Enfin, nous avons contribué à Hoa, et Ivan Enderlin (le fondateur du
         projet) ainsi que les contributeurs de Hoa ont toujours été
-        <strong>disponibles</strong> et de <strong>bon conseil</strong> sur IRC.
-        Un grand merci à eux pour nous avoir aidé à aboutir à une solution
-        <strong>pratique</strong> et <strong>efficace</strong> !</p>
+        <strong>disponibles</strong> et de <strong>bon conseil</strong>
+        <a href="@c#IRC">sur IRC</a>. Un grand merci à eux pour nous avoir aidé
+        à aboutir à une solution <strong>pratique</strong> et
+        <strong>efficace</strong> !</p>
       </dd>
 
       <dt>
@@ -166,24 +167,25 @@
         c'est <strong>harmonieux</strong>. Nous sentons une certaine
         <strong>rigueur</strong> dans le projet et son développement.</p>
         <p>La <a href="@l">documentation</a> est également <strong>bien
-        écrite</strong>. Il y a en pour tous les goûts comme avec le manuel
-        d'apprentissage, le <em lang="en">hack book</em> etc. Ce dernier, même
-        s'il est technique, peut être lu comme un <strong>roman</strong> et
+        écrite</strong>. Il y a en pour tous les goûts comme avec le
+        <a href="@l#Manuel_d-apprentissage">manuel d'apprentissage</a>, le
+        <a href="@l#Hack_book"><em lang="en">hack book</em></a> etc. Ce dernier,
+        même s'il est technique, peut être lu comme un <strong>roman</strong> et
         c'est un atout <strong>indéniable</strong> pour tout nouvel
         arrivant !</p>
-        <p>Autre point non négligeable : certaines bibliothèques de Hoa (comme
+        <p>Autre point non négligeable : plusieurs bibliothèques de Hoa (comme
         <code>Hoa\Compiler</code>) sont issues de travaux de
         <strong>recherche</strong>. En les utilisant, nous offrons un retour
         <strong>concret</strong> aux chercheurs ayant développés ces
         algorithmes, et de notre côté, nous bénéficions d'une
-        <strong>innovation</strong>, d'une réflexion plus
+        <strong>innovation</strong> et d'une réflexion plus
         <strong>poussée</strong> que ce que nous nous serions accordés. C'est un
         réel <strong>échange</strong>.</p>
-        <p>Et enfin la <strong>vision</strong> de son créateur. Chaque point est
-        réfléchi et reste <strong>ouvert</strong> à débat, d'autant plus que la
-        première version complète et réputée 1.0 n'est pas sortie. Cela
-        n'empêche en rien de l'utiliser dès maintenant, c'est au contraire une
-        <strong>incroyable</strong> opportunité et je conseille
+        <p>Enfin la <strong>vision</strong> de son créateur est un avantage car
+        chaque point est réfléchi et reste <strong>ouvert</strong> au débat,
+        d'autant plus que la première version complète et réputée 1.0 n'est pas
+        sortie. Cela n'empêche en rien de l'utiliser dès maintenant, c'est au
+        contraire une <strong>incroyable</strong> opportunité et je conseille
         <strong>vivement</strong> à tous les développeurs PHP de considérer
         l'utilisation de Hoa dans leurs projets !</p>
       </dd>
