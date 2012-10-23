@@ -2,8 +2,9 @@
 
 <overlay xmlns="http://hoa-project.net/xyl/xylophone">
   <yield id="yContent">
-    <h1><img src="hoa://Application/Public/Media/Image/WhoUse/Verylastroom.png"
-             alt="VeryLastRoom" /> utilise Hoa</h1>
+    <h1>est utilisé par<br />
+        <img src="hoa://Application/Public/Media/Image/WhoUse/Verylastroom.png"
+             alt="VeryLastRoom" /></h1>
 
     <p><a href="http://verylastroom.com/">VeryLastRoom</a> propose tous les
     jours les meilleurs prix en permanence dans son offre hôtelière au sein de
