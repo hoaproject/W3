@@ -361,18 +361,26 @@ dt, dd {
     dl.dialog > dd,
     dl.dialog > dt {
         position: relative;
+        padding-top: .8em;
         min-height: 80px;
-        padding-top: 1em;
-        padding-bottom: 1em;
     }
 
-    dl.dialog p {
+    dl.dialog > dt > p {
         margin-left: 110px;
     }
 
-    dl.dialog div.avatar {
+    dl.dialog > dd > p {
+        margin-right: 110px;
+    }
+
+    dl.dialog > dt > div.avatar,
+    dl.dialog > dd > div.avatar {
         position: absolute;
         top: .25em;
+    }
+
+    dl.dialog > dd > div.avatar {
+        right: 0;
     }
 
 q::before, q::after {
