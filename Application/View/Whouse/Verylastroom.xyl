@@ -99,7 +99,16 @@
         Il ne nous manquait que ça pour nous y mettre et utiliser
         <code>Hoa\Math</code> ainsi que <code>Hoa\Compiler</code>.</p>
         <p>Cela a été aussi pour nous l'occasion de <strong>contribuer</strong>
-        au projet et d'enrichir <code>Hoa\Math</code>.</p>
+        au projet et d'enrichir <code>Hoa\Math</code>. Notre problématique était
+        entre autre de pouvoir évaluer proprement des expressions mathématiques
+        écrites de manière formelle sous forme de chaînes de caractères. Ces
+        formules pouvant même avoir la forme d'équations contenant des
+        constantes et des fonctions que nous fournissons, mais aussi des
+        variables que nous pouvons définir. Nous avons donc écrit la
+        <strong>grammaire</strong> des expressions arithmétiques avec le langage
+        PP, suivi d'un visiteur capable d'<strong>évaluer</strong> de telles
+        formules. Nous devions également être capable d'évaluer des
+        sous-formules, de conserver leurs résultats etc.</p>
         <p>Au final, avec <code>Hoa\Math</code>, nous avons pu totalement
         <strong>remplacer</strong> notre programme C++ par une solution
         <strong>intégrée</strong> en PHP, plus facilement
@@ -163,6 +172,14 @@
         s'il est technique, peut être lu comme un <strong>roman</strong> et
         c'est un atout <strong>indéniable</strong> pour tout nouvel
         arrivant !</p>
+        <p>Autre point non négligeable : certaines bibliothèques de Hoa (comme
+        <code>Hoa\Compiler</code>) sont issues de travaux de
+        <strong>recherche</strong>. En les utilisant, nous offrons un retour
+        <strong>concret</strong> aux chercheurs ayant développés ces
+        algorithmes, et de notre côté, nous bénéficions d'une
+        <strong>innovation</strong>, d'une réflexion plus
+        <strong>poussée</strong> que ce que nous nous serions accordés. C'est un
+        réel <strong>échange</strong>.</p>
         <p>Et enfin la <strong>vision</strong> de son créateur. Chaque point est
         réfléchi et reste <strong>ouvert</strong> à débat, d'autant plus que la
         première version complète et réputée 1.0 n'est pas sortie. Cela
@@ -174,7 +191,7 @@
     </dl>
 
     <p>Entrevue réalisée le <time datetime="2012-10-23">23 octobre 2012</time>.
-    Les bibliothèques principales que VeryLastRoom a utilisé cette fois-ci
+    Les bibliothèques principales que VeryLastRoom a utilisées cette fois-ci
     sont : <code>Hoa\Math</code> et
     <a href="@lh:chapter=Compiler"><code>Hoa\Compiler</code></a>.</p>
   </yield>
