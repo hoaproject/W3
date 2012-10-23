@@ -87,17 +87,16 @@
         d'autre part pour des raisons de performances.</p>
         <p>Puis il y a quelques mois … nous avons découvert Hoa. Même s'il est
         jeune, il peut d'ores et déjà <strong>rivaliser</strong> avec
-        <a href="http://framework.zend.com/">Zend Framework</a> ou même
-        <a href="http://symfony.com/">Symfony</a>. Dans notre cas, nous avions
-        déjà fait le choix de Symfony et nous capitalisions une trop grande
-        expérience sur ce framework pour y renoncer immédiatement. Nous avons
-        donc cherché à <strong>mixer</strong> Hoa et Symfony. Et c'est justement
-        la <strong>qualité</strong> de Hoa ! Il est composé de
+        Zend Framework ou même Symfony. Dans notre cas, nous avions déjà fait le
+        choix de Symfony et nous capitalisions une trop grande expérience sur ce
+        framework pour y renoncer immédiatement. Nous avons donc cherché à
+        <strong>mixer</strong> Hoa et Symfony. Et c'est justement la
+        <strong>qualité</strong> de Hoa ! Il est composé de
         <strong>bibliothèques indépendantes</strong>,
-        <strong>installables</strong> comme nous le souhaitons, et même
-        <a href="@s#Gestionnaire_de_dependances">via Composer</a>.
-        Il ne nous manquait que ça pour nous y mettre et utiliser
-        <code>Hoa\Math</code> ainsi que <code>Hoa\Compiler</code>.</p>
+        <strong>installables</strong> comme nous le souhaitons, et même <a
+        href="@s#Gestionnaire_de_dependances">via Composer</a>.  Il ne nous
+        manquait que ça pour nous y mettre et utiliser <code>Hoa\Math</code>
+        ainsi que <code>Hoa\Compiler</code>.</p>
         <p>Cela a été aussi pour nous l'occasion de <strong>contribuer</strong>
         au projet et d'enrichir <code>Hoa\Math</code>. Notre problématique était
         entre autre de pouvoir évaluer proprement des expressions mathématiques
