@@ -15,6 +15,18 @@
     <code><em>prénom</em>.<em>nom</em>@hoa-project.net</code> ou
     <code><em>pseudo</em>@hoa-project.net</code>. Les prénoms et noms ne doivent
     pas comporter d'accents.</p>
+
+    <h2 id="IRC">IRC</h2>
+
+    <p>Vous retrouvez une grande partie de la communauté sur le salon
+    <a href="irc://irc.freenode.net#hoaproject"><code>#hoaproject</code></a>
+    (hébergé par <a href="http://freenode.net/">freenode</a>). Les contributeurs
+    de Hoa sont identifiés avec le <em lang="cloak">cloak</em>
+    <code>@hoaproject/contributor/<em>pseudo</em></code> (utilisez la commande
+    <code>/whois <em>pseudo</em></code>).</p>
+
+    <h2 id="Autre_moyens">Autre moyens</h2>
+
     <p>D'autres moyons sont mis à votre disposition, comme
     <a href="@forum">le forum</a> ou
     <a href="https://twitter.com/hoaproject/">le compte Twitter</a>. Enfin, dans
