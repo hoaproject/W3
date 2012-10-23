@@ -384,7 +384,7 @@ dt, dd {
     }
 
     dl.dialog > dd > p:first-of-type {
-        margin-top: .5em;
+        margin-top: 0;
     }
 
     dl.dialog > dd > p:last-of-type {
