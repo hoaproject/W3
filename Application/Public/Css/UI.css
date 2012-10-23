@@ -358,18 +358,18 @@ dt, dd {
         font-weight: bold;
     }
 
-    dl.dialog > dd,
-    dl.dialog > dt {
+    dl.dialog > dt,
+    dl.dialog > dd {
         position: relative;
-        padding-top: .8em;
         min-height: 80px;
     }
 
-    dl.dialog > dt > p {
-        margin-left: 110px;
+    dl.dialog > dt {
+        padding-top: 1em;
     }
 
-    dl.dialog > dd > p {
+    dl.dialog p {
+        margin-left: 110px;
         margin-right: 110px;
     }
 
@@ -381,6 +381,14 @@ dt, dd {
 
     dl.dialog > dd > div.avatar {
         right: 0;
+    }
+
+    dl.dialog > dd > p:first-of-type {
+        margin-top: .5em;
+    }
+
+    dl.dialog > dd > p:last-of-type {
+        margin-bottom: 0;
     }
 
 q::before, q::after {
