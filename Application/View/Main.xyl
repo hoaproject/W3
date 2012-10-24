@@ -98,4 +98,7 @@
     });
   </script>
   -->
+  <script src="hoa://Application/Public/Javascript/Prism.js" />
+  <script src="hoa://Application/Public/Javascript/Prism.hoa.js" />
+  <script src="hoa://Application/Public/Javascript/Prism.plugin.line.js" />
 </document>

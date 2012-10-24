@@ -4,3 +4,6 @@
 [submodule "Application/External/Keynote"]
 	path = Application/External/Keynote
 	url = http://git.hoa-project.net/Keynote.git
+[submodule "Application/External/Prism"]
+	path = Application/External/Prism
+	url = https://github.com/LeaVerou/prism.git

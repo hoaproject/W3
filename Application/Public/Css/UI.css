@@ -529,50 +529,114 @@ video {
 }
 
 .verbatim,
-pre,
-.CodeMirror {
+pre {
     clear: both;
     margin-left: -40px;
     margin-right: -40px;
 }
 
-pre,
-.CodeMirror {
+pre {
+    position: relative;
     font-size: 1.1em;
-    color: #452745;
     padding: 1em 60px;
+    overflow-y: auto;
+    line-height: 1.4em;
+    box-shadow: inset 0 0 5px #d4c6b0;
+    background: #f2ede3 url("../Media/Image/Background_pre.png");
 }
-
-    pre,
-    .CodeMirror {
-        overflow-y: auto;
-        line-height: 1.4em;
-        box-shadow: inset 0 0 5px #d4c6b0;
-        background: #f2ede3 url("../Media/Image/Background_pre.png");
-    }
 
     pre code {
         color: inherit;
     }
 
-    .token-keyword {
+    code[class*="language-"] {
+        color: #000;
+    }
+
+    .language-php {
+        color: #07a !important;
+    }
+
+    .language-pp {
+        color: #549848 !important;
+    }
+
+    .token.comment,
+    .token.icomment,
+    .token.prolog,
+    .token.doctype,
+    .token.cdata {
+        color: #939393;
+    }
+
+    .token.selector,
+    .token.attr-name,
+    .token.string {
+        color: #549848;
+    }
+
+    .token.atrule,
+    .token.attr-value,
+    .token.keyword {
+        color: #07a;
+    }
+
+    .token.property,
+    .token.tag,
+    .token.number,
+    .token.constant {
+        color: #994f78;
+    }
+
+    .token.php,
+    .token.operator {
         color: #926fa7;
     }
 
-    .token-id {
-        color: #3b6898;
+    .token.url,
+    .token.variable {
+        color: #c68f26;
     }
 
-    .token-string {
-        color: #71986a;
+    .token.punctuation {
+        color: #999;
     }
 
-    .token-variable {
-        color: #b97e3d;
+    .token.input {
+        text-decoration: blink;
     }
 
-    .token-comment {
-        color: #939393;
+    .line-highlight {
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin-top: .5em;
+        padding: .5em 0;
+        pointer-events: none;
+        line-height: 1.55em;
+        background: hsla(24, 20%, 50%, .1);
+    }
+
+    .line-highlight::before,
+    .line-highlight[data-end]::after {
+        content: attr(data-start);
+        position: absolute;
+        top: .7em;
+        left: .5em;
+        width: 2.7em;
+        height: 1.8em;
+        color: #fff;
+        font-size: 80%;
+        text-align: center;
+        border-radius: 12px;
+        box-shadow: 0 1px #fff;
+        background: hsla(24, 20%, 50%, .4);
+    }
+
+    .line-highlight[data-end]::after {
+        content: attr(data-end);
+        top: auto;
+        bottom: .7em;
     }
 
 [data-checkpoint].sticky {
