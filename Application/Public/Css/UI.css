@@ -469,9 +469,11 @@ video {
     }
 
 [data-tabs] > ul[role="tablist"] {
+    position: relative;
     margin: -1em 0 -1.5em 0;
     text-align: center;
     height: 2.4em;
+    z-index: 1;
 }
 
 [data-tabs] > ul[role="tablist"] > li {
