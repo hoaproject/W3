@@ -75,7 +75,7 @@ nav {
 
     nav ul > li:hover {
         box-shadow: inset 0 0 1.5em rgba(0, 0, 0, .5);
-        background: rgba(50, 50, 50, .1);
+        background: rgba(50, 50, 50, .4);
     }
 
     nav a {
@@ -196,6 +196,12 @@ a {
     a:active code,
     a:focus code {
         color: inherit;
+    }
+
+    a.plain {
+        color: none;
+        text-shadow: none;
+        background: none;
     }
 
 h1, h2, h3, h4, h5, h6 {
@@ -414,6 +420,17 @@ blockquote {
         text-shadow: 1px 1px 1px rgba(0, 0, 0, .5);
     }
 
+figure {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+figcaption {
+    color: #777;
+    font-size: 70%;
+    text-align: center;
+}
+
 img {
     vertical-align: middle;
     border: 0;
@@ -441,6 +458,15 @@ img {
         left: 0;
         border-radius: 50%;
         box-shadow: inset 0 0 12px #000;
+    }
+
+    img.bordered {
+        padding: 8px 15px;
+    }
+
+    img.bordered:hover,
+    a:hover > img.bordered {
+        box-shadow: 0 0 5px #999
     }
 
 video {
@@ -781,6 +807,10 @@ ul.prev_next > li + li {
         -webkit-columns: 5;
     }
 
+.hbox > * {
+    display: block;
+}
+
 .tcenter {
     text-align: center;
 }
@@ -798,5 +828,38 @@ ul.prev_next > li + li {
         margin-left: 1em;
     }
 
+.column.fleft,
+.column.fright {
+    width: 50%;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+    .column h2 {
+        text-align: center;
+        margin: 0;
+    }
+
 ::-moz-selection { background: #e4cbf4 }
 ::selection      { background: #e4cbf4 }
+
+
+
+
+.axis {
+    fill: #aa9c8d;
+    font-size: 60%;
+    text-shadow: none;
+}
+
+.axis path,
+.axis line {
+    fill: none;
+    stroke: #c1b7ac;
+    shape-rendering: crispEdges;
+}
+
+.area {
+    fill: #f5e7d3;
+    stroke: #de8300;
+}

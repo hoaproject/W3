@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<overlay xmlns="http://hoa-project.net/xyl/xylophone">
+  <yield id="yContent">
+    <h1>est utilisé par<br />
+        <img src="hoa://Application/Public/Media/Image/WhoUse/INRIA.png"
+             alt="INRIA" /></h1>
+
+    <p>L'<a href="http://inria.fr/">INRIA</a> utilise Hoa dans le cadre de
+    recherche sur la sûreté et la sécurité du test logiciel.</p>
+  </yield>
+</overlay>

@@ -25,6 +25,7 @@ $router
     ->get('s',  '/Source\.html', 'index', 'source')
     ->get('v',  '/Video\.html', 'video', 'default')
     ->get('v+', '/Video/(?<_able>\w+)\.html', 'video')
+    ->get('a',  '/About\.html', 'index', 'about')
     ->get('c',  '/Contact\.html', 'index', 'contact')
     ->get('u',  '/Whouse/(?<who>\w+)\.html', 'index', 'whouse')
     ->get('e',  '/Error\.html', 'index', 'error')
@@ -34,7 +35,7 @@ $router
     ->_get('dl',     'http://download.hoa-project.net/(?<file>)')
     ->_get('forum',  'http://forum.hoa-project.net/')
     ->_get('git',    'http://git\.hoa\-project\.net/\?p=(?<repository>)\.git')
-    ->_get('github', 'https://github.com/hoaproject/(?<repository>)/')
+    ->_get('github', 'https://github.com/hoaproject/(?<repository>)')
     ->_get('key.',   'http://keynote.hoa-project.net/(?<keynote>)')
     ->_get('key',    'http://keynote.hoa-project.net/Shells/(?<shell>)\.html#http://keynote\.hoa-project\.net/(?<keynote>)\.html');
 

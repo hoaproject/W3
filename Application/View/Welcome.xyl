@@ -15,117 +15,127 @@
         <li><a href="@dl:file=Central/Hoa_central.next.tar.gz">tar.gz</a></li>
         <li>phar</li>
         <li><a href="@git:repository=Central">git</a></li>
-        <li><a href="@github:repository=Central">
+        <li><a href="@github">
               <img src="hoa://Application/Public/Media/Image/Icon_github.svg"
                    alt="Github" width="30px" height="30px" /></a></li>
         <li><a href="@s" title="Voir toutes les sources">…</a></li>
       </ul>
     </div>
 
-    <div class="grid">
-      <div class="grow">
-        <div class="gcell">
-          <h1 id="Bibliotheque">Bibliothèque</h1>
+    <div class="column fleft">
+      <h2 id="Dernieres_nouvelles">Dernières nouvelles</h2>
 
-          <p>Hoa est découpé en bibliothèques regroupées autour d'un
-          <strong>noyau</strong>. Hoa propose un mécanisme
-          (<strong>Hoathis</strong>) pour créer vos propres bibliothèques
-          autour de ce même noyau et ainsi assurer la même <strong>qualité</strong>
-          que les bibliothèques natives.</p>
-          <pre class="left"><code language="php">from('Hoathis') -> import('MyStream.Write');
-event('hoa://Event/Log/Test/Praspel')->attach(
-    new Hoathis\MyStream\Write()
-);</code></pre>
-        </div>
+      <ul class="plain">
+        <li><a href="">Nouveau site Web !</a> <small>(<time>14 déc.</time>)</small></li>
+        <li><a href="">Bla bla infernal</a> <small>(<time>9 déc.</time>)</small></li>
+        <li><a href=""><code>Hoa\Compiler</code> dépasse toutes nos
+            espérances</a> <small>(<time>1 déc.</time>)</small></li>
+        <li><a href="">Foobar</a> <small>(<time>25 nov.</time>)</small></li>
+        <li><a href="">Bazqux gordon</a> <small>(<time>21
+            nov.</time>)</small></li>
+        <li><a href="">Lorem ipsum</a> <small>(<time>14 nov.</time>)</small></li>
+      </ul>
+    </div>
 
-        <div class="gcell">
-          <h1 id="Modularite">Modularité</h1>
+    <div class="column fright">
+      <h2 id="Activite">Activité</h2>
 
-          <p>Le noyau de Hoa s'assure de la modularité en gérant toutes les
-          <strong>dépendances</strong>, <strong>importations</strong>,
-          <strong>paramétrages</strong>, <strong>chemins abstraits</strong>
-          etc.</p>
-          <pre class="right"><code language="php">from('Hoa') -> import('File.Read');
-$file = new Hoa\File\Read(
-    'hoa://Data/Temporary/Foo.txt'
-);</code></pre>
-        </div>
-      </div>
+      <figure id="activity" style="width: 400px">
+        <figcaption><em lang="en">commits</em> par jours de <code>Central</code>
+        (2 derniers mois)</figcaption>
+      </figure>
+    </div>
 
-      <div class="grow">
-        <div class="gcell">
-          <h1 id="Rapidite_et_puissance">Rapidité et puissance</h1>
+    <br style="clear: both" />
 
-          <p>Hoa requiert <strong>PHP 5.3</strong> minimum, la plus puissante
-          des versions de PHP. De plus, Hoa est optimisé selon les
-          <strong>complexités algorithmiques</strong> et l'<strong>espace
-          mémoire</strong>. Enfin, des bibliothèques proposent plusieurs
-          systèmes de <strong>caches</strong> à plusieurs niveaux : PHP, base
-          de données, <em>gateway</em> etc.</p>
-        </div>
+    <div class="tcenter">
+      <h2 id="Qui_l-utilise">Qui l'utilise ?</h2>
 
-        <div class="gcell">
-          <h1 id="Innovation">Innovation</h1>
-
-          <p>Hoa s'efforce de constamment <strong>innover</strong>. L'objectif
-          est d'offrir le maximum de puissance à l'utilisateur de la manière la
-          plus intuitive possible. De plus, Hoa est utilisé pour des
-          <strong>recherches</strong> au
-          <a href="http://lifc.univ-fcomte.fr/" id="a">LIFC</a> et à
-          l'<a href="http://www.inria.fr/">INRIA</a>. Cela se répercute sur
-          les solutions que proposent Hoa.</p>
-          <ul>
-            <li>XYL : langage d'interface graphique ;</li>
-            <li>Praspel : langage de spécification ;</li>
-            <li>zFormat : langage de paramétrage.</li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="grow">
-        <div class="gcell">
-          <h1 id="Securite">Sécurité</h1>
-
-          <p>Des travaux de recherche concernant les <strong>tests</strong>
-          sont développés dans Hoa. On trouve entre autre un
-          <strong>générateur automatique de tests unitaires</strong>. Un
-          rapport de recherche et des articles ont été publiés.</p>
-          <pre class="left"><code>/**
- * @requires  i: even(boundinteger(0, 53)) and
- *            j: array([to boolean()], 7);
- * @ensures   \result: boolean();
- * @throwable FooException;
- */</code></pre>
-        </div>
-
-        <div class="gcell">
-          <h1 id="Standards">Standards</h1>
-
-          <p>Hoa participe entre autre au
-          <a href="http://w3.org">W3C</a> dans les groupes de travail
-          HTML, CSS et WebApp. Hoa est très respectueux de ces normes, ainsi
-          que celles du RFC, ISO, POSIX etc ; ce qui assure une homogénéité,
-          interopérabilité et pérennité de vos projets.</p>
-        </div>
-      </div>
-
-      <div class="grow">
-        <div class="gcell">
-          <h1 id="Qui_l-utilise">Qui l'utilise ?</h1>
-
-          <ul id="whouse">
-            <li>
-              <a href="http://mozilla.org/"><img src="/Media/Image/WhoUse/Mozilla.png" alt="Mozilla" /></a>
-            </li>
-            <li>
-              <a href="http://lifc.univ-fcomte.fr/"><img src="/Media/Image/WhoUse/LIFC.png" alt="LIFC" /></a>
-            </li>
-            <li>
-              <a href="http://www.inria.fr/"><img src="/Media/Image/WhoUse/INRIA.png" alt="INRIA" /></a>
-            </li>
-          </ul>
-        </div>
-      </div>
+      <p>
+        <a href="@u:who=Verylastroom" class="plain">
+             <img src="hoa://Application/Public/Media/Image/WhoUse/Verylastroom_little.png"
+                 alt="VeryLastRoom" class="bordered" />
+        </a>
+        <a href="@u:who=INRIA" class="plain">
+            <img src="hoa://Application/Public/Media/Image/WhoUse/INRIA_little.png"
+                 alt="INRIA" class="bordered" />
+        </a>
+        <a href="@u:who=SPW" class="plain">
+            <img src="hoa://Application/Public/Media/Image/WhoUse/SPW_little.png"
+                 alt="SPW" class="bordered" />
+        </a>
+        <a href="@u:who=Mozilla" class="plain">
+            <img src="hoa://Application/Public/Media/Image/WhoUse/Mozilla_little.png"
+                 alt="Mozilla" class="bordered" />
+        </a>
+        <a href="@u:who=DISC" class="plain">
+            <img src="hoa://Application/Public/Media/Image/WhoUse/DISC_little.png"
+                 alt="DISC" class="bordered" />
+        </a>
+      </p>
     </div>
   </yield>
+
+  <document id="document">
+    <script src="http://d3js.org/d3.v3.js" />
+    <script>
+      var margin = {top: 20, right: 20, bottom: 30, left: 30},
+          width  = 400 - margin.left - margin.right,
+          height = 150 - margin.top - margin.bottom;
+
+      var parseDate = d3.time.format("%Y-%m-%d").parse;
+
+      var x = d3.time.scale()
+          .range([0, width]);
+
+      var y = d3.scale.linear()
+          .range([height, 0]);
+
+      var xAxis = d3.svg.axis()
+          .scale(x)
+          .orient("bottom")
+          .ticks(5)
+          .tickFormat(d3.time.format("%d/%m"));
+
+      var yAxis = d3.svg.axis()
+          .scale(y)
+          .orient("left")
+          .ticks(5);
+
+      var area = d3.svg.area()
+          .x (function ( d ) { return x(d.date); })
+          .y0(height)
+          .y1(function ( d ) { return y(d.number); });
+
+      var svg = d3.select("#activity").insert("svg", ":first-child")
+          .attr("width", width + margin.left + margin.right)
+          .attr("height", height + margin.top + margin.bottom)
+        .append("g")
+          .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+      d3.tsv("data.tsv", function(error, data) {
+        data.forEach(function(d) {
+          d.date = parseDate(d.date);
+          d.number = +d.number;
+        });
+
+        x.domain(d3.extent(data, function(d) { return d.date; }));
+        y.domain([0, d3.max(data, function(d) { return d.number; })]);
+
+        svg.append("path")
+            .datum(data)
+            .attr("class", "area")
+            .attr("d", area);
+
+        svg.append("g")
+            .attr("class", "x axis")
+            .attr("transform", "translate(0," + height + ")")
+            .call(xAxis);
+
+        svg.append("g")
+            .attr("class", "y axis")
+            .call(yAxis);
+      });
+    </script>
+  </document>
 </overlay>

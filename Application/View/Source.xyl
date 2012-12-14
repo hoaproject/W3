@@ -27,9 +27,9 @@
     <a href="http://git.hoa-project.net">git.hoa-project.net</a>. Les dépôts
     sont nommés <code><em>project</em>.git</code>. Ainsi, pour
     obtenir les sources du projet <code>Central</code> :</p>
-    <pre><code language="shell">$ git clone http://git.hoa-project.net/Central.git</code></pre>
+    <pre><code class="language-shell">$ git clone http://git.hoa-project.net/Central.git</code></pre>
     <p>Pour obtenir une bibliothèque, par exemple <code>Hoa\Core</code> :</p>
-    <pre><code language="shell">$ git clone http://git.hoa-project.net/Library/Core.git</code></pre>
+    <pre><code class="language-shell">$ git clone http://git.hoa-project.net/Library/Core.git</code></pre>
     <p>Il est recommandé de <a href="http://git-scm.com/documentation">lire la
     documentation de Git</a> si vous n'êtes pas familié avec cet outil.</p>
     <p><img src="hoa://Application/Public/Media/Image/Github.png"
@@ -39,7 +39,7 @@
     identiques autant que possible. La plus grosse différence est pour les
     bibliothèques : l'accès se fait sans le préfixe <code>Library/</code>.
     Ainsi :</p>
-    <pre><code language="shell">$ git clone https://github.com/hoaproject/Core.git</code></pre>
+    <pre><code class="language-shell">$ git clone https://github.com/hoaproject/Core.git</code></pre>
     <p>Les miroirs sont en permanence synchronisés, vous n'aurez jamais de
     différences.</p>
 
@@ -54,14 +54,14 @@
     <code>hoa/<em>library</em></code>. Ainsi, par exemple, pour installer la
     bibliothèque <code>Hoa\Compiler</code>, il faudra écrire dans un fichier
     <code>composer.json</code> :</p>
-    <pre><code>{
+    <pre><code class="language-json">{
     "require": {
         "hoa/compiler": "master"
     },
     "minimum-stability": "dev"
 }</code></pre>
     <p>Puis pour installer les dépendances :</p>
-    <pre><code language="shell">$ composer install</code></pre>
+    <pre><code class="language-shell">$ composer install</code></pre>
     <p>Il est recommandé de <a href="https://getcomposer.org/doc/">lire la
     documentation de Composer</a> si vous n'êtes pas familié avec cet outil.</p>
 

@@ -29,3 +29,8 @@ Prism.languages.pp = {
     'variable':  /^#?\w+/mg,
     'operator':  /::|:|&lt;|&gt;|\(\)|\(|\)|\||\{|\}|\+|\?|\*/g
 };
+
+Prism.languages.json = {
+    'string':      /"(\\?.)*?"/g,
+    'punctuation': /[\{\}:,]/g
+};

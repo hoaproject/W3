@@ -27,6 +27,14 @@ class Index extends Generic {
         return;
     }
 
+    public function AboutAction ( ) {
+
+        $this->view->addOverlay('hoa://Application/View/About.xyl');
+        $this->render();
+
+        return;
+    }
+
     public function ContactAction ( ) {
 
         $this->view->addOverlay('hoa://Application/View/Contact.xyl');

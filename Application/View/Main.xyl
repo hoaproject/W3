@@ -21,7 +21,7 @@
         </ul>
 
         <ul id="nav-bottom">
-          <li><a href="#" class="about">À propos</a></li>
+          <li><a href="@a" class="about">À propos</a></li>
           <li><a href="@c" class="contact">Contact</a></li>
         </ul>
       </div>
