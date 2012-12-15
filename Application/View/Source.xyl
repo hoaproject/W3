@@ -35,10 +35,9 @@
     <p><img src="hoa://Application/Public/Image/Github.png"
            alt="Logo de Github" class="fright" />
     Des miroirs existent pour la plupart des projets, notamment sur
-    <a href="http://github.com/hoaproject">Github</a>. Les noms des projets sont
-    identiques autant que possible. La plus grosse différence est pour les
-    bibliothèques : l'accès se fait sans le préfixe <code>Library/</code>.
-    Ainsi :</p>
+    <a href="@github">Github</a>. Les noms des projets sont identiques autant
+    que possible. La plus grosse différence est pour les bibliothèques : l'accès
+    se fait sans le préfixe <code>Library/</code>. Ainsi :</p>
     <pre><code class="language-shell">$ git clone https://github.com/hoaproject/Core.git</code></pre>
     <p>Les miroirs sont en permanence synchronisés, vous n'aurez jamais de
     différences.</p>
