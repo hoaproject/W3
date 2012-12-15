@@ -13,7 +13,7 @@
       rapidement ;</li>
       <li><code>Literature</code> : tous les manuels et documentations ;</li>
       <li><code>Keynote</code> : toutes les présentations ;</li>
-      <li><code>W3</code> : le site Web de Hoa ;</li>
+      <li><code>W3</code> et <code>Static</code> : le site Web de Hoa ;</li>
       <li><code>Bhoat</code> : le robot qui maintient les différents projets de
       Hoa.</li>
     </ul>
