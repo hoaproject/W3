@@ -16,7 +16,7 @@
         <li>phar</li>
         <li><a href="@git:repository=Central">git</a></li>
         <li><a href="@github">
-              <img src="hoa://Application/Public/Media/Image/Icon_github.svg"
+              <img src="hoa://Application/Public/Image/Icon_github.svg"
                    alt="Github" width="30px" height="30px" /></a></li>
         <li><a href="@s" title="Voir toutes les sources">…</a></li>
       </ul>
@@ -53,23 +53,23 @@
 
       <p>
         <a href="@u:who=Verylastroom" class="plain">
-             <img src="hoa://Application/Public/Media/Image/WhoUse/Verylastroom_little.png"
+             <img src="hoa://Application/Public/Image/WhoUse/Verylastroom_little.png"
                  alt="VeryLastRoom" class="bordered" />
         </a>
         <a href="@u:who=INRIA" class="plain">
-            <img src="hoa://Application/Public/Media/Image/WhoUse/INRIA_little.png"
+            <img src="hoa://Application/Public/Image/WhoUse/INRIA_little.png"
                  alt="INRIA" class="bordered" />
         </a>
         <a href="@u:who=SPW" class="plain">
-            <img src="hoa://Application/Public/Media/Image/WhoUse/SPW_little.png"
+            <img src="hoa://Application/Public/Image/WhoUse/SPW_little.png"
                  alt="SPW" class="bordered" />
         </a>
         <a href="@u:who=Mozilla" class="plain">
-            <img src="hoa://Application/Public/Media/Image/WhoUse/Mozilla_little.png"
+            <img src="hoa://Application/Public/Image/WhoUse/Mozilla_little.png"
                  alt="Mozilla" class="bordered" />
         </a>
         <a href="@u:who=DISC" class="plain">
-            <img src="hoa://Application/Public/Media/Image/WhoUse/DISC_little.png"
+            <img src="hoa://Application/Public/Image/WhoUse/DISC_little.png"
                  alt="DISC" class="bordered" />
         </a>
       </p>
@@ -113,29 +113,32 @@
         .append("g")
           .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
-      d3.tsv("data.tsv", function(error, data) {
-        data.forEach(function(d) {
-          d.date = parseDate(d.date);
-          d.number = +d.number;
-        });
+      d3.tsv(
+        "http://static.hoa-project.net/Data/Central_commits_since_2months.tsv",
+        function(error, data) {
+          data.forEach(function(d) {
+            d.date = parseDate(d.date);
+            d.number = +d.number;
+          });
 
-        x.domain(d3.extent(data, function(d) { return d.date; }));
-        y.domain([0, d3.max(data, function(d) { return d.number; })]);
+          x.domain(d3.extent(data, function(d) { return d.date; }));
+          y.domain([0, d3.max(data, function(d) { return d.number; })]);
 
-        svg.append("path")
-            .datum(data)
-            .attr("class", "area")
-            .attr("d", area);
+          svg.append("path")
+              .datum(data)
+              .attr("class", "area")
+              .attr("d", area);
 
-        svg.append("g")
-            .attr("class", "x axis")
-            .attr("transform", "translate(0," + height + ")")
-            .call(xAxis);
+          svg.append("g")
+              .attr("class", "x axis")
+              .attr("transform", "translate(0," + height + ")")
+              .call(xAxis);
 
-        svg.append("g")
-            .attr("class", "y axis")
-            .call(yAxis);
-      });
+          svg.append("g")
+              .attr("class", "y axis")
+              .call(yAxis);
+        }
+      );
     </script>
   </document>
 </overlay>

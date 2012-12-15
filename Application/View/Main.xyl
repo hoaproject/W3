@@ -30,7 +30,7 @@
     <div class="body">
 
       <header>
-        <img src="hoa://Application/Public/Media/Image/Hoa.png" alt="Hoa" />
+        <img src="hoa://Application/Public/Image/Hoa.png" alt="Hoa" />
       </header>
 
       <article id="content">

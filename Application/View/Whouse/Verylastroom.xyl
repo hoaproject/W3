@@ -3,7 +3,7 @@
 <overlay xmlns="http://hoa-project.net/xyl/xylophone">
   <yield id="yContent">
     <h1>est utilisé par<br />
-        <img src="hoa://Application/Public/Media/Image/WhoUse/Verylastroom.png"
+        <img src="hoa://Application/Public/Image/WhoUse/Verylastroom.png"
              alt="VeryLastRoom" /></h1>
 
     <p><a href="http://verylastroom.com/">VeryLastRoom</a> propose tous les
@@ -18,14 +18,14 @@
     <dl class="dialog">
       <dt>
         <div class="avatar">
-          <img src="hoa://Application/Public/Media/Image/Avatar/Hywan.png"
+          <img src="hoa://Application/Public/Image/Avatar/Hywan.png"
                alt="Ivan :" />
         </div>
         <p>Bonjour Sébastien, peux-tu te présenter en quelques mots ?</p>
       </dt>
       <dd>
         <div class="avatar">
-          <img src="hoa://Application/Public/Media/Image/Avatar/Shouze.png"
+          <img src="hoa://Application/Public/Image/Avatar/Shouze.png"
                alt="Sébastien :" />
         </div>
         <p>Bonjour, je suis Sébastien Houzé, directeur technique de
@@ -36,14 +36,14 @@
 
       <dt>
         <div class="avatar">
-          <img src="hoa://Application/Public/Media/Image/Avatar/Hywan.png"
+          <img src="hoa://Application/Public/Image/Avatar/Hywan.png"
                alt="Ivan :" />
         </div>
         <p>Quelle est ton histoire avec PHP ?</p>
       </dt>
       <dd>
         <div class="avatar">
-          <img src="hoa://Application/Public/Media/Image/Avatar/Shouze.png"
+          <img src="hoa://Application/Public/Image/Avatar/Shouze.png"
                alt="Sébastien :" />
         </div>
         <p>J'ai plus de 10 ans d'expérience avec PHP. J'ai été amené tout au
@@ -60,14 +60,14 @@
 
       <dt>
         <div class="avatar">
-          <img src="hoa://Application/Public/Media/Image/Avatar/Hywan.png"
+          <img src="hoa://Application/Public/Image/Avatar/Hywan.png"
                alt="Ivan :" />
         </div>
         <p>Dans quel cadre as-tu utilisé Hoa ?</p>
       </dt>
       <dd>
         <div class="avatar">
-          <img src="hoa://Application/Public/Media/Image/Avatar/Shouze.png"
+          <img src="hoa://Application/Public/Image/Avatar/Shouze.png"
                alt="Sébastien :" />
         </div>
         <p>Chez VeryLastRoom, l'une des originalités des chambres d'hôtels que
@@ -119,14 +119,14 @@
 
       <dt>
         <div class="avatar">
-          <img src="hoa://Application/Public/Media/Image/Avatar/Hywan.png"
+          <img src="hoa://Application/Public/Image/Avatar/Hywan.png"
                alt="Ivan :" />
         </div>
         <p>Quel bilan en tirez-vous ?</p>
       </dt>
       <dd>
         <div class="avatar">
-          <img src="hoa://Application/Public/Media/Image/Avatar/Shouze.png"
+          <img src="hoa://Application/Public/Image/Avatar/Shouze.png"
                alt="Sébastien :" />
         </div>
         <p>Très <strong>positif</strong> !</p>
@@ -149,7 +149,7 @@
 
       <dt>
         <div class="avatar">
-          <img src="hoa://Application/Public/Media/Image/Avatar/Hywan.png"
+          <img src="hoa://Application/Public/Image/Avatar/Hywan.png"
                alt="Ivan :" />
         </div>
         <p>Plus généralement, quels sont les points forts de Hoa d'après
@@ -157,7 +157,7 @@
       </dt>
       <dd>
         <div class="avatar">
-          <img src="hoa://Application/Public/Media/Image/Avatar/Shouze.png"
+          <img src="hoa://Application/Public/Image/Avatar/Shouze.png"
                alt="Sébastien :" />
         </div>
         <p>Sans doute son approche <strong>bibliothèques</strong>. Il n'y a

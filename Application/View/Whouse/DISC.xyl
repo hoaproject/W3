@@ -3,7 +3,7 @@
 <overlay xmlns="http://hoa-project.net/xyl/xylophone">
   <yield id="yContent">
     <h1>est utilisé par<br />
-        <img src="hoa://Application/Public/Media/Image/WhoUse/DISC.png"
+        <img src="hoa://Application/Public/Image/WhoUse/DISC.png"
              alt="DISC" /></h1>
 
     <p>À venir.</p>
