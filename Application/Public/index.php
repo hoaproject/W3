@@ -32,7 +32,7 @@ $router
     ->get('g',  '/', 'index', 'default')
     // --
     ->_get('_resource', 'http://static.hoa-project.net/(?<resource>)')
-    ->_get('b',      'blog@/')
+    ->_get('b',      '/', null, null, array('_subdomain' => 'blog'))
     ->_get('dl',     'http://download.hoa-project.net/(?<file>)')
     ->_get('forum',  'http://forum.hoa-project.net/')
     ->_get('git',    'http://git.hoa-project.net/?p=(?<repository>).git')
