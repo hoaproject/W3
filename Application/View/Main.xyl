@@ -17,6 +17,7 @@
           <li><a href="@s" class="source">Sources</a></li>
           <li><a href="@l" class="literature">Littérature</a></li>
           <li><a href="@v" class="video">Vidéo</a></li>
+          <li><a href="@b" class="blog">Blog</a></li>
           <li><a href="@forum" class="community">Communauté</a></li>
         </ul>
 
