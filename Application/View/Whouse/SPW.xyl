@@ -6,6 +6,132 @@
         <img src="hoa://Application/Public/Image/WhoUse/SPW.png"
              alt="SPW" /></h1>
 
-    <p>À venir (@maitrepylos).</p>
+    <p>Le <a href="http://henry.wallonie.be/">service public de Wallonie</a>
+    a des besoins très variés en matière d'informatique, en particulier au
+    niveau budgétaire. C'est dans ce cadre que ce service a eu l'occasion
+    d'utiliser Hoa.</p>
+    <p>L'intégration et la mise en production a été facile, et Hoa est
+    maintenant la solution numéro 1 pour tout développement.</p>
+
+    <dl class="dialog">
+      <dt>
+        <div class="avatar">
+          <img src="hoa://Application/Public/Image/Avatar/Hywan.png"
+               alt="Ivan :" />
+        </div>
+        <p>Bonjour Gérard, peux-tu te présenter en quelques mots ?</p>
+      </dt>
+      <dd>
+        <div class="avatar">
+          <img src="hoa://Application/Public/Image/Avatar/Maitrepylos.png"
+               alt="Gérard :" />
+        </div>
+        <p>Bonjour, je m'appelle Gérard Ernaelsten, je suis actuellement
+        responsable informatique dans un cabinet ministériel en Région Wallone
+        (Belgique).</p>
+      </dd>
+
+      <dt>
+        <div class="avatar">
+          <img src="hoa://Application/Public/Image/Avatar/Hywan.png"
+               alt="Ivan :" />
+        </div>
+        <p>Quelle est ton histoire avec PHP ?</p>
+      </dt>
+      <dd>
+        <div class="avatar">
+          <img src="hoa://Application/Public/Image/Avatar/Maitrepylos.png"
+               alt="Gérard :" />
+        </div>
+        <p>Ouch ! J'ai repris des études à l'ombre de ma trentième années. À
+        l'époque je travaillais dans un centre d'alphabétisation et nous avions
+        besoin d'outils. N'ayant pas les compétences, je me suis formé en
+        Informatique. Le PHP m'a permis de mettre en place très rapidement
+        certaines applications, et j'ai également réalisé mon travail de fin
+        d'étude dans ce langage.</p>
+        <p>Depuis, je développe des applications de gestions essentiellement en
+        PHP, mais aussi en Ruby ou encore en Python. Je suis également
+        <a href="http://g-ernaelsten.developpez.com/">rédacteur sur
+        Développez</a>. Enfin, je remplace mon ancien professeur et je donne des
+        cours de PHP.</p>
+      </dd>
+
+      <dt>
+        <div class="avatar">
+          <img src="hoa://Application/Public/Image/Avatar/Hywan.png"
+               alt="Ivan :" />
+        </div>
+        <p>Dans quel cadre as-tu utilisé Hoa ?</p>
+      </dt>
+      <dd>
+        <div class="avatar">
+          <img src="hoa://Application/Public/Image/Avatar/Maitrepylos.png"
+               alt="Gérard :" />
+        </div>
+        <p>Le dernier exemple en date : mon équipe et moi-même avons mis en
+        place un <em lang="en">workflow</em> de gestion budgétaire au sein du
+        cabinet.  Cette application peut sembler simple mais elle gère des
+        sommes folles ! La diversité des outils en PHP étant nombreuses, nous
+        devons faire des choix qui ne sont pas toujours judicieux.
+        Actuellemment, l'offre est assez lourde et nous devons souvent prendre
+        l'ensemble complet. Et ce qui nous intéresse dans Hoa, c'est que ce
+        n'est pas un outil monolithique mais un ensemble de bibliothèques bien
+        découpées. Nous prenons ce que nous voulons sans pour autant avoir
+        besoin du reste. J'avais un peu ce choix quand je développais avec
+        Zend Framework, mais ici c'est encore plus simple : les bibliothèques
+        sont claires, précises et bien découpées.</p>
+        <p>Plus personnellement, je l'utilise de façon pédagogique. Comme Hoa
+        est bien structuré, les étudiants le prennent vite en main. De plus,
+        nous pouvons nous concentrer sur les vraies problématiques de cours
+        plutôt que sur le fonctionnement de l'outil grâce à une API simple et
+        facile. À titre plus anecdotique mais pourtant important, je vous ferais
+        remarquer que déployer un outil sur plusieurs machines avec des
+        configurations hétérogènes afin d'être utilisés par des étudiants de
+        tous niveaux est une véritable épreuve du feu que Hoa a su relever !</p>
+      </dd>
+
+      <dt>
+        <div class="avatar">
+          <img src="hoa://Application/Public/Image/Avatar/Hywan.png"
+               alt="Ivan :" />
+        </div>
+        <p>Quel bilan en tires-tu ou en tirez-vous ?</p>
+      </dt>
+      <dd>
+        <div class="avatar">
+          <img src="hoa://Application/Public/Image/Avatar/Maitrepylos.png"
+               alt="Gérard :" />
+        </div>
+        <p>Nous sommes agréablement surpris. La prise en main pour mes collègues
+        fût rapide. La mise en production n'a pas posé de soucis. Une fois
+        quelques concepts propres à Hoa assimilés, tout roule très bien !</p>
+        <p>Nous gardons dorénavant Hoa en permanence dans notre trousse à
+        outils. C'est vers lui que nous nous tournons en premier car il est très
+        facile de travailler avec. Même plus facile que du PHP pur.</p>
+      </dd>
+
+      <dt>
+        <div class="avatar">
+          <img src="hoa://Application/Public/Image/Avatar/Hywan.png"
+               alt="Ivan :" />
+        </div>
+        <p>Plus généralement, quels sont les points forts de Hoa d'après
+        toi ?</p>
+      </dt>
+      <dd>
+        <div class="avatar">
+          <img src="hoa://Application/Public/Image/Avatar/Maitrepylos.png"
+               alt="Gérard :" />
+        </div>
+        <p>Je vais être honnête : il nous arrive de tricher ! Pour ce faire la
+        main, nous avons utilisé la documentation qui est à notre avis bien
+        faites, et puis quand elle est plus difficile à assimiler, la communauté
+        de Hoa la modifie rapidement sur nos remarques.</p>
+        <p>Nous savons que Hoa est en pleine ébullition. Nous suivons le projet
+        de très près car nous pensons que cet outil sera majeur dans
+        l'éco-système PHP.</p>
+      </dd>
+    </dl>
+
   </yield>
 </overlay>
