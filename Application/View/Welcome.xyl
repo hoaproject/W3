@@ -56,11 +56,11 @@
              <img src="hoa://Application/Public/Image/WhoUse/Verylastroom_little.png"
                  alt="VeryLastRoom" class="bordered" />
         </a>
-        <a href="@u:who=INRIA" class="plain">
+        <a href="@u:who=Inria" class="plain">
             <img src="hoa://Application/Public/Image/WhoUse/INRIA_little.png"
                  alt="INRIA" class="bordered" />
         </a>
-        <a href="@u:who=SPW" class="plain">
+        <a href="@u:who=Spw" class="plain">
             <img src="hoa://Application/Public/Image/WhoUse/SPW_little.png"
                  alt="SPW" class="bordered" />
         </a>
@@ -68,7 +68,7 @@
             <img src="hoa://Application/Public/Image/WhoUse/Mozilla_little.png"
                  alt="Mozilla" class="bordered" />
         </a>
-        <a href="@u:who=DISC" class="plain">
+        <a href="@u:who=Disc" class="plain">
             <img src="hoa://Application/Public/Image/WhoUse/DISC_little.png"
                  alt="DISC" class="bordered" />
         </a>
