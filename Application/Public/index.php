@@ -17,7 +17,6 @@ $router
     ->get('lt', '/Literature/Mini-tutorial\.html', 'literature', 'minitutorial')
     ->get('ll', '/Literature/Learn/(?<chapter>\w+)\.html', 'literature', 'learn')
     ->get('lh', '/Literature/Hack/(?<chapter>\w+)\.html', 'literature', 'hack')
-    ->get('lk', '/Literature/Keynote/(?<keynote>\w+)\.html', 'literature', 'keynote')
     ->get('lp', '/Literature/Popcode/(?<code>\w+)\.html', 'literature', 'popcode')
     ->get('lc', '/Literature/Contributor/Guide\.html', 'literature', 'contributor')
     ->get('r',  '/Research\.html', 'research', 'default')
@@ -38,7 +37,7 @@ $router
     ->_get('git',    'http://git.hoa-project.net/?p=(?<repository>).git')
     ->_get('github', 'https://github.com/hoaproject/(?<repository>)')
     ->_get('key.',   'http://keynote.hoa-project.net/(?<keynote>)')
-    ->_get('key',    'http://keynote.hoa-project.net/Shells/(?<shell>)\.html#http://keynote\.hoa-project\.net/(?<keynote>)\.html');
+    ->_get('key',    'http://keynote.hoa-project.net/Shells/(?<shell>).html#http://keynote.hoa-project.net/(?<keynote>).html');
 
 try {
 
