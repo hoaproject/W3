@@ -47,16 +47,6 @@ class Literature extends Generic {
         return;
     }
 
-    public function KeynoteAction ( $keynote ) {
-
-        $this->data->keynote[0]->id    = 'PHPTour11';
-        $this->data->keynote[0]->title = 'PHPTour\'11';
-        $this->view->addOverlay('hoa://Application/View/Literature/Keynote.xyl');
-        $this->render();
-
-        return;
-    }
-
     public function PopcodeAction ( $code ) {
 
         $this->view->addUse('hoa://Application/External/Literature/Popcode/' .  ucfirst($code) . '.xyl');
