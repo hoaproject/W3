@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xyl-stylesheet href="hoa://Library/Xyl/Css/Core.css" position="10"?>
 <?xyl-stylesheet href="hoa://Application/Public/Css/UI.css" position="last()"?>
+<?xyl-meta name="viewport" content="initial-scale=1.0"?>
 
 <document xmlns="http://hoa-project.net/xyl/xylophone" id="document">
   <title>Hoa, un ensemble de bibliothèques PHP</title>
@@ -10,7 +11,7 @@
   <!--
   <async id="content_async" scope="?q:#content">
   -->
-    <nav id="menu">
+    <nav id="menu" aria-selected="false">
       <div>
         <ul id="nav-top">
           <li><a href="@g:all=" class="home">Accueil</a></li>
@@ -29,6 +30,11 @@
     </nav>
 
     <div class="body">
+
+      <div aria-controls="menu">
+        <img src="hoa://Application/Public/Image/Icon_menu.svg"
+             width="32px" height="32px" alt="Menu" />
+      </div>
 
       <header>
         <img src="hoa://Application/Public/Image/Hoa.png" alt="Hoa" />
@@ -99,6 +105,23 @@
     });
   </script>
   -->
+
+  <script>
+    Hoa.Document.onReady(function ( ) {
+
+        var nav = Hoa.$('#menu');
+
+        Hoa.$('div[aria-controls="menu"]')
+           .addEventListener('click', function ( ) {
+
+            if('false' === nav.getAttribute('aria-selected'))
+                nav.setAttribute('aria-selected', true);
+            else
+                nav.setAttribute('aria-selected', false);
+        }, false);
+    });
+  </script>
+
   <script src="hoa://Application/Public/Javascript/Prism.js" />
   <script src="hoa://Application/Public/Javascript/Prism.hoa.js" />
   <script src="hoa://Application/Public/Javascript/Prism.plugin.line.js" />
