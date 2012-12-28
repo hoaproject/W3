@@ -40,7 +40,7 @@
     <div class="column fright">
       <h2 id="Activite">Activité</h2>
 
-      <figure id="activity" style="width: 400px">
+      <figure id="activity">
         <figcaption><em lang="en">commits</em> par jours de <code>Central</code>
         (2 derniers mois)</figcaption>
       </figure>
@@ -108,8 +108,12 @@
           .y1(function ( d ) { return y(d.number); });
 
       var svg = d3.select("#activity").insert("svg", ":first-child")
-          .attr("width", width + margin.left + margin.right)
-          .attr("height", height + margin.top + margin.bottom)
+          .attr(
+            "viewBox",
+            "0 0 " +
+            (width + margin.left + margin.right) + " " +
+            (height + margin.top + margin.bottom)
+          )
         .append("g")
           .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
