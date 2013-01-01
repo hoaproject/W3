@@ -126,7 +126,7 @@
           });
 
           x.domain(d3.extent(data, function(d) { return d.date; }));
-          y.domain([0, d3.max(data, function(d) { return d.number; })]);
+          y.domain([0, d3.max(data, function(d) { return Math.min(50, d.number); })]);
 
           svg.append("path")
               .datum(data)
