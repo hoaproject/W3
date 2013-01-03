@@ -53,24 +53,34 @@
 
       <p>
         <a href="@u:who=Verylastroom" class="plain">
+          <span class="image">
              <img src="hoa://Application/Public/Image/WhoUse/Verylastroom_little.png"
-                 alt="VeryLastRoom" class="bordered" />
+                  alt="VeryLastRoom" />
+          </span>
         </a>
         <a href="@u:who=Inria" class="plain">
+          <span class="image">
             <img src="hoa://Application/Public/Image/WhoUse/INRIA_little.png"
-                 alt="INRIA" class="bordered" />
+                 alt="INRIA" />
+          </span>
         </a>
         <a href="@u:who=Spw" class="plain">
+          <span class="image">
             <img src="hoa://Application/Public/Image/WhoUse/SPW_little.png"
-                 alt="SPW" class="bordered" />
+                 alt="SPW" />
+          </span>
         </a>
         <a href="@u:who=Mozilla" class="plain">
+          <span class="image">
             <img src="hoa://Application/Public/Image/WhoUse/Mozilla_little.png"
-                 alt="Mozilla" class="bordered" />
+                 alt="Mozilla" />
+          </span>
         </a>
         <a href="@u:who=Disc" class="plain">
+          <span class="image">
             <img src="hoa://Application/Public/Image/WhoUse/DISC_little.png"
-                 alt="DISC" class="bordered" />
+                 alt="DISC" />
+          </span>
         </a>
       </p>
     </div>
