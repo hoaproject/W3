@@ -32,8 +32,8 @@
     <div class="body">
 
       <div aria-controls="menu">
-        <img src="hoa://Application/Public/Image/Icon_menu.svg"
-             width="32px" height="32px" alt="Menu" />
+        <img src="hoa://Application/Public/Image/Icon_menu.png"
+             width="24px" height="24px" alt="Menu" />
       </div>
 
       <header>
