@@ -84,10 +84,7 @@
         est bien structuré, les étudiants le prennent vite en main. De plus,
         nous pouvons nous concentrer sur les vraies problématiques de cours
         plutôt que sur le fonctionnement de l'outil grâce à une API simple et
-        facile. À titre plus anecdotique mais pourtant important, je vous ferais
-        remarquer que déployer un outil sur plusieurs machines avec des
-        configurations hétérogènes afin d'être utilisés par des étudiants de
-        tous niveaux est une véritable épreuve du feu que Hoa a su relever !</p>
+        facile.</p>
       </dd>
 
       <dt>
@@ -104,10 +101,20 @@
         </div>
         <p>Nous sommes agréablement surpris. La prise en main pour mes collègues
         fût rapide. La mise en production n'a pas posé de soucis. Une fois
-        quelques concepts propres à Hoa assimilés, tout roule très bien !</p>
-        <p>Nous gardons dorénavant Hoa en permanence dans notre trousse à
-        outils. C'est vers lui que nous nous tournons en premier car il est très
-        facile de travailler avec. Même plus facile que du PHP pur.</p>
+        quelques concepts propres à Hoa assimilés, le développement se fait
+        rapidement et de façon que je qualifierai de naturelle.</p>
+        <p>Nous gardons dorénavant Hoa en permanence dans notre trousse à outil.
+        C'est vers lui que nous nous tournons en premier, car il est très facile
+        de travailler avec Hoa. En PHP, nous retrouvons souvent les mêmes
+        briques de travail, que nous réutilisons ou que nous concevons de façon
+        autonome pour ne pas dépendre d'un ensemble d'outils dont nous n'avons
+        pas besoin. Nous sentons que Hoa répond à un besoin de bonnes pratiques
+        et de bonne programmation sans pour autant réécrire ou occulté le cœur
+        même de PHP. Nous ne réinventons pas la roue, nous apportons une
+        simplification ou une amélioration de développement de notre
+        application.</p>
+        <p>En résumé, ce que nous retenons, c'est que nous ne devons pas
+        réapprendre une sur couche de PHP pour appréhender Hoa.</p>
       </dd>
 
       <dt>
@@ -125,8 +132,20 @@
         </div>
         <p>Je vais être honnête : il nous arrive de tricher ! Pour ce faire la
         main, nous avons utilisé la documentation qui est à notre avis bien
-        faites, et puis quand elle est plus difficile à assimiler, la communauté
-        de Hoa la modifie rapidement sur nos remarques.</p>
+        faite, et puis, quand elle est plus difficile à assimiler, la communauté
+        de Hoa la modifie rapidement sur les remarques que nous avons émises. La
+        classification et le nommage des composants sont clairs et
+        compréhensibles.</p>
+        <p>Naturellement, il existe aussi des composants dont nous ne comprenons
+        pas forcément l'utilité ou comment l'utiliser. Il peut aussi manquer
+        certaines choses dont nous aurions besoin, dans ce cas nous le
+        développons, nous en faisons une Hoathis et nous pouvons même la
+        partager.</p>
+        <p>Un des points forts de Hoa que nous avons pleinement apprécié est le
+        protocole <code>hoa://</code>. En effet, mettre en place un système
+        permettant d'abstraire l'accès aux ressources et ceci de façon aussi
+        simple nous facilite vraiment la vie et nous fait oublier les
+        <code>getBaseUrl</code> et autres fonctions du même genre.</p>
         <p>Nous savons que Hoa est en pleine ébullition. Nous suivons le projet
         de très près car nous pensons que cet outil sera majeur dans
         l'éco-système PHP.</p>
