@@ -52,36 +52,40 @@
       <h2 id="Qui_l-utilise">Qui l'utilise ?</h2>
 
       <p>
-        <a href="@u:who=Verylastroom" class="plain">
-          <span class="image">
-             <img src="hoa://Application/Public/Image/WhoUse/Verylastroom_little.png"
-                  alt="VeryLastRoom" />
-          </span>
-        </a>
-        <a href="@u:who=Inria" class="plain">
-          <span class="image">
+        <span class="image">
+          <a href="http://verylastroom.com/" class="plain">
+            <img src="hoa://Application/Public/Image/WhoUse/Verylastroom_little.png"
+                 alt="VeryLastRoom" />
+          </a>
+          <a href="@u:who=Verylastroom" class="notification"
+             title="Voir l'entrevue">+</a>
+        </span>
+        <span class="image">
+          <a href="http://www.inria.fr/" class="plain">
             <img src="hoa://Application/Public/Image/WhoUse/INRIA_little.png"
                  alt="INRIA" />
-          </span>
-        </a>
-        <a href="@u:who=Spw" class="plain">
-          <span class="image">
+          </a>
+        </span>
+        <span class="image">
+          <a href="http://henry.wallonie.be/" class="plain">
             <img src="hoa://Application/Public/Image/WhoUse/SPW_little.png"
                  alt="SPW" />
-          </span>
-        </a>
-        <a href="@u:who=Mozilla" class="plain">
-          <span class="image">
-            <img src="hoa://Application/Public/Image/WhoUse/Mozilla_little.png"
-                 alt="Mozilla" />
-          </span>
-        </a>
-        <a href="@u:who=Disc" class="plain">
-          <span class="image">
+          </a>
+          <a href="@u:who=Spw" class="notification"
+             title="Voir l'entrevue">+</a>
+        </span>
+        <span class="image">
+          <a href="http://mozilla.org/" class="plain">
+              <img src="hoa://Application/Public/Image/WhoUse/Mozilla_little.png"
+                   alt="Mozilla" />
+          </a>
+        </span>
+        <span class="image">
+          <a href="http://www.femto-st.fr/fr/Departements-de-recherche/DISC/" class="plain">
             <img src="hoa://Application/Public/Image/WhoUse/DISC_little.png"
                  alt="DISC" />
-          </span>
-        </a>
+          </a>
+        </span>
       </p>
     </div>
   </yield>
