@@ -6,12 +6,13 @@
         <img src="hoa://Application/Public/Image/WhoUse/SPW.png"
              alt="SPW" /></h1>
 
-    <p>Le <a href="http://henry.wallonie.be/">service public de Wallonie</a>
-    a des besoins très variés en matière d'informatique, en particulier au
-    niveau budgétaire. C'est dans ce cadre que ce service a eu l'occasion
-    d'utiliser Hoa.</p>
-    <p>L'intégration et la mise en production a été facile, et Hoa est
-    maintenant la solution numéro 1 pour tout développement.</p>
+    <p>Le <a href="http://henry.wallonie.be/">service public de Wallonie</a> a
+    des besoins très <strong>variés</strong> en matière d'informatique, en
+    particulier au niveau <strong>budgétaire</strong>. C'est dans ce cadre que
+    ce service a eu l'occasion d'utiliser Hoa.</p>
+    <p>L'intégration et la mise en production a été <strong>facile</strong>, et
+    Hoa est maintenant la solution <strong>numéro 1</strong> pour tout
+    développement.</p>
 
     <dl class="dialog">
       <dt>
@@ -27,8 +28,8 @@
                alt="Gérard :" />
         </div>
         <p>Bonjour, je m'appelle Gérard Ernaelsten, je suis actuellement
-        responsable informatique dans un cabinet ministériel en Région Wallone
-        (Belgique).</p>
+        responsable informatique dans un <strong>cabinet ministériel</strong> en
+        Région Wallone (Belgique).</p>
       </dd>
 
       <dt>
@@ -46,9 +47,9 @@
         <p>Ouch ! J'ai repris des études à l'ombre de ma trentième années. À
         l'époque je travaillais dans un centre d'alphabétisation et nous avions
         besoin d'outils. N'ayant pas les compétences, je me suis formé en
-        Informatique. Le PHP m'a permis de mettre en place très rapidement
-        certaines applications, et j'ai également réalisé mon travail de fin
-        d'étude dans ce langage.</p>
+        Informatique. Le PHP m'a permis de mettre en place très
+        <strong>rapidement</strong> certaines applications, et j'ai également
+        réalisé mon travail de fin d'étude dans ce langage.</p>
         <p>Depuis, je développe des applications de gestions essentiellement en
         PHP, mais aussi en Ruby ou encore en Python. Je suis également
         <a href="http://g-ernaelsten.developpez.com/">rédacteur sur
@@ -68,23 +69,25 @@
           <img src="hoa://Application/Public/Image/Avatar/Maitrepylos.png"
                alt="Gérard :" />
         </div>
-        <p>Le dernier exemple en date : mon équipe et moi-même avons mis en
-        place un <em lang="en">workflow</em> de gestion budgétaire au sein du
-        cabinet.  Cette application peut sembler simple mais elle gère des
-        sommes folles ! La diversité des outils en PHP étant nombreuses, nous
-        devons faire des choix qui ne sont pas toujours judicieux.
-        Actuellemment, l'offre est assez lourde et nous devons souvent prendre
-        l'ensemble complet. Et ce qui nous intéresse dans Hoa, c'est que ce
-        n'est pas un outil monolithique mais un ensemble de bibliothèques bien
-        découpées. Nous prenons ce que nous voulons sans pour autant avoir
-        besoin du reste. J'avais un peu ce choix quand je développais avec
-        Zend Framework, mais ici c'est encore plus simple : les bibliothèques
-        sont claires, précises et bien découpées.</p>
-        <p>Plus personnellement, je l'utilise de façon pédagogique. Comme Hoa
-        est bien structuré, les étudiants le prennent vite en main. De plus,
-        nous pouvons nous concentrer sur les vraies problématiques de cours
-        plutôt que sur le fonctionnement de l'outil grâce à une API simple et
-        facile.</p>
+        <p>Je donnerai le dernier exemple en date : mon équipe et moi-même avons
+        mis en place un <em lang="en">workflow</em> de <strong>gestion
+        budgétaire</strong> au sein du cabinet. Cette application peut sembler
+        simple mais elle gère des sommes <strong>folles</strong> ! La diversité
+        des outils en PHP étant nombreuses, nous devons parfois faire des choix
+        qui ne sont pas judicieux. Actuellemment, l'offre est assez lourde et
+        nous devons souvent prendre l'ensemble complet. Et ce qui nous intéresse
+        dans Hoa, c'est que ce n'est pas un outil <strong>monolithique</strong>
+        mais un ensemble de bibliothèques bien <strong>découpées</strong>. Nous
+        prenons ce que nous voulons sans pour autant avoir besoin du reste.
+        J'avais déjà un peu ce choix quand je développais avec Zend Framework,
+        mais ici c'est encore <strong>plus simple</strong> : les bibliothèques
+        sont <strong>claires</strong>, <strong>précises</strong> et bien
+        découpées.</p>
+        <p>Plus personnellement, je l'utilise de façon
+        <strong>pédagogique</strong>. Comme Hoa est bien structuré, les
+        étudiants le prennent vite en main. De plus, nous pouvons nous
+        concentrer sur les vraies problématiques de cours plutôt que sur le
+        fonctionnement de l'outil grâce à une API simple et facile.</p>
       </dd>
 
       <dt>
@@ -100,19 +103,20 @@
                alt="Gérard :" />
         </div>
         <p>Nous sommes agréablement surpris. La prise en main pour mes collègues
-        fût rapide. La mise en production n'a pas posé de soucis. Une fois
-        quelques concepts propres à Hoa assimilés, le développement se fait
-        rapidement et de façon que je qualifierai de naturelle.</p>
-        <p>Nous gardons dorénavant Hoa en permanence dans notre trousse à outil.
-        C'est vers lui que nous nous tournons en premier, car il est très facile
-        de travailler avec Hoa. En PHP, nous retrouvons souvent les mêmes
-        briques de travail, que nous réutilisons ou que nous concevons de façon
-        autonome pour ne pas dépendre d'un ensemble d'outils dont nous n'avons
-        pas besoin. Nous sentons que Hoa répond à un besoin de bonnes pratiques
-        et de bonne programmation sans pour autant réécrire ou occulté le cœur
-        même de PHP. Nous ne réinventons pas la roue, nous apportons une
-        simplification ou une amélioration de développement de notre
-        application.</p>
+        fût <strong>rapide</strong>. La mise en production n'a pas posé de
+        soucis. Une fois quelques concepts propres à Hoa assimilés, le
+        développement se fait rapidement et de façon que je qualifierai de
+        <strong>naturelle</strong>.</p>
+        <p>Nous gardons dorénavant Hoa en permanence dans notre <strong>trousse
+        à outils</strong>. C'est vers lui que nous nous tournons en premier, car
+        il est très facile de travailler avec Hoa. En PHP, nous retrouvons
+        souvent les mêmes briques de travail, que nous réutilisons ou que nous
+        concevons de façon autonome pour ne pas dépendre d'un ensemble d'outils
+        dont nous n'avons pas besoin. Nous sentons que Hoa répond à un besoin de
+        <strong>bonnes pratiques</strong> et de bonne programmation sans pour
+        autant réécrire ou occulter le cœur même de PHP. Nous ne réinventons pas
+        la roue, nous apportons une simplification ou une amélioration de
+        développement de notre application.</p>
         <p>En résumé, ce que nous retenons, c'est que nous ne devons pas
         réapprendre une sur couche de PHP pour appréhender Hoa.</p>
       </dd>
@@ -131,26 +135,28 @@
                alt="Gérard :" />
         </div>
         <p>Je vais être honnête : il nous arrive de tricher ! Pour ce faire la
-        main, nous avons utilisé la documentation qui est à notre avis bien
-        faite, et puis, quand elle est plus difficile à assimiler, la communauté
-        de Hoa la modifie rapidement sur les remarques que nous avons émises. La
-        classification et le nommage des composants sont clairs et
-        compréhensibles.</p>
+        main, nous avons utilisé la documentation qui est à notre avis
+        <strong>bien faite</strong>, et puis, quand elle est plus difficile à
+        assimiler, la communauté de Hoa la modifie rapidement sur les remarques
+        que nous avons émises. La classification et le nommage des composants
+        sont clairs et <strong>compréhensibles</strong>.</p>
         <p>Naturellement, il existe aussi des composants dont nous ne comprenons
         pas forcément l'utilité ou comment l'utiliser. Il peut aussi manquer
         certaines choses dont nous aurions besoin, dans ce cas nous le
         développons, nous en faisons une Hoathis et nous pouvons même la
-        partager.</p>
+        <strong>partager</strong>.</p>
         <p>Un des points forts de Hoa que nous avons pleinement apprécié est le
         protocole <code>hoa://</code>. En effet, mettre en place un système
-        permettant d'abstraire l'accès aux ressources et ceci de façon aussi
-        simple nous facilite vraiment la vie et nous fait oublier les
+        permettant d'abstraire l'accès aux ressources, et ceci de façon aussi
+        simple, nous facilite vraiment la vie et nous fait oublier les
         <code>getBaseUrl</code> et autres fonctions du même genre.</p>
-        <p>Nous savons que Hoa est en pleine ébullition. Nous suivons le projet
-        de très près car nous pensons que cet outil sera majeur dans
-        l'éco-système PHP.</p>
+        <p>Nous savons que Hoa est en pleine <strong>ébullition</strong>. Nous
+        suivons le projet de très près car nous pensons que cet outil sera
+        majeur dans l'éco-système PHP !</p>
       </dd>
     </dl>
 
+    <p>Entrevue réalisé le <time datetime="2013-01-15">15 janvier
+    2013</time>.</p>
   </yield>
 </overlay>
