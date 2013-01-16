@@ -51,6 +51,14 @@ class Index extends Generic {
         return;
     }
 
+    public function ProjectAction ( ) {
+
+        $this->view->addOverlay('hoa://Application/View/Project.xyl');
+        $this->render();
+
+        return;
+    }
+
     public function ErrorAction ( \Hoa\Core\Exception $exception ) {
 
         switch(get_class($exception)) {
