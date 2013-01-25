@@ -21,7 +21,7 @@
           <li><a href="@v" class="video">Vidéo</a></li>
           -->
           <li><a href="@b" class="blog">Blog</a></li>
-          <li><a href="@ev" class="event">Évènement</a></li>
+          <li><a href="@ev" class="event">Événement</a></li>
           <li><a href="@forum" class="community">Communauté</a></li>
         </ul>
 

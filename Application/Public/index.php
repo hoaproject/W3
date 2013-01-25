@@ -24,7 +24,7 @@ $router
     ->get('s',   '/Source\.html', 'index', 'source')
     ->get('v',   '/Video\.html', 'video', 'default')
     ->get('v+',  '/Video/(?<_able>\w+)\.html', 'video')
-    ->get('ev',  '/Event\.html', 'event', 'index')
+    ->get('ev',  '/Event\.html', 'event', 'default')
     ->get('ev+', '/Event/(?<_able>\w+)\.html', 'event')
     ->get('a',   '/About\.html', 'index', 'about')
     ->get('c',   '/Contact\.html', 'index', 'contact')
