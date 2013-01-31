@@ -132,7 +132,7 @@
           .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
       d3.tsv(
-        "http://static.hoa-project.net/Data/Central_commits_since_2months.tsv",
+        "<value link="hoa://Application/Public/Data/Central_commits_since_2months.tsv" />",
         function(error, data) {
           data.forEach(function(d) {
             d.date = parseDate(d.date);
