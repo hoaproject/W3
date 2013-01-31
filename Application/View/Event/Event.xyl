@@ -11,7 +11,7 @@
     <script>
       var map = L.map('map').setView([51.505, -0.09], 2);
 
-      L.tileLayer('/Static/Map/Tiles/{z}/{x}/{y}.png', {
+      L.tileLayer('<value link="hoa://Application/Public/Map/Tiles/{z}/{x}/{y}.png" />', {
         minZoom: 1,
         maxZoom: 7
       }).addTo(map);
@@ -22,7 +22,7 @@
       }).addTo(map);
 
       var icon = L.icon({
-          iconUrl: '/Static/Map/Marker.svg',
+          iconUrl: '<value link="hoa://Application/Public/Map/Marker.svg" />',
           iconSize: [28, 45],
           iconAnchor: [14, 44],
           popupAnchor: [2, -45]
