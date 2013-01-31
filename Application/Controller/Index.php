@@ -5,6 +5,9 @@ namespace {
 from('Application')
 -> import('Controller.Generic');
 
+from('Hoa')
+-> import('Database.Dal');
+
 }
 
 namespace Application\Controller {
@@ -13,7 +16,24 @@ class Index extends Generic {
 
     public function DefaultAction ( )  {
 
+        \Hoa\Database\Dal::initializeParameters(array(
+            'connection.list.default.dal' => \Hoa\Database\Dal::PDO,
+            'connection.list.default.dsn' => 'sqlite:' . __DIR__ . '/../../../blog/Data/Variable/Database/Blog.sqlite',
+            'connection.autoload'         => 'default'
+        ));
+
+        $blog = \Hoa\Database\Dal::getLastInstance()
+                    ->prepare(
+                        'SELECT   id, posted, title ' .
+                        'FROM     post ' .
+                        'ORDER BY posted DESC ' .
+                        'LIMIT    5'
+                    )
+                    ->execute()
+                    ->fetchAll();
+
         $this->view->addOverlay('hoa://Application/View/Welcome.xyl');
+        $this->data->blog = $blog;
         $this->render();
 
         return;

@@ -25,15 +25,13 @@
     <div class="column fleft">
       <h2 id="Dernieres_nouvelles">Dernières nouvelles</h2>
 
-      <ul class="plain">
-        <li><a href="">Nouveau site Web !</a> <small>(<time>14 déc.</time>)</small></li>
-        <li><a href="">Bla bla infernal</a> <small>(<time>9 déc.</time>)</small></li>
-        <li><a href=""><code>Hoa\Compiler</code> dépasse toutes nos
-            espérances</a> <small>(<time>1 déc.</time>)</small></li>
-        <li><a href="">Foobar</a> <small>(<time>25 nov.</time>)</small></li>
-        <li><a href="">Bazqux gordon</a> <small>(<time>21
-            nov.</time>)</small></li>
-        <li><a href="">Lorem ipsum</a> <small>(<time>14 nov.</time>)</small></li>
+      <ul>
+        <li bind="?blog">
+          <a href="@b_post:id=(?id)" bind="?title" />
+          <small>(<time><value bind="?posted"
+                               formatter="date"
+                               formatter-format="j/m" /></time>)</small>
+        </li>
       </ul>
     </div>
 
