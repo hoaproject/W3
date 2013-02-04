@@ -92,7 +92,7 @@
       <li>Socket ;</li>
       <li>Stream ;</li>
       <li>String ;</li>
-      <li>StringBuffer ;</li>
+      <li>Stringbuffer ;</li>
       <li>Test ;</li>
       <li>Translate ;</li>
       <li>Tree ;</li>
