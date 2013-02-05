@@ -47,5 +47,24 @@
        .bindPopup('<a href="@ev+:_able=HoaApex13">Hoa Apex\'13</a>')
        .addTo(map);
     </script>
+
+    <h2 id="Organiser_par_Hoa">Organisés par Hoa
+    <img src="hoa://Application/Public/Map/Marker.svg" height="25" /></h2>
+
+    <ul>
+      <li><time datetime="2013-03">mars 2013</time>,
+          <a href="@ev+:_able=HoaApex13">Hoa Apex</a> ;</li>
+    </ul>
+
+    <h2 id="Ou_Hoa_etait_invite">Où Hoa était invité
+    <img src="hoa://Application/Public/Map/Marker.svg" height="25" /></h2>
+
+    <ul>
+      <li>??? (<a href="@c">nous contacter pour nous inviter</a>) ;</li>
+      <li><time datetime="2012-06">juin 2012</time>, ForumPHP ;</li>
+      <li><time datetime="2012-04">avril 2012</time>, AMOST ;</li>
+      <li><time datetime="2011-11">novembre 2011</time>, ICTSS ;</li>
+      <li><time datetime="2011-11">novembre 2011</time>, PHPTour.</li>
+    </ul>
   </yield>
 </overlay>
