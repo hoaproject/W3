@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xyl-stylesheet href="hoa://Application/Public/Css/Leaflet.css"?>
+
+<overlay xmlns="http://hoa-project.net/xyl/xylophone">
+  <yield id="yContent">
+    <h1>Apex 2013</h1>
+
+    <p>Hoa Apex est un événement dédié à la <strong>communauté</strong> de Hoa,
+    où se retrouvent tous les contributeurs, les utilisateurs et les
+    développeurs principaux. C'est un moment unique pour partager des idées et
+    des projets ensembles.</p>
+
+    <h2 id="Table_des_matieres">Table des matières</h2>
+
+    <tableofcontents id="minitoc" />
+
+    <h2 id="Dates_lieu_et_venues" for="minitoc">Dates, lieu et venues</h2>
+
+    <p>L'événement commencera le
+    <strong><time datetime="2013-03-23 09:30">samedi 23 mars à
+    9h30</time></strong> et se terminera le
+    <strong><time datetime="2013-03-24 18:00">lendemain à 18h</time></strong>,
+    dans la charmante ville de <strong>Le Locle</strong> (en Suisse), tout près
+    de Neuchâtel.</p>
+    <p><img src="http://ingenierie.he-arc.ch/sites/all/themes/Ingenierie/css/img/ING_HE-ARC_logo.jpg"
+            class="fright" />
+    La <a href="http://he-arc.ch/">Haute-École Arc</a> (<abbr>HE-Arc</abbr>)
+    nous fait l'honneur de nous prêter ses locaux pour ces deux jours : rue du
+    Châtelard, 2400, Le Locle (coordonnées : 47.054789, 6.742918). Nous nous
+    retrouverons tous dans la salle <strong>LL101</strong> au premier étage.</p>
+
+    <div id="map" style="height: 500px" class="cboth"></div>
+    <script src="hoa://Application/Public/Javascript/Leaflet.js"></script>
+    <script>
+      var map = L.map('map').setView([47.054789, 6.742918], 13);
+
+      L.tileLayer('<value link="hoa://Application/Public/Map/Tiles/{z}/{x}/{y}.png" />', {
+        minZoom: 1,
+        maxZoom: 7
+      }).addTo(map);
+
+      L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+        attribution: '© &lt;a href="http://osm.org/copyright">OpenStreetMap&lt;/a> contributors',
+        minZoom: 7
+      }).addTo(map);
+
+      var icon = L.icon({
+          iconUrl: '<value link="hoa://Application/Public/Map/Marker.svg" />',
+          iconSize: [28, 45],
+          iconAnchor: [14, 44],
+          popupAnchor: [2, -45]
+      });
+
+      L.marker([47.054789, 6.742918], {icon: icon})
+       .bindPopup('<p class="tcenter">ici</p>')
+       .addTo(map);
+    </script>
+
+    <p>Les villes proches sont Neuchâtel (CH), Besançon (FR) et Genève (CH).
+    Des <strong>transports</strong> peuvent organisés pour venir vous chercher
+    en voiture.</p>
+
+    <h2 id="Logements_et_repas" for="minitoc">Logements et repas</h2>
+
+    <p>La communauté de Hoa peut effectuer des réservations de chambres d'hôtel
+    aussi bien en Suisse qu'en France (préférablement dans les villes de Le
+    Locle ou Villers-le-Lac). Ceci est un service et non pas une obligation.
+    Sentez-vous libre mais merci de nous tenir informer !</p>
+    <p>Concernant les repas, rien n'est encore décidé.</p>
+
+    <h2 id="Programme_et_activite" for="minitoc">Programme et activités</h2>
+
+    <p>Le programme est à décider.</p>
+
+    <h2 id="Contacts" for="minitoc">Contacts</h2>
+
+    <p>Pour <strong>toutes</strong> questions, n'hésitez surtout pas à
+    <a href="@c">nous contacter</a> !</p>
+  </yield>
+</overlay>

@@ -44,8 +44,8 @@
        .bindPopup('ICTSS\'11')
        .addTo(map);
 
-      L.marker([47.054467196951, 6.7423095704031], {icon: icon})
-       .bindPopup('ICTSS\'11')
+      L.marker([47.054789, 6.742918], {icon: icon})
+       .bindPopup('<a href="@ev+:_able=HoaApex13">Hoa Apex\'13</a>')
        .addTo(map);
     </script>
   </yield>
