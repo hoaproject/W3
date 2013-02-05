@@ -6,7 +6,12 @@
 
     <p>Quelques informations utiles sur Hoa.</p>
 
-    <h2 id="Association">Association</h2>
+    <h2 id="Nom_et_origine">Nom et origine</h2>
+
+    <p>Hoa se prononce <em>/hoa/</em> et est un rétro-acronyme récursif
+    signifiant <em lang="en">Hoa, Open Accessibility</em>. Le projet est mené
+    par Ivan Enderlin mais il est maintenant dirigé par une communauté
+    grandissante et responsable.</p>
 
     <h2 id="Licence">Licence</h2>
 
