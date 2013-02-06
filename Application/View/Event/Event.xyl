@@ -16,7 +16,7 @@
       }).addTo(map);
 
       L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
-        attribution: '© &lt;a href="http://osm.org/copyright">OpenStreetMap&lt;/a> contributors',
+        attribution: '© <a href="http://osm.org/copyright">OpenStreetMap</a> contributors',
         minZoom: 7
       }).addTo(map);
 
