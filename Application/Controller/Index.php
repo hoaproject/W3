@@ -5,9 +5,6 @@ namespace {
 from('Application')
 -> import('Controller.Generic');
 
-from('Hoa')
--> import('Database.Dal');
-
 }
 
 namespace Application\Controller {
@@ -16,24 +13,13 @@ class Index extends Generic {
 
     public function DefaultAction ( )  {
 
-        \Hoa\Database\Dal::initializeParameters(array(
-            'connection.list.default.dal' => \Hoa\Database\Dal::PDO,
-            'connection.list.default.dsn' => 'sqlite:' . __DIR__ . '/../../../blog/Data/Variable/Database/Blog.sqlite',
-            'connection.autoload'         => 'default'
-        ));
+        $blogApi = $this->router->unroute('b') . 'api/posts?limit=5';
 
-        $blog = \Hoa\Database\Dal::getLastInstance()
-                    ->prepare(
-                        'SELECT   id, posted, title ' .
-                        'FROM     post ' .
-                        'ORDER BY posted DESC ' .
-                        'LIMIT    5'
-                    )
-                    ->execute()
-                    ->fetchAll();
+        if(false !== $json = @file_get_contents($blogApi))
+            if(null !== $handle = json_decode($json, true))
+                $this->data->blog = $handle;
 
         $this->view->addOverlay('hoa://Application/View/Welcome.xyl');
-        $this->data->blog = $blog;
         $this->render();
 
         return;
