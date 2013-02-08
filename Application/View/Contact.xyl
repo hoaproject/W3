@@ -28,11 +28,11 @@
 
     <h2 id="Autre_moyens">Autre moyens</h2>
 
-    <p>D'autres moyons sont mis à votre disposition, comme
+    <p>D'autres moyens sont mis à votre disposition, comme
     <a href="@forum">le forum</a> ou
     <a href="https://twitter.com/hoaproject/">le compte Twitter</a>. Enfin, dans
     la matrice, vous pouvez les rencontrer facilement dans les villes
-    suivantes : Paris, Lyon, Besançon pour la France et Lausanne, Genève,
-    Neuchâtel pour la Suisse.</p>
+    suivantes : Paris, Lyon, Besançon pour la France, Lausanne, Genève,
+    Neuchâtel pour la Suisse et Namur pour la Belgique.</p>
   </yield>
 </overlay>
