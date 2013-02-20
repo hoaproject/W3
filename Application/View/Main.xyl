@@ -48,7 +48,10 @@
       </article>
 
       <footer>
-        <p>Hoa est la création de Ivan Enderlin, tous droits réservés.</p>
+        <p>Hoa est la création de Ivan Enderlin, tous droits réservés.
+           Voir <a href="@_resource:resource=LICENSE">la licence</a>.
+           <a href="http://twitter.com/hoaproject">Twitter</a>,
+           <a href="http://github.com/hoaproject">Github</a>.</p>
       </footer>
 
     </div>
