@@ -38,7 +38,7 @@
     <div class="column fright">
       <h2 id="Activite">Activité</h2>
 
-      <figure id="activity">
+      <figure id="activity" style="max-width: 400px">
         <figcaption><em lang="en">commits</em> par jours de <code>Central</code>
         (2 derniers mois)</figcaption>
       </figure>
