@@ -44,7 +44,7 @@
        .addTo(map);
 
       L.marker([47.054789, 6.742918], {icon: icon})
-       .bindPopup('<a href="@ev+:_able=HoaApex13">Hoa Apex\'13</a>')
+       .bindPopup('<a href="@ev+:_able=Hoaapex13">Hoa Apex\'13</a>')
        .addTo(map);
 
       L.marker([49.610148755062, 6.1367606521795], {icon: icon})
