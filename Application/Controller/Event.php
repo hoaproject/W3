@@ -34,6 +34,14 @@ class Event extends Generic {
 
         return;
     }
+
+    public function Phptour11Action ( ) {
+
+        $this->view->addOverlay('hoa://Application/View/Event/Phptour11.xyl');
+        $this->render();
+
+        return;
+    }
 }
 
 }
