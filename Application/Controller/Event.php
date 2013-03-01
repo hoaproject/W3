@@ -21,7 +21,7 @@ class Event extends Generic {
 
     public function Hoaapex13Action ( ) {
 
-        $this->view->addOverlay('hoa://Application/View/Event/HoaApex13.xyl');
+        $this->view->addOverlay('hoa://Application/View/Event/Hoaapex13.xyl');
         $this->render();
 
         return;
