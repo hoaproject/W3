@@ -19,9 +19,17 @@ class Event extends Generic {
         return;
     }
 
-    public function HoaApex13Action ( ) {
+    public function Hoaapex13Action ( ) {
 
         $this->view->addOverlay('hoa://Application/View/Event/HoaApex13.xyl');
+        $this->render();
+
+        return;
+    }
+
+    public function Forumphp12Action ( ) {
+
+        $this->view->addOverlay('hoa://Application/View/Event/Forumphp12.xyl');
         $this->render();
 
         return;
