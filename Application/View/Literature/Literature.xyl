@@ -86,7 +86,7 @@
       <li><code>Reflection</code> ;</li>
       <li><code>Regex</code> ;</li>
       <li><code>Registry</code> ;</li>
-      <li><code>Router</code> ;</li>
+      <li><a href="@lh:chapter=Router"><code>Router</code></a> ;</li>
       <li><code>Serialize</code> ;</li>
       <li><code>Session</code> ;</li>
       <li><code>Socket</code> ;</li>

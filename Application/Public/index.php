@@ -13,26 +13,127 @@ $dispatcher = new \Hoa\Dispatcher\Basic(array(
 ));
 $router     = new \Hoa\Router\Http();
 $router
-    ->get('l',   '/Literature\.html', 'literature', 'default')
-    ->get('lt',  '/Literature/Mini-tutorial\.html', 'literature', 'minitutorial')
-    ->get('ll',  '/Literature/Learn/(?<chapter>\w+)\.html', 'literature', 'learn')
-    ->get('lh',  '/Literature/Hack/(?<chapter>\w+)\.html', 'literature', 'hack')
-    ->get('lp',  '/Literature/Popcode/(?<code>\w+)\.html', 'literature', 'popcode')
-    ->get('lc',  '/Literature/Contributor/Guide\.html', 'literature', 'contributor')
-    ->get('r',   '/Research\.html', 'research', 'default')
-    ->get_post('rx', '/Research/(?<article>\w+)/Experimentation\.html', 'research', 'experimentation')
-    ->get('s',   '/Source\.html', 'index', 'source')
-    ->get('v',   '/Video\.html', 'video', 'default')
-    ->get('v+',  '/Video/(?<_able>\w+)\.html', 'video')
-    ->get('ev',  '/Event\.html', 'event', 'default')
-    ->get('ev+', '/Event/(?<_able>\w+)\.html', 'event')
-    ->get('a',   '/About\.html', 'index', 'about')
-    ->get('c',   '/Contact\.html', 'index', 'contact')
-    ->get('u',   '/Whouse/(?<who>\w+)\.html', 'index', 'whouse')
-    ->get('p',   '/Project\.html', 'index', 'project')
-    ->get('e',   '/Error\.html', 'index', 'error')
-    ->get('g',   '/', 'index', 'default')
+    ->get(
+        'l',
+        '/Literature\.html',
+        'literature',
+        'default'
+    )
+    ->get(
+        'lt',
+        '/Literature/Mini-tutorial\.html',
+        'literature',
+        'minitutorial'
+    )
+    ->get(
+        'll',
+        '/Literature/Learn/(?<chapter>\w+)\.html',
+        'literature',
+        'learn'
+    )
+    ->get(
+        'lh',
+        '/Literature/Hack/(?<chapter>\w+)\.html',
+        'literature',
+        'hack'
+    )
+    ->get(
+        'lp',
+        '/Literature/Popcode/(?<code>\w+)\.html',
+        'literature',
+        'popcode'
+    )
+    ->get(
+        'lc',
+        '/Literature/Contributor/Guide\.html',
+        'literature',
+        'contributor'
+    )
+    ->get(
+        'r',
+        '/Research\.html',
+        'research',
+        'default'
+    )
+    ->get_post(
+        'rx',
+        '/Research/(?<article>\w+)/Experimentation\.html',
+        'research',
+        'experimentation'
+    )
+    ->get(
+        's',
+        '/Source\.html',
+        'index',
+        'source'
+    )
+    ->get(
+        'v',
+        '/Video\.html',
+        'video',
+        'default'
+    )
+    ->get(
+        'v+',
+        '/Video/(?<_able>\w+)\.html',
+        'video'
+    )
+    ->get(
+        'ev',
+        '/Event\.html',
+        'event',
+        'default'
+    )
+    ->get(
+        'ev+',
+        '/Event/(?<_able>\w+)\.html',
+        'event'
+    )
+    ->get(
+        'a',
+        '/About\.html',
+        'index',
+        'about'
+    )
+    ->get(
+        'c',
+        '/Contact\.html',
+        'index',
+        'contact'
+    )
+    ->get(
+        'u',
+        '/Whouse/(?<who>\w+)\.html',
+        'index',
+        'whouse'
+    )
+    ->get(
+        'p',
+        '/Project\.html',
+        'index',
+        'project'
+    )
+    ->get(
+        'e',
+        '/Error\.html',
+        'index',
+        'error'
+    )
+    ->get(
+        'g',
+        '/',
+        'index',
+        'default'
+    )
+    ->get(
+        'short',
+        '/s/(?<short>\w+)',
+        'short',
+        'default'
+    )
+
     // --
+
     ->_get('_resource', 'http://static.hoa-project.net/(?<resource>)')
     ->_get('b',      '/', null, null, array('_subdomain' => 'blog'))
     ->_get('b_post', '/posts/(?<id>)', null, null, array('_subdomain' => 'blog'))
