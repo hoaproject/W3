@@ -33,7 +33,7 @@
        .addTo(map);
 
       L.marker([50.63288622987, 3.0205407145028], {icon: icon})
-       .bindPopup('PHPTour\'11')
+       .bindPopup('<a href="@ev+:_able=Phptour11">PHPTour\'11</a>')
        .addTo(map);
 
       L.marker([45.502015951149, -73.57589220671], {icon: icon})
@@ -66,12 +66,13 @@
 
     <ul>
       <li>??? (<a href="@c">nous contacter pour nous inviter</a>) ;</li>
-      <li><time datetime="2013-03">mars 2013</time>, CSTVA'13 ;</li>
+      <li><time datetime="2013-03">mars 2013</time>, CSTVA ;</li>
       <li><time datetime="2012-06">juin 2012</time>,
-          <a hrefe="@ev+:_able=Forumphp12">ForumPHP</a> ;</li>
+          <a href="@ev+:_able=Forumphp12">ForumPHP</a> ;</li>
       <li><time datetime="2012-04">avril 2012</time>, AMOST ;</li>
       <li><time datetime="2011-11">novembre 2011</time>, ICTSS ;</li>
-      <li><time datetime="2011-11">novembre 2011</time>, PHPTour.</li>
+      <li><time datetime="2011-11">novembre 2011</time>,
+          <a href="@ev+:_able=Phptour11">PHPTour</a>.</li>
     </ul>
   </yield>
 </overlay>
