@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xyl-stylesheet href="hoa://Application/Public/Css/Leaflet.css"?>
+
+<overlay xmlns="http://hoa-project.net/xyl/xylophone">
+  <yield id="yContent">
+    <h1>PHPTour 2011</h1>
+
+    <p><img class="fright"
+            src="http://afup.org//templates/phptourlille2011/medias/images/logo.png"
+            alt="Logo du PHPTour" />
+    Le <a href="http://afup.org/pages/phptourlille2011/">PHPTour</a> est un
+    nouveau cycle de conférences de l'<a href="http://afup.org/">AFUP</a>. Le
+    <time datetime="2011-11">24 et 25 novembre 2011</time>, au sein
+    d'Euratechnologies à Lille, le forum a gentiment accueilli
+    <a href="@c">Ivan Enderlin</a> pour une conférence.</p>
+
+    <h2 id="Hoa_un_ensemble_de_bibliotheques"><cite>Hoa, un ensemble de
+    bibliothèques</cite></h2>
+
+    <p>On parle beaucoup de frameworks, de micro-frameworks et de CMS, mais
+    qu'en est-t-il des bibliothèques ? Comment des bibliothèques peuvent-elles
+    être compétitives sur des domaines qui sont la rapidité d'utilisation,
+    l'automatisation des tâches répétitives et la modularité des applications ?
+    Un développeur est-il plus efficace quand il maîtrise des bibliothèques ou
+    quand il a un outil qui travaille à sa place ?</p>
+    <p>Dans cette conférence, nous allons vous présenter Hoa, un ensemble de
+    bibliothèques puissantes, rapides, hautement modulaires, sûres, sécurisées,
+    innovantes et respectueuses des standards. Nous allons voir comment des
+    bibliothèques peuvent être abstraites et concrètes à la fois, comment elles
+    peuvent s'adapter à toutes les situations et faciliter le développement et
+    surtout la maintenance de vos applications.</p>
+
+    <h3 id="Presentation">Présentation</h3>
+
+    <p>La <a href="@key.:keynote=PHPTour11/PHPTour11.html">présentation</a> est
+    disponible.</p>
+  </yield>
+</overlay>
