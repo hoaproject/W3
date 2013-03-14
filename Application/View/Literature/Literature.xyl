@@ -99,7 +99,7 @@
       <li><code>Uri</code> ;</li>
       <li><a href="@lh:chapter=View"><code>View</code></a> ;</li>
       <li><code>Visitor</code> ;</li>
-      <li><code>Websocket</code> ;</li>
+      <li><a href="@lh:chapter=Websocket"><code>Websocket</code></a> ;</li>
       <li><a href="@lh:chapter=Worker"><code>Worker</code></a> ;</li>
       <li><code>Xml</code> ;</li>
       <li><code>XmlRpc</code> ;</li>
