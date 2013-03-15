@@ -15,6 +15,33 @@
     <a href="@c">Ivan Enderlin</a> et <a href="http://mageekbox.net">Frédéric
     Hardy</a> pour une conférence en duo.</p>
 
+    <div id="map" style="height: 500px" class="cboth"></div>
+    <script src="hoa://Application/Public/Javascript/Leaflet.js"></script>
+    <script>
+      var map = L.map('map').setView([48.819312415957, 2.3380794527806], 13);
+
+      L.tileLayer('<value link="hoa://Application/Public/Map/Tiles/{z}/{x}/{y}.png" />', {
+        minZoom: 1,
+        maxZoom: 7
+      }).addTo(map);
+
+      L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+        attribution: '© <a href="http://osm.org/copyright">OpenStreetMap</a> contributors',
+        minZoom: 7
+      }).addTo(map);
+
+      var icon = L.icon({
+          iconUrl: '<value link="hoa://Application/Public/Map/Marker.svg" />',
+          iconSize: [28, 45],
+          iconAnchor: [14, 44],
+          popupAnchor: [2, -45]
+      });
+
+      L.marker([48.819312415957, 2.3380794527806], {icon: icon})
+       .bindPopup('<p class="tcenter">ici</p>')
+       .addTo(map);
+    </script>
+
     <h2 id="Anatomie_du_test"><cite>Anatomie du test</cite></h2>
 
     <p>Le <strong>test</strong>, qu'il soit unitaire ou fonctionnel, est à la
