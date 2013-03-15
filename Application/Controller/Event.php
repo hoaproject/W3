@@ -27,6 +27,14 @@ class Event extends Generic {
         return;
     }
 
+    public function Cstva13Action ( ) {
+
+        $this->view->addOverlay('hoa://Application/View/Event/Cstva13.xyl');
+        $this->render();
+
+        return;
+    }
+
     public function Forumphp12Action ( ) {
 
         $this->view->addOverlay('hoa://Application/View/Event/Forumphp12.xyl');

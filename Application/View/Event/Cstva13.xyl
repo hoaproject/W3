@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xyl-stylesheet href="hoa://Application/Public/Css/Leaflet.css"?>
+
+<overlay xmlns="http://hoa-project.net/xyl/xylophone">
+  <yield id="yContent">
+    <h1>CSTVA 2013</h1>
+
+    <p>À venir.</p>
+  </yield>
+</overlay>
