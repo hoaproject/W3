@@ -27,21 +27,21 @@
           popupAnchor: [2, -45]
       });
 
-      L.marker([48.819312415957, 2.3380794527806], {icon: icon})
-       .bindPopup('ForumPHP\'12')
-       .bindPopup('<a href="@ev+:_able=Forumphp12">ForumPHP\'12</a>')
-       .addTo(map);
-
       L.marker([50.63288622987, 3.0205407145028], {icon: icon})
        .bindPopup('<a href="@ev+:_able=Phptour11">PHPTour\'11</a>')
+       .addTo(map);
+
+      L.marker([48.844581929379, 2.3441948893342], {icon: icon})
+       .bindPopup('ICTSS\'11')
        .addTo(map);
 
       L.marker([45.502015951149, -73.57589220671], {icon: icon})
        .bindPopup('AMOST\'12')
        .addTo(map);
 
-      L.marker([48.844581929379, 2.3441948893342], {icon: icon})
-       .bindPopup('ICTSS\'11')
+      L.marker([48.819312415957, 2.3380794527806], {icon: icon})
+       .bindPopup('ForumPHP\'12')
+       .bindPopup('<a href="@ev+:_able=Forumphp12">ForumPHP\'12</a>')
        .addTo(map);
 
       L.marker([47.054789, 6.742918], {icon: icon})
