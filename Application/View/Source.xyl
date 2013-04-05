@@ -20,7 +20,7 @@
 
     <h2 id="Gestionnaire_de_versions">Gestionnaire de versions</h2>
 
-    <p><img src="hoa://Application/Public/Image/Git.png" alt="Logo de Git"
+    <p><img src="hoa://Application/Public/Image/Logo/Git.png" alt="Logo de Git"
             class="fright" />
     Hoa utilise <a href="http://git-scm.com/">Git</a> pour tous ses projets.
     L'index des dépôts se trouve à l'adresse :
@@ -32,7 +32,7 @@
     <pre><code class="language-shell">$ git clone http://git.hoa-project.net/Library/Core.git</code></pre>
     <p>Il est recommandé de <a href="http://git-scm.com/documentation">lire la
     documentation de Git</a> si vous n'êtes pas familié avec cet outil.</p>
-    <p><img src="hoa://Application/Public/Image/Github.png"
+    <p><img src="hoa://Application/Public/Image/Logo/Github.png"
            alt="Logo de Github" class="fright" />
     Des miroirs existent pour la plupart des projets, notamment sur
     <a href="@github">Github</a>. Les noms des projets sont identiques autant
@@ -44,7 +44,7 @@
 
     <h2 id="Gestionnaire_de_dependances">Gestionnaire de dépendances</h2>
 
-    <p><img src="hoa://Application/Public/Image/Composer.png"
+    <p><img src="hoa://Application/Public/Image/Logo/Composer.png"
             alt="Logo de Composer" class="fright" />
     Pour gérer les dépendances entre les bibliothèques de Hoa, nous
     recommandons l'outil <a href="http://getcomposer.org/">Composer</a>. Toutes
