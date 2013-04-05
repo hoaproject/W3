@@ -129,6 +129,10 @@
     </ul>
     <p>Les présentations scientifiques :</p>
     <ul>
+      <li><a href="@key.:keynote=Cstva13/EGB13.pdf"><cite lang="en">A Constraint
+      Solver for PHP Arrays</cite></a>, présentée à
+      <a href="http://cstva2013.univ-fcomte.fr/">CSTVA 2012</a> à
+      Luxembourg (Luxembourg) ;</li>
       <li><a href="@key.:keynote=Amost12/EDGB12.pdf"><cite lang="en">Grammar-Based
       Testing using Realistic Domains in PHP</cite></a>, présentée à
       <a href="https://sites.google.com/site/amost2012/">A-MOST 2012</a> à

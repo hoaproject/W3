@@ -49,7 +49,7 @@
        .addTo(map);
 
       L.marker([49.610148755062, 6.1367606521795], {icon: icon})
-       .bindPopup('CSTVA\'13')
+       .bindPopup('<a href="@ev+:_able=Cstva13">CSTVA\'13</a>')
        .addTo(map);
     </script>
 
