@@ -40,8 +40,10 @@ class Literature extends Generic {
 
     public function HackAction ( $chapter ) {
 
-        $this->view->addUse('hoa://Application/External/Literature/Hack/' . ucfirst($chapter) . '.xyl');
-        $this->view->addOverlay('hoa://Application/View/Literature/Learn.xyl');
+        $chapter             = ucfirst($chapter);
+        $this->data->chapter = $chapter;
+        $this->view->addOverlay('hoa://Application/View/Literature/Hack.xyl');
+        $this->view->addOverlay('hoa://Library/' . $chapter . '/Documentation/Fr/Index.xyl');
         $this->render();
 
         return;
