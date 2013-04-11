@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xyl-use href="hoa://Application/External/Literature/Definitions.xyl"?>
+
+<overlay xmlns="http://hoa-project.net/xyl/xylophone">
+  <yield id="yContent">
+
+    <h1><em lang="en">Hack book</em><title_break /><code bind="?chapter" /></h1>
+
+    <yield id="chapter" />
+    <script src="hoa://Application/Public/Javascript/Hoa.Graph.js"></script>
+    <script src="hoa://Application/Public/Javascript/Hoa.Graph.style.js"></script>
+  </yield>
+</overlay>
