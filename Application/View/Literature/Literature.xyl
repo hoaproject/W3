@@ -63,7 +63,7 @@
       <li><code>Database</code> ;</li>
       <li><code>Dispatcher</code> ;</li>
       <li><a href="@lh:chapter=Dns"><code>Dns</code></a> ;</li>
-      <li><code>EventSource</code> ;</li>
+      <li><a href="@lh:chapter=Eventsource"><code>Eventsource</code></a> ;</li>
       <li><a href="@lh:chapter=Fastcgi"><code>Fastcgi</code></a> ;</li>
       <li><code>File</code> ;</li>
       <li><code>Filter</code> ;</li>
@@ -93,10 +93,8 @@
       <li><code>Stream</code> ;</li>
       <li><code>String</code> ;</li>
       <li><code>Stringbuffer</code> ;</li>
-      <li><code>Test</code> ;</li>
       <li><code>Translate</code> ;</li>
       <li><code>Tree</code> ;</li>
-      <li><code>Uri</code> ;</li>
       <li><a href="@lh:chapter=View"><code>View</code></a> ;</li>
       <li><code>Visitor</code> ;</li>
       <li><a href="@lh:chapter=Websocket"><code>Websocket</code></a> ;</li>
@@ -104,7 +102,6 @@
       <li><code>Xml</code> ;</li>
       <li><code>XmlRpc</code> ;</li>
       <li><code>Xyl</code> ;</li>
-      <li><code>Yaml</code> ;</li>
       <li><a href="@lh:chapter=Zombie"><code>Zombie</code></a> ;</li>
       <li><code> </code>.</li>
     </ul>
