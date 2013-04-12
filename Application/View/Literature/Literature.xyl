@@ -76,7 +76,7 @@
       <li><code>Mail</code> ;</li>
       <li><code>Math</code> ;</li>
       <li><code>Memory</code> ;</li>
-      <li><code>Mime</code> ;</li>
+      <li><a href="@lh:chapter=Mime"><code>Mime</code></a> ;</li>
       <li><code>Model</code> ;</li>
       <li><code>Notification</code> ;</li>
       <li><code>Observer</code> ;</li>
