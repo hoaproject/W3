@@ -55,9 +55,8 @@
     <code>composer.json</code> :</p>
     <pre><code class="language-json">{
     "require": {
-        "hoa/compiler": "master"
-    },
-    "minimum-stability": "dev"
+        "hoa/compiler": "dev-master"
+    }
 }</code></pre>
     <p>Puis pour installer les dépendances :</p>
     <pre><code class="language-shell">$ composer install</code></pre>
