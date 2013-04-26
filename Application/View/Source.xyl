@@ -56,7 +56,8 @@
     <pre><code class="language-json">{
     "require": {
         "hoa/compiler": "dev-master"
-    }
+    },
+    "minimum-stability": "dev"
 }</code></pre>
     <p>Puis pour installer les dépendances :</p>
     <pre><code class="language-shell">$ composer install</code></pre>
