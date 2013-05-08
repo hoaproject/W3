@@ -9,11 +9,11 @@ from('Application')
 
 namespace Application\Controller {
 
-class Video extends Generic {
+class Awecode extends Generic {
 
     public function DefaultAction ( ) {
 
-        $this->view->addOverlay('hoa://Application/View/Video/Video.xyl');
+        $this->view->addOverlay('hoa://Application/View/Awecode/List.xyl');
         $this->render();
 
         return;
@@ -21,7 +21,7 @@ class Video extends Generic {
 
     public function PraspelAction ( )  {
 
-        $this->view->addOverlay('hoa://Application/View/Video/Praspel.xyl');
+        $this->view->addOverlay('hoa://Application/View/Awecode/Praspel.xyl');
         $this->render();
 
         return;
@@ -29,7 +29,7 @@ class Video extends Generic {
 
     public function AwecodeAction ( )  {
 
-        $this->view->addOverlay('hoa://Application/View/Video/Awecode.xyl');
+        $this->view->addOverlay('hoa://Application/View/Awecode/Awecode.xyl');
         $this->render();
 
         return;

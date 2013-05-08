@@ -69,14 +69,14 @@ $router
     )
     ->get(
         'v',
-        '/Video\.html',
-        'video',
+        '/Awecode\.html',
+        'awecode',
         'default'
     )
     ->get(
         'v+',
-        '/Video/(?<_able>\w+)\.html',
-        'video'
+        '/Awecode/(?<_able>\w+)\.html',
+        'awecode'
     )
     ->get(
         'ev',
