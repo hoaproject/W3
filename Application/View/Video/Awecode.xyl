@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xyl-use href="Definition.xyl"?>
+
+<overlay xmlns="http://hoa-project.net/xyl/xylophone">
+  <yield id="yContent">
+    <h1 id="Awecode_demo">Awecode (demo)</h1>
+
+    <awecode id="awecode" />
+
+    <script src="hoa://Application/Public/External/Popcorn.js/popcorn.js" />
+    <script src="hoa://Application/Public/External/Popcorn.js/wrappers/common/popcorn._MediaElementProto.js" />
+    <script src="hoa://Application/Public/External/Popcorn.js/wrappers/vimeo/popcorn.HTMLVimeoVideoElement.js" />
+    <script src="hoa://Application/Public/Javascript/Hoa.Awecode.js" />
+    <script>
+      document.addEventListener('DOMContentLoaded', function ( ) {
+
+         var awecode = new Hoa.Awecode('#awecode', '65771409');
+
+          awecode.declare([
+              {
+                  id: 'foo',
+                  name: 'Foo.php',
+                  keyframes: [{
+                      start: 1,
+                      end: 2,
+                      diff: '@@ -0,0 +1,3 @@\n' +
+                            '+&amp;lt;?php\n' +
+                            '+\n' +
+                            '+// Foo.php'
+                  },
+                  {
+                      start: 3,
+                      end: 4,
+                      diff: '@@ -1,3 +1,4 @@\n' +
+                            ' &amp;lt;?php\n' +
+                            ' \n' +
+                            ' // Foo.php\n' +
+                            '+var_dump(true);'
+                  }]
+              },
+              {
+                  id: 'bar',
+                  name: 'Bar.php',
+                  keyframes: [{
+                      start: 5,
+                      end:   6,
+                      diff: '@@ -0,0 +1,5 @@\n' +
+                            '+&amp;lt;?php\n' +
+                            '+\n' +
+                            '+/**\n' +
+                            '+ * Bar.php\n' +
+                            '+ */'
+                  },
+                  {
+                      start: 7,
+                      end: 8,
+                      diff: '@@ -3,3 +3,7 @@\n' +
+                            ' /**\n' +
+                            '  * Bar.php\n' +
+                            '  */\n' +
+                            '+function ( ) {\n' +
+                            '+\n' +
+                            '+    return true;\n' +
+                            '+}'
+                  }]
+              },
+              {
+                  id: 'baz',
+                  name: 'Baz.php',
+                  keyframes: []
+              }
+          ]);
+      });
+    </script>
+  </yield>
+</overlay>

@@ -27,9 +27,9 @@ class Video extends Generic {
         return;
     }
 
-    public function PopcodeAction ( )  {
+    public function AwecodeAction ( )  {
 
-        $this->view->addOverlay('hoa://Application/View/Video/Popcode.xyl');
+        $this->view->addOverlay('hoa://Application/View/Video/Awecode.xyl');
         $this->render();
 
         return;

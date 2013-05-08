@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<definition xmlns="http://hoa-project.net/xyl/xylophone">
+  <yield name="awecode">
+    <div yield-select="?x:@*">
+      <div class="video" />
+      <slider />
+
+      <tabs class="plain">
+        <tablist>
+        </tablist>
+      </tabs>
+    </div>
+  </yield>
+
+  <yield name="slider">
+    <div role="slider" aria-valuemin="0" aria-valuemax="10" aria-valuenow="0">
+      <div role="button" />
+      <div role="tooltip" class="unselectable" />
+    </div>
+  </yield>
+</definition>
