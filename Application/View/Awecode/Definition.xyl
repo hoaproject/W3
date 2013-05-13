@@ -3,8 +3,10 @@
 <definition xmlns="http://hoa-project.net/xyl/xylophone">
   <yield name="awecode">
     <div yield-select="?x:@*">
-      <div class="video" />
-      <slider />
+      <div role="region" class="player">
+        <div class="video" />
+        <slider />
+      </div>
 
       <tabs class="plain">
         <tablist>
