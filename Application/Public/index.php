@@ -75,7 +75,8 @@ $router
     )
     ->get(
         'v+',
-        '/Awecode/(?<_able>\w+)\.html',
+        '/Awecode/(?<awecode>[\w\-_]+)\.html',
+        'awecode',
         'awecode'
     )
     ->get(

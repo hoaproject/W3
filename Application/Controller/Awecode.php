@@ -27,9 +27,11 @@ class Awecode extends Generic {
         return;
     }
 
-    public function AwecodeAction ( )  {
+    public function AwecodeAction ( $awecode )  {
 
+        $awecode = ucfirst($awecode);
         $this->view->addOverlay('hoa://Application/View/Awecode/Awecode.xyl');
+        $this->view->addOverlay('hoa://Application/View/Awecode/' . $awecode . '.xyl');
         $this->render();
 
         return;
