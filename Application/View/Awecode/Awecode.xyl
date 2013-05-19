@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xyl-use href="Definition.xyl"?>
+<?xyl-use href="Definitions.xyl"?>
 <?xyl-use href="hoa://Application/External/Literature/Definitions.xyl"?>
 
 <overlay xmlns="http://hoa-project.net/xyl/xylophone">
