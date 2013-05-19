@@ -3,8 +3,8 @@
 <?xyl-use href="hoa://Application/External/Literature/Definitions.xyl"?>
 
 <overlay xmlns="http://hoa-project.net/xyl/xylophone">
-  <yield id="yContent">
-    <h1 id="Awecode_demo">Awecode<title_break /><yield id="awecode-title" /></h1>
+  <yield id="yContent" bind="?awecode">
+    <h1 id="Awecode_demo">Awecode<title_break /><yield bind="?title" /></h1>
 
     <awecode id="awecode" />
 
@@ -13,6 +13,12 @@
     <script src="hoa://Application/Public/External/Popcorn.js/wrappers/vimeo/popcorn.HTMLVimeoVideoElement.js" />
     <script src="hoa://Application/Public/Javascript/Hoa.Awecode.js" />
 
-    <yield id="awecode-script" />
+    <script>
+      document.addEventListener('DOMContentLoaded', function ( ) {
+
+          var awecode = new Hoa.Awecode('#awecode', '<yield bind="?vimeoId" />');
+          awecode.declare(<yield bind="?declare" />);
+      });
+    </script>
   </yield>
 </overlay>

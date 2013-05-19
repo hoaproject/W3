@@ -3,7 +3,11 @@
 namespace {
 
 from('Application')
--> import('Controller.Generic');
+-> import('Controller.Generic')
+-> import('Model.Awecode');
+
+from('Hoa')
+-> import('Database.Dal');
 
 }
 
@@ -27,12 +31,27 @@ class Awecode extends Generic {
         return;
     }
 
-    public function AwecodeAction ( $awecode )  {
+    public function AwecodeAction ( $id )  {
 
-        $awecode = ucfirst($awecode);
+        $this->openDatabase();
+        $awecode = new \Application\Model\Awecode();
+        $awecode->id = $id;
+        $awecode->open();
+
         $this->view->addOverlay('hoa://Application/View/Awecode/Awecode.xyl');
-        $this->view->addOverlay('hoa://Application/View/Awecode/' . $awecode . '.xyl');
+        $this->data->awecode = $awecode;
         $this->render();
+
+        return;
+    }
+
+    public function openDatabase ( ) {
+
+        \Hoa\Database\Dal::initializeParameters(array(
+            'connection.list.awecode.dal' => \Hoa\Database\Dal::PDO,
+            'connection.list.awecode.dsn' => 'sqlite:hoa://Data/Variable/Database/Awecode.sqlite'
+        ));
+        \Hoa\Database\Dal::getInstance('awecode');
 
         return;
     }
