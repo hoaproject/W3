@@ -12,10 +12,10 @@
         </dt>
         <dd>
           <div>
-            <div class="w70 center" bind="?description" />
-            <p class="tcenter">
+            <div class="table-cell w70 tcenter" bind="?description" />
+            <div class="table-cell w30 tcenter vcenter">
               <a href="@v+:id=(?id)" class="play">►</a>
-            </p>
+            </div>
           </div>
         </dd>
       </div>
