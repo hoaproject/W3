@@ -22,7 +22,7 @@
       </ul>
     </div>
 
-    <div class="column fleft">
+    <div class="column fleft w50">
       <h2 id="Dernieres_nouvelles">Dernières nouvelles</h2>
 
       <ul>
@@ -35,7 +35,7 @@
       </ul>
     </div>
 
-    <div class="column fright">
+    <div class="column fright w50">
       <h2 id="Activite">Activité</h2>
 
       <figure id="activity" style="max-width: 400px">

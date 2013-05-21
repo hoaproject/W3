@@ -2,8 +2,57 @@
 
 <overlay xmlns="http://hoa-project.net/xyl/xylophone">
   <yield id="yContent">
-    <h1 id="Praspel">Vidéo</h1>
+    <h1 id="Awecodes">Awecodes</h1>
 
-    <p>À venir très prochainement … surprise !</p>
+    <dl class="grid">
+      <div bind="?awecodes">
+        <dt>
+          <img src="hoa://Application/Public/Image/Awecode/Poster/(?id).png" />
+          <yield bind="?title" />
+        </dt>
+        <dd>
+          <div>
+            <div class="w70 center" bind="?description" />
+            <p class="tcenter">
+              <a href="@v+:id=(?id)" class="play">►</a>
+            </p>
+          </div>
+        </dd>
+      </div>
+    </dl>
+
+    <script>
+      Hoa.Event.on('click', 'dl.grid dt img', function ( evt, data ) {
+
+          var dt = evt.target.parentNode;
+
+          if('true' === dt.getAttribute('aria-selected')) {
+
+              dt.removeAttribute('aria-selected');
+
+              return;
+          }
+
+          if(null !== (previous = Hoa.$('dt[aria-selected]'))) {
+
+              previous.removeAttribute('aria-selected');
+              Hoa.Concurrent.after(
+                  280,
+                  function ( ) {
+
+                      dt.setAttribute('aria-selected', true);
+
+                      return;
+                  }
+              );
+
+              return;
+          }
+
+          dt.setAttribute('aria-selected', true);
+
+          return;
+      });
+    </script>
   </yield>
 </overlay>

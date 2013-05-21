@@ -17,6 +17,13 @@ class Awecode extends Generic {
 
     public function DefaultAction ( ) {
 
+        $this->openDatabase();
+        $awecodes = \Application\Model\Awecode::getAll();
+
+        foreach($awecodes as &$awecode)
+            $awecode['id'] = ucfirst($awecode['id']);
+
+        $this->data->awecodes = $awecodes;
         $this->view->addOverlay('hoa://Application/View/Awecode/List.xyl');
         $this->render();
 

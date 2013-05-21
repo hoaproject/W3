@@ -18,6 +18,7 @@ class Awecode extends \Hoa\Model {
     public $_title;
     public $_vimeoId;
     public $_declare;
+    public $_description;
 
     public function construct ( ) {
 
@@ -42,6 +43,16 @@ class Awecode extends \Hoa\Model {
         $this->map($data[0]);
 
         return;
+    }
+
+    public static function getAll ( ) {
+
+        return \Hoa\Database\Dal::getLastInstance()
+                   ->prepare(
+                      'SELECT * FROM awecode'
+                   )
+                   ->execute()
+                   ->fetchAll();
     }
 }
 
