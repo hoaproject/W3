@@ -27,7 +27,10 @@
       <li><a href="@list-subscribe:list=development"><code>development</code></a> :
       à propos du développement des bibliothèques de Hoa ;</li>
       <li><a href="@list-subscribe:list=support"><code>support</code></a> : pour
-      obtenir de l'aide à propos des bibliothèques de Hoa.</li>
+      obtenir de l'aide à propos des bibliothèques de Hoa ;</li>
+      <li><a href="@list-subscribe:list=internal"><code>internal</code></a> :
+      pour les décisions internes (seulement pour les co-gérants de
+      communauté).</li>
     </ul>
 
     <h2 id="IRC">IRC</h2>
