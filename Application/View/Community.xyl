@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<overlay xmlns="http://hoa-project.net/xyl/xylophone">
+  <yield id="yContent">
+    <h1>Communauté</h1>
+
+    <h2 id="Mailing_lists"><em lang="en">Mailing-lists</em></h2>
+
+    <p>Hoa utilise les <em lang="en">mailing-lists</em> pour communiquer. La
+    liste des <em lang="en">mailing-lists</em> publiques se trouvent ci-dessous.
+    Il faudra se rendre sur l'interface Web pour une <a href="@lists">liste
+    exhaustive</a>.</p>
+
+    <ul>
+      <li><a href="@list-subscribe:list=development"><code>development</code></a> :
+      à propos du développement des bibliothèques de Hoa ;</li>
+      <li><a href="@list-subscribe:list=support"><code>support</code></a> : pour
+      obtenir de l'aide à propos des bibliothèques de Hoa.</li>
+    </ul>
+
+    <h2 id="Forum">Forum</h2>
+
+    <p>Un <a href="@forum">forum</a> est disponible pour toutes questions.
+    Attention, il sera appelé à disparaître !</p>
+  </yield>
+</overlay>

@@ -91,6 +91,12 @@ $router
         'event'
     )
     ->get(
+        'cy',
+        '/Community\.html',
+        'index',
+        'community'
+    )
+    ->get(
         'a',
         '/About\.html',
         'index',
@@ -129,12 +135,13 @@ $router
 
     // --
 
-    ->_get('_resource', '/Static/(?<resource>)')
-    //->_get('_resource', 'http://static.hoa-project.net/(?<resource>)')
+    ->_get('_resource', 'http://static.hoa-project.net/(?<resource>)')
     ->_get('b',      '/', null, null, array('_subdomain' => 'blog'))
     ->_get('b_post', '/posts/(?<id>)-(?<normalized_title>).html', null, null, array('_subdomain' => 'blog'))
     ->_get('dl',     'http://download.hoa-project.net/(?<file>)')
     ->_get('forum',  'http://forum.hoa-project.net/')
+    ->_get('lists',  'http://lists.hoa-project.net/index.cgi/lists')
+    ->_get('list-subscribe', 'http://lists.hoa-project.net/index.cgi/subscribe/(?<list>)')
     ->_get('git',    'http://git.hoa-project.net/?p=(?<repository>).git')
     ->_get('github', 'https://github.com/hoaproject/(?<repository>)')
     ->_get('key.',   'http://keynote.hoa-project.net/(?<keynote>)')
