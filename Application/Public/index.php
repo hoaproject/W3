@@ -91,22 +91,22 @@ $router
         'event'
     )
     ->get(
-        'cy',
+        'c',
         '/Community\.html',
         'index',
         'community'
+    )
+    ->get(
+        'contact',
+        '/Contact\.html',
+        'index',
+        'contact'
     )
     ->get(
         'a',
         '/About\.html',
         'index',
         'about'
-    )
-    ->get(
-        'c',
-        '/Contact\.html',
-        'index',
-        'contact'
     )
     ->get(
         'u',
@@ -144,6 +144,7 @@ $router
     ->_get('list-subscribe', 'http://lists.hoa-project.net/index.cgi/subscribe/(?<list>)')
     ->_get('git',    'http://git.hoa-project.net/?p=(?<repository>).git')
     ->_get('github', 'https://github.com/hoaproject/(?<repository>)')
+    ->_get('twitter', 'https://twitter.com/hoaproject')
     ->_get('key.',   'http://keynote.hoa-project.net/(?<keynote>)')
     ->_get('key',    'http://keynote.hoa-project.net/Shells/(?<shell>).html#http://keynote.hoa-project.net/(?<keynote>).html');
 

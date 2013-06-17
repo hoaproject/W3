@@ -4,37 +4,7 @@
   <yield id="yContent">
     <h1>Contact</h1>
 
-    <p>Hoa est constitué de quatre co-gérants de communauté :</p>
-    <ul>
-      <li>Ivan Enderlin (hywan)</li>
-      <li>Raphaël Emourgeon (iraphael)</li>
-      <li>Matthieu Codron (circlecode)</li>
-      <li>Julien Clauzel (thehawk)</li>
-    </ul>
-    <p>Vous pouvez les contacter aux adresses
-    <code><em>prénom</em>.<em>nom</em>@hoa-project.net</code> ou
-    <code><em>pseudo</em>@hoa-project.net</code>. Les prénoms et noms ne doivent
-    pas comporter d'accents.</p>
 
-    <h2 id="IRC">IRC</h2>
 
-    <p>Vous retrouvez une grande partie de la communauté sur le salon
-    <a href="irc://irc.freenode.net#hoaproject"><code>#hoaproject</code></a>
-    (hébergé par <a href="http://freenode.net/">freenode</a>). Les contributeurs
-    de Hoa sont identifiés avec le <em lang="cloak">cloak</em>
-    <code class="nowrap">@hoaproject/contributor/<em>pseudo</em></code>
-    (utilisez la commande <code>/whois <em>pseudo</em></code>). Les co-gérants
-    de communauté ont le <em lang="en">flag</em> <code>+V</code>. Vous pouvez
-    <a href="http://webchat.freenode.net/?channels=hoaproject">nous parler
-    directement</a> avec votre navigateur.</p>
-
-    <h2 id="Autre_moyens">Autre moyens</h2>
-
-    <p>D'autres moyens sont mis à votre disposition, comme
-    <a href="@forum">le forum</a> ou
-    <a href="https://twitter.com/hoaproject/">le compte Twitter</a>. Enfin, dans
-    la matrice, vous pouvez les rencontrer facilement dans les villes
-    suivantes : Paris, Lyon, Besançon pour la France, Lausanne, Genève,
-    Neuchâtel pour la Suisse et Namur pour la Belgique.</p>
   </yield>
 </overlay>

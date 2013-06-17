@@ -20,12 +20,11 @@
           <li><a href="@v" class="video">Vidéos</a></li>
           <li><a href="@b" class="blog">Blog</a></li>
           <li><a href="@ev" class="event">Événements</a></li>
-          <li><a href="@cy" class="community">Communauté</a></li>
+          <li><a href="@c" class="community">Communauté</a></li>
         </ul>
 
         <ul id="nav-bottom">
           <li><a href="@a" class="about">À propos</a></li>
-          <li><a href="@c" class="contact">Contact</a></li>
         </ul>
       </div>
     </nav>

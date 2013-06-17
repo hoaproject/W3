@@ -41,17 +41,24 @@ class Index extends Generic {
         return;
     }
 
-    public function AboutAction ( ) {
+    public function ContactAction ( ) {
 
-        $this->view->addOverlay('hoa://Application/View/About.xyl');
-        $this->render();
+        $response = $this->view->getOutputStream();
+        $response->sendHeader(
+            'Status',
+            \Hoa\Http\Response::STATUS_MOVED_PERMANENTLY
+        );
+        $response->sendHeader(
+            'Location',
+            $this->router->unroute('c')
+        );
 
         return;
     }
 
-    public function ContactAction ( ) {
+    public function AboutAction ( ) {
 
-        $this->view->addOverlay('hoa://Application/View/Contact.xyl');
+        $this->view->addOverlay('hoa://Application/View/About.xyl');
         $this->render();
 
         return;
