@@ -12,7 +12,7 @@ from('Hoa')
 
 $router = new Hoa\Router\Http();
 $router
-    ->all('a', '.*', function ( Hoa\Dispatcher\Kit $_this ) {
+    ->any('a', '.*', function ( Hoa\Dispatcher\Kit $_this ) {
 
         $uri  = $_this->router->getURI();
         $file = __DIR__ . DS . $uri;
