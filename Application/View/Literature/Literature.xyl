@@ -83,7 +83,6 @@
       <li><code>Praspel</code> ;</li>
       <li><code>Prototype</code> ;</li>
       <li><code>Realdom</code> ;</li>
-      <li><code>Reflection</code> ;</li>
       <li><code>Regex</code> ;</li>
       <li><a href="@lh:chapter=Registry"><code>Registry</code></a> ;</li>
       <li><a href="@lh:chapter=Router"><code>Router</code></a> ;</li>
