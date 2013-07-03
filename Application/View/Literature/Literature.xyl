@@ -86,6 +86,7 @@
       <li><code>Regex</code> ;</li>
       <li><a href="@lh:chapter=Registry"><code>Registry</code></a> ;</li>
       <li><a href="@lh:chapter=Router"><code>Router</code></a> ;</li>
+      <li><code>Ruler</code> ;</li>
       <li><code>Serialize</code> ;</li>
       <li><code>Session</code> ;</li>
       <li><code>Socket</code> ;</li>
