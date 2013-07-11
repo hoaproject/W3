@@ -85,6 +85,17 @@
           </a>
         </span>
       </p>
+
+      <h2 id="Ils_nous_soutiennent">Ils nous soutiennent !</h2>
+
+      <p>
+        <span class="image">
+          <a href="http://jetbrains.com/phpstorm/" class="plain">
+            <img src="hoa://Application/Public/Image/Sponsor/PHPStorm_little.png"
+                 alt="PHPStorm" />
+          </a>
+        </span>
+      </p>
     </div>
   </yield>
 
