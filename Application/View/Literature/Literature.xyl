@@ -91,7 +91,7 @@
       <li><code>Session</code> ;</li>
       <li><code>Socket</code> ;</li>
       <li><code>Stream</code> ;</li>
-      <li><code>String</code> ;</li>
+      <li><a href="@lh:chapter=String"><code>String</code></a> ;</li>
       <li><code>Stringbuffer</code> ;</li>
       <li><code>Translate</code> ;</li>
       <li><code>Tree</code> ;</li>
