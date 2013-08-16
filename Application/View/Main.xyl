@@ -4,7 +4,7 @@
 <?xyl-meta name="viewport" content="initial-scale=1.0"?>
 
 <document xmlns="http://hoa-project.net/xyl/xylophone" id="document">
-  <title>Hoa, un ensemble de bibliothèques PHP</title>
+  <title><value bind="?title" /> – Hoa</title>
 
   <script src="hoa://Library/Xyl/Javascript/Hoa.js"></script>
 

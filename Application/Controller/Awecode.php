@@ -23,6 +23,7 @@ class Awecode extends Generic {
         foreach($awecodes as &$awecode)
             $awecode['id'] = ucfirst($awecode['id']);
 
+        $this->data->title    = 'Awecode, quand le code rencontre la vidéo';
         $this->data->awecodes = $awecodes;
         $this->view->addOverlay('hoa://Application/View/Awecode/List.xyl');
         $this->render();
@@ -45,14 +46,16 @@ class Awecode extends Generic {
         $awecode->id = $id;
         $awecode->open();
 
-        $this->view->addOverlay('hoa://Application/View/Awecode/Awecode.xyl');
+        $this->data->title   = 'Awecode à propos de ' .
+                               strip_tags($awecode->title);
         $this->data->awecode = $awecode;
+        $this->view->addOverlay('hoa://Application/View/Awecode/Awecode.xyl');
         $this->render();
 
         return;
     }
 
-    public function openDatabase ( ) {
+    protected function openDatabase ( ) {
 
         \Hoa\Database\Dal::initializeParameters(array(
             'connection.list.awecode.dal' => \Hoa\Database\Dal::PDO,
