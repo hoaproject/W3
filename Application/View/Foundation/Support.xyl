@@ -25,8 +25,8 @@
     <p>Voici nos coordonnées bancaires : …. Pour les chèques, les envoyer au
     <a href="@f#Siege_social">siège social</a> de l'association.</p>
     -->
-    <p>Si vous souhaitez nous faire un don qui n'a pas de rapport avec nos
-    besoins, n'hésitez pas à <a href="@c">nous contacter</a> !</p>
+    <p>Si vous souhaitez nous faire un don en dehors de cette liste, n'hésitez
+    pas à <a href="@c">nous contacter</a> !</p>
 
     <h2 id="Utilisateur_ou_contributeur">Utilisateur ou contributeur</h2>
 
