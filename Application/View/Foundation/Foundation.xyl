@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xyl-stylesheet href="hoa://Application/Public/Css/Leaflet.css"?>
+
+<overlay xmlns="http://hoa-project.net/xyl/xylophone">
+  <yield id="yContent">
+    <h1>L'association</h1>
+
+    <p>Hoa Project est une association à but non-lucratif (loi 1901). Elle a
+    pour objectifs de soutenir le projet Hoa en développant, déployant et
+    faisant la promotion des logiciels libres issus de Hoa Project, de ses
+    produits dérivés et des projets associés.</p>
+    <p>Vous souhaitez <a href="@f+:_able=Support">nous soutenir</a> ?</p>
+
+    <h2 id="Bureau">Bureau</h2>
+
+    <p>Actuellement, la constitution du bureau est la suivante :</p>
+    <ul>
+      <li>Ivan Enderlin, président ;</li>
+      <li>Raphaël Emourgeon, trésorier ;</li>
+      <li>Matthieu Codron, secrétaire général.</li>
+    </ul>
+    <p>Cette constitution a été décidée le 15 aout 2013 suite à la réunion des
+    membres en assemblée constitutive.</p>
+    <p>N'hésitez pas à <a href="@c">nous contacter</a> !</p>
+
+    <h2 id="Siege_social">Siège social</h2>
+
+    <p>Le siège social de l'assocation est actuellement situé à
+    l'appartement 97, bâtiment A, 18 quai Jean-Baptiste Clément, 94 140
+    Alfortville (région parisienne, en France).</p>
+
+    <h2 id="Rapports_de_conseils">Rapports de conseils</h2>
+
+    <p>-</p>
+
+    <h2 id="Bilans_financier">Bilans financier</h2>
+
+    <p>-</p>
+
+    <h2 id="Documents">Documents</h2>
+
+    <ul>
+      <li><a href="@f+:_able=Statutes">Statuts de l'association</a></li>
+    </ul>
+  </yield>
+</overlay>

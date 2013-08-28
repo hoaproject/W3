@@ -109,6 +109,17 @@ $router
         'about'
     )
     ->get(
+        'f',
+        '/Foundation.html',
+        'foundation',
+        'index'
+    )
+    ->get(
+        'f+',
+        '/Foundation/(?<_able>\w+)\.html',
+        'foundation'
+    )
+    ->get(
         'u',
         '/Whouse/(?<who>\w+)\.html',
         'index',
@@ -142,6 +153,8 @@ $router
     ->_get('forum',  'http://forum.hoa-project.net/')
     ->_get('lists',  'http://lists.hoa-project.net/index.cgi/lists')
     ->_get('list-subscribe', 'http://lists.hoa-project.net/index.cgi/subscribe/(?<list>)')
+    ->_get('nabble-development', 'http://hoa-development.53756.x6.nabble.com/')
+    ->_get('nabble-support', 'http://hoa-support.53758.x6.nabble.com/')
     ->_get('git',    'http://git.hoa-project.net/?p=(?<repository>).git')
     ->_get('github', 'https://github.com/hoaproject/(?<repository>)')
     ->_get('twitter', 'https://twitter.com/hoaproject')

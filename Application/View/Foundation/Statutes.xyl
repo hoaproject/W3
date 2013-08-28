@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xyl-stylesheet href="hoa://Application/Public/Css/Leaflet.css"?>
+
+<overlay xmlns="http://hoa-project.net/xyl/xylophone">
+  <yield id="yContent">
+    <h1>Statuts de l'assocation</h1>
+
+    <h2 id="Table_des_matieres">Table des matières</h2>
+
+    <tableofcontents id="toc" />
+
+    <h2 id="Constitution" for="toc">Article 1, Constitution</h2>
+
+    <p>Il est constitué entre les soussignés et toutes autres personnes adhérant
+    aux présents statuts, une association régie par la loi du
+    1<sup>er</sup> juillet 1901, le décret du 16 aout 1901 et les présents
+    statuts.</p>
+
+    <h2 id="Denomination" for="toc">Article 2, Dénomination</h2>
+
+    <p>La dénomination de l'association est : HOA PROJECT.</p>
+
+    <h2 id="Objet" for="toc">Article 3, Objet</h2>
+
+    <p>L'association a pour buts de soutenir le projet Hoa en développant,
+    déployant et faisant la promotion des logiciels libres issus de Hoa Project,
+    de ses produits dérivés et des projets associés.</p>
+    <p>Pour réaliser cet objet, l'association peut recourir en tous lieux à tous
+    actes et opérations, mobiliers, immobiliers et de toute nature, pouvant se
+    rattacher à ces activités ou permettre de sauvegarder, directement ou
+    indirectement, les intérêts de l'association et de ses membres.</p>
+
+    <h2 id="Siege_social" for="toc">Article 4, Siège social</h2>
+
+    <p>Le siège social de l'association est fixé à Alfortville. Il pourra être
+    transféré en tout lieu par simple décision du conseil d'administration.</p>
+
+    <h2 id="Duree_et_annee_sociale" for="toc">Article 5, Durée et année
+    sociale</h2>
+
+    <p>La durée de l'association est illimité, sauf dissolution intervenant
+    selon les règles fixées par la loi et les présents statuts.</p>
+    <p>L'année sociale court du 1<sup>er</sup> janvier au 31 décembre, sauf le
+    premier exercice qui débute au jour de la signature des statuts.</p>
+
+    <h2 id="Composition_de_l-association" for="toc">Article 6, Composition de
+    l'association</h2>
+
+    <p>L'association est composée de :</p>
+    <ul>
+      <li>membres d'honneur ;</li>
+      <li>membres bienfaiteurs ;</li>
+      <li>membres actifs.</li>
+    </ul>
+    <p>Le titre de membre d'honneur peut être décerné par l'assemblée générale
+    aux personnes qui rendent ou ont rendu des services signalés à
+    l'association.</p>
+    <p>Sont membres bienfaiteurs ceux qui ont pris l'engagement de verser
+    annuellement une cotisation dont le montant est fixé par le conseil
+    d'admnistration.</p>
+    <p>Sont membres actifs tous membres bienfaiteurs qui s'engagent également à
+    contribuer à la vie de l'association par une présence et une activité
+    significative et par la promotion ou l'amélioration de l'association et de
+    ses projets.</p>
+    <p>Les membres sont choisis par le conseil d'administration. Tous les
+    membres peuvent voter et participer aux assemblées générales.</p>
+
+    <h2 id="Perte_de_la_qualite_de_membre" for="toc">Article 7, Perte de la
+    qualité de membre</h2>
+
+    <p>Perdent la qualité de membre :</p>
+    <ul>
+      <li>les personnes qui ont donné leur démission par lettre ou email adressé
+      au conseil d'administration ;</li>
+      <li>les personnes dont le conseil d'administration a prononcé l'exclusion
+      pour motif grave ; les intéressés ayant été invités, par lettre
+      recommandée, à se présenter devant le conseil d'administration à l'effet
+      de fournir des explications ;</li>
+      <li>les personnes décédées ;</li>
+      <li>les personnes dont le conseil d'administration a prononcé la radiation
+      pour défaut de paiement de leur cotisation, trois mois après l'échéance de
+      celle-ci.</li>
+    </ul>
+    <p>La décision du conseil sur l'exclusion est prise en vertu de critères
+    objectifs et notifiée à la personne concernée. Elle est susceptible d'un
+    recours devant la prochaine assemblée générale qui statuera
+    définitivement.</p>
+    <p>Les titres de membre d'honneur doivent être renouvelés tous les ans par
+    le conseil d'administration à la majorité.</p>
+
+    <h2 id="Droits_et_obligations_des_membres" for="toc">Article 8, Droits et
+    obligations des membres</h2>
+
+    <p>La qualité de membre est personnelle et indivisible. Elle permet de
+    participer aux décisions sociales lors des assemblées générales ; chaque membre
+    est titulaire d'une voix et d'une seule.</p>
+
+    <h2 id="Conseil_d-administration" for="toc">Article 9, Conseil
+    d'administration</h2>
+
+    <p>L'association est administrée par un conseil d'administration composé de
+    3 membres au moins et 12 au plus, désignés pour 1 an par l'assemblée
+    générale ordinaire, et pris parmi les membres actifs.</p>
+    <p>Les administrateurs sont nommés ou renouvelés dans leurs fonctions par
+    l'assemblée générale ordinaire des membres. Les administrateurs sont
+    rééligibles. Ils peuvent être révoqués à tout moment par l'assemblée
+    générale ordinaire. La durée de leurs fonctions est de une année ; elle
+    expire à l'issue de l'assemblée qui statue sur les comptes de l'exercice
+    écoulé et tenue dans l'année au cours de laquelle expire leur mandat. Le
+    conseil est renouvelé chaque année par totalité.</p>
+    <p>En cas de vacance, le conseil d'administration pourvoit au remplacement
+    provisoire de ses membres, par cooptation.</p>
+
+    <h2 id="Reunion_du_conseil_d-administration" for="toc">Article 10, Réunion
+    du conseil d'administration</h2>
+
+    <p>Le conseil d'administration se réunit sur convocation de son président au
+    moins une fois par an ou sur la demande du quart de ses membres.</p>
+    <p>Les administrateurs sont convoqués aux séances du conseil
+    d'administration par tous moyens, même verbalement. Il est tenu un registre
+    de présence qui est signé par les administrateurs participant à la séance du
+    conseil d'administration.</p>
+    <p>Le conseil d'administration se réunit valablement par téléconférence ou
+    par <abbr title="Internet Relay Chat">IRC</abbr>.</p>
+    <p>Les décisions sont prises à la majorité des suffrages exprimés sous
+    condition qu'au moins un tier des membres du conseil d'admistration soient
+    présent. En cas de partage des suffrages, la voix du président et
+    prépondérante.</p>
+    <p>Il est tenu procès-verbal des séances. Les procès-verbaux sont signés par
+    le président et le trésorier. Ils sont établis sans blancs ni ratures sur
+    des feuilles numérotées et conservées au siège de l'association.</p>
+    <p>Le conseil d'admistration est investi des pouvoirs les plus étendus pour
+    faire et autoriser tous actes ou opérations qui entrent dans l'objet de
+    l'association et qui ne sont pas réservés à l'assemblée générale.</p>
+    <p>Les membres du conseil d'administration peuvent obtenir des
+    remboursements de frais.</p>
+    <p>En cas d'absence ou d'empêchement du président, la séance du conseil est
+    présidée par le secrétaire ou le trésorier. Si ceux-ci sont également
+    absents ou empêchés, la séance du conseil est reportée.</p>
+
+    <h2 id="Bureau" for="toc">Article 11, Bureau</h2>
+
+    <p>Le conseil d'admistration choisit parmi ses membres, au scrutin secret,
+    un bureau composé :</p>
+    <ul>
+      <li>d'un président ;</li>
+      <li>d'un secrétaire général ;</li>
+      <li>d'un trésorier.</li>
+    </ul>
+    <p>Le bureau est renouvelé tous les ans, les membres du bureau sont
+    rééligibles. En cas d'égalité des voix, il est procédé à un nouveau tour
+    pour les seuls candidats ex aequo jusqu'à ce qu'ils soient départagés.</p>
+    <p>Le président du conseil d'administration assume sous sa responsabilité,
+    la direction générale de l'association et la représente dans ses rapports
+    avec les tiers, avec les pouvoirs les plus étendus, sous réserve toutefois
+    des pouvoirs expressément attribués aux assemblées générales et des pouvoirs
+    spécifiques du conseil d'administration. Toute limitation de ces pouvoirs
+    par décision du conseil d'administration est sans effet à l'égard des tiers.
+    Notamment, il représente l'association en justice et dans tous les actes de
+    la vie civile.</p>
+    <p>Le conseil d'administration peut en outre déléguer à son président tous
+    autres pouvoirs qu'il juge nécessaires, avec faculté de substituer
+    partiellement dans ces pouvoirs autant de mandataires qu'il avisera.</p>
+    <p>En cas d'empêchement temporaire ou de décès du président, le trésorier le
+    remplace dans ses fonctions ; en cas d'empêchement, cette délégation est de
+    durée limitée et renouvelable ; en cas de décès, elle vaut jusqu'à
+    l'élection du nouveau président.</p>
+    <p>Le secrétaire général assiste le président dans ses tâches, rédige les
+    procès-verbaux de séances et la correspondance, classe, conserve les
+    archives de l'association.</p>
+    <p>Le trésorier tient les comptes de l'association, recouvre les créances,
+    paie les dettes, utilise les fonds suivant les instructions du conseil
+    d'administration.</p>
+
+    <h2 id="Assemblee_generale_ordinaire" for="toc">Article 12, Assemblée
+    générale ordinaire</h2>
+
+    <p>L'assemblée générale comprend les membres actifs, les membres
+    bienfaiteurs et les membres d'honneur de l'association, à jour de leurs
+    cotisations.</p>
+    <p>Elle se réunit au moins une fois par an, au plus tard dans les six mois
+    qui suivent la clôture de l'exercice et chaque fois qu'elle est convoquée
+    par le conseil d'administration, ou sur demande du quart au moins de ses
+    membres.</p>
+    <p>Pour toutes les assemblées, les convocations doivent être envoyées 10
+    jours à l'avance et indiquer l'ordre du jour.</p>
+    <p>L'ordre du jour est fixé par le conseil d'administration.</p>
+    <p>Le président préside l'assemblée générale.</p>
+    <p>Le président expose la situation morale de l'association.</p>
+    <p>Le trésorier rend compte de sa gestion dans un rapport financier qu'il
+    soumet à l'approbation de l'assemblée générale.</p>
+    <p>L'assemblée générale entend les rapports sur la gestion du conseil
+    d'administration.</p>
+    <p>Elle approuve les comptes de l'exercice clos, vote le budget de
+    l'exercice suivant, délibère sur les questions mises à l'ordre du jour et
+    pourvoit, s'il y a lieu, au renouvellement des membres du conseil
+    d'administration.</p>
+    <p>Toutes les délibérations de l'assemblée générale sont prises à la
+    majorité simple des suffrages exprimés. Toutefois, la révocation des membres
+    du conseil d'administration intervient à la majorité des trois-quart.</p>
+    <p>Le scrutin secret est de droit si un membre le demande. Les modalités du
+    scrutin sont définies chaque année par le conseil d'administration.</p>
+    <p>Les procès-verbaux des délibérations des assemblées sont consignés par le
+    secrétaire général sur un registre et signés par lui et le président.</p>
+
+    <h2 id="Assemblee_generale_extraordinaire" for="toc">Article 13, Assemblée
+    générale extraordinaire</h2>
+
+    <p>Les statuts peuvent être modifiés par l'assemblée générale, sur
+    proposition du conseil d'administration, ou sur la proposition de 20% au
+    moins des membres dont se compose l'assemblée générale.</p>
+    <p>Dans l'un et l'autre cas, les propositions de modification sont inscrites
+    à l'ordre du jour de la prochaine assemblée générale, lequel doit être
+    envoyé à tous les membres de l'assemblée au moins 15 jours à l'avance.</p>
+    <p>L'assemblée générale extraordinaire ne délibère valablement que si le
+    tiers de ses membres sont présents ou représentés.</p>
+    <p>Si ce quorum n'est pas atteint, une deuxième assemblée est convoquée, sur
+    le même ordre du jour, dans un délai minimum de quinze jours.</p>
+    <p>Aucun quorum n'est requis sur deuxième convocation.</p>
+    <p>Les statuts ne peuvent être modifiés, sur première comme sur deuxième
+    convocation, qu'à la majorité des deux-tiers des membres présents.</p>
+
+    <h2 id="Droit_de_communication" for="toc">Article 14, Droit de
+    communication</h2>
+
+    <p>Tout membre a le droit de prendre connaissance au siège social ou
+    demander copie, à ses frais, de tout document relatif à l'association.</p>
+    <p>Notamment, tout membre a le droit de prendre connaissance ou copie de la
+    liste des membres, des documents comptables, financiers, culturels et
+    autres.</p>
+
+    <h2 id="Inventaire_comptes_bilan_et_affectation_des_resultats" for="toc">Article
+    15, Inventaire, comptes, bilan et affectation des résultats</h2>
+
+    <p>Il est tenu, s'il y a lieu, une comptabilité régulière des opérations
+    sociales conformément aux lois et usages du commerce. À la clôture de chaque
+    année sociale, le conseil d'administration établit l'inventaire des éléments
+    actifs et de passif existant à cette date et dresse les comptes.</p>
+    <p>Le compte de résultat récapitule les produits et charges de l'exercice et
+    fait apparaître par différence, après déduction des amortissements et
+    provisions, les excédents de l'exercice.</p>
+    <p>Les excédents éventuels ne peuvent en aucun cas faire l'objet d'une
+    répartition. Ils restent à la disposition de l'association pour permettre la
+    poursuite de son objet défini à l'article 3.</p>
+
+    <h2 id="Ressources" for="toc">Article 16, Ressources</h2>
+
+    <p>Les ressources de l'association se composent :</p>
+    <ul>
+      <li>des aides notamment financières qui peuvent être mises à la
+      disposition de l'association par toute personne physique ou morale ;</li>
+      <li>des cotisations ou inscriptions de ses membres telles que fixées par
+      l'assemblée générale ;</li>
+      <li>des subventions de l'État, des départements, des communes et des
+      établissements publics ;</li>
+      <li>des ressources créées à titre exceptionnel et, s'il y a lieu, avec
+      l'agrément de l'autorité compétente (quêtes, conférences, tombolas,
+      réunions, spectacles etc., autorisés au profit de l'association) ;</li>
+      <li>du produit des ventes de biens ou des prestations de services ;</li>
+      <li>et toutes autres ressources autorisées par la loi.</li>
+    </ul>
+
+    <h2 id="Dissolution" for="toc">Article 17, Dissolution</h2>
+
+    <p>La dissolution volontaire de l'association ne pourra être décidée que par
+    une assemblée générale extraordinaire spécialement convoquée à cet effet, et
+    à la majorité minima des deux tiers des membres, régulièrement inscrits et
+    présents ou représentés à la réunion.</p>
+    <p>À la dissolution de l'association, un ou plusieurs liquidateurs sont
+    nommés par l'assemblée générale extraordinaire, aux conditions de quorum et
+    de majorité prévues pour les assemblées ordinaires. La dissolution met fin
+    au mandat de tous les organes sociaux, sauf décision particulière de
+    l'assemblée.</p>
+    <p>Le liquidateur représente l'association, il est investi des pouvoirs les
+    plus étendus pour réaliser l'actif, même à l'amiable. Il est habilité à
+    payer les créanciers. L'assemblée générale peut l'autoriser à continuer les
+    affaires en cours ou à en engager de nouvelles pour le besoin de la
+    liquidation.</p>
+    <p>Le solde disponible après paiement de toutes les dettes est attribué à
+    une autre association régie par la loi du 1<sup>er</sup> juillet 1901
+    poursuivant le même objet ou un objet similaire ou à une oeuvre d'intérêt
+    public, et ne peut en aucun cas être partagé entre les membres.</p>
+  </yield>
+</overlay>

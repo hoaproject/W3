@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xyl-stylesheet href="hoa://Application/Public/Css/Leaflet.css"?>
+
+<overlay xmlns="http://hoa-project.net/xyl/xylophone">
+  <yield id="yContent">
+    <h1>Nous soutenir !</h1>
+
+    <p>Si vous souhaitez soutenir l'<a href="@f">association</a> Hoa, voici les
+    possibilités qui vont sont accessibles.</p>
+
+    <h2 id="Don">Don</h2>
+
+    <p>Que ce soit un don matériel, logiciel ou même financier, sentez-vous
+    libre de proposer. Voici nos besoins principaux :</p>
+    <ul>
+      <li>serveurs : les serveurs sont utilisés pour les sites Web, les dépôts,
+      les projets, les tests, la communauté… ;</li>
+      <li>noms de domaine : Hoa maintient plusieurs noms de domaine pour ses
+      projets ;</li>
+      <li><em lang="en">goodies</em> : pour faire la promotion ;</li>
+      <li>événements : Hoa participe à ou organise des événements autour du
+      monde.</li>
+    </ul>
+    <!--
+    <p>Voici nos coordonnées bancaires : …. Pour les chèques, les envoyer au
+    <a href="@f#Siege_social">siège social</a> de l'association.</p>
+    -->
+    <p>Si vous souhaitez nous faire un don qui n'a pas de rapport avec nos
+    besoins, n'hésitez pas à <a href="@c">nous contacter</a> !</p>
+
+    <h2 id="Utilisateur_ou_contributeur">Utilisateur ou contributeur</h2>
+
+    <p>Vous utilisez Hoa et vous voulez le faire savoir ? Vous avez un retour
+    d'expérience que vous souhaitez partager ? Ou encore, vous souhaitez parler
+    de Hoa lors de rencontres ? Faites-le nous savoir ! Nous pouvons organiser
+    des entrevues, vous proposez du matériel pour des présentations, des
+    interventions à des événements, collaborer sur des projets communs… Encore
+    une fois, n'hésitez pas à <a href="@c">nous contacter</a>.</p>
+
+    <!--
+    <h2 id="Service">Service</h2>
+
+    <p>Vous souhaitez que…</p>
+    -->
+  </yield>
+</overlay>

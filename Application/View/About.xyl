@@ -4,20 +4,33 @@
   <yield id="yContent">
     <h1>À propos</h1>
 
-    <p>Quelques informations utiles sur Hoa.</p>
+    <p>Tout ce que vous voulez savoir sur l'organisation de Hoa !</p>
 
     <h2 id="Nom_et_origine">Nom et origine</h2>
 
     <p>Hoa se prononce <em>/hoa/</em> et est un rétro-acronyme récursif
-    signifiant <em lang="en">Hoa, Open Accessibility</em>. Le projet est mené
-    par Ivan Enderlin mais il est maintenant dirigé par une communauté
-    grandissante et responsable.</p>
+    signifiant <em lang="en">Hoa, Open Accessibility</em>. Le projet a été créé
+    et est mené par Ivan Enderlin mais il est maintenant dirigé par une
+    communauté grandissante et responsable.</p>
+
+    <h2 id="Association_a_but_non-lucratif">Association à but non-lucratif</h2>
+
+    <p>Hoa Project est une <a href="@f">association</a> à but non-lucratif (loi
+    1901). Elle a pour objectifs de soutenir le projet Hoa en développant,
+    déployant et faisant la promotion des logiciels libres issus de Hoa Project,
+    de ses produits dérivés et des projets associés. Vous trouverez
+    <a href="@f+:_able=Statutes">les statuts</a> en ligne.</p>
+
+    <h2 id="Nous_soutenir">Nous soutenir</h2>
+
+    <p>Si vous souhaitez aider Hoa et ses projets, vous pouvez
+    <a href="@f+:_able=Support">contribuer de nombreuses façons</a>.</p>
 
     <h2 id="Licence">Licence</h2>
 
-    <p>Les projets Hoa sont sous licence <em lang="en">New BSD License</em>
+    <p>Les projets de Hoa sont sous licence <em lang="en">New BSD License</em>
     (<a href="http://opensource.org/licenses/BSD-3-Clause"><code>BSD-3-Clause</code></a>) :</p>
-<pre>                                New BSD License
+<pre lang="en">                                New BSD License
 
 
 
@@ -46,11 +59,5 @@ INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
 CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
 ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
 POSSIBILITY OF SUCH DAMAGE.</pre>
-
-    <h2 id="Nous_supporter">Nous supporter</h2>
-
-    <p>Si vous souhaitez aider le projet, vous pouvez contribuer de
-    nombreuses façons. Pour cela, vous pouvez
-    <a href="@c">nous contacter</a>. Merci !</p>
   </yield>
 </overlay>

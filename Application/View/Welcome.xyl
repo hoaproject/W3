@@ -84,6 +84,12 @@
                  alt="DISC" />
           </a>
         </span>
+        <span class="image">
+          <a href="@f+:_able=Support#Utilisateur_ou_contributeur" class="plain">
+            <img src="hoa://Application/Public/Image/Sponsor/You_little.png"
+                 alt="Vous" />
+          </a>
+        </span>
       </p>
 
       <h2 id="Ils_nous_soutiennent">Ils nous soutiennent !</h2>
@@ -93,6 +99,12 @@
           <a href="http://jetbrains.com/phpstorm/" class="plain">
             <img src="hoa://Application/Public/Image/Sponsor/PHPStorm_little.png"
                  alt="PHPStorm" />
+          </a>
+        </span>
+        <span class="image">
+          <a href="@f+:_able=Support#Utilisateur_ou_contributeur" class="plain">
+            <img src="hoa://Application/Public/Image/Sponsor/You_little.png"
+                 alt="Vous" />
           </a>
         </span>
       </p>
