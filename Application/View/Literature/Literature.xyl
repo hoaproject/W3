@@ -105,6 +105,9 @@
       <li><a href="@lh:chapter=Zombie"><code>Zombie</code></a> ;</li>
       <li><code> </code>.</li>
     </ul>
+    <p>Pour générer la documentation vous-même, veuillez regarder
+    <a href="@github:repository=Hoathis-Documentation">la bibliothèque
+    <code>Hoathis\Documentation</code></a>.</p>
 
     <h2 id="Documentation_API">Documentation API</h2>
 
