@@ -7,11 +7,11 @@
     <h1><em lang="en">Hack book</em><title_break /><code bind="?chapter" /></h1>
 
     <ul class="inline fright">
-      <li><a href="@dl:file=(?chapter)/" class="plain">
+      <li><a href="@dl:file=Library/(?chapter)/" class="plain">
             <img src="hoa://Application/Public/Image/Icon_package_black.svg"
                  alt="Archives" width="30px" height="30px" /></a></li>
-      <li><a href="@git:repository=(?chapter)" class="plain">
-            <img src="hoa://Application/Public/Image/Icon_git_black.svg"
+      <li><a href="@git:repository=Library/(?chapter)" class="plain">
+            <img src="hoa://Application/Public/Image/Icon_code_black.svg"
                  alt="Git" width="30px" height="30px" /></a></li>
       <li><a href="@github:repository=(?chapter)" class="plain">
             <img src="hoa://Application/Public/Image/Icon_github_black.svg"
