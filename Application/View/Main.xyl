@@ -14,7 +14,6 @@
     <nav id="menu" aria-selected="false">
       <div>
         <ul id="nav-top">
-          <li><a href="@g:all=" class="home">Accueil</a></li>
           <li><a href="@s" class="source">Sources</a></li>
           <li><a href="@l" class="literature">Littérature</a></li>
           <li><a href="@v" class="video">Vidéos</a></li>
@@ -37,7 +36,9 @@
       </div>
 
       <header>
-        <img src="hoa://Application/Public/Image/Hoa.png" alt="Hoa" />
+        <a href="@g:all=" class="plain">
+          <img src="hoa://Application/Public/Image/Hoa.png" alt="Hoa" />
+        </a>
       </header>
 
       <article id="content">
