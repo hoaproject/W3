@@ -79,7 +79,6 @@
       <li><a href="@lh:chapter=Mime"><code>Mime</code></a> ;</li>
       <li><code>Model</code> ;</li>
       <li><code>Notification</code> ;</li>
-      <li><code>Observer</code> ;</li>
       <li><code>Praspel</code> ;</li>
       <li><code>Prototype</code> ;</li>
       <li><code>Realdom</code> ;</li>
