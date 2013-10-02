@@ -51,6 +51,10 @@
       L.marker([49.610148755062, 6.1367606521795], {icon: icon})
        .bindPopup('<a href="@ev+:_able=Cstva13">CSTVA\'13</a>')
        .addTo(map);
+
+      L.marker([48.713133997214, 2.210079074177], {icon: icon})
+       .bindPopup('<a href="@ev+:_able=JDev13">JDév\'13</a>')
+       .addTo(map);
     </script>
 
     <h2 id="Organiser_par_Hoa">Organisés par Hoa
@@ -66,6 +70,8 @@
 
     <ul>
       <li>??? (<a href="@c">nous contacter pour nous inviter</a>) ;</li>
+      <li><time datetime="2013-09">septembre 2013</time>,
+          <a href="@ev+:_able=Jdev13">JDév'</a> ;</li>
       <li><time datetime="2013-03">mars 2013</time>,
           <a href="@ev+:_able=Cstva13">CSTVA</a> ;</li>
       <li><time datetime="2012-06">juin 2012</time>,
