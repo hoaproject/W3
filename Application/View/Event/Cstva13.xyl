@@ -67,9 +67,10 @@
     constraints. In this context, the constraint-based approach removes all the
     rejections.</em></p>
 
-    <h3>Présentation</h3>
+    <h3>Article et présentation</h3>
 
-    <p>La <a href="@key.:keynote=Cstva13/EGB13.pdf">présentation</a> est
-    disponible au format PDF.</p>
+    <p>L'<a href="@lr:article=Cstva13">article</a> et la
+    <a href="@key.:keynote=Cstva13/EGB13.pdf">présentation</a> sont disponibles
+    au format PDF.</p>
   </yield>
 </overlay>
