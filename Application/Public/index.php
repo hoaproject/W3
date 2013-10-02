@@ -38,6 +38,12 @@ $router
         'hack'
     )
     ->get(
+        'lr',
+        '/Literature/Research/(?<article>[\w\d]+)\.html',
+        'literature',
+        'research'
+    )
+    ->get(
         'lp',
         '/Literature/Popcode/(?<code>\w+)\.html',
         'literature',
