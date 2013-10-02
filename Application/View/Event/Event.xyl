@@ -53,7 +53,7 @@
        .addTo(map);
 
       L.marker([48.713133997214, 2.210079074177], {icon: icon})
-       .bindPopup('<a href="@ev+:_able=JDev13">JDév\'13</a>')
+       .bindPopup('<a href="@ev+:_able=Jdev13">JDév\'13</a>')
        .addTo(map);
     </script>
 
