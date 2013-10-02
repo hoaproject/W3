@@ -53,6 +53,23 @@ class Literature extends Generic {
         return;
     }
 
+    public function ResearchAction ( $article ) {
+
+        $article = ucfirst($article);
+        $file    = 'hoa://Application/External/Literature/Research/' .
+                   $article . '.pdf';
+
+        if(false === file_exists($file))
+            throw new \Hoa\Router\Exception\NotFound(
+                'Article %s is not found', 0, $article);
+
+        $outputStream = $this->view->getOutputStream();
+        $outputStream->sendHeader('Content-Type', 'application/pdf');
+        $outputStream->writeAll(file_get_contents($file));
+
+        return;
+    }
+
     public function ContributorAction ( ) {
 
         $this->view->addUse('hoa://Application/External/Literature/Contributor/Guide.xyl');
