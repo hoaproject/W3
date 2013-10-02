@@ -20,6 +20,15 @@ class Event extends Generic {
         return;
     }
 
+    public function Jdev13Action ( ) {
+
+        $this->data->title = 'JDév\' 2013';
+        $this->view->addOverlay('hoa://Application/View/Event/Jdev13.xyl');
+        $this->render();
+
+        return;
+    }
+
     public function Hoaapex13Action ( ) {
 
         $this->data->title = 'Apex 2013';
