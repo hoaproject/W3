@@ -36,11 +36,10 @@
        .addTo(map);
 
       L.marker([45.502015951149, -73.57589220671], {icon: icon})
-       .bindPopup('AMOST\'12')
+       .bindPopup('<a href="@ev+:_able=Amost12">AMOST\'12</a>')
        .addTo(map);
 
       L.marker([48.819312415957, 2.3380794527806], {icon: icon})
-       .bindPopup('ForumPHP\'12')
        .bindPopup('<a href="@ev+:_able=Forumphp12">ForumPHP\'12</a>')
        .addTo(map);
 
@@ -76,7 +75,8 @@
           <a href="@ev+:_able=Cstva13">CSTVA</a> ;</li>
       <li><time datetime="2012-06">juin 2012</time>,
           <a href="@ev+:_able=Forumphp12">ForumPHP</a> ;</li>
-      <li><time datetime="2012-04">avril 2012</time>, AMOST ;</li>
+      <li><time datetime="2012-04">avril 2012</time>,
+          <a href="@ev+:_able=Amost12">AMOST</a> ;</li>
       <li><time datetime="2011-11">novembre 2011</time>, ICTSS ;</li>
       <li><time datetime="2011-11">novembre 2011</time>,
           <a href="@ev+:_able=Phptour11">PHPTour</a>.</li>

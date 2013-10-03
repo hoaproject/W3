@@ -56,6 +56,15 @@ class Event extends Generic {
         return;
     }
 
+    public function Amost12Action ( ) {
+
+        $this->data->title = 'AMOST 2012';
+        $this->view->addOverlay('hoa://Application/View/Event/Amost12.xyl');
+        $this->render();
+
+        return;
+    }
+
     public function Phptour11Action ( ) {
 
         $this->data->title = 'PHPTour 2011';
