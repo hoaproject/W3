@@ -54,6 +54,10 @@
       L.marker([48.713133997214, 2.210079074177], {icon: icon})
        .bindPopup('<a href="@ev+:_able=Jdev13">JDév\'13</a>')
        .addTo(map);
+
+      L.marker([45.756857272342, 4.8569499851933], {icon: icon})
+       .bindPopup('<a href="@ev+:_able=Afuplyon13">AFUP Lyon\'13</a>')
+       .addTo(map);
     </script>
 
     <h2 id="Organiser_par_Hoa">Organisés par Hoa
@@ -69,6 +73,8 @@
 
     <ul>
       <li>??? (<a href="@c">nous contacter pour nous inviter</a>) ;</li>
+      <li><time datetime="2013-10">octobre 2013</time>,
+          <a href="@ev+:_able=Afuplyon13">AFUP Lyon</a> ;</li>
       <li><time datetime="2013-09">septembre 2013</time>,
           <a href="@ev+:_able=Jdev13">JDév'</a> ;</li>
       <li><time datetime="2013-03">mars 2013</time>,

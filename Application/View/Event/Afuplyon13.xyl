@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xyl-stylesheet href="hoa://Application/Public/Css/Leaflet.css"?>
+
+<overlay xmlns="http://hoa-project.net/xyl/xylophone">
+  <yield id="yContent">
+    <h1>AFUP Lyon 2013</h1>
+
+    <p><img class="fright"
+            width="200px"
+            src="hoa://Application/Public/Image/Logo/AFUPLyon.png"
+            alt="Logo de l'AFUP Lyon" />
+    L'<a href="http://lyon.afup.org/">AFUP Lyon</a> est l'antenne lyonnaise de
+    l'<a href="http://afup.org/">AFUP</a>, l'association française des
+    utilisateurs de PHP. Afin de <strong>promouvoir</strong> PHP en France, ils
+    organisent régulièrement des conférences sur un projet ou un sujet
+    particulier. Ivan Enderlin et Julien Bianchi étaient invités pour présenter
+    Hoa.</p>
+
+    <div id="map" style="height: 500px" class="cboth"></div>
+    <script src="hoa://Application/Public/Javascript/Leaflet.js"></script>
+    <script>
+      var map = L.map('map').setView([45.756857272342, 4.8569499851933], 13);
+
+      L.tileLayer('<value link="hoa://Application/Public/Map/Tiles/{z}/{x}/{y}.png" />', {
+        minZoom: 1,
+        maxZoom: 7
+      }).addTo(map);
+
+      L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+        attribution: '© <a href="http://osm.org/copyright">OpenStreetMap</a> contributors',
+        minZoom: 7
+      }).addTo(map);
+
+      var icon = L.icon({
+          iconUrl: '<value link="hoa://Application/Public/Map/Marker.svg" />',
+          iconSize: [28, 45],
+          iconAnchor: [14, 44],
+          popupAnchor: [2, -45]
+      });
+
+      L.marker([45.756857272342, 4.8569499851933], {icon: icon})
+       .bindPopup('<p class="tcenter">ici</p>')
+       .addTo(map);
+    </script>
+
+    <h2 id="Hoa_un_ensemble_de_bibliotheques_PHP">Hoa, un ensemble de
+    bibliothèques PHP</h2>
+
+    <p>Lors de cette conférence, Ivan Enderlin (créateur du projet) et Julien
+    Bianchi (contributeur et hoacker) nous présenteront Hoa : ce que c'est,
+    comment l'installer, que peut-on faire avec, qui l'utilise ? Puis, certaines
+    bibliothèques phares seront abordées pour illustrer des usages quotidiens,
+    comme <code>Hoa\Websocket</code>, <code>Hoa\Ruler</code> ou encore
+    <code>Hoa\Praspel</code> et <code>Hoathis\Atoum</code> pour un aspect
+    recherche et test.</p>
+
+    <h3>Article et présentation</h3>
+
+    <p>La <a href="@key.:keynote=AFUPLyon13/AFUPLyon13.html">présentation</a>
+    est disponible. Les nombreuses démonstrations sont accessibles dans le
+    dossier <code>Demonstration</code> (voir le dépôt
+    <a href="@github:repository=Keynote"><code>Keynote.git</code></a>).</p>
+  </yield>
+</overlay>

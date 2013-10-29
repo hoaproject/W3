@@ -20,6 +20,15 @@ class Event extends Generic {
         return;
     }
 
+    public function Afuplyon13Action ( ) {
+
+        $this->data->title = 'AFUP Lyon 2013';
+        $this->view->addOverlay('hoa://Application/View/Event/Afuplyon13.xyl');
+        $this->render();
+
+        return;
+    }
+
     public function Jdev13Action ( ) {
 
         $this->data->title = 'JDév\' 2013';
