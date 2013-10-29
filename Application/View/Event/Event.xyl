@@ -78,7 +78,8 @@
       <li><time datetime="2013-09">septembre 2013</time>,
           <a href="@ev+:_able=Jdev13">JDév'</a> ;</li>
       <li><time datetime="2013-03">mars 2013</time>,
-          <a href="@ev+:_able=Cstva13">CSTVA</a> ;</li>
+          <a href="@ev+:_able=Cstva13">CSTVA</a>
+          <a href="@ev+:_able=Hoaapex13">Hoa Apex</a> ;</li>
       <li><time datetime="2012-06">juin 2012</time>,
           <a href="@ev+:_able=Forumphp12">ForumPHP</a> ;</li>
       <li><time datetime="2012-04">avril 2012</time>,
