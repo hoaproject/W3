@@ -33,7 +33,7 @@ $router
     )
     ->get(
         'lh',
-        '/Literature/Hack/(?<chapter>\w+)\.html',
+        '/Literature/Hack/(?<chapter>[\w ]+)\.html',
         'literature',
         'hack'
     )
