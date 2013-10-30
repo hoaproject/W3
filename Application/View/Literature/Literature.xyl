@@ -102,7 +102,7 @@
       <li><code>XmlRpc</code> ;</li>
       <li><code>Xyl</code> ;</li>
       <li><a href="@lh:chapter=Zombie"><code>Zombie</code></a> ;</li>
-      <li><code> </code>.</li>
+      <li><a href="@lh:chapter= "><code> </code></a>.</li>
     </ul>
     <p>Pour générer la documentation vous-même, veuillez regarder
     <a href="@github:repository=Hoathis-Documentation">la bibliothèque
