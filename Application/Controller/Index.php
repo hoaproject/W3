@@ -78,6 +78,20 @@ class Index extends Generic {
         return;
     }
 
+    public function NolanguageAction ( $tail ) {
+
+        $visitor = new \Application\Model\Visitor();
+
+        $this->view->getOutputStream()->sendHeader(
+            'Location',
+            '/' . ucfirst($visitor->getLanguage()) . '/' . $this->router->getURI(),
+            true,
+            \Hoa\Http\Response::STATUS_MOVED_PERMANENTLY
+        );
+
+        return;
+    }
+
     public function ErrorAction ( \Hoa\Core\Exception $exception ) {
 
         switch(get_class($exception)) {

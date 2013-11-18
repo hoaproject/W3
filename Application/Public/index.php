@@ -12,147 +12,193 @@ $dispatcher = new \Hoa\Dispatcher\Basic(array(
     'asynchronous.action' => '(:%synchronous.action:)'
 ));
 $router = new \Hoa\Router\Http();
+
 $router
     ->get(
-        'l',
-        '/Literature\.html',
-        'literature',
-        'default'
-    )
-    ->get(
-        'lt',
-        '/Literature/Mini-tutorial\.html',
-        'literature',
-        'minitutorial'
-    )
-    ->get(
-        'll',
-        '/Literature/Learn/(?<chapter>\w+)\.html',
-        'literature',
-        'learn'
-    )
-    ->get(
-        'lh',
-        '/Literature/Hack/(?<chapter>[\w ]+)\.html',
-        'literature',
-        'hack'
-    )
-    ->get(
-        'lr',
-        '/Literature/Research/(?<article>[\w\d]+)\.html',
-        'literature',
-        'research'
-    )
-    ->get(
-        'lp',
-        '/Literature/Popcode/(?<code>\w+)\.html',
-        'literature',
-        'popcode'
-    )
-    ->get(
-        'lc',
-        '/Literature/Contributor/Guide\.html',
-        'literature',
-        'contributor'
-    )
-    ->get(
-        'r',
-        '/Research\.html',
-        'research',
-        'default'
-    )
-    ->get_post(
-        'rx',
-        '/Research/(?<article>\w+)/Experimentation\.html',
-        'research',
-        'experimentation'
-    )
-    ->get(
-        's',
-        '/Source\.html',
+        'nolanguage',
+        '/(?<tail>(?!\w{2}/).{3,})',
         'index',
-        'source'
+        'nolanguage'
     )
     ->get(
-        'v',
-        '/Awecode\.html',
-        'awecode',
-        'default'
-    )
-    ->get(
-        'v+',
-        '/Awecode/(?<id>[\w\-_]+)\.html',
-        'awecode',
-        'awecode'
-    )
-    ->get(
-        'ev',
-        '/Event\.html',
-        'event',
-        'default'
-    )
-    ->get(
-        'ev+',
-        '/Event/(?<_able>\w+)\.html',
-        'event'
-    )
-    ->get(
-        'c',
-        '/Community\.html',
-        'index',
-        'community'
-    )
-    ->get(
-        'contact',
-        '/Contact\.html',
-        'index',
-        'contact'
-    )
-    ->get(
-        'a',
-        '/About\.html',
-        'index',
-        'about'
-    )
-    ->get(
-        'f',
-        '/Foundation.html',
-        'foundation',
-        'index'
-    )
-    ->get(
-        'f+',
-        '/Foundation/(?<_able>\w+)\.html',
-        'foundation'
-    )
-    ->get(
-        'u',
-        '/Whouse/(?<who>\w+)\.html',
-        'index',
-        'whouse'
-    )
-    ->get(
-        'e',
-        '/Error\.html',
-        'index',
-        'error'
-    )
-    ->get(
-        'g',
-        '/',
-        'index',
-        'default'
-    )
-    ->get(
-        'short',
-        '/s/(?<short>\w+)',
-        'short',
-        'default'
-    )
+        'language',
+        '/(?<language>\w{2}).*',
+        function ( $language ) use ( $router, $dispatcher ) {
 
-    // --
+            $router->removeRule('language');
+            $language         = ucfirst($language);
+            $defaultVariables = array('language' => $language);
 
-    ->_get('_resource', 'http://static.hoa-project.net/(?<resource>)')
+            $router
+                ->get(
+                    'l',
+                    '/(?<language>\w{2})/Literature\.html',
+                    'literature',
+                    'default',
+                    $defaultVariables
+                )
+                ->get(
+                    'lt',
+                    '/(?<language>\w{2})/Literature/Mini-tutorial\.html',
+                    'literature',
+                    'minitutorial',
+                    $defaultVariables
+                )
+                ->get(
+                    'll',
+                    '/(?<language>\w{2})/Literature/Learn/(?<chapter>\w+)\.html',
+                    'literature',
+                    'learn',
+                    $defaultVariables
+                )
+                ->get(
+                    'lh',
+                    '/(?<language>\w{2})/Literature/Hack/(?<chapter>[\w ]+)\.html',
+                    'literature',
+                    'hack',
+                    $defaultVariables
+                )
+                ->get(
+                    'lr',
+                    '/(?<language>\w{2})/Literature/Research/(?<article>[\w\d]+)\.html',
+                    'literature',
+                    'research',
+                    $defaultVariables
+                )
+                ->get(
+                    'lp',
+                    '/(?<language>\w{2})/Literature/Popcode/(?<code>\w+)\.html',
+                    'literature',
+                    'popcode',
+                    $defaultVariables
+                )
+                ->get(
+                    'lc',
+                    '/(?<language>\w{2})/Literature/Contributor/Guide\.html',
+                    'literature',
+                    'contributor',
+                    $defaultVariables
+                )
+                ->get(
+                    'r',
+                    '/(?<language>\w{2})/Research\.html',
+                    'research',
+                    'default',
+                    $defaultVariables
+                )
+                ->get_post(
+                    'rx',
+                    '/(?<language>\w{2})/Research/(?<article>\w+)/Experimentation\.html',
+                    'research',
+                    'experimentation',
+                    $defaultVariables
+                )
+                ->get(
+                    's',
+                    '/(?<language>\w{2})/Source\.html',
+                    'index',
+                    'source',
+                    $defaultVariables
+                )
+                ->get(
+                    'v',
+                    '/(?<language>\w{2})/Awecode\.html',
+                    'awecode',
+                    'default',
+                    $defaultVariables
+                )
+                ->get(
+                    'v+',
+                    '/(?<language>\w{2})/Awecode/(?<id>[\w\-_]+)\.html',
+                    'awecode',
+                    'awecode',
+                    $defaultVariables
+                )
+                ->get(
+                    'ev',
+                    '/(?<language>\w{2})/Event\.html',
+                    'event',
+                    'default',
+                    $defaultVariables
+                )
+                ->get(
+                    'ev+',
+                    '/(?<language>\w{2})/Event/(?<_able>\w+)\.html',
+                    'event',
+                    $defaultVariables
+                )
+                ->get(
+                    'c',
+                    '/(?<language>\w{2})/Community\.html',
+                    'index',
+                    'community',
+                    $defaultVariables
+                )
+                ->get(
+                    'contact',
+                    '/(?<language>\w{2})/Contact\.html',
+                    'index',
+                    'contact',
+                    $defaultVariables
+                )
+                ->get(
+                    'a',
+                    '/(?<language>\w{2})/About\.html',
+                    'index',
+                    'about',
+                    $defaultVariables
+                )
+                ->get(
+                    'f',
+                    '/(?<language>\w{2})/Foundation.html',
+                    'foundation',
+                    'index',
+                    $defaultVariables
+                )
+                ->get(
+                    'f+',
+                    '/(?<language>\w{2})/Foundation/(?<_able>\w+)\.html',
+                    'foundation',
+                    null,
+                    $defaultVariables
+                )
+                ->get(
+                    'u',
+                    '/(?<language>\w{2})/Whouse/(?<who>\w+)\.html',
+                    'index',
+                    'whouse',
+                    $defaultVariables
+                )
+                ->get(
+                    'e',
+                    '/(?<language>\w{2})/Error\.html',
+                    'index',
+                    'error',
+                    $defaultVariables
+                )
+                ->get(
+                    'g',
+                    '/(?<language>\w{2})/?',
+                    'index',
+                    'default',
+                    $defaultVariables
+                )
+                ->get(
+                    'short',
+                    '/s/(?<short>\w+)',
+                    'short',
+                    'default',
+                    $defaultVariables
+                );
+
+            $router->route();
+            $dispatcher->dispatch($router);
+        }
+    );
+
+$router
+    ->_get('_resource', '/Static/(?<resource>)')
+    //->_get('_resource', 'http://static.hoa-project.net/(?<resource>)')
     ->_get('b',      '/', null, null, array('_subdomain' => 'blog'))
     ->_get('b_post', '/posts/(?<id>)-(?<normalized_title>).html', null, null, array('_subdomain' => 'blog'))
     ->_get('dl',     'http://download.hoa-project.net/(?<file>)')
@@ -173,7 +219,7 @@ try {
 }
 catch ( \Hoa\Core\Exception $e ) {
 
-    $router->route('/Error.html');
+    $router->route('/En/Error.html');
     $rule                                                = &$router->getTheRule();
     $rule[\Hoa\Router\Http::RULE_VARIABLES]['exception'] = $e;
     $dispatcher->dispatch($router);
