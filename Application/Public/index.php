@@ -11,7 +11,7 @@ from('Hoa')
 $dispatcher = new \Hoa\Dispatcher\Basic(array(
     'asynchronous.action' => '(:%synchronous.action:)'
 ));
-$router     = new \Hoa\Router\Http();
+$router = new \Hoa\Router\Http();
 $router
     ->get(
         'l',
