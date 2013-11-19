@@ -7,7 +7,11 @@ from('Hoa')
 -> import('File.Read')
 -> import('Http.Response.~')
 -> import('Xyl.~')
--> import('Xyl.Interpreter.Html.~');
+-> import('Xyl.Interpreter.Html.~')
+-> import('Translate.Gettext');
+
+from('Application')
+-> import('Model.Visitor');
 
 }
 
@@ -15,12 +19,16 @@ namespace Application\Controller {
 
 class Generic extends \Hoa\Dispatcher\Kit {
 
+    protected static $_visitor = null;
+
+
+
     public function construct ( ) {
 
         if(false === $this->router->isAsynchronous())
-            $main = 'hoa://Application/View/Main.xyl';
+            $main = 'hoa://Application/View/Shared/Main.xyl';
         else
-            $main = 'hoa://Application/View/Main.fragment.xyl';
+            $main = 'hoa://Application/View/Shared/Main.fragment.xyl';
 
         $xyl = new \Hoa\Xyl(
             new \Hoa\File\Read($main),
@@ -32,6 +40,8 @@ class Generic extends \Hoa\Dispatcher\Kit {
 
         $this->view = $xyl;
         $this->data = $xyl->getData();
+
+        $this->addTranslation('Main');
 
         return;
     }
@@ -49,6 +59,25 @@ class Generic extends \Hoa\Dispatcher\Kit {
         $this->view->render($this->view->getSnippet('async_content'));
 
         return;
+    }
+
+    public static function getVisitor ( ) {
+
+        if(null === static::$_visitor)
+            static::$_visitor = new \Application\Model\Visitor();
+
+        return static::$_visitor;
+    }
+
+    public function addTranslation ( $filename ) {
+
+        $language = ucfirst(static::getVisitor()->getLanguage());
+
+        return $this->view->addTranslation(new \Hoa\Translate\Gettext(
+            new \Hoa\File\Read(
+                'hoa://Data/Etc/Locale/' . $language . '/' . $filename .  '.mo'
+            )
+        ));
     }
 }
 

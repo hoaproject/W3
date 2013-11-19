@@ -26,10 +26,12 @@ class Index extends Generic {
         return;
     }
 
-    public function SourceAction ( ) {
+    public function SourceAction ( $language ) {
+
+        $language = ucfirst($language);
 
         $this->data->title = 'Sources : Git, Github, Composer, archives…';
-        $this->view->addOverlay('hoa://Application/View/Source.xyl');
+        $this->view->addOverlay('hoa://Application/View/' . $language . '/Source.xyl');
         $this->render();
 
         return;
@@ -80,11 +82,10 @@ class Index extends Generic {
 
     public function NolanguageAction ( $tail ) {
 
-        $visitor = new \Application\Model\Visitor();
-
         $this->view->getOutputStream()->sendHeader(
             'Location',
-            '/' . ucfirst($visitor->getLanguage()) . '/' . $this->router->getURI(),
+            '/' . ucfirst(static::getVisitor()->getLanguage()) .
+            '/' . $this->router->getURI(),
             true,
             \Hoa\Http\Response::STATUS_MOVED_PERMANENTLY
         );

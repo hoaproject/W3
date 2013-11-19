@@ -6,7 +6,12 @@ require_once dirname(dirname(__DIR__)) .
 
 from('Hoa')
 -> import('Dispatcher.Basic')
--> import('Router.Http');
+-> import('Router.Http')
+-> import('Locale.~')
+-> import('Locale.Localizer.Coerce');
+
+from('Application')
+-> import('Controller.Generic');
 
 $dispatcher = new \Hoa\Dispatcher\Basic(array(
     'asynchronous.action' => '(:%synchronous.action:)'
@@ -23,9 +28,15 @@ $router
     ->get(
         'language',
         '/(?<language>\w{2}).*',
-        function ( $language ) use ( $router, $dispatcher ) {
+        function ( $language ) use ( $router, $dispatcher, $_this ) {
 
             $router->removeRule('language');
+            \Application\Controller\Generic::getVisitor()->setLocale(
+                new \Hoa\Locale(
+                    new \Hoa\Locale\Localizer\Coerce($language)
+                )
+            );
+
             $language         = ucfirst($language);
             $defaultVariables = array('language' => $language);
 
@@ -197,8 +208,7 @@ $router
     );
 
 $router
-    ->_get('_resource', '/Static/(?<resource>)')
-    //->_get('_resource', 'http://static.hoa-project.net/(?<resource>)')
+    ->_get('_resource', 'http://static.hoa-project.net/(?<resource>)')
     ->_get('b',      '/', null, null, array('_subdomain' => 'blog'))
     ->_get('b_post', '/posts/(?<id>)-(?<normalized_title>).html', null, null, array('_subdomain' => 'blog'))
     ->_get('dl',     'http://download.hoa-project.net/(?<file>)')

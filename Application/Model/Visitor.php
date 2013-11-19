@@ -16,14 +16,29 @@ class Visitor {
 
 
 
+    public function setLocale ( \Hoa\Locale $locale ) {
+
+        $old           = $this->_locale;
+        $this->_locale = $locale;
+
+        return $old;
+    }
+
+    protected function getLocale ( ) {
+
+        if(null === $this->_locale)
+            $this->_locale = new \Hoa\Locale(new \Hoa\Locale\Localizer\Http());
+
+        return $this->_locale;
+    }
+
     public function getLanguage ( ) {
 
         $language = 'en';
 
         try {
 
-            $locale   = new \Hoa\Locale(new \Hoa\Locale\Localizer\Http());
-            $language = $locale->getLanguage();
+            $language = $this->getLocale()->getLanguage();
         }
         catch ( \Hoa\Locale\Exception $e ) { }
 
