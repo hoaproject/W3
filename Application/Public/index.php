@@ -21,7 +21,7 @@ $router = new \Hoa\Router\Http();
 $router
     ->get(
         'nolanguage',
-        '/(?<tail>(?!\w{2}/).{3,})',
+        '/(?<tail>$|(?!\w{2}/).{3,})',
         'index',
         'nolanguage'
     )
@@ -208,7 +208,8 @@ $router
     );
 
 $router
-    ->_get('_resource', 'http://static.hoa-project.net/(?<resource>)')
+    ->_get('_resource', '/Static/(?<resource>)')
+    //->_get('_resource', 'http://static.hoa-project.net/(?<resource>)')
     ->_get('b',      '/', null, null, array('_subdomain' => 'blog'))
     ->_get('b_post', '/posts/(?<id>)-(?<normalized_title>).html', null, null, array('_subdomain' => 'blog'))
     ->_get('dl',     'http://download.hoa-project.net/(?<file>)')
@@ -228,6 +229,8 @@ try {
     $dispatcher->dispatch($router);
 }
 catch ( \Hoa\Core\Exception $e ) {
+
+    var_dump($e->raise(true));
 
     $router->route('/En/Error.html');
     $rule                                                = &$router->getTheRule();

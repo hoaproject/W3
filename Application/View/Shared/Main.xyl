@@ -14,16 +14,16 @@
     <nav id="menu" aria-selected="false">
       <div>
         <ul id="nav-top">
-          <li><a href="@s" class="source">Sources</a></li>
-          <li><a href="@l" class="literature">Littérature</a></li>
-          <li><a href="@v" class="video">Vidéos</a></li>
-          <li><a href="@b" class="blog">Blog</a></li>
-          <li><a href="@ev" class="event">Événements</a></li>
-          <li><a href="@c" class="community">Communauté</a></li>
+          <li><a href="@s" class="source"><_>Sources</_></a></li>
+          <li><a href="@l" class="literature"><_>Literature</_></a></li>
+          <li><a href="@v" class="video"><_>Videos</_></a></li>
+          <li><a href="@b" class="blog"><_>Blog</_></a></li>
+          <li><a href="@ev" class="event"><_>Events</_></a></li>
+          <li><a href="@c" class="community"><_>Community</_></a></li>
         </ul>
 
         <ul id="nav-bottom">
-          <li><a href="@a" class="about">À propos</a></li>
+          <li><a href="@a" class="about"><_>About</_></a></li>
         </ul>
       </div>
     </nav>
@@ -46,10 +46,7 @@
       </article>
 
       <footer>
-        <p>Hoa est la création de Ivan Enderlin, tous droits réservés.
-           Voir <a href="@_resource:resource=LICENSE">la licence</a>.
-           <a href="http://twitter.com/hoaproject">Twitter</a>,
-           <a href="http://github.com/hoaproject">Github</a>.</p>
+        <p><_>Hoa is the creation of Ivan Enderlin, all rights reserved.</_></p>
       </footer>
 
     </div>

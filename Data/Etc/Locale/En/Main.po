@@ -1,0 +1,23 @@
+msgid "Sources"
+msgstr "Sources"
+
+msgid "Literature"
+msgstr "Literature"
+
+msgid "Videos"
+msgstr "Videos"
+
+msgid "Blog"
+msgstr "Blog"
+
+msgid "Events"
+msgstr "Events"
+
+msgid "Community"
+msgstr "Community"
+
+msgid "About"
+msgstr "About"
+
+msgid "Hoa is the creation of Ivan Enderlin, all rights reserved."
+msgstr "Hoa is the creation of Ivan Enderlin, all rights reserved. See <a href=\"@_resource:resource=LICENSE\">the license</a>. <a href=\"@twitter\">Twitter</a>, <a href=\"http://github.com/hoaproject\">Github</a>."

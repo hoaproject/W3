@@ -31,7 +31,7 @@
     <p>Pour obtenir une bibliothèque, par exemple <code>Hoa\Core</code> :</p>
     <pre><code class="language-shell">$ git clone http://git.hoa-project.net/Library/Core.git</code></pre>
     <p>Il est recommandé de <a href="http://git-scm.com/documentation">lire la
-    documentation de Git</a> si vous n'êtes pas familié avec cet outil.</p>
+    documentation de Git</a> si vous n'êtes pas familier avec cet outil.</p>
     <p><img src="hoa://Application/Public/Image/Logo/Github.png"
            alt="Logo de Github" class="fright" />
     Des miroirs existent pour la plupart des projets, notamment sur
@@ -75,6 +75,5 @@
     PHP</a>).</p>
     <p>Le protocole WebDAV permet également d'accéder aux archives, à
     l'adresse : <a href="http://dav.hoa-project.net">dav.hoa-project.net</a>.</p>
-
   </yield>
 </overlay>

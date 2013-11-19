@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<overlay xmlns="http://hoa-project.net/xyl/xylophone">
+  <yield id="yContent">
+    <h1>Sources</h1>
+
+    <p>Hoa distributes the following project:</p>
+    <ul>
+      <li><code>Central</code>: the set of all Hoa libraries,</li>
+      <li><code>Library/<em>*</em></code>: isolated libraries,</li>
+      <li><code>Embryo</code>: skeleton of an application to start quickly,</li>
+      <li><code>Literature</code>: all the manuals and documentations,</li>
+      <li><code>Keynote</code>: all the presentations,</li>
+      <li><code>W3</code> and <code>Static</code>: the website of Hoa,</li>
+      <li><code>Bhoat</code>: the bot that maintains the different projects of
+      Hoa.</li>
+    </ul>
+
+    <h2 id="Version_control">Version control</h2>
+
+    <p><img src="hoa://Application/Public/Image/Logo/Git.png" alt="Logo of Git"
+            class="fright" />
+    Hoa uses <a href="http://git-scm.com/">Git</a> for all its projects. The
+    repository index can be found at the address:
+    <a href="http://git.hoa-project.net">git.hoa-project.net</a>. The
+    repositories are named <code><em>project</em>.git</code>. Thus, to obtain
+    the sources of the <code>Central</code> project:</p>
+    <pre><code class="language-shell">$ git clone http://git.hoa-project.net/Central.git</code></pre>
+    <p>To obtain a library, for example <code>Hoa\Core</code>:</p>
+    <pre><code class="language-shell">$ git clone http://git.hoa-project.net/Library/Core.git</code></pre>
+    <p>It is recommended to <a href="http://git-scm.com/documentation">read the
+    documentation of Git</a> if you are not familiar with this tool.</p>
+    <p><img src="hoa://Application/Public/Image/Logo/Github.png"
+           alt="Logo of Github" class="fright" />
+
+    Mirrors exist for the majority of projects, notably on
+    <a href="@github">Github</a>. The names of projects are identical as much as
+    possible. The main difference is for libraries: the prefix
+    <code>Library/</code> is removed. Thus:</p>
+    <pre><code class="language-shell">$ git clone https://github.com/hoaproject/Core.git</code></pre>
+    <p>Mirrors are continuously synchronized, you will never have any
+    differences.</p>
+
+    <h2 id="Dependency_manager">Dependency manager</h2>
+
+    <p><img src="hoa://Application/Public/Image/Logo/Composer.png"
+            alt="Logo of Composer" class="fright" />
+    To manage the dependencies between libraries of Hoa, we recommend the tool
+    <a href="http://getcomposer.org/">Composer</a>. All the dependencies managed
+    by Composer are registered in the
+    <a href="http://packagist.org/">Packagist</a> repository, under the names
+    <code>hoa/<em>library</em></code>. Thus, for example, to install the
+    <code>Hoa\Compiler</code> library, one has to write in a
+    <code>composer.json</code> file:</p>
+    <pre><code class="language-json">{
+    "require": {
+        "hoa/compiler": "dev-master"
+    },
+    "minimum-stability": "dev"
+}</code></pre>
+    <p>Then, to install the dependencies:</p>
+    <pre><code class="language-shell">$ composer install</code></pre>
+    <p>It is recommended to <a href="https://getcomposer.org/doc/">read the
+    documentation of Composer</a> if you are not familiar with this tool.</p>
+
+    <h2>Archives</h2>
+
+    <p>Archives are produced at each updates of the projects. The index of
+    archives can be found at the address:
+    <a href="http://download.hoa-project.net">download.hoa-project.net</a>.
+    They also follow the naming of projects. Several formats are available:
+    <code>.zip</code>, <code>.tar.gz</code> and <code>.phar</code>
+    (for the <a href="http://php.net/phar">PHP archives</a>).</p>
+    <p>The WebDAV protocol also allows to access to the archives, at the
+    following address:
+    <a href="http://dav.hoa-project.net">dav.hoa-project.net</a>.</p>
+  </yield>
+</overlay>

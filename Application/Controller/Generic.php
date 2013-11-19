@@ -11,7 +11,8 @@ from('Hoa')
 -> import('Translate.Gettext');
 
 from('Application')
--> import('Model.Visitor');
+-> import('Model.Visitor')
+-> import('Controller.Exception');
 
 }
 
@@ -41,7 +42,8 @@ class Generic extends \Hoa\Dispatcher\Kit {
         $this->view = $xyl;
         $this->data = $xyl->getData();
 
-        $this->addTranslation('Main');
+        $this->computeLanguage(static::getVisitor()->getLanguage());
+        $this->addTranslation('Main', '__main__');
 
         return;
     }
@@ -69,15 +71,49 @@ class Generic extends \Hoa\Dispatcher\Kit {
         return static::$_visitor;
     }
 
-    public function addTranslation ( $filename ) {
+    protected function computeLanguage ( $language, $translation = null ) {
 
-        $language = ucfirst(static::getVisitor()->getLanguage());
+        if(   'en' !== $language
+           && 'fr' !== $language) {
 
-        return $this->view->addTranslation(new \Hoa\Translate\Gettext(
-            new \Hoa\File\Read(
-                'hoa://Data/Etc/Locale/' . $language . '/' . $filename .  '.mo'
-            )
-        ));
+            $this->addTranslation('Error', null, 'en');
+            $tr = $this->getTranslation('Error');
+
+            $this->view->getOutputStream()->sendStatus(
+                \Hoa\Http\Response::STATUS_NOT_FOUND
+            );
+
+            $this->data->title = $tr->_('Error');
+            $this->view->addOverlay('hoa://Application/View/Shared/Error.xyl');
+            $this->render();
+
+            return;
+        }
+
+        if(null !== $translation)
+            $this->addTranslation($translation);
+
+        return ucfirst($language);
+    }
+
+    public function addTranslation ( $filename, $id = null, $language = null ) {
+
+        $language = ucfirst($language ?: static::getVisitor()->getLanguage());
+        $this->view->addTranslation(
+            new \Hoa\Translate\Gettext(
+                new \Hoa\File\Read(
+                    'hoa://Data/Etc/Locale/' . $language . '/' . $filename .  '.mo'
+                )
+            ),
+            $id ?: $filename
+        );
+
+        return $this->getTranslation($filename);
+    }
+
+    public function getTranslation ( $id = '__main__' ) {
+
+        return $this->view->getTranslation($id);
     }
 }
 

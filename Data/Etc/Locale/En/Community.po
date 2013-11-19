@@ -1,0 +1,2 @@
+msgid "Community: mailing-lists, IRC, IRL…"
+msgstr "Community: mailing-lists, IRC, IRL…"

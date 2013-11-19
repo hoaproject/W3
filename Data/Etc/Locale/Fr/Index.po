@@ -1,0 +1,23 @@
+msgid "A set of PHP libraries"
+msgstr "Un ensemble de bibliothèques PHP"
+
+msgid "Hoa is a modular, extensible and structured set of PHP libraries. Moreover, Hoa aims at being a bridge between industrial and research worlds."
+msgstr "Hoa est un ensemble de bibliothèques PHP <strong>modulaires</strong>, <strong>extensibles</strong> et <strong>structurées</strong>. De plus, Hoa souhaite être un pont entre le monde de la recherche et de l'industrie."
+
+msgid "Download"
+msgstr "Téléchargement"
+
+msgid "Latest news"
+msgstr "Dernières nouvelles"
+
+msgid "Activity"
+msgstr "Activité"
+
+msgid "commits per day of Central (2 last months)"
+msgstr "<em lang=\"en\">commits</em> par jour sur <code>Central</code> (2 derniers mois)"
+
+msgid "Who uses?"
+msgstr "Qui l'utilise ?"
+
+msgid "They support us!"
+msgstr "Ils nous soutiennent !"

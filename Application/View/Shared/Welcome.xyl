@@ -2,13 +2,10 @@
 
 <overlay xmlns="http://hoa-project.net/xyl/xylophone">
   <yield id="yContent">
-    <p class="tcenter">Hoa est un ensemble de bibliothèques PHP
-    <strong>modulaires</strong>, <strong>extensibles</strong> et
-    <strong>structurées</strong>. De plus, Hoa souhaite être un pont entre le
-    monde de la recherche et de l'industrie.</p>
+    <p class="tcenter"><_ with="Index">Hoa is a modular, extensible and structured set of PHP libraries. Moreover, Hoa aims at being a bridge between industrial and research worlds.</_></p>
 
     <div class="download-box">
-      <h1 id="Telechargement">Téléchargement</h1>
+      <h1><_ with="Index">Download</_></h1>
 
       <ul>
         <li><a href="@dl:file=Central/Hoa_central.next.zip">zip</a></li>
@@ -18,12 +15,12 @@
         <li><a href="@github">
               <img src="hoa://Application/Public/Image/Icon_github.svg"
                    alt="Github" width="30px" height="30px" /></a></li>
-        <li><a href="@s" title="Voir toutes les sources">…</a></li>
+        <li><a href="@s" title="See all sources">…</a></li>
       </ul>
     </div>
 
     <div class="column fleft w50">
-      <h2 id="Dernieres_nouvelles">Dernières nouvelles</h2>
+      <h2><_ with="Index">Latest news</_></h2>
 
       <ul>
         <li bind="?blog">
@@ -36,18 +33,17 @@
     </div>
 
     <div class="column fright w50">
-      <h2 id="Activite">Activité</h2>
+      <h2><_ with="Index">Activity</_></h2>
 
       <figure id="activity" style="max-width: 400px">
-        <figcaption><em lang="en">commits</em> par jours de <code>Central</code>
-        (2 derniers mois)</figcaption>
+        <figcaption><_ with="Index">commits per day of Central (2 last months)</_></figcaption>
       </figure>
     </div>
 
     <br style="clear: both" />
 
     <div class="tcenter">
-      <h2 id="Qui_l-utilise">Qui l'utilise ?</h2>
+      <h2><_ with="Index">Who uses?</_></h2>
 
       <p>
         <span class="image">
@@ -55,7 +51,7 @@
             <img src="hoa://Application/Public/Image/WhoUse/Verylastroom_little.png"
                  alt="VeryLastRoom" />
           </a>
-          <a href="@u:who=Verylastroom" class="notification"
+          <a href="@u:language=Fr&amp;who=Verylastroom" class="notification"
              title="Voir l'entrevue">…</a>
         </span>
         <span class="image">
@@ -69,7 +65,7 @@
             <img src="hoa://Application/Public/Image/WhoUse/SPW_little.png"
                  alt="SPW" />
           </a>
-          <a href="@u:who=Spw" class="notification"
+          <a href="@u:language=Fr&amp;who=Spw" class="notification"
              title="Voir l'entrevue">…</a>
         </span>
         <span class="image">
@@ -86,7 +82,7 @@
         </span>
       </p>
 
-      <h2 id="Ils_nous_soutiennent">Ils nous soutiennent !</h2>
+      <h2><_ with="Index">They support us!</_></h2>
 
       <p>
         <span class="image">

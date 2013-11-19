@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<overlay xmlns="http://hoa-project.net/xyl/xylophone">
+  <yield id="yContent">
+    <h1>Community</h1>
+
+    <p>Hoa is constituted of four co-community managers:</p>
+    <ul>
+      <li>Ivan Enderlin (hywan)</li>
+      <li>Raphaël Emourgeon (iraphael)</li>
+      <li>Matthieu Codron (circlecode)</li>
+      <li>Julien Clauzel (thehawk)</li>
+    </ul>
+    <p>As every other contributors of Hoa, you can contact them to the addresses
+    <code><em>firstname</em>.<em>lastname</em>@hoa-project.net</code> or
+    <code><em>pseudo</em>@hoa-project.net</code>. Firstnames and lastnames must
+    not have any accents.</p>
+
+    <h2 id="Mailing-lists">Mailing-lists</h2>
+
+    <p>Hoa uses mailing-lists to communicate. The list of public mailing-lists
+    are given below. The Web interface gives an <a href="@lists">exhaustive
+    list</a>.</p>
+    <ul>
+      <li><a href="@list-subscribe:list=development"><code>development</code></a>:
+      about the development of Hoa libraries,</li>
+      <li><a href="@list-subscribe:list=support"><code>support</code></a>: to
+      obtain help about Hoa libraries.</li>
+    </ul>
+
+    <h2 id="IRC">IRC</h2>
+
+    <p>You will meet up the majority of the community on the
+    <a href="irc://irc.freenode.net#hoaproject"><code>#hoaproject</code></a>
+    channel (hosted by <a href="http://freenode.net/">freenode</a>). The
+    contributors of Hoa are identified by a cloak
+    <code class="nowrap">@hoaproject/contributor/<em>pseudo</em></code>
+    (use the command <code>/whois <em>pseudo</em></code>). The co-community
+    managers have the flag <code>+V</code>. You can
+    <a href="http://webchat.freenode.net/?channels=hoaproject">talk to use
+    directly</a> with your browser.</p>
+
+    <h2 id="Forum">Forum</h2>
+
+    <p>A <a href="@forum">forum</a> is available for all questions. Attention,
+    it is in read-only since it is closed (replaced by the mailing-lists).</p>
+
+    <h2 id="Other_medium">Other mediums</h2>
+
+    <p>Other mediums are available, such as the <a href="@twitter">Twitter
+    account</a>. Finally, in the matrix, you can meet them easily in the
+    following cities: Paris, Lyon, Besançon for France, Lausanne, Genève,
+    Neuchâtel for Switzerland, and Namur for Belgium.</p>
+  </yield>
+</overlay>

@@ -1,0 +1,2 @@
+msgid "Sources: Git, Github, Composer, archives…"
+msgstr "Sources : Git, Github, Composer, archives…"

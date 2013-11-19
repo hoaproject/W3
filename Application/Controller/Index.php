@@ -11,7 +11,10 @@ namespace Application\Controller {
 
 class Index extends Generic {
 
-    public function DefaultAction ( )  {
+    public function DefaultAction ( $language )  {
+
+        $language = $this->computeLanguage($language, 'Index');
+        $tr = $this->getTranslation('Index');
 
         $blogApi = $this->router->unroute('b') . 'api/posts?limit=5';
 
@@ -19,8 +22,8 @@ class Index extends Generic {
             if(null !== $handle = json_decode($json, true))
                 $this->data->blog = $handle;
 
-        $this->data->title = 'Un ensemble de bibliothèques PHP';
-        $this->view->addOverlay('hoa://Application/View/Welcome.xyl');
+        $this->data->title = $tr->_('A set of PHP libraries');
+        $this->view->addOverlay('hoa://Application/View/Shared/Welcome.xyl');
         $this->render();
 
         return;
@@ -28,19 +31,23 @@ class Index extends Generic {
 
     public function SourceAction ( $language ) {
 
-        $language = ucfirst($language);
+        $language = $this->computeLanguage($language, 'Source');
+        $tr = $this->getTranslation('Source');
 
-        $this->data->title = 'Sources : Git, Github, Composer, archives…';
+        $this->data->title = $tr->_('Sources: Git, Github, Composer, archives…');
         $this->view->addOverlay('hoa://Application/View/' . $language . '/Source.xyl');
         $this->render();
 
         return;
     }
 
-    public function CommunityAction ( ) {
+    public function CommunityAction ( $language ) {
 
-        $this->data->title = 'Communauté : mailing-lists, IRC, IRL…';
-        $this->view->addOverlay('hoa://Application/View/Community.xyl');
+        $language = $this->computeLanguage($language, 'Community');
+        $tr = $this->getTranslation('Community');
+
+        $this->data->title = $tr->_('Community: mailing-lists, IRC, IRL…');
+        $this->view->addOverlay('hoa://Application/View/' . $language . '/Community.xyl');
         $this->render();
 
         return;
@@ -61,10 +68,13 @@ class Index extends Generic {
         return;
     }
 
-    public function AboutAction ( ) {
+    public function AboutAction ( $language ) {
 
-        $this->data->title = 'À propos';
-        $this->view->addOverlay('hoa://Application/View/About.xyl');
+        $language = $this->computeLanguage($language, 'About');
+        $tr = $this->getTranslation('About');
+
+        $this->data->title = $tr->_('About');
+        $this->view->addOverlay('hoa://Application/View/' . $language . '/About.xyl');
         $this->render();
 
         return;
@@ -93,7 +103,10 @@ class Index extends Generic {
         return;
     }
 
-    public function ErrorAction ( \Hoa\Core\Exception $exception ) {
+    public function ErrorAction ( $language, \Hoa\Core\Exception $exception ) {
+
+        $language = $this->computeLanguage($language, 'Error');
+        $tr = $this->getTranslation('Error');
 
         switch(get_class($exception)) {
 
@@ -109,8 +122,8 @@ class Index extends Generic {
                 );
         }
 
-        $this->data->title = 'Erreur 😢';
-        $this->view->addOverlay('hoa://Application/View/Error.xyl');
+        $this->data->title = $tr->_('Error');
+        $this->view->addOverlay('hoa://Application/View/Shared/Error.xyl');
         $this->render();
 
         return;
