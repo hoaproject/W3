@@ -31,7 +31,7 @@ $router
     ->get(
         'language',
         '/(?<language>\w{2}).*',
-        function ( $language ) use ( $router, $dispatcher, $_this ) {
+        function ( $language ) use ( $router, $dispatcher ) {
 
             $router->removeRule('language');
             \Application\Controller\Generic::getVisitor()->setLocale(
