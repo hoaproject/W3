@@ -2,7 +2,7 @@
 
 <overlay xmlns="http://hoa-project.net/xyl/xylophone">
   <yield id="yContent">
-    <h1>Manuels</h1>
+    <h1>Littérature</h1>
 
     <p>Hoa insiste beaucoup sur le fait qu'il faut <strong>comprendre les
     problèmes</strong> avant de <strong>comprendre les solutions</strong>. En
@@ -120,21 +120,21 @@
     <ul>
       <li><cite lang="en">A Constraint Solver for PHP Arrays</cite>, présenté à
       <a href="http://cstva2013.univ-fcomte.fr/">CSTVA 2013</a> (Luxembourg,
-      Luxembourg), <a href="@lr:article=Cstva13">voir l'article</a>,
-      <a href="@key.:keynote=Cstva13/EGB13.pdf">voir la présentation</a>,
-      <a href="@ev+:_able=Cstva13">voir le détail</a> ;</li>
+      Luxembourg), <a href="@lr:article=Cstva13">article</a>,
+      <a href="@key.:keynote=Cstva13/EGB13.pdf">présentation</a> et
+      <a href="@ev+:_able=Cstva13">détails</a> ;</li>
 
       <li><cite lang="en">Grammar-Based Testing using Realistic Domains in
       PHP</cite>, présenté à
       <a href="https://sites.google.com/site/amost2012/">A-MOST 2012</a>
-      (Montréal, Canada), <a href="@lr:article=Amost12">article</a> et
-      <a href="@key.:keynote=Amost12/EDGB12.pdf">présentation</a>,
-      <a href="@ev+:_able=Amost12">voir le détail</a> ;</li>
+      (Montréal, Canada), <a href="@lr:article=Amost12">article</a>,
+      <a href="@key.:keynote=Amost12/EDGB12.pdf">présentation</a> et
+      <a href="@ev+:_able=Amost12">détails</a> ;</li>
 
       <li><cite lang="en">Praspel: A Specification Language for Contract-Driven
       Testing in PHP</cite>, présenté à <a href="http://ictss2011.lri.fr/">ICTSS
       2011</a> (Paris, France), <a href="@lr:article=Ictss11">article</a> et
-      <a href="@key.:keynote=Ictss11/EDGB11.pdf">présentation</a> ;</li>
+      <a href="@key.:keynote=Ictss11/EDGB11.pdf">présentation</a>.</li>
     </ul>
 
     <h2 id="Presentations">Présentations</h2>
