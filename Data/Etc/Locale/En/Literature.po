@@ -1,0 +1,5 @@
+msgid "Literature: documentation, manual, tutorial…"
+msgstr "Literature: documentation, manual, tutorial…"
+
+msgid ", hack book"
+msgstr ", hack book"

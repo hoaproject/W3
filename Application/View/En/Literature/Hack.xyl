@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xyl-use href="hoa://Application/External/Literature/Definitions.xyl"?>
+
+<overlay xmlns="http://hoa-project.net/xyl/xylophone">
+  <yield id="yContent">
+
+    <h1>Hack book<title_break /><code bind="?chapter" /></h1>
+
+    <ul class="inline fright">
+      <li><a href="@dl:file=Library/(?chapter)/" class="plain">
+            <img src="hoa://Application/Public/Image/Icon_package_black.svg"
+                 alt="Archives" width="30px" height="30px" /></a></li>
+      <li><a href="@git:repository=Library/(?chapter)" class="plain">
+            <img src="hoa://Application/Public/Image/Icon_git_black.svg"
+                 alt="Git" width="30px" height="30px" /></a></li>
+      <li><a href="@github:repository=(?chapter)" class="plain">
+            <img src="hoa://Application/Public/Image/Icon_github_black.svg"
+                 alt="Github" width="30px" height="30px" /></a></li>
+    </ul>
+
+    <yield id="chapter" />
+
+    <p class="mtm">
+    <small>An error or a suggestion about the documentation? <a
+    href="@github:repository=(?chapter)">Contributions</a> are
+    welcome!</small></p>
+
+    <script src="hoa://Application/Public/Javascript/Hoa.Graph.js"></script>
+    <script src="hoa://Application/Public/Javascript/Hoa.Graph.style.js"></script>
+  </yield>
+</overlay>

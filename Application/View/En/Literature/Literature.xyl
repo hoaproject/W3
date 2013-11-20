@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<overlay xmlns="http://hoa-project.net/xyl/xylophone">
+  <yield id="yContent">
+    <h1>Literature</h1>
+
+    <p>Hoa insists on that we need to <strong>understand problems</strong>
+    before to <strong>understand solutions</strong>. In fact, one of the goals
+    of Hoa is to <strong>teach</strong> their users, because learning without
+    understanding has no meaning and the experience shows that a comprehension
+    of a problem paired with generic solutions provides better results. That is
+    why Hoa proposes different manuals.</p>
+
+    <h2 id="Mini-tutorial">Mini-tutorial</h2>
+
+    <p>The mini-turorial targets <strong>impatient</strong> people who would
+    like to get an overview of Hoa in few minutes, notably the
+    <strong>framework</strong> aspect: <a href="@lt">read the mini-tutorial</a>.
+    This mini-tutorial summarizes pratical examples of the learning manual.</p>
+
+    <h2 id="Learning_manual">Learning manual</h2>
+
+    <p>The learning manual is dedicated to the <strong>learning</strong> of Hoa,
+    step by step, through a <strong>common example</strong>, as well as numerous
+    little <strong>examples</strong>, <strong>schemas</strong>, etc. Libraries
+    are explained in a teaching order and not necessary in details. The
+    objective is to have a quick start, to get <strong>concrete</strong>
+    results.  This manual aims also at giving an overview of the most important
+    libraries of Hoa, in order to go into the hack book in depth.</p>
+    <tableofcontents>
+      <a href="@ll:chapter=Introduction">Introduction</a>
+      <a href="@ll:chapter=Install">Installation</a>
+      <a href="@ll:chapter=Core">Explore the code</a>
+      <a href="@ll:chapter=Embryo">Skeleton of an application</a>
+      <a href="@ll:chapter=Routerdispatcher">Router + Dispatcher = ♥</a>
+      <a href="@ll:chapter=Model">Model of data</a>
+      <a href="@ll:chapter=Xyl">XYL</a>
+      <a href="@ll:chapter=Form">Form</a>
+      <a href="@ll:chapter=Fragment_async">Fragment and asynchronous</a>
+    </tableofcontents>
+    <p>Appendices:</p>
+    <tableofcontents>
+      <a href="@ll:chapter=Appendix_http_servers">Configuration of HTTP
+      servers</a>
+    </tableofcontents>
+
+    <h2 id="Hack_book">Hack book</h2>
+
+    <p>The hack book contains (very) <strong>detailed</strong> explanations
+    about all the libraries of Hoa. Chapters are unordered. No library will have
+    a secret for you and you will be able to <strong>hack</strong> them!</p>
+    <ul class="columns" data-columns="4">
+      <li><code>Acl</code> ;</li>
+      <li><a href="@lh:chapter=Bench"><code>Bench</code></a> ;</li>
+      <li><code>Cache</code> ;</li>
+      <li><a href="@lh:chapter=Compiler"><code>Compiler</code></a> ;</li>
+      <li><a href="@lh:chapter=Console"><code>Console</code></a> ;</li>
+      <li><code>Core</code> ;</li>
+      <li><code>Database</code> ;</li>
+      <li><code>Dispatcher</code> ;</li>
+      <li><a href="@lh:chapter=Dns"><code>Dns</code></a> ;</li>
+      <li><a href="@lh:chapter=Eventsource"><code>Eventsource</code></a> ;</li>
+      <li><a href="@lh:chapter=Fastcgi"><code>Fastcgi</code></a> ;</li>
+      <li><code>File</code> ;</li>
+      <li><code>Filter</code> ;</li>
+      <li><code>Graph</code> ;</li>
+      <li><code>Http</code> ;</li>
+      <li><code>Iterator</code> ;</li>
+      <li><code>Json</code> ;</li>
+      <li><code>Locale</code> ;</li>
+      <li><code>Log</code> ;</li>
+      <li><code>Mail</code> ;</li>
+      <li><code>Math</code> ;</li>
+      <li><code>Memory</code> ;</li>
+      <li><a href="@lh:chapter=Mime"><code>Mime</code></a> ;</li>
+      <li><code>Model</code> ;</li>
+      <li><code>Notification</code> ;</li>
+      <li><code>Praspel</code> ;</li>
+      <li><code>Prototype</code> ;</li>
+      <li><code>Realdom</code> ;</li>
+      <li><code>Regex</code> ;</li>
+      <li><a href="@lh:chapter=Registry"><code>Registry</code></a> ;</li>
+      <li><a href="@lh:chapter=Router"><code>Router</code></a> ;</li>
+      <li><code>Ruler</code> ;</li>
+      <li><code>Serialize</code> ;</li>
+      <li><code>Session</code> ;</li>
+      <li><code>Socket</code> ;</li>
+      <li><code>Stream</code> ;</li>
+      <li><a href="@lh:chapter=String"><code>String</code></a> ;</li>
+      <li><code>Stringbuffer</code> ;</li>
+      <li><code>Translate</code> ;</li>
+      <li><code>Tree</code> ;</li>
+      <li><a href="@lh:chapter=View"><code>View</code></a> ;</li>
+      <li><code>Visitor</code> ;</li>
+      <li><a href="@lh:chapter=Websocket"><code>Websocket</code></a> ;</li>
+      <li><a href="@lh:chapter=Worker"><code>Worker</code></a> ;</li>
+      <li><code>Xml</code> ;</li>
+      <li><code>XmlRpc</code> ;</li>
+      <li><code>Xyl</code> ;</li>
+      <li><a href="@lh:chapter=Zombie"><code>Zombie</code></a> ;</li>
+      <li><a href="@lh:chapter= "><code> </code></a>.</li>
+    </ul>
+    <p>To generate the documentation by yourself, please, take a look at
+    <a href="@github:repository=Hoathis-Documentation">the
+    <code>Hoathis\Documentation</code> library</a>.</p>
+
+    <h2 id="API_documentation">API documentation</h2>
+
+    <p>This documentation is <strong>low-level</strong>, <em>i.e.</em> at the
+    code level. It allows to explore the code, to follow methods or classes
+    traces, etc.</p>
+
+    <h2 id="Research">Research</h2>
+
+    <p>Published articles and presentations:</p>
+    <ul>
+      <li><cite>A Constraint Solver for PHP Arrays</cite>, presented at
+      <a href="http://cstva2013.univ-fcomte.fr/">CSTVA 2013</a> (Luxembourg,
+      Luxembourg), <a href="@lr:article=Cstva13">article</a>,
+      <a href="@key.:keynote=Cstva13/EGB13.pdf">presentation</a> and
+      <a href="@ev+:_able=Cstva13">details</a>,</li>
+
+      <li><cite>Grammar-Based Testing using Realistic Domains in PHP</cite>,
+      presented at
+      <a href="https://sites.google.com/site/amost2012/">A-MOST 2012</a>
+      (Montréal, Canada), <a href="@lr:article=Amost12">article</a>,
+      <a href="@key.:keynote=Amost12/EDGB12.pdf">presentation</a> and
+      <a href="@ev+:_able=Amost12">details</a>,</li>
+
+      <li><cite>Praspel: A Specification Language for Contract-Driven Testing in
+      PHP</cite>, presented at <a href="http://ictss2011.lri.fr/">ICTSS
+      2011</a> (Paris, France), <a href="@lr:article=Ictss11">article</a> and
+      <a href="@key.:keynote=Ictss11/EDGB11.pdf">presentation</a>.</li>
+    </ul>
+
+    <h2 id="Presentations">Presentations</h2>
+
+    <p>Industrial presentations:</p>
+    <ul>
+      <li><a href="@key.:keynote=ForumPHP12/"><cite lang="fr">Anatomie du
+      test</cite></a>, presented at
+      <a href="http://afup.org/pages/forumphp2012/">ForumPHP 2012</a> (Paris,
+      France),</li>
+      <li><a href="@key:shell=Embedder&amp;keynote=PHPTour11/PHPTour11"><cite lang="fr">Hoa,
+      un ensemble de bibliothèques</cite></a>, presented at
+      <a href="http://afup.org/pages/phptourlille2011/">PHPTour 2011</a> (Lille,
+      France).</li>
+    </ul>
+  </yield>
+</overlay>

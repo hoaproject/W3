@@ -11,10 +11,13 @@ namespace Application\Controller {
 
 class Literature extends Generic {
 
-    public function DefaultAction ( )  {
+    public function DefaultAction ( $language )  {
 
-        $this->data->title = 'Littérature : documentation, manuel, tutoriel…';
-        $this->view->addOverlay('hoa://Application/View/Literature/Literature.xyl');
+        $language = $this->computeLanguage($language, 'Literature');
+        $tr = $this->getTranslation('Literature');
+
+        $this->data->title = $tr->_('Literature: documentation, manual, tutorial…');
+        $this->view->addOverlay('hoa://Application/View/' . $language . '/Literature/Literature.xyl');
         $this->render();
 
         return;
@@ -41,13 +44,16 @@ class Literature extends Generic {
         return;
     }
 
-    public function HackAction ( $chapter ) {
+    public function HackAction ( $language, $chapter ) {
+
+        $language = $this->computeLanguage($language, 'Literature');
+        $tr = $this->getTranslation('Literature');
 
         $chapter             = ucfirst($chapter);
-        $this->data->title   = 'Hoa\\' . $chapter . ', hack book';
+        $this->data->title   = 'Hoa\\' . $chapter . $tr->_(', hack book');
         $this->data->chapter = $chapter;
-        $this->view->addOverlay('hoa://Application/View/Literature/Hack.xyl');
-        $this->view->addOverlay('hoa://Library/' . $chapter . '/Documentation/Fr/Index.xyl');
+        $this->view->addOverlay('hoa://Application/View/' . $language . '/Literature/Hack.xyl');
+        $this->view->addOverlay('hoa://Library/' . $chapter . '/Documentation/' . $language . '/Index.xyl');
         $this->render();
 
         return;
