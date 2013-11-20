@@ -13,7 +13,20 @@
     </header>
 
     <article id="content">
-      <p>NO LANGUAGE!</p>
+      <p>The choosen language is not supported. Please, pick one of the
+         following:</p>
+      <div class="tcenter">
+        <a href="@g:language=En&amp;all=" class="plain">
+          <img src="hoa://Application/Public/Image/Flag/En.svg"
+               height="80px" alt="english" />
+        </a>
+        <a href="@g:language=Fr&amp;all=" class="plain">
+          <img src="hoa://Application/Public/Image/Flag/Fr.svg"
+               height="80px" alt="français" />
+        </a>
+      </div>
+      <ul>
+      </ul>
     </article>
 
     <footer>
