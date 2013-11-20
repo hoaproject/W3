@@ -126,7 +126,7 @@ class Index extends Generic {
         $this->view->addOverlay('hoa://Application/View/Shared/Error.xyl');
         $this->render();
 
-        return;
+        exit;
     }
 }
 

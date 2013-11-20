@@ -71,23 +71,34 @@ class Generic extends \Hoa\Dispatcher\Kit {
         return static::$_visitor;
     }
 
+    public static function isLanguageAllowed ( $language ) {
+
+        static $_languages = array('en', 'fr');
+
+        return true === in_array($language, $_languages);
+    }
+
     protected function computeLanguage ( $language, $translation = null ) {
 
-        if(   'en' !== $language
-           && 'fr' !== $language) {
+        if(false === static::isLanguageAllowed($language)) {
 
-            $this->addTranslation('Error', null, 'en');
-            $tr = $this->getTranslation('Error');
+            $view = new \Hoa\Xyl(
+                new \Hoa\File\Read('hoa://Application/View/Shared/ChooseLanguage.xyl'),
+                $this->view->getOutputStream(),
+                new \Hoa\Xyl\Interpreter\Html(),
+                $this->router
+            );
+            $this->view = $view;
+            $this->data = $view->getData();
 
+            $this->addTranslation('Main', '__main__', 'en');
             $this->view->getOutputStream()->sendStatus(
                 \Hoa\Http\Response::STATUS_NOT_FOUND
             );
-
-            $this->data->title = $tr->_('Error');
-            $this->view->addOverlay('hoa://Application/View/Shared/Error.xyl');
+            $this->data->title = 'Choose your language';
             $this->render();
 
-            return;
+            exit; // yup, it sucks.
         }
 
         if(null !== $translation)

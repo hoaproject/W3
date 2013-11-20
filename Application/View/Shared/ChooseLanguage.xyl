@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xyl-stylesheet href="hoa://Library/Xyl/Css/Core.css" position="10"?>
+<?xyl-stylesheet href="hoa://Application/Public/Css/UI.css" position="last()"?>
+<?xyl-meta name="viewport" content="initial-scale=1.0"?>
+
+<document xmlns="http://hoa-project.net/xyl/xylophone">
+  <title><value bind="?title" /> – Hoa</title>
+
+  <div class="body">
+
+    <header>
+      <img src="hoa://Application/Public/Image/Hoa.png" alt="Hoa" />
+    </header>
+
+    <article id="content">
+      <p>NO LANGUAGE!</p>
+    </article>
+
+    <footer>
+      <p><_>Hoa is the creation of Ivan Enderlin, all rights reserved.</_></p>
+    </footer>
+
+  </div>
+</document>
