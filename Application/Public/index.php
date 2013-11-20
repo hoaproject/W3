@@ -233,8 +233,6 @@ try {
 }
 catch ( \Hoa\Core\Exception $e ) {
 
-    var_dump($e->raise(true));
-
     $router->route('/En/Error.html');
     $rule                                                = &$router->getTheRule();
     $rule[\Hoa\Router\Http::RULE_VARIABLES]['exception'] = $e;
