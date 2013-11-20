@@ -4,6 +4,9 @@ require_once dirname(dirname(__DIR__)) .
              DIRECTORY_SEPARATOR . 'Data' .
              DIRECTORY_SEPARATOR . 'Core.link.php';
 
+\Hoa\Core::enableErrorHandler();
+\Hoa\Core::enableExceptionHandler();
+
 from('Hoa')
 -> import('Dispatcher.Basic')
 -> import('Router.Http')
