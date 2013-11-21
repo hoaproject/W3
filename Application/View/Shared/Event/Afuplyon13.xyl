@@ -8,13 +8,8 @@
     <p><img class="fright"
             width="200px"
             src="hoa://Application/Public/Image/Logo/AFUPLyon.png"
-            alt="Logo de l'AFUP Lyon" />
-    L'<a href="http://lyon.afup.org/">AFUP Lyon</a> est l'antenne lyonnaise de
-    l'<a href="http://afup.org/">AFUP</a>, l'association française des
-    utilisateurs de PHP. Afin de <strong>promouvoir</strong> PHP en France, ils
-    organisent régulièrement des conférences sur un projet ou un sujet
-    particulier. Ivan Enderlin et Julien Bianchi étaient invités pour présenter
-    Hoa.</p>
+            alt="AFUP Lyon" />
+    <_ with="Event">Introduction of AFUP Lyon 2013.</_></p>
 
     <div id="map" style="height: 500px" class="cboth"></div>
     <script src="hoa://Application/Public/Javascript/Leaflet.js"></script>

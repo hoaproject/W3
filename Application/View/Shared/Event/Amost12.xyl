@@ -8,16 +8,7 @@
     <p><img class="fright"
             src="hoa://Application/Public/Image/Logo/ICST.png"
             alt="Logo de ICST" />
-    La conférence <a href="http://icst2012.soccerlab.polymtl.ca/">ICST</a>
-    (<em lang="en">International Conference on Software Testing, Verification
-    and Validation</em>) est une conférence <strong>internationale</strong> sur
-    la qualité logiciel, principalement sur la <strong>vérification</strong> et
-    la <strong>validation</strong>. Cette conférence propose plusieurs
-    <em lang="en">workshops</em> dont
-    <a href="https://sites.google.com/site/amost2012/">AMOST</a>
-    (<em lang="en">Advances in Model Based Testing</em>) auquel s'est rendu
-    <a href="@c">Ivan Enderlin</a> pour présenter les derniers travaux de
-    recherche présents dans Hoa.</p>
+    <_ with="Event">Introduction of AMOST 2012.</_></p>
 
     <div id="map" style="height: 500px" class="cboth"></div>
     <script src="hoa://Application/Public/Javascript/Leaflet.js"></script>
@@ -46,10 +37,10 @@
        .addTo(map);
     </script>
 
-    <h2 id="Grammar-Based_Testing_using_Realistic_Domains_in_PHP"><em lang="en">Grammar-Based
-    Testing using Realistic Domains in PHP</em></h2>
+    <h2 id="Grammar-Based_Testing_using_Realistic_Domains_in_PHP">Grammar-Based
+    Testing using Realistic Domains in PHP</h2>
 
-    <p><em lang="en">This paper presents an integration of grammar-based testing
+    <p>This paper presents an integration of grammar-based testing
     in a framework for contract-based testing in PHP. It relies on the notion of
     realistic domains, that make it possible to assign domains to data, by means
     of contract assertions written inside the source code of a PHP application.
@@ -60,12 +51,12 @@
     the possibility to generate and validate complex textual data specified by a
     grammar written in a dedicated grammar description language. This approach
     is tool-supported and experimented on the validation of web
-    applications.</em></p>
+    applications.</p>
 
-    <h3>Article et présentation</h3>
+    <h3>Article and presentation</h3>
 
-    <p>L'<a href="@lr:article=Amost12">article</a> et la
-    <a href="@key.:keynote=Amost12/EDGB12.pdf">présentation</a> sont disponibles
-    au format PDF.</p>
+    <p>The <a href="@lr:article=Amost12">article</a> and the
+    <a href="@key.:keynote=Amost12/EDGB12.pdf">presentation</a> are available in
+    PDF format.</p>
   </yield>
 </overlay>

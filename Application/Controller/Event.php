@@ -11,76 +11,63 @@ namespace Application\Controller {
 
 class Event extends Generic {
 
-    public function DefaultAction ( )  {
+    public function DefaultAction ( $language )  {
 
-        $this->data->title = 'Événements';
-        $this->view->addOverlay('hoa://Application/View/Event/Event.xyl');
+        $language = $this->computeLanguage($language, 'Event');
+        $tr = $this->getTranslation('Event');
+
+        $this->data->title = $tr->_('Events');
+        $this->view->addOverlay('hoa://Application/View/Shared/Event/Event.xyl');
         $this->render();
 
         return;
     }
 
-    public function Afuplyon13Action ( ) {
+    protected function showEvent ( $language, $title, $filename ) {
 
-        $this->data->title = 'AFUP Lyon 2013';
-        $this->view->addOverlay('hoa://Application/View/Event/Afuplyon13.xyl');
+        $language = $this->computeLanguage($language, 'Event');
+        $tr = $this->getTranslation('Event');
+
+        $this->data->title = $tr->_($title);
+        $this->view->addOverlay('hoa://Application/View/Shared/Event/' . $filename . '.xyl');
         $this->render();
 
         return;
     }
 
-    public function Jdev13Action ( ) {
+    public function Afuplyon13Action ( $language ) {
 
-        $this->data->title = 'JDév\' 2013';
-        $this->view->addOverlay('hoa://Application/View/Event/Jdev13.xyl');
-        $this->render();
-
-        return;
+        return $this->showEvent($language, 'AFUP Lyon 2013', 'Afuplyon13');
     }
 
-    public function Hoaapex13Action ( ) {
+    public function Jdev13Action ( $language ) {
 
-        $this->data->title = 'Apex 2013';
-        $this->view->addOverlay('hoa://Application/View/Event/Hoaapex13.xyl');
-        $this->render();
-
-        return;
+        return $this->showEvent($language, 'JDév\' 2013', 'Jdev13');
     }
 
-    public function Cstva13Action ( ) {
+    public function Hoaapex13Action ( $language ) {
 
-        $this->data->title = 'CSTVA 2013';
-        $this->view->addOverlay('hoa://Application/View/Event/Cstva13.xyl');
-        $this->render();
-
-        return;
+        return $this->showEvent($language, 'Hoa Apex 2013', 'Hoaapex13');
     }
 
-    public function Forumphp12Action ( ) {
+    public function Cstva13Action ( $language ) {
 
-        $this->data->title = 'ForumPHP 2012';
-        $this->view->addOverlay('hoa://Application/View/Event/Forumphp12.xyl');
-        $this->render();
-
-        return;
+        return $this->showEvent($language, 'CSTVA 2013', 'Cstva13');
     }
 
-    public function Amost12Action ( ) {
+    public function Forumphp12Action ( $language ) {
 
-        $this->data->title = 'AMOST 2012';
-        $this->view->addOverlay('hoa://Application/View/Event/Amost12.xyl');
-        $this->render();
-
-        return;
+        return $this->showEvent($language, 'ForumPHP 2012', 'Forumphp12');
     }
 
-    public function Phptour11Action ( ) {
+    public function Amost12Action ( $language ) {
 
-        $this->data->title = 'PHPTour 2011';
-        $this->view->addOverlay('hoa://Application/View/Event/Phptour11.xyl');
-        $this->render();
+        return $this->showEvent($language, 'AMOST 2012', 'Amost12');
+    }
 
-        return;
+    public function Phptour11Action ( $language ) {
+
+        return $this->showEvent($language, 'PHPTour 2011', 'Phptour11');
     }
 }
 

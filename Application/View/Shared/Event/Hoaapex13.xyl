@@ -5,10 +5,7 @@
   <yield id="yContent">
     <h1>Apex 2013</h1>
 
-    <p>Hoa Apex est un événement dédié à la <strong>communauté</strong> de Hoa,
-    où se retrouvent tous les contributeurs, les utilisateurs et les
-    développeurs principaux. C'est un moment unique pour partager des idées et
-    des projets ensembles.</p>
+    <p><_ with="Event">Introduction of Hoa Apex 2013.</_></p>
 
     <h2 id="Table_des_matieres">Table des matières</h2>
 

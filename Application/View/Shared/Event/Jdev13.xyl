@@ -8,16 +8,7 @@
     <p><img class="fright"
             src="hoa://Application/Public/Image/Logo/Jdev.png"
             alt="Logo des JDév'" />
-    L'événement <a href="http://devlog.cnrs.fr/jdev2013">JDév'</a>
-    (<em>Journées nationales du Développement Logiciel</em>) est une Action
-    Nationale de Formation inter-établissements, soutenue par la
-    <a href="http://mrct.cnrs.fr/">Mission pour l'interdisciplinité du CNRS</a>,
-    l'<a href="http://www.inria.fr/">INRIA</a> et
-    l'<a href="http://www.inra.fr/">INRA</a>. L'objectif est de rassembler les
-    acteurs du développement de logiciels dans l'Enseignement Supérieur et la
-    Recherche autour de huit thématiques, toutes concernant la qualité
-    logiciel. <a href="@c">Ivan Enderlin</a> était invité pour présenter les
-    meilleurs pratiques du tests unitaires en PHP.</p>
+    <_ with="Event">Introduction of JDév' 2013.</_></p>
 
     <div id="map" style="height: 500px" class="cboth"></div>
     <script src="hoa://Application/Public/Javascript/Leaflet.js"></script>

@@ -3,7 +3,7 @@
 
 <overlay xmlns="http://hoa-project.net/xyl/xylophone">
   <yield id="yContent">
-    <h1>Événements</h1>
+    <h1><_ with="Event">Events</_></h1>
 
     <div id="map" style="height: 500px"></div>
     <script src="hoa://Application/Public/Javascript/Leaflet.js"></script>
@@ -60,33 +60,33 @@
        .addTo(map);
     </script>
 
-    <h2 id="Organiser_par_Hoa">Organisés par Hoa
+    <h2><_ with="Event">Organized by Hoa</_>
     <img src="hoa://Application/Public/Map/Marker.svg" height="25" /></h2>
 
     <ul>
       <li><time datetime="2013-03">mars 2013</time>,
-          <a href="@ev+:_able=Hoaapex13">Hoa Apex</a>.</li>
+          <a href="@ev+:_able=Hoaapex13">Hoa Apex</a></li>
     </ul>
 
-    <h2 id="Ou_Hoa_etait_invite">Où Hoa était invité
+    <h2><_ with="Event">Where Hoa was invited</_>
     <img src="hoa://Application/Public/Map/Marker.svg" height="25" /></h2>
 
     <ul>
-      <li>??? (<a href="@c">nous contacter pour nous inviter</a>) ;</li>
+      <li>??? (<a href="@c"><_ with="Event">invite us</_></a>)</li>
       <li><time datetime="2013-10">octobre 2013</time>,
-          <a href="@ev+:_able=Afuplyon13">AFUP Lyon</a> ;</li>
+          <a href="@ev+:_able=Afuplyon13">AFUP Lyon</a></li>
       <li><time datetime="2013-09">septembre 2013</time>,
-          <a href="@ev+:_able=Jdev13">JDév'</a> ;</li>
+          <a href="@ev+:_able=Jdev13">JDév'</a></li>
       <li><time datetime="2013-03">mars 2013</time>,
           <a href="@ev+:_able=Cstva13">CSTVA</a>
-          <a href="@ev+:_able=Hoaapex13">Hoa Apex</a> ;</li>
+          <a href="@ev+:_able=Hoaapex13">Hoa Apex</a></li>
       <li><time datetime="2012-06">juin 2012</time>,
-          <a href="@ev+:_able=Forumphp12">ForumPHP</a> ;</li>
+          <a href="@ev+:_able=Forumphp12">ForumPHP</a></li>
       <li><time datetime="2012-04">avril 2012</time>,
-          <a href="@ev+:_able=Amost12">AMOST</a> ;</li>
-      <li><time datetime="2011-11">novembre 2011</time>, ICTSS ;</li>
+          <a href="@ev+:_able=Amost12">AMOST</a></li>
+      <li><time datetime="2011-11">novembre 2011</time>, ICTSS</li>
       <li><time datetime="2011-11">novembre 2011</time>,
-          <a href="@ev+:_able=Phptour11">PHPTour</a>.</li>
+          <a href="@ev+:_able=Phptour11">PHPTour</a></li>
     </ul>
   </yield>
 </overlay>

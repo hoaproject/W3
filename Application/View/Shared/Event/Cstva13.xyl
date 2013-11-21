@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xyl-stylesheet href="hoa://Application/Public/Css/Leaflet.css"?>
+
+<overlay xmlns="http://hoa-project.net/xyl/xylophone">
+  <yield id="yContent">
+    <h1>CSTVA 2013</h1>
+
+    <p><img class="fright"
+            src="hoa://Application/Public/Image/Logo/ICST.png"
+            alt="Logo de ICST" />
+    <_ with="Event">Introduction of CSTVA 2013.</_></p>
+
+    <div id="map" style="height: 500px" class="cboth"></div>
+    <script src="hoa://Application/Public/Javascript/Leaflet.js"></script>
+    <script>
+      var map = L.map('map').setView([49.610148755062, 6.1367606521795], 13);
+
+      L.tileLayer('<value link="hoa://Application/Public/Map/Tiles/{z}/{x}/{y}.png" />', {
+        minZoom: 1,
+        maxZoom: 7
+      }).addTo(map);
+
+      L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+        attribution: '© <a href="http://osm.org/copyright">OpenStreetMap</a> contributors',
+        minZoom: 7
+      }).addTo(map);
+
+      var icon = L.icon({
+          iconUrl: '<value link="hoa://Application/Public/Map/Marker.svg" />',
+          iconSize: [28, 45],
+          iconAnchor: [14, 44],
+          popupAnchor: [2, -45]
+      });
+
+      L.marker([49.610148755062, 6.1367606521795], {icon: icon})
+       .bindPopup('<p class="tcenter">ici</p>')
+       .addTo(map);
+    </script>
+
+    <h2 id="A_Constraint_Solver_for_PHP_Arrays">A Constraint Solver for PHP
+    Arrays</h2>
+
+    <p>In previous works, we have proposed Praspel, a framework for
+    contract-based testing in PHP. Among others, it includes a specification
+    language and a unit test generator which automatically generates test data
+    from formal preconditions. The generator sometimes rejects data, when they
+    do not satisfy parts of the preconditions. In many cases, generation with
+    rejection is not efficient enough. Thus we investigate practical contexts
+    where more efficient generation algorithms can be designed and we extend
+    Praspel with their implementation.</p>
+    <p>After strings, that we have already considered, the most frequent data
+    type in PHP is arrays. They cover most of the needs for collections, because
+    they can store key-value pairs of any kind, they do not have a specific
+    length or depth, and they are efficiently implemented. In this paper, we
+    report on a study to know what are the most popular constraints on PHP
+    arrays. Then we formalize these constraints and we present an implementation
+    in PHP of a constraint solver for these constraints. In this context, the
+    constraint-based approach removes all the rejections.</p>
+
+    <h3>Article and presentation</h3>
+
+    <p>The <a href="@lr:article=Cstva13">article</a> and the
+    <a href="@key.:keynote=Cstva13/EGB13.pdf">presentation</a> are available in
+    PDF format.</p>
+  </yield>
+</overlay>

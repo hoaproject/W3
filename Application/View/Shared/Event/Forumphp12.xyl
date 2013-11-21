@@ -8,12 +8,7 @@
     <p><img class="fright"
             src="http://afup.org//templates/forumphp2012/img/logo.png"
             alt="Logo du ForumPHP" />
-    Le <a href="http://afup.org/pages/forumphp2012/">ForumPHP</a> est un
-    événement <strong>majeur</strong> de la communauté PHP francophone depuis
-    plus de 10 ans. Le <time datetime="2012-06">5 et 6 juin 2012</time>, à la
-    Cité Universitaire de Paris, le forum a gentiment accueilli
-    <a href="@c">Ivan Enderlin</a> et <a href="http://mageekbox.net">Frédéric
-    Hardy</a> pour une conférence en duo.</p>
+    <_ with="Event">Introduction of ForumPHP 2012.</_></p>
 
     <div id="map" style="height: 500px" class="cboth"></div>
     <script src="hoa://Application/Public/Javascript/Leaflet.js"></script>
@@ -42,7 +37,7 @@
        .addTo(map);
     </script>
 
-    <h2 id="Anatomie_du_test"><cite>Anatomie du test</cite></h2>
+    <h2 id="Anatomie_du_test">Anatomie du test</h2>
 
     <p>Le <strong>test</strong>, qu'il soit unitaire ou fonctionnel, est à la
     mode dans le monde du développement logiciel, suite entre autre à la mise en
