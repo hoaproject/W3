@@ -80,13 +80,6 @@ $router
                     $defaultVariables
                 )
                 ->get(
-                    'lp',
-                    '/(?<language>\w{2})/Literature/Popcode/(?<code>\w+)\.html',
-                    'literature',
-                    'popcode',
-                    $defaultVariables
-                )
-                ->get(
                     'lc',
                     '/(?<language>\w{2})/Literature/Contributor/Guide\.html',
                     'literature',

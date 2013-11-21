@@ -1,0 +1,5 @@
+msgid "Awecode, when the code meets the video"
+msgstr "Awecode, when the code meets the video"
+
+msgid "Awecode about %s"
+msgstr "Awecode about %s"

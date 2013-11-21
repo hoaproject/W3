@@ -15,7 +15,10 @@ namespace Application\Controller {
 
 class Awecode extends Generic {
 
-    public function DefaultAction ( ) {
+    public function DefaultAction ( $language ) {
+
+        $language = $this->computeLanguage($language, 'Awecode');
+        $tr = $this->getTranslation('Awecode');
 
         $this->openDatabase();
         $awecodes = \Application\Model\Awecode::getAll();
@@ -23,33 +26,27 @@ class Awecode extends Generic {
         foreach($awecodes as &$awecode)
             $awecode['id'] = ucfirst($awecode['id']);
 
-        $this->data->title    = 'Awecode, quand le code rencontre la vidéo';
+        $this->data->title    = $tr->_('Awecode, when the code meets the video');
         $this->data->awecodes = $awecodes;
-        $this->view->addOverlay('hoa://Application/View/Awecode/List.xyl');
+        $this->view->addOverlay('hoa://Application/View/Shared/Awecode/List.xyl');
         $this->render();
 
         return;
     }
 
-    public function PraspelAction ( )  {
+    public function AwecodeAction ( $language, $id )  {
 
-        $this->view->addOverlay('hoa://Application/View/Awecode/Praspel.xyl');
-        $this->render();
-
-        return;
-    }
-
-    public function AwecodeAction ( $id )  {
+        $language = $this->computeLanguage($language, 'Awecode');
+        $tr = $this->getTranslation('Awecode');
 
         $this->openDatabase();
         $awecode = new \Application\Model\Awecode();
         $awecode->id = $id;
         $awecode->open();
 
-        $this->data->title   = 'Awecode à propos de ' .
-                               strip_tags($awecode->title);
+        $this->data->title   = $tr->_('Awecode about %s', strip_tags($awecode->title));
         $this->data->awecode = $awecode;
-        $this->view->addOverlay('hoa://Application/View/Awecode/Awecode.xyl');
+        $this->view->addOverlay('hoa://Application/View/Shared/Awecode/Awecode.xyl');
         $this->render();
 
         return;
