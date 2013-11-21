@@ -33,7 +33,6 @@
       });
 
       L.marker([45.502015951149, -73.57589220671], {icon: icon})
-       .bindPopup('<p class="tcenter">ici</p>')
        .addTo(map);
     </script>
 
