@@ -47,8 +47,9 @@ class Awecode extends Generic {
         $awecode->id = $id;
         $awecode->open();
 
-        $this->data->title   = $tr->_('Awecode about %s', strip_tags($awecode->title));
-        $this->data->awecode = $awecode;
+        $this->data->title                = $tr->_('Awecode about %s', strip_tags($awecode->title));
+        $this->data->awecode              = $awecode;
+        $this->data->awecode[0]->language = $language;
         $this->view->addOverlay('hoa://Application/View/Shared/Awecode/Awecode.xyl');
         $this->render();
 

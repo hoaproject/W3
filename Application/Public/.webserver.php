@@ -20,9 +20,18 @@ $router
         if(!empty($uri) && true === file_exists($file)) {
 
             $stream = new Hoa\File\Read($file);
-            $mime   = new Hoa\Mime($stream);
 
-            header('Content-Type: ' . $mime->getMime());
+            try {
+
+                $mime  = new Hoa\Mime($stream);
+                $_mime = $mime->getMime();
+            }
+            catch ( \Hoa\Mime\Exception $e ) {
+
+                $_mime = 'text/plain';
+            }
+
+            header('Content-Type: ' . $_mime);
             echo $stream->readAll();
 
             return;
