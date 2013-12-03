@@ -18,7 +18,8 @@ class Awecode extends \Hoa\Model {
     public $_title;
     public $_vimeoId;
     public $_declare;
-    public $_description;
+    public $_description_en;
+    public $_description_fr;
 
     public function construct ( ) {
 

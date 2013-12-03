@@ -17,14 +17,17 @@ class Awecode extends Generic {
 
     public function DefaultAction ( $language ) {
 
-        $language = $this->computeLanguage($language, 'Awecode');
+        $this->computeLanguage($language, 'Awecode');
         $tr = $this->getTranslation('Awecode');
 
         $this->openDatabase();
         $awecodes = \Application\Model\Awecode::getAll();
 
-        foreach($awecodes as &$awecode)
-            $awecode['id'] = ucfirst($awecode['id']);
+        foreach($awecodes as &$awecode) {
+
+            $awecode['id']          = ucfirst($awecode['id']);
+            $awecode['description'] = $awecode['description_' . $language];
+        }
 
         $this->data->title    = $tr->_('Awecode, when the code meets the video');
         $this->data->awecodes = $awecodes;
