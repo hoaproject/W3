@@ -11,6 +11,9 @@
     <script src="hoa://Application/Public/External/Popcorn.js/popcorn.js" />
     <script src="hoa://Application/Public/External/Popcorn.js/wrappers/common/popcorn._MediaElementProto.js" />
     <script src="hoa://Application/Public/External/Popcorn.js/wrappers/vimeo/popcorn.HTMLVimeoVideoElement.js" />
+    <script src="hoa://Application/Public/External/Popcorn.js/modules/parser/popcorn.parser.js" />
+    <script src="hoa://Application/Public/External/Popcorn.js/plugins/subtitle/popcorn.subtitle.js" />
+    <script src="hoa://Application/Public/External/Popcorn.js/parsers/parserSRT/popcorn.parserSRT.js" />
     <script src="hoa://Application/Public/Javascript/Hoa.Awecode.js" />
 
     <script>
@@ -18,6 +21,7 @@
 
           var awecode = new Hoa.Awecode('#awecode', '<yield bind="?vimeoId" />');
           awecode.declare(<yield bind="?declare" />);
+          awecode.subtitle('<value link="hoa://Application/Public/Subtitle/Awecode/(?id).srt" />');
       });
     </script>
   </yield>
