@@ -64,7 +64,10 @@
     <img src="hoa://Application/Public/Map/Marker.svg" height="25" /></h2>
 
     <ul>
-      <li><time datetime="2013-03">mars 2013</time>,
+      <li><time datetime="2013-03">
+          <value formatter="strftime"
+                 formatter-format="%B %Y"
+                 formatter-timestamp="1362092400" /></time>,
           <a href="@ev+:_able=Hoaapex13">Hoa Apex</a></li>
     </ul>
 
@@ -73,19 +76,37 @@
 
     <ul>
       <li>??? (<a href="@c"><_ with="Event">invite us</_></a>)</li>
-      <li><time datetime="2013-10">octobre 2013</time>,
+      <li><time datetime="2013-10">
+          <value formatter="strftime"
+                 formatter-format="%B %Y"
+                 formatter-timestamp="1380578400" /></time>,
           <a href="@ev+:_able=Afuplyon13">AFUP Lyon</a></li>
-      <li><time datetime="2013-09">septembre 2013</time>,
+      <li><time datetime="2013-09">
+          <value formatter="strftime"
+                 formatter-format="%B %Y"
+                 formatter-timestamp="1377986400" /></time>,
           <a href="@ev+:_able=Jdev13">JDév'</a></li>
-      <li><time datetime="2013-03">mars 2013</time>,
-          <a href="@ev+:_able=Cstva13">CSTVA</a>
+      <li><time datetime="2013-03">
+          <value formatter="strftime"
+                 formatter-format="%B %Y"
+                 formatter-timestamp="1362092400" /></time>,
+          <a href="@ev+:_able=Cstva13">CSTVA</a>,
           <a href="@ev+:_able=Hoaapex13">Hoa Apex</a></li>
-      <li><time datetime="2012-06">juin 2012</time>,
+      <li><time datetime="2012-06">
+          <value formatter="strftime"
+                 formatter-format="%B %Y"
+                 formatter-timestamp="1338501600" /></time>,
           <a href="@ev+:_able=Forumphp12">ForumPHP</a></li>
-      <li><time datetime="2012-04">avril 2012</time>,
+      <li><time datetime="2012-04">
+          <value formatter="strftime"
+                 formatter-format="%B %Y"
+                 formatter-timestamp="1333231200" /></time>,
           <a href="@ev+:_able=Amost12">AMOST</a></li>
-      <li><time datetime="2011-11">novembre 2011</time>, ICTSS</li>
-      <li><time datetime="2011-11">novembre 2011</time>,
+      <li><time datetime="2011-11">
+          <value formatter="strftime"
+                 formatter-format="%B %Y"
+                 formatter-timestamp="1320102000" /></time>,
+          ICTSS,
           <a href="@ev+:_able=Phptour11">PHPTour</a></li>
     </ul>
   </yield>

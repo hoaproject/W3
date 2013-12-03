@@ -80,6 +80,11 @@ class Generic extends \Hoa\Dispatcher\Kit {
 
     protected function computeLanguage ( $language, $translation = null ) {
 
+        static $_region = array(
+            'en' => 'en_GB',
+            'fr' => 'fr_FR'
+        );
+
         if(false === static::isLanguageAllowed($language)) {
 
             $view = new \Hoa\Xyl(
@@ -100,6 +105,8 @@ class Generic extends \Hoa\Dispatcher\Kit {
 
             exit; // yup, it sucks.
         }
+
+        setlocale(LC_ALL, $_region[$language]);
 
         if(null !== $translation)
             $this->addTranslation($translation);
