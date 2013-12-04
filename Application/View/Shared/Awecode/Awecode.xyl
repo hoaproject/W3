@@ -21,7 +21,7 @@
 
           var awecode = new Hoa.Awecode('#awecode', '<yield bind="?vimeoId" />');
           awecode.declare(<yield bind="?declare" />);
-          awecode.subtitle('<value link="hoa://Application/Public/Subtitle/(?language)/Awecode/(?id).srt" />');
+          awecode.subtitle('<value link="(?subtitle)" />');
       });
     </script>
   </yield>
