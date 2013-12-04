@@ -6,6 +6,7 @@
       <div role="region" class="player center mw800">
         <div class="video" />
         <slider />
+        <div role="checkbox" class="subtitle" aria-selected="true">_</div>
       </div>
 
       <tabs class="plain">
