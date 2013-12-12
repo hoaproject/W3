@@ -141,13 +141,20 @@
 
     <p>Les présentations industrielles :</p>
     <ul>
-      <li><a href="@key.:keynote=ForumPHP12/"><cite>Anatomie du test</cite></a>, présentée au
-      <a href="@ev+:_able=Forumphp12">ForumPHP 2012</a> (Paris,
-      France) ;</li>
-      <li><a href="@key:shell=Embedder&amp;keynote=PHPTour11/PHPTour11"><cite>Hoa, un ensemble de
-      bibliothèques</cite></a>, présentée au
-      <a href="@ev+:_able=Phptour11">PHPTour 2011</a> (Lille,
-      France).</li>
+      <li><cite>Hoa, un ensemble de bibliothèques PHP</cite>, présentée à
+      l'<a href="http://lyon.afup.org/">AFUP Lyon 2013</a> (Lyon, France),
+      <a href="@key.:keynote=AFUPLyon13/AFUPLyon13.html">présentation</a> et
+      <a href="@ev+:_able=Afuplyon13">détails</a> ;</li>
+
+      <li><cite>Anatomie du test</cite>, présentée au
+      <a href="http://afup.org/pages/forumphp2012/">ForumPHP 2012</a> (Paris,
+      France), <a href="@key.:keynote=ForumPHP12/">présentation</a> et
+      <a href="@ev+:_able=Forumphp12">détails</a> ;</li>
+
+      <li><cite>Hoa, un ensemble de bibliothèques</cite>, présentée au
+      <a href="http://afup.org/pages/phptourlille2011/">PHPTour 2011</a> (Lille,
+      France), <a href="@key.:keynote=PHPTour11/PHPTour11.html">présentation</a>
+      et <a href="@ev+:_able=Phptour11">détails</a>.</li>
     </ul>
   </yield>
 </overlay>
