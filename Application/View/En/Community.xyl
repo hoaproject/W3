@@ -25,7 +25,11 @@
       <li><a href="@list-subscribe:list=development"><code>development</code></a>:
       about the development of Hoa libraries,</li>
       <li><a href="@list-subscribe:list=support"><code>support</code></a>: to
-      obtain help about Hoa libraries.</li>
+      obtain help about Hoa libraries,</li>
+      <li><a href="@list-subscribe:list=localisation"><code>localisation</code></a>:
+      about localisation of different projects,</li>
+      <li><a href="@list-subscribe:list=foundation"><code>foundation</code></a>:
+      about the foundation.</li>
     </ul>
 
     <h2 id="IRC">IRC</h2>
@@ -37,7 +41,7 @@
     <code class="nowrap">@hoaproject/contributor/<em>pseudo</em></code>
     (use the command <code>/whois <em>pseudo</em></code>). The co-community
     managers have the flag <code>+V</code>. You can
-    <a href="http://webchat.freenode.net/?channels=hoaproject">talk to use
+    <a href="http://webchat.freenode.net/?channels=hoaproject">talk to us
     directly</a> with your browser.</p>
 
     <h2 id="Forum">Forum</h2>

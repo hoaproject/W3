@@ -27,7 +27,11 @@
       <li><a href="@list-subscribe:list=development"><code>development</code></a> :
       à propos du développement des bibliothèques de Hoa ;</li>
       <li><a href="@list-subscribe:list=support"><code>support</code></a> : pour
-      obtenir de l'aide à propos des bibliothèques de Hoa.</li>
+      obtenir de l'aide à propos des bibliothèques de Hoa ;</li>
+      <li><a href="@list-subscribe:list=localisation"><code>localisation</code></a> :
+      à propos de la localisation des différents projets ;</li>
+      <li><a href="@list-subscribe:list=foundation"><code>foundation</code></a> :
+      à propos de l'assocation.</li>
     </ul>
 
     <h2 id="IRC">IRC</h2>
