@@ -47,36 +47,32 @@
 
       <p>
         <span class="image">
-          <a href="http://verylastroom.com/" class="plain">
-            <img src="hoa://Application/Public/Image/WhoUse/Verylastroom_little.png"
-                 alt="VeryLastRoom" />
-          </a>
-          <a href="@u:language=Fr&amp;who=Verylastroom" class="notification"
-             title="Voir l'entrevue">…</a>
-        </span>
-        <span class="image">
-          <a href="http://www.inria.fr/" class="plain">
-            <img src="hoa://Application/Public/Image/WhoUse/INRIA_little.png"
-                 alt="INRIA" />
-          </a>
-        </span>
-        <span class="image">
-          <a href="http://henry.wallonie.be/" class="plain">
-            <img src="hoa://Application/Public/Image/WhoUse/SPW_little.png"
-                 alt="SPW" />
-          </a>
-          <a href="@u:language=Fr&amp;who=Spw" class="notification"
-             title="Voir l'entrevue">…</a>
-        </span>
-        <span class="image">
           <a href="http://mozilla.org/" class="plain">
-              <img src="hoa://Application/Public/Image/WhoUse/Mozilla_little.png"
+              <img src="hoa://Application/Public/Image/Logo/Mozilla_little.png"
                    alt="Mozilla" />
           </a>
         </span>
         <span class="image">
+          <a href="http://henry.wallonie.be/" class="plain">
+            <img src="hoa://Application/Public/Image/Logo/SPW_little.png"
+                 alt="SPW" />
+          </a>
+        </span>
+        <span class="image">
+          <a href="http://www.inria.fr/" class="plain">
+            <img src="hoa://Application/Public/Image/Logo/INRIA_little.png"
+                 alt="INRIA" />
+          </a>
+        </span>
+        <span class="image">
+          <a href="http://atipik.fr/" class="plain">
+            <img src="hoa://Application/Public/Image/Logo/Atipik_little.png"
+                 alt="Atipik" />
+          </a>
+        </span>
+        <span class="image">
           <a href="http://www.femto-st.fr/fr/Departements-de-recherche/DISC/" class="plain">
-            <img src="hoa://Application/Public/Image/WhoUse/DISC_little.png"
+            <img src="hoa://Application/Public/Image/Logo/DISC_little.png"
                  alt="DISC" />
           </a>
         </span>
@@ -86,8 +82,14 @@
 
       <p>
         <span class="image">
+          <a href="http://verylastroom.com/" class="plain">
+            <img src="hoa://Application/Public/Image/Logo/Verylastroom_little.png"
+                 alt="VeryLastRoom" />
+          </a>
+        </span>
+        <span class="image">
           <a href="http://jetbrains.com/phpstorm/" class="plain">
-            <img src="hoa://Application/Public/Image/Sponsor/PHPStorm_little.png"
+            <img src="hoa://Application/Public/Image/Logo/PHPStorm_little.png"
                  alt="PHPStorm" />
           </a>
         </span>
