@@ -1,6 +1,6 @@
 [submodule "Application/External/Literature"]
 	path = Application/External/Literature
-	url = git@git.hoa-project.net:Literature
+	url = http://git.hoa-project.net/Literature.git
 [submodule "Application/External/Keynote"]
 	path = Application/External/Keynote
-	url = git@git.hoa-project.net:Keynote
+	url = http://git.hoa-project.net/Keynote.git
