@@ -14,7 +14,7 @@
         <li><a href="@git:repository=Central">git</a></li>
         <li><a href="@github">
               <img src="hoa://Application/Public/Image/Icon_github.svg"
-                   alt="Github" width="30px" height="30px" /></a></li>
+                   alt="Github" width="30" height="30" /></a></li>
         <li><a href="@s" title="See all sources">…</a></li>
       </ul>
     </div>
