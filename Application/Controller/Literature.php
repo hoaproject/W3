@@ -38,7 +38,7 @@ class Literature extends Generic {
 
         $this->data->title = 'Manuel d\'apprentissage';
         $this->view->addUse('hoa://Application/External/Literature/Learn/' . ucfirst($chapter) . '.xyl');
-        $this->view->addOverlay('hoa://Application/View/Literature/Learn.xyl');
+        $this->view->addOverlay('hoa://Application/View/Shared/Literature/Learn.xyl');
         $this->render();
 
         return;
