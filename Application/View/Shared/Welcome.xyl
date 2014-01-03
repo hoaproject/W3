@@ -25,9 +25,9 @@
       <ul>
         <li bind="?blog">
           <a href="@b_post:id=(?id)&amp;normalized_title=(?normalized_title)" bind="?title" />
-          <small>(<time><value bind="?posted"
-                               formatter="date"
-                               formatter-format="j/m" /></time>)</small>
+          <small>(<time><value formatter="strftime"
+                               formatter-format="%b. '%y"
+                               formatter-timestamp="(?posted)" /></time>)</small>
         </li>
       </ul>
     </div>
