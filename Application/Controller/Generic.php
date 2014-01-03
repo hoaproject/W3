@@ -81,8 +81,8 @@ class Generic extends \Hoa\Dispatcher\Kit {
     protected function computeLanguage ( $language, $translation = null ) {
 
         static $_region = array(
-            'en' => 'en_GB',
-            'fr' => 'fr_FR'
+            'en' => array('en_GB.UTF-8', 'en_GB.utf8', 'en_GB'),
+            'fr' => array('fr_FR.UTF-8', 'fr_FR.utf8', 'fr_FR')
         );
 
         if(false === static::isLanguageAllowed($language)) {
