@@ -21,8 +21,8 @@
     <yield id="chapter" />
 
     <p class="mtm">
-    <small>An error or a suggestion about the documentation? <a
-    href="@github:repository=(?chapter)">Contributions</a> are
+    <small>An error or a suggestion about the documentation?
+    <a href="@github:repository=(?chapter)">Contributions</a> are
     welcome!</small></p>
 
     <script src="hoa://Application/Public/Javascript/Hoa.Graph.js"></script>
