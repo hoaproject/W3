@@ -88,6 +88,12 @@
           </a>
         </span>
         <span class="image">
+          <a href="https://pikacode.com/" class="plain">
+            <img src="hoa://Application/Public/Image/Logo/Pikacode_little.png"
+                 alt="Pikacode" />
+          </a>
+        </span>
+        <span class="image">
           <a href="http://jetbrains.com/phpstorm/" class="plain">
             <img src="hoa://Application/Public/Image/Logo/PHPStorm_little.png"
                  alt="PHPStorm" />
