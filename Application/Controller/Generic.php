@@ -20,7 +20,17 @@ namespace Application\Controller {
 
 class Generic extends \Hoa\Dispatcher\Kit {
 
-    protected static $_visitor = null;
+    protected static $_visitor   = null;
+    protected static $_languages = array(
+        'en' => array(
+            'name'    => 'english',
+            'regions' => array('en_GB.UTF-8', 'en_GB.utf8', 'en_GB')
+        ),
+        'fr' => array(
+            'name'    => 'français',
+            'regions' => array('fr_FR.UTF-8', 'fr_FR.utf8', 'fr_FR')
+        )
+    );
 
 
 
@@ -44,6 +54,25 @@ class Generic extends \Hoa\Dispatcher\Kit {
 
         $this->computeLanguage(static::getVisitor()->getLanguage());
         $this->addTranslation('Main', '__main__');
+
+        $theRule   = $this->router->getTheRule();
+        $variables = $theRule[\Hoa\Router\Http::RULE_VARIABLES];
+        $footer    = array();
+
+        foreach(static::$_languages as $language => $details) {
+
+            $variables['language'] = ucfirst($language);
+            $footer[] = array(
+                'language' => $language,
+                'name'     => $details['name'],
+                'link'     => $this->router->unroute(
+                    $theRule[\Hoa\Router\Http::RULE_ID],
+                    $variables
+                )
+            );
+        }
+
+        $this->data->footer = $footer;
 
         return;
     }
@@ -73,17 +102,10 @@ class Generic extends \Hoa\Dispatcher\Kit {
 
     public static function isLanguageAllowed ( $language ) {
 
-        static $_languages = array('en', 'fr');
-
-        return true === in_array($language, $_languages);
+        return true === array_key_exists($language, static::$_languages);
     }
 
     protected function computeLanguage ( $language, $translation = null ) {
-
-        static $_region = array(
-            'en' => array('en_GB.UTF-8', 'en_GB.utf8', 'en_GB'),
-            'fr' => array('fr_FR.UTF-8', 'fr_FR.utf8', 'fr_FR')
-        );
 
         if(false === static::isLanguageAllowed($language)) {
 
@@ -106,7 +128,7 @@ class Generic extends \Hoa\Dispatcher\Kit {
             exit; // yup, it sucks.
         }
 
-        setlocale(LC_ALL, $_region[$language]);
+        setlocale(LC_ALL, static::$_languages[$language]['regions']);
 
         if(null !== $translation)
             $this->addTranslation($translation);

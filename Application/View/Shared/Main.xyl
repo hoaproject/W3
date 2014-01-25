@@ -46,7 +46,12 @@
       </article>
 
       <footer>
-        <p><_>Hoa is the creation of Ivan Enderlin, all rights reserved.</_></p>
+        <p><_>Hoa is the creation of Ivan Enderlin, all rights reserved.</_><br />
+           <span lang="en">Choose your language:</span>
+           <yield bind="?footer" separator=", "
+               ><span lang="(?language)"><a href="(?link)" bind="?name"
+           /></span></yield>.
+        </p>
       </footer>
 
     </div>
