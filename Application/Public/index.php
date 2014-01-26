@@ -214,7 +214,7 @@ $router
     ->_get('list-subscribe', 'http://lists.hoa-project.net/index.cgi/subscribe/(?<list>)')
     ->_get('nabble-development', 'http://hoa-development.53756.x6.nabble.com/')
     ->_get('nabble-support', 'http://hoa-support.53758.x6.nabble.com/')
-    ->_get('git',    'http://git.hoa-project.net/?p=(?<repository>).git')
+    ->_get('git',    'http://git.hoa-project.net/(?<repository>).git/')
     ->_get('github', 'https://github.com/hoaproject/(?<repository>)')
     ->_get('twitter', 'https://twitter.com/hoaproject')
     ->_get('key.',   'http://keynote.hoa-project.net/(?<keynote>)')
