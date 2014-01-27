@@ -59,6 +59,10 @@ class Generic extends \Hoa\Dispatcher\Kit {
         $variables = $theRule[\Hoa\Router\Http::RULE_VARIABLES];
         $footer    = array();
 
+        foreach($variables as &$variable)
+            if(is_string($variable))
+                $variable = ucfirst($variable);
+
         foreach(static::$_languages as $language => $details) {
 
             $variables['language'] = ucfirst($language);
