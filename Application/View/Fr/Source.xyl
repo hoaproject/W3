@@ -21,6 +21,13 @@
       <li><code>Keynote</code> : toutes les présentations ;</li>
       <li><code>W3</code> et <code>Static</code> : le site Web de Hoa.</li>
     </ul>
+
+    <h2 id="Table_of_contents">Table des matières</h2>
+
+    <tableofcontents id="main-toc" />
+
+    <h2 id="Introduction" for="main-toc">Introduction</h2>
+
     <p>Hoa est un ensemble de bibliothèques. Pour organiser les fichiers de ces
     bibliothèques entre eux, Hoa se base sur un principe très simple : les
     espaces de nom <strong>suivent</strong> l'architecture. Si nous avons une
@@ -51,7 +58,11 @@
     autres systèmes, comme par exemple Windows, Hoa préfèrera s'installer dans
     le dossier <code>C:\Program Files\Hoa\</code>.</p>
 
-    <h2 id="Version_manager">Gestionnaire de versions</h2>
+    <h2 id="Source_code" for="main-toc">Code source</h2>
+
+    <p>Il existe plusieurs façon d'installer Hoa.</p>
+
+    <h3 id="Version_manager" for="main-toc">Gestionnaire de versions</h3>
 
     <p><img src="hoa://Application/Public/Image/Logo/Git.png" alt="Logo de Git"
             class="fright" />
@@ -63,10 +74,8 @@
     <pre><code class="language-shell">$ git clone http://git.hoa-project.net/Central.git Hoa.central</code></pre>
     <p>Pour obtenir une bibliothèque, par exemple <code>Hoa\Core</code> :</p>
     <pre><code class="language-shell">$ git clone http://git.hoa-project.net/Library/Core.git Hoa/Core</code></pre>
-    <p>Vous pouvez également utiliser le protocole <code>git://</code> au lieu
-    de <code>http://</code>. Il est recommandé de
-    <a href="http://git-scm.com/documentation">lire la documentation de Git</a>
-    si vous n'êtes pas familier avec cet outil.</p>
+    <p>Il est recommandé de <a href="http://git-scm.com/documentation">lire la
+    documentation de Git</a> si vous n'êtes pas familier avec cet outil.</p>
     <p>Si vous souhaitez une installation globale et totale avec le central,
     tout en respectant la recommandation sur la localisation de Hoa, vous
     pourrez utiliser un lien symbolique :</p>
@@ -92,7 +101,7 @@ $ ln -s /usr/local/lib/Hoa.central/Hoa /usr/local/lib/Hoa</code></pre>
 require_once '/usr/local/lib/Hoa/Core/Core.php';
 var_dump(HOA); // bool(true)</code></pre>
 
-    <h2 id="Dependency_manager">Gestionnaire de dépendances</h2>
+    <h3 id="Dependency_manager" for="main-toc">Gestionnaire de dépendances</h3>
 
     <p><img src="hoa://Application/Public/Image/Logo/Composer.png"
             alt="Logo de Composer" class="fright" />
@@ -114,14 +123,11 @@ var_dump(HOA); // bool(true)</code></pre>
     <pre><code class="language-shell">$ composer install</code></pre>
     <p>Il est recommandé de <a href="https://getcomposer.org/doc/">lire la
     documentation de Composer</a> si vous n'êtes pas familié avec cet outil.</p>
-    <p>Pour une installation globale de Hoa avec Composer (sans passer par le
-    fichier <code>composer.json</code>) :</p>
-    <pre><code class="language-shell">$ composer global require …</code></pre>
     <p>Pour tester que l'installation s'est bien déroulée :</p>
     <pre><code class="language-php">require_once 'vendor/autoload.php';
 var_dump(HOA); // bool(true)</code></pre>
 
-    <h2 id="Archives">Archives</h2>
+    <h3 id="Archives" for="main-toc">Archives</h3>
 
     <p>Des archives sont produites à chaque mise à jour de certains projets.
     L'index des archives se trouve à l'adresse :
@@ -133,6 +139,60 @@ var_dump(HOA); // bool(true)</code></pre>
     <p>Le protocole WebDAV permet également d'accéder aux archives, à
     l'adresse : <a href="http://dav.hoa-project.net">dav.hoa-project.net</a>.</p>
 
-    <h2 id="Hierarchy_of_a_library">Hiérarchie d'une bibliothèque</h2>
+    <h2 id="Structure_of_a_library" for="main-toc">Structure d'une
+    bibliothèque</h2>
+
+    <p>Voici la structure d'une bibliothèque :</p>
+    <ul>
+      <li>sources à la racine ;</li>
+      <li><code>Bin/</code>, pour les binaires ;</li>
+      <li><code>Documentation/</code>, pour <a href="@l#Hack_book">les chapitres
+      du <em lang="en">hack book</em> (documentation)</a> ;</li>
+      <li><code>Test/</code>, pour les tests ;</li>
+      <li><code>README.md</code>, pour une description en anglais avec des
+      exemples usuels ;</li>
+      <li><code>composer.json</code>, pour les dépendances.</li>
+    </ul>
+    <p>Les binaires sont accessibles via la commande : <code>hoa
+    <em>library</em>:<em>command</em></code>. Par exemple, pour
+    <code>Hoa\Core\Bin\Resolve</code>, nous écrirons :
+    <code>hoa core:resolve</code>.</p>
+    <p class="warning">Actuellement, les tests sont en cours de migration !
+    <br />
+    Merci d'être patient.</p>
+    <p>Les bibliothèques sont dans trois états différents selon leur
+    évolution :</p>
+    <div id="library_states" class="schema"
+         style="max-width: 550px; margin: 0 auto;"></div>
+    <script>
+    Hoa.Document.onReady(function ( ) {
+
+        var paper = Hoa.Graph(Hoa.$('#library_states'), 550, 150);
+        var grid  = paper.grid(0, 0, 550, 150, 3, 1);
+        var step1 = grid.push(paper.rect(0, 0, 120, 90, 3, 'existantes'));
+        var step2 = grid.push(paper.rect(0, 0, 120, 90, 3, 'matures'));
+        var step3 = grid.push(paper.rect(0, 0, 120, 90, 3, 'finalisées'));
+
+        paper.link.between(step1, step2);
+        paper.link.between(step2, step3);
+    });
+    </script>
+    <p>Le premier état représente une bibliothèque qui sera intéressante pour
+    Hoa mais qui est en cours d'écriture et d'<strong>élaboration</strong>. Le
+    deuxième état représente une bibliothèque avec une <strong>API
+    fixe</strong>, un code abouti et <strong>mature</strong>. Une telle
+    bibliothèque est testée intensivement par tous les utilisateurs pour
+    <strong>éprouver</strong> le code et son API. Après un certain temps, la
+    bibliothèque atteint le dernier état : elle est <strong>finalisée</strong>.
+    Son API ne changera plus <strong>jamais</strong>. Lors de l'introduction de
+    nouveautés, la bibliothèque reste finalisée ou redevient mature selon
+    l'importance des nouveautés.</p>
+
+    <h2 id="Rolling_release" for="main-toc"><em lang="en">Rolling-release</em></h2>
+
+    <p>À venir.</p>
+
+    <script src="hoa://Application/Public/Javascript/Hoa.Graph.js"></script>
+    <script src="hoa://Application/Public/Javascript/Hoa.Graph.style.js"></script>
   </yield>
 </overlay>
