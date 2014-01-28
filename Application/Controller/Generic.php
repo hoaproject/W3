@@ -68,6 +68,7 @@ class Generic extends \Hoa\Dispatcher\Kit {
             $variables['language'] = ucfirst($language);
             $footer[] = array(
                 'language' => $language,
+                'Language' => ucfirst($language),
                 'name'     => $details['name'],
                 'link'     => $this->router->unroute(
                     $theRule[\Hoa\Router\Http::RULE_ID],

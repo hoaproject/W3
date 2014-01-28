@@ -46,11 +46,14 @@
       </article>
 
       <footer>
-        <p><_>Hoa is the creation of Ivan Enderlin, all rights reserved.</_><br />
-           <span lang="en">Choose your language:</span>
-           <yield bind="?footer" separator=", "
-               ><span lang="(?language)"><a href="(?link)" bind="?name"
-           /></span></yield>.
+        <p><span lang="en">Choose your language:</span>
+           <yield bind="?footer" separator=", ">
+             <a href="(?link)" lang="(?language)" class="plain" alt="(?language)">
+               <img src="hoa://Application/Public/Image/Flag/(?Language).gif"
+                    alt="(?name)" />
+             </a>
+           </yield>.<br />
+           <_>Hoa is the creation of Ivan Enderlin, all rights reserved.</_>
         </p>
       </footer>
 
