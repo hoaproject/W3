@@ -77,12 +77,12 @@ $ ln -s /usr/local/lib/Hoa.central/Hoa /usr/local/lib/Hoa</code></pre>
        <img src="hoa://Application/Public/Image/Logo/Github.png"
            alt="Logo de Github" class="fright" />
     Des miroirs existent pour la plupart des projets, notamment sur
-    <a href="@github">Github</a> et <a
-    href="https://pikacode.com/hoaproject/">Pikacode</a>. Les noms des projets
-    sont identiques autant que possible. La plus grosse différence est pour les
-    bibliothèques : l'accès se fait sans le préfixe <code>Library/</code> ou
-    alors <code>Hoathis/</code> est remplacé par <code>Hoathis-</code>.
-    Ainsi :</p>
+    <a href="@github">Github</a> et
+    <a href="https://pikacode.com/hoaproject/">Pikacode</a>. Les noms des
+    projets sont identiques autant que possible. La plus grosse différence est
+    pour les bibliothèques : l'accès se fait sans le préfixe
+    <code>Library/</code> ou alors <code>Hoathis/</code> est remplacé par
+    <code>Hoathis-</code>. Ainsi :</p>
     <pre><code class="language-shell">$ git clone https://github.com/hoaproject/Core.git</code></pre>
     <p>Les miroirs sont en permanence synchronisés, vous n'aurez jamais de
     différences.</p>
@@ -99,7 +99,7 @@ var_dump(HOA); // bool(true)</code></pre>
     <a href="http://download.hoa-project.net">download.hoa-project.net</a>.
     Elles suivent également le nommage des projets. Plusieurs formats sont
     disponibles : <code>.zip</code>, <code>.tar.gz</code> et
-    <code>.phar</code> (pour les <a href="http://php.net/phar">les archives
+    <code>.phar</code> (pour <a href="http://php.net/phar">les archives
     PHP</a>).</p>
     <p>Le protocole WebDAV permet également d'accéder aux archives, à
     l'adresse : <a href="http://dav.hoa-project.net">dav.hoa-project.net</a>.</p>
