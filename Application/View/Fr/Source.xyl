@@ -4,7 +4,7 @@
   <yield id="yContent">
     <h1>Sources</h1>
 
-    <p>Hoa distribue les projets suivants :</p>
+    <p>Hoa distribue les projets principaux suivants :</p>
     <ul>
       <li><code>Central</code> : l'ensemble de <strong>toutes</strong> les
       bibliothèques standards ;</li>
@@ -13,40 +13,6 @@
       <li><code>Hoathis/<em>*</em></code> : bibliothèques
       <strong>utilisateurs</strong> isolées (maintenues par Hoa).</li>
     </ul>
-    <p>Mais aussi des projets tiers, comme :</p>
-    <ul>
-      <li><code>Embryo</code> : squelette d'application pour démarrer
-      rapidement ;</li>
-      <li><code>Literature</code> : tous les manuels et documentations ;</li>
-      <li><code>Keynote</code> : toutes les présentations ;</li>
-      <li><code>W3</code> et <code>Static</code> : le site Web de Hoa.</li>
-    </ul>
-
-    <h2 id="Table_of_contents">Table des matières</h2>
-
-    <tableofcontents id="main-toc" />
-
-    <h2 id="Introduction" for="main-toc">Introduction</h2>
-
-    <p>Hoa est un ensemble de bibliothèques. Pour organiser les fichiers de ces
-    bibliothèques entre eux, Hoa se base sur un principe très simple : les
-    espaces de nom <strong>suivent</strong> l'architecture. Si nous avons une
-    classe <code>A\B\C</code>, nous la trouverons dans le fichier
-    <code>A/B/C.php</code>. D'une manière moins informelle, les espaces de nom
-    adopte le format suivant :
-    <code><em>Vendor</em>\<em>Libraryname</em>(\…)*</code>. Par exemple, avec la
-    bibliothèque <code>Hoa\Router\Http</code>, le <em lang="en">vendor</em> est
-    <code>Hoa</code> et le nom de la bibliothèque est <code>Router</code>. C'est
-    pourquoi toutes les bibliothèques standards de Hoa devront être installées
-    dans un dossier <code>Hoa/</code>, et les bibliothèques utilisateurs dans un
-    dossier <code>Hoathis/</code>. Hoa n'est pas le seul à avoir adopté ce
-    principe. En effet, le <a href="http://www.php-fig.org/"><em lang="en">PHP
-    Framework Interop Group</em></a> a rédigé plusieurs
-    <strong>recommandations</strong> dont
-    <a href="http://www.php-fig.org/psr/psr-0/">PSR-0</a> et
-    <a href="http://www.php-fig.org/psr/psr-4/">PSR-4</a> qui améliorent le
-    <strong>partage</strong> et la <strong>réutilisation</strong> du code entre
-    plusieurs projets.</p>
     <p>Il existe plusieurs façon d'installer Hoa : dans sa
     <strong>totalité</strong> (avec le central) ou <strong>en partie</strong>
     (choix des bibliothèques), et <strong>globalement</strong> (sur le système)
@@ -58,50 +24,8 @@
     autres systèmes, comme par exemple Windows, Hoa préfèrera s'installer dans
     le dossier <code>C:\Program Files\Hoa\</code>.</p>
 
-    <h2 id="Source_code" for="main-toc">Code source</h2>
-
-    <p>Il existe plusieurs façon d'installer Hoa.</p>
-
-    <h3 id="Version_manager" for="main-toc">Gestionnaire de versions</h3>
-
-    <p><img src="hoa://Application/Public/Image/Logo/Git.png" alt="Logo de Git"
-            class="fright" />
-    Hoa utilise <a href="http://git-scm.com/">Git</a> pour tous ses projets.
-    L'index des dépôts se trouve à l'adresse :
-    <a href="http://git.hoa-project.net">git.hoa-project.net</a>. Les dépôts
-    sont nommés <code><em>project</em>.git</code>. Ainsi, pour
-    obtenir les sources du projet <code>Central</code> :</p>
-    <pre><code class="language-shell">$ git clone http://git.hoa-project.net/Central.git Hoa.central</code></pre>
-    <p>Pour obtenir une bibliothèque, par exemple <code>Hoa\Core</code> :</p>
-    <pre><code class="language-shell">$ git clone http://git.hoa-project.net/Library/Core.git Hoa/Core</code></pre>
-    <p>Il est recommandé de <a href="http://git-scm.com/documentation">lire la
-    documentation de Git</a> si vous n'êtes pas familier avec cet outil.</p>
-    <p>Si vous souhaitez une installation globale et totale avec le central,
-    tout en respectant la recommandation sur la localisation de Hoa, vous
-    pourrez utiliser un lien symbolique :</p>
-    <pre><code class="language-shell">$ git clone http://git.hoa-project.net/Central.git /usr/local/lib/Hoa.central
-$ ln -s /usr/local/lib/Hoa.central/Hoa /usr/local/lib/Hoa</code></pre>
-    <p><img src="hoa://Application/Public/Image/Logo/Github.png"
-           alt="Logo de Github" class="fright" />
-       <img src="hoa://Application/Public/Image/Logo/Pikacode.png"
-           alt="Logo de Pikacode" class="fright" />
-    Des miroirs existent pour la plupart des projets, notamment sur
-    <a href="@github">Github</a> et <a
-    href="https://pikacode.com/hoaproject/">Pikacode</a>. Les noms des projets
-    sont identiques autant que possible. La plus grosse différence est pour les
-    bibliothèques : l'accès se fait sans le préfixe <code>Library/</code> ou
-    alors <code>Hoathis/</code> est remplacé par <code>Hoathis-</code>.
-    Ainsi :</p>
-    <pre><code class="language-shell">$ git clone https://github.com/hoaproject/Core.git</code></pre>
-    <p>Les miroirs sont en permanence synchronisés, vous n'aurez jamais de
-    différences.</p>
-    <p>Pour tester que l'installation s'est bien déroulée :</p>
-    <pre><code class="language-php">&amp;lt;?php
-
-require_once '/usr/local/lib/Hoa/Core/Core.php';
-var_dump(HOA); // bool(true)</code></pre>
-
-    <h3 id="Dependency_manager" for="main-toc">Gestionnaire de dépendances</h3>
+    <h2 id="Dependency_manager_(Composer)">Gestionnaire de dépendances
+    (Composer)</h2>
 
     <p><img src="hoa://Application/Public/Image/Logo/Composer.png"
             alt="Logo de Composer" class="fright" />
@@ -124,10 +48,51 @@ var_dump(HOA); // bool(true)</code></pre>
     <p>Il est recommandé de <a href="https://getcomposer.org/doc/">lire la
     documentation de Composer</a> si vous n'êtes pas familié avec cet outil.</p>
     <p>Pour tester que l'installation s'est bien déroulée :</p>
-    <pre><code class="language-php">require_once 'vendor/autoload.php';
+    <pre><code class="language-php">&amp;lt;?php
+
+require_once 'vendor/autoload.php';
 var_dump(HOA); // bool(true)</code></pre>
 
-    <h3 id="Archives" for="main-toc">Archives</h3>
+    <h2 id="Version_manager_(Git)">Gestionnaire de versions (Git)</h2>
+
+    <p><img src="hoa://Application/Public/Image/Logo/Git.png" alt="Logo de Git"
+            class="fright" />
+    Hoa utilise <a href="http://git-scm.com/">Git</a> pour tous ses projets.
+    L'index des dépôts se trouve à l'adresse :
+    <a href="http://git.hoa-project.net">git.hoa-project.net</a>. Les dépôts
+    sont nommés <code><em>project</em>.git</code>. Ainsi, pour
+    obtenir les sources du projet <code>Central</code> :</p>
+    <pre><code class="language-shell">$ git clone http://git.hoa-project.net/Central.git Hoa.central</code></pre>
+    <p>Pour obtenir une bibliothèque, par exemple <code>Hoa\Core</code> :</p>
+    <pre><code class="language-shell">$ git clone http://git.hoa-project.net/Library/Core.git Hoa/Core</code></pre>
+    <p>Il est recommandé de <a href="http://git-scm.com/documentation">lire la
+    documentation de Git</a> si vous n'êtes pas familier avec cet outil.</p>
+    <p>Si vous souhaitez une installation globale et totale avec le central,
+    tout en respectant la recommandation sur la localisation de Hoa, vous
+    pourrez utiliser un lien symbolique :</p>
+    <pre><code class="language-shell">$ git clone http://git.hoa-project.net/Central.git /usr/local/lib/Hoa.central
+$ ln -s /usr/local/lib/Hoa.central/Hoa /usr/local/lib/Hoa</code></pre>
+    <p><img src="hoa://Application/Public/Image/Logo/Pikacode.png"
+           alt="Logo de Pikacode" class="fright" />
+       <img src="hoa://Application/Public/Image/Logo/Github.png"
+           alt="Logo de Github" class="fright" />
+    Des miroirs existent pour la plupart des projets, notamment sur
+    <a href="@github">Github</a> et <a
+    href="https://pikacode.com/hoaproject/">Pikacode</a>. Les noms des projets
+    sont identiques autant que possible. La plus grosse différence est pour les
+    bibliothèques : l'accès se fait sans le préfixe <code>Library/</code> ou
+    alors <code>Hoathis/</code> est remplacé par <code>Hoathis-</code>.
+    Ainsi :</p>
+    <pre><code class="language-shell">$ git clone https://github.com/hoaproject/Core.git</code></pre>
+    <p>Les miroirs sont en permanence synchronisés, vous n'aurez jamais de
+    différences.</p>
+    <p>Pour tester que l'installation s'est bien déroulée :</p>
+    <pre><code class="language-php">&amp;lt;?php
+
+require_once '/usr/local/lib/Hoa/Core/Core.php';
+var_dump(HOA); // bool(true)</code></pre>
+
+    <h2 id="Archives">Archives</h2>
 
     <p>Des archives sont produites à chaque mise à jour de certains projets.
     L'index des archives se trouve à l'adresse :
@@ -139,7 +104,7 @@ var_dump(HOA); // bool(true)</code></pre>
     <p>Le protocole WebDAV permet également d'accéder aux archives, à
     l'adresse : <a href="http://dav.hoa-project.net">dav.hoa-project.net</a>.</p>
 
-    <h2 id="Structure_of_a_library" for="main-toc">Structure d'une
+    <h2 id="Structure_of_a_library">Structure d'une
     bibliothèque</h2>
 
     <p>Voici la structure d'une bibliothèque :</p>
@@ -188,7 +153,7 @@ var_dump(HOA); // bool(true)</code></pre>
     nouveautés, la bibliothèque reste finalisée ou redevient mature selon
     l'importance des nouveautés.</p>
 
-    <h2 id="Rolling_release" for="main-toc"><em lang="en">Rolling-release</em></h2>
+    <h2 id="Rolling_release"><em lang="en">Rolling-release</em></h2>
 
     <p>À venir.</p>
 
