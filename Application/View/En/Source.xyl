@@ -19,7 +19,7 @@
     <a href="http://refspecs.linuxfoundation.org/fhs.shtml">Filesystem Hierarchy
     Standard</a> (at least in the 2.2 version), Hoa will prefer to be installed
     in the <code>/usr/local/lib/Hoa/</code> directory. For other systems, like
-    for example Windows, Hoa will prefer to be installed in the
+    Windows, Hoa will prefer to be installed in the
     <code>C:\Program Files\Hoa\</code>.</p>
 
     <h2 id="Dependency_manager_(Composer)">Dependency manager (Composer)</h2>
@@ -44,7 +44,7 @@
     <pre><code class="language-shell">$ composer install</code></pre>
     <p>It is recommended to <a href="https://getcomposer.org/doc/">read the
     documentation of Composer</a> if you are not familiar with this tool.</p>
-    <p>To test that the installation has succeeded:</p>
+    <p>To test the installation has succeeded:</p>
     <pre><code class="language-php">&amp;lt;?php
 
 require_once 'vendor/autoload.php';
@@ -81,7 +81,7 @@ $ ln -s /usr/local/lib/Hoa.central/Hoa /usr/local/lib/Hoa</code></pre>
     <pre><code class="language-shell">$ git clone https://github.com/hoaproject/Core.git</code></pre>
     <p>Mirrors are permanently synchronized, you will never have a
     difference.</p>
-    <p>To test that the installation has succeeded:</p>
+    <p>To test the installation has succeeded:</p>
     <pre><code class="language-php">&amp;lt;?php
 
 require_once '/usr/local/lib/Hoa/Core/Core.php';
