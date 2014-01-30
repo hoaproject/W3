@@ -46,7 +46,7 @@
     <p>Puis pour installer les dépendances :</p>
     <pre><code class="language-shell">$ composer install</code></pre>
     <p>Il est recommandé de <a href="https://getcomposer.org/doc/">lire la
-    documentation de Composer</a> si vous n'êtes pas familié avec cet outil.</p>
+    documentation de Composer</a> si vous n'êtes pas familier avec cet outil.</p>
     <p>Pour tester que l'installation s'est bien déroulée :</p>
     <pre><code class="language-php">&amp;lt;?php
 
