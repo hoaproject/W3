@@ -4,75 +4,151 @@
   <yield id="yContent">
     <h1>Sources</h1>
 
-    <p>Hoa distributes the following project:</p>
+    <p>Hoa distributes the main following projects:</p>
     <ul>
-      <li><code>Central</code>: the set of all Hoa libraries,</li>
-      <li><code>Library/<em>*</em></code>: isolated libraries,</li>
-      <li><code>Embryo</code>: skeleton of an application to start quickly,</li>
-      <li><code>Literature</code>: all the manuals and documentations,</li>
-      <li><code>Keynote</code>: all the presentations,</li>
-      <li><code>W3</code> and <code>Static</code>: the website of Hoa,</li>
-      <li><code>Bhoat</code>: the bot that maintains the different projects of
-      Hoa.</li>
+      <li><code>Central</code>: the set of <strong>all</strong> Hoa libraries,</li>
+      <li><code>Library/<em>*</em></code>: isolated <strong>standard</strong> libraries,</li>
+      <li><code>Hoathis/<em>*</em></code>: isolated <strong>user</strong>
+      libraries (maintained by Hoa).</li>
     </ul>
+    <p>There is different ways to install Hoa: <strong>fully</strong> (with
+    the central) or <strong>partly</strong> (libraries independently), and
+    <strong>widely</strong> (on the system) or <strong>locally</strong> (in an
+    application). In the case of a <strong>wide</strong> installation and for
+    all systems adopting the
+    <a href="http://refspecs.linuxfoundation.org/fhs.shtml">Filesystem Hierarchy
+    Standard</a> (at least in the 2.2 version), Hoa will prefer to be installed
+    in the <code>/usr/local/lib/Hoa/</code> directory. For other systems, like
+    for example Windows, Hoa will prefer to be installed in the
+    <code>C:\Program Files\Hoa\</code>.</p>
 
-    <h2 id="Version_control">Version control</h2>
+    <h2 id="Dependency_manager_(Composer)">Dependency manager (Composer)</h2>
+
+    <p><img src="hoa://Application/Public/Image/Logo/Composer.png"
+            alt="Logo of Composer" class="fright" />
+    To manage dependencies between libraries of Hoa, we recommend the
+    <a href="http://getcomposer.org/">Composer</a> tool. All dependencies
+    managed by Composer are registered by the
+    <a href="https://packagist.org/search/?q=hoa/">Packagist</a> repository
+    under the names <code>hoa/<em>library</em></code> and
+    <code>hoathis/<em>library</em></code>. Thus, for example, to install the
+    <code>Hoa\Websocket</code> library, we will have to write in the
+    <code>composer.json</code> file:</p>
+    <pre><code class="language-json">{
+    "require": {
+        "hoa/websocket": "dev-master"
+    },
+    "minimum-stability": "dev"
+}</code></pre>
+    <p>Then, to install dependencies:</p>
+    <pre><code class="language-shell">$ composer install</code></pre>
+    <p>It is recommended to <a href="https://getcomposer.org/doc/">read the
+    documentation of Composer</a> if you are not familiar with this tool.</p>
+    <p>To test that the installation has succeeded:</p>
+    <pre><code class="language-php">&amp;lt;?php
+
+require_once 'vendor/autoload.php';
+var_dump(HOA); // bool(true)</code></pre>
+
+    <h2 id="Version_manager_(Git)">Version manager (Git)</h2>
 
     <p><img src="hoa://Application/Public/Image/Logo/Git.png" alt="Logo of Git"
             class="fright" />
     Hoa uses <a href="http://git-scm.com/">Git</a> for all its projects. The
-    repository index can be found at the address:
-    <a href="http://git.hoa-project.net">git.hoa-project.net</a>. The
-    repositories are named <code><em>project</em>.git</code>. Thus, to obtain
-    the sources of the <code>Central</code> project:</p>
-    <pre><code class="language-shell">$ git clone http://git.hoa-project.net/Central.git</code></pre>
-    <p>To obtain a library, for example <code>Hoa\Core</code>:</p>
-    <pre><code class="language-shell">$ git clone http://git.hoa-project.net/Library/Core.git</code></pre>
+    index of repositories can be found at the address:
+    <a href="http://git.hoa-project.net">git.hoa-project.net</a>. Thus to get
+    sources of the <code>Central</code> project:</p>
+    <pre><code class="language-shell">$ git clone http://git.hoa-project.net/Central.git Hoa.central</code></pre>
+    <p>To get a library, for example <code>Hoa\Core</code>:</p>
+    <pre><code class="language-shell">$ git clone http://git.hoa-project.net/Library/Core.git Hoa/Core</code></pre>
     <p>It is recommended to <a href="http://git-scm.com/documentation">read the
     documentation of Git</a> if you are not familiar with this tool.</p>
-    <p><img src="hoa://Application/Public/Image/Logo/Github.png"
+    <p>If you prefer a wide and full installation with the central, without
+    neglecting the recommendation about Hoa localisation, you could use a
+    symbolic link:</p>
+    <pre><code class="language-shell">$ git clone http://git.hoa-project.net/Central.git /usr/local/lib/Hoa.central
+$ ln -s /usr/local/lib/Hoa.central/Hoa /usr/local/lib/Hoa</code></pre>
+    <p><img src="hoa://Application/Public/Image/Logo/Pikacode.png"
+           alt="Logo of Pikacode" class="fright" />
+       <img src="hoa://Application/Public/Image/Logo/Github.png"
            alt="Logo of Github" class="fright" />
-
-    Mirrors exist for the majority of projects, notably on
-    <a href="@github">Github</a>. The names of projects are identical as much as
-    possible. The main difference is for libraries: the prefix
-    <code>Library/</code> is removed. Thus:</p>
+    Mirrors exist for the majority of projects, notably
+    <a href="@github">Github</a> and
+    <a href="https://pikacode.com/hoaproject/">Pikacode</a>. Names of projects
+    are identical as much as possible. The most important difference is for
+    libraries: there is no <code>Library/</code> prefix, or
+    <code>Hoathis/</code> is replaced by <code>Hoathis-</code>. Thus:</p>
     <pre><code class="language-shell">$ git clone https://github.com/hoaproject/Core.git</code></pre>
-    <p>Mirrors are continuously synchronized, you will never have any
-    differences.</p>
+    <p>Mirrors are permanently synchronized, you will never have a
+    difference.</p>
+    <p>To test that the installation has succeeded:</p>
+    <pre><code class="language-php">&amp;lt;?php
 
-    <h2 id="Dependency_manager">Dependency manager</h2>
+require_once '/usr/local/lib/Hoa/Core/Core.php';
+var_dump(HOA); // bool(true)</code></pre>
 
-    <p><img src="hoa://Application/Public/Image/Logo/Composer.png"
-            alt="Logo of Composer" class="fright" />
-    To manage the dependencies between libraries of Hoa, we recommend the tool
-    <a href="http://getcomposer.org/">Composer</a>. All the dependencies managed
-    by Composer are registered in the
-    <a href="http://packagist.org/">Packagist</a> repository, under the names
-    <code>hoa/<em>library</em></code>. Thus, for example, to install the
-    <code>Hoa\Compiler</code> library, one has to write in a
-    <code>composer.json</code> file:</p>
-    <pre><code class="language-json">{
-    "require": {
-        "hoa/compiler": "dev-master"
-    },
-    "minimum-stability": "dev"
-}</code></pre>
-    <p>Then, to install the dependencies:</p>
-    <pre><code class="language-shell">$ composer install</code></pre>
-    <p>It is recommended to <a href="https://getcomposer.org/doc/">read the
-    documentation of Composer</a> if you are not familiar with this tool.</p>
+    <h2 id="Archives">Archives</h2>
 
-    <h2>Archives</h2>
-
-    <p>Archives are produced at each updates of the projects. The index of
+    <p>Archives are produced at each updates for some projects. The index of
     archives can be found at the address:
     <a href="http://download.hoa-project.net">download.hoa-project.net</a>.
-    They also follow the naming of projects. Several formats are available:
-    <code>.zip</code>, <code>.tar.gz</code> and <code>.phar</code>
-    (for the <a href="http://php.net/phar">PHP archives</a>).</p>
-    <p>The WebDAV protocol also allows to access to the archives, at the
-    following address:
+    The naming is also identical to the one of projects. Several formats are
+    available: <code>.zip</code>, <code>.tar.gz</code> and
+    <code>.phar</code> (for the <a href="http://php.net/phar">PHP
+    archives</a>).</p>
+    <p>The WebDAV protocol also allows to access archives at the address:
     <a href="http://dav.hoa-project.net">dav.hoa-project.net</a>.</p>
+
+    <h2 id="Structure_of_a_library">Structure of a library</h2>
+
+    <p>Here is the structure of a library:</p>
+    <ul>
+      <li>sources at the root,</li>
+      <li><code>Bin/</code>, for the binaries,</li>
+      <li><code>Documentation/</code>, for <a href="@l#Hack_book">chapters of
+      the hack book (documentation)</a>,</li>
+      <li><code>Test/</code>, for the tests,</li>
+      <li><code>README.md</code>, for an english description with usual
+      examples,</li>
+      <li><code>composer.json</code>, for the dependencies.</li>
+    </ul>
+    <p>Binaries are accessible via the command: <code>hoa
+    <em>library</em>:<em>command</em></code>. For example, for
+    <code>Hoa\Core\Bin\Resolve</code>, we will write: <code>hoa
+    core:resolve</code>.</p>
+    <p class="warning">For the moment, tests are under migration!<br /> Thank
+    you for your patience.</p>
+    <p>Libraries are in three different states according to their evolution:</p>
+    <div id="library_states" class="schema"
+         style="max-width: 550px; margin: 0 auto;"></div>
+    <script>
+    Hoa.Document.onReady(function ( ) {
+
+        var paper = Hoa.Graph(Hoa.$('#library_states'), 550, 150);
+        var grid  = paper.grid(0, 0, 550, 150, 3, 1);
+        var step1 = grid.push(paper.rect(0, 0, 120, 90, 3, 'living'));
+        var step2 = grid.push(paper.rect(0, 0, 120, 90, 3, 'matured'));
+        var step3 = grid.push(paper.rect(0, 0, 120, 90, 3, 'finalized'));
+
+        paper.link.between(step1, step2);
+        paper.link.between(step2, step3);
+    });
+    </script>
+    <p>The first state represents a library which will be interesting for Hoa
+    but which is under <strong>development</strong>. The next state represents a
+    library with a <strong>freezed API</strong>, a <strong>mature</strong> code.
+    Such a library is intensively tested by all users in order to
+    <strong>try</strong> the code and its API. After a certain time, the library
+    reaches the last state: it is <strong>finalized</strong>. Its API will
+    <strong>never</strong> change. While there is new features, the library will
+    stay finalized or will go back mature according the importance of the
+    features.</p>
+
+    <h2 id="Rolling_release"><em lang="en">Rolling-release</em></h2>
+
+    <p>Coming soon.</p>
+
+    <script src="hoa://Application/Public/Javascript/Hoa.Graph.js"></script>
+    <script src="hoa://Application/Public/Javascript/Hoa.Graph.style.js"></script>
   </yield>
 </overlay>
