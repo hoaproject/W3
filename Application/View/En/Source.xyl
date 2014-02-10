@@ -126,8 +126,8 @@ var_dump(HOA); // bool(true)</code></pre>
 
         var paper = Hoa.Graph(Hoa.$('#library_states'), 550, 150);
         var grid  = paper.grid(0, 0, 550, 150, 3, 1);
-        var step1 = grid.push(paper.rect(0, 0, 120, 90, 3, 'living'));
-        var step2 = grid.push(paper.rect(0, 0, 120, 90, 3, 'matured'));
+        var step1 = grid.push(paper.rect(0, 0, 120, 90, 3, 'beta'));
+        var step2 = grid.push(paper.rect(0, 0, 120, 90, 3, 'mature'));
         var step3 = grid.push(paper.rect(0, 0, 120, 90, 3, 'finalized'));
 
         paper.link.between(step1, step2);
@@ -136,7 +136,7 @@ var_dump(HOA); // bool(true)</code></pre>
     </script>
     <p>The first state represents a library which will be interesting for Hoa
     but which is under <strong>development</strong>. The next state represents a
-    library with a <strong>freezed API</strong>, a <strong>mature</strong> code.
+    library with a <strong>frozen API</strong>, a <strong>mature</strong> code.
     Such a library is intensively tested by all users in order to
     <strong>try</strong> the code and its API. After a certain time, the library
     reaches the last state: it is <strong>finalized</strong>. Its API will

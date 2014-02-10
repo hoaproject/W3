@@ -134,9 +134,9 @@ var_dump(HOA); // bool(true)</code></pre>
 
         var paper = Hoa.Graph(Hoa.$('#library_states'), 550, 150);
         var grid  = paper.grid(0, 0, 550, 150, 3, 1);
-        var step1 = grid.push(paper.rect(0, 0, 120, 90, 3, 'existantes'));
-        var step2 = grid.push(paper.rect(0, 0, 120, 90, 3, 'matures'));
-        var step3 = grid.push(paper.rect(0, 0, 120, 90, 3, 'finalisées'));
+        var step1 = grid.push(paper.rect(0, 0, 120, 90, 3, 'béta'));
+        var step2 = grid.push(paper.rect(0, 0, 120, 90, 3, 'mature'));
+        var step3 = grid.push(paper.rect(0, 0, 120, 90, 3, 'finalisée'));
 
         paper.link.between(step1, step2);
         paper.link.between(step2, step3);
