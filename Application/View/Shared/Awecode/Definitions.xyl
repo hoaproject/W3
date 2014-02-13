@@ -2,7 +2,7 @@
 
 <definition xmlns="http://hoa-project.net/xyl/xylophone">
   <yield name="awecode">
-    <div yield-select="?x:@*">
+    <div yield-select="?x:@*" class="cboth">
       <div role="region" class="player center mw800">
         <div class="video" />
         <slider />

@@ -52,6 +52,14 @@ class Awecode extends Generic {
         $this->data->awecode[0]->subtitle = 'hoa://Application/Public/Subtitle/Awecode/' .
                                             $language .
                                             '/' . ucfirst($awecode->id) . '.srt';
+
+        if(false !== $pos = strpos($awecode->id, '-'))
+            $libraryName = substr($awecode->id, 0, $pos);
+        else
+            $libraryName = $awecode->id;
+
+        $this->data->awecode[0]->library  = ucfirst($libraryName);
+
         $this->view->addOverlay('hoa://Application/View/Shared/Awecode/Awecode.xyl');
         $this->render();
 

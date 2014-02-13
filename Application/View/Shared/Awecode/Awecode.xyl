@@ -6,6 +6,21 @@
   <yield id="yContent" bind="?awecode">
     <h1 id="Awecode_demo">Awecode<title_break /><yield bind="?title" /></h1>
 
+    <ul class="inline fright">
+     <li><a href="@lh:chapter=(?library)" class="plain">
+            <img src="hoa://Application/Public/Image/Icon_literature_black.svg"
+                 alt="Documentation" width="30px" height="30px" /></a></li>
+      <li><a href="@dl:file=Library/(?library)/" class="plain">
+            <img src="hoa://Application/Public/Image/Icon_package_black.svg"
+                 alt="Archives" width="30px" height="30px" /></a></li>
+      <li><a href="@git:repository=Library/(?library)" class="plain">
+            <img src="hoa://Application/Public/Image/Icon_git_black.svg"
+                 alt="Git" width="30px" height="30px" /></a></li>
+      <li><a href="@github:repository=(?library)" class="plain">
+            <img src="hoa://Application/Public/Image/Icon_github_black.svg"
+                 alt="Github" width="30px" height="30px" /></a></li>
+    </ul>
+
     <awecode id="awecode" />
 
     <script src="hoa://Application/Public/External/Popcorn.js/popcorn.js" />
