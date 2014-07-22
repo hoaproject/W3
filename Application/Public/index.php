@@ -108,16 +108,22 @@ $router
                     $defaultVariables
                 )
                 ->get(
-                    'v',
+                    'v-',
                     '/(?<language>\w{2})/Awecode\.html',
                     'awecode',
+                    'redirect'
+                )
+                ->get(
+                    'v',
+                    '/(?<language>\w{2})/Video\.html',
+                    'video',
                     'default',
                     $defaultVariables
                 )
                 ->get(
                     'v+',
                     '/(?<language>\w{2})/Awecode/(?<id>[\w\-_]+)\.html',
-                    'awecode',
+                    'video',
                     'awecode',
                     $defaultVariables
                 )

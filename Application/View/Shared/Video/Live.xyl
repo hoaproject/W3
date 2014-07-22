@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<overlay xmlns="http://hoa-project.net/xyl/xylophone">
+  <yield id="yContent">
+    <h1 id="Live">Live</h1>
+
+    <div class="video">
+      <object type="application/x-shockwave-flash"
+              data="http://www.twitch.tv/widgets/live_embed_player.swf?channel=hoaproject">
+        <param name="allowFullScreen"   value="true" />
+        <param name="allowScriptAccess" value="always" />
+        <param name="allowNetworking"   value="all" />
+        <param name="movie"             value="http://www.twitch.tv/widgets/live_embed_player.swf" />
+        <param name="flashvars"         value="hostname=www.twitch.tv&amp;channel=hoaproject&amp;auto_play=true&amp;start_volume=100" />
+      </object>
+    </div>
+  </yield>
+</overlay>
