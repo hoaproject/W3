@@ -10,6 +10,9 @@ msgstr "Où Hoa était invité"
 msgid "invite us"
 msgstr "nous inviter"
 
+msgid "Introduction of PHPTour 2014."
+msgstr "Le <a href=\"http://afup.org/pages/phptourlyon2014/\">PHPTour</a> est un nouveau cycle de conférences de l'<a href=\"http://afup.org/\">AFUP</a>. Le <time datetime=\"2014-06\">23 et 24 juin 2014</time>, au sein de la Manufacture des Tabacs à Lyon, le forum a gentiment accueilli <a href=\"@c\">Ivan Enderlin</a> et <a href=\"http://jubianchi.fr/\">Julien Bianchi</a> pour une conférence."
+
 msgid "Introduction of AFUP Lyon 2013."
 msgstr "L'<a href=\"http://lyon.afup.org/\">AFUP Lyon</a> est l'antenne lyonnaise de l'<a href=\"http://afup.org/\">AFUP</a>, l'association française des utilisateurs de PHP. Afin de <strong>promouvoir</strong> PHP en France, ils organisent régulièrement des conférences sur un projet ou un sujet particulier. Ivan Enderlin et Julien Bianchi étaient invités pour présenter Hoa."
 
@@ -29,4 +32,4 @@ msgid "Introduction of AMOST 2012."
 msgstr "La conférence <a href=\"http://icst2012.soccerlab.polymtl.ca/\">ICST</a> (<em lang=\"en\">International Conference on Software Testing, Verification and Validation</em>) est une conférence <strong>internationale</strong> sur la qualité logiciel, principalement sur la <strong>vérification</strong> et la <strong>validation</strong>. Cette conférence propose plusieurs <em lang=\"en\">workshops</em> dont <a href=\"https://sites.google.com/site/amost2012/\">AMOST</a> (<em lang=\"en\">Advances in Model Based Testing</em>) auquel s'est rendu <a href=\"@c\">Ivan Enderlin</a> pour présenter les derniers travaux de recherche présents dans Hoa."
 
 msgid "Introduction of PHPTour 2011."
-msgstr "Le <a href=\"http://afup.org/pages/phptourlille2011/\">PHPTour</a> est un nouveau cycle de conférences de l'<a href=\"http://afup.org/\">AFUP</a>.  Le <time datetime=\"2011-11\">24 et 25 novembre 2011</time>, au sein d'Euratechnologies à Lille, le forum a gentiment accueilli <a href=\"@c\">Ivan Enderlin</a> pour une conférence."
+msgstr "Le <a href=\"http://afup.org/pages/phptourlille2011/\">PHPTour</a> est un nouveau cycle de conférences de l'<a href=\"http://afup.org/\">AFUP</a>. Le <time datetime=\"2011-11\">24 et 25 novembre 2011</time>, au sein d'Euratechnologies à Lille, le forum a gentiment accueilli <a href=\"@c\">Ivan Enderlin</a> pour une conférence."

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xyl-stylesheet href="hoa://Application/Public/Css/Leaflet.css"?>
+
+<overlay xmlns="http://hoa-project.net/xyl/xylophone">
+  <yield id="yContent">
+    <h1>PHPTour 2014</h1>
+
+    <p><img class="fright"
+            width="250px"
+            src="hoa://Application/Public/Image/Logo/PHPTour_Lyon.png"
+            alt="AFUP Lyon" />
+    <_ with="Event">Introduction of PHPTour 2014.</_></p>
+
+    <div id="map" style="height: 500px" class="cboth"></div>
+    <script src="hoa://Application/Public/Javascript/Leaflet.js"></script>
+    <script>
+      var map = L.map('map').setView([45.748418537269, 4.8604905010918], 13);
+
+      L.tileLayer('<value link="hoa://Application/Public/Map/Tiles/{z}/{x}/{y}.png" />', {
+        minZoom: 1,
+        maxZoom: 7
+      }).addTo(map);
+
+      L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+        attribution: '© <a href="http://osm.org/copyright">OpenStreetMap</a> contributors',
+        minZoom: 7
+      }).addTo(map);
+
+      var icon = L.icon({
+          iconUrl: '<value link="hoa://Application/Public/Map/Marker.svg" />',
+          iconSize: [28, 45],
+          iconAnchor: [14, 44],
+          popupAnchor: [2, -45]
+      });
+
+      L.marker([45.748418537269, 4.8604905010918], {icon: icon})
+       .addTo(map);
+    </script>
+
+    <h2 id="Praspel_un_langage_de_specification_par_contrats">Praspel, un
+    langage de spécification par contrats</h2>
+
+    <p>Praspel est un langage de spécification basé sur la programmation par
+    contrats. Utilisé en annotations du code, c'est un langage simple unifiant
+    plusieurs théories avancéees de validation et de vérification de données.
+    Praspel est entre autres utilisé pour de la génération automatique de tests
+    unitaires. Dans cette conférence, nous verrons diverses stratégies pour
+    assurer une certaine qualité de code, en revenant sur les tests unitaires et
+    la programmation par contrats. Ensuite, nous verrons comment Praspel répond
+    à ces problématiques. Et enfin, nous verrons de quelle manière Praspel
+    s'intègre aux outils industriels, notamment en générant automatiquement des
+    tests unitaires exécutables avec atoum. Notons que Praspel est élaboré au
+    sein des laboratoires de recherche de l'INRIA et de Femto-ST. 3 articles
+    internationaux, 1 journal et 1 thèse ont d'ores et déjà été publiés.</p>
+
+    <h3>Présentation, démonstrations et enregistrement</h3>
+
+    <p>La <a href="@key.:keynote=PHPTour14/PHPTour14.html">présentation</a>
+    est disponible. Les démonstrations sont accessibles dans le
+    dossier <code>Demonstration</code> (voir le dépôt
+    <a href="@github:repository=Keynote"><code>Keynote.git</code></a>).
+    L'<a href="http://youtu.be/PYcQmK_A_rw">enregistrement de la conférence</a>
+    est également disponible.</p>
+    <div class="video">
+      <iframe src="http://www.youtube-nocookie.com/embed/PYcQmK_A_rw?rel=0" />
+    </div>
+  </yield>
+</overlay>

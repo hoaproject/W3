@@ -10,6 +10,9 @@ msgstr "Where Hoa was invited"
 msgid "invite us"
 msgstr "invite us"
 
+msgid "Introduction of PHPTour 2014."
+msgstr "The <a href=\"http://afup.org/pages/phptourlyon2014/\">PHPTour</a> is a brand new cycle of the <a href=\"http://afup.org/\">AFUP</a> conferences. The <time datetime=\"2014-06\">23<sup>th</sup> and 24<sup>th</sup> June 2014</time>, at the Manufacture des Tabacs at Lyon (FR), the forum has gently welcomed <a href=\"@c\">Ivan Enderlin</a> and <a href=\"http://jubianchi.fr/\">Julien Bianchi</a> for a conference."
+
 msgid "Introduction of AFUP Lyon 2013."
 msgstr "The <a href=\"http://lyon.afup.org/\">AFUP Lyon</a> is the branch of Lyon (FR) of the <a href=\"http://afup.org/\">AFUP</a>, the french foundation of French speaking PHP users. In order to <strong>promote</strong> PHP in France, they regularly organize conferences about a certain project or subject. Ivan Enderlin and Julien Bianchi were invited to present Hoa."
 

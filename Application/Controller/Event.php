@@ -35,6 +35,11 @@ class Event extends Generic {
         return;
     }
 
+    public function Phptour14Action ( $language ) {
+
+        return $this->showEvent($language, 'PHPTour 2014', 'Phptour14');
+    }
+
     public function Afuplyon13Action ( $language ) {
 
         return $this->showEvent($language, 'AFUP Lyon 2013', 'Afuplyon13');

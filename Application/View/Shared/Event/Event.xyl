@@ -58,6 +58,10 @@
       L.marker([45.756857272342, 4.8569499851933], {icon: icon})
        .bindPopup('<a href="@ev+:_able=Afuplyon13">AFUP Lyon\'13</a>')
        .addTo(map);
+
+      L.marker([45.748418537269, 4.8604905010918], {icon: icon})
+       .bindPopup('<a href="@ev+:_able=Phptour14">PHPTour\'14</a>')
+       .addTo(map);
     </script>
 
     <h2><_ with="Event">Organized by Hoa</_>
@@ -76,6 +80,11 @@
 
     <ul>
       <li>??? (<a href="@c"><_ with="Event">invite us</_></a>)</li>
+      <li><time datetime="2014-06">
+          <value formatter="strftime"
+                 formatter-format="%B %Y"
+                 formatter-timestamp="1403560800" /></time>,
+          <a href="@ev+:_able=Phptour14">PHPTour</a></li>
       <li><time datetime="2013-10">
           <value formatter="strftime"
                  formatter-format="%B %Y"
@@ -90,8 +99,7 @@
           <value formatter="strftime"
                  formatter-format="%B %Y"
                  formatter-timestamp="1362092400" /></time>,
-          <a href="@ev+:_able=Cstva13">CSTVA</a>,
-          <a href="@ev+:_able=Hoaapex13">Hoa Apex</a></li>
+          <a href="@ev+:_able=Cstva13">CSTVA</a></li>
       <li><time datetime="2012-06">
           <value formatter="strftime"
                  formatter-format="%B %Y"
