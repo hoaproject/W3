@@ -137,6 +137,13 @@
 
     <p>Industrial presentations:</p>
     <ul>
+      <li><cite lang="fr">Praspel, un langage de spécification par
+      contrats</cite>, presented at the
+      <a href="http://afup.org/pages/phptourlyon2014/">PHPTour 2014</a> (Lyon,
+      France),
+      <a href="@key.:keynote=PHPTour14/PHPTour14.html">presentation</a> and
+      <a href="@ev+:_able=Phptour14">details</a>,</li>
+
       <li><cite lang="fr">Hoa, un ensemble de bibliothèques PHP</cite>,
       presented at the <a href="http://lyon.afup.org/">AFUP Lyon 2013</a>
       (Lyon, France),
