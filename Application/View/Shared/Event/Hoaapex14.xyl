@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xyl-stylesheet href="hoa://Application/Public/Css/Leaflet.css"?>
+
+<overlay xmlns="http://hoa-project.net/xyl/xylophone">
+  <yield id="yContent">
+    <h1>Apex 2014</h1>
+
+    <p><_ with="Event">Introduction of Hoa Apex 2013.</_></p>
+
+    <div id="map" style="height: 500px" class="cboth"></div>
+    <script src="hoa://Application/Public/Javascript/Leaflet.js"></script>
+    <script>
+      var map = L.map('map').setView([43.281374566478, 5.356245875504], 13);
+
+      L.tileLayer('<value link="hoa://Application/Public/Map/Tiles/{z}/{x}/{y}.png" />', {
+        minZoom: 1,
+        maxZoom: 7
+      }).addTo(map);
+
+      L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+        attribution: '© <a href="http://osm.org/copyright">OpenStreetMap</a> contributors',
+        minZoom: 7
+      }).addTo(map);
+
+      var icon = L.icon({
+          iconUrl: '<value link="hoa://Application/Public/Map/Marker.svg" />',
+          iconSize: [28, 45],
+          iconAnchor: [14, 44],
+          popupAnchor: [2, -45]
+      });
+
+      L.marker([43.281374566478, 5.356245875504], {icon: icon})
+       .addTo(map);
+    </script>
+    <p>A <a href="https://www.flickr.com/photos/hywan/sets/72157646250066380/">photo
+    album</a> is available.</p>
+
+    <h2 id="Hoa_Apex-14_what_a_year">Hoa Apex'14, what a year!</h2>
+
+    <p>This keynote presents the state and the evolution of Hoa since Hoa
+    Apex'13 (March 2013) in term of community, source code, contributions,
+    sites, documentations, events etc.</p>
+
+    <h3>Presentation and record</h3>
+
+    <p>The <a href="@key.:keynote=HoaApex14-1/HoaApex14-1.html">presentation</a>
+    is available. The <a href="http://player.vimeo.com/video/103915477">record
+    of the keynote</a> is also available.</p>
+    <div class="video">
+      <iframe src="http://player.vimeo.com/video/103915477" />
+    </div>
+
+    <h2 id="Hoa_Apex-14_how_do_we_ensure_code_quality">Hoa Apex'14, how do we
+    ensure code quality?</h2>
+
+    <p>This keynote presents our “team” that helps us to automate quality in
+    Hoa. This was also the opportunity to present our last tool: Le Comte
+    Intatto.</p>
+
+    <h3>Presentation</h3>
+
+    <p>The <a href="@key.:keynote=HoaApex14-2/HoaApex14-2.html">presentation</a>
+    is available.</p>
+  </yield>
+</overlay>

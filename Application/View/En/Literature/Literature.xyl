@@ -141,7 +141,8 @@
       contrats</cite>, presented at the
       <a href="http://afup.org/pages/phptourlyon2014/">PHPTour 2014</a> (Lyon,
       France),
-      <a href="@key.:keynote=PHPTour14/PHPTour14.html">presentation</a> and
+      <a href="@key.:keynote=PHPTour14/PHPTour14.html">presentation</a>,
+      <a href="http://youtu.be/PYcQmK_A_rw">record</a> and
       <a href="@ev+:_able=Phptour14">details</a>,</li>
 
       <li><cite lang="fr">Hoa, un ensemble de bibliothèques PHP</cite>,
@@ -160,6 +161,25 @@
       (Lille, France),
       <a href="@key.:keynote=PHPTour11/PHPTour11.html">presentation</a> and
       <a href="@ev+:_able=Phptour11">details</a>.</li>
+    </ul>
+
+    <p>Hoa Apex, the community event:</p>
+    <ul>
+      <li><cite>What a year!</cite>, presented at
+      <a href="@ev+:_able=Hoaapex14">Hoa Apex'14</a> (Marseille, France),
+      <a href="@key.:keynote=HoaApex14-1/HoaApex14-1.html">presentation</a>,
+      <a href="http://player.vimeo.com/video/103915477">record</a> and
+      <a href="@ev+:_able=Hoaapex14">details</a>,</li>
+
+      <li><cite>How do we ensure code quality?</cite>, presented at
+      <a href="@ev+:_able=Hoaapex14">Hoa Apex'14</a> (Marseille, France),
+      <a href="@key.:keynote=HoaApex14-2/HoaApex14-2.html">presentation</a> and
+      <a href="@ev+:_able=Hoaapex14">details</a>,</li>
+
+      <li><cite lang="fr">Ouverture</cite>, presented at
+      <a href="@ev+:_able=Hoaapex13">Hoa Apex'13</a> (Le Locle, Switzerland),
+      <a href="@key.:keynote=HoaApex13/HoaApex13.html">presentation</a> and
+      <a href="@ev+:_able=Hoaapex13">details</a>.</li>
     </ul>
   </yield>
 </overlay>

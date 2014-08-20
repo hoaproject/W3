@@ -62,12 +62,21 @@
       L.marker([45.748418537269, 4.8604905010918], {icon: icon})
        .bindPopup('<a href="@ev+:_able=Phptour14">PHPTour\'14</a>')
        .addTo(map);
+
+      L.marker([43.281374566478, 5.356245875504], {icon: icon})
+       .bindPopup('<a href="@ev+:_able=Hoaapex14">Hoa Apex\'14</a>')
+       .addTo(map);
     </script>
 
     <h2><_ with="Event">Organized by Hoa</_>
     <img src="hoa://Application/Public/Map/Marker.svg" height="25" /></h2>
 
     <ul>
+      <li><time datetime="2014-08">
+          <value formatter="strftime"
+                 formatter-format="%B %Y"
+                 formatter-timestamp="1408140000" /></time>,
+          <a href="@ev+:_able=Hoaapex14">Hoa Apex</a></li>
       <li><time datetime="2013-03">
           <value formatter="strftime"
                  formatter-format="%B %Y"
