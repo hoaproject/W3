@@ -19,6 +19,13 @@
       </ul>
     </div>
 
+    <div class="download-box">
+      <form novalidate="client" action="#" method="post" id="form_search" enctype="application/x-www-form-urlencoded">
+        <input type="text" name="query" />
+        <input type="submit" value="Search" />
+      </form>
+    </div>
+
     <div class="column fleft w50">
       <h2><_ with="Index">Latest news</_></h2>
 
