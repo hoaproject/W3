@@ -1,0 +1,15 @@
+
+.search-box {
+    background: none repeat scroll 0 0 #4F2C68;
+    border-radius: 20px;
+    box-shadow: 0 0 1.2em #222222 inset, 0 0 0.2em #000000;
+    color: #DE8300;
+    height: 80px;
+    line-height: 80px;
+    margin: 2em auto;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    text-shadow: 1px 1px #341D44;
+    width: 480px;
+}
