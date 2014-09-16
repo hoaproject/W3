@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<overlay xmlns="http://hoa-project.net/xyl/xylophone">
+  <yield id="yContent">
+    <h1>Search</h1>
+
+    <div class="search-box">
+      <form novalidate="client" action="#" method="post" id="form_search" enctype="application/x-www-form-urlencoded">
+        <input type="text" name="query" class="search-text" value="(?query)" />
+        <input type="submit" name="search" value="Recherche" class="search-submit" />
+      </form>
+    </div>
+    <h2>Résultats pour "<value bind="?query" />"</h2>
+    <ul>
+      <li bind="?results">
+        <a href="(?url)">
+          <value bind="?anchor" />
+        </a>
+      </li>
+    </ul>
+  </yield>
+</overlay>
