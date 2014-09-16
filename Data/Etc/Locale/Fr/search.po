@@ -1,2 +1,2 @@
 msgid "Search: documentation, manual, tutorial…"
-msgstr "Search: documentation, manual, tutorial…"
+msgstr "Recherche: documentation, manuel, tutoriel ..."

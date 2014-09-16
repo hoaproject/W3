@@ -2,7 +2,6 @@
 
 <overlay xmlns="http://hoa-project.net/xyl/xylophone">
   <yield id="yContent">
-    <h1>Search</h1>
 
     <div class="search-box">
       <form novalidate="client" action="#" method="post" id="form_search" enctype="application/x-www-form-urlencoded">
