@@ -36,9 +36,8 @@
     <code>composer.json</code> file:</p>
     <pre><code class="language-json">{
     "require": {
-        "hoa/websocket": "dev-master"
-    },
-    "minimum-stability": "dev"
+        "hoa/websocket": "~2.0"
+    }
 }</code></pre>
     <p>Then, to install dependencies:</p>
     <pre><code class="language-shell">$ composer install</code></pre>
