@@ -95,7 +95,7 @@
       <li><a href="@lh:chapter=Websocket"><code>Websocket</code></a> ;</li>
       <li><a href="@lh:chapter=Worker"><code>Worker</code></a> ;</li>
       <li><code>Xml</code> ;</li>
-      <li><code>XmlRpc</code> ;</li>
+      <li><code>Xmlrpc</code> ;</li>
       <li><code>Xyl</code> ;</li>
       <li><a href="@lh:chapter=Zombie"><code>Zombie</code></a> ;</li>
       <li><a href="@lh:chapter= "><code> </code></a>.</li>

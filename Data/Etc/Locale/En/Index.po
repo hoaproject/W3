@@ -4,6 +4,12 @@ msgstr "A set of PHP libraries"
 msgid "Hoa is a modular, extensible and structured set of PHP libraries. Moreover, Hoa aims at being a bridge between industrial and research worlds."
 msgstr "Hoa is a <strong>modular</strong>, <strong>extensible</strong> and <strong>structured</strong> set of PHP libraries. Moreover, Hoa aims at being a bridge between industrial and research worlds."
 
+msgid "Compose and extend libraries to create applications or your own libraries!"
+msgstr "<strong>Compose</strong> and <strong>extend</strong> libraries to <strong>create</strong> applications or your own libraries!"
+
+msgid "What are you going to love?"
+msgstr "What are you going to love?"
+
 msgid "Download"
 msgstr "Download"
 

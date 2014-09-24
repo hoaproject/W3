@@ -23,6 +23,7 @@ class Index extends Generic {
                 $this->data->blog = $handle;
 
         $this->data->title = $tr->_('A set of PHP libraries');
+        $this->data->search_placeholder = $tr->_('What are you going to love?');
         $this->view->addOverlay('hoa://Application/View/Shared/Welcome.xyl');
         $this->render();
 
