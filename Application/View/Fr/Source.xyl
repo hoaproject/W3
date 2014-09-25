@@ -130,11 +130,11 @@ var_dump(HOA); // bool(true)</code></pre>
 
     <h2 id="Rush_Release" for="toc"><em lang="en">Rüsh Release</em></h2>
 
-    <p>Hoa utilise un système de <em lang="en">release</em> appelé <strong><em
-    lang="en">Rüsh Release</em></strong>, pour <em lang="en">Rolling Ünd
-    ScHeduled Release</em>. Cette section explique ce système, qui, malgré les
-    apparences, est très proche de ce qui est manipulé au quotidien mais répond
-    aux besoins particuliers du projet Hoa.</p>
+    <p>Hoa utilise un système de <em lang="en">release</em> appelé
+    <strong><em lang="en">Rüsh Release</em></strong>, pour <em lang="en">Rolling
+    Ünd ScHeduled Release</em>. Cette section explique ce système, qui, malgré
+    les apparences, est très proche de ce qui est rencontré au quotidien mais
+    répond aux besoins particuliers du projet Hoa.</p>
 
     <h3 id="Development_and_maturation" for="toc">Élaboration et maturation</h3>
 
@@ -172,8 +172,9 @@ var_dump(HOA); // bool(true)</code></pre>
 
     <h3 id="Release_cycle" for="toc">Cycle de <em lang="en">release</em></h3>
 
-    <p>Une fois une bibliothèque finalisée, son <strong>cycle</strong> peut
-    commencer. Hoa utilise un cycle de <em lang="en">release</em> appelé
+    <p>Une fois une bibliothèque finalisée, son <strong>cycle de
+    <em lang="en">release</em></strong> peut commencer. Hoa utilise un cycle
+    appelé
     <a href="https://fr.wikipedia.org/wiki/Rolling_release"><em lang="en">Rolling
     Release</em></a>. Cela signifie que la branche principale,
     <code>master</code>, contient en permanence la <strong>dernière
