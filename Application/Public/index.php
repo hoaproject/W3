@@ -224,7 +224,8 @@ $router
     ->_get('github', 'https://github.com/hoaproject/(?<repository>)')
     ->_get('twitter', 'https://twitter.com/hoaproject')
     ->_get('key.',   'http://keynote.hoa-project.net/(?<keynote>)')
-    ->_get('key',    'http://keynote.hoa-project.net/Shells/(?<shell>).html#http://keynote.hoa-project.net/(?<keynote>).html');
+    ->_get('key',    'http://keynote.hoa-project.net/Shells/(?<shell>).html#http://keynote.hoa-project.net/(?<keynote>).html')
+    ->_get('central_resource', 'http://central.hoa-project.net/Resource/(?<path>)');
 
 try {
 
