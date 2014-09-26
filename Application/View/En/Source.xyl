@@ -123,10 +123,10 @@ var_dump(HOA); // bool(true)</code></pre>
     <p class="warning">For the moment, tests are under migration!<br /> Thank
     you for your patience.</p>
 
-    <h2 id="Rush_Release" for="toc">Rüsh Release</h2>
+    <h2 id="Rush_Release" for="toc">Rush Release</h2>
 
-    <p>Hoa uses a release system called <strong>Rüsh Release</strong>, standing
-    for Rolling Ünd ScHeduled Release. This section explains this system, that,
+    <p>Hoa uses a release system called <strong>Rush Release</strong>, standing
+    for Rolling Und ScHeduled Release. This section explains this system, that,
     despites its appearence, is very close to what is daily met while answering
     to the particular needs of the Hoa project.</p>
 
@@ -187,7 +187,7 @@ var_dump(HOA); // bool(true)</code></pre>
     <code><em>x</em>.<em>Y</em><sup>{2,4}</sup>.<em>mm</em>.<em>dd</em></code>,
     where <code><em>x</em></code> is the master compatibility number (detailled
     hereinafter), <code><em>Y</em><sup>{2,4}</sup></code> is the year (starting
-    from 2000, also called Rüsh Epoch), <code><em>mm</em></code> is the month
+    from 2000, also called Rush Epoch), <code><em>mm</em></code> is the month
     and finally <code><em>dd</em></code> is the day.</p>
     <p>The <strong>master compatibility number</strong> (MCN) represents the
     number of time where the backward compatibility could not be ensured, in

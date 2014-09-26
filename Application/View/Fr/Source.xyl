@@ -128,11 +128,11 @@ var_dump(HOA); // bool(true)</code></pre>
     <br />
     Merci d'être patient.</p>
 
-    <h2 id="Rush_Release" for="toc"><em lang="en">Rüsh Release</em></h2>
+    <h2 id="Rush_Release" for="toc"><em lang="en">Rush Release</em></h2>
 
     <p>Hoa utilise un système de <em lang="en">release</em> appelé
-    <strong><em lang="en">Rüsh Release</em></strong>, pour <em lang="en">Rolling
-    Ünd ScHeduled Release</em>. Cette section explique ce système, qui, malgré
+    <strong><em lang="en">Rush Release</em></strong>, pour <em lang="en">Rolling
+    Und ScHeduled Release</em>. Cette section explique ce système, qui, malgré
     les apparences, est très proche de ce qui est rencontré au quotidien mais
     répond aux besoins particuliers du projet Hoa.</p>
 
@@ -202,7 +202,7 @@ var_dump(HOA); // bool(true)</code></pre>
     <code><em>x</em>.<em>Y</em><sup>{2,4}</sup>.<em>mm</em>.<em>dd</em></code>,
     où <code><em>x</em></code> est le <em lang="en">master compatibility
     number</em> (détaillé ci-après), <code><em>Y</em><sup>{2,4}</sup></code> est
-    l'année (à partir de l'année 2000, aussi appelée <em lang="en">Rüsh
+    l'année (à partir de l'année 2000, aussi appelée <em lang="en">Rush
     Epoch</em>), <code><em>mm</em></code> est le mois et enfin
     <code><em>dd</em></code> le jour.</p>
     <p>Le <strong><em lang="en">master compatibility number</em></strong> (MCN)
