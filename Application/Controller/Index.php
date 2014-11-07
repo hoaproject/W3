@@ -68,6 +68,18 @@ class Index extends Generic {
         return;
     }
 
+    public function PressAction ( $language ) {
+
+        $language = $this->computeLanguage($language, 'Press');
+        $tr = $this->getTranslation('Press');
+
+        $this->data->title = $tr->_('Press');
+        $this->view->addOverlay('hoa://Application/View/' . $language . '/Press.xyl');
+        $this->render();
+
+        return;
+    }
+
     public function AboutAction ( $language ) {
 
         $language = $this->computeLanguage($language, 'About');

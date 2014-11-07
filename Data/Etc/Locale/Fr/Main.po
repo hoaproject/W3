@@ -16,6 +16,9 @@ msgstr "Événements"
 msgid "Community"
 msgstr "Communauté"
 
+msgid "Press"
+msgstr "Presse"
+
 msgid "About"
 msgstr "À propos"
 

@@ -156,6 +156,13 @@ $router
                     $defaultVariables
                 )
                 ->get(
+                    'p',
+                    '/(?<language>\w{2})/Press\.html',
+                    'index',
+                    'press',
+                    $defaultVariables
+                )
+                ->get(
                     'a',
                     '/(?<language>\w{2})/About\.html',
                     'index',

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<overlay xmlns="http://hoa-project.net/xyl/xylophone">
+  <yield id="yContent">
+    <h1>Centre de la presse</h1>
+
+    <h2>Histoire derrière Hoa</h2>
+
+    <p>Hoa est né en 2007 dans la chambre de Ivan Enderlin. Le projet a été une
+    excuse pour… Début 2010, le projet a réellement commencé, avec une vraie
+    philosophie (laquelle ?)</p>
+
+    <div class="timeline">
+      <ul>
+        <li><time datetime="2007">2007</time>
+            Pré-naissance du projet</li>
+        <li><time datetime="2010">2010</time>
+            Naissance du projet</li>
+        <li><time datetime="24-11-2011">24 novembre 2011</time>
+            Première conférence grand public
+            (<a href="@ev+:_able=Phptour11">PHPTour</a>)</li>
+        <li><time datetime="2012"></time></li>
+        <li><time datetime="23-03-2013">23 mars 2013</time>
+            Premier événement communutaire
+            (<a href="@ev+:_able=Hoaapex13">Apex, première édition</a>)</li>
+        <li><time datetime="02-04-2013">2 avril 2013</time>
+            10 000 téléchargements de Hoa</li>
+        <li><time datetime="23-03-2013">23 mars 2013</time>
+            Deuxième événement communutaire
+            (<a href="@ev+:_able=Hoaapex14">Apex, deuxième édition</a>)</li>
+        <li><time datetime="25-08-2013">25 aout 2013</time>
+            Création de l'association</li>
+        <li><time datetime="08-11-2014">8 novembre 2014</time>
+            200 000 téléchargements de Hoa</li>
+      </ul>
+    </div>
+
+    <h2>Pourquoi Hoa ?</h2>
+
+    <h2>L'équipe et la communauté</h2>
+
+    <h2>Kit</h2>
+
+    <ul>
+      <li><a href="hoa://Application/Public/Image/Hoa.svg">logo en SVG</a></li>
+      <li><a href="hoa://Application/Public/Image/Hoa.png">logo en PNG (haute
+          qualité)</a></li>
+      <li><a href="hoa://Application/Public/Image/Hoa_small.png">logo en PNG (moyenne
+          qualité)</a></li>
+    </ul>
+  </yield>
+</overlay>
