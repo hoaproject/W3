@@ -76,6 +76,12 @@
                  alt="DISC" />
           </a>
         </span>
+        <span class="image">
+          <a href="http://phpmetrics.org/" class="plain">
+            <img src="hoa://Application/Public/Image/Logo/PHPMetrics_little.png"
+                 alt="phpmetrics" />
+          </a>
+        </span>
       </p>
 
       <h2><_ with="Index">They support us!</_></h2>
