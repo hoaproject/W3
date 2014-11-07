@@ -16,6 +16,9 @@
       <li><a href="@github:repository=(?chapter)" class="plain">
             <img src="hoa://Application/Public/Image/Icon_github_black.svg"
                  alt="Github" width="30px" height="30px" /></a></li>
+      <li><iframe src="http://ghbtns.com/github-btn.html?user=hoaproject&amp;repo=(?chapter)&amp;type=watch&amp;count=true"
+                  width="110px"
+                  height="20px"></iframe></li>
     </ul>
 
     <yield id="chapter" />
