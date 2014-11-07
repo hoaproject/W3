@@ -24,7 +24,11 @@
     autres systèmes, comme par exemple Windows, Hoa préfèrera s'installer dans
     le dossier <code>C:\Program Files\Hoa\</code>.</p>
 
-    <h2 id="Dependency_manager_(Composer)">Gestionnaire de dépendances
+    <h2 id="Table_of_contents">Table des matières</h2>
+
+    <tableofcontents id="toc" />
+
+    <h2 id="Dependency_manager_(Composer)" for="toc">Gestionnaire de dépendances
     (Composer)</h2>
 
     <p><img src="hoa://Application/Public/Image/Logo/Composer.png"
@@ -39,9 +43,8 @@
     <code>composer.json</code> :</p>
     <pre><code class="language-json">{
     "require": {
-        "hoa/websocket": "dev-master"
-    },
-    "minimum-stability": "dev"
+        "hoa/websocket": "~2.0"
+    }
 }</code></pre>
     <p>Puis pour installer les dépendances :</p>
     <pre><code class="language-shell">$ composer install</code></pre>
@@ -53,7 +56,7 @@
 require_once 'vendor/autoload.php';
 var_dump(HOA); // bool(true)</code></pre>
 
-    <h2 id="Version_manager_(Git)">Gestionnaire de versions (Git)</h2>
+    <h2 id="Version_manager_(Git)" for="toc">Gestionnaire de versions (Git)</h2>
 
     <p><img src="hoa://Application/Public/Image/Logo/Git.png" alt="Logo de Git"
             class="fright" />
@@ -92,7 +95,7 @@ $ ln -s /usr/local/lib/Hoa.central/Hoa /usr/local/lib/Hoa</code></pre>
 require_once '/usr/local/lib/Hoa/Core/Core.php';
 var_dump(HOA); // bool(true)</code></pre>
 
-    <h2 id="Archives">Archives</h2>
+    <h2 id="Archives" for="toc">Archives</h2>
 
     <p>Des archives sont produites à chaque mise à jour de certains projets.
     L'index des archives se trouve à l'adresse :
@@ -104,8 +107,7 @@ var_dump(HOA); // bool(true)</code></pre>
     <p>Le protocole WebDAV permet également d'accéder aux archives, à
     l'adresse : <a href="http://dav.hoa-project.net">dav.hoa-project.net</a>.</p>
 
-    <h2 id="Structure_of_a_library">Structure d'une
-    bibliothèque</h2>
+    <h2 id="Structure_of_a_library" for="toc">Structure d'une bibliothèque</h2>
 
     <p>Voici la structure d'une bibliothèque :</p>
     <ul>
@@ -125,8 +127,19 @@ var_dump(HOA); // bool(true)</code></pre>
     <p class="warning">Actuellement, les tests sont en cours de migration !
     <br />
     Merci d'être patient.</p>
-    <p>Les bibliothèques sont dans trois états différents selon leur
-    évolution :</p>
+
+    <h2 id="Rush_Release" for="toc"><em lang="en">Rush Release</em></h2>
+
+    <p>Hoa utilise un système de <em lang="en">release</em> appelé
+    <strong><em lang="en">Rush Release</em></strong>, pour <em lang="en">Rolling
+    Und ScHeduled Release</em>. Cette section explique ce système, qui, malgré
+    les apparences, est très proche de ce qui est rencontré au quotidien mais
+    répond aux besoins particuliers du projet Hoa.</p>
+
+    <h3 id="Development_and_maturation" for="toc">Élaboration et maturation</h3>
+
+    <p>Lors de sa vie, une bibliothèque passe dans <strong>trois états</strong>
+    différents :</p>
     <div id="library_states" class="schema"
          style="max-width: 550px; margin: 0 auto;"></div>
     <script>
@@ -142,20 +155,98 @@ var_dump(HOA); // bool(true)</code></pre>
         paper.link.between(step2, step3);
     });
     </script>
-    <p>Le premier état représente une bibliothèque qui sera intéressante pour
-    Hoa mais qui est en cours d'écriture et d'<strong>élaboration</strong>. Le
-    deuxième état représente une bibliothèque avec une <strong>API
-    fixe</strong>, un code abouti et <strong>mature</strong>. Une telle
-    bibliothèque est testée intensivement par tous les utilisateurs pour
-    <strong>éprouver</strong> le code et son API. Après un certain temps, la
-    bibliothèque atteint le dernier état : elle est <strong>finalisée</strong>.
-    Son API ne changera plus <strong>jamais</strong>. Lors de l'introduction de
-    nouveautés, la bibliothèque reste finalisée ou redevient mature selon
-    l'importance des nouveautés.</p>
+    <ol>
+      <li>l'état <strong><em lang="en">beta</em></strong> représente une
+      bibliothèque en cours d'<strong>élaboration</strong>, d'écriture, de
+      développement ;</li>
+      <li>l'état <strong><em lang="en">RC</em></strong> (pour
+      <em lang="en">Release Candidate</em>) représente une bibliothèque avec une
+      API fixe, un code <strong>abouti</strong> et <strong>mature</strong> ;
+      elle est alors intensivement testée par plusieurs utilisateurs pour
+      <strong>éprouver</strong> son code et son API ; une fois validée, elle
+      passe dans l'état suivant ;</li>
+      <li>l'état <strong><em lang="en">finalized</em></strong> représente une
+      bibliothèque <strong>finalisée</strong> ; son cycle de
+      <em lang="en">release</em> peut alors commencer.</li>
+    </ol>
 
-    <h2 id="Rolling_release"><em lang="en">Rolling-release</em></h2>
+    <h3 id="Release_cycle" for="toc">Cycle de <em lang="en">release</em></h3>
 
-    <p>À venir.</p>
+    <p>Une fois une bibliothèque finalisée, son <strong>cycle de
+    <em lang="en">release</em></strong> peut commencer. Hoa utilise un cycle
+    appelé
+    <a href="https://fr.wikipedia.org/wiki/Rolling_release"><em lang="en">Rolling
+    Release</em></a>. Cela signifie que la branche principale,
+    <code>master</code>, contient en permanence la <strong>dernière
+    version</strong>. Pas besoin d'attendre la sortie d'une nouvelle
+    version pour avoir les derniers correctifs de sécurité, de performances
+    ou les dernières nouveautés : la branche principale les propose tout de
+    suite, <strong>sans attente</strong>. (Détail : Hoa applique du
+    <em lang="en">part-</em> et <em lang="en">true-rolling release</em>).</p>
+    <p>Toutefois, certains logiciels permettant d'installer Hoa ne comprennent
+    pas cette approche, ou alors elle ne convient pas à tous les environnements
+    de développement ou contextes d'utilisation. C'est pourquoi, Hoa utilise
+    également un <strong>autre cycle</strong> de <em lang="en">release</em>
+    appelé <em lang="en">Scheduled-based Release</em>. Les règles sont les
+    suivantes :</p>
+    <ul>
+      <li><strong>chaque 6 semaines</strong>, si au moins un patch a été
+      appliqué dans la branche principale, un nouveau
+      <em lang="en">snapshot</em> est créé ;</li>
+      <li><strong>avant 6 semaines</strong>, si au moins un patch critique ou
+      significatif a été appliqué, un nouveau <em lang="en">snapshot</em> est
+      créé.</li>
+    </ul>
+    <p>Les <strong><em lang="en">snapshots</em></strong> prennent la forme de
+    <em lang="en">tags</em> dans les dépôts Git. Ils ont le format suivant :
+    <code><em>x</em>.<em>Y</em><sup>{2,4}</sup>.<em>mm</em>.<em>dd</em></code>,
+    où <code><em>x</em></code> est le <em lang="en">master compatibility
+    number</em> (détaillé ci-après), <code><em>Y</em><sup>{2,4}</sup></code> est
+    l'année (à partir de l'année 2000, aussi appelée <em lang="en">Rush
+    Epoch</em>), <code><em>mm</em></code> est le mois et enfin
+    <code><em>dd</em></code> le jour.</p>
+    <p>Le <strong><em lang="en">master compatibility number</em></strong> (MCN)
+    représente le nombre de fois où la compatibilité descendante n'a pas pu être
+    assurée, autrement dit où il n'est pas possible de faire une mise à jour
+    sans aucun risque (nous parlons aussi de <strong><em lang="en">backward
+    compatibility break</em></strong>, <em lang="en">BC break</em>). Avant
+    qu'une bibliothèque atteigne l'état <em lang="en">finalized</em>, son MCN
+    est défini à 0. Ensuite, il est défini à 1, puis il augmente au besoin. Par
+    exemple, le <em lang="en">snapshot</em> du jour pourrait être
+    <code>1.<value formatter="date" formatter-format="y.m.d" /></code>.</p>
+    <p>Ainsi, pour utiliser le dernier <em lang="en">snapshot</em> de la
+    bibliothèque <code>Hoa\Websocket</code>, il faudra écrire dans votre fichier
+    <code>composer.json</code> :</p>
+    <pre><code class="language-json">{
+    "require": {
+        "hoa/websocket": "~2.0"
+    }
+}</code></pre>
+    <p>Et pour utiliser la dernière version disponible, il faudra écrire :</p>
+    <pre><code class="language-json">{
+    "require": {
+        "hoa/websocket": "~2.0@dev"
+    }
+}</code></pre>
+    <p>L'<a href="https://getcomposer.org/doc/01-basic-usage.md#next-significant-release-tilde-operator-">opérateur
+    tilde</a>, ou opérateur de la prochaine <em lang="en">release</em>
+    significative, dans Composer équivaut ici à <code>>=2.0,&amp;lt;3.0</code>,
+    soit la dernière version possible pour le même MCN.</p>
+
+    <h3 id="PHP_versions" for="toc">Versions de PHP</h3>
+
+    <p>Hoa supporte <strong>toutes</strong> les versions de PHP supérieures ou
+    égales à la dernière version <strong>maintenue</strong> par le
+    <a href="http://php.net/"><em lang="en">PHP Group</em></a>. Nous parlons de
+    <strong><em lang="en">lowest required PHP version</em></strong> (LRPV). Même
+    si Hoa est compatible avec des versions plus anciennes, les bibliothèques ne
+    s'y exécuteront volontairement pas. Par conséquent, chaque fois qu'une
+    version de PHP meurt, cela augmente le MCN de chaque bibliothèque.</p>
+    <p>Il est possible de connaître la LRPV en lisant le
+    <a href="http://central.hoa-project.net/Resource/Library/Core/composer.json">fichier
+    <code>composer.json</code> de <code>Hoa\Core</code></a>. Actuellement, Hoa
+    supporte toutes les versions supérieures ou égales à
+    <strong>5.4</strong>.</p>
 
     <script src="hoa://Application/Public/Javascript/Hoa.Graph.js"></script>
     <script src="hoa://Application/Public/Javascript/Hoa.Graph.style.js"></script>
