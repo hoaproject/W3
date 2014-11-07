@@ -23,6 +23,7 @@
         </ul>
 
         <ul id="nav-bottom">
+          <li><a href="@p" class="press"><_>Press</_></a></li>
           <li><a href="@a" class="about"><_>About</_></a></li>
         </ul>
       </div>
