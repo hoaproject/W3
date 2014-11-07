@@ -192,10 +192,10 @@ var_dump(HOA); // bool(true)</code></pre>
     <p>The <strong>master compatibility number</strong> (MCN) represents the
     number of time where the backward compatibility could not be ensured, in
     other words where it is not possible to apply an update without any risk (we
-    also speak about backward compatibility break, BC). Before a library to
-    reach the finalized state, its MCN is set to 0. Next, it is set to 1, then
-    it increases when needed. For instance, the snapshot of the day could be
-    <code>1.<value formatter="date" formatter-format="y.m.d" /></code>.</p>
+    also speak about backward compatibility break, BC break). Before a library
+    to reach the finalized state, its MCN is set to 0. Next, it is set to 1,
+    then it increases when needed. For instance, the snapshot of the day could
+    be <code>1.<value formatter="date" formatter-format="y.m.d" /></code>.</p>
     <p>Thus, to use the latest snapshot of the <code>Hoa\Websocket</code>
     library, you will have to write in your <code>composer.json</code> file:</p>
     <pre><code class="language-json">{
