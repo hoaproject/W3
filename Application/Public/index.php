@@ -205,8 +205,18 @@ $router
                     $defaultVariables
                 );
 
-            $router->route();
-            $dispatcher->dispatch($router);
+            try {
+
+                $router->route();
+                $dispatcher->dispatch($router);
+            }
+            catch ( \Hoa\Core\Exception $e ) {
+
+                $router->route('/En/Error.html');
+                $rule                                                = &$router->getTheRule();
+                $rule[\Hoa\Router\Http::RULE_VARIABLES]['exception'] = $e;
+                $dispatcher->dispatch($router);
+            }
         }
     );
 
