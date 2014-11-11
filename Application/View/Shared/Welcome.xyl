@@ -19,6 +19,13 @@
       </ul>
     </div>
 
+    <div class="search-box">
+      <form novalidate="client" action="#" method="post" id="form_search" enctype="application/x-www-form-urlencoded">
+        <input type="text" name="query" class="search-text" />
+        <input type="submit" name="search" value="Search" class="search-submit" />
+      </form>
+    </div>
+
     <div class="column fleft w50">
       <h2><_ with="Index">Latest news</_></h2>
 

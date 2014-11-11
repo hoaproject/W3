@@ -28,7 +28,7 @@ $router
         'index',
         'nolanguage'
     )
-    ->get(
+    ->get_post(
         'language',
         '/(?<language>\w{2}).*',
         function ( $language ) use ( $router, $dispatcher ) {
@@ -105,6 +105,13 @@ $router
                     '/(?<language>\w{2})/Source\.html',
                     'index',
                     'source',
+                    $defaultVariables
+                )
+                ->post(
+                    'se',
+                    '/(?<language>\w{2})/?',
+                    'search',
+                    'default',
                     $defaultVariables
                 )
                 ->get(
