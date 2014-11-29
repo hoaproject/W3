@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<overlay xmlns="http://hoa-project.net/xyl/xylophone">
+  <yield id="scripts">
+    <script src="hoa://Application/Public/Javascript/Prism.js" />
+    <script src="hoa://Application/Public/Javascript/Prism.hoa.js" />
+    <script src="hoa://Application/Public/Javascript/Prism.plugin.line.js" />
+  </yield>
+</overlay>

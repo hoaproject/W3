@@ -24,7 +24,6 @@
     Les <a href="@github:repository=(?chapter)">contributions</a> sont
     ouvertes !</small></p>
 
-
     <script src="hoa://Application/Public/Javascript/Hoa.Graph.js"></script>
     <script src="hoa://Application/Public/Javascript/Hoa.Graph.style.js"></script>
   </yield>

@@ -6,7 +6,7 @@
 <document xmlns="http://hoa-project.net/xyl/xylophone">
   <title><value bind="?title" /> – Hoa</title>
 
-  <div class="body">
+  <div id="body">
 
     <header>
       <img src="hoa://Application/Public/Image/Hoa.png" alt="Hoa" />

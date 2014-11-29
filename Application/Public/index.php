@@ -221,7 +221,8 @@ $router
     );
 
 $router
-    ->_get('_resource', 'http://static.hoa-project.net/(?<resource>)')
+    //->_get('_resource', 'http://static.hoa-project.net/(?<resource>)')
+    ->_get('_resource', '/Static/(?<resource>)')
     ->_get('b',      '/', null, null, array('_subdomain' => 'blog'))
     ->_get('b_post', '/posts/(?<id>)-(?<normalized_title>).html', null, null, array('_subdomain' => 'blog'))
     ->_get('dl',     'http://download.hoa-project.net/(?<file>)')

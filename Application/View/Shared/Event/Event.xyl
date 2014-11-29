@@ -1,71 +1,74 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xyl-stylesheet href="hoa://Application/Public/Css/Leaflet.css"?>
+<?xyl-use href="hoa://Application/View/Shared/Definition/Map.xyl"?>
+<?xyl-overlay href="hoa://Application/View/Shared/Overlay/Map.xyl"?>
 
 <overlay xmlns="http://hoa-project.net/xyl/xylophone">
   <yield id="yContent">
     <h1><_ with="Event">Events</_></h1>
 
-    <div id="map" style="height: 500px"></div>
-    <script src="hoa://Application/Public/Javascript/Leaflet.js"></script>
+    <map id="global" style="height: 500px" />
     <script>
-      var map = L.map('map').setView([51.505, -0.09], 2);
+    Hoa.Document.onReady(function ( ) {
 
-      L.tileLayer('<value link="hoa://Application/Public/Map/Tiles/{z}/{x}/{y}.png" />', {
-        minZoom: 1,
-        maxZoom: 7
-      }).addTo(map);
+        var map = L.map('global').setView([51.505, -0.09], 2);
 
-      L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
-        attribution: '© <a href="http://osm.org/copyright">OpenStreetMap</a> contributors',
-        minZoom: 7
-      }).addTo(map);
+        L.tileLayer('<value link="hoa://Application/Public/Map/Tiles/{z}/{x}/{y}.png" />', {
+            minZoom: 1,
+            maxZoom: 7
+        }).addTo(map);
 
-      var icon = L.icon({
-          iconUrl: '<value link="hoa://Application/Public/Map/Marker.svg" />',
-          iconSize: [28, 45],
-          iconAnchor: [14, 44],
-          popupAnchor: [2, -45]
-      });
+        L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+            attribution: '© <a href="http://osm.org/copyright">OpenStreetMap</a> contributors',
+            minZoom: 7
+        }).addTo(map);
 
-      L.marker([50.63288622987, 3.0205407145028], {icon: icon})
-       .bindPopup('<a href="@ev+:_able=Phptour11">PHPTour\'11</a>')
-       .addTo(map);
+        var icon = L.icon({
+            iconUrl: '<value link="hoa://Application/Public/Map/Marker.svg" />',
+            iconSize: [28, 45],
+            iconAnchor: [14, 44],
+            popupAnchor: [2, -45]
+        });
 
-      L.marker([48.844581929379, 2.3441948893342], {icon: icon})
-       .bindPopup('ICTSS\'11')
-       .addTo(map);
+        L.marker([50.63288622987, 3.0205407145028], {icon: icon})
+         .bindPopup('<a href="@ev+:_able=Phptour11">PHPTour\'11</a>')
+         .addTo(map);
 
-      L.marker([45.502015951149, -73.57589220671], {icon: icon})
-       .bindPopup('<a href="@ev+:_able=Amost12">AMOST\'12</a>')
-       .addTo(map);
+        L.marker([48.844581929379, 2.3441948893342], {icon: icon})
+         .bindPopup('ICTSS\'11')
+         .addTo(map);
 
-      L.marker([48.819312415957, 2.3380794527806], {icon: icon})
-       .bindPopup('<a href="@ev+:_able=Forumphp12">ForumPHP\'12</a>')
-       .addTo(map);
+        L.marker([45.502015951149, -73.57589220671], {icon: icon})
+         .bindPopup('<a href="@ev+:_able=Amost12">AMOST\'12</a>')
+         .addTo(map);
 
-      L.marker([47.054789, 6.742918], {icon: icon})
-       .bindPopup('<a href="@ev+:_able=Hoaapex13">Hoa Apex\'13</a>')
-       .addTo(map);
+        L.marker([48.819312415957, 2.3380794527806], {icon: icon})
+         .bindPopup('<a href="@ev+:_able=Forumphp12">ForumPHP\'12</a>')
+         .addTo(map);
 
-      L.marker([49.610148755062, 6.1367606521795], {icon: icon})
-       .bindPopup('<a href="@ev+:_able=Cstva13">CSTVA\'13</a>')
-       .addTo(map);
+        L.marker([47.054789, 6.742918], {icon: icon})
+         .bindPopup('<a href="@ev+:_able=Hoaapex13">Hoa Apex\'13</a>')
+         .addTo(map);
 
-      L.marker([48.713133997214, 2.210079074177], {icon: icon})
-       .bindPopup('<a href="@ev+:_able=Jdev13">JDév\'13</a>')
-       .addTo(map);
+        L.marker([49.610148755062, 6.1367606521795], {icon: icon})
+         .bindPopup('<a href="@ev+:_able=Cstva13">CSTVA\'13</a>')
+         .addTo(map);
 
-      L.marker([45.756857272342, 4.8569499851933], {icon: icon})
-       .bindPopup('<a href="@ev+:_able=Afuplyon13">AFUP Lyon\'13</a>')
-       .addTo(map);
+        L.marker([48.713133997214, 2.210079074177], {icon: icon})
+         .bindPopup('<a href="@ev+:_able=Jdev13">JDév\'13</a>')
+         .addTo(map);
 
-      L.marker([45.748418537269, 4.8604905010918], {icon: icon})
-       .bindPopup('<a href="@ev+:_able=Phptour14">PHPTour\'14</a>')
-       .addTo(map);
+        L.marker([45.756857272342, 4.8569499851933], {icon: icon})
+         .bindPopup('<a href="@ev+:_able=Afuplyon13">AFUP Lyon\'13</a>')
+         .addTo(map);
 
-      L.marker([43.281374566478, 5.356245875504], {icon: icon})
-       .bindPopup('<a href="@ev+:_able=Hoaapex14">Hoa Apex\'14</a>')
-       .addTo(map);
+        L.marker([45.748418537269, 4.8604905010918], {icon: icon})
+         .bindPopup('<a href="@ev+:_able=Phptour14">PHPTour\'14</a>')
+         .addTo(map);
+
+        L.marker([43.281374566478, 5.356245875504], {icon: icon})
+         .bindPopup('<a href="@ev+:_able=Hoaapex14">Hoa Apex\'14</a>')
+         .addTo(map);
+    });
     </script>
 
     <h2><_ with="Event">Organized by Hoa</_>

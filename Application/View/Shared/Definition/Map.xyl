@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xyl-stylesheet href="hoa://Application/Public/Css/Leaflet.css"?>
+<?xyl-stylesheet href="hoa://Application/Public/Css/Map.css"?>
+
+<definition xmlns="http://hoa-project.net/xyl/xylophone">
+  <yield name="map">
+    <div yield-select="?x:@*" class="map"></div>
+  </yield>
+</definition>

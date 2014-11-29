@@ -4,6 +4,7 @@
   <yield id="yContent">
     <p class="tcenter"><_ with="Index">Hoa is a modular, extensible and structured set of PHP libraries. Moreover, Hoa aims at being a bridge between industrial and research worlds.</_></p>
 
+    <!--
     <div class="download-box">
       <h1><_ with="Index">Download</_></h1>
 
@@ -18,6 +19,7 @@
         <li><a href="@s" title="See all sources">…</a></li>
       </ul>
     </div>
+    -->
 
     <div class="column fleft w50">
       <h2><_ with="Index">Latest news</_></h2>
@@ -110,6 +112,7 @@
   </yield>
 
   <document id="document">
+    <!--
     <script src="http://d3js.org/d3.v3.js" />
     <script>
       var margin = {top: 20, right: 20, bottom: 30, left: 30},
@@ -177,5 +180,6 @@
         }
       );
     </script>
+    -->
   </document>
 </overlay>

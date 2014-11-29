@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
+<?xyl-use href="hoa://Application/View/Shared/Definition/Code.xyl"?>
+<?xyl-overlay href="hoa://Application/View/Shared/Overlay/Code.xyl"?>
 
 <overlay xmlns="http://hoa-project.net/xyl/xylophone">
   <yield id="yContent">
@@ -226,7 +228,9 @@ var_dump(HOA); // bool(true)</code></pre>
     <a href="http://central.hoa-project.net/Resource/Library/Core/composer.json"><code>composer.json</code>
     file</a> of <code>Hoa\Core</code>. Currently, Hoa supports all versions
     greater or equal to <strong>5.4</strong>.</p>
+  </yield>
 
+  <yield id="scripts">
     <script src="hoa://Application/Public/Javascript/Hoa.Graph.js"></script>
     <script src="hoa://Application/Public/Javascript/Hoa.Graph.style.js"></script>
   </yield>

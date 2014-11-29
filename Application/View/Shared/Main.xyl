@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xyl-stylesheet href="hoa://Library/Xyl/Css/Core.css" position="10"?>
-<?xyl-stylesheet href="hoa://Application/Public/Css/UI.css" position="last()"?>
+<?xyl-stylesheet href="hoa://Library/Xyl/Css/Core.css"?>
+<?xyl-stylesheet href="hoa://Application/Public/Css/Layout.css"?>
+<?xyl-stylesheet href="hoa://Application/Public/Css/UI.css"?>
 <?xyl-meta name="viewport" content="initial-scale=1.0"?>
 
 <document xmlns="http://hoa-project.net/xyl/xylophone" id="document">
@@ -8,144 +9,100 @@
 
   <script src="hoa://Library/Xyl/Javascript/Hoa.js"></script>
 
-  <!--
-  <async id="content_async" scope="?q:#content">
-  -->
-    <nav id="menu" aria-selected="false">
-      <div>
-        <ul id="nav-top">
-          <li><a href="@s" class="source"><_>Sources</_></a></li>
-          <li><a href="@l" class="literature"><_>Literature</_></a></li>
-          <li><a href="@v" class="video"><_>Videos</_></a></li>
-          <li><a href="@b" class="blog"><_>Blog</_></a></li>
-          <li><a href="@ev" class="event"><_>Events</_></a></li>
-          <li><a href="@c" class="community"><_>Community</_></a></li>
-        </ul>
+  <nav id="menu">
+    <ul>
+      <li><a href="@s" class="source"><_>Sources</_></a></li>
+      <li><a href="@l" class="literature"><_>Literature</_></a></li>
+      <li><a href="@v" class="video"><_>Videos</_></a></li>
+      <li><a href="@b" class="blog"><_>Blog</_></a></li>
+      <li><a href="@ev" class="event"><_>Events</_></a></li>
+      <li><a href="@c" class="community"><_>Community</_></a></li>
+      <li><a href="@a" class="about"><_>About</_></a></li>
+    </ul>
+  </nav>
 
-        <ul id="nav-bottom">
-          <li><a href="@a" class="about"><_>About</_></a></li>
-        </ul>
-      </div>
-    </nav>
+  <form role="search">
+    <input type="search" placeholder="Search…" />
+  </form>
 
-    <div class="body">
+  <div id="body">
 
-      <div aria-controls="menu">
-        <img src="hoa://Application/Public/Image/Icon_menu.png"
-             width="24" height="24" alt="Menu" />
-      </div>
+    <header>
+      <a href="@g:all=" class="plain">
+        <img src="hoa://Application/Public/Image/Hoa.png" alt="Hoa" />
+      </a>
+    </header>
 
-      <header>
-        <a href="@g:all=" class="plain">
-          <img src="hoa://Application/Public/Image/Hoa.png" alt="Hoa" />
-        </a>
-      </header>
+    <article id="content">
+      <yield id="yContent" />
+    </article>
 
-      <article id="content">
-        <yield id="yContent" />
-      </article>
+    <footer>
+      <p><span lang="en">Choose your language:</span>
+         <yield bind="?footer" separator=", ">
+           <a href="(?link)" lang="(?language)" class="plain" alt="(?language)">
+             <img src="hoa://Application/Public/Image/Flag/(?Language).gif"
+                  alt="(?name)" />
+           </a>
+         </yield>.<br />
+         <_>Hoa is the creation of Ivan Enderlin, all rights reserved.</_>
+      </p>
+    </footer>
+  </div>
 
-      <footer>
-        <p><span lang="en">Choose your language:</span>
-           <yield bind="?footer" separator=", ">
-             <a href="(?link)" lang="(?language)" class="plain" alt="(?language)">
-               <img src="hoa://Application/Public/Image/Flag/(?Language).gif"
-                    alt="(?name)" />
-             </a>
-           </yield>.<br />
-           <_>Hoa is the creation of Ivan Enderlin, all rights reserved.</_>
-        </p>
-      </footer>
+  <div aria-controls="menu">
+    <img src="http://cdn.flaticon.com/png/256/9916.png" width="24px" alt="menu" />
+  </div>
 
-    </div>
-  <!--
-  </async>
+  <yield id="scripts">
+    <script>
+      Hoa.Document.onReady(function ( ) {
 
-  <script>
-    Hoa.Document.onReady(function ( ) {
+          var html   = document.body.parentNode;
+          var menu   = Hoa.$('[aria-controls="menu"]');
+          var search = Hoa.$('form[role="search"] input[type="search"]');
 
-        if(undefined === window.history)
-            return;
+          menu.addEventListener(
+              'click',
+              function ( ) {
 
-        var contentAsync = Hoa.$('#content_async');
+                  html.classList.toggle('menu');
+              },
+              false
+          );
 
-        contentAsync.hoa.async.addEventListener(
-            'pushstate',
-            function ( evt, data ) {
+          search.addEventListener(
+              'focus',
+              function ( ) {
 
-                if(window.location.pathname === data.uri) {
+                  html.classList.add('search');
+                  html.classList.remove('menu');
+              },
+              false
+          );
 
-                    data.uri = null;
-                    return;
-                }
+          search.addEventListener(
+              'blur',
+              function ( ) {
 
-                data.state.pathname = data.uri;
-
-                return;
-            }
-        );
-
-        window.history.replaceState(
-            {
-                formId: 'content_async',
-                pathname: window.location.pathname + ''
-            },
-            document.title,
-            window.location.pathname + ''
-        );
-
-        contentAsync.hoa.async.addEventListener(
-            'popstate',
-            function ( evt ) {
-
-                var state = evt.state;
-                Hoa.Async.sendForm(
-                    contentAsync,
-                    'get',
-                    state.pathname,
-                    {
-                        link  : true,
-                        scoped: contentAsync.hoa.async.getScopedElements()
-                    },
-                    {'Content-Type': document.contentType || 'text/html'}
-                );
-            }
-        );
-    });
-  </script>
-  -->
-
-  <script>
-    Hoa.Document.onReady(function ( ) {
-
-        var nav = Hoa.$('#menu');
-
-        Hoa.$('div[aria-controls="menu"]')
-           .addEventListener('click', function ( ) {
-
-            if('false' === nav.getAttribute('aria-selected'))
-                nav.setAttribute('aria-selected', true);
-            else
-                nav.setAttribute('aria-selected', false);
-        }, false);
-    });
-  </script>
-
-  <script src="hoa://Application/Public/Javascript/Prism.js" />
-  <script src="hoa://Application/Public/Javascript/Prism.hoa.js" />
-  <script src="hoa://Application/Public/Javascript/Prism.plugin.line.js" />
-
-  <script type="text/javascript">
-    var _paq = _paq || [];
-    _paq.push(['trackPageView']);
-    _paq.push(['enableLinkTracking']);
-    (function() {
-      var u="http://analytics.hoa-project.net/";
-      _paq.push(['setTrackerUrl', u+'piwik.php']);
-      _paq.push(['setSiteId', 1]);
-      var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0]; g.type='text/javascript';
-      g.defer=true; g.async=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
-    })();
-  </script>
-  <noscript><p><img src="http://analytics.hoa-project.net/piwik.php?idsite=1" style="border:0;" alt="" /></p></noscript>
+                  html.classList.remove('search');
+              },
+              false
+          );
+      });
+    </script>
+    <script type="text/javascript">
+      var _paq = _paq || [];
+      _paq.push(['trackPageView']);
+      _paq.push(['enableLinkTracking']);
+      (function() {
+        var u="http://analytics.hoa-project.net/";
+        _paq.push(['setTrackerUrl', u+'piwik.php']);
+        _paq.push(['setSiteId', 1]);
+        var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0]; g.type='text/javascript';
+        g.defer=true; g.async=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+      })();
+    </script>
+    <noscript><p><img src="http://analytics.hoa-project.net/piwik.php?idsite=1" style="border:0;" alt="" /></p></noscript>
+  </yield>
 </document>
