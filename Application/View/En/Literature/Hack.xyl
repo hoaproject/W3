@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xyl-use href="hoa://Application/External/Literature/Definitions.xyl"?>
+<?xyl-use href="hoa://Application/View/Shared/Definition/Code.xyl"?>
+<?xyl-overlay href="hoa://Application/View/Shared/Overlay/Code.xyl"?>
 
 <overlay xmlns="http://hoa-project.net/xyl/xylophone">
   <yield id="yContent">
 
-    <h1>
-      Hack book of <code>Hoa\<value bind="?chapter" /></code>
-    </h1>
+    <h1>Hack book of <code>Hoa\<value bind="?chapter" /></code></h1>
 
     <ul class="inline fright">
       <li><a href="@dl:file=Library/(?chapter)/" class="plain">

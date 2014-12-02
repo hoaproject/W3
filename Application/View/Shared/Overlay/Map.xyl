@@ -3,5 +3,26 @@
 <overlay xmlns="http://hoa-project.net/xyl/xylophone">
   <yield id="scripts">
     <script src="hoa://Application/Public/Javascript/Leaflet.js"></script>
+    <script>
+    function Map ( id, options ) {
+
+        options                 = options || {};
+        options.scrollWheelZoom = false;
+
+        var map = L.map(id, options);
+
+        L.tileLayer('<value link="hoa://Application/Public/Map/Tiles/{z}/{x}/{y}.png" />', {
+            minZoom: 1,
+            maxZoom: 7
+        }).addTo(map);
+
+        L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+            attribution: '© <a href="http://osm.org/copyright">OpenStreetMap</a> contributors',
+            minZoom: 7
+        }).addTo(map);
+
+        return map;
+    }
+    </script>
   </yield>
 </overlay>

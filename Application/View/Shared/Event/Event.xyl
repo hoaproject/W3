@@ -10,17 +10,7 @@
     <script>
     Hoa.Document.onReady(function ( ) {
 
-        var map = L.map('global').setView([51.505, -0.09], 2);
-
-        L.tileLayer('<value link="hoa://Application/Public/Map/Tiles/{z}/{x}/{y}.png" />', {
-            minZoom: 1,
-            maxZoom: 7
-        }).addTo(map);
-
-        L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
-            attribution: '© <a href="http://osm.org/copyright">OpenStreetMap</a> contributors',
-            minZoom: 7
-        }).addTo(map);
+        var map = Map('global').setView([62, 0], 2);
 
         var icon = L.icon({
             iconUrl: '<value link="hoa://Application/Public/Map/Marker.svg" />',

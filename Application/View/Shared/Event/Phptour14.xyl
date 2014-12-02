@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xyl-stylesheet href="hoa://Application/Public/Css/Leaflet.css"?>
+<?xyl-use href="hoa://Application/View/Shared/Definition/Map.xyl"?>
+<?xyl-overlay href="hoa://Application/View/Shared/Overlay/Map.xyl"?>
+<?xyl-stylesheet href="hoa://Application/Public/Css/Video.css"?>
 
 <overlay xmlns="http://hoa-project.net/xyl/xylophone">
   <yield id="yContent">
@@ -11,30 +13,22 @@
             alt="AFUP Lyon" />
     <_ with="Event">Introduction of PHPTour 2014.</_></p>
 
-    <div id="map" style="height: 500px" class="cboth"></div>
-    <script src="hoa://Application/Public/Javascript/Leaflet.js"></script>
+    <map id="location" style="height: 500px" />
     <script>
-      var map = L.map('map').setView([45.748418537269, 4.8604905010918], 13);
+    Hoa.Document.onReady(function ( ) {
 
-      L.tileLayer('<value link="hoa://Application/Public/Map/Tiles/{z}/{x}/{y}.png" />', {
-        minZoom: 1,
-        maxZoom: 7
-      }).addTo(map);
+        var map = Map('location').setView([45.748418537269, 4.8604905010918], 13);
 
-      L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
-        attribution: '© <a href="http://osm.org/copyright">OpenStreetMap</a> contributors',
-        minZoom: 7
-      }).addTo(map);
+        var icon = L.icon({
+            iconUrl: '<value link="hoa://Application/Public/Map/Marker.svg" />',
+            iconSize: [28, 45],
+            iconAnchor: [14, 44],
+            popupAnchor: [2, -45]
+        });
 
-      var icon = L.icon({
-          iconUrl: '<value link="hoa://Application/Public/Map/Marker.svg" />',
-          iconSize: [28, 45],
-          iconAnchor: [14, 44],
-          popupAnchor: [2, -45]
-      });
-
-      L.marker([45.748418537269, 4.8604905010918], {icon: icon})
-       .addTo(map);
+        L.marker([45.748418537269, 4.8604905010918], {icon: icon})
+         .addTo(map);
+    });
     </script>
 
     <h2 id="Praspel_un_langage_de_specification_par_contrats">Praspel, un

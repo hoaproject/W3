@@ -227,7 +227,7 @@ $router
     ->_get('b_post', '/posts/(?<id>)-(?<normalized_title>).html', null, null, array('_subdomain' => 'blog'))
     ->_get('dl',     'http://download.hoa-project.net/(?<file>)')
     ->_get('forum',  'http://forum.hoa-project.net/')
-    ->_get('lists',  'http://lists.hoa-project.net/index.cgi/lists')
+    ->_get('lists',  'http://lists.hoa-project.net/lists')
     ->_get('list-subscribe', 'http://lists.hoa-project.net/index.cgi/subscribe/(?<list>)')
     ->_get('nabble-development', 'http://hoa-development.53756.x6.nabble.com/')
     ->_get('nabble-support', 'http://hoa-support.53758.x6.nabble.com/')
