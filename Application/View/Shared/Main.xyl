@@ -21,15 +21,21 @@
     </ul>
   </nav>
 
-  <form role="search">
-    <input type="search" placeholder="Search…" />
+  <form role="search" method="POST" action="http://search.hoa-project.net/">
+    <input type="search" name="q" placeholder="Search…" />
   </form>
+  <output id="search_output">
+    <dl data-type="base" />
+    <dl data-type="library" />
+    <dl data-type="event" />
+    <dl data-type="learn" />
+  </output>
 
   <div id="body">
 
     <header>
       <a href="@g:all=" class="plain">
-        <img src="hoa://Application/Public/Image/Hoa.png" alt="Hoa" />
+        <img src="hoa://Application/Public/Image/Hoa.svg" alt="Hoa" />
       </a>
     </header>
 
@@ -58,9 +64,12 @@
     <script>
       Hoa.Document.onReady(function ( ) {
 
-          var html   = document.body.parentNode;
-          var menu   = Hoa.$('[aria-controls="menu"]');
-          var search = Hoa.$('form[role="search"] input[type="search"]');
+          var html      = document.body.parentNode;
+          var menu      = Hoa.$('[aria-controls="menu"]');
+          var search    = {};
+          search.form   = Hoa.$('form[role="search"]');
+          search.input  = Hoa.$('input[type="search"]', search.form);
+          search.output = Hoa.$('#search_output');
 
           menu.addEventListener(
               'click',
@@ -71,7 +80,7 @@
               false
           );
 
-          search.addEventListener(
+          search.input.addEventListener(
               'focus',
               function ( ) {
 
@@ -81,14 +90,63 @@
               false
           );
 
-          search.addEventListener(
+          search.input.addEventListener(
               'blur',
               function ( ) {
 
+                  /*
                   html.classList.remove('search');
+                  */
               },
               false
           );
+
+          search.input.addEventListener(
+              'input',
+              Hoa.Concurrent.delay(
+                  250,
+                  function ( ) {
+
+                      var xhr = Hoa.Async.XHR();
+                      xhr.open(search.form.method, search.form.action, true);
+                      xhr.onload = function ( ) {
+
+                          var result = JSON.parse(this.response);
+
+                          // clear all dl
+                          var dls = Hoa.$$('dl[data-type]', search.output);
+
+                          for(var i = 0, max = dls.length; i &amp;lt; max; i++)
+                              while(dls[i].hasChildNodes())
+                                  dls[i].removeChild(dls[i].lastChild);
+
+                          for(var i = 0, max = result.length; i &amp;lt; max; i++) {
+
+                              var entry = result[i];
+
+                              var dl = Hoa.$(
+                                  'dl[data-type="' + entry.type + '"]',
+                                  search.output
+                              );
+
+                              if(null === dl)
+                                  console.log(entry.type);
+
+                              var dt = Hoa.DOM.dt(entry.anchor);
+                              var dd = Hoa.DOM.dd(entry.url);
+
+                              dl.appendChild(dt);
+                              dl.appendChild(dd);
+                          }
+                      };
+                      xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+                      xhr.setRequestHeader('X-Requested-With', 'XMLHttpRequest');
+                      xhr.send('q=' + search.input.value);
+                  }
+              )
+          );
+
+          Hoa.$('#body').focus();
       });
     </script>
     <script type="text/javascript">
