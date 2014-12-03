@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+<?xyl-stylesheet href="hoa://Application/Public/Css/Graph.css"?>
 
 <overlay xmlns="http://hoa-project.net/xyl/xylophone">
   <yield id="yContent">
@@ -59,29 +60,6 @@
       </ul>
     </div>
 
-    <div class="column fleft w50">
-      <h2><_ with="Index">Latest news</_></h2>
-
-      <ul>
-        <li bind="?blog">
-          <a href="@b_post:id=(?id)&amp;normalized_title=(?normalized_title)" bind="?title" />
-          <small>(<time><value formatter="strftime"
-                               formatter-format="%b. '%y"
-                               formatter-timestamp="(?posted)" /></time>)</small>
-        </li>
-      </ul>
-    </div>
-
-    <div class="column fright w50">
-      <h2><_ with="Index">Activity</_></h2>
-
-      <figure id="activity" style="max-width: 400px">
-        <figcaption><_ with="Index">commits per day of Central (2 last months)</_></figcaption>
-      </figure>
-    </div>
-
-    <br style="clear: both" />
-
     <div class="column w50 fleft tcenter">
       <h2 id="Who_uses"><_ with="Index">Who uses?</_></h2>
 
@@ -90,9 +68,9 @@
              alt="Mozilla"
              style="max-width: 6em; margin: 0 5% 2em 0" />
       </a>
-      <a href="http://henry.wallonie.be/" class="plain">
-        <img src="hoa://Application/Public/Image/Logo/SPW.png"
-             alt="SPW"
+      <a href="http://jolicode.com/" class="plain">
+        <img src="hoa://Application/Public/Image/Logo/Jolicode.svg"
+             alt="JoliCode"
              style="max-width: 6em; margin: 0 5% 2em 0" />
       </a>
       <a href="http://www.inria.fr/" class="plain">
@@ -100,9 +78,9 @@
              alt="INRIA"
              style="max-width: 6em; margin: 0 5% 2em 0" />
       </a>
-      <a href="http://atipik.fr/" class="plain">
-        <img src="hoa://Application/Public/Image/Logo/Atipik.png"
-             alt="Atipik"
+      <a href="http://phpmetrics.org/" class="plain">
+        <img src="hoa://Application/Public/Image/Logo/PHPMetrics.png"
+             alt="phpmetrics"
              style="max-width: 6em; margin: 0 5% 2em 0" />
       </a>
       <a href="http://www.femto-st.fr/fr/Departements-de-recherche/DISC/" class="plain">
@@ -110,14 +88,14 @@
              alt="DISC"
              style="max-width: 6em; margin: 0 5% 2em 0" />
       </a>
-      <a href="http://phpmetrics.org/" class="plain">
-        <img src="hoa://Application/Public/Image/Logo/PHPMetrics.png"
-             alt="phpmetrics"
+      <a href="http://henry.wallonie.be/" class="plain">
+        <img src="hoa://Application/Public/Image/Logo/SPW.png"
+             alt="SPW"
              style="max-width: 6em; margin: 0 5% 2em 0" />
       </a>
-      <a href="http://jolicode.com/" class="plain">
-        <img src="hoa://Application/Public/Image/Logo/Jolicode.svg"
-             alt="JoliCode"
+      <a href="http://atipik.fr/" class="plain">
+        <img src="hoa://Application/Public/Image/Logo/Atipik.png"
+             alt="Atipik"
              style="max-width: 6em; margin: 0 5% 2em 0" />
       </a>
     </div>
@@ -140,6 +118,29 @@
              alt="PHPStorm"
              style="max-width: 6em; margin: 0 5% 2em 0" />
       </a>
+    </div>
+
+    <br class="cboth" />
+
+    <div class="column fleft w50">
+      <h2><_ with="Index">Latest news</_></h2>
+
+      <ul>
+        <li bind="?blog">
+          <a href="@b_post:id=(?id)&amp;normalized_title=(?normalized_title)" bind="?title" />
+          <small>(<time><value formatter="strftime"
+                               formatter-format="%b. '%y"
+                               formatter-timestamp="(?posted)" /></time>)</small>
+        </li>
+      </ul>
+    </div>
+
+    <div class="column fright w50">
+      <h2><_ with="Index">Activity</_></h2>
+
+      <figure id="activity" style="max-width: 400px">
+        <figcaption><_ with="Index">commits per day of Central (2 last months)</_></figcaption>
+      </figure>
     </div>
   </yield>
 
@@ -185,7 +186,8 @@
           .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
       d3.tsv(
-          "<value link="hoa://Application/Public/Data/Central_commits_since_2months.tsv" />",
+          //"<value link="hoa://Application/Public/Data/Central_commits_since_2months.tsv" />",
+          "http://static.hoa-project.net/Data/Central_commits_since_2months.tsv",
           function(error, data) {
               data.forEach(function(d) {
                 d.date = parseDate(d.date);

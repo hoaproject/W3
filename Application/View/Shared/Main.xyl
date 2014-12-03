@@ -25,10 +25,10 @@
     <input type="search" name="q" placeholder="Search…" />
   </form>
   <output id="search_output">
-    <dl data-type="base" />
     <dl data-type="library" />
-    <dl data-type="event" />
     <dl data-type="learn" />
+    <dl data-type="base" />
+    <dl data-type="event" />
   </output>
 
   <div id="body">
@@ -114,7 +114,6 @@
                           // TODO
                           // * add loader
                           // * add "no result"
-                          // * add overflow-y
 
                           var result = JSON.parse(this.response);
 
@@ -136,7 +135,16 @@
                               if(null === dl)
                                   console.log(entry.type);
 
-                              var dt = Hoa.DOM.dt(entry.anchor);
+                              var dt = Hoa.DOM.dt(
+                                  [
+                                      Hoa.DOM.a(
+                                          entry.title,
+                                          {
+                                              href: entry.url
+                                          }
+                                      )
+                                  ]
+                              );
                               var dd = Hoa.DOM.dd(entry.url);
 
                               dl.appendChild(dt);
@@ -151,6 +159,7 @@
           );
 
           Hoa.$('#body').focus();
+          html.classList.add('search');
       });
     </script>
     <script type="text/javascript">
