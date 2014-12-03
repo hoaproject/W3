@@ -3,23 +3,66 @@
 <overlay xmlns="http://hoa-project.net/xyl/xylophone">
   <yield id="yContent">
     <p class="tcenter"><_ with="Index">Hoa is a modular, extensible and structured set of PHP libraries. Moreover, Hoa aims at being a bridge between industrial and research worlds.</_></p>
+    <p class="tcenter"><_ with="Index">Compose and extend libraries to create applications or your own libraries!</_></p>
 
-    <!--
-    <div class="download-box">
-      <h1><_ with="Index">Download</_></h1>
+    <div class="tcenter">
+      <form>
+        <input type="search" placeholder="(?search_placeholder)"
+               class="search-box" />
+      </form>
 
-      <ul>
-        <li><a href="@dl:file=Central/Hoa_central.next.zip">zip</a></li>
-        <li><a href="@dl:file=Central/Hoa_central.next.tar.gz">tar.gz</a></li>
-        <li>phar</li>
-        <li><a href="@git:repository=Central">git</a></li>
-        <li><a href="@github">
-              <img src="hoa://Application/Public/Image/Icon_github.svg"
-                   alt="Github" width="30" height="30" /></a></li>
-        <li><a href="@s" title="See all sources">…</a></li>
+      <ul class="raw columns" data-columns="4">
+        <li><code>Acl</code></li>
+        <li><a href="@lh:chapter=Bench"><code>Bench</code></a></li>
+        <li><code>Cache</code></li>
+        <li><a href="@lh:chapter=Compiler"><code>Compiler</code></a></li>
+        <li><a href="@lh:chapter=Console"><code>Console</code></a></li>
+        <li><code>Core</code></li>
+        <li><code>Database</code></li>
+        <li><code>Dispatcher</code></li>
+        <li><a href="@lh:chapter=Dns"><code>Dns</code></a></li>
+        <li><a href="@lh:chapter=Eventsource"><code>Eventsource</code></a></li>
+        <li><a href="@lh:chapter=Fastcgi"><code>Fastcgi</code></a></li>
+        <li><code>File</code></li>
+        <li><code>Filter</code></li>
+        <li><code>Graph</code></li>
+        <li><code>Http</code></li>
+        <li><code>Iterator</code></li>
+        <li><code>Json</code></li>
+        <li><code>Locale</code></li>
+        <li><code>Log</code></li>
+        <li><code>Mail</code></li>
+        <li><code>Math</code></li>
+        <li><code>Memory</code></li>
+        <li><a href="@lh:chapter=Mime"><code>Mime</code></a></li>
+        <li><code>Model</code></li>
+        <li><code>Notification</code></li>
+        <li><code>Praspel</code></li>
+        <li><code>Prototype</code></li>
+        <li><code>Realdom</code></li>
+        <li><code>Regex</code></li>
+        <li><a href="@lh:chapter=Registry"><code>Registry</code></a></li>
+        <li><a href="@lh:chapter=Router"><code>Router</code></a></li>
+        <li><code>Ruler</code></li>
+        <li><code>Serialize</code></li>
+        <li><code>Session</code></li>
+        <li><code>Socket</code></li>
+        <li><code>Stream</code></li>
+        <li><a href="@lh:chapter=String"><code>String</code></a></li>
+        <li><code>Stringbuffer</code></li>
+        <li><code>Translate</code></li>
+        <li><code>Tree</code></li>
+        <li><a href="@lh:chapter=View"><code>View</code></a></li>
+        <li><code>Visitor</code></li>
+        <li><a href="@lh:chapter=Websocket"><code>Websocket</code></a></li>
+        <li><a href="@lh:chapter=Worker"><code>Worker</code></a></li>
+        <li><code>Xml</code></li>
+        <li><code>Xmlrpc</code></li>
+        <li><code>Xyl</code></li>
+        <li><a href="@lh:chapter=Zombie"><code>Zombie</code></a></li>
+        <li><a href="@lh:chapter= "><code> </code></a></li>
       </ul>
     </div>
-    -->
 
     <div class="column fleft w50">
       <h2><_ with="Index">Latest news</_></h2>
