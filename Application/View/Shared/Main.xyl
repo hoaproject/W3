@@ -57,7 +57,7 @@
   </div>
 
   <div aria-controls="menu">
-    <img src="http://cdn.flaticon.com/png/256/9916.png" width="24px" alt="menu" />
+    <img src="hoa://Application/Public/Image/Icon/Menu.png" width="24px" alt="menu" />
   </div>
 
   <yield id="scripts">
@@ -111,9 +111,13 @@
                       xhr.open(search.form.method, search.form.action, true);
                       xhr.onload = function ( ) {
 
+                          // TODO
+                          // * add loader
+                          // * add "no result"
+                          // * add overflow-y
+
                           var result = JSON.parse(this.response);
 
-                          // clear all dl
                           var dls = Hoa.$$('dl[data-type]', search.output);
 
                           for(var i = 0, max = dls.length; i &amp;lt; max; i++)

@@ -2,15 +2,10 @@
 
 <overlay xmlns="http://hoa-project.net/xyl/xylophone">
   <yield id="yContent">
-    <p class="tcenter"><_ with="Index">Hoa is a modular, extensible and structured set of PHP libraries. Moreover, Hoa aims at being a bridge between industrial and research worlds.</_></p>
+    <p class="tcenter" style="margin-top: 2em"><_ with="Index">Hoa is a modular, extensible and structured set of PHP libraries. Moreover, Hoa aims at being a bridge between industrial and research worlds.</_></p>
     <p class="tcenter"><_ with="Index">Compose and extend libraries to create applications or your own libraries!</_></p>
 
     <div class="tcenter">
-      <form>
-        <input type="search" placeholder="(?search_placeholder)"
-               class="search-box" />
-      </form>
-
       <ul class="raw columns" data-columns="4">
         <li><code>Acl</code></li>
         <li><a href="@lh:chapter=Bench"><code>Bench</code></a></li>
@@ -87,75 +82,68 @@
 
     <br style="clear: both" />
 
-    <div class="tcenter">
-      <h2><_ with="Index">Who uses?</_></h2>
+    <div class="column w50 fleft tcenter">
+      <h2 id="Who_uses"><_ with="Index">Who uses?</_></h2>
 
-      <p>
-        <span class="image">
-          <a href="http://mozilla.org/" class="plain">
-              <img src="hoa://Application/Public/Image/Logo/Mozilla_little.png"
-                   alt="Mozilla" />
-          </a>
-        </span>
-        <span class="image">
-          <a href="http://henry.wallonie.be/" class="plain">
-            <img src="hoa://Application/Public/Image/Logo/SPW_little.png"
-                 alt="SPW" />
-          </a>
-        </span>
-        <span class="image">
-          <a href="http://www.inria.fr/" class="plain">
-            <img src="hoa://Application/Public/Image/Logo/INRIA_little.png"
-                 alt="INRIA" />
-          </a>
-        </span>
-        <span class="image">
-          <a href="http://atipik.fr/" class="plain">
-            <img src="hoa://Application/Public/Image/Logo/Atipik_little.png"
-                 alt="Atipik" />
-          </a>
-        </span>
-        <span class="image">
-          <a href="http://www.femto-st.fr/fr/Departements-de-recherche/DISC/" class="plain">
-            <img src="hoa://Application/Public/Image/Logo/DISC_little.png"
-                 alt="DISC" />
-          </a>
-        </span>
-        <span class="image">
-          <a href="http://phpmetrics.org/" class="plain">
-            <img src="hoa://Application/Public/Image/Logo/PHPMetrics_little.png"
-                 alt="phpmetrics" />
-          </a>
-        </span>
-      </p>
+      <a href="http://mozilla.org/" class="plain">
+        <img src="hoa://Application/Public/Image/Logo/Mozilla.png"
+             alt="Mozilla"
+             style="max-width: 6em; margin: 0 5% 2em 0" />
+      </a>
+      <a href="http://henry.wallonie.be/" class="plain">
+        <img src="hoa://Application/Public/Image/Logo/SPW.png"
+             alt="SPW"
+             style="max-width: 6em; margin: 0 5% 2em 0" />
+      </a>
+      <a href="http://www.inria.fr/" class="plain">
+        <img src="hoa://Application/Public/Image/Logo/INRIA.png"
+             alt="INRIA"
+             style="max-width: 6em; margin: 0 5% 2em 0" />
+      </a>
+      <a href="http://atipik.fr/" class="plain">
+        <img src="hoa://Application/Public/Image/Logo/Atipik.png"
+             alt="Atipik"
+             style="max-width: 6em; margin: 0 5% 2em 0" />
+      </a>
+      <a href="http://www.femto-st.fr/fr/Departements-de-recherche/DISC/" class="plain">
+        <img src="hoa://Application/Public/Image/Logo/DISC.png"
+             alt="DISC"
+             style="max-width: 6em; margin: 0 5% 2em 0" />
+      </a>
+      <a href="http://phpmetrics.org/" class="plain">
+        <img src="hoa://Application/Public/Image/Logo/PHPMetrics.png"
+             alt="phpmetrics"
+             style="max-width: 6em; margin: 0 5% 2em 0" />
+      </a>
+      <a href="http://jolicode.com/" class="plain">
+        <img src="hoa://Application/Public/Image/Logo/Jolicode.svg"
+             alt="JoliCode"
+             style="max-width: 6em; margin: 0 5% 2em 0" />
+      </a>
+    </div>
 
-      <h2><_ with="Index">They support us!</_></h2>
+    <div class="column w50 fright tcenter">
+      <h2 id="They_support_us"><_ with="Index">They support us!</_></h2>
 
-      <p>
-        <span class="image">
-          <a href="http://verylastroom.com/" class="plain">
-            <img src="hoa://Application/Public/Image/Logo/Verylastroom_little.png"
-                 alt="VeryLastRoom" />
-          </a>
-        </span>
-        <span class="image">
-          <a href="https://pikacode.com/" class="plain">
-            <img src="hoa://Application/Public/Image/Logo/Pikacode_little.png"
-                 alt="Pikacode" />
-          </a>
-        </span>
-        <span class="image">
-          <a href="http://jetbrains.com/phpstorm/" class="plain">
-            <img src="hoa://Application/Public/Image/Logo/PHPStorm_little.png"
-                 alt="PHPStorm" />
-          </a>
-        </span>
-      </p>
+      <a href="http://verylastroom.com/" class="plain">
+        <img src="hoa://Application/Public/Image/Logo/Verylastroom.png"
+             alt="VeryLastRoom"
+             style="max-width: 6em; margin: 0 5% 2em 0" />
+      </a>
+      <a href="https://pikacode.com/" class="plain">
+        <img src="hoa://Application/Public/Image/Logo/Pikacode.png"
+             alt="Pikacode"
+             style="max-width: 6em; margin: 0 5% 2em 0" />
+      </a>
+      <a href="http://jetbrains.com/phpstorm/" class="plain">
+        <img src="hoa://Application/Public/Image/Logo/PHPStorm.png"
+             alt="PHPStorm"
+             style="max-width: 6em; margin: 0 5% 2em 0" />
+      </a>
     </div>
   </yield>
 
-  <document id="document">
-    <!--
+  <yield id="scripts">
     <script src="http://d3js.org/d3.v3.js" />
     <script>
       var margin = {top: 20, right: 20, bottom: 30, left: 30},
@@ -197,32 +185,31 @@
           .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
       d3.tsv(
-        "<value link="hoa://Application/Public/Data/Central_commits_since_2months.tsv" />",
-        function(error, data) {
-          data.forEach(function(d) {
-            d.date = parseDate(d.date);
-            d.number = +d.number;
-          });
+          "<value link="hoa://Application/Public/Data/Central_commits_since_2months.tsv" />",
+          function(error, data) {
+              data.forEach(function(d) {
+                d.date = parseDate(d.date);
+                d.number = +d.number;
+              });
 
-          x.domain(d3.extent(data, function(d) { return d.date; }));
-          y.domain([0, d3.max(data, function(d) { return Math.min(50, d.number); })]);
+              x.domain(d3.extent(data, function(d) { return d.date; }));
+              y.domain([0, d3.max(data, function(d) { return Math.min(50, d.number); })]);
 
-          svg.append("path")
-              .datum(data)
-              .attr("class", "area")
-              .attr("d", area);
+              svg.append("path")
+                  .datum(data)
+                  .attr("class", "area")
+                  .attr("d", area);
 
-          svg.append("g")
-              .attr("class", "x axis")
-              .attr("transform", "translate(0," + height + ")")
-              .call(xAxis);
+              svg.append("g")
+                  .attr("class", "x axis")
+                  .attr("transform", "translate(0," + height + ")")
+                  .call(xAxis);
 
-          svg.append("g")
-              .attr("class", "y axis")
-              .call(yAxis);
-        }
+              svg.append("g")
+                  .attr("class", "y axis")
+                  .call(yAxis);
+          }
       );
     </script>
-    -->
-  </document>
+  </yield>
 </overlay>
