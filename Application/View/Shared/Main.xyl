@@ -98,6 +98,7 @@
               html.classList.add('search');
               html.classList.remove('menu');
               search.input.focus();
+              search.input.select();
 
               return;
           };
