@@ -11,13 +11,13 @@
 
   <nav id="menu">
     <ul>
-      <li><a href="@s" class="source"><_>Sources</_></a></li>
-      <li><a href="@l" class="literature"><_>Literature</_></a></li>
-      <li><a href="@v" class="video"><_>Videos</_></a></li>
-      <li><a href="@b" class="blog"><_>Blog</_></a></li>
-      <li><a href="@ev" class="event"><_>Events</_></a></li>
-      <li><a href="@c" class="community"><_>Community</_></a></li>
-      <li><a href="@a" class="about"><_>About</_></a></li>
+      <li><a href="@s" class="source" data-shortcut="s"><_>Sources</_></a></li>
+      <li><a href="@l" class="literature" data-shortcut="l"><_>Literature</_></a></li>
+      <li><a href="@v" class="video" data-shortcut="v"><_>Videos</_></a></li>
+      <li><a href="@b" class="blog" data-shortcut="b"><_>Blog</_></a></li>
+      <li><a href="@ev" class="event" data-shortcut="e"><_>Events</_></a></li>
+      <li><a href="@c" class="community" data-shortcut="c"><_>Community</_></a></li>
+      <li><a href="@a" class="about" data-shortcut="a"><_>About</_></a></li>
     </ul>
   </nav>
 
@@ -31,7 +31,7 @@
   <div id="body">
 
     <header>
-      <a href="@g:all=" class="plain">
+      <a href="@g:all=" class="plain" data-shortcut="h">
         <img src="hoa://Application/Public/Image/Hoa.svg" alt="Hoa" />
       </a>
     </header>
@@ -53,7 +53,7 @@
     </footer>
   </div>
 
-  <div aria-controls="menu">
+  <div aria-controls="menu" data-shortcut="m">
     <img src="hoa://Application/Public/Image/Icon/Menu.png" width="24px" alt="menu" />
   </div>
 
@@ -68,41 +68,57 @@
           search.input  = Hoa.$('input[type="search"]', search.form);
           search.output = Hoa.$('#search_output');
 
-          menu.addEventListener(
-              'click',
-              function ( ) {
+          function toggleMenu ( ) {
 
-                  html.classList.toggle('menu');
-              },
-              false
+              html.classList.toggle('menu');
+
+              return;
+          }
+
+          function openSearch ( ) {
+
+              html.classList.add('search');
+              html.classList.remove('menu');
+              search.input.focus();
+
+              return;
+          }
+
+          function closeSearch ( ) {
+
+              html.classList.remove('search');
+              search.input.blur();
+
+              return;
+          }
+
+          Hoa.Event.on('click', '[aria-controls="menu"]', toggleMenu);
+          Hoa.Event.on('focus', 'form[role="search"]', openSearch);
+          Hoa.Event.on(
+              'submit',
+              'form[role="search"]',
+              function ( evt ) {
+
+                  evt.preventDefault();
+
+                  return;
+              }
           );
 
           search.input.addEventListener(
-              'focus',
-              function ( ) {
-
-                  html.classList.add('search');
-                  html.classList.remove('menu');
-              },
-              false
-          );
-
-          search.input.addEventListener(
-              'blur',
-              function ( ) {
-
-                  /*
-                  html.classList.remove('search');
-                  */
-              },
-              false
-          );
-
-          search.input.addEventListener(
-              'input',
+              'keypress',
               Hoa.Concurrent.delay(
                   250,
-                  function ( ) {
+                  function ( evt ) {
+
+                      // Esc
+                      if(27 === evt.keyCode) {
+
+                          closeSearch();
+                          evt.preventDefault();
+
+                          return;
+                      }
 
                       var xhr = Hoa.Async.XHR();
                       xhr.open(search.form.method, search.form.action, true);
@@ -148,7 +164,49 @@
               )
           );
 
-          Hoa.$('#body').focus();
+          Hoa.Event.on(
+              'keypress',
+              'body',
+              function ( evt ) {
+
+                  var key    = '';
+                  var gotcha = true;
+
+                  if(true === evt.metaKey)
+                      key += 'meta+';
+
+                  if(true === evt.altKey)
+                      key += 'alt+';
+
+                  if(true === evt.ctrlKey)
+                      key += 'ctrl+';
+
+                  if(true === evt.shiftKey)
+                      key += 'shift+';
+
+                  key += evt.key;
+
+                  switch(key) {
+
+                      case 'shift+/':
+                          openSearch();
+                        break;
+
+                      default:
+                          var element = Hoa.$('[data-shortcut="' + key + '"]');
+
+                          if(   element instanceof HTMLAnchorElement
+                             || element instanceof HTMLDivElement)
+                              element.click();
+                          else
+                              gotcha = false;
+                  }
+
+                  if(true === gotcha)
+                      evt.preventDefault();
+              },
+              false
+          );
       });
     </script>
     <script type="text/javascript">
