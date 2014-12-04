@@ -25,10 +25,7 @@
     <input type="search" name="q" placeholder="Search…" />
   </form>
   <output id="search_output">
-    <dl data-type="library" />
-    <dl data-type="learn" />
-    <dl data-type="base" />
-    <dl data-type="event" />
+    <dl />
   </output>
 
   <div id="body">
@@ -117,25 +114,15 @@
 
                           var result = JSON.parse(this.response);
 
-                          var dls = Hoa.$$('dl[data-type]', search.output);
+                          var dl = Hoa.$('dl', search.output);
 
-                          for(var i = 0, max = dls.length; i &amp;lt; max; i++)
-                              while(dls[i].hasChildNodes())
-                                  dls[i].removeChild(dls[i].lastChild);
+                          while(dl.hasChildNodes())
+                              dl.removeChild(dl.lastChild);
 
                           for(var i = 0, max = result.length; i &amp;lt; max; i++) {
 
                               var entry = result[i];
-
-                              var dl = Hoa.$(
-                                  'dl[data-type="' + entry.type + '"]',
-                                  search.output
-                              );
-
-                              if(null === dl)
-                                  console.log(entry.type);
-
-                              var dt = Hoa.DOM.dt(
+                              var dt    = Hoa.DOM.dt(
                                   [
                                       Hoa.DOM.a(
                                           entry.title,
@@ -143,9 +130,12 @@
                                               href: entry.url
                                           }
                                       )
-                                  ]
+                                  ],
+                                  {
+                                      'data-type': entry.type
+                                  }
                               );
-                              var dd = Hoa.DOM.dd(entry.url);
+                              var dd    = Hoa.DOM.dd(entry.url);
 
                               dl.appendChild(dt);
                               dl.appendChild(dd);
@@ -159,7 +149,6 @@
           );
 
           Hoa.$('#body').focus();
-          html.classList.add('search');
       });
     </script>
     <script type="text/javascript">
