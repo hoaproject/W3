@@ -11,18 +11,18 @@
 
   <nav id="menu">
     <ul>
-      <li><a href="@s" class="source" data-shortcut="s"><_>Sources</_></a></li>
-      <li><a href="@l" class="literature" data-shortcut="l"><_>Literature</_></a></li>
-      <li><a href="@v" class="video" data-shortcut="v"><_>Videos</_></a></li>
-      <li><a href="@b" class="blog" data-shortcut="b"><_>Blog</_></a></li>
-      <li><a href="@ev" class="event" data-shortcut="e"><_>Events</_></a></li>
-      <li><a href="@c" class="community" data-shortcut="c"><_>Community</_></a></li>
-      <li><a href="@a" class="about" data-shortcut="a"><_>About</_></a></li>
+      <li><a href="@s"  class="source"     data-shortcut="s"><_>Sources</_></a></li>
+      <li><a href="@l"  class="literature" data-shortcut="l"><_>Literature</_></a></li>
+      <li><a href="@v"  class="video"      data-shortcut="v"><_>Videos</_></a></li>
+      <li><a href="@b"  class="blog"       data-shortcut="b"><_>Blog</_></a></li>
+      <li><a href="@ev" class="event"      data-shortcut="e"><_>Events</_></a></li>
+      <li><a href="@c"  class="community"  data-shortcut="c"><_>Community</_></a></li>
+      <li><a href="@a"  class="about"      data-shortcut="a"><_>About</_></a></li>
     </ul>
   </nav>
 
   <form role="search" method="POST" action="http://search.hoa-project.net/">
-    <input type="search" name="q" placeholder="Search…" />
+    <input type="search" name="q" placeholder="Search…" data-shortcut="shift+/" />
   </form>
   <output id="search_output">
     <dl />
@@ -59,6 +59,24 @@
 
   <yield id="scripts">
     <script>
+      Hoa.namespace([Element], {
+
+          guard: Hoa.〱true,
+          body : function ( element ) {
+
+              return {
+
+                  removeAllChildren: function ( ) {
+
+                      while(element.hasChildNodes())
+                          element.removeChild(element.lastChild);
+
+                      return;
+                  }
+              };
+          }
+      });
+
       Hoa.Document.onReady(function ( ) {
 
           var html      = document.body.parentNode;
@@ -68,35 +86,33 @@
           search.input  = Hoa.$('input[type="search"]', search.form);
           search.output = Hoa.$('#search_output');
 
-          function toggleMenu ( ) {
+          var toggleMenu = function ( ) {
 
               html.classList.toggle('menu');
 
               return;
-          }
+          };
 
-          function openSearch ( ) {
+          var openSearch = function ( ) {
 
               html.classList.add('search');
               html.classList.remove('menu');
               search.input.focus();
 
               return;
-          }
+          };
 
-          function closeSearch ( ) {
+          var closeSearch = function ( ) {
 
               html.classList.remove('search');
               search.input.blur();
 
               return;
-          }
+          };
 
-          Hoa.Event.on('click', '[aria-controls="menu"]', toggleMenu);
-          Hoa.Event.on('focus', 'form[role="search"]', openSearch);
-          Hoa.Event.on(
+          Hoa.Event.from(menu).bareOn('click', toggleMenu);
+          Hoa.Event.from(search.form).bareOn(
               'submit',
-              'form[role="search"]',
               function ( evt ) {
 
                   evt.preventDefault();
@@ -104,66 +120,73 @@
                   return;
               }
           );
-
-          search.input.addEventListener(
+          Hoa.Event.from(search.input).bareOn('focus', openSearch);
+          Hoa.Event.from(search.input).bareOn(
               'keypress',
-              Hoa.Concurrent.delay(
-                  250,
-                  function ( evt ) {
+              new function ( ) {
 
-                      // Esc
-                      if(27 === evt.keyCode) {
+                  var output      = Hoa.$('dl', search.output);
+                  var clearOutput = function ( ) {
 
-                          closeSearch();
-                          evt.preventDefault();
+                      output.hoa.removeAllChildren();
 
-                          return;
-                      }
+                      return;
+                  };
 
-                      var xhr = Hoa.Async.XHR();
-                      xhr.open(search.form.method, search.form.action, true);
-                      xhr.onload = function ( ) {
+                  return Hoa.Concurrent.delay(
+                      150,
+                      function ( evt ) {
 
-                          // TODO
-                          // * add loader
-                          // * add "no result"
+                          // Esc
+                          if(27 === evt.keyCode) {
 
-                          var result = JSON.parse(this.response);
+                              clearOutput();
+                              closeSearch();
+                              evt.preventDefault();
 
-                          var dl = Hoa.$('dl', search.output);
-
-                          while(dl.hasChildNodes())
-                              dl.removeChild(dl.lastChild);
-
-                          for(var i = 0, max = result.length; i &amp;lt; max; i++) {
-
-                              var entry = result[i];
-                              var dt    = Hoa.DOM.dt(
-                                  [
-                                      Hoa.DOM.a(
-                                          entry.title,
-                                          {
-                                              href: entry.url
-                                          }
-                                      )
-                                  ],
-                                  {
-                                      'data-type': entry.type
-                                  }
-                              );
-                              var dd    = Hoa.DOM.dd(entry.url);
-
-                              dl.appendChild(dt);
-                              dl.appendChild(dd);
+                              return;
                           }
-                      };
-                      xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
-                      xhr.setRequestHeader('X-Requested-With', 'XMLHttpRequest');
-                      xhr.send('q=' + search.input.value);
-                  }
-              )
-          );
 
+                          var xhr = Hoa.Async.XHR();
+                          xhr.open(search.form.method, search.form.action, true);
+                          xhr.onload = function ( ) {
+
+                              // TODO
+                              // * add loader
+                              // * add "no result"
+
+                              var result = JSON.parse(this.response);
+                              clearOutput();
+
+                              for(var i = 0, max = result.length; i &amp;lt; max; i++) {
+
+                                  var entry = result[i];
+                                  var dt    = Hoa.DOM.dt(
+                                      [
+                                          Hoa.DOM.a(
+                                              entry.title,
+                                              {
+                                                  href: entry.url
+                                              }
+                                          )
+                                      ],
+                                      {
+                                          'data-type': entry.type
+                                      }
+                                  );
+                                  var dd    = Hoa.DOM.dd(entry.url);
+
+                                  output.appendChild(dt);
+                                  output.appendChild(dd);
+                              }
+                          };
+                          xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+                          xhr.setRequestHeader('X-Requested-With', 'XMLHttpRequest');
+                          xhr.send('q=' + search.input.value);
+                      }
+                  )
+              }
+          );
           Hoa.Event.on(
               'keypress',
               'body',
@@ -188,16 +211,14 @@
 
                   switch(key) {
 
-                      case 'shift+/':
-                          openSearch();
-                        break;
-
                       default:
                           var element = Hoa.$('[data-shortcut="' + key + '"]');
 
                           if(   element instanceof HTMLAnchorElement
                              || element instanceof HTMLDivElement)
                               element.click();
+                          else if(element instanceof HTMLInputElement)
+                              element.focus();
                           else
                               gotcha = false;
                   }
@@ -206,6 +227,20 @@
                       evt.preventDefault();
               },
               false
+          );
+          Hoa.Event.bareOn(
+              'keypress',
+              function ( evt ) {
+
+                  // Esc
+                  if(27 === evt.keyCode) {
+
+                      closeSearch();
+                      evt.preventDefault();
+
+                      return;
+                  }
+              }
           );
       });
     </script>
