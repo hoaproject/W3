@@ -167,7 +167,8 @@
                                           Hoa.DOM.a(
                                               entry.title,
                                               {
-                                                  href: entry.url
+                                                  href    : entry.url,
+                                                  tabindex: 0
                                               }
                                           )
                                       ],
