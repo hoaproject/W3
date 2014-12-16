@@ -3,11 +3,11 @@
 <?xyl-use href="hoa://Application/External/Literature/Definitions.xyl"?>
 
 <overlay xmlns="http://hoa-project.net/xyl/xylophone">
-  <yield id="yContent" bind="?awecode">
+  <yield id="main_content" bind="?awecode">
     <h1 id="Awecode_demo">Awecode<title_break /><yield bind="?title" /></h1>
 
     <ul class="inline fright">
-     <li><a href="@lh:chapter=(?library)" class="plain">
+     <li><a href="@hack:chapter=(?library)" class="plain">
             <img src="hoa://Application/Public/Image/Icon_literature_black.svg"
                  alt="Documentation" width="30px" height="30px" /></a></li>
       <li><a href="@dl:file=Library/(?library)/" class="plain">

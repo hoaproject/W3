@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <overlay xmlns="http://hoa-project.net/xyl/xylophone">
-  <yield id="yContent">
+  <yield id="main_content">
     <h1>Littérature</h1>
 
     <p>Hoa insiste beaucoup sur le fait qu'il faut <strong>comprendre les
@@ -31,19 +31,19 @@
     bibliothèques les plus importantes de Hoa pour savoir quoi approfondir par
     la suite avec le <em lang="en">hack book</em>.</p>
     <tableofcontents>
-      <a href="@ll:chapter=Introduction">Introduction</a>
-      <a href="@ll:chapter=Install">Installation</a>
-      <a href="@ll:chapter=Core">Exploration du noyau</a>
-      <a href="@ll:chapter=Embryo">Squelette d'application</a>
-      <a href="@ll:chapter=Routerdispatcher">Router + Dispatcher = ♥</a>
-      <a href="@ll:chapter=Model">Modèle de données</a>
-      <a href="@ll:chapter=Xyl">XYL</a>
-      <a href="@ll:chapter=Form">Formulaire</a>
-      <a href="@ll:chapter=Fragment_async">Fragment et asynchrone</a>
+      <a href="@learn:chapter=Introduction">Introduction</a>
+      <a href="@learn:chapter=Install">Installation</a>
+      <a href="@learn:chapter=Core">Exploration du noyau</a>
+      <a href="@learn:chapter=Embryo">Squelette d'application</a>
+      <a href="@learn:chapter=Routerdispatcher">Router + Dispatcher = ♥</a>
+      <a href="@learn:chapter=Model">Modèle de données</a>
+      <a href="@learn:chapter=Xyl">XYL</a>
+      <a href="@learn:chapter=Form">Formulaire</a>
+      <a href="@learn:chapter=Fragment_async">Fragment et asynchrone</a>
     </tableofcontents>
     <p>Annexes :</p>
     <tableofcontents>
-      <a href="@ll:chapter=Appendix_http_servers">Configuration des serveurs
+      <a href="@learn:chapter=Appendix_http_servers">Configuration des serveurs
       HTTP</a>
     </tableofcontents>
 
@@ -55,16 +55,16 @@
     secret pour vous et ainsi vous pourrez les <strong>bidouiller</strong> !</p>
     <ul class="columns" data-columns="4">
       <li><code>Acl</code> ;</li>
-      <li><a href="@lh:chapter=Bench"><code>Bench</code></a> ;</li>
+      <li><a href="@hack:chapter=Bench"><code>Bench</code></a> ;</li>
       <li><code>Cache</code> ;</li>
-      <li><a href="@lh:chapter=Compiler"><code>Compiler</code></a> ;</li>
-      <li><a href="@lh:chapter=Console"><code>Console</code></a> ;</li>
+      <li><a href="@hack:chapter=Compiler"><code>Compiler</code></a> ;</li>
+      <li><a href="@hack:chapter=Console"><code>Console</code></a> ;</li>
       <li><code>Core</code> ;</li>
       <li><code>Database</code> ;</li>
       <li><code>Dispatcher</code> ;</li>
-      <li><a href="@lh:chapter=Dns"><code>Dns</code></a> ;</li>
-      <li><a href="@lh:chapter=Eventsource"><code>Eventsource</code></a> ;</li>
-      <li><a href="@lh:chapter=Fastcgi"><code>Fastcgi</code></a> ;</li>
+      <li><a href="@hack:chapter=Dns"><code>Dns</code></a> ;</li>
+      <li><a href="@hack:chapter=Eventsource"><code>Eventsource</code></a> ;</li>
+      <li><a href="@hack:chapter=Fastcgi"><code>Fastcgi</code></a> ;</li>
       <li><code>File</code> ;</li>
       <li><code>Filter</code> ;</li>
       <li><code>Graph</code> ;</li>
@@ -76,33 +76,33 @@
       <li><code>Mail</code> ;</li>
       <li><code>Math</code> ;</li>
       <li><code>Memory</code> ;</li>
-      <li><a href="@lh:chapter=Mime"><code>Mime</code></a> ;</li>
+      <li><a href="@hack:chapter=Mime"><code>Mime</code></a> ;</li>
       <li><code>Model</code> ;</li>
       <li><code>Notification</code> ;</li>
       <li><code>Praspel</code> ;</li>
       <li><code>Prototype</code> ;</li>
       <li><code>Realdom</code> ;</li>
       <li><code>Regex</code> ;</li>
-      <li><a href="@lh:chapter=Registry"><code>Registry</code></a> ;</li>
-      <li><a href="@lh:chapter=Router"><code>Router</code></a> ;</li>
+      <li><a href="@hack:chapter=Registry"><code>Registry</code></a> ;</li>
+      <li><a href="@hack:chapter=Router"><code>Router</code></a> ;</li>
       <li><code>Ruler</code> ;</li>
       <li><code>Serialize</code> ;</li>
       <li><code>Session</code> ;</li>
       <li><code>Socket</code> ;</li>
       <li><code>Stream</code> ;</li>
-      <li><a href="@lh:chapter=String"><code>String</code></a> ;</li>
+      <li><a href="@hack:chapter=String"><code>String</code></a> ;</li>
       <li><code>Stringbuffer</code> ;</li>
       <li><code>Translate</code> ;</li>
       <li><code>Tree</code> ;</li>
-      <li><a href="@lh:chapter=View"><code>View</code></a> ;</li>
+      <li><a href="@hack:chapter=View"><code>View</code></a> ;</li>
       <li><code>Visitor</code> ;</li>
-      <li><a href="@lh:chapter=Websocket"><code>Websocket</code></a> ;</li>
-      <li><a href="@lh:chapter=Worker"><code>Worker</code></a> ;</li>
+      <li><a href="@hack:chapter=Websocket"><code>Websocket</code></a> ;</li>
+      <li><a href="@hack:chapter=Worker"><code>Worker</code></a> ;</li>
       <li><code>Xml</code> ;</li>
       <li><code>Xmlrpc</code> ;</li>
       <li><code>Xyl</code> ;</li>
-      <li><a href="@lh:chapter=Zombie"><code>Zombie</code></a> ;</li>
-      <li><a href="@lh:chapter= "><code> </code></a>.</li>
+      <li><a href="@hack:chapter=Zombie"><code>Zombie</code></a> ;</li>
+      <li><a href="@hack:chapter= "><code> </code></a>.</li>
     </ul>
     <p>Pour générer la documentation vous-même, veuillez regarder
     <a href="@github:repository=Hoathis-Documentation">la bibliothèque
@@ -121,20 +121,20 @@
       <li><cite lang="en">A Constraint Solver for PHP Arrays</cite>, présenté à
       <a href="http://cstva2013.univ-fcomte.fr/">CSTVA 2013</a> (Luxembourg,
       Luxembourg), <a href="@lr:article=Cstva13">article</a>,
-      <a href="@key.:keynote=Cstva13/EGB13.pdf">présentation</a> et
+      <a href="@keynote:keynote=Cstva13/EGB13.pdf">présentation</a> et
       <a href="@ev+:_able=Cstva13">détails</a> ;</li>
 
       <li><cite lang="en">Grammar-Based Testing using Realistic Domains in
       PHP</cite>, présenté à
       <a href="https://sites.google.com/site/amost2012/">A-MOST 2012</a>
       (Montréal, Canada), <a href="@lr:article=Amost12">article</a>,
-      <a href="@key.:keynote=Amost12/EDGB12.pdf">présentation</a> et
+      <a href="@keynote:keynote=Amost12/EDGB12.pdf">présentation</a> et
       <a href="@ev+:_able=Amost12">détails</a> ;</li>
 
       <li><cite lang="en">Praspel: A Specification Language for Contract-Driven
       Testing in PHP</cite>, présenté à <a href="http://ictss2011.lri.fr/">ICTSS
       2011</a> (Paris, France), <a href="@lr:article=Ictss11">article</a> et
-      <a href="@key.:keynote=Ictss11/EDGB11.pdf">présentation</a>.</li>
+      <a href="@keynote:keynote=Ictss11/EDGB11.pdf">présentation</a>.</li>
     </ul>
 
     <h2 id="Presentations">Présentations</h2>
@@ -145,23 +145,23 @@
       présentée au
       <a href="http://afup.org/pages/phptourlyon2014/">PHPTour 2014</a> (Lyon,
       France),
-      <a href="@key.:keynote=PHPTour14/PHPTour14.html">présentation</a>,
+      <a href="@keynote:keynote=PHPTour14/PHPTour14.html">présentation</a>,
       <a href="http://youtu.be/PYcQmK_A_rw">enregistrement</a> et
       <a href="@ev+:_able=Phptour14">détails</a> ;</li>
 
       <li><cite>Hoa, un ensemble de bibliothèques PHP</cite>, présentée à
       l'<a href="http://lyon.afup.org/">AFUP Lyon 2013</a> (Lyon, France),
-      <a href="@key.:keynote=AFUPLyon13/AFUPLyon13.html">présentation</a> et
+      <a href="@keynote:keynote=AFUPLyon13/AFUPLyon13.html">présentation</a> et
       <a href="@ev+:_able=Afuplyon13">détails</a> ;</li>
 
       <li><cite>Anatomie du test</cite>, présentée au
       <a href="http://afup.org/pages/forumphp2012/">ForumPHP 2012</a> (Paris,
-      France), <a href="@key.:keynote=ForumPHP12/">présentation</a> et
+      France), <a href="@keynote:keynote=ForumPHP12/">présentation</a> et
       <a href="@ev+:_able=Forumphp12">détails</a> ;</li>
 
       <li><cite>Hoa, un ensemble de bibliothèques</cite>, présentée au
       <a href="http://afup.org/pages/phptourlille2011/">PHPTour 2011</a> (Lille,
-      France), <a href="@key.:keynote=PHPTour11/PHPTour11.html">présentation</a>
+      France), <a href="@keynote:keynote=PHPTour11/PHPTour11.html">présentation</a>
       et <a href="@ev+:_able=Phptour11">détails</a>.</li>
     </ul>
 
@@ -169,18 +169,18 @@
     <ul>
       <li><cite lang="en">What a year!</cite>, présentée à
       <a href="@ev+:_able=Hoaapex14">Hoa Apex'14</a> (Marseille, France),
-      <a href="@key.:keynote=HoaApex14-1/HoaApex14-1.html">présentation</a>,
+      <a href="@keynote:keynote=HoaApex14-1/HoaApex14-1.html">présentation</a>,
       <a href="http://player.vimeo.com/video/103915477">enregistrement</a> et
       <a href="@ev+:_able=Hoaapex14">détails</a> ;</li>
 
       <li><cite lang="en">How do we ensure code quality?</cite>, présentée à
       <a href="@ev+:_able=Hoaapex14">Hoa Apex'14</a> (Marseille, France),
-      <a href="@key.:keynote=HoaApex14-2/HoaApex14-2.html">présentation</a> et
+      <a href="@keynote:keynote=HoaApex14-2/HoaApex14-2.html">présentation</a> et
       <a href="@ev+:_able=Hoaapex14">détails</a> ;</li>
 
       <li><cite>Ouverture</cite>, présentée à
       <a href="@ev+:_able=Hoaapex13">Hoa Apex'13</a> (Le Locle, Switzerland),
-      <a href="@key.:keynote=HoaApex13/HoaApex13.html">présentation</a> et
+      <a href="@keynote:keynote=HoaApex13/HoaApex13.html">présentation</a> et
       <a href="@ev+:_able=Hoaapex13">détails</a>.</li>
     </ul>
   </yield>

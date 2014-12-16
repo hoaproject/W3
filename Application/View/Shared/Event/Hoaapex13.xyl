@@ -3,7 +3,7 @@
 <?xyl-overlay href="hoa://Application/View/Shared/Overlay/Map.xyl"?>
 
 <overlay xmlns="http://hoa-project.net/xyl/xylophone">
-  <yield id="yContent">
+  <yield id="main_content">
     <h1>Apex 2013</h1>
 
     <p><_ with="Event">Introduction of Hoa Apex 2013.</_></p>
@@ -27,7 +27,7 @@
     Châtelard, 2400, Le Locle (coordonnées : 47.054789, 6.742918). Nous nous
     retrouverons tous dans la salle <strong>LL101</strong> au premier étage.</p>
 
-    <map id="location" style="height: 500px" />
+    <map id="location" />
     <script>
     Hoa.Document.onReady(function ( ) {
 
@@ -81,6 +81,6 @@
     <h2 id="Contacts" for="minitoc">Contacts</h2>
 
     <p>Pour <strong>toutes</strong> questions, n'hésitez surtout pas à
-    <a href="@c">nous contacter</a> !</p>
+    <a href="@community">nous contacter</a> !</p>
   </yield>
 </overlay>

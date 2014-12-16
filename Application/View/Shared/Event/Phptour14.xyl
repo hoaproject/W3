@@ -4,7 +4,7 @@
 <?xyl-stylesheet href="hoa://Application/Public/Css/Video.css"?>
 
 <overlay xmlns="http://hoa-project.net/xyl/xylophone">
-  <yield id="yContent">
+  <yield id="main_content">
     <h1>PHPTour 2014</h1>
 
     <p><img class="fright"
@@ -13,7 +13,7 @@
             alt="AFUP Lyon" />
     <_ with="Event">Introduction of PHPTour 2014.</_></p>
 
-    <map id="location" style="height: 500px" />
+    <map id="location" />
     <script>
     Hoa.Document.onReady(function ( ) {
 
@@ -49,7 +49,7 @@
 
     <h3>Présentation, démonstrations et enregistrement</h3>
 
-    <p>La <a href="@key.:keynote=PHPTour14/PHPTour14.html">présentation</a>
+    <p>La <a href="@keynote:keynote=PHPTour14/PHPTour14.html">présentation</a>
     est disponible. Les démonstrations sont accessibles dans le
     dossier <code>Demonstration</code> (voir le dépôt
     <a href="@github:repository=Keynote"><code>Keynote.git</code></a>).

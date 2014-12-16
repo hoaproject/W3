@@ -2,6 +2,6 @@
 
 <fragment xmlns="http://hoa-project.net/xyl/xylophone">
   <snippet id="async_content">
-    <yield id="yContent" />
+    <yield id="main_content" />
   </snippet>
 </fragment>

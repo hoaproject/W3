@@ -3,7 +3,7 @@
 <?xyl-overlay href="hoa://Application/View/Shared/Overlay/Code.xyl"?>
 
 <overlay xmlns="http://hoa-project.net/xyl/xylophone">
-  <yield id="yContent">
+  <yield id="main_content">
     <h1>Sources</h1>
 
     <p>Hoa distribue les projets principaux suivants :</p>
@@ -115,8 +115,8 @@ var_dump(HOA); // bool(true)</code></pre>
     <ul>
       <li>sources à la racine ;</li>
       <li><code>Bin/</code>, pour les binaires ;</li>
-      <li><code>Documentation/</code>, pour <a href="@l#Hack_book">les chapitres
-      du <em lang="en">hack book</em> (documentation)</a> ;</li>
+      <li><code>Documentation/</code>, pour <a href="@literature#Hack_book">les
+      chapitres du <em lang="en">hack book</em> (documentation)</a> ;</li>
       <li><code>Test/</code>, pour les tests ;</li>
       <li><code>README.md</code>, pour une description en anglais avec des
       exemples usuels ;</li>

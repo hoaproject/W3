@@ -4,12 +4,12 @@
 <?xyl-stylesheet href="hoa://Application/Public/Css/Video.css"?>
 
 <overlay xmlns="http://hoa-project.net/xyl/xylophone">
-  <yield id="yContent">
+  <yield id="main_content">
     <h1>Apex 2014</h1>
 
     <p><_ with="Event">Introduction of Hoa Apex 2013.</_></p>
 
-    <map id="location" style="height: 500px" />
+    <map id="location" />
     <script>
     Hoa.Document.onReady(function ( ) {
 
@@ -37,7 +37,7 @@
 
     <h3>Presentation and record</h3>
 
-    <p>The <a href="@key.:keynote=HoaApex14-1/HoaApex14-1.html">presentation</a>
+    <p>The <a href="@keynote:keynote=HoaApex14-1/HoaApex14-1.html">presentation</a>
     is available. The <a href="http://player.vimeo.com/video/103915477">record
     of the keynote</a> is also available.</p>
     <div class="video">
@@ -53,7 +53,7 @@
 
     <h3>Presentation</h3>
 
-    <p>The <a href="@key.:keynote=HoaApex14-2/HoaApex14-2.html">presentation</a>
+    <p>The <a href="@keynote:keynote=HoaApex14-2/HoaApex14-2.html">presentation</a>
     is available.</p>
   </yield>
 </overlay>

@@ -3,7 +3,7 @@
 <?xyl-overlay href="hoa://Application/View/Shared/Overlay/Map.xyl"?>
 
 <overlay xmlns="http://hoa-project.net/xyl/xylophone">
-  <yield id="yContent">
+  <yield id="main_content">
     <h1>CSTVA 2013</h1>
 
     <p><img class="fright"
@@ -11,7 +11,7 @@
             alt="Logo de ICST" />
     <_ with="Event">Introduction of CSTVA 2013.</_></p>
 
-    <map id="location" style="height: 500px" />
+    <map id="location" />
     <script>
     Hoa.Document.onReady(function ( ) {
 
@@ -52,7 +52,7 @@
     <h3>Article and presentation</h3>
 
     <p>The <a href="@lr:article=Cstva13">article</a> and the
-    <a href="@key.:keynote=Cstva13/EGB13.pdf">presentation</a> are available in
+    <a href="@keynote:keynote=Cstva13/EGB13.pdf">presentation</a> are available in
     PDF format.</p>
   </yield>
 </overlay>

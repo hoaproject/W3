@@ -11,13 +11,13 @@
 
   <nav id="menu">
     <ul>
-      <li><a href="@s"  class="source"     data-shortcut="s"><_>Sources</_></a></li>
-      <li><a href="@l"  class="literature" data-shortcut="l"><_>Literature</_></a></li>
-      <li><a href="@v"  class="video"      data-shortcut="v"><_>Videos</_></a></li>
-      <li><a href="@b"  class="blog"       data-shortcut="b"><_>Blog</_></a></li>
-      <li><a href="@ev" class="event"      data-shortcut="e"><_>Events</_></a></li>
-      <li><a href="@c"  class="community"  data-shortcut="c"><_>Community</_></a></li>
-      <li><a href="@a"  class="about"      data-shortcut="a"><_>About</_></a></li>
+      <li><a href="@source"     class="source"     data-shortcut="s"><_>Sources</_></a></li>
+      <li><a href="@literature" class="literature" data-shortcut="l"><_>Literature</_></a></li>
+      <li><a href="#"           class="video"      data-shortcut="v"><_>Videos</_></a></li>
+      <li><a href="@blog"       class="blog"       data-shortcut="b"><_>Blog</_></a></li>
+      <li><a href="@events"     class="event"      data-shortcut="e"><_>Events</_></a></li>
+      <li><a href="@community"  class="community"  data-shortcut="c"><_>Community</_></a></li>
+      <li><a href="@about"      class="about"      data-shortcut="a"><_>About</_></a></li>
     </ul>
   </nav>
 
@@ -31,19 +31,19 @@
   <div id="body">
 
     <header>
-      <a href="@g:all=" class="plain" data-shortcut="h">
+      <a href="@home" class="plain" data-shortcut="h">
         <img src="hoa://Application/Public/Image/Hoa.svg" alt="Hoa" />
       </a>
     </header>
 
-    <article id="content">
-      <yield id="yContent" />
-    </article>
+    <main>
+      <yield id="main_content" />
+    </main>
 
     <footer>
       <p><span lang="en">Choose your language:</span>
          <yield bind="?footer" separator=", ">
-           <a href="(?link)" lang="(?language)" class="plain" alt="(?language)">
+           <a href="(?link)" lang="(?language)" class="plain" alt="(?name)">
              <img src="hoa://Application/Public/Image/Flag/(?Language).gif"
                   alt="(?name)" />
            </a>

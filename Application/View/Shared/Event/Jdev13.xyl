@@ -3,7 +3,7 @@
 <?xyl-overlay href="hoa://Application/View/Shared/Overlay/Map.xyl"?>
 
 <overlay xmlns="http://hoa-project.net/xyl/xylophone">
-  <yield id="yContent">
+  <yield id="main_content">
     <h1>JDév' 2013</h1>
 
     <p><img class="fright"
@@ -11,7 +11,7 @@
             alt="Logo des JDév'" />
     <_ with="Event">Introduction of JDév' 2013.</_></p>
 
-    <map id="location" style="height: 500px" />
+    <map id="location" />
     <script>
     Hoa.Document.onReady(function ( ) {
 

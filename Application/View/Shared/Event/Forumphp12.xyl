@@ -3,7 +3,7 @@
 <?xyl-overlay href="hoa://Application/View/Shared/Overlay/Map.xyl"?>
 
 <overlay xmlns="http://hoa-project.net/xyl/xylophone">
-  <yield id="yContent">
+  <yield id="main_content">
     <h1>ForumPHP 2012</h1>
 
     <p><img class="fright"
@@ -11,7 +11,7 @@
             alt="Logo du ForumPHP" />
     <_ with="Event">Introduction of ForumPHP 2012.</_></p>
 
-    <map id="location" style="height: 500px" />
+    <map id="location" />
     <script>
     Hoa.Document.onReady(function ( ) {
 
@@ -63,8 +63,8 @@
 
     <h3 id="Presentation">Présentation</h3>
 
-    <p>La <a href="@key.:keynote=ForumPHP12/">présentation</a> était très imagée
-    mais nous avons toutefois retranscrit les dialogues, les liens et tout ce
-    qu'il faut pour apprécier la présentation de manière écrite.</p>
+    <p>La <a href="@keynote:keynote=ForumPHP12/">présentation</a> était très
+    imagée mais nous avons toutefois retranscrit les dialogues, les liens et
+    tout ce qu'il faut pour apprécier la présentation de manière écrite.</p>
   </yield>
 </overlay>

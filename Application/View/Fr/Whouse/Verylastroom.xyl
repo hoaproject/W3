@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <overlay xmlns="http://hoa-project.net/xyl/xylophone">
-  <yield id="yContent">
+  <yield id="main_content">
     <h1>est utilisé par<br />
         <img src="hoa://Application/Public/Image/WhoUse/Verylastroom.png"
              alt="VeryLastRoom" /></h1>
@@ -194,6 +194,6 @@
     <p>Entrevue réalisée le <time datetime="2012-10-23">23 octobre 2012</time>.
     Les bibliothèques principales que VeryLastRoom a utilisées cette fois-ci
     sont : <code>Hoa\Math</code> et
-    <a href="@lh:chapter=Compiler"><code>Hoa\Compiler</code></a>.</p>
+    <a href="@hack:chapter=Compiler"><code>Hoa\Compiler</code></a>.</p>
   </yield>
 </overlay>

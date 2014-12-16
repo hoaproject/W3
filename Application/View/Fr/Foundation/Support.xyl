@@ -2,7 +2,7 @@
 <?xyl-stylesheet href="hoa://Application/Public/Css/Leaflet.css"?>
 
 <overlay xmlns="http://hoa-project.net/xyl/xylophone">
-  <yield id="yContent">
+  <yield id="main_content">
     <h1>Nous soutenir !</h1>
 
     <p>Si vous souhaitez soutenir l'<a href="@f">association</a> Hoa, voici les

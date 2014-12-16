@@ -3,10 +3,10 @@
 <?xyl-overlay href="hoa://Application/View/Shared/Overlay/Map.xyl"?>
 
 <overlay xmlns="http://hoa-project.net/xyl/xylophone">
-  <yield id="yContent">
+  <yield id="main_content">
     <h1><_ with="Event">Events</_></h1>
 
-    <map id="global" style="height: 500px" />
+    <map id="global" />
     <script>
     Hoa.Document.onReady(function ( ) {
 
@@ -20,7 +20,7 @@
         });
 
         L.marker([50.63288622987, 3.0205407145028], {icon: icon})
-         .bindPopup('<a href="@ev+:_able=Phptour11">PHPTour\'11</a>')
+         .bindPopup('<a href="@event:event=Phptour11">PHPTour\'11</a>')
          .addTo(map);
 
         L.marker([48.844581929379, 2.3441948893342], {icon: icon})
@@ -28,96 +28,94 @@
          .addTo(map);
 
         L.marker([45.502015951149, -73.57589220671], {icon: icon})
-         .bindPopup('<a href="@ev+:_able=Amost12">AMOST\'12</a>')
+         .bindPopup('<a href="@event:event=Amost12">AMOST\'12</a>')
          .addTo(map);
 
         L.marker([48.819312415957, 2.3380794527806], {icon: icon})
-         .bindPopup('<a href="@ev+:_able=Forumphp12">ForumPHP\'12</a>')
+         .bindPopup('<a href="@event:event=Forumphp12">ForumPHP\'12</a>')
          .addTo(map);
 
         L.marker([47.054789, 6.742918], {icon: icon})
-         .bindPopup('<a href="@ev+:_able=Hoaapex13">Hoa Apex\'13</a>')
+         .bindPopup('<a href="@event:event=Hoaapex13">Hoa Apex\'13</a>')
          .addTo(map);
 
         L.marker([49.610148755062, 6.1367606521795], {icon: icon})
-         .bindPopup('<a href="@ev+:_able=Cstva13">CSTVA\'13</a>')
+         .bindPopup('<a href="@event:event=Cstva13">CSTVA\'13</a>')
          .addTo(map);
 
         L.marker([48.713133997214, 2.210079074177], {icon: icon})
-         .bindPopup('<a href="@ev+:_able=Jdev13">JDév\'13</a>')
+         .bindPopup('<a href="@event:event=Jdev13">JDév\'13</a>')
          .addTo(map);
 
         L.marker([45.756857272342, 4.8569499851933], {icon: icon})
-         .bindPopup('<a href="@ev+:_able=Afuplyon13">AFUP Lyon\'13</a>')
+         .bindPopup('<a href="@event:event=Afuplyon13">AFUP Lyon\'13</a>')
          .addTo(map);
 
         L.marker([45.748418537269, 4.8604905010918], {icon: icon})
-         .bindPopup('<a href="@ev+:_able=Phptour14">PHPTour\'14</a>')
+         .bindPopup('<a href="@event:event=Phptour14">PHPTour\'14</a>')
          .addTo(map);
 
         L.marker([43.281374566478, 5.356245875504], {icon: icon})
-         .bindPopup('<a href="@ev+:_able=Hoaapex14">Hoa Apex\'14</a>')
+         .bindPopup('<a href="@event:event=Hoaapex14">Hoa Apex\'14</a>')
          .addTo(map);
     });
     </script>
 
-    <h2><_ with="Event">Organized by Hoa</_>
-    <img src="hoa://Application/Public/Map/Marker.svg" height="25" /></h2>
+    <h2><_ with="Event">Organized by Hoa</_></h2>
 
     <ul>
       <li><time datetime="2014-08">
           <value formatter="strftime"
                  formatter-format="%B %Y"
                  formatter-timestamp="1408140000" /></time>,
-          <a href="@ev+:_able=Hoaapex14">Hoa Apex</a></li>
+          <a href="@event:event=Hoaapex14">Hoa Apex</a></li>
       <li><time datetime="2013-03">
           <value formatter="strftime"
                  formatter-format="%B %Y"
                  formatter-timestamp="1362092400" /></time>,
-          <a href="@ev+:_able=Hoaapex13">Hoa Apex</a></li>
+          <a href="@event:event=Hoaapex13">Hoa Apex</a></li>
     </ul>
 
-    <h2><_ with="Event">Where Hoa was invited</_>
-    <img src="hoa://Application/Public/Map/Marker.svg" height="25" /></h2>
+    <h2><_ with="Event">Where Hoa was invited</_></h2>
 
     <ul>
-      <li>??? (<a href="@c"><_ with="Event">invite us</_></a>)</li>
+      <li>??? (<a href="@community"><_ with="Event">invite us</_></a>)</li>
       <li><time datetime="2014-06">
           <value formatter="strftime"
                  formatter-format="%B %Y"
                  formatter-timestamp="1403560800" /></time>,
-          <a href="@ev+:_able=Phptour14">PHPTour</a></li>
+          <a href="@event:event=Phptour14">PHPTour</a></li>
       <li><time datetime="2013-10">
           <value formatter="strftime"
                  formatter-format="%B %Y"
                  formatter-timestamp="1380578400" /></time>,
-          <a href="@ev+:_able=Afuplyon13">AFUP Lyon</a></li>
+          <a href="@event:event=Afuplyon13">AFUP Lyon</a></li>
       <li><time datetime="2013-09">
           <value formatter="strftime"
                  formatter-format="%B %Y"
                  formatter-timestamp="1377986400" /></time>,
-          <a href="@ev+:_able=Jdev13">JDév'</a></li>
+          <a href="@event:event=Jdev13">JDév'</a></li>
       <li><time datetime="2013-03">
           <value formatter="strftime"
                  formatter-format="%B %Y"
                  formatter-timestamp="1362092400" /></time>,
-          <a href="@ev+:_able=Cstva13">CSTVA</a></li>
+          <a href="@event:event=Cstva13">CSTVA</a></li>
       <li><time datetime="2012-06">
           <value formatter="strftime"
                  formatter-format="%B %Y"
                  formatter-timestamp="1338501600" /></time>,
-          <a href="@ev+:_able=Forumphp12">ForumPHP</a></li>
+          <a href="@event:event=Forumphp12">ForumPHP</a></li>
       <li><time datetime="2012-04">
           <value formatter="strftime"
                  formatter-format="%B %Y"
                  formatter-timestamp="1333231200" /></time>,
-          <a href="@ev+:_able=Amost12">AMOST</a></li>
+          <a href="@event:event=Amost12">AMOST</a></li>
       <li><time datetime="2011-11">
           <value formatter="strftime"
                  formatter-format="%B %Y"
                  formatter-timestamp="1320102000" /></time>,
           ICTSS,
-          <a href="@ev+:_able=Phptour11">PHPTour</a></li>
+          <a href="@event:event=Phptour11">PHPTour</a></li>
     </ul>
   </yield>
 </overlay>

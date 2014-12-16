@@ -2,7 +2,7 @@
 <?xyl-stylesheet href="hoa://Application/Public/Css/Codemirror.css" position="1"?>
 
 <overlay xmlns="http://hoa-project.net/xyl/xylophone">
-  <yield id="yContent" bind="?edgb12">
+  <yield id="main_content" bind="?edgb12">
     <h1><em>Grammar-based Testing using Realistic Domains in PHP</em></h1>
 
     <h2 id="On_stage">On stage</h2>

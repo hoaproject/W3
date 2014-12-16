@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <overlay xmlns="http://hoa-project.net/xyl/xylophone">
-  <yield id="yContent">
+  <yield id="main_content">
     <h1><_ with="Error">Error</_></h1>
 
     <p><_ with="Error">An error occured (probably a nonexistent page). Maybe you should contact us?</_></p>
