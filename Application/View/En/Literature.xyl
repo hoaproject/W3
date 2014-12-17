@@ -15,8 +15,9 @@
 
     <p>The mini-turorial targets <strong>impatient</strong> people who would
     like to get an overview of Hoa in few minutes, notably the
-    <strong>framework</strong> aspect: <a href="@lt">read the mini-tutorial</a>.
-    This mini-tutorial summarizes pratical examples of the learning manual.</p>
+    <strong>framework</strong> aspect: <a href="@minitutorial">read the
+    mini-tutorial</a>.  This mini-tutorial summarizes pratical examples of the
+    learning manual.</p>
 
     <h2 id="Learning_manual">Learning manual (french only)</h2>
 
@@ -116,20 +117,20 @@
     <ul>
       <li><cite>A Constraint Solver for PHP Arrays</cite>, presented at
       <a href="http://cstva2013.univ-fcomte.fr/">CSTVA 2013</a> (Luxembourg,
-      Luxembourg), <a href="@lr:article=Cstva13">article</a>,
+      Luxembourg), <a href="@research:article=Cstva13">article</a>,
       <a href="@keynote:keynote=Cstva13/EGB13.pdf">presentation</a> and
-      <a href="@ev+:_able=Cstva13">details</a>,</li>
+      <a href="@event:event=Cstva13">details</a>,</li>
 
       <li><cite>Grammar-Based Testing using Realistic Domains in PHP</cite>,
       presented at
       <a href="https://sites.google.com/site/amost2012/">A-MOST 2012</a>
-      (Montréal, Canada), <a href="@lr:article=Amost12">article</a>,
+      (Montréal, Canada), <a href="@research:article=Amost12">article</a>,
       <a href="@keynote:keynote=Amost12/EDGB12.pdf">presentation</a> and
-      <a href="@ev+:_able=Amost12">details</a>,</li>
+      <a href="@event:event=Amost12">details</a>,</li>
 
       <li><cite>Praspel: A Specification Language for Contract-Driven Testing in
       PHP</cite>, presented at <a href="http://ictss2011.lri.fr/">ICTSS
-      2011</a> (Paris, France), <a href="@lr:article=Ictss11">article</a> and
+      2011</a> (Paris, France), <a href="@research:article=Ictss11">article</a> and
       <a href="@keynote:keynote=Ictss11/EDGB11.pdf">presentation</a>.</li>
     </ul>
 
@@ -143,43 +144,43 @@
       France),
       <a href="@keynote:keynote=PHPTour14/PHPTour14.html">presentation</a>,
       <a href="http://youtu.be/PYcQmK_A_rw">record</a> and
-      <a href="@ev+:_able=Phptour14">details</a>,</li>
+      <a href="@event:event=Phptour14">details</a>,</li>
 
       <li><cite lang="fr">Hoa, un ensemble de bibliothèques PHP</cite>,
       presented at the <a href="http://lyon.afup.org/">AFUP Lyon 2013</a>
       (Lyon, France),
       <a href="@keynote:keynote=AFUPLyon13/AFUPLyon13.html">presentation</a> and
-      <a href="@ev+:_able=Afuplyon13">details</a>,</li>
+      <a href="@event:event=Afuplyon13">details</a>,</li>
 
       <li><cite lang="fr">Anatomie du test</cite>, presented at
       <a href="http://afup.org/pages/forumphp2012/">ForumPHP 2012</a> (Paris,
       France), <a href="@keynote:keynote=ForumPHP12/">presentation</a> and
-      <a href="@ev+:_able=Forumphp12">details</a> ;</li>
+      <a href="@event:event=Forumphp12">details</a> ;</li>
 
       <li><cite lang="fr">Hoa, un ensemble de bibliothèques</cite>, presented
       at <a href="http://afup.org/pages/phptourlille2011/">PHPTour 2011</a>
       (Lille, France),
       <a href="@keynote:keynote=PHPTour11/PHPTour11.html">presentation</a> and
-      <a href="@ev+:_able=Phptour11">details</a>.</li>
+      <a href="@event:event=Phptour11">details</a>.</li>
     </ul>
 
     <p>Hoa Apex, the community event:</p>
     <ul>
       <li><cite>What a year!</cite>, presented at
-      <a href="@ev+:_able=Hoaapex14">Hoa Apex'14</a> (Marseille, France),
+      <a href="@event:event=Hoaapex14">Hoa Apex'14</a> (Marseille, France),
       <a href="@keynote:keynote=HoaApex14-1/HoaApex14-1.html">presentation</a>,
       <a href="http://player.vimeo.com/video/103915477">record</a> and
-      <a href="@ev+:_able=Hoaapex14">details</a>,</li>
+      <a href="@event:event=Hoaapex14">details</a>,</li>
 
       <li><cite>How do we ensure code quality?</cite>, presented at
-      <a href="@ev+:_able=Hoaapex14">Hoa Apex'14</a> (Marseille, France),
+      <a href="@event:event=Hoaapex14">Hoa Apex'14</a> (Marseille, France),
       <a href="@keynote:keynote=HoaApex14-2/HoaApex14-2.html">presentation</a> and
-      <a href="@ev+:_able=Hoaapex14">details</a>,</li>
+      <a href="@event:event=Hoaapex14">details</a>,</li>
 
       <li><cite lang="fr">Ouverture</cite>, presented at
-      <a href="@ev+:_able=Hoaapex13">Hoa Apex'13</a> (Le Locle, Switzerland),
+      <a href="@event:event=Hoaapex13">Hoa Apex'13</a> (Le Locle, Switzerland),
       <a href="@keynote:keynote=HoaApex13/HoaApex13.html">presentation</a> and
-      <a href="@ev+:_able=Hoaapex13">details</a>.</li>
+      <a href="@event:event=Hoaapex13">details</a>.</li>
     </ul>
   </yield>
 </overlay>

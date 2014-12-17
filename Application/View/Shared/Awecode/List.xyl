@@ -14,7 +14,7 @@
           <div>
             <div class="table-cell w70 tcenter" bind="?description" />
             <div class="table-cell w30 tcenter vcenter">
-              <a href="@v+:id=(?id)" class="play">►</a>
+              <a href="@awecode:id=(?id)" class="play">►</a>
             </div>
           </div>
         </dd>

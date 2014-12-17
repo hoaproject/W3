@@ -1,3 +1,6 @@
+msgid "Index"
+msgstr "A set of PHP libraries"
+
 msgid "A set of PHP libraries"
 msgstr "A set of PHP libraries"
 
@@ -6,9 +9,6 @@ msgstr "Hoa is a <strong>modular</strong>, <strong>extensible</strong> and <stro
 
 msgid "Compose and extend libraries to create applications or your own libraries!"
 msgstr "<strong>Compose</strong> and <strong>extend</strong> libraries to <strong>create</strong> applications or your own libraries!"
-
-msgid "What are you going to love?"
-msgstr "What are you going to love?"
 
 msgid "Download"
 msgstr "Download"

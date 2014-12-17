@@ -2,4 +2,4 @@ msgid "Error"
 msgstr "Erreur"
 
 msgid "An error occured (probably a nonexistent page). Maybe you should contact us?"
-msgstr "Une erreur est survenue (probablement une page inexistante). Peut-être faut-il <a href=\"@c\">nous contacter</a> ?"
+msgstr "Une erreur est survenue (probablement une page inexistante). Peut-être faut-il <a href=\"@community\">nous contacter</a> ?"

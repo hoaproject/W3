@@ -26,6 +26,6 @@ class Learn extends Resource {
             ->then(curry([$this, 'doMainOverlay'], …, 'Literature/Learn'))
             ->then([$this, 'doRender']);
 
-        var_dump('here');
+        return;
     }
 }

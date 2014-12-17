@@ -13,7 +13,7 @@
     <ul>
       <li><a href="@source"     class="source"     data-shortcut="s"><_>Sources</_></a></li>
       <li><a href="@literature" class="literature" data-shortcut="l"><_>Literature</_></a></li>
-      <li><a href="#"           class="video"      data-shortcut="v"><_>Videos</_></a></li>
+      <li><a href="@videos"     class="video"      data-shortcut="v"><_>Videos</_></a></li>
       <li><a href="@blog"       class="blog"       data-shortcut="b"><_>Blog</_></a></li>
       <li><a href="@events"     class="event"      data-shortcut="e"><_>Events</_></a></li>
       <li><a href="@community"  class="community"  data-shortcut="c"><_>Community</_></a></li>

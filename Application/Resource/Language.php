@@ -59,6 +59,25 @@ class Language extends Resource {
                 'Literature\Hack'
             )
             ->get(
+                'minitutorial',
+                '/Literature/Mini-tutorial\.html',
+                'Literature\Minitutorial'
+            )
+            ->get(
+                'research',
+                '/Literature/Research/(?<article>[\w\d]+)\.pdf',
+                'Literature\Research'
+            )
+            ->get(
+                'videos',
+                '/Video\.html',
+                'Video\Video'
+            )
+            ->get(
+                'awecode',
+                '/Awecode/(?<id>[\w\-_]+)\.html'
+            )
+            ->get(
                 'events',
                 '/Event\.html',
                 'Generic'
@@ -86,36 +105,12 @@ class Language extends Resource {
 
 
                 ->_get(
-                    'lt',
-                    '/Literature/Mini-tutorial\.html'
-                )
-                ->_get(
-                    'lr',
-                    '/Literature/Research/(?<article>[\w\d]+)\.html'
-                )
-                ->_get(
                     'lc',
                     '/Literature/Contributor/Guide\.html'
                 )
                 ->_get(
-                    'r',
-                    '/Research\.html'
-                )
-                ->get_post(
-                    'rx',
-                    '/Research/(?<article>\w+)/Experimentation\.html'
-                )
-                ->_get(
                     'v-',
                     '/Awecode\.html'
-                )
-                ->_get(
-                    'v',
-                    '/Video\.html'
-                )
-                ->_get(
-                    'v+',
-                    '/Awecode/(?<id>[\w\-_]+)\.html'
                 )
                 ->_get(
                     'contact',

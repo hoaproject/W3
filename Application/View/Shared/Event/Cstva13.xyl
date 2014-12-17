@@ -51,7 +51,7 @@
 
     <h3>Article and presentation</h3>
 
-    <p>The <a href="@lr:article=Cstva13">article</a> and the
+    <p>The <a href="@research:article=Cstva13">article</a> and the
     <a href="@keynote:keynote=Cstva13/EGB13.pdf">presentation</a> are available in
     PDF format.</p>
   </yield>
