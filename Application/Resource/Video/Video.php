@@ -41,7 +41,7 @@ class Video extends Resource {
         return;
     }
 
-    protected function openDatabase ( ) {
+    public static function openDatabase ( ) {
 
         Database\Dal::initializeParameters([
             'connection.list.awecode.dal' => Database\Dal::PDO,

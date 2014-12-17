@@ -75,7 +75,8 @@ class Language extends Resource {
             )
             ->get(
                 'awecode',
-                '/Awecode/(?<id>[\w\-_]+)\.html'
+                '/Awecode/(?<id>[\w\-_]+)\.html',
+                'Video\Awecode'
             )
             ->get(
                 'events',

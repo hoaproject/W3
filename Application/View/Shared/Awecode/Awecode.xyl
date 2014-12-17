@@ -1,16 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xyl-use href="Definitions.xyl"?>
-<?xyl-use href="hoa://Application/External/Literature/Definitions.xyl"?>
+<?xyl-use href="hoa://Application/View/Shared/Definition/Awecode.xyl"?>
 
 <overlay xmlns="http://hoa-project.net/xyl/xylophone">
   <yield id="main_content" bind="?awecode">
-    <h1 id="Awecode_demo">Awecode<title_break /><yield bind="?title" /></h1>
+    <h1 id="Awecode">Awecode of <yield bind="?title" /></h1>
 
     <ul class="inline fright">
      <li><a href="@hack:chapter=(?library)" class="plain">
             <img src="hoa://Application/Public/Image/Icon_literature_black.svg"
                  alt="Documentation" width="30px" height="30px" /></a></li>
-      <li><a href="@dl:file=Library/(?library)/" class="plain">
+      <li><a href="@download:file=Library/(?library)/" class="plain">
             <img src="hoa://Application/Public/Image/Icon_package_black.svg"
                  alt="Archives" width="30px" height="30px" /></a></li>
       <li><a href="@git:repository=Library/(?library)" class="plain">
