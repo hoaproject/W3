@@ -98,6 +98,16 @@ class Language extends Resource {
                 '/About\.html',
                 'Generic'
             )
+            ->get(
+                'foundation',
+                '/Foundation.html',
+                'Generic'
+            )
+            ->get(
+                'foundation+',
+                '/Foundation/(?<page>\w+)\.html',
+                'Generic'
+            )
             ->head_get(
                 'home',
                 '/',
@@ -105,26 +115,6 @@ class Language extends Resource {
             )
 
 
-                ->_get(
-                    'lc',
-                    '/Literature/Contributor/Guide\.html'
-                )
-                ->_get(
-                    'v-',
-                    '/Awecode\.html'
-                )
-                ->_get(
-                    'contact',
-                    '/Contact\.html'
-                )
-                ->_get(
-                    'f',
-                    '/Foundation.html'
-                )
-                ->_get(
-                    'f+',
-                    '/Foundation/(?<_able>\w+)\.html'
-                )
                 ->_get(
                     'u',
                     '/Whouse/(?<who>\w+)\.html'

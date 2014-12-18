@@ -16,16 +16,16 @@
 
     <h2 id="Association_a_but_non-lucratif">Association à but non-lucratif</h2>
 
-    <p>Hoa Project est une <a href="@f">association</a> à but non-lucratif (loi
-    1901). Elle a pour objectif de soutenir le projet Hoa en développant,
-    déployant et faisant la promotion des logiciels libres issus de Hoa Project,
-    de ses produits dérivés et des projets associés. Vous trouverez
-    <a href="@f+:_able=Statutes">les statuts</a> en ligne.</p>
+    <p>Hoa Project est une <a href="@foundation">association</a> à but
+    non-lucratif (loi 1901). Elle a pour objectif de soutenir le projet Hoa en
+    développant, déployant et faisant la promotion des logiciels libres issus de
+    Hoa Project, de ses produits dérivés et des projets associés. Vous trouverez
+    <a href="@foundation+:page=Statutes">les statuts</a> en ligne.</p>
 
     <h2 id="Nous_soutenir">Nous soutenir</h2>
 
     <p>Si vous souhaitez aider Hoa et ses projets, vous pouvez
-    <a href="@f+:_able=Support">contribuer de nombreuses façons</a>.</p>
+    <a href="@foundation+:page=Support">contribuer de nombreuses façons</a>.</p>
 
     <h2 id="Licence">Licence</h2>
 

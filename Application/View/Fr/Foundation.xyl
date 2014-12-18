@@ -9,7 +9,7 @@
     pour objectif de soutenir le projet Hoa en développant, déployant et
     faisant la promotion des logiciels libres issus de Hoa Project, de ses
     produits dérivés et des projets associés.</p>
-    <p>Vous souhaitez <a href="@f+:_able=Support">nous soutenir</a> ?</p>
+    <p>Vous souhaitez <a href="@foundation+:page=Support">nous soutenir</a> ?</p>
 
     <h2 id="Bureau">Bureau</h2>
 
@@ -20,7 +20,7 @@
       <li>Matthieu Codron, secrétaire général.</li>
     </ul>
     <p>Cette constitution a été décidée le 15 aout 2013 suite à la réunion des
-    membres en assemblée constitutive. N'hésitez pas à <a href="@c">nous
+    membres en assemblée constitutive. N'hésitez pas à <a href="@community">nous
     contacter</a> !</p>
 
     <h2 id="Siege_social">Siège social</h2>
@@ -32,7 +32,7 @@
     <h2 id="Devenir_membre">Devenir membre</h2>
 
     <p>Cette année, le montant de la cotisation pour être membre bienfaiteur ou
-    membre actif est de : 15 €. Il vous suffit de <a href="@c">nous
+    membre actif est de : 15 €. Il vous suffit de <a href="@community">nous
     contacter</a> en précisant votre mode de réglement et nous vous indiquerons
     la marche à suivre.</p>
 
@@ -47,7 +47,7 @@
     <h2 id="Documents">Documents</h2>
 
     <ul>
-      <li><a href="@f+:_able=Statutes">Statuts de l'association</a></li>
+      <li><a href="@foundation+:page=Statutes">Statuts de l'association</a></li>
     </ul>
   </yield>
 </overlay>

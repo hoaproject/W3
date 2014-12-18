@@ -8,13 +8,15 @@ use Application\Dispatcher\Kit;
 class Generic extends Resource {
 
     protected $_metaData = [
-        'home'       => ['translation' => 'Index'],
-        'source'     => ['translation' => 'Source'],
-        'literature' => ['translation' => 'Literature'],
-        'events'     => ['translation' => 'Event'],
-        'event'      => ['translation' => 'Event'],
-        'community'  => ['translation' => 'Community'],
-        'about'      => ['translation' => 'About']
+        'home'        => ['translation' => 'Index'],
+        'source'      => ['translation' => 'Source'],
+        'literature'  => ['translation' => 'Literature'],
+        'events'      => ['translation' => 'Event'],
+        'event'       => ['translation' => 'Event'],
+        'community'   => ['translation' => 'Community'],
+        'about'       => ['translation' => 'About'],
+        'foundation'  => ['translation' => 'Foundation'],
+        'foundation+' => ['translation' => 'Foundation']
     ];
 
 

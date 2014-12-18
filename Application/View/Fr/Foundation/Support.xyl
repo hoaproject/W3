@@ -5,8 +5,8 @@
   <yield id="main_content">
     <h1>Nous soutenir !</h1>
 
-    <p>Si vous souhaitez soutenir l'<a href="@f">association</a> Hoa, voici les
-    possibilités qui vous sont accessibles.</p>
+    <p>Si vous souhaitez soutenir l'<a href="@foundation">association</a> Hoa,
+    voici les possibilités qui vous sont accessibles.</p>
 
     <h2 id="Don">Don</h2>
 
@@ -23,10 +23,10 @@
     </ul>
     <!--
     <p>Voici nos coordonnées bancaires : …. Pour les chèques, les envoyer au
-    <a href="@f#Siege_social">siège social</a> de l'association.</p>
+    <a href="@foundation#Siege_social">siège social</a> de l'association.</p>
     -->
     <p>Si vous souhaitez nous faire un don en dehors de cette liste, n'hésitez
-    pas à <a href="@c">nous contacter</a> !</p>
+    pas à <a href="@community">nous contacter</a> !</p>
 
     <h2 id="Utilisateur_ou_contributeur">Utilisateur ou contributeur</h2>
 
@@ -35,7 +35,7 @@
     de Hoa lors de rencontres ? Faites-le nous savoir ! Nous pouvons organiser
     des entrevues, vous proposez du matériel pour des présentations, des
     interventions à des événements, collaborer sur des projets communs… Encore
-    une fois, n'hésitez pas à <a href="@c">nous contacter</a>.</p>
+    une fois, n'hésitez pas à <a href="@community">nous contacter</a>.</p>
 
     <!--
     <h2 id="Service">Service</h2>
