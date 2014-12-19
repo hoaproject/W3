@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+<?xyl-stylesheet href="hoa://Application/Public/Css/Video.css"?>
 
 <overlay xmlns="http://hoa-project.net/xyl/xylophone">
   <yield id="main_content">

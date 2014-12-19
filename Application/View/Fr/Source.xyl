@@ -230,7 +230,7 @@ var_dump(HOA); // bool(true)</code></pre>
         "hoa/websocket": "~2.0@dev"
     }
 }</code></pre>
-    <p>L'<a href="https://getcomposer.org/doc/01-basic-usage.md#next-significant-release-tilde-operator-">opérateur
+    <p>L'<a href="https://getcomposer.org/doc/01-basic-usage.md#next-significant-release-tilde-and-caret-operators-">opérateur
     tilde</a>, ou opérateur de la prochaine <em lang="en">release</em>
     significative, dans Composer équivaut ici à <code>>=2.0,&amp;lt;3.0</code>,
     soit la dernière version possible pour le même MCN.</p>

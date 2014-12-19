@@ -1,20 +1,210 @@
 <?xml version="1.0" encoding="utf-8"?>
+<?xyl-use href="hoa://Application/View/Shared/Definition/Map.xyl"?>
+<?xyl-overlay href="hoa://Application/View/Shared/Overlay/Map.xyl"?>
 
 <overlay xmlns="http://hoa-project.net/xyl/xylophone">
   <yield id="main_content">
     <h1>Communauté</h1>
 
-    <p>Hoa est constitué de quatre co-gérants de communauté :</p>
+    <p>Hoa est constitué de quatre <strong>co-gérants</strong> de
+    communauté :</p>
     <ul>
-      <li>Ivan Enderlin (hywan)</li>
-      <li>Raphaël Emourgeon (iraphael)</li>
-      <li>Matthieu Codron (circlecode)</li>
-      <li>Julien Clauzel (thehawk)</li>
+      <li>Ivan Enderlin (hywan) ;</li>
+      <li>Raphaël Emourgeon (iraphael) ;</li>
+      <li>Matthieu Codron (circlecode) ;</li>
+      <li>Julien Clauzel (thehawk).</li>
     </ul>
     <p>Comme tous les autres contributeurs de Hoa, vous pouvez les contacter aux
     adresses <code><em>prénom</em>.<em>nom</em>@hoa-project.net</code> ou
     <code><em>pseudo</em>@hoa-project.net</code>. Les prénoms et noms ne doivent
     pas comporter d'accents.</p>
+
+    <figure class="landscape contain">
+      <img src="hoa://Application/Public/Image/Community.jpg"
+           style="opacity: .8" />
+      <figcaption>Communauté large, rejoignez plus de 800 personnes !</figcaption>
+    </figure>
+
+    <h2 id="Contributors">Contributeurs</h2>
+
+    <p>La liste officielle des contributeurs se trouve dans
+    <a href="https://github.com/hoaproject/Central/blob/master/CONTRIBUTOR.md">le
+    fichier <code>CONTRIBUTOR.md</code></a>du dépôt <code>Central</code>.</p>
+
+    <ul class="raw columns" data-columns="3" style="margin-top: 1em; line-height: 50px;">
+      <li>
+        <div class="avatar fleft" style="margin-right: .5em;"><img src="https://avatars0.githubusercontent.com/u/946104?s=60" /></div>
+        Ivan Enderlin
+      </li>
+      <li>
+        <div class="avatar fleft" style="margin-right: .5em;"><img src="https://avatars0.githubusercontent.com/u/245494?s=60" /></div>
+        Timothée Barray
+      </li>
+      <li>
+        <div class="avatar fleft" style="margin-right: .5em;"><img src="https://lh6.googleusercontent.com/-7MkKIZ7-M6o/AAAAAAAAAAI/AAAAAAAAABY/-8ZOS2oQrDA/s120-c/photo.jpg" /></div>
+        Abdallah Ben Othman
+      </li>
+      <li>
+        <div class="avatar fleft" style="margin-right: .5em;"><img src="https://avatars3.githubusercontent.com/u/327237?s=60" /></div>
+        Julien Bianchi
+      </li>
+      <li>
+        <div class="avatar fleft" style="margin-right: .5em;"><img src="https://avatars0.githubusercontent.com/u/1519729?s=60" /></div>
+        Julien Clauzel
+      </li>
+      <li>
+        <div class="avatar fleft" style="margin-right: .5em;"><img src="https://avatars3.githubusercontent.com/u/668738?s=60" /></div>
+        Matthieu Codron
+      </li>
+      <li>
+        <div class="avatar fleft" style="margin-right: .5em;"><img src="https://avatars1.githubusercontent.com/u/4128197?s=60" /></div>
+        Catalin Criste
+      </li>
+      <li>
+        <div class="avatar fleft" style="margin-right: .5em;"><img src="https://pbs.twimg.com/profile_images/1147260495/27419_1247269522_8938_q_200x200.jpg" /></div>
+        Frédéric Dadeau
+      </li>
+      <li>
+        <div class="avatar fleft" style="margin-right: .5em;"><img src="https://pbs.twimg.com/profile_images/1025754229/RIP-Michael_Jackson_200x200.jpg" /></div>
+        Antoine Darche
+      </li>
+      <li>
+        <div class="avatar fleft" style="margin-right: .5em;"><img src="https://pbs.twimg.com/profile_images/498912289/tetardo_200x200.png" /></div>
+        Grégory Darche
+      </li>
+      <li>
+        <div class="avatar fleft" style="margin-right: .5em;"><img src="https://avatars0.githubusercontent.com/u/1086339?s=60" /></div>
+        Benjamin Delespierre
+      </li>
+      <li>
+        <div class="avatar fleft" style="margin-right: .5em;"><img src="https://pbs.twimg.com/profile_images/378800000270404748/f2d60757b94e642a90818a12508902c7_200x200.png" /></div>
+        Gautier Di Folco
+      </li>
+      <li>
+        <div class="avatar fleft" style="margin-right: .5em;"><img src="https://avatars1.githubusercontent.com/u/130494?s=60" /></div>
+        Endel Dreyer
+      </li>
+      <li>
+        <div class="avatar fleft" style="margin-right: .5em;"><img src="https://avatars1.githubusercontent.com/u/183984?s=60" /></div>
+        Cédric Dugat
+      </li>
+      <li>
+        <div class="avatar fleft" style="margin-right: .5em;"><img src="https://avatars2.githubusercontent.com/u/717155?s=60" /></div>
+        Yohann Dupont
+      </li>
+      <li>
+        <div class="avatar fleft" style="margin-right: .5em;"><img src="https://avatars2.githubusercontent.com/u/311895?s=60" /></div>
+        Guislain Duthieuw
+      </li>
+      <li>
+        <div class="avatar fleft" style="margin-right: .5em;"><img src="https://avatars3.githubusercontent.com/u/125797?s=60" /></div>
+        Raphaël Emourgeon
+      </li>
+      <li>
+        <div class="avatar fleft" style="margin-right: .5em;"><img src="https://avatars1.githubusercontent.com/u/1299622?s=60" /></div>
+        Gérard Ernaelsten
+      </li>
+      <li>
+        <div class="avatar fleft" style="margin-right: .5em;"><img src="https://avatars1.githubusercontent.com/u/183785?s=60" /></div>
+        Julian Espérat
+      </li>
+      <li>
+        <div class="avatar fleft" style="margin-right: .5em;"></div>
+        Baptiste Fedi
+      </li>
+      <li>
+        <div class="avatar fleft" style="margin-right: .5em;"><img src="https://avatars3.githubusercontent.com/u/2235157?s=60" /></div>
+        Aymeric Gerlier
+      </li>
+      <li>
+        <div class="avatar fleft" style="margin-right: .5em;"><img src="https://avatars0.githubusercontent.com/u/1275202?s=60" /></div>
+        Alexis von Glasow
+      </li>
+      <li>
+        <div class="avatar fleft" style="margin-right: .5em;"><img src="https://avatars2.githubusercontent.com/u/399561?s=60" /></div>
+        Kevin Gravier
+      </li>
+      <li>
+        <div class="avatar fleft" style="margin-right: .5em;"><img src="https://avatars3.githubusercontent.com/u/243674?s=60" /></div>
+        Nicolas Grekas
+      </li>
+      <li>
+        <div class="avatar fleft" style="margin-right: .5em;"><img src="https://avatars2.githubusercontent.com/u/205895?s=60" /></div>
+        Sarah Haïm-Lubczanski
+      </li>
+      <li>
+        <div class="avatar fleft" style="margin-right: .5em;"><img src="https://avatars1.githubusercontent.com/u/54712?s=60" /></div>
+        Sébastien Houzé
+      </li>
+      <li>
+        <div class="avatar fleft" style="margin-right: .5em;"><img src="https://avatars3.githubusercontent.com/u/5406767?s=60" /></div>
+        Matthieu de Laubrie
+      </li>
+      <li>
+        <div class="avatar fleft" style="margin-right: .5em;"><img src="https://avatars0.githubusercontent.com/u/313117?s=60" /></div>
+        Samuel Laulhau
+      </li>
+      <li>
+        <div class="avatar fleft" style="margin-right: .5em;"><img src="https://avatars1.githubusercontent.com/u/944409?s=60" /></div>
+        Baptiste Leduc
+      </li>
+      <li>
+        <div class="avatar fleft" style="margin-right: .5em;"><img src="https://avatars1.githubusercontent.com/u/1810304?s=60" /></div>
+        Marc Lemay
+      </li>
+      <li>
+        <div class="avatar fleft" style="margin-right: .5em;"><img src="https://avatars0.githubusercontent.com/u/932553?s=60" /></div>
+        Renaud Littolff
+      </li>
+      <li>
+        <div class="avatar fleft" style="margin-right: .5em;"><img src="https://lh5.googleusercontent.com/-OaFxCEE2gbk/AAAAAAAAAAI/AAAAAAAAAHQ/NX-VyxiuuGg/s120-c/photo.jpg" /></div>
+        Julien Lorrain
+      </li>
+      <li>
+        <div class="avatar fleft" style="margin-right: .5em;"><img src="https://avatars0.githubusercontent.com/u/3785532?s=60" /></div>
+        Jean Molliné
+      </li>
+      <li>
+        <div class="avatar fleft" style="margin-right: .5em;"><img src="https://pbs.twimg.com/profile_images/1361813771/e347da7302301d6f7874e8bd8aff5256_200x200.png" /></div>
+        Joris Mulliez
+      </li>
+      <li>
+        <div class="avatar fleft" style="margin-right: .5em;"><img src="https://avatars0.githubusercontent.com/u/720328?s=60" /></div>
+        Matthieu Napoli
+      </li>
+      <li>
+        <div class="avatar fleft" style="margin-right: .5em;"><img src="https://avatars3.githubusercontent.com/u/677184?s=60" /></div>
+        Cosmin Nitu
+      </li>
+      <li>
+        <div class="avatar fleft" style="margin-right: .5em;"><img src="https://avatars2.githubusercontent.com/u/408368?s=60" /></div>
+        Grégoire Pineau
+      </li>
+      <li>
+        <div class="avatar fleft" style="margin-right: .5em;"><img src="https://avatars2.githubusercontent.com/u/232744?s=60" /></div>
+        Stéphane Py
+      </li>
+      <li>
+        <div class="avatar fleft" style="margin-right: .5em;"><img src="https://pbs.twimg.com/profile_images/412614898791612416/sgJHSD3V_200x200.png" /></div>
+        Mathias Strasser
+      </li>
+      <li>
+        <div class="avatar fleft" style="margin-right: .5em;"><img src="https://avatars0.githubusercontent.com/u/2293470?s=60" /></div>
+        Emmanuel Thierry
+      </li>
+      <li>
+        <div class="avatar fleft" style="margin-right: .5em;"><img src="https://avatars1.githubusercontent.com/u/5133487?s=60" /></div>
+        Pierre Tomasina
+      </li>
+      <li>
+        <div class="avatar fleft" style="margin-right: .5em;"><img src="https://avatars0.githubusercontent.com/u/347573?s=60" /></div>
+        Alex Walker
+      </li>
+      <li>
+        <div class="avatar fleft" style="margin-right: .5em;"><img src="https://avatars1.githubusercontent.com/u/2244480?s=60" /></div>
+        flip101
+      </li>
+    </ul>
 
     <h2 id="Mailing-lists"><em lang="en">Mailing-lists</em></h2>
 
@@ -51,6 +241,54 @@
     <p>D'autres moyens sont mis à votre disposition, comme <a href="@twitter">le
     compte Twitter</a>. Enfin, dans la matrice, vous pouvez les rencontrer
     facilement dans les villes suivantes : Paris, Lyon, Besançon pour la France,
-    Lausanne, Genève, Neuchâtel pour la Suisse et Namur pour la Belgique.</p>
+    Lausanne, Genève, Neuchâtel pour la Suisse, Namur pour la Belgique et Tunis
+    pour la Tunisie.</p>
+
+    <map id="where_are_we" />
+    <script>
+    Hoa.Document.onReady(function ( ) {
+
+        var map = Map('where_are_we').setView([43.729383037132, 6.9125976563339], 5);
+
+        var icon = L.icon({
+            iconUrl: '<value link="hoa://Application/Public/Map/Marker.svg" />',
+            iconSize: [28, 45],
+            iconAnchor: [14, 44],
+            popupAnchor: [2, -45]
+        });
+
+        L.marker([48.858228379223, 2.2945364716348], {icon: icon})
+         .bindPopup('Paris')
+         .addTo(map);
+
+        L.marker([45.767425881529, 4.8335691692106], {icon: icon})
+         .bindPopup('Lyon')
+         .addTo(map);
+
+        L.marker([47.237968256039, 6.0243063570252], {icon: icon})
+         .bindPopup('Besançon')
+         .addTo(map);
+
+        L.marker([46.519750720643, 6.6328486205089], {icon: icon})
+         .bindPopup('Lausanne')
+         .addTo(map);
+
+        L.marker([46.204788816541, 6.1514564753712], {icon: icon})
+         .bindPopup('Genève')
+         .addTo(map);
+
+        L.marker([46.988812328922, 6.9279077053895], {icon: icon})
+         .bindPopup('Neuchâtel')
+         .addTo(map);
+
+        L.marker([50.466939633143, 4.8567810060244], {icon: icon})
+         .bindPopup('Namur')
+         .addTo(map);
+
+        L.marker([36.799251316872, 10.175593435714], {icon: icon})
+         .bindPopup('Tunis')
+         .addTo(map);
+    });
+    </script>
   </yield>
 </overlay>
