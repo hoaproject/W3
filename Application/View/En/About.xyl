@@ -16,16 +16,16 @@
 
     <h2 id="Non-profit_foundation">Non-profit foundation</h2>
 
-    <p>Hoa Project is a non-profit <a href="@f:language=Fr">foundation</a>
+    <p>Hoa Project is a non-profit <a href="@foundation">foundation</a>
     (french <em lang="fr">loi</em> 1901). It aims to support the Hoa project by
     developing, deploying and promoting the free softwares from Hoa Project, its
     derivatives and associated projects. You can find the
-    <a href="@f+:language=Fr&amp;_able=Statutes">the statutes</a> online.</p>
+    <a href="@foundation+:page=Statutes">the statutes</a> online.</p>
 
     <h2 id="Support_us">Support us</h2>
 
     <p>If you want to help Hoa and its projects, you can
-    <a href="@f+:language=Fr&amp;_able=Support">contribute in many ways</a>.</p>
+    <a href="@foundation+:page=Support">contribute in many ways</a>.</p>
 
     <h2 id="License">License</h2>
 

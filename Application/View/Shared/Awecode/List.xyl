@@ -4,55 +4,16 @@
   <yield id="main_content">
     <h1 id="Awecodes">Awecodes</h1>
 
-    <dl class="grid">
-      <div bind="?awecodes">
-        <dt>
+    <ul class="raw tabular" style="border-spacing: 1em 2em">
+      <li bind="?awecodes">
+        <aside>
           <img src="hoa://Application/Public/Image/Awecode/Poster/(?id).png" />
-          <yield bind="?title" />
-        </dt>
-        <dd>
-          <div>
-            <div class="table-cell w70 tcenter" bind="?description" />
-            <div class="table-cell w30 tcenter vcenter">
-              <a href="@awecode:id=(?id)" class="play">►</a>
-            </div>
-          </div>
-        </dd>
-      </div>
-    </dl>
-
-    <script>
-      Hoa.Event.on('click', 'dl.grid dt img', function ( evt, data ) {
-
-          var dt = evt.target.parentNode;
-
-          if('true' === dt.getAttribute('aria-selected')) {
-
-              dt.removeAttribute('aria-selected');
-
-              return;
-          }
-
-          if(null !== (previous = Hoa.$('dt[aria-selected]'))) {
-
-              previous.removeAttribute('aria-selected');
-              Hoa.Concurrent.after(
-                  280,
-                  function ( ) {
-
-                      dt.setAttribute('aria-selected', true);
-
-                      return;
-                  }
-              );
-
-              return;
-          }
-
-          dt.setAttribute('aria-selected', true);
-
-          return;
-      });
-    </script>
+        </aside>
+        <div style="vertical-align: top">
+          <p><a href="@awecode:id=(?id)" bind="?title" /></p>
+          <p bind="?description" />
+        </div>
+      </li>
+    </ul>
   </yield>
 </overlay>

@@ -50,7 +50,7 @@ $router
     )
     ->_get(
         'list-subscribe',
-        'http://lists.hoa-project.net/index.cgi/subscribe/(?<list>)'
+        'http://lists.hoa-project.net/subscribe/(?<list>)'
     )
     ->_get(
         'git',
