@@ -22,8 +22,8 @@ msgstr "Activity"
 msgid "commits per day of Central (2 last months)"
 msgstr "commits per day of <code>Central</code> (2 last months)"
 
-msgid "Who uses?"
-msgstr "Who uses?"
+msgid "They trust us"
+msgstr "They trust us"
 
-msgid "They support us!"
-msgstr "They support us!"
+msgid "They support us"
+msgstr "They support us"

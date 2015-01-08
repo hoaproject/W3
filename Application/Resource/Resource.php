@@ -57,22 +57,23 @@ class Resource {
 
     public function doFooter ( Kit $kit ) {
 
-        $footer  = [];
-        $theRule = $kit->router->getTheRule();
-        $variables = $theRule[$kit->router::RULE_VARIABLES];
+        $router    = $kit->router;
+        $footer    = [];
+        $theRule   = $router->getTheRule();
+        $variables = $theRule[$router::RULE_VARIABLES];
 
         foreach($variables as &$variable)
             if(is_string($variable))
                 $variable = ucfirst($variable);
 
-        $oldPrefix = $kit->router->getPrefix();
+        $oldPrefix = $router->getPrefix();
 
         foreach($kit->user->getAvailableLanguages() as $short => $langName) {
 
-            $kit->router->setPrefix('/' . ucfirst($short));
+            $router->setPrefix('/' . ucfirst($short));
             $footer[] = [
-                'link'     => $kit->router->unroute(
-                    $theRule[$kit->router::RULE_ID],
+                'link'     => $router->unroute(
+                    $theRule[$router::RULE_ID],
                     $variables
                 ),
                 'name'     => $langName,
@@ -81,7 +82,7 @@ class Resource {
             ];
         }
 
-        $kit->router->setPrefix($oldPrefix);
+        $router->setPrefix($oldPrefix);
         $kit->data->footer = $footer;
 
         return $kit;

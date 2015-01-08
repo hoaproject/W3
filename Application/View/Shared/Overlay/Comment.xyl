@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<overlay xmlns="http://hoa-project.net/xyl/xylophone">
+  <yield id="scripts">
+    <script>
+      Hoa.Document.onReady(function ( ) {
+
+          var dsq   = document.createElement('script');
+          dsq.type  = 'text/javascript';
+          dsq.async = true;
+          dsq.src   = '//hoa-project.disqus.com/embed.js';
+          document.getElementsByTagName('head')[0].appendChild(dsq);
+      });
+    </script>
+  </yield>
+</overlay>

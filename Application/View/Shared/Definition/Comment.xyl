@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<definition xmlns="http://hoa-project.net/xyl/xylophone">
+  <yield name="comments">
+    <div id="disqus_thread" style="margin-top: 3em"></div>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  </yield>
+</definition>

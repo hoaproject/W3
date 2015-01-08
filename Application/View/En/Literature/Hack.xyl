@@ -2,6 +2,9 @@
 <?xyl-use href="hoa://Application/External/Literature/Definitions.xyl"?>
 <?xyl-use href="hoa://Application/View/Shared/Definition/Code.xyl"?>
 <?xyl-overlay href="hoa://Application/View/Shared/Overlay/Code.xyl"?>
+<?xyl-use href="hoa://Application/View/Shared/Definition/Comment.xyl"?>
+<?xyl-overlay href="hoa://Application/View/Shared/Overlay/Comment.xyl"?>
+<?xyl-overlay href="hoa://Application/View/Shared/Overlay/Github.xyl"?>
 <?xyl-stylesheet href="hoa://Application/Public/Css/Graph.css"?>
 
 <overlay xmlns="http://hoa-project.net/xyl/xylophone">
@@ -9,16 +12,23 @@
 
     <h1>Hack book of <code>Hoa\<value bind="?chapter" /></code></h1>
 
-    <ul class="inline fright" style="margin-top: 0; margin-bottom: 1em">
-      <li><a href="@download:file=Library/(?chapter)/" class="plain">
-            <img src="hoa://Application/Public/Image/Icon_package_black.svg"
-                 alt="Archives" width="30px" height="30px" /></a></li>
+    <ul role="toolbar" class="fright" style="margin-top: 0; margin-bottom: 1em">
       <li><a href="@git:repository=Library/(?chapter)" class="plain">
             <img src="hoa://Application/Public/Image/Icon_git_black.svg"
                  alt="Git" width="30px" height="30px" /></a></li>
       <li><a href="@github:repository=(?chapter)" class="plain">
             <img src="hoa://Application/Public/Image/Icon_github_black.svg"
                  alt="Github" width="30px" height="30px" /></a></li>
+      <li><a href="https://github.com/hoaproject/(?chapter)/archive/master.zip"
+             class="github-button"
+             data-style="mega"
+             data-icon="octicon-cloud-download">Download</a></li>
+      <li><a href="https://github.com/hoaproject/(?chapter)"
+             class="github-button"
+             data-count-api="/repos/hoaproject/(?chapter)#stargazers_count"
+             data-count-href="/hoaproject/(?chapter)/stargazers"
+             data-style="mega"
+             data-icon="octicon-star">Star</a></li>
     </ul>
 
     <yield id="chapter" />
@@ -27,6 +37,8 @@
     <small>An error or a suggestion about the documentation?
     <a href="@github:repository=(?chapter)">Contributions</a> are
     welcome!</small></p>
+
+    <comments />
   </yield>
 
   <yield id="scripts">

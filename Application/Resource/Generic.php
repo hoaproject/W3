@@ -25,7 +25,8 @@ class Generic extends Resource {
 
         $metaData = $this->_metaData;
         $theRule  = $_this->router->getTheRule();
-        $file     = $theRule[$_this->router::RULE_VARIABLES]['_uri'];
+        $router   = $_this->router;
+        $file     = $theRule[$router::RULE_VARIABLES]['_uri'];
 
         if('.html' === substr($file, -5, 5))
             $file = substr($file, 0, strlen($file) - 5);
@@ -34,14 +35,17 @@ class Generic extends Resource {
             ->promise
             ->then(function ( Kit $kit ) use ( &$file, $theRule ) {
 
-                if('home' === $theRule[$kit->router::RULE_ID])
+                $router = $kit->router;
+
+                if('home' === $theRule[$router::RULE_ID])
                     $file = 'Welcome';
 
                 return $kit;
             })
             ->then(function ( Kit $kit ) use ( $metaData, $theRule ) {
 
-                $ruleId = $theRule[$kit->router::RULE_ID];
+                $router = $kit->router;
+                $ruleId = $theRule[$router::RULE_ID];
 
                 if(!isset($metaData[$ruleId]))
                     return $kit;

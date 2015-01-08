@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<overlay xmlns="http://hoa-project.net/xyl/xylophone">
+  <yield id="scripts">
+    <script id="github-bjs"
+            src="https://buttons.github.io/buttons.js"
+            async="true" defer="true" />
+  </yield>
+</overlay>

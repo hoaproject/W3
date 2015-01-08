@@ -6,7 +6,7 @@
   <yield id="main_content" bind="?awecode">
     <h1 id="Awecode">Awecode of <yield bind="?title" /></h1>
 
-    <ul class="inline fright">
+    <ul role="toolbar" class="fright">
      <li><a href="@hack:chapter=(?library)" class="plain">
             <img src="hoa://Application/Public/Image/Icon_literature_black.svg"
                  alt="Documentation" width="30px" height="30px" /></a></li>
