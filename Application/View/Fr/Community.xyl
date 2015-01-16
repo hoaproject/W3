@@ -234,14 +234,20 @@
 
     <h2 id="IRC">IRC</h2>
 
-    <p>Vous retrouvez une grande partie de la communauté sur le salon
-    <a href="irc://irc.freenode.net#hoaproject"><code>#hoaproject</code></a>
-    (hébergé par <a href="http://freenode.net/">freenode</a>). Les contributeurs
-    de Hoa sont identifiés avec le <em lang="cloak">cloak</em>
+    <p>Vous retrouvez une grande partie de la communauté sur les salons :</p>
+    <ul>
+      <li><a href="irc://irc.freenode.net#hoaproject"><code>#hoaproject</code></a>,
+      pour parler du développement de Hoa, des contributions, de l'association,
+      demander de l'aide etc. ;</li>
+      <li><a href="irc://irc.freenode.net#hoaproject-random"><code>#hoaproject-random</code></a>,
+      lieu de vie de la communauté.</li>
+    </ul>
+    <p>Les salons sont hébergés par <a href="http://freenode.net/">freenode</a>.
+    Les contributeurs de Hoa sont identifiés avec le <em lang="cloak">cloak</em>
     <code class="nowrap">@hoaproject/contributor/<em>pseudo</em></code>
     (utilisez la commande <code>/whois <em>pseudo</em></code>). Les co-gérants
-    de communauté ont le <em lang="en">flag</em> <code>+V</code>. Vous pouvez
-    <a href="http://webchat.freenode.net/?channels=hoaproject">nous parler
+    de communauté ont le <em lang="en">flag</em> <code>+V</code>. Vous pouvez <a
+    href="http://webchat.freenode.net/?channels=hoaproject">nous parler
     directement</a> avec votre navigateur.</p>
 
     <h2 id="Autre_mediums">Autre mediums</h2>

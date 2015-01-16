@@ -231,9 +231,16 @@
 
     <h2 id="IRC">IRC</h2>
 
-    <p>You will meet up the majority of the community on the
-    <a href="irc://irc.freenode.net#hoaproject"><code>#hoaproject</code></a>
-    channel (hosted by <a href="http://freenode.net/">freenode</a>). The
+    <p>You will meet up the majority of the community on the following
+    channels:</p>
+    <ul>
+      <li><a href="irc://irc.freenode.net#hoaproject"><code>#hoaproject</code></a>,
+      to talk about the development of Hoa, contributions, the foundation, ask
+      help etc.</li>
+      <li><a href="irc://irc.freenode.net#hoaproject-random"><code>#hoaproject-random</code></a>,
+      life place of the community.</li>
+    </ul>
+    <p>Channels are hosted by <a href="http://freenode.net/">freenode</a>. The
     contributors of Hoa are identified by a cloak
     <code class="nowrap">@hoaproject/contributor/<em>pseudo</em></code>
     (use the command <code>/whois <em>pseudo</em></code>). The co-community
