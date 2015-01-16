@@ -1,24 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xyl-stylesheet href="hoa://Application/Public/Css/Video.css"?>
 <?xyl-use href="hoa://Application/View/Shared/Definition/Awecode.xyl"?>
+<?xyl-use href="hoa://Application/View/Shared/Definition/Code.xyl"?>
+<?xyl-overlay href="hoa://Application/View/Shared/Overlay/Code.xyl"?>
+<?xyl-use href="hoa://Application/View/Shared/Definition/Comment.xyl"?>
+<?xyl-overlay href="hoa://Application/View/Shared/Overlay/Comment.xyl"?>
+<?xyl-overlay href="hoa://Application/View/Shared/Overlay/Github.xyl"?>
 
 <overlay xmlns="http://hoa-project.net/xyl/xylophone">
   <yield id="main_content" bind="?awecode">
     <h1 id="Awecode">Awecode of <yield bind="?title" /></h1>
 
-    <ul role="toolbar" class="fright">
-     <li><a href="@hack:chapter=(?library)" class="plain">
+    <ul role="toolbar" class="fright" style="margin-top: 0; margin-bottom: 1em">
+      <li><a href="@hack:chapter=(?library)" class="plain">
             <img src="hoa://Application/Public/Image/Icon_literature_black.svg"
                  alt="Documentation" width="30px" height="30px" /></a></li>
-      <li><a href="@download:file=Library/(?library)/" class="plain">
-            <img src="hoa://Application/Public/Image/Icon_package_black.svg"
-                 alt="Archives" width="30px" height="30px" /></a></li>
-      <li><a href="@git:repository=Library/(?library)" class="plain">
+      <li><a href="@git:repository=Library/(?chapter)" class="plain">
             <img src="hoa://Application/Public/Image/Icon_git_black.svg"
                  alt="Git" width="30px" height="30px" /></a></li>
-      <li><a href="@github:repository=(?library)" class="plain">
+      <li><a href="@github:repository=(?chapter)" class="plain">
             <img src="hoa://Application/Public/Image/Icon_github_black.svg"
                  alt="Github" width="30px" height="30px" /></a></li>
+      <li><a href="https://github.com/hoaproject/(?chapter)/archive/master.zip"
+             class="github-button"
+             data-style="mega"
+             data-icon="octicon-cloud-download">Download</a></li>
+      <li><a href="https://github.com/hoaproject/(?chapter)"
+             class="github-button"
+             data-count-api="/repos/hoaproject/(?chapter)#stargazers_count"
+             data-count-href="/hoaproject/(?chapter)/stargazers"
+             data-style="mega"
+             data-icon="octicon-star">Star</a></li>
     </ul>
 
     <awecode id="awecode" />
@@ -30,6 +42,8 @@
     <script src="hoa://Application/Public/External/Popcorn.js/plugins/subtitle/popcorn.subtitle.js" />
     <script src="hoa://Application/Public/External/Popcorn.js/parsers/parserSRT/popcorn.parserSRT.js" />
     <script src="hoa://Application/Public/Javascript/Hoa.Awecode.js" />
+
+    <comments />
 
     <script>
       document.addEventListener('DOMContentLoaded', function ( ) {
