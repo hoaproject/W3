@@ -15,6 +15,7 @@
         <li><a href="@hack:chapter=Console"><code>Console</code></a></li>
         <li><code>Core</code></li>
         <li><code>Database</code></li>
+        <li><code>Devtools</code></li>
         <li><code>Dispatcher</code></li>
         <li><a href="@hack:chapter=Dns"><code>Dns</code></a></li>
         <li><a href="@hack:chapter=Eventsource"><code>Eventsource</code></a></li>
@@ -34,6 +35,7 @@
         <li><code>Model</code></li>
         <li><code>Notification</code></li>
         <li><code>Praspel</code></li>
+        <li><code>Promise</code></li>
         <li><code>Prototype</code></li>
         <li><code>Realdom</code></li>
         <li><code>Regex</code></li>
@@ -191,8 +193,7 @@
           .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
       d3.tsv(
-          //"<value link="hoa://Application/Public/Data/Central_commits_since_2months.tsv" />",
-          "http://static.hoa-project.net/Data/Central_commits_since_2months.tsv",
+          "<value link="hoa://Application/Public/Data/Central_commits_since_2months.tsv" />",
           function(error, data) {
               data.forEach(function(d) {
                 d.date = parseDate(d.date);

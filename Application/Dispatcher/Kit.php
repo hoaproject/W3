@@ -34,6 +34,7 @@ class Kit extends Hoa\Dispatcher\Kit {
                 $self->router
             );
             $xyl->setTheme('');
+            $xyl->setLocale($self->user->getLocale());
 
             $self->view = $xyl;
             $self->data = $xyl->getData();
