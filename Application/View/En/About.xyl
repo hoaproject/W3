@@ -27,6 +27,24 @@
     <p>If you want to help Hoa and its projects, you can
     <a href="@foundation+:page=Support">contribute in many ways</a>.</p>
 
+    <h2 id="Press">Press</h2>
+
+    <p>Description of the project: <q>“Hoa is a <strong>modular</strong>,
+    <strong>extensible</strong> and <strong>structured</strong> set of PHP
+    libraries. Moreover, Hoa aims at being a bridge between industrial and
+    research worlds”</q>. This is an open-source project.</p>
+
+    <p>No one is allowed to change the colors of the logo. You are invited to
+    <a href="@community">talk to us</a> for such a modifications. You will find
+    the logo in different format:</p>
+    <ul>
+      <li><a href="hoa://Application/Public/Image/Hoa_small.png">small logo in PNG</a>,</li>
+      <li><a href="hoa://Application/Public/Image/Hoa.png">logo in PNG</a>,</li>
+      <li><a href="hoa://Application/Public/Image/Hoa.svg">original logo in SVG</a>
+      (check the source!),</li>
+      <li><a href="hoa://Application/Public/Image/Hoa.dxf">logo in DXF</a>.</li>
+    </ul>
+
     <h2 id="License">License</h2>
 
     <p>The projects of Hoa are under the New BSD License

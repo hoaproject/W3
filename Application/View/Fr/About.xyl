@@ -27,6 +27,24 @@
     <p>Si vous souhaitez aider Hoa et ses projets, vous pouvez
     <a href="@foundation+:page=Support">contribuer de nombreuses façons</a>.</p>
 
+    <h2 id="Press">Presse</h2>
+
+    <p>Description du projet : <q>« Hoa est un ensemble de bibliothèques PHP
+    <strong>modulaires</strong>, <strong>extensibles</strong> et
+    <strong>structurées</strong>. De plus, Hoa souhaite être un pont entre le
+    monde de la recherche et de l'industrie »</q>. C'est un projet
+    open-source.</p>
+    <p>Personne n'est autorisé à changer les couleurs du logo. Vous êtes invités
+    à <a href="@community">nous parler</a> pour de telles modifications. Vous
+    trouverez le logo dans les différents formats :</p>
+    <ul>
+      <li><a href="hoa://Application/Public/Image/Hoa_small.png">petit logo en PNG</a> ;</li>
+      <li><a href="hoa://Application/Public/Image/Hoa.png">logo en PNG</a> ;</li>
+      <li><a href="hoa://Application/Public/Image/Hoa.svg">logo original en SVG</a>
+      (regarder le code source !) ;</li>
+      <li><a href="hoa://Application/Public/Image/Hoa.dxf">logo en DXF</a>.</li>
+    </ul>
+
     <h2 id="Licence">Licence</h2>
 
     <p>Les projets de Hoa sont sous licence <em lang="en">New BSD License</em>
