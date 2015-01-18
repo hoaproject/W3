@@ -45,6 +45,55 @@
       <li><a href="hoa://Application/Public/Image/Hoa.dxf">logo en DXF</a>.</li>
     </ul>
 
+    <h2 id="Story">Histoire derrière Hoa</h2>
+
+    <p>Né en 2007 dans la chambre de Ivan Enderlin, le projet a longtemps été un
+    prétexte pour apprendre et approfondir plusieurs domaines de l'Informatique.
+    Ce n'est qu'en 2010 que le projet a réellement commencé avec une communauté,
+    des utilisateurs, des événements etc. Voici quelques étapes
+    importantes :</p>
+
+    <div class="timeline">
+      <ul>
+        <li><time datetime="2007">2007</time>
+            Pré-naissance du projet</li>
+        <span class="br" />
+        <li><time datetime="2010">2010</time>
+            Naissance du projet</li>
+        <li><time datetime="07-11-2011">7 nov. 2011</time>
+            Première conférence scientifique
+            (<a href="http://ictss2011.lri.fr/">ICTSS</a>)</li>
+        <li><time datetime="24-11-2011">24 nov. 2011</time>
+            Première conférence développeur
+            (<a href="@event:event=Phptour11">PHPTour</a>)</li>
+        <span class="br" />
+        <li><time datetime="24-08-2012">24 aout 2012</time>
+            Publication sur <a href="@github">Github</a></li>
+        <li><time datetime="15-12-2012">15 déc. 2012</time>
+            Premier sponsor (<a href="http://verylastroom.com/">VeryLastRoom</a>)</li>
+        <span class="br" />
+        <li><time datetime="23-03-2013">23 mars 2013</time>
+            Premier événement communautaire
+            (<a href="@event:event=Hoaapex13">Apex, première édition</a>)</li>
+        <li><time datetime="03-04-2013">3 avr. 2013</time>
+            10 000 téléchargements</li>
+        <li><time datetime="20-05-2013">20 mai 2013</time>
+            <a href="@videos">Awecode</a>, une nouvelle forme d'apprentissage</li>
+        <li><time datetime="25-08-2013">25 aout 2013</time>
+            Création de l'association</li>
+        <span class="br" />
+        <li><time datetime="20-07-2014">20 juil. 2014</time>
+            Communauté large de plus de 800 personnes</li>
+        <li><time datetime="16-08-2014">16 aout 2014</time>
+            Deuxième événement communautaire
+            (<a href="@event:event=Hoaapex14">Apex, deuxième édition</a>)</li>
+        <li><time datetime="08-11-2014">8 nov. 2014</time>
+            200 000 téléchargements</li>
+        <li><time datetime="12-12-2014">12 déc. 2014</time>
+            300 000 téléchargements</li>
+      </ul>
+    </div>
+
     <h2 id="Licence">Licence</h2>
 
     <p>Les projets de Hoa sont sous licence <em lang="en">New BSD License</em>
