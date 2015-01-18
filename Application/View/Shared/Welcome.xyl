@@ -127,10 +127,19 @@
       </a>
     </div>
 
+    <h2 class="tcenter cboth">Community</h2>
+
+    <p class="tcenter"><_ with="Index">Join more than 800 people!</_></p>
+
+    <figure class="landscape contain">
+      <img src="hoa://Application/Public/Image/Community.jpg"
+           style="opacity: .8" />
+    </figure>
+
     <br class="cboth" />
 
     <div class="column fleft w50">
-      <h2><_ with="Index">Latest news</_></h2>
+      <h2 style="margin-top: 0"><_ with="Index">Latest news</_></h2>
 
       <ul>
         <li bind="?blog">
@@ -143,7 +152,7 @@
     </div>
 
     <div class="column fright w50">
-      <h2><_ with="Index">Activity</_></h2>
+      <h2 style="margin-top: 0"><_ with="Index">Activity</_></h2>
 
       <figure id="activity" style="max-width: 400px">
         <figcaption><_ with="Index">commits per day of Central (2 last months)</_></figcaption>
