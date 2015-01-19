@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
+<?xyl-stylesheet href="hoa://Application/Public/Css/Comment.css"?>
 
 <definition xmlns="http://hoa-project.net/xyl/xylophone">
   <yield name="comments">
-    <div id="disqus_thread" style="margin-top: 3em"></div>
-    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <div id="isso-thread" style="margin-top: 3em"></div>
+    <noscript>Please enable JavaScript to view the comments.</noscript>
   </yield>
 </definition>

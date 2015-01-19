@@ -72,6 +72,10 @@ $router
         'central_resource',
         'http://central.hoa-project.net/Resource/(?<path>)'
     )
+    ->_get(
+        'comments',
+        'http://comments.hoa-project.net/(?<file>)'
+    )
 
     // Public rules.
     ->get(
