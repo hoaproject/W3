@@ -15,20 +15,20 @@
       <li><a href="@hack:chapter=(?library)" class="plain">
             <img src="hoa://Application/Public/Image/Icon_literature_black.svg"
                  alt="Documentation" width="30px" height="30px" /></a></li>
-      <li><a href="@git:repository=Library/(?chapter)" class="plain">
+      <li><a href="@git:repository=Library/(?library)" class="plain">
             <img src="hoa://Application/Public/Image/Icon_git_black.svg"
                  alt="Git" width="30px" height="30px" /></a></li>
-      <li><a href="@github:repository=(?chapter)" class="plain">
+      <li><a href="@github:repository=(?library)" class="plain">
             <img src="hoa://Application/Public/Image/Icon_github_black.svg"
                  alt="Github" width="30px" height="30px" /></a></li>
-      <li><a href="https://github.com/hoaproject/(?chapter)/archive/master.zip"
+      <li><a href="https://github.com/hoaproject/(?library)/archive/master.zip"
              class="github-button"
              data-style="mega"
              data-icon="octicon-cloud-download">Download</a></li>
-      <li><a href="https://github.com/hoaproject/(?chapter)"
+      <li><a href="https://github.com/hoaproject/(?library)"
              class="github-button"
-             data-count-api="/repos/hoaproject/(?chapter)#stargazers_count"
-             data-count-href="/hoaproject/(?chapter)/stargazers"
+             data-count-api="/repos/hoaproject/(?library)#stargazers_count"
+             data-count-href="/hoaproject/(?library)/stargazers"
              data-style="mega"
              data-icon="octicon-star">Star</a></li>
     </ul>
@@ -48,7 +48,7 @@
     <script>
       document.addEventListener('DOMContentLoaded', function ( ) {
 
-          var awecode = new Hoa.Awecode('#awecode', '<yield bind="?vimeoId" />');
+          var awecode = new Hoa.Awecode('awecode', '<yield bind="?vimeoId" />');
           awecode.declare(<yield bind="?declare" />);
           awecode.subtitle('<value link="(?subtitle)" />');
       });
