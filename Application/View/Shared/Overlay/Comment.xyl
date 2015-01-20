@@ -7,5 +7,21 @@
             data-isso-css="false"
             data-isso-reply-to-self="false"
             data-isso-vote="true"></script>
+    <script>
+      Hoa.Document.onReady(function ( ) {
+
+          var authSection = Hoa.$('#isso-thread .auth-section');
+          authSection.setAttribute('aria-hidden', 'true');
+
+          Hoa.Event.on(
+              'click',
+              '#isso-thread [contenteditable]',
+              function ( ) {
+
+                  authSection.setAttribute('aria-hidden', 'false');
+              }
+          );
+      });
+    </script>
   </yield>
 </overlay>
