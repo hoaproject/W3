@@ -21,7 +21,7 @@
     </ul>
   </nav>
 
-  <form role="search" method="POST" action="http://search.hoa-project.net/">
+  <form role="search" method="POST" action="http://search.hoa-project.net/(?language)">
     <input type="search" name="q" placeholder="Search…" data-shortcut="shift+/" />
   </form>
   <output id="search_output">

@@ -44,6 +44,8 @@ class Kit extends Hoa\Dispatcher\Kit {
             return;
         });
 
+        $this->data->language = $this->user->getLocale()->getLanguage();
+
         return;
     }
 }

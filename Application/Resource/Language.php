@@ -32,6 +32,8 @@ class Language extends Resource {
             return;
         }
 
+        $_this->data->language[0] = $language;
+
         $_this->promise = $_this->promise->then(
             curry([$this, 'doTranslation'], …, 'Main', '__main__')
         );
