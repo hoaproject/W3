@@ -24,7 +24,7 @@ $router
     // Private rules.
     ->_get(
         '_resource',
-        'http://static.hoa-project.net/Static/(?<resource>)'
+        'http://static.hoa-project.net/(?<resource>)'
     )
     ->_get(
         'blog',
