@@ -16,7 +16,15 @@ class Video extends Resource {
 
         $_this
             ->promise
-            ->then(curry([$this, 'doTitle'], …, 'Vidéos'))
+            ->then(curry([$this, 'doTranslation'], …, 'Video', 'Video'))
+            ->then(function ( Kit $kit ) {
+
+                return $this->doTitle(
+                    $kit,
+                    $kit->view->getTranslation('Video')
+                              ->_('Videos')
+                );
+            })
             ->then(function ( Kit $kit ) use ( $self ) {
 
                 $self->openDatabase();

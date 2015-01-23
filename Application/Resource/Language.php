@@ -37,101 +37,36 @@ class Language extends Resource {
         );
 
         $_this->router->removeRule('choose-language');
-        $_this->router
-            ->get(
-                'source',
-                '/Source\.html',
-                'Generic'
-            )
-            ->get(
-                'literature',
-                '/Literature\.html',
-                'Generic'
-            )
-            ->get(
-                'learn',
-                '/Literature/Learn/(?<chapter>\w+)\.html',
-                'Literature\Learn'
-            )
-            ->get(
-                'hack',
-                '/Literature/Hack/(?<chapter>[\w ]+)\.html',
-                'Literature\Hack'
-            )
-            ->get(
-                'minitutorial',
-                '/Literature/Mini-tutorial\.html',
-                'Literature\Minitutorial'
-            )
-            ->get(
-                'research',
-                '/Literature/Research/(?<article>[\w\d]+)\.pdf',
-                'Literature\Research'
-            )
-            ->get(
-                'videos',
-                '/Video\.html',
-                'Video\Video'
-            )
-            ->get(
-                'awecode',
-                '/Awecode/(?<id>[\w\-_]+)\.html',
-                'Video\Awecode'
-            )
-            ->get(
-                'events',
-                '/Event\.html',
-                'Generic'
-            )
-            ->get(
-                'event',
-                '/Event/(?<event>\w+)\.html',
-                'Generic'
-            )
-            ->get(
-                'community',
-                '/Community\.html',
-                'Generic'
-            )
-            ->get(
-                'about',
-                '/About\.html',
-                'Generic'
-            )
-            ->get(
-                'foundation',
-                '/Foundation.html',
-                'Generic'
-            )
-            ->get(
-                'foundation+',
-                '/Foundation/(?<page>\w+)\.html',
-                'Generic'
-            )
-            ->head_get(
-                'home',
-                '/',
-                'Generic'
-            )
+        $_this->router->removeRule('fallback');
+        $router = $_this->router;
 
-
-                ->_get(
-                    'u',
-                    '/Whouse/(?<who>\w+)\.html'
-                )
-                ->_get(
-                    'e',
-                    '/Error\.html'
-                );
+        require 'hoa://Application/Router.php';
 
         if(empty($uri))
             $uri = '/';
 
-        $_this->router->route($uri);
+        try {
+
+            $_this->router->route($uri);
+        }
+        catch ( Router\Exception\NotFound $e ) {
+
+            $router->route('/Error.html');
+            $rule                                       = &$router->getTheRule();
+            $rule[$router::RULE_VARIABLES]['exception'] = $e;
+            $_this->dispatcher->dispatch($router);
+
+            return;
+        }
+
         $_this->router->setPrefix('/' . ucfirst($language));
 
         $theRule = &$_this->router->getTheRule();
         $theRule[Router::RULE_VARIABLES]['_this'] = $_this;
+
+        $_this->promise = $_this->promise->then(
+            curry([$this, 'doComment'], …)
+        );
 
         $_this->dispatcher->dispatch($_this->router);
 

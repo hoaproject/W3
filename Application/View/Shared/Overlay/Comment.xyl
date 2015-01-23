@@ -2,6 +2,7 @@
 
 <overlay xmlns="http://hoa-project.net/xyl/xylophone">
   <yield id="scripts">
+    <!--
     <script src="@comments:file=js/embed.min.js"
             data-isso="http://comments.hoa-project.net/"
             data-isso-css="false"
@@ -10,7 +11,9 @@
     <script>
       Hoa.Document.onReady(function ( ) {
 
-          var authSection = Hoa.$('#isso-thread .auth-section');
+          var issoThread = Hoa.$('#isso-thread');
+
+          var authSection = Hoa.$('.auth-section', issoThread);
           authSection.setAttribute('aria-hidden', 'true');
 
           Hoa.Event.on(
@@ -23,5 +26,6 @@
           );
       });
     </script>
+    -->
   </yield>
 </overlay>

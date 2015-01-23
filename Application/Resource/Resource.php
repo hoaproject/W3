@@ -55,6 +55,17 @@ class Resource {
         return $kit;
     }
 
+    public function doComment ( Kit $kit ) {
+
+        $router    = $kit->router;
+        $theRule   = $router->getTheRule();
+        $variables = $theRule[$router::RULE_VARIABLES];
+
+        $kit->data->commentId = '/' . $variables['_uri'];
+
+        return $kit;
+    }
+
     public function doFooter ( Kit $kit ) {
 
         $router    = $kit->router;
