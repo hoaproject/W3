@@ -21,9 +21,32 @@ class User {
 
     public function __construct ( ) {
 
-        $this->_locale = new Locale(new Locale\Localizer\Coerce('en'));
+        $this->_locale = new Locale(new Locale\Localizer\Coerce($this->guessDefaultLanguage()));
 
         return;
+    }
+
+    public function isUserLanguage($acceptedLanguage)
+    {
+        if (preg_match('/(\W)/', $acceptedLanguage, $matches)) {
+            $acceptedLanguage = strstr($acceptedLanguage, $matches[0], true);
+        }
+
+        if (in_array($acceptedLanguage, array_keys($this::$_languages))) {
+            return $acceptedLanguage;
+        }
+
+        return '';
+    }
+
+    public function guessDefaultLanguage()
+    {
+        $acceptedLanguages = array_unique(array_map(
+                                              array($this, 'isUserLanguage'),
+                                              explode(',', $_SERVER['HTTP_ACCEPT_LANGUAGE'])
+                                          ));
+
+        return (!$acceptedLanguages[0]) ? key($this::$_languages) : $acceptedLanguages[0];
     }
 
     public function guessLanguage ( $language ) {
