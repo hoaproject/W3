@@ -29,6 +29,7 @@ class Fallback {
             return;
         }
 
+        $_this->user->guessLanguage(null);
         $language = $_this->user->getLocale()->getLanguage();
 
         $response = $_this->view->getOutputStream();
