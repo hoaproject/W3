@@ -13,6 +13,9 @@ msgstr "<strong>Compose</strong> and <strong>extend</strong> libraries to <stron
 msgid "Download"
 msgstr "Download"
 
+msgid "Community"
+msgstr "Community"
+
 msgid "Latest news"
 msgstr "Latest news"
 

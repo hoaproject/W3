@@ -13,6 +13,9 @@ msgstr "<strong>Assemblez</strong> et <strong>étendez</strong> les bibliothèqu
 msgid "Download"
 msgstr "Téléchargement"
 
+msgid "Community"
+msgstr "Communauté"
+
 msgid "Latest news"
 msgstr "Dernières nouvelles"
 
