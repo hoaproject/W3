@@ -74,5 +74,5 @@ $router
     ->head_get(
         'home',
         '/',
-        'Generic'
+        'Home'
     );

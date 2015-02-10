@@ -127,7 +127,7 @@
       </a>
     </div>
 
-    <h2 class="tcenter cboth">Community</h2>
+    <h2 class="tcenter cboth"><_ with="Index">Community</_></h2>
 
     <p class="tcenter"><_ with="Index">Join more than 800 people!</_></p>
 
@@ -143,7 +143,7 @@
 
       <ul>
         <li bind="?blog">
-          <a href="@b_post:id=(?id)&amp;normalized_title=(?normalized_title)" bind="?title" />
+          <a href="@blog_post:id=(?id)&amp;normalized_title=(?normalized_title)" bind="?title" />
           <small>(<time><value formatter="strftime"
                                formatter-format="%b. '%y"
                                formatter-timestamp="(?posted)" /></time>)</small>

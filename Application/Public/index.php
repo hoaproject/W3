@@ -28,7 +28,7 @@ $router
     )
     ->_get(
         'blog',
-        'http://blog.hoa-project.net/',
+        'http://blog.hoa-project.net/'
     )
     ->_get(
         'blog_post',
