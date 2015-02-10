@@ -15,7 +15,7 @@ $dispatcher = new Dispatcher\ClassMethod([
     'synchronous.call'  => 'Application\Resource\(:call:U:)',
     'synchronous.able'  => '(:%variables._method:U:)',
     'asynchronous.call' => '(:%synchronous.call:)',
-    'asynchronous.able' => '(:%synchronous.able:)',
+    'asynchronous.able' => '(:%synchronous.able:)'
 ]);
 $dispatcher->setKitName('Application\Dispatcher\Kit');
 $router = new Router\Http();
@@ -28,17 +28,11 @@ $router
     )
     ->_get(
         'blog',
-        '/',
-        null,
-        null,
-        ['_subdomain' => 'blog']
+        'http://blog.hoa-project.net/',
     )
     ->_get(
         'blog_post',
-        '/posts/(?<id>)-(?<normalized_title>).html',
-        null,
-        null,
-        ['_subdomain' => 'blog']
+        'http://blog.hoa-project.net/posts/(?<id>)-(?<normalized_title>).html'
     )
     ->_get(
         'download',
