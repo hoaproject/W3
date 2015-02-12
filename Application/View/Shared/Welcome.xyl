@@ -105,6 +105,11 @@
              alt="SPW"
              style="max-width: 6em; margin: 0 5% 2em 0" />
       </a>
+      <a href="http://inovia.fr/" class="plain">
+        <img src="hoa://Application/Public/Image/Logo/Inovia.png"
+             alt="Inovia"
+             style="max-width: 6em; margin: 0 5% 2em 0" />
+      </a>
       <a href="http://atipik.fr/" class="plain">
         <img src="hoa://Application/Public/Image/Logo/Atipik.png"
              alt="Atipik"
