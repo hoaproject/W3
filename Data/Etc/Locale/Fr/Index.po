@@ -26,7 +26,7 @@ msgid "commits per day of Central (2 last months)"
 msgstr "<em lang=\"en\">commits</em> par jour sur <code>Central</code> (2 derniers mois)"
 
 msgid "They trust us"
-msgstr "Il nous font confiance"
+msgstr "Ils nous font confiance"
 
 msgid "They support us"
 msgstr "Ils nous soutiennent"
