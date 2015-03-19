@@ -41,7 +41,7 @@
         <li><code>Regex</code></li>
         <li><a href="@hack:chapter=Registry"><code>Registry</code></a></li>
         <li><a href="@hack:chapter=Router"><code>Router</code></a></li>
-        <li><code>Ruler</code></li>
+        <li><a href="@hack:chapter=Ruler"><code>Ruler</code></a></li>
         <li><code>Serialize</code></li>
         <li><code>Session</code></li>
         <li><code>Socket</code></li>
