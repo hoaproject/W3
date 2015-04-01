@@ -29,10 +29,19 @@ class Fallback {
             return;
         }
 
+        $userAgent = Http\Runtime::getHeader('User-Agent');
+        $response  = $_this->view->getOutputStream();
+
+        if(0 !== preg_match('#^Isso/#', $userAgent)) {
+
+            $response->sendStatus($response::STATUS_OK);
+
+            return;
+        }
+
         $_this->user->guessLanguage(null);
         $language = $_this->user->getLocale()->getLanguage();
 
-        $response = $_this->view->getOutputStream();
         $response->sendStatus($response::STATUS_PERMANENT_REDIRECT);
         $response->sendHeader(
             'Location',
