@@ -3,11 +3,9 @@
 
 <definition xmlns="http://hoa-project.net/xyl/xylophone">
   <yield name="comments">
-    <!--
     <div id="isso-thread"
          data-isso-id="(?commentId)"
          style="margin-top: 3em"></div>
     <noscript>Please enable JavaScript to view the comments.</noscript>
-    -->
   </yield>
 </definition>

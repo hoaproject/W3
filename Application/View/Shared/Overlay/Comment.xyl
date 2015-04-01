@@ -2,7 +2,6 @@
 
 <overlay xmlns="http://hoa-project.net/xyl/xylophone">
   <yield id="scripts">
-    <!--
     <script src="@comments:file=js/embed.min.js"
             data-isso="http://comments.hoa-project.net/"
             data-isso-css="false"
@@ -26,6 +25,5 @@
           );
       });
     </script>
-    -->
   </yield>
 </overlay>
