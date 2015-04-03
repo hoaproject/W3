@@ -101,6 +101,8 @@ class Resource {
 
     public function doRender ( Kit $kit ) {
 
+        $router = $kit->router;
+
         if(false === $kit->router->isAsynchronous()) {
 
             try {
@@ -109,7 +111,13 @@ class Resource {
             }
             catch ( \Exception $e ) {
 
-                var_dump($e->getMessage());
+                $router->setPrefix('/');
+                $router->route('/Error.html');
+                $rule                                       = &$router->getTheRule();
+                $rule[$router::RULE_VARIABLES]['exception'] = $e;
+                $kit->dispatcher->dispatch($router);
+
+                return;
             }
 
             return;
