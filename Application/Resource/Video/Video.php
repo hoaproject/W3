@@ -43,6 +43,7 @@ class Video extends Resource {
             })
             ->then(curry([$this, 'doMainOverlay'], …, 'Awecode/List'))
             ->then(curry([$this, 'doMainOverlay'], …, 'Video/Live'))
+            ->then(curry([$this, 'doComment'], …))
             ->then([$this, 'doFooter'])
             ->then([$this, 'doRender']);
 
