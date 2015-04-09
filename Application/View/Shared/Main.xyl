@@ -247,14 +247,14 @@
           );
 
           var headers = Hoa.$$('h2[id], h3[id], h4[id], h5[id], h6[id]');
-          headers.hoa.forEach(function ( i ) {
+          for(var i = 0; i &amp;lt; headers.length; ++i) {
 
               var header = headers[i];
               header.innerHTML =
                   header.innerHTML +
                   '&amp;lt;a href="#' + header.getAttribute('id') + '"' +
                      'class="plain anchor">🔗&amp;lt;/a>';
-          });
+          };
       });
     </script>
     <script type="text/javascript">
