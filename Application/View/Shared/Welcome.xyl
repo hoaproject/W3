@@ -63,7 +63,7 @@
     </div>
 
     <div class="column w50 fleft tcenter">
-      <h2 id="They_trust_us"><_ with="Index">They trust us</_></h2>
+      <h2><_ with="Index">They trust us</_></h2>
 
       <a href="http://mozilla.org/" class="plain">
         <img src="hoa://Application/Public/Image/Logo/Mozilla.png"
@@ -118,7 +118,7 @@
     </div>
 
     <div class="column w50 fright tcenter">
-      <h2 id="They_support_us"><_ with="Index">They support us</_></h2>
+      <h2><_ with="Index">They support us</_></h2>
 
       <a href="http://verylastroom.com/" class="plain">
         <img src="hoa://Application/Public/Image/Logo/Verylastroom.png"
