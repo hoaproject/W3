@@ -89,10 +89,10 @@
       <li><code>Session</code>,</li>
       <li><code>Socket</code>,</li>
       <li><code>Stream</code>,</li>
-      <li><a href="@hack:chapter=String"><code>String</code></a>,</li>
       <li><code>Stringbuffer</code>,</li>
       <li><code>Translate</code>,</li>
       <li><code>Tree</code>,</li>
+      <li><a href="@hack:chapter=Ustring"><code>Ustring</code></a>,</li>
       <li><a href="@hack:chapter=View"><code>View</code></a>,</li>
       <li><code>Visitor</code>,</li>
       <li><a href="@hack:chapter=Websocket"><code>Websocket</code></a>,</li>
