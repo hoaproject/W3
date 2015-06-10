@@ -25,7 +25,7 @@ class Awecode extends Resource {
 
                 $kit->data->awecode              = $awecode;
                 $kit->data->awecode[0]->subtitle = 'hoa://Application/Public/Subtitle/Awecode/' .
-                                                   $language .
+                                                   ucfirst($language) .
                                                    '/' .
                                                    ucfirst($awecode->id) .
                                                    '.srt';
