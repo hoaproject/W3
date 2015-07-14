@@ -9,44 +9,7 @@
     effet, un des objectifs de Hoa est d'<strong>enseigner</strong> ses
     utilisateurs, car apprendre sans comprendre n'a pas de sens et l'expérience
     montre que la compréhension d'un problème couplée à des solutions génériques
-    produit de biens meilleurs résultats. C'est pourquoi Hoa propose différents
-    manuels.</p>
-
-    <h2 id="Mini-tutoriel">Mini-tutoriel</h2>
-
-    <p>Le mini-tutoriel est dédié aux personnes <strong>impatientes</strong> qui
-    veulent avoir un aperçu de Hoa en quelques minutes, notamment sur l'aspect
-    <strong>framework</strong> : <a href="@minitutorial">lire le
-    mini-tutoriel</a>. Ce mini-tutoriel reprend les exemples pratiques du manuel
-    d'apprentissage.</p>
-
-    <h2 id="Manuel_d-apprentissage">Manuel d'apprentissage</h2>
-
-    <p>Le manuel d'apprentissage est dédié à l'<strong>apprentissage</strong> de
-    Hoa, pas à pas, à travers un exemple <strong>fil rouge</strong> ainsi que de
-    nombreux autres petits <strong>exemples</strong>, <strong>schémas</strong>
-    etc. Les bibliothèques sont expliquées dans un ordre pédagogique et pas
-    forcément dans les moindres détails. L'objectif est de se mettre le pied à
-    l'étrier, de commencer à produire des résultats <strong>concrets</strong>.
-    Ce manuel a également pour objectif de faire un tour d'horizon des
-    bibliothèques les plus importantes de Hoa pour savoir quoi approfondir par
-    la suite avec le <em lang="en">hack book</em>.</p>
-    <tableofcontents>
-      <a href="@learn:chapter=Introduction">Introduction</a>
-      <a href="@learn:chapter=Install">Installation</a>
-      <a href="@learn:chapter=Core">Exploration du noyau</a>
-      <a href="@learn:chapter=Embryo">Squelette d'application</a>
-      <a href="@learn:chapter=Routerdispatcher">Router + Dispatcher = ♥</a>
-      <a href="@learn:chapter=Model">Modèle de données</a>
-      <a href="@learn:chapter=Xyl">XYL</a>
-      <a href="@learn:chapter=Form">Formulaire</a>
-      <a href="@learn:chapter=Fragment_async">Fragment et asynchrone</a>
-    </tableofcontents>
-    <p>Annexes :</p>
-    <tableofcontents>
-      <a href="@learn:chapter=Appendix_http_servers">Configuration des serveurs
-      HTTP</a>
-    </tableofcontents>
+    produit de biens meilleurs résultats.</p>
 
     <h2 id="Hack_book"><em lang="en">Hack book</em></h2>
 
@@ -186,5 +149,12 @@
       <a href="@keynote:keynote=HoaApex13/HoaApex13.html">présentation</a> et
       <a href="@event:event=Hoaapex13">détails</a>.</li>
     </ul>
+
+    <h2 id="Contributor_guide">Guide du contributeur</h2>
+
+    <p>Si vous désirez contribuer à Hoa, ce guide est fait pour vous. Le
+    <a href="@contributor">guide du contributeur</a> vous enseignera comment
+    mettre en place un environnement de développement confortable pour améliorer
+    Hoa.</p>
   </yield>
 </overlay>

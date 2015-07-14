@@ -32,6 +32,11 @@ $router
         'Literature\Research'
     )
     ->get(
+        'contributor',
+        '/Literature/Contributor/Guide\.html',
+        'Literature\Contributor'
+    )
+    ->get(
         'videos',
         '/Video\.html',
         'Video\Video'
