@@ -15,13 +15,13 @@
       <ul role="toolbar" class="fright" style="margin-top: 0; margin-bottom: 1em">
         <li><a href="@hack:chapter=(?library)" title="Hack book" class="plain">
               <img src="hoa://Application/Public/Image/Icon/Literature.png"
-                   alt="Documentation" width="30px" height="30px" /></a></li>
+                   alt="Documentation" height="30px" /></a></li>
         <li><a href="@git:repository=Library/(?library)" title="Git" class="plain">
               <img src="hoa://Application/Public/Image/Icon/Git.svg"
-                   alt="Git" width="30px" height="30px" /></a></li>
+                   alt="Git" height="30px" /></a></li>
         <li><a href="@github:repository=(?library)" title="Github" class="plain">
               <img src="hoa://Application/Public/Image/Icon/Github.svg"
-                   alt="Github" width="30px" height="30px" /></a></li>
+                   alt="Github" height="30px" /></a></li>
         <li><a href="https://github.com/hoaproject/(?library)/archive/master.zip"
                class="github-button"
                data-style="mega"
