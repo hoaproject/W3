@@ -60,8 +60,8 @@ var_dump(HOA); // bool(true)</code></pre>
 
     <h2 id="Version_manager_(Git)" for="toc">Gestionnaire de versions (Git)</h2>
 
-    <p><img src="hoa://Application/Public/Image/Logo/Git.png" alt="Logo de Git"
-            class="fright" />
+    <p><img src="hoa://Application/Public/Image/Logo/Git.svg" alt="Logo de Git"
+            width="150px" class="fright" />
     Hoa utilise <a href="http://git-scm.com/">Git</a> pour tous ses projets.
     L'index des dépôts se trouve à l'adresse :
     <a href="http://git.hoa-project.net">git.hoa-project.net</a>. Les dépôts
@@ -78,9 +78,9 @@ var_dump(HOA); // bool(true)</code></pre>
     <pre><code class="language-shell">$ git clone http://git.hoa-project.net/Central.git /usr/local/lib/Hoa.central
 $ ln -s /usr/local/lib/Hoa.central/Hoa /usr/local/lib/Hoa</code></pre>
     <p><img src="hoa://Application/Public/Image/Logo/Pikacode.png"
-           alt="Logo de Pikacode" class="fright" />
-       <img src="hoa://Application/Public/Image/Logo/Github.png"
-           alt="Logo de Github" class="fright" />
+            alt="Logo de Pikacode" width="100px" class="fright" />
+       <img src="hoa://Application/Public/Image/Logo/Github.svg"
+            alt="Logo de Github" width="100px" class="fright" />
     Des miroirs existent pour la plupart des projets, notamment sur
     <a href="@github">Github</a> et
     <a href="https://pikacode.com/hoaproject/">Pikacode</a>. Les noms des

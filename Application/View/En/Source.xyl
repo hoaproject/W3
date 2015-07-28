@@ -58,8 +58,8 @@ var_dump(HOA); // bool(true)</code></pre>
 
     <h2 id="Version_manager_(Git)" for="toc">Version manager (Git)</h2>
 
-    <p><img src="hoa://Application/Public/Image/Logo/Git.png" alt="Logo of Git"
-            class="fright" />
+    <p><img src="hoa://Application/Public/Image/Logo/Git.svg" alt="Logo of Git"
+            width="150px" class="fright" />
     Hoa uses <a href="http://git-scm.com/">Git</a> for all its projects. The
     index of repositories can be found at the address:
     <a href="http://git.hoa-project.net">git.hoa-project.net</a>. Thus to get
@@ -75,9 +75,9 @@ var_dump(HOA); // bool(true)</code></pre>
     <pre><code class="language-shell">$ git clone http://git.hoa-project.net/Central.git /usr/local/lib/Hoa.central
 $ ln -s /usr/local/lib/Hoa.central/Hoa /usr/local/lib/Hoa</code></pre>
     <p><img src="hoa://Application/Public/Image/Logo/Pikacode.png"
-           alt="Logo of Pikacode" class="fright" />
-       <img src="hoa://Application/Public/Image/Logo/Github.png"
-           alt="Logo of Github" class="fright" />
+           alt="Logo of Pikacode" width="100px" class="fright" />
+       <img src="hoa://Application/Public/Image/Logo/Github.svg"
+           alt="Logo of Github" width="100px" class="fright" />
     Mirrors exist for the majority of projects, notably
     <a href="@github">Github</a> and
     <a href="https://pikacode.com/hoaproject/">Pikacode</a>. Names of projects
