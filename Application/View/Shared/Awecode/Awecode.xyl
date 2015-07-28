@@ -13,14 +13,14 @@
       <h1 id="Awecode">Awecode of <yield bind="?title" /></h1>
 
       <ul role="toolbar" class="fright" style="margin-top: 0; margin-bottom: 1em">
-        <li><a href="@hack:chapter=(?library)" class="plain">
-              <img src="hoa://Application/Public/Image/Icon_literature_black.svg"
+        <li><a href="@hack:chapter=(?library)" title="Hack book" class="plain">
+              <img src="hoa://Application/Public/Image/Icon/Literature.png"
                    alt="Documentation" width="30px" height="30px" /></a></li>
-        <li><a href="@git:repository=Library/(?library)" class="plain">
-              <img src="hoa://Application/Public/Image/Icon_git_black.svg"
+        <li><a href="@git:repository=Library/(?library)" title="Git" class="plain">
+              <img src="hoa://Application/Public/Image/Icon/Git.svg"
                    alt="Git" width="30px" height="30px" /></a></li>
-        <li><a href="@github:repository=(?library)" class="plain">
-              <img src="hoa://Application/Public/Image/Icon_github_black.svg"
+        <li><a href="@github:repository=(?library)" title="Github" class="plain">
+              <img src="hoa://Application/Public/Image/Icon/Github.svg"
                    alt="Github" width="30px" height="30px" /></a></li>
         <li><a href="https://github.com/hoaproject/(?library)/archive/master.zip"
                class="github-button"

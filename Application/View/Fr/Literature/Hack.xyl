@@ -13,11 +13,14 @@
     <h1><em lang="en">Hack book</em> de <code>Hoa\<value bind="?chapter" /></code></h1>
 
     <ul role="toolbar" class="fright" style="margin-top: 0; margin-bottom: 1em">
-      <li><a href="@git:repository=Library/(?chapter)" class="plain">
-            <img src="hoa://Application/Public/Image/Icon_git_black.svg"
+      <li><a href="@board:repository=(?chapter)" title="Board" class="plain">
+            <img src="hoa://Application/Public/Image/Icon/Waffle.svg"
                  alt="Git" width="30px" height="30px" /></a></li>
-      <li><a href="@github:repository=(?chapter)" class="plain">
-            <img src="hoa://Application/Public/Image/Icon_github_black.svg"
+      <li><a href="@git:repository=Library/(?chapter)" title="Git" class="plain">
+            <img src="hoa://Application/Public/Image/Icon/Git.svg"
+                 alt="Git" width="30px" height="30px" /></a></li>
+      <li><a href="@github:repository=(?chapter)" title="Github" class="plain">
+            <img src="hoa://Application/Public/Image/Icon/Github.svg"
                  alt="Github" width="30px" height="30px" /></a></li>
       <li><a href="https://github.com/hoaproject/(?chapter)/archive/master.zip"
              class="github-button"
