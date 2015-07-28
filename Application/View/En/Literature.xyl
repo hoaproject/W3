@@ -76,7 +76,7 @@
 
     <p>This documentation is <strong>low-level</strong>, <em>i.e.</em> at the
     code level. It allows to explore the code, to follow methods or classes
-    traces, etc.</p>
+    traces, etc. <a href="http://api.hoa-project.net/">Explore the API</a>!</p>
 
     <h2 id="Research">Research</h2>
 
