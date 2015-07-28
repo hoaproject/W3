@@ -3,3 +3,6 @@ msgstr "Literature: documentation, manual, tutorial…"
 
 msgid ", hack book"
 msgstr ", hack book"
+
+msgid "Contributor guide"
+msgstr "Contributor guide"

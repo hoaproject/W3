@@ -55,6 +55,10 @@ $router
         'https://github.com/hoaproject/(?<repository>)'
     )
     ->_get(
+        'board',
+        'https://waffle.io/hoaproject/(?<repository>)'
+    )
+    ->_get(
         'twitter',
         'https://twitter.com/hoaproject'
     )
