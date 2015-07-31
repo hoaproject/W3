@@ -68,9 +68,6 @@
       <li><a href="@hack:chapter=Zombie"><code>Zombie</code></a>,</li>
       <li><a href="@hack:chapter= "><code> </code></a>.</li>
     </ul>
-    <p>To generate the documentation by yourself, please, take a look at
-    <a href="@github:repository=Hoathis-Documentation">the
-    <code>Hoathis\Documentation</code> library</a>.</p>
 
     <h2 id="API_documentation">API documentation</h2>
 

@@ -70,9 +70,6 @@
       <li><a href="@hack:chapter=Zombie"><code>Zombie</code></a> ;</li>
       <li><a href="@hack:chapter= "><code> </code></a>.</li>
     </ul>
-    <p>Pour générer la documentation vous-même, veuillez regarder
-    <a href="@github:repository=Hoathis-Documentation">la bibliothèque
-    <code>Hoathis\Documentation</code></a>.</p>
 
     <h2 id="Documentation_API">Documentation API</h2>
 
