@@ -31,7 +31,7 @@
 
     <tableofcontents id="main-toc" />
 
-    <h2 id="Dates_and_venues" for="main-toc">Dates and attendees</h2>
+    <h2 id="Dates_and_venues" for="main-toc">Dates and venues</h2>
 
     <p>This year, Hoa Apex 3<sup>rd</sup> edition will stand at:
     <strong>10 rue du Faubourg Poissonière, 75010 Paris</strong>, the
@@ -39,32 +39,56 @@
     <time datetime="2015-09-27">27<sup>th</sup> September 2015</time></strong>.</p>
     <p>The following transport will help you to reach the event's location:</p>
     <ul>
-      <li>Subway: </li>
-      <li>Train (RER): </li>
-      <li>Bus: </li>
-      <li>By foot: </li>
+      <li>
+        🚇 Subway:
+        <ul>
+          <li>Lines 8 or 9, stop at <em lang="fr">Bonne Nouvelle</em>,</li>
+          <li>Line 7, stop at <em lang="fr">Poissonière</em>.</li>
+        </ul>
+      </li>
+      <li>
+        🚆 Train (RER), if you arrived at:
+        <ul>
+          <li><em lang="fr">Gare du Nord</em>, take line 4 to <em lang="fr">Gare
+          de l'Est</em> and take line 7,</li>
+          <li><em lang="fr">Gare de l'Est</em>, take line 7,</li>
+          <li><em lang="fr">Gare Montparnasse</em>, take line 4 and change at
+          <em lang="fr">Strasbourg Saint-Denis</em>, then take line 8 or 9,</li>
+          <li><em lang="fr">Gare de Lyon</em>, take line 1, change at
+          <em lang="fr">Reuilly Diderot</em> and take line 8.</li>
+        </ul>
+      </li>
+      <li>
+        🚍 Bus:
+        <ul>
+          <li>lines 20, 39 or 48, stop at <em lang="fr">Poissonière Bonne
+          Nouvelle</em>.</li>
+        </ul>
+      </li>
     </ul>
     <p>Useful links:</p>
     <ul>
-      <li><a href="">Subway plan</a>,</li>
-      <li><a href="">Paris transport database</a>.</li>
+      <li><a href="http://data.ratp.fr/api/datasets/1.0/plan-ratp-schematique-metro/attachments/plan_opendata_ratp_metro_pdf/">Subway plan</a>,</li>
+      <li><a href="http://www.ratp.fr/itineraires/fr/ratp/recherche-avancee">Paris transport database</a>,</li>
+      <li><a href="https://itunes.apple.com/us/app/ratp/id507107090?mt=8">On iOS</a>,</li>
+      <li><a href="https://play.google.com/store/apps/details?id=com.fabernovel.ratp">On Android</a>.</li>
     </ul>
 
-    <h2 id="Hotels_and_lunches" for="main-toc">Hotels and lunches</h2>
+    <h2 id="Hotels_and_lunches" for="main-toc">Hotels and miams</h2>
 
     <p>Hotels are not funded by the Hoa Project foundation. Here is a list of
     affordable hotels around the event's location:</p>
     <ul>
-      <li>foo</li>
-      <li>foo</li>
-      <li>foo</li>
-      <li>foo</li>
+      <li><a href="http://www.booking.com/searchresults.en-gb.html?src=index&amp;nflt=&amp;ss_raw=Paris+10&amp;error_url=http%3A%2F%2Fwww.booking.com%2Findex.en-gb.html%3Fsid%3D469b3764d62fb487b5e2a01ab5f37431%3Bdcid%3D1%3Bbb_ltbi%3D0%3Bsb_price_type%3Dtotal%26%3B&amp;dcid=1&amp;sid=469b3764d62fb487b5e2a01ab5f37431&amp;si=ai%2Cco%2Cci%2Cre%2Cdi&amp;ss=10th+arr.%2C+Paris%2C+Ile+de+France%2C+France&amp;checkin_monthday=25&amp;checkin_year_month=2015-9&amp;checkout_monthday=27&amp;checkout_year_month=2015-9&amp;no_rooms=1&amp;group_adults=1&amp;group_children=0&amp;dest_type=district&amp;dest_id=10&amp;ac_pageview_id=9226696ac3ac0109&amp;ac_position=0&amp;ac_langcode=en&amp;ac_suggestion_list_length=5">Booking</a>,</li>
+      <li><a href="https://www.airbnb.com/s/10th-arrondissement--Paris--France?checkin=09%2F25%2F2015&amp;checkout=09%2F27%2F2015">AirBnB</a>.</li>
     </ul>
     <p>You can also find your hotels at the very last minute with
     <a href="https://verylastroom.com/">VeryLastRoom</a>. It works pretty
     well in Paris.</p>
-    <p>About lunches, breakfast and … are funded by…. Dinner are not funded but
-    we will try to book restaurants to be together.</p>
+    <p>You only need <strong>to pay</strong> for one lunch: <strong>Saturday
+    dinner</strong> (evening), possibly at the
+    <a href="http://plantxa.com/">Plantxa</a>. Breakfasts and lunches are
+    <strong>offered</strong> (so free)!</p>
 
     <h2 id="Conferences_and_team_building" for="main-toc">Conferences and team
     building</h2>
