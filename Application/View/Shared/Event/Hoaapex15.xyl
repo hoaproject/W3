@@ -5,7 +5,7 @@
 
 <overlay xmlns="http://hoa-project.net/xyl/xylophone">
   <yield id="main_content">
-    <h1>Apex 2015</h1>
+    <h1>Apex 3<sup>rd</sup> edition, 2015</h1>
 
     <p><_ with="Event">Introduction of Hoa Apex 2013.</_></p>
 
@@ -47,7 +47,7 @@
         </ul>
       </li>
       <li>
-        🚆 Train (RER), if you arrived at:
+        🚆 Train, if you arrived at:
         <ul>
           <li><em lang="fr">Gare du Nord</em>, take line 4 to <em lang="fr">Gare
           de l'Est</em> and take line 7,</li>
@@ -70,8 +70,8 @@
     <ul>
       <li><a href="http://data.ratp.fr/api/datasets/1.0/plan-ratp-schematique-metro/attachments/plan_opendata_ratp_metro_pdf/">Subway plan</a>,</li>
       <li><a href="http://www.ratp.fr/itineraires/fr/ratp/recherche-avancee">Paris transport database</a>,</li>
-      <li><a href="https://itunes.apple.com/us/app/ratp/id507107090?mt=8">On iOS</a>,</li>
-      <li><a href="https://play.google.com/store/apps/details?id=com.fabernovel.ratp">On Android</a>.</li>
+      <li><a href="https://itunes.apple.com/us/app/ratp/id507107090?mt=8">Paris transport on iOS</a>,</li>
+      <li><a href="https://play.google.com/store/apps/details?id=com.fabernovel.ratp">Paris transport on Android</a>.</li>
     </ul>
 
     <h2 id="Hotels_and_lunches" for="main-toc">Hotels and miams</h2>
