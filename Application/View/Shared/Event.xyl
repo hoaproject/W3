@@ -59,7 +59,7 @@
          .bindPopup('<a href="@event:event=Hoaapex14">Hoa Apex 2<sup>nd</sup> edition</a>')
          .addTo(map);
 
-        L.marker([48.870595569718, 2.3487814667496], {icon: icon})
+        L.marker([48.871442404899, 2.348051905897], {icon: icon})
          .bindPopup('<a href="@event:event=Hoaapex15">Hoa Apex 3<sup>rd</sup> edition</a>')
          .addTo(map);
     });

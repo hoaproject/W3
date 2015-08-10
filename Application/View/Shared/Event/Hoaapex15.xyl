@@ -13,7 +13,7 @@
     <script>
     Hoa.Document.onReady(function ( ) {
 
-        var map = Map('location').setView([48.870595569718, 2.3487814667496], 13);
+        var map = Map('location').setView([48.871442404899, 2.348051905897], 13);
 
         var icon = L.icon({
             iconUrl: '<value link="hoa://Application/Public/Map/Marker.svg" />',
@@ -22,7 +22,7 @@
             popupAnchor: [2, -45]
         });
 
-        L.marker([48.870595569718, 2.3487814667496], {icon: icon})
+        L.marker([48.871442404899, 2.348051905897], {icon: icon})
          .addTo(map);
     });
     </script>
