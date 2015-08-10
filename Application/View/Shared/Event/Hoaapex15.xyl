@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xyl-use href="hoa://Application/View/Shared/Definition/Map.xyl"?>
+<?xyl-overlay href="hoa://Application/View/Shared/Overlay/Map.xyl"?>
+<?xyl-stylesheet href="hoa://Application/Public/Css/Video.css"?>
+
+<overlay xmlns="http://hoa-project.net/xyl/xylophone">
+  <yield id="main_content">
+    <h1>Apex 3<sup>rd</sup> edition, 2015</h1>
+
+    <p><_ with="Event">Introduction of Hoa Apex 2013.</_></p>
+
+    <map id="location" />
+    <script>
+    Hoa.Document.onReady(function ( ) {
+
+        var map = Map('location').setView([48.871442404899, 2.348051905897], 13);
+
+        var icon = L.icon({
+            iconUrl: '<value link="hoa://Application/Public/Map/Marker.svg" />',
+            iconSize: [28, 45],
+            iconAnchor: [14, 44],
+            popupAnchor: [2, -45]
+        });
+
+        L.marker([48.871442404899, 2.348051905897], {icon: icon})
+         .addTo(map);
+    });
+    </script>
+
+    <h2 id="Table_of_contents">Table of contents</h2>
+
+    <tableofcontents id="main-toc" />
+
+    <h2 id="Dates_and_venues" for="main-toc">Dates and venues</h2>
+
+    <p>This year, Hoa Apex 3<sup>rd</sup> edition will stand at:
+    <strong>10 rue du Faubourg Poissonière, 75010 Paris</strong>, the
+    <strong><time datetime="2015-09-26">26<sup>th</sup></time> and
+    <time datetime="2015-09-27">27<sup>th</sup> September 2015</time></strong>.</p>
+    <p>The following transport will help you to reach the event's location:</p>
+    <ul>
+      <li>
+        🚇 Subway:
+        <ul>
+          <li>Lines 8 or 9, stop at <em lang="fr">Bonne Nouvelle</em>,</li>
+          <li>Line 7, stop at <em lang="fr">Poissonière</em>.</li>
+        </ul>
+      </li>
+      <li>
+        🚆 Train, if you arrived at:
+        <ul>
+          <li><em lang="fr">Gare du Nord</em>, take line 4 to <em lang="fr">Gare
+          de l'Est</em> and take line 7,</li>
+          <li><em lang="fr">Gare de l'Est</em>, take line 7,</li>
+          <li><em lang="fr">Gare Montparnasse</em>, take line 4 and change at
+          <em lang="fr">Strasbourg Saint-Denis</em>, then take line 8 or 9,</li>
+          <li><em lang="fr">Gare de Lyon</em>, take line 1, change at
+          <em lang="fr">Reuilly Diderot</em> and take line 8.</li>
+        </ul>
+      </li>
+      <li>
+        🚍 Bus:
+        <ul>
+          <li>lines 20, 39 or 48, stop at <em lang="fr">Poissonière Bonne
+          Nouvelle</em>.</li>
+        </ul>
+      </li>
+    </ul>
+    <p>Useful links:</p>
+    <ul>
+      <li><a href="http://data.ratp.fr/api/datasets/1.0/plan-ratp-schematique-metro/attachments/plan_opendata_ratp_metro_pdf/">Subway plan</a>,</li>
+      <li><a href="http://www.ratp.fr/itineraires/fr/ratp/recherche-avancee">Paris transport database</a>,</li>
+      <li><a href="https://itunes.apple.com/us/app/ratp/id507107090?mt=8">Paris transport on iOS</a>,</li>
+      <li><a href="https://play.google.com/store/apps/details?id=com.fabernovel.ratp">Paris transport on Android</a>.</li>
+    </ul>
+
+    <figure class="landscape">
+      <img src="https://farm4.staticflickr.com/3885/15066928205_9c674028e3_h.jpg" />
+      <figcaption><a href="https://www.flickr.com/photos/zeeyolqpictures/15066928205/"><cite>Paris</cite></a>
+      by Yoann Jezequel</figcaption>
+    </figure>
+
+    <h2 id="Hotels_and_lunches" for="main-toc">Hotels and miams</h2>
+
+    <p>Hotels are not funded by the Hoa Project foundation. Here is a list of
+    affordable hotels around the event's location:</p>
+    <ul>
+      <li><a href="http://www.booking.com/searchresults.en-gb.html?src=index&amp;nflt=&amp;ss_raw=Paris+10&amp;error_url=http%3A%2F%2Fwww.booking.com%2Findex.en-gb.html%3Fsid%3D469b3764d62fb487b5e2a01ab5f37431%3Bdcid%3D1%3Bbb_ltbi%3D0%3Bsb_price_type%3Dtotal%26%3B&amp;dcid=1&amp;sid=469b3764d62fb487b5e2a01ab5f37431&amp;si=ai%2Cco%2Cci%2Cre%2Cdi&amp;ss=10th+arr.%2C+Paris%2C+Ile+de+France%2C+France&amp;checkin_monthday=25&amp;checkin_year_month=2015-9&amp;checkout_monthday=27&amp;checkout_year_month=2015-9&amp;no_rooms=1&amp;group_adults=1&amp;group_children=0&amp;dest_type=district&amp;dest_id=10&amp;ac_pageview_id=9226696ac3ac0109&amp;ac_position=0&amp;ac_langcode=en&amp;ac_suggestion_list_length=5">Booking</a>,</li>
+      <li><a href="https://www.airbnb.com/s/10th-arrondissement--Paris--France?checkin=09%2F25%2F2015&amp;checkout=09%2F27%2F2015">AirBnB</a>.</li>
+    </ul>
+    <p>You can also find your hotels at the very last minute with
+    <a href="https://verylastroom.com/">VeryLastRoom</a>. It works pretty
+    well in Paris.</p>
+    <p>You only need <strong>to pay</strong> for one lunch: <strong>Saturday
+    dinner</strong> (evening), possibly at the
+    <a href="http://plantxa.com/">Plantxa</a>. Breakfasts and lunches are
+    <strong>offered</strong> (so free)!</p>
+    <figure class="landscape">
+      <img src="http://plantxa.com/images/bg/1.jpg" />
+      <figcaption>Imagine this in front of view after a first awesome days with
+      Hoa's community!</figcaption>
+    </figure>
+
+    <h2 id="Conferences_and_team_building" for="main-toc">Conferences and team
+    building</h2>
+
+    <p>Bellow, the planning of the first day:</p>
+    <iframe
+      src="https://fruux.com/calendars/public/a3298251098/b813fa6d-dac5-4161-82c8-44b5ec018e14/?calendarView=day&amp;dateFormat=DD/MM/YYYY&amp;startOfWeek=1&amp;timeFormat=24&amp;timezone=Europe/Paris&amp;selectedDate=2015-09-26"
+      style="width: 100%; height: 400px; height: 70vh"></iframe>
+    <p>You can <strong>subscribe</strong> to the calendar, it's public!</p>
+
+    <p>Team building is unknown so far but please, prepare:</p>
+    <ul>
+      <li>Real shoes,</li>
+      <li>Water.</li>
+    </ul>
+
+    <h2 id="Contacts" for="main-toc">Contacts</h2>
+
+    <p>If you have any questions, please, contact Ivan Enderlin (hywan,
+    <a href="https://twitter.com/mnt_io"><code>@mnt_io</code></a>) or Alexis
+    von Glasow (avonglasow,
+    <a href="https://twitter.com/ashgenesis"><code>@ashgenesis</code></a>) by
+    <a href="@community">email</a> or Twitter accounts. Remind that Hoa's
+    twitter account is
+    <a href="https://twitter.com/hoaproject"><code>@hoaproject</code></a>.</p>
+  </yield>
+</overlay>

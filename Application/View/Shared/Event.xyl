@@ -36,7 +36,7 @@
          .addTo(map);
 
         L.marker([47.054789, 6.742918], {icon: icon})
-         .bindPopup('<a href="@event:event=Hoaapex13">Hoa Apex\'13</a>')
+         .bindPopup('<a href="@event:event=Hoaapex13">Hoa Apex 1<sup>st</sup> edition</a>')
          .addTo(map);
 
         L.marker([49.610148755062, 6.1367606521795], {icon: icon})
@@ -56,7 +56,11 @@
          .addTo(map);
 
         L.marker([43.281374566478, 5.356245875504], {icon: icon})
-         .bindPopup('<a href="@event:event=Hoaapex14">Hoa Apex\'14</a>')
+         .bindPopup('<a href="@event:event=Hoaapex14">Hoa Apex 2<sup>nd</sup> edition</a>')
+         .addTo(map);
+
+        L.marker([48.871442404899, 2.348051905897], {icon: icon})
+         .bindPopup('<a href="@event:event=Hoaapex15">Hoa Apex 3<sup>rd</sup> edition</a>')
          .addTo(map);
     });
     </script>
@@ -64,16 +68,33 @@
     <h2><_ with="Event">Organized by Hoa</_></h2>
 
     <ul>
-      <li><time datetime="2014-08">
-          <value formatter="strftime"
-                 formatter-format="%B %Y"
-                 formatter-timestamp="1408140000" /></time>,
-          <a href="@event:event=Hoaapex14">Hoa Apex</a></li>
-      <li><time datetime="2013-03">
-          <value formatter="strftime"
-                 formatter-format="%B %Y"
-                 formatter-timestamp="1362092400" /></time>,
-          <a href="@event:event=Hoaapex13">Hoa Apex</a></li>
+      <li>
+        <time datetime="2015-09">
+            <value
+              formatter="strftime"
+              formatter-format="%B %Y"
+              formatter-timestamp="1443218400" />
+        </time>,
+        <a href="@event:event=Hoaapex15">Hoa Apex 3<sup>rd</sup> edition</a>
+      </li>
+      <li>
+        <time datetime="2014-08">
+            <value
+              formatter="strftime"
+              formatter-format="%B %Y"
+              formatter-timestamp="1408140000" />
+        </time>,
+        <a href="@event:event=Hoaapex14">Hoa Apex 2<sup>nd</sup> edition</a>
+      </li>
+      <li>
+        <time datetime="2013-03">
+          <value
+            formatter="strftime"
+            formatter-format="%B %Y"
+            formatter-timestamp="1362092400" />
+        </time>,
+        <a href="@event:event=Hoaapex13">Hoa Apex 1<sup>st</sup> edition</a>
+      </li>
     </ul>
 
     <h2><_ with="Event">Where Hoa was invited</_></h2>
