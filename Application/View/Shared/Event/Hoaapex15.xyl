@@ -27,6 +27,10 @@
     });
     </script>
 
+    <p>Reminder: This event is <strong>free</strong> and family are welcomed
+    too! To <strong>subscribe</strong>, please <a href="@community">contact
+    us</a>.</p>
+
     <h2 id="Table_of_contents">Table of contents</h2>
 
     <tableofcontents id="main-toc" />
