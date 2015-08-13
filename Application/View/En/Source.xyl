@@ -187,11 +187,11 @@ var_dump(HOA); // bool(true)</code></pre>
     </ul>
     <p><strong>Snapshots</strong> take the form of tags in Git repositories.
     They have the following syntax:
-    <code><em>x</em>.<em>Y</em><sup>{2,4}</sup>.<em>mm</em>.<em>dd</em></code>,
-    where <code><em>x</em></code> is the master compatibility number (detailled
-    hereinafter), <code><em>Y</em><sup>{2,4}</sup></code> is the year (starting
-    from 2000, also called Rush Epoch), <code><em>mm</em></code> is the month
-    and finally <code><em>dd</em></code> is the day.</p>
+    <code><em>x</em>.<em>YY</em>.<em>mm</em>.<em>dd</em></code>, where
+    <code><em>x</em></code> is the master compatibility number (detailled
+    hereinafter), <code><em>YY</em></code> is the year (starting from 2000, also
+    called Rush Epoch), <code><em>mm</em></code> is the month and finally
+    <code><em>dd</em></code> is the day.</p>
     <p>The <strong>master compatibility number</strong> (MCN) represents the
     number of time where the backward compatibility could not be ensured, in
     other words where it is not possible to apply an update without any risk (we

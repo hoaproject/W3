@@ -201,12 +201,12 @@ var_dump(HOA); // bool(true)</code></pre>
     </ul>
     <p>Les <strong><em lang="en">snapshots</em></strong> prennent la forme de
     <em lang="en">tags</em> dans les dépôts Git. Ils ont le format suivant :
-    <code><em>x</em>.<em>Y</em><sup>{2,4}</sup>.<em>mm</em>.<em>dd</em></code>,
-    où <code><em>x</em></code> est le <em lang="en">master compatibility
-    number</em> (détaillé ci-après), <code><em>Y</em><sup>{2,4}</sup></code> est
-    l'année (à partir de l'année 2000, aussi appelée <em lang="en">Rush
-    Epoch</em>), <code><em>mm</em></code> est le mois et enfin
-    <code><em>dd</em></code> le jour.</p>
+    <code><em>x</em>.<em>YY</em>.<em>mm</em>.<em>dd</em></code>, où
+    <code><em>x</em></code> est le <em lang="en">master compatibility
+    number</em> (détaillé ci-après), <code><em>YY</em></code> est l'année (à
+    partir de l'année 2000, aussi appelée <em lang="en">Rush Epoch</em>),
+    <code><em>mm</em></code> est le mois et enfin <code><em>dd</em></code> le
+    jour.</p>
     <p>Le <strong><em lang="en">master compatibility number</em></strong> (MCN)
     représente le nombre de fois où la compatibilité descendante n'a pas pu être
     assurée, autrement dit où il n'est pas possible de faire une mise à jour
