@@ -47,6 +47,7 @@
         <li><code>Socket</code></li>
         <li><code>Stream</code></li>
         <li><code>Stringbuffer</code></li>
+        <li><a href="@hack:chapter=Test"><code>Test</code></a></li>
         <li><code>Translate</code></li>
         <li><code>Tree</code></li>
         <li><a href="@hack:chapter=Ustring"><code>Ustring</code></a></li>
