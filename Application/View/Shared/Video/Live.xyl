@@ -6,6 +6,7 @@
     <h1 id="Live">Live</h1>
 
     <div class="video">
+      <!--
       <object type="application/x-shockwave-flash"
               data="http://www.twitch.tv/widgets/live_embed_player.swf?channel=hoaproject">
         <param name="allowFullScreen"   value="true" />
@@ -14,6 +15,14 @@
         <param name="movie"             value="http://www.twitch.tv/widgets/live_embed_player.swf" />
         <param name="flashvars"         value="hostname=www.twitch.tv&amp;channel=hoaproject&amp;auto_play=true&amp;start_volume=100" />
       </object>
+      -->
+
+      <iframe
+        height="378"
+        width="620"
+        frameborder="0"
+        scrolling="no"
+        src="http://www.twitch.tv/hoaproject/embed"></iframe>
     </div>
   </yield>
 </overlay>
