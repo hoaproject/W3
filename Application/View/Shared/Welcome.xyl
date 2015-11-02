@@ -116,6 +116,11 @@
              alt="Atipik"
              style="max-width: 6em; margin: 0 5% 2em 0" />
       </a>
+      <a href="http://ouest-france.fr/" class="plain">
+        <img src="hoa://Application/Public/Image/Logo/Ouest-France.png"
+             alt="Ouest-France"
+             style="max-width: 6em; margin: 0 5% 2em 0" />
+      </a>
     </div>
 
     <div class="column w50 fright tcenter">
