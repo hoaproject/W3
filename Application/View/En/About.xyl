@@ -75,7 +75,7 @@
             First community event
             (<a href="@event:event=Hoaapex13">Apex, first edition</a>)</li>
         <li><time datetime="03-04-2013">3rd apr. 2013</time>
-            10,000 downloads</li>
+            10,000 downloads</li>
         <li><time datetime="20-05-2013">20th may 2013</time>
             <a href="@videos">Awecode</a>, a new way to learn</li>
         <li><time datetime="25-08-2013">25th aug. 2013</time>
@@ -87,9 +87,19 @@
             Second community event
             (<a href="@event:event=Hoaapex14">Apex, second edition</a>)</li>
         <li><time datetime="08-11-2014">8th nov. 2014</time>
-            200,000 downloads</li>
+            200,000 downloads</li>
         <li><time datetime="12-12-2014">12th dec. 2014</time>
-            300,000 downloads</li>
+            300,000 downloads</li>
+        <span class="br" />
+        <li><time datetime="16-06-2015">16th jun. 2015</time>
+            Large community reaches 1000 people</li>
+        <li><time datetime="27-07-2015">27th jul. 2015</time>
+            1000 stars on <a href="@github">Github</a></li>
+        <li><time datetime="26-09-2015">26th sep. 2015</time>
+            Third community event
+            (<a href="@event:event=Hoaapex15">Apex, third edition</a>)</li>
+        <li><time datetime="01-11-2015">1st nov. 2015</time>
+            1,000,000 downloads</li>
       </ul>
     </div>
 

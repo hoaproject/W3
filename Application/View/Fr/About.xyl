@@ -91,6 +91,16 @@
             200 000 téléchargements</li>
         <li><time datetime="12-12-2014">12 déc. 2014</time>
             300 000 téléchargements</li>
+        <span class="br" />
+        <li><time datetime="16-06-2015">16th jun. 2015</time>
+            La communauté large atteint 1000 personnes</li>
+        <li><time datetime="27-07-2015">27th jul. 2015</time>
+            1000 <em lang="en">stars</em> sur <a href="@github">Github</a></li>
+        <li><time datetime="26-09-2015">26th sep. 2015</time>
+            Troisième événement communautaire
+            (<a href="@event:event=Hoaapex15">Apex, troisième édition</a>)</li>
+        <li><time datetime="01-11-2015">1st nov. 2015</time>
+            1,000,000 téléchargements</li>
       </ul>
     </div>
 
