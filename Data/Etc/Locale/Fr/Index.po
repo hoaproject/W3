@@ -31,5 +31,5 @@ msgstr "Ils nous font confiance"
 msgid "They support us"
 msgstr "Ils nous soutiennent"
 
-msgid "Join more than 800 people!"
-msgstr "Rejoignez plus de <strong>800 personnes</strong> !"
+msgid "Join more than %d people!"
+msgstr "Rejoignez plus de <strong>%d personnes</strong> !"
