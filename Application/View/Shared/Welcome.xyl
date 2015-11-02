@@ -158,7 +158,7 @@
 
     <h2 class="tcenter cboth"><_ with="Index">Community</_></h2>
 
-    <p class="tcenter"><_ with-people="1000" with="Index">Join more than %d people!</_></p>
+    <p class="tcenter"><_ with-people="1100" with="Index">Join more than %d people!</_></p>
 
     <figure class="landscape contain">
       <img src="hoa://Application/Public/Image/Community.jpg"
