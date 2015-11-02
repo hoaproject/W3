@@ -4,6 +4,7 @@
 <?xyl-stylesheet href="hoa://Application/Public/Css/UI.css"?>
 <?xyl-meta name="viewport" content="initial-scale=1.0"?>
 <?xyl-meta name="theme-color" content="#b24646"?>
+<?xyl-link rel="icon" type="image/png" href="hoa://Application/Public/Image/Hoa.icon.png"?>
 
 <document xmlns="http://hoa-project.net/xyl/xylophone" id="document">
   <title><value bind="?title" /> – Hoa</title>
