@@ -57,7 +57,7 @@
   </div>
 
   <div aria-controls="menu" data-shortcut="m">
-    <img src="hoa://Application/Public/Image/Icon/Menu.png" width="24px" alt="menu" />
+    <img src="hoa://Application/Public/Image/Icon/Menu.svg" width="24px" alt="menu" />
   </div>
 
   <yield id="scripts">
