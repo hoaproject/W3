@@ -81,6 +81,11 @@
              alt="ownCloud"
              style="max-width: 6em; margin: 0 5% 2em 0" />
       </a>
+      <a href="https://github.com/FriendsOfPHP/pickle/" class="plain">
+        <img src="hoa://Application/Public/Image/Logo/Pickle.svg"
+             alt="Pickle"
+             style="max-width: 6em; margin: 0 5% 2em 0" />
+      </a>
       <a href="http://jolicode.com/" class="plain">
         <img src="hoa://Application/Public/Image/Logo/Jolicode.svg"
              alt="JoliCode"
