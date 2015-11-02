@@ -136,15 +136,23 @@
              alt="VeryLastRoom"
              style="max-width: 6em; margin: 0 5% 2em 0" />
       </a>
+      <br />
       <a href="https://pikacode.com/" class="plain">
         <img src="hoa://Application/Public/Image/Logo/Pikacode.png"
              alt="Pikacode"
              style="max-width: 6em; margin: 0 5% 2em 0" />
       </a>
+      <br />
       <a href="http://jetbrains.com/phpstorm/" class="plain">
         <img src="hoa://Application/Public/Image/Logo/PHPStorm.png"
              alt="PHPStorm"
-             style="max-width: 6em; margin: 0 5% 2em 0" />
+             style="max-width: 9em; margin: 0 5% 2em 0" />
+      </a>
+      <br />
+      <a href="https://unixstickers.com/" class="plain">
+        <img src="hoa://Application/Public/Image/Logo/UnixStickers.png"
+             alt="UnixStickers"
+             style="max-width: 11em; margin: 0 5% 2em 0" />
       </a>
     </div>
 
