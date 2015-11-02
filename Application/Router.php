@@ -62,6 +62,10 @@ $router
         'Generic'
     )
     ->get(
+        'shop',
+        'http://hoa-project.com/'
+    )
+    ->get(
         'about',
         '/About\.html',
         'Generic'

@@ -19,6 +19,7 @@
       <li><a href="@blog"       class="blog"       data-shortcut="b"><_>Blog</_></a></li>
       <li><a href="@events"     class="event"      data-shortcut="e"><_>Events</_></a></li>
       <li><a href="@community"  class="community"  data-shortcut="c"><_>Community</_></a></li>
+      <li><a href="@shop"       class="shop"                        ><_>Shop</_></a></li>
       <li><a href="@about"      class="about"      data-shortcut="a"><_>About</_></a></li>
     </ul>
   </nav>
