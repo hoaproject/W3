@@ -31,7 +31,6 @@
       <li><a href="@hack:chapter=Eventsource"><code>Eventsource</code></a> ;</li>
       <li><a href="@hack:chapter=Fastcgi"><code>Fastcgi</code></a> ;</li>
       <li><code>File</code> ;</li>
-      <li><code>Filter</code> ;</li>
       <li><code>Graph</code> ;</li>
       <li><code>Http</code> ;</li>
       <li><code>Iterator</code> ;</li>
