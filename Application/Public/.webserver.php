@@ -11,8 +11,7 @@ use Hoa\Mime;
 
 $router = new Router\Http();
 $router
-    ->any('a', '.*', function ( Dispatcher\Kit $_this ) {
-
+    ->any('a', '.*', function (Dispatcher\Kit $_this) {
         $uri  = $_this->router->getURI();
         $file = __DIR__ . DS . $uri;
 
@@ -21,12 +20,9 @@ $router
             $stream = new File\Read($file);
 
             try {
-
                 $mime  = new Mime($stream);
                 $_mime = $mime->getMime();
-            }
-            catch ( Mime\Exception $e ) {
-
+            } catch (Mime\Exception $e) {
                 $_mime = 'text/plain';
             }
 

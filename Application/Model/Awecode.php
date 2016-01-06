@@ -1,16 +1,8 @@
 <?php
 
-namespace {
+namespace Application\Model;
 
-from('Application')
--> import('Model.Exception');
-
-from('Hoa')
--> import('Model.~');
-
-}
-
-namespace Application\Model {
+use Hoa\Database;
 
 class Awecode extends \Hoa\Model {
 
@@ -23,7 +15,7 @@ class Awecode extends \Hoa\Model {
 
     public function construct ( ) {
 
-        $this->setMappingLayer(\Hoa\Database\Dal::getLastInstance());
+        $this->setMappingLayer(Database\Dal::getLastInstance());
     }
 
     public function open ( Array $constraints = array() ) {
@@ -38,7 +30,7 @@ class Awecode extends \Hoa\Model {
                      ->fetchAll();
 
         if(!isset($data[0]))
-            throw new \Application\Model\Exception(
+            throw new Exception(
                 'Unknown awecode.', 0);
 
         $this->map($data[0]);
@@ -48,13 +40,11 @@ class Awecode extends \Hoa\Model {
 
     public static function getAll ( ) {
 
-        return \Hoa\Database\Dal::getLastInstance()
+        return Database\Dal::getLastInstance()
                    ->prepare(
                       'SELECT * FROM awecode'
                    )
                    ->execute()
                    ->fetchAll();
     }
-}
-
 }

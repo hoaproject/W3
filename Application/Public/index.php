@@ -4,12 +4,17 @@ require_once dirname(dirname(__DIR__)) .
              DIRECTORY_SEPARATOR . 'Data' .
              DIRECTORY_SEPARATOR . 'Core.link.php';
 
-use Hoa\Core;
+use Hoa\Consistency;
 use Hoa\Dispatcher;
 use Hoa\Router;
+use Hoa\Protocol;
 
-Core::enableErrorHandler();
-Core::enableExceptionHandler();
+$autoloader = new Consistency\Autoloader();
+$autoloader->addNamespace('Application', dirname(__DIR__));
+$autoloader->register();
+
+Protocol::getInstance()['Application']->setReach(dirname(__DIR__) . DS);
+Protocol::getInstance()['Data']->setReach(dirname(dirname(__DIR__)) . DS . 'Data' . DS);
 
 $dispatcher = new Dispatcher\ClassMethod([
     'synchronous.call'  => 'Application\Resource\(:call:U:)',
@@ -91,6 +96,5 @@ $router
         '/.*',
         'Fallback'
     );
-
 
 $dispatcher->dispatch($router);

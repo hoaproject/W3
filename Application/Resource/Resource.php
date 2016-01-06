@@ -4,7 +4,7 @@ namespace Application\Resource;
 
 use Application;
 use Application\Dispatcher\Kit;
-use Hoa\Core;
+use Hoa\Consistency;
 use Hoa\File;
 use Hoa\Http;
 use Hoa\Promise;
@@ -130,4 +130,4 @@ class Resource {
     }
 }
 
-Core\Consistency::flexEntity('Application\Resource\Resource');
+Consistency::flexEntity('Application\Resource\Resource');
