@@ -11,18 +11,22 @@
         <li><code>Acl</code></li>
         <li><a href="@hack:chapter=Bench"><code>Bench</code></a></li>
         <li><code>Cache</code></li>
+        <li><code>Cli</code></li>
         <li><a href="@hack:chapter=Compiler"><code>Compiler</code></a></li>
+        <li><code>Consistency</code></li>
         <li><a href="@hack:chapter=Console"><code>Console</code></a></li>
-        <li><code>Core</code></li>
         <li><code>Database</code></li>
         <li><code>Devtools</code></li>
         <li><code>Dispatcher</code></li>
         <li><a href="@hack:chapter=Dns"><code>Dns</code></a></li>
+        <li><code>Event</code></li>
         <li><a href="@hack:chapter=Eventsource"><code>Eventsource</code></a></li>
+        <li><code>Exception</code></li>
         <li><a href="@hack:chapter=Fastcgi"><code>Fastcgi</code></a></li>
         <li><code>File</code></li>
         <li><code>Graph</code></li>
         <li><code>Http</code></li>
+        <li><code>Irc</code></li>
         <li><code>Iterator</code></li>
         <li><code>Json</code></li>
         <li><code>Locale</code></li>
@@ -35,6 +39,7 @@
         <li><code>Notification</code></li>
         <li><code>Praspel</code></li>
         <li><code>Promise</code></li>
+        <li><code>Protocol</code></li>
         <li><code>Prototype</code></li>
         <li><code>Realdom</code></li>
         <li><code>Regex</code></li>
@@ -57,6 +62,7 @@
         <li><code>Xml</code></li>
         <li><code>Xmlrpc</code></li>
         <li><code>Xyl</code></li>
+        <li><code>Zformat</code></li>
         <li><a href="@hack:chapter=Zombie"><code>Zombie</code></a></li>
         <li><a href="@hack:chapter= "><code> </code></a></li>
       </ul>

@@ -45,7 +45,7 @@
     <code>composer.json</code> :</p>
     <pre><code class="language-json">{
     "require": {
-        "hoa/websocket": "~2.0"
+        "hoa/websocket": "~3.0"
     }
 }</code></pre>
     <p>Puis pour installer les dépendances :</p>
@@ -94,7 +94,7 @@ $ ln -s /usr/local/lib/Hoa.central/Hoa /usr/local/lib/Hoa</code></pre>
     <p>Pour tester que l'installation s'est bien déroulée :</p>
     <pre><code class="language-php">&amp;lt;?php
 
-require_once '/usr/local/lib/Hoa/Core/Core.php';
+require_once '/usr/local/lib/Hoa/Consistency/Prelude.php';
 var_dump(HOA); // bool(true)</code></pre>
 
     <h2 id="Archives" for="toc">Archives</h2>
@@ -221,18 +221,18 @@ var_dump(HOA); // bool(true)</code></pre>
     <code>composer.json</code> :</p>
     <pre><code class="language-json">{
     "require": {
-        "hoa/websocket": "~2.0"
+        "hoa/websocket": "~3.0"
     }
 }</code></pre>
     <p>Et pour utiliser la dernière version disponible, il faudra écrire :</p>
     <pre><code class="language-json">{
     "require": {
-        "hoa/websocket": "~2.0@dev"
+        "hoa/websocket": "~3.0@dev"
     }
 }</code></pre>
     <p>L'<a href="https://getcomposer.org/doc/01-basic-usage.md#next-significant-release-tilde-and-caret-operators-">opérateur
     tilde</a>, ou opérateur de la prochaine <em lang="en">release</em>
-    significative, dans Composer équivaut ici à <code>>=2.0,&amp;lt;3.0</code>,
+    significative, dans Composer équivaut ici à <code>>=3.0,&amp;lt;4.0</code>,
     soit la dernière version possible pour le même MCN.</p>
 
     <h3 id="PHP_versions" for="toc">Versions de PHP</h3>
@@ -248,7 +248,7 @@ var_dump(HOA); // bool(true)</code></pre>
     <a href="http://central.hoa-project.net/Resource/Library/Core/composer.json">fichier
     <code>composer.json</code> de <code>Hoa\Core</code></a>. Actuellement, Hoa
     supporte toutes les versions supérieures ou égales à
-    <strong>5.4</strong>.</p>
+    <strong>5.5</strong>.</p>
   </yield>
 
   <yield id="scripts">

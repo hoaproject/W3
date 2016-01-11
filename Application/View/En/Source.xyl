@@ -43,7 +43,7 @@
     <code>composer.json</code> file:</p>
     <pre><code class="language-json">{
     "require": {
-        "hoa/websocket": "~2.0"
+        "hoa/websocket": "~3.0"
     }
 }</code></pre>
     <p>Then, to install dependencies:</p>
@@ -90,7 +90,7 @@ $ ln -s /usr/local/lib/Hoa.central/Hoa /usr/local/lib/Hoa</code></pre>
     <p>To test the installation has succeeded:</p>
     <pre><code class="language-php">&amp;lt;?php
 
-require_once '/usr/local/lib/Hoa/Core/Core.php';
+require_once '/usr/local/lib/Hoa/Consistency/Prelude.php';
 var_dump(HOA); // bool(true)</code></pre>
 
     <h2 id="Archives" for="toc">Archives</h2>
@@ -203,18 +203,18 @@ var_dump(HOA); // bool(true)</code></pre>
     library, you will have to write in your <code>composer.json</code> file:</p>
     <pre><code class="language-json">{
     "require": {
-        "hoa/websocket": "~2.0"
+        "hoa/websocket": "~3.0"
     }
 }</code></pre>
     <p>And to use the latest available version, you will have to write:</p>
     <pre><code class="language-json">{
     "require": {
-        "hoa/websocket": "~2.0@dev"
+        "hoa/websocket": "~3.0@dev"
     }
 }</code></pre>
     <p>The <a href="https://getcomposer.org/doc/01-basic-usage.md#next-significant-release-tilde-and-caret-operators-">tilde
     operator</a>, or the next significant release operator, in Composer is
-    equivalent to <code>>=2.0,&amp;lt;3.0</code>, being the latest possible
+    equivalent to <code>>=3.0,&amp;lt;4.0</code>, being the latest possible
     version for the same MCN.</p>
 
     <h3 id="PHP_versions" for="toc">PHP versions</h3>
@@ -228,7 +228,7 @@ var_dump(HOA); // bool(true)</code></pre>
     <p>It is possible to know the LRPV by reading the
     <a href="http://central.hoa-project.net/Resource/Library/Core/composer.json"><code>composer.json</code>
     file</a> of <code>Hoa\Core</code>. Currently, Hoa supports all versions
-    greater or equal to <strong>5.4</strong>.</p>
+    greater or equal to <strong>5.5</strong>.</p>
   </yield>
 
   <yield id="scripts">
