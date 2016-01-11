@@ -68,8 +68,8 @@ var_dump(HOA); // bool(true)</code></pre>
     sont nommés <code><em>project</em>.git</code>. Ainsi, pour
     obtenir les sources du projet <code>Central</code> :</p>
     <pre><code class="language-shell">$ git clone http://git.hoa-project.net/Central.git Hoa.central</code></pre>
-    <p>Pour obtenir une bibliothèque, par exemple <code>Hoa\Core</code> :</p>
-    <pre><code class="language-shell">$ git clone http://git.hoa-project.net/Library/Core.git Hoa/Core</code></pre>
+    <p>Pour obtenir une bibliothèque, par exemple <code>Hoa\Websocket</code> :</p>
+    <pre><code class="language-shell">$ git clone http://git.hoa-project.net/Library/Websocket.git Hoa/Websocket</code></pre>
     <p>Il est recommandé de <a href="http://git-scm.com/documentation">lire la
     documentation de Git</a> si vous n'êtes pas familier avec cet outil.</p>
     <p>Si vous souhaitez une installation globale et totale avec le central,
@@ -88,7 +88,7 @@ $ ln -s /usr/local/lib/Hoa.central/Hoa /usr/local/lib/Hoa</code></pre>
     pour les bibliothèques : l'accès se fait sans le préfixe
     <code>Library/</code> ou alors <code>Hoathis/</code> est remplacé par
     <code>Hoathis-</code>. Ainsi :</p>
-    <pre><code class="language-shell">$ git clone https://github.com/hoaproject/Core.git</code></pre>
+    <pre><code class="language-shell">$ git clone https://github.com/hoaproject/Websocket.git</code></pre>
     <p>Les miroirs sont en permanence synchronisés, vous n'aurez jamais de
     différences.</p>
     <p>Pour tester que l'installation s'est bien déroulée :</p>
@@ -124,8 +124,8 @@ var_dump(HOA); // bool(true)</code></pre>
     </ul>
     <p>Les binaires sont accessibles via la commande : <code>hoa
     <em>library</em>:<em>command</em></code>. Par exemple, pour
-    <code>Hoa\Core\Bin\Resolve</code>, nous écrirons :
-    <code>hoa core:resolve</code>.</p>
+    <code>Hoa\Protocol\Bin\Resolve</code>, nous écrirons :
+    <code>hoa protocol:resolve</code>.</p>
     <p class="warning">Actuellement, les tests sont en cours de migration !
     <br />
     Merci d'être patient.</p>
@@ -245,9 +245,9 @@ var_dump(HOA); // bool(true)</code></pre>
     s'y exécuteront volontairement pas. Par conséquent, chaque fois qu'une
     version de PHP meurt, cela augmente le MCN de chaque bibliothèque.</p>
     <p>Il est possible de connaître la LRPV en lisant le
-    <a href="http://central.hoa-project.net/Resource/Library/Core/composer.json">fichier
-    <code>composer.json</code> de <code>Hoa\Core</code></a>. Actuellement, Hoa
-    supporte toutes les versions supérieures ou égales à
+    <a href="http://central.hoa-project.net/Resource/Library/Consistency/composer.json">fichier
+    <code>composer.json</code> de <code>Hoa\Consistency</code></a>.
+    Actuellement, Hoa supporte toutes les versions supérieures ou égales à
     <strong>5.5</strong>.</p>
   </yield>
 

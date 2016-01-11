@@ -65,8 +65,8 @@ var_dump(HOA); // bool(true)</code></pre>
     <a href="http://git.hoa-project.net">git.hoa-project.net</a>. Thus to get
     sources of the <code>Central</code> project:</p>
     <pre><code class="language-shell">$ git clone http://git.hoa-project.net/Central.git Hoa.central</code></pre>
-    <p>To get a library, for example <code>Hoa\Core</code>:</p>
-    <pre><code class="language-shell">$ git clone http://git.hoa-project.net/Library/Core.git Hoa/Core</code></pre>
+    <p>To get a library, for example <code>Hoa\Websocket</code>:</p>
+    <pre><code class="language-shell">$ git clone http://git.hoa-project.net/Library/Websocket.git Hoa/Websocket</code></pre>
     <p>It is recommended to <a href="http://git-scm.com/documentation">read the
     documentation of Git</a> if you are not familiar with this tool.</p>
     <p>If you prefer a wide and full installation with the central, without
@@ -84,7 +84,7 @@ $ ln -s /usr/local/lib/Hoa.central/Hoa /usr/local/lib/Hoa</code></pre>
     are identical as much as possible. The most important difference is for
     libraries: there is no <code>Library/</code> prefix, or
     <code>Hoathis/</code> is replaced by <code>Hoathis-</code>. Thus:</p>
-    <pre><code class="language-shell">$ git clone https://github.com/hoaproject/Core.git</code></pre>
+    <pre><code class="language-shell">$ git clone https://github.com/hoaproject/Websocket.git</code></pre>
     <p>Mirrors are permanently synchronized, you will never have a
     difference.</p>
     <p>To test the installation has succeeded:</p>
@@ -121,8 +121,8 @@ var_dump(HOA); // bool(true)</code></pre>
     </ul>
     <p>Binaries are accessible via the command: <code>hoa
     <em>library</em>:<em>command</em></code>. For example, for
-    <code>Hoa\Core\Bin\Resolve</code>, we will write: <code>hoa
-    core:resolve</code>.</p>
+    <code>Hoa\Protocol\Bin\Resolve</code>, we will write: <code>hoa
+    protocol:resolve</code>.</p>
     <p class="warning">For the moment, tests are under migration!<br /> Thank
     you for your patience.</p>
 
@@ -226,9 +226,9 @@ var_dump(HOA); // bool(true)</code></pre>
     will not run on them deliberately. Consequently, each time a PHP version
     dies, it increases the MCN of each libraries.</p>
     <p>It is possible to know the LRPV by reading the
-    <a href="http://central.hoa-project.net/Resource/Library/Core/composer.json"><code>composer.json</code>
-    file</a> of <code>Hoa\Core</code>. Currently, Hoa supports all versions
-    greater or equal to <strong>5.5</strong>.</p>
+    <a href="http://central.hoa-project.net/Resource/Library/Consitency/composer.json"><code>composer.json</code>
+    file</a> of <code>Hoa\Consistency</code>. Currently, Hoa supports all
+    versions greater or equal to <strong>5.5</strong>.</p>
   </yield>
 
   <yield id="scripts">
