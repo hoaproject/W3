@@ -226,7 +226,7 @@ var_dump(HOA); // bool(true)</code></pre>
     will not run on them deliberately. Consequently, each time a PHP version
     dies, it increases the MCN of each libraries.</p>
     <p>It is possible to know the LRPV by reading the
-    <a href="http://central.hoa-project.net/Resource/Library/Consitency/composer.json"><code>composer.json</code>
+    <a href="http://central.hoa-project.net/Resource/Library/Consistency/composer.json"><code>composer.json</code>
     file</a> of <code>Hoa\Consistency</code>. Currently, Hoa supports all
     versions greater or equal to <strong>5.5</strong>.</p>
   </yield>
