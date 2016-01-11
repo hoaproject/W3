@@ -149,9 +149,9 @@
       </a>
       <br />
       <a href="http://jetbrains.com/phpstorm/" class="plain">
-        <img src="hoa://Application/Public/Image/Logo/PHPStorm.png"
+        <img src="hoa://Application/Public/Image/Logo/PHPStorm.svg"
              alt="PHPStorm"
-             style="max-width: 9em; margin: 0 5% 2em 0" />
+             style="max-width: 5em; margin: 0 5% 2em 0" />
       </a>
       <br />
       <a href="https://unixstickers.com/" class="plain">
