@@ -97,18 +97,6 @@ $ ln -s /usr/local/lib/Hoa.central/Hoa /usr/local/lib/Hoa</code></pre>
 require_once '/usr/local/lib/Hoa/Consistency/Prelude.php';
 var_dump(HOA); // bool(true)</code></pre>
 
-    <h2 id="Archives" for="toc">Archives</h2>
-
-    <p>Des archives sont produites à chaque mise à jour de certains projets.
-    L'index des archives se trouve à l'adresse :
-    <a href="http://download.hoa-project.net">download.hoa-project.net</a>.
-    Elles suivent également le nommage des projets. Plusieurs formats sont
-    disponibles : <code>.zip</code>, <code>.tar.gz</code> et
-    <code>.phar</code> (pour <a href="http://php.net/phar">les archives
-    PHP</a>).</p>
-    <p>Le protocole WebDAV permet également d'accéder aux archives, à
-    l'adresse : <a href="http://dav.hoa-project.net">dav.hoa-project.net</a>.</p>
-
     <h2 id="Structure_of_a_library" for="toc">Structure d'une bibliothèque</h2>
 
     <p>Voici la structure d'une bibliothèque :</p>
