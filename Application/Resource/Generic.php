@@ -2,11 +2,11 @@
 
 namespace Application\Resource;
 
-use Hoa\Promise;
 use Application\Dispatcher\Kit;
+use Hoa\Promise;
 
-class Generic extends Resource {
-
+class Generic extends Resource
+{
     protected $_metaData = [
         'source'      => ['translation' => 'Source'],
         'literature'  => ['translation' => 'Literature'],
@@ -20,44 +20,47 @@ class Generic extends Resource {
 
 
 
-    public function get ( Kit $_this ) {
-
+    public function get(Kit $_this)
+    {
         $metaData = $this->_metaData;
         $theRule  = $_this->router->getTheRule();
         $router   = $_this->router;
         $file     = $theRule[$router::RULE_VARIABLES]['_uri'];
 
-        if('.html' === substr($file, -5, 5))
+        if ('.html' === substr($file, -5, 5)) {
             $file = substr($file, 0, strlen($file) - 5);
+        }
 
         $_this
             ->promise
-            ->then(function ( Kit $kit ) use ( &$file, $theRule ) {
+            ->then(function (Kit $kit) use (&$file, $theRule) {
 
                 $router = $kit->router;
 
-                if('home' === $theRule[$router::RULE_ID])
+                if ('home' === $theRule[$router::RULE_ID]) {
                     $file = 'Welcome';
+                }
 
                 return $kit;
             })
-            ->then(function ( Kit $kit ) use ( $metaData, $theRule ) {
+            ->then(function (Kit $kit) use ($metaData, $theRule) {
 
                 $router = $kit->router;
                 $ruleId = $theRule[$router::RULE_ID];
 
-                if(!isset($metaData[$ruleId]))
+                if (!isset($metaData[$ruleId])) {
                     return $kit;
+                }
 
                 $translationId = $metaData[$ruleId]['translation'];
 
-                $subPromise = new Promise(function ( $fulfill ) use ( $kit ) {
+                $subPromise = new Promise(function ($fulfill) use ($kit) {
 
                     $fulfill($kit);
                 });
                 $subPromise
                     ->then(curry([$this, 'doTranslation'], …, $translationId, $translationId))
-                    ->then(function ( Kit $kit ) use ( $translationId ) {
+                    ->then(function (Kit $kit) use ($translationId) {
 
                         return $this->doTitle(
                             $kit,

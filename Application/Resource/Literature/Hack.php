@@ -2,25 +2,25 @@
 
 namespace Application\Resource\Literature;
 
-use Hoa\Promise;
 use Application\Dispatcher\Kit;
 use Application\Resource;
+use Hoa\Promise;
 
-class Hack extends Resource {
-
-    public function get ( Kit $_this, $chapter ) {
-
+class Hack extends Resource
+{
+    public function get(Kit $_this, $chapter)
+    {
         $_this
             ->promise
-            ->then(function ( Kit $kit ) use ( $chapter ) {
+            ->then(function (Kit $kit) use ($chapter) {
 
-                $subPromise = new Promise(function ( $fulfill ) use ( $kit ) {
+                $subPromise = new Promise(function ($fulfill) use ($kit) {
 
                     $fulfill($kit);
                 });
                 $subPromise
                     ->then(curry([$this, 'doTranslation'], …, 'Literature', 'Literature'))
-                    ->then(function ( Kit $kit ) use ( $chapter ) {
+                    ->then(function (Kit $kit) use ($chapter) {
 
                         return $this->doTitle(
                             $kit,
@@ -33,7 +33,7 @@ class Hack extends Resource {
                 return $subPromise;
             })
             ->then(curry([$this, 'doMainOverlay'], …, 'Literature/Hack'))
-            ->then(function ( Kit $kit ) use ( $chapter ) {
+            ->then(function (Kit $kit) use ($chapter) {
 
                 $chapter  = ucfirst($chapter);
                 $language = ucfirst($kit->user->getLocale()->getLanguage());

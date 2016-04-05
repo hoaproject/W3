@@ -2,19 +2,19 @@
 
 namespace Application\Resource\Video;
 
-use Hoa\Promise;
 use Application\Dispatcher\Kit;
 use Application\Model;
 use Application\Resource;
+use Hoa\Promise;
 
-class Awecode extends Resource {
-
-    public function get ( Kit $_this, $id ) {
-
+class Awecode extends Resource
+{
+    public function get(Kit $_this, $id)
+    {
         $_this
             ->promise
             ->then(curry([$this, 'doTitle'], …, 'Awecode'))
-            ->then(function ( Kit $kit ) use ( $id ) {
+            ->then(function (Kit $kit) use ($id) {
 
                 Video::openDatabase();
                 $language = $kit->user->getLocale()->getLanguage();
@@ -30,10 +30,11 @@ class Awecode extends Resource {
                                                    ucfirst($awecode->id) .
                                                    '.srt';
 
-                if(false !== $pos = strpos($awecode->id, '-'))
+                if (false !== $pos = strpos($awecode->id, '-')) {
                     $libraryName = substr($awecode->id, 0, $pos);
-                else
+                } else {
                     $libraryName = $awecode->id;
+                }
 
                 $kit->data->awecode[0]->library = ucfirst($libraryName);
 

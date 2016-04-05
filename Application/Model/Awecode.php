@@ -4,8 +4,8 @@ namespace Application\Model;
 
 use Hoa\Database;
 
-class Awecode extends \Hoa\Model {
-
+class Awecode extends \Hoa\Model
+{
     public $_id;
     public $_title;
     public $_vimeoId;
@@ -13,13 +13,13 @@ class Awecode extends \Hoa\Model {
     public $_description_en;
     public $_description_fr;
 
-    public function construct ( ) {
-
+    public function construct()
+    {
         $this->setMappingLayer(Database\Dal::getLastInstance());
     }
 
-    public function open ( Array $constraints = array() ) {
-
+    public function open(array $constraints = [])
+    {
         $constraints = array_merge($this->getConstraints(), $constraints);
 
         $data = $this->getMappingLayer()
@@ -29,17 +29,18 @@ class Awecode extends \Hoa\Model {
                      ->execute($constraints)
                      ->fetchAll();
 
-        if(!isset($data[0]))
+        if (!isset($data[0])) {
             throw new Exception(
                 'Unknown awecode.', 0);
+        }
 
         $this->map($data[0]);
 
         return;
     }
 
-    public static function getAll ( ) {
-
+    public static function getAll()
+    {
         return Database\Dal::getLastInstance()
                    ->prepare(
                       'SELECT * FROM awecode'

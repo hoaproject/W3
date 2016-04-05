@@ -2,20 +2,18 @@
 
 namespace Application\Resource;
 
-use Hoa\Locale;
-use Hoa\Router;
 use Application\Dispatcher\Kit;
+use Hoa\Router;
 
-class Language extends Resource {
-
-    public function get ( Kit $_this, $language, $uri ) {
-
+class Language extends Resource
+{
+    public function get(Kit $_this, $language, $uri)
+    {
         $language = strtolower($language);
         $_this->user->guessLanguage($language);
         $finalLanguage = $_this->user->getLocale()->getLanguage();
 
-        if($language !== $finalLanguage) {
-
+        if ($language !== $finalLanguage) {
             $response = $_this->view->getOutputStream();
             $response->sendStatus($response::STATUS_NOT_FOUND);
             $response->sendHeader(
@@ -44,15 +42,13 @@ class Language extends Resource {
 
         require 'hoa://Application/Router.php';
 
-        if(empty($uri))
+        if (empty($uri)) {
             $uri = '/';
+        }
 
         try {
-
             $_this->router->route($uri);
-        }
-        catch ( Router\Exception\NotFound $e ) {
-
+        } catch (Router\Exception\NotFound $e) {
             $router->route('/Error.html');
             $rule                                       = &$router->getTheRule();
             $rule[$router::RULE_VARIABLES]['exception'] = $e;
@@ -63,7 +59,7 @@ class Language extends Resource {
 
         $_this->router->setPrefix('/' . ucfirst($language));
 
-        $theRule = &$_this->router->getTheRule();
+        $theRule                                  = &$_this->router->getTheRule();
         $theRule[Router::RULE_VARIABLES]['_this'] = $_this;
 
         $_this->promise = $_this->promise->then(

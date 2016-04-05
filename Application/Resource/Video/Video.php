@@ -2,22 +2,22 @@
 
 namespace Application\Resource\Video;
 
-use Hoa\Database;
-use Hoa\Promise;
 use Application\Dispatcher\Kit;
 use Application\Model;
 use Application\Resource;
+use Hoa\Database;
+use Hoa\Promise;
 
-class Video extends Resource {
-
-    public function get ( Kit $_this ) {
-
+class Video extends Resource
+{
+    public function get(Kit $_this)
+    {
         $self = $this;
 
         $_this
             ->promise
             ->then(curry([$this, 'doTranslation'], …, 'Video', 'Video'))
-            ->then(function ( Kit $kit ) {
+            ->then(function (Kit $kit) {
 
                 return $this->doTitle(
                     $kit,
@@ -25,14 +25,13 @@ class Video extends Resource {
                               ->_('Videos')
                 );
             })
-            ->then(function ( Kit $kit ) use ( $self ) {
+            ->then(function (Kit $kit) use ($self) {
 
                 $self->openDatabase();
                 $language = $kit->user->getLocale()->getLanguage();
                 $awecodes = Model\Awecode::getAll();
 
-                foreach($awecodes as &$awecode) {
-
+                foreach ($awecodes as &$awecode) {
                     $awecode['id']          = ucfirst($awecode['id']);
                     $awecode['description'] = $awecode['description_' . $language];
                 }
@@ -49,8 +48,8 @@ class Video extends Resource {
         return;
     }
 
-    public static function openDatabase ( ) {
-
+    public static function openDatabase()
+    {
         Database\Dal::initializeParameters([
             'connection.list.awecode.dal' => Database\Dal::PDO,
             'connection.list.awecode.dsn' => 'sqlite:hoa://Data/Variable/Database/Awecode.sqlite'

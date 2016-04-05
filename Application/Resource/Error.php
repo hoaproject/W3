@@ -2,20 +2,20 @@
 
 namespace Application\Resource;
 
-use Hoa\Router;
-use Hoa\Http;
 use Application\Dispatcher\Kit;
+use Hoa\Http;
 
-class Error extends Resource {
-
-    public function get ( Kit $_this, $exception ) {
-
-        switch(get_class($exception)) {
+class Error extends Resource
+{
+    public function get(Kit $_this, $exception)
+    {
+        switch (get_class($exception)) {
 
             case 'Hoa\Router\Exception\NotFound':
                 $_this->view->getOutputStream()->sendStatus(
                     Http\Response::STATUS_NOT_FOUND
                 );
+
               break;
 
             default:

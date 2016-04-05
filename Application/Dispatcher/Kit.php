@@ -9,23 +9,24 @@ use Hoa\Http;
 use Hoa\Promise;
 use Hoa\Xyl;
 
-class Kit extends Hoa\Dispatcher\Kit {
-
+class Kit extends Hoa\Dispatcher\Kit
+{
     public $promise = null;
     public $user    = null;
 
-    public function construct ( ) {
-
+    public function construct()
+    {
         parent::construct();
 
         $self          = $this;
         $this->user    = new Application\Model\User();
-        $this->promise = new Promise(function ( $fulfill ) use ( $self ) {
+        $this->promise = new Promise(function ($fulfill) use ($self) {
 
-            if(false === $self->router->isAsynchronous())
+            if (false === $self->router->isAsynchronous()) {
                 $main = 'hoa://Application/View/Shared/Main.xyl';
-            else
+            } else {
                 $main = 'hoa://Application/View/Shared/Main.fragment.xyl';
+            }
 
             $xyl = new Xyl(
                 new File\Read($main),

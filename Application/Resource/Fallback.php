@@ -2,25 +2,22 @@
 
 namespace Application\Resource;
 
-use Hoa\Router;
-use Hoa\Http;
 use Application\Dispatcher\Kit;
+use Hoa\Http;
+use Hoa\Router;
 
-class Fallback {
-
-    public function get ( Kit $_this ) {
-
+class Fallback
+{
+    public function get(Kit $_this)
+    {
         $_this->router->removeRule('fallback');
         $router = $_this->router;
 
         require 'hoa://Application/Router.php';
 
         try {
-
             $_this->router->route();
-        }
-        catch ( Router\Exception\NotFound $e ) {
-
+        } catch (Router\Exception\NotFound $e) {
             $router->route('/Error.html');
             $rule                                       = &$router->getTheRule();
             $rule[$router::RULE_VARIABLES]['exception'] = $e;
@@ -32,8 +29,7 @@ class Fallback {
         $userAgent = Http\Runtime::getHeader('User-Agent');
         $response  = $_this->view->getOutputStream();
 
-        if(0 !== preg_match('#^Isso/#', $userAgent)) {
-
+        if (0 !== preg_match('#^Isso/#', $userAgent)) {
             $response->sendStatus($response::STATUS_OK);
 
             return;

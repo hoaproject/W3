@@ -4,8 +4,8 @@ require_once dirname(__DIR__) . DIRECTORY_SEPARATOR . 'Bootstrap.php';
 
 use Hoa\Consistency;
 use Hoa\Dispatcher;
-use Hoa\Router;
 use Hoa\Protocol;
+use Hoa\Router;
 
 $autoloader = new Consistency\Autoloader();
 $autoloader->addNamespace('Application', dirname(__DIR__));

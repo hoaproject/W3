@@ -4,8 +4,8 @@ namespace Application\Model;
 
 use Hoa\Locale;
 
-class User {
-
+class User
+{
     protected $_locale           = null;
     protected static $_languages = [
         'en' => [
@@ -19,17 +19,16 @@ class User {
     ];
 
 
-    public function __construct ( ) {
-
+    public function __construct()
+    {
         $this->_locale = new Locale(new Locale\Localizer\Coerce('en'));
 
         return;
     }
 
-    public function guessLanguage ( $language ) {
-
-        if(true === $this->isValidLanguage($language)) {
-
+    public function guessLanguage($language)
+    {
+        if (true === $this->isValidLanguage($language)) {
             $this->_locale->setLocalizer(
                 new Locale\Localizer\Coerce($language)
             );
@@ -41,14 +40,12 @@ class User {
         $language = null;
 
         try {
-
             $this->_locale->setLocalizer(new Locale\Localizer\Http());
             $language = $this->_locale->getLanguage();
+        } catch (Locale\Exception $e) {
         }
-        catch ( Locale\Exception $e ) { }
 
-        if(false === $this->isValidLanguage($language)) {
-
+        if (false === $this->isValidLanguage($language)) {
             $language = 'en';
             $this->_locale->setLocalizer(new Locale\Localizer\Coerce($language));
         }
@@ -58,32 +55,33 @@ class User {
         return;
     }
 
-    public function isValidLanguage ( $language ) {
-
+    public function isValidLanguage($language)
+    {
         return true === array_key_exists($language, static::$_languages);
     }
 
-    public function getLocale ( ) {
-
+    public function getLocale()
+    {
         return $this->_locale;
     }
 
-    public function getLanguageName ( ) {
-
+    public function getLanguageName()
+    {
         return static::$_languages[$this->_locale->getLanguage()]['name'];
     }
 
-    public function getRegions ( ) {
-
+    public function getRegions()
+    {
         return static::$_languages[$this->_locale->getLanguage()]['regions'];
     }
 
-    public function getAvailableLanguages ( ) {
-
+    public function getAvailableLanguages()
+    {
         $out = [];
 
-        foreach(static::$_languages as $short => $details)
+        foreach (static::$_languages as $short => $details) {
             $out[$short] = $details['name'];
+        }
 
         return $out;
     }

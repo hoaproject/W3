@@ -1,7 +1,9 @@
 <?php
 
-namespace Application\Model {
+namespace Application\Model;
 
-class Exception extends \Hoa\Core\Exception { }
+use Hoa\Exception as HoaException;
 
+class Exception extends HoaException
+{
 }
