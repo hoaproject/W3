@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<overlay xmlns="http://hoa-project.net/xyl/xylophone">
+  <yield id="chapter">
+    <p class="warning">Unfortunately, the documentation of this library has not
+    been written yet. However, the <code>README.md</code> file may contain
+    enough information to help you. This document is an extract of the
+    <code>README.md</code> file.<br />
+    Sorry for this inconvenience. Be ensured we are working hard to fix
+    this.</p>
+
+    <value bind="?readme" />
+  </yield>
+</overlay>

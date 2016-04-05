@@ -10,13 +10,12 @@ class Error extends Resource
     public function get(Kit $_this, $exception)
     {
         switch (get_class($exception)) {
-
             case 'Hoa\Router\Exception\NotFound':
                 $_this->view->getOutputStream()->sendStatus(
                     Http\Response::STATUS_NOT_FOUND
                 );
 
-              break;
+                break;
 
             default:
                 $_this->view->getOutputStream()->sendStatus(
@@ -31,8 +30,7 @@ class Error extends Resource
             ->then(curry([$this, 'doMainOverlay'], …, 'Error'))
             ->then([$this, 'doComment'])
             ->then([$this, 'doFooter'])
-            ->then([$this, 'doRender'])
-            ;
+            ->then([$this, 'doRender']);
 
         return;
     }
