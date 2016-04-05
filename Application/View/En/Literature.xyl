@@ -16,47 +16,47 @@
     about all the libraries of Hoa. Chapters are unordered. No library will have
     a secret for you and you will be able to <strong>hack</strong> them!</p>
     <ul class="columns" data-columns="4">
-      <li><code>Acl</code></li>
+      <li><a href="@hack:chapter=Acl"><em><code>Acl</code></em></a></li>
       <li><a href="@hack:chapter=Bench"><code>Bench</code></a></li>
       <li><code>Cache</code></li>
-      <li><code>Cli</code></li>
+      <li><a href="@hack:chapter=Cli"><em><code>Cli</code></em></a></li>
       <li><a href="@hack:chapter=Compiler"><code>Compiler</code></a></li>
-      <li><code>Consistency</code></li>
+      <li><a href="@hack:chapter=Consistency"><em><code>Consistency</code></em></a></li>
       <li><a href="@hack:chapter=Console"><code>Console</code></a></li>
       <li><code>Database</code></li>
-      <li><code>Devtools</code></li>
+      <li><a href="@hack:chapter=Devtools"><em><code>Devtools</code></em></a></li>
       <li><code>Dispatcher</code></li>
       <li><a href="@hack:chapter=Dns"><code>Dns</code></a></li>
-      <li><code>Event</code></li>
+      <li><a href="@hack:chapter=Event"><em><code>Event</code></em></a></li>
       <li><a href="@hack:chapter=Eventsource"><code>Eventsource</code></a></li>
-      <li><code>Exception</code></li>
+      <li><a href="@hack:chapter=Exception"><em><code>Exception</code></em></a></li>
       <li><a href="@hack:chapter=Fastcgi"><code>Fastcgi</code></a></li>
       <li><code>File</code></li>
-      <li><code>Graph</code></li>
+      <li><a href="@hack:chapter=Graph"><em><code>Graph</code></em></a></li>
       <li><code>Http</code></li>
-      <li><code>Irc</code></li>
-      <li><code>Iterator</code></li>
-      <li><code>Json</code></li>
-      <li><code>Locale</code></li>
+      <li><a href="@hack:chapter=Irc"><em><code>Irc</code></em></a></li>
+      <li><a href="@hack:chapter=Iterator"><em><code>Iterator</code></em></a></li>
+      <li><a href="@hack:chapter=Json"><em><code>Json</code></em></a></li>
+      <li><a href="@hack:chapter=Locale"><em><code>Locale</code></em></a></li>
       <li><code>Log</code></li>
-      <li><code>Mail</code></li>
-      <li><code>Math</code></li>
+      <li><a href="@hack:chapter=Mail"><em><code>Mail</code></em></a></li>
+      <li><a href="@hack:chapter=Math"><em><code>Math</code></em></a></li>
       <li><code>Memory</code></li>
       <li><a href="@hack:chapter=Mime"><code>Mime</code></a></li>
       <li><code>Model</code></li>
       <li><code>Notification</code></li>
-      <li><code>Praspel</code></li>
+      <li><a href="@hack:chapter=Praspel"><em><code>Praspel</code></em></a></li>
       <li><code>Promise</code></li>
-      <li><code>Protocol</code></li>
+      <li><a href="@hack:chapter=Protocol"><em><code>Protocol</code></em></a></li>
       <li><code>Prototype</code></li>
       <li><code>Realdom</code></li>
-      <li><code>Regex</code></li>
+      <li><a href="@hack:chapter=Regex"><em><code>Regex</code></em></a></li>
       <li><a href="@hack:chapter=Registry"><code>Registry</code></a></li>
       <li><a href="@hack:chapter=Router"><code>Router</code></a></li>
       <li><a href="@hack:chapter=Ruler"><code>Ruler</code></a></li>
       <li><code>Serialize</code></li>
-      <li><code>Session</code></li>
-      <li><code>Socket</code></li>
+      <li><a href="@hack:chapter=Session"><em><code>Session</code></em></a></li>
+      <li><a href="@hack:chapter=Socket"><em><code>Socket</code></em></a></li>
       <li><code>Stream</code></li>
       <li><code>Stringbuffer</code></li>
       <li><a href="@hack:chapter=Test"><code>Test</code></a></li>
@@ -64,7 +64,7 @@
       <li><code>Tree</code></li>
       <li><a href="@hack:chapter=Ustring"><code>Ustring</code></a></li>
       <li><a href="@hack:chapter=View"><code>View</code></a></li>
-      <li><code>Visitor</code></li>
+      <li><a href="@hack:chapter=Visitor"><em><code>Visitor</code></em></a></li>
       <li><a href="@hack:chapter=Websocket"><code>Websocket</code></a></li>
       <li><a href="@hack:chapter=Worker"><code>Worker</code></a></li>
       <li><code>Xml</code></li>

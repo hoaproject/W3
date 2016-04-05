@@ -46,7 +46,7 @@ class Hack extends Resource
                     throw new Router\Exception\NotFound('Library does not exist.');
                 }
 
-                if (false === file_exists($hackChapter)) {
+                if (false === file_exists($hackIndex)) {
                     if (false === file_exists($readme)) {
                         throw new Router\Exception\NotFound(
                             'This library has no documentation yet.'
@@ -73,12 +73,6 @@ class Hack extends Resource
                     $kit->view->addOverlay('hoa://Application/View/Shared/Literature/Hack/Readme.xyl');
                     $kit->data->readme = $readmeCompiled;
                 } else {
-                    if (false === file_exists($hackIndex)) {
-                        throw new Router\Exception\NotFound(
-                            'Hack book chapter does not exist in this language.'
-                        );
-                    }
-
                     $kit->view->addOverlay($hackIndex);
                 }
 
