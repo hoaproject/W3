@@ -1,8 +1,6 @@
 <?php
 
-require_once dirname(dirname(__DIR__)) .
-             DIRECTORY_SEPARATOR . 'Data' .
-             DIRECTORY_SEPARATOR . 'Core.link.php';
+require_once dirname(__DIR__) . DIRECTORY_SEPARATOR . 'Bootstrap.php';
 
 use Hoa\Consistency;
 use Hoa\Dispatcher;
