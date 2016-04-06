@@ -3,8 +3,9 @@
 namespace Application\Model;
 
 use Hoa\Database;
+use Hoa\Model;
 
-class Awecode extends \Hoa\Model
+class Awecode extends Model
 {
     public $_id;
     public $_title;
@@ -22,12 +23,15 @@ class Awecode extends \Hoa\Model
     {
         $constraints = array_merge($this->getConstraints(), $constraints);
 
-        $data = $this->getMappingLayer()
-                     ->prepare(
-                        'SELECT * FROM awecode WHERE id = :id'
-                     )
-                     ->execute($constraints)
-                     ->fetchAll();
+        $data =
+            $this
+                ->getMappingLayer()
+                ->prepare(
+                    'SELECT * FROM awecode WHERE id = :id',
+                    [\PDO::ATTR_CURSOR => \PDO::CURSOR_FWDONLY]
+                )
+                ->execute($constraints)
+                ->fetchAll();
 
         if (!isset($data[0])) {
             throw new Exception(
@@ -41,11 +45,13 @@ class Awecode extends \Hoa\Model
 
     public static function getAll()
     {
-        return Database\Dal::getLastInstance()
-                   ->prepare(
-                      'SELECT * FROM awecode'
-                   )
-                   ->execute()
-                   ->fetchAll();
+        return
+            Database\Dal::getLastInstance()
+                ->prepare(
+                    'SELECT * FROM awecode',
+                    [\PDO::ATTR_CURSOR => \PDO::CURSOR_FWDONLY]
+                )
+                ->execute()
+                ->fetchAll();
     }
 }

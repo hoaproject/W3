@@ -18,15 +18,12 @@ class Video extends Resource
             ->promise
             ->then(curry([$this, 'doTranslation'], …, 'Video', 'Video'))
             ->then(function (Kit $kit) {
-
                 return $this->doTitle(
                     $kit,
-                    $kit->view->getTranslation('Video')
-                              ->_('Videos')
+                    $kit->view->getTranslation('Video')->_('Videos')
                 );
             })
             ->then(function (Kit $kit) use ($self) {
-
                 $self->openDatabase();
                 $language = $kit->user->getLocale()->getLanguage();
                 $awecodes = Model\Awecode::getAll();
