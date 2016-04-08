@@ -26,6 +26,12 @@
 
   <form role="search" method="POST" action="http://search.hoa-project.net/(?language)">
     <input type="search" name="q" placeholder="Search…" data-shortcut="shift+/" />
+    <img
+      id="search_close"
+      src="hoa://Application/Public/Image/Icon/Cross.svg"
+      width="24px"
+      alt="Close search"
+      role="button" />
   </form>
   <output id="search_output">
     <dl />
@@ -57,20 +63,20 @@
   </div>
 
   <div aria-controls="menu" data-shortcut="m">
-    <img src="hoa://Application/Public/Image/Icon/Menu.svg" width="24px" alt="menu" />
+    <img
+      src="hoa://Application/Public/Image/Icon/Menu.svg"
+      width="24px"
+      alt="menu"
+      role="button" />
   </div>
 
   <yield id="scripts">
     <script>
       Hoa.namespace([Element], {
-
           guard: Hoa.〱true,
-          body : function ( element ) {
-
+          body : function (element) {
               return {
-
-                  removeAllChildren: function ( ) {
-
+                  removeAllChildren: function () {
                       while(element.hasChildNodes())
                           element.removeChild(element.lastChild);
 
@@ -80,8 +86,7 @@
           }
       });
 
-      Hoa.Document.onReady(function ( ) {
-
+      Hoa.Document.onReady(function () {
           var html      = document.body.parentNode;
           var menu      = Hoa.$('[aria-controls="menu"]');
           var search    = {};
@@ -89,15 +94,13 @@
           search.input  = Hoa.$('input[type="search"]', search.form);
           search.output = Hoa.$('#search_output');
 
-          var toggleMenu = function ( ) {
-
+          var toggleMenu = function () {
               html.classList.toggle('menu');
 
               return;
           };
 
-          var openSearch = function ( ) {
-
+          var openSearch = function () {
               html.classList.add('search');
               html.classList.remove('menu');
               search.input.focus();
@@ -106,8 +109,7 @@
               return;
           };
 
-          var closeSearch = function ( ) {
-
+          var closeSearch = function () {
               html.classList.remove('search');
               search.input.blur();
 
@@ -117,8 +119,7 @@
           Hoa.Event.from(menu).bareOn('click', toggleMenu);
           Hoa.Event.from(search.form).bareOn(
               'submit',
-              function ( evt ) {
-
+              function (evt) {
                   evt.preventDefault();
 
                   return;
@@ -127,11 +128,9 @@
           Hoa.Event.from(search.input).bareOn('focus', openSearch);
           Hoa.Event.from(search.input).bareOn(
               'keypress',
-              new function ( ) {
-
+              new function () {
                   var output      = Hoa.$('dl', search.output);
-                  var clearOutput = function ( ) {
-
+                  var clearOutput = function () {
                       output.hoa.removeAllChildren();
 
                       return;
@@ -139,11 +138,9 @@
 
                   return Hoa.Concurrent.delay(
                       150,
-                      function ( evt ) {
-
+                      function (evt) {
                           // Esc
-                          if(27 === evt.keyCode) {
-
+                          if (27 === evt.keyCode) {
                               clearOutput();
                               closeSearch();
                               evt.preventDefault();
@@ -153,8 +150,7 @@
 
                           var xhr = Hoa.Async.XHR();
                           xhr.open(search.form.method, search.form.action, true);
-                          xhr.onload = function ( ) {
-
+                          xhr.onload = function () {
                               // TODO
                               // * add loader
                               // * add "no result"
@@ -162,8 +158,7 @@
                               var result = JSON.parse(this.response);
                               clearOutput();
 
-                              for(var i = 0, max = result.length; i &amp;lt; max; i++) {
-
+                              for (var i = 0, max = result.length; i &amp;lt; max; i++) {
                                   var entry = result[i];
                                   var dt    = Hoa.DOM.dt(
                                       [
@@ -179,7 +174,7 @@
                                           'data-type': entry.type
                                       }
                                   );
-                                  var dd    = Hoa.DOM.dd(entry.url);
+                                  var dd = Hoa.DOM.dd(entry.url);
 
                                   output.appendChild(dt);
                                   output.appendChild(dd);
@@ -192,54 +187,57 @@
                   )
               }
           );
+          Hoa.Event.on('click', '#search_close', closeSearch);
           Hoa.Event.on(
               'keypress',
               'body',
-              function ( evt ) {
-
+              function (evt) {
                   var key    = '';
                   var gotcha = true;
 
-                  if(true === evt.metaKey)
+                  if (true === evt.metaKey) {
                       key += 'meta+';
+                  }
 
-                  if(true === evt.altKey)
+                  if (true === evt.altKey) {
                       key += 'alt+';
+                  }
 
-                  if(true === evt.ctrlKey)
+                  if (true === evt.ctrlKey) {
                       key += 'ctrl+';
+                  }
 
-                  if(true === evt.shiftKey)
+                  if (true === evt.shiftKey) {
                       key += 'shift+';
+                  }
 
                   key += evt.key;
 
-                  switch(key) {
-
+                  switch (key) {
                       default:
                           var element = Hoa.$('[data-shortcut="' + key + '"]');
 
-                          if(   element instanceof HTMLAnchorElement
-                             || element instanceof HTMLDivElement)
+                          if (element instanceof HTMLAnchorElement ||
+                              element instanceof HTMLDivElement) {
                               element.click();
-                          else if(element instanceof HTMLInputElement)
+                          } else if (element instanceof HTMLInputElement) {
                               element.focus();
-                          else
+                          } else {
                               gotcha = false;
+                          }
                   }
 
-                  if(true === gotcha)
+                  if (true === gotcha) {
                       evt.preventDefault();
+                  }
               },
               false
           );
           Hoa.Event.bareOn(
               'keypress',
-              function ( evt ) {
-
+              function (evt) {
                   // Esc
-                  if(27 === evt.keyCode) {
-
+                  if (27 === evt.keyCode) {
                       closeSearch();
                       evt.preventDefault();
 
@@ -249,13 +247,12 @@
           );
 
           var headers = Hoa.$$('h2[id], h3[id], h4[id], h5[id], h6[id]');
-          for(var i = 0; i &amp;lt; headers.length; ++i) {
-
+          for (var i = 0; i &amp;lt; headers.length; ++i) {
               var header = headers[i];
               header.innerHTML =
                   header.innerHTML +
                   '&amp;lt;a href="#' + header.getAttribute('id') + '"' +
-                     'class="plain anchor">🔗&amp;lt;/a>';
+                  'class="plain anchor">🔗&amp;lt;/a>';
           };
       });
     </script>
@@ -264,11 +261,11 @@
       _paq.push(['trackPageView']);
       _paq.push(['enableLinkTracking']);
       (function() {
-        var u="http://analytics.hoa-project.net/";
-        _paq.push(['setTrackerUrl', u+'piwik.php']);
-        _paq.push(['setSiteId', 1]);
-        var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0]; g.type='text/javascript';
-        g.defer=true; g.async=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+          var u="http://analytics.hoa-project.net/";
+          _paq.push(['setTrackerUrl', u+'piwik.php']);
+          _paq.push(['setSiteId', 1]);
+          var d = document, g = d.createElement('script'), s = d.getElementsByTagName('script')[0]; g.type = 'text/javascript';
+          g.defer = true; g.async = true; g.src = u + 'piwik.js'; s.parentNode.insertBefore(g,s);
       })();
     </script>
     <noscript><p><img src="http://analytics.hoa-project.net/piwik.php?idsite=1" style="border:0;" alt="" /></p></noscript>
