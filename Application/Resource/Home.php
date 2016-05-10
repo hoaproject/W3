@@ -4,6 +4,8 @@ namespace Application\Resource;
 
 use Application\Dispatcher\Kit;
 use Hoa\Promise;
+use Hoa\Stringbuffer;
+use Hoa\Xml;
 
 class Home extends Resource
 {
@@ -22,13 +24,28 @@ class Home extends Resource
             })
             ->then(curry([$this, 'doMainOverlay'], …, 'Welcome'))
             ->then(function (Kit $kit) {
+                $feedURL = $kit->router->unroute('blog') . 'atom.xml';
 
-                $blogApi = $kit->router->unroute('blog') . 'api/posts?limit=5';
+                if (false !== $feed = @file_get_contents($feedURL)) {
+                    $stream = new Stringbuffer\Read();
+                    $stream->initializeWith($feed);
+                    $xml  = new Xml\Read($stream);
+                    $data = [];
+                    $max  = 5;
 
-                if (false !== $json = @file_get_contents($blogApi)) {
-                    if (null !== $handle = json_decode($json, true)) {
-                        $kit->data->blog = $handle;
+                    foreach ($xml->channel->item as $item) {
+                        $data[] = [
+                            'title' => (string) $item->title,
+                            'date'  => strtotime((string) $item->pubDate),
+                            'url'   => (string) $item->link
+                        ];
+
+                        if (0 >= --$max) {
+                            break;
+                        }
                     }
+
+                    $kit->data->blog = $data;
                 }
 
                 return $kit;

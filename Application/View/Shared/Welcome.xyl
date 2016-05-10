@@ -177,10 +177,11 @@
 
       <ul>
         <li bind="?blog">
-          <a href="@blog_post:id=(?id)&amp;normalized_title=(?normalized_title)" bind="?title" />
-          <small>(<time><value formatter="strftime"
-                               formatter-format="%b '%y"
-                               formatter-timestamp="(?posted)" /></time>)</small>
+          <a href="(?url)" bind="?title" />
+          <small>(<time><value
+            formatter="strftime"
+            formatter-format="%b '%y"
+            formatter-timestamp="(?date)" /></time>)</small>
         </li>
       </ul>
     </div>

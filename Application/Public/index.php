@@ -34,10 +34,6 @@ $router
         'http://blog.hoa-project.net/'
     )
     ->_get(
-        'blog_post',
-        'http://blog.hoa-project.net/posts/(?<id>)-(?<normalized_title>).html'
-    )
-    ->_get(
         'download',
         'http://download.hoa-project.net/(?<file>)'
     )
