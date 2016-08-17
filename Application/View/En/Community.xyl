@@ -21,7 +21,7 @@
     <figure class="landscape contain">
       <img src="hoa://Application/Public/Image/Community.jpg"
            style="opacity: .8" />
-      <figcaption>Large community, join more than 800 people!</figcaption>
+      <figcaption>Large community, join more than 2100 people!</figcaption>
     </figure>
 
     <h2 id="Contributors">Contributors</h2>
@@ -285,20 +285,19 @@
       </li>
     </ul>
 
-    <h2 id="Mailing-lists">Mailing-lists</h2>
+    <h2 id="Forum">Forum</h2>
 
-    <p>Hoa uses mailing-lists to communicate. The list of public mailing-lists
-    are given below. The Web interface gives an <a href="@lists">exhaustive
-    list</a>.</p>
+    <p>Hoa uses a forum to communicate. It is located at the following address:
+    <a href="http://discourse.hoa-project.net">discourse.hoa-project.net</a>. It
+    contains the following non-exhaustive categories:</p>
     <ul>
-      <li><a href="@list-subscribe:list=development"><code>development</code></a>:
-      about the development of Hoa libraries,</li>
-      <li><a href="@list-subscribe:list=support"><code>support</code></a>: to
-      obtain help about Hoa libraries,</li>
-      <li><a href="@list-subscribe:list=localisation"><code>localisation</code></a>:
-      about localisation of different projects,</li>
-      <li><a href="@list-subscribe:list=foundation"><code>foundation</code></a>:
-      about the foundation.</li>
+      <li><a href="http://discourse.hoa-project.net/c/support"><code>support</code></a>
+      to get help or to ask any questions,</li>
+      <li><a href="http://discourse.hoa-project.net/c/announcements"><code>announcements</code></a>
+      to be aware of any news,</li>
+      <li><a href="http://discourse.hoa-project.net/c/internal"><code>internal</code></a>
+      to discuss about the project iself, the foundation, the infrastructure
+      etc.</li>
     </ul>
 
     <h2 id="IRC">IRC</h2>

@@ -22,7 +22,7 @@
     <figure class="landscape contain">
       <img src="hoa://Application/Public/Image/Community.jpg"
            style="opacity: .8" />
-      <figcaption>Communauté large, rejoignez plus de 800 personnes !</figcaption>
+      <figcaption>Communauté large, rejoignez plus de 2100 personnes !</figcaption>
     </figure>
 
     <h2 id="Contributors">Contributeurs</h2>
@@ -286,22 +286,20 @@
       </li>
     </ul>
 
-    <h2 id="Mailing-lists"><em lang="en">Mailing-lists</em></h2>
+    <h2 id="Forum">Forum</h2>
 
-    <p>Hoa utilise les <em lang="en">mailing-lists</em> pour communiquer. La
-    liste des <em lang="en">mailing-lists</em> publiques se trouve ci-dessous.
-    Il faudra se rendre sur l'interface Web pour une <a href="@lists">liste
-    exhaustive</a>.</p>
-
+    <p>Hoa utilise un forum pour communiquer. Il se trouve à l'adresse
+    suivante :
+    <a href="http://discourse.hoa-project.net">discourse.hoa-project.net</a>. Il
+    contient les catégories non-exhaustives suivantes :</p>
     <ul>
-      <li><a href="@list-subscribe:list=development"><code>development</code></a> :
-      à propos du développement des bibliothèques de Hoa ;</li>
-      <li><a href="@list-subscribe:list=support"><code>support</code></a> : pour
-      obtenir de l'aide à propos des bibliothèques de Hoa ;</li>
-      <li><a href="@list-subscribe:list=localisation"><code>localisation</code></a> :
-      à propos de la localisation des différents projets ;</li>
-      <li><a href="@list-subscribe:list=foundation"><code>foundation</code></a> :
-      à propos de l'assocation.</li>
+      <li><a href="http://discourse.hoa-project.net/c/support"><code>support</code></a>
+      pour obtenir de l'aide ou poser n'importe quelles questions ;</li>
+      <li><a href="http://discourse.hoa-project.net/c/announcements"><code>announcements</code></a>
+      pour être au courant de tout ;</li>
+      <li><a href="http://discourse.hoa-project.net/c/internal"><code>internal</code></a>
+      pour discuter du projet lui-même, de l'organisation, de l'infrastructure
+      etc.</li>
     </ul>
 
     <h2 id="IRC">IRC</h2>
