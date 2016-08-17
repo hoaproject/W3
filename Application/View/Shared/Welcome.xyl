@@ -136,7 +136,7 @@
     <div class="column w50 fright tcenter">
       <h2><_ with="Index">They support us</_></h2>
 
-      <a href="http://verylastroom.com/" class="plain">
+      <a href="https://verylastroom.com/" class="plain">
         <img src="hoa://Application/Public/Image/Logo/Verylastroom.png"
              alt="VeryLastRoom"
              style="max-width: 6em; margin: 0 5% 2em 0" />
