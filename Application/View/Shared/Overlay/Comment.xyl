@@ -2,28 +2,25 @@
 
 <overlay xmlns="http://hoa-project.net/xyl/xylophone">
   <yield id="scripts">
-    <script src="@comments:file=js/embed.min.js"
-            data-isso="http://comments.hoa-project.net/"
-            data-isso-css="false"
-            data-isso-reply-to-self="false"
-            data-isso-vote="true"></script>
-    <script>
-      Hoa.Document.onReady(function ( ) {
+    <script type="text/javascript">
+      var url = window.location.pathname.split('/');
+      url.shift();
+      url.shift();
 
-          var issoThread = Hoa.$('#isso-thread');
+      DiscourseEmbed = {
+          discourseUrl     : 'http://discourse.hoa-project.net/',
+          discourseEmbedUrl: window.location.protocol + '//' + window.location.host + '/' + url.join('/')
+      };
 
-          var authSection = Hoa.$('.auth-section', issoThread);
-          authSection.setAttribute('aria-hidden', 'true');
-
-          Hoa.Event.on(
-              'click',
-              '#isso-thread [contenteditable]',
-              function ( ) {
-
-                  authSection.setAttribute('aria-hidden', 'false');
-              }
-          );
-      });
+      (
+          function() {
+              var d   = document.createElement('script');
+              d.type  = 'text/javascript';
+              d.async = true;
+              d.src   = DiscourseEmbed.discourseUrl + 'javascripts/embed.js';
+              document.getElementsByTagName('head')[0].appendChild(d);
+          }
+      )();
     </script>
   </yield>
 </overlay>

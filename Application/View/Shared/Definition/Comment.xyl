@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xyl-stylesheet href="hoa://Application/Public/Css/Comment.css"?>
 
 <definition xmlns="http://hoa-project.net/xyl/xylophone">
   <yield name="comments">
-    <div id="isso-thread"
-         data-isso-id="(?commentId)"
-         style="margin-top: 3em"></div>
-    <noscript>Please enable JavaScript to view the comments.</noscript>
+    <h2 id="Comments">Comments</h2>
+
+    <div id="discourse-comments"></div>
   </yield>
 </definition>
