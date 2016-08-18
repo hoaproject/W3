@@ -9,7 +9,7 @@
 
       DiscourseEmbed = {
           discourseUrl     : 'http://discourse.hoa-project.net/',
-          discourseEmbedUrl: window.location.protocol + '//' + window.location.host + '/' + url.join('/')
+          discourseEmbedUrl: window.location.protocol + '//' + window.location.host + '/En/' + url.join('/')
       };
 
       (
