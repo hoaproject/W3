@@ -294,14 +294,14 @@
 
     <p>Hoa utilise un forum pour communiquer. Il se trouve à l'adresse
     suivante :
-    <a href="http://discourse.hoa-project.net">discourse.hoa-project.net</a>. Il
+    <a href="http://users.hoa-project.net">users.hoa-project.net</a>. Il
     contient les catégories non-exhaustives suivantes :</p>
     <ul>
-      <li><a href="http://discourse.hoa-project.net/c/support"><code>support</code></a>
+      <li><a href="http://users.hoa-project.net/c/support"><code>support</code></a>
       pour obtenir de l'aide ou poser n'importe quelles questions ;</li>
-      <li><a href="http://discourse.hoa-project.net/c/announcements"><code>announcements</code></a>
+      <li><a href="http://users.hoa-project.net/c/announcements"><code>announcements</code></a>
       pour être au courant de tout ;</li>
-      <li><a href="http://discourse.hoa-project.net/c/internal"><code>internal</code></a>
+      <li><a href="http://users.hoa-project.net/c/internal"><code>internal</code></a>
       pour discuter du projet lui-même, de l'organisation, de l'infrastructure
       etc.</li>
     </ul>
