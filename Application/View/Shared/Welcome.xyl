@@ -141,7 +141,7 @@
              alt="VeryLastRoom"
              style="max-width: 6em; margin: 0 5% 2em 0" />
       </a>
-      <a href="https://discourse.org/phpstorm/" class="plain">
+      <a href="https://www.discourse.org/" class="plain">
         <img src="hoa://Application/Public/Image/Logo/Discourse.png"
              alt="Discourse"
              style="max-width: 12em; margin: 0 5% 2em 0" />
