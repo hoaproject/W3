@@ -31,7 +31,7 @@ $router
     )
     ->_get(
         'blog',
-        'http://blog.hoa-project.net/'
+        'https://blog.hoa-project.net/'
     )
     ->_get(
         'download',
@@ -47,7 +47,7 @@ $router
     )
     ->_get(
         'git',
-        'http://git.hoa-project.net/(?<repository>).git/'
+        'https://git.hoa-project.net/(?<repository>).git/'
     )
     ->_get(
         'github',
@@ -67,7 +67,7 @@ $router
     )
     ->_get(
         'central_resource',
-        'http://central.hoa-project.net/Resource/(?<path>)'
+        'https://central.hoa-project.net/Resource/(?<path>)'
     )
     ->_get(
         'comments',
