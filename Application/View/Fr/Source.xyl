@@ -79,10 +79,13 @@ var_dump(HOA); // bool(true)</code></pre>
 $ ln -s /usr/local/lib/Hoa.central/Hoa /usr/local/lib/Hoa</code></pre>
     <p><img src="hoa://Application/Public/Image/Logo/Pikacode.png"
             alt="Logo de Pikacode" width="100px" class="fright" />
+       <img src="hoa://Application/Public/Image/Logo/Gitlab.svg"
+            alt="Logo de Gitlab" width="100px" class="fright" />
        <img src="hoa://Application/Public/Image/Logo/Github.svg"
             alt="Logo de Github" width="100px" class="fright" />
     Des miroirs existent pour la plupart des projets, notamment sur
-    <a href="@github">Github</a> et
+    <a href="@github">Github</a>,
+    <a href="https://gitlab.com/hoaproject">Gitlab</a> et
     <a href="https://pikacode.com/hoaproject/">Pikacode</a>. Les noms des
     projets sont identiques autant que possible. La plus grosse différence est
     pour les bibliothèques : l'accès se fait sans le préfixe

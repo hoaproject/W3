@@ -76,10 +76,13 @@ var_dump(HOA); // bool(true)</code></pre>
 $ ln -s /usr/local/lib/Hoa.central/Hoa /usr/local/lib/Hoa</code></pre>
     <p><img src="hoa://Application/Public/Image/Logo/Pikacode.png"
            alt="Logo of Pikacode" width="100px" class="fright" />
+       <img src="hoa://Application/Public/Image/Logo/Gitlab.svg"
+           alt="Logo of Gitlab" width="100px" class="fright" />
        <img src="hoa://Application/Public/Image/Logo/Github.svg"
            alt="Logo of Github" width="100px" class="fright" />
     Mirrors exist for the majority of projects, notably
-    <a href="@github">Github</a> and
+    <a href="@github">Github</a>,
+    <a href="https://gitlab.com/hoaproject">Gitlab</a> and
     <a href="https://pikacode.com/hoaproject/">Pikacode</a>. Names of projects
     are identical as much as possible. The most important difference is for
     libraries: there is no <code>Library/</code> prefix, or
