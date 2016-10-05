@@ -64,18 +64,18 @@ var_dump(HOA); // bool(true)</code></pre>
             width="150px" class="fright" />
     Hoa utilise <a href="http://git-scm.com/">Git</a> pour tous ses projets.
     L'index des dépôts se trouve à l'adresse :
-    <a href="http://git.hoa-project.net">git.hoa-project.net</a>. Les dépôts
+    <a href="https://git.hoa-project.net">git.hoa-project.net</a>. Les dépôts
     sont nommés <code><em>project</em>.git</code>. Ainsi, pour
     obtenir les sources du projet <code>Central</code> :</p>
-    <pre><code class="language-shell">$ git clone http://git.hoa-project.net/Central.git Hoa.central</code></pre>
+    <pre><code class="language-shell">$ git clone https://git.hoa-project.net/Central.git Hoa.central</code></pre>
     <p>Pour obtenir une bibliothèque, par exemple <code>Hoa\Websocket</code> :</p>
-    <pre><code class="language-shell">$ git clone http://git.hoa-project.net/Library/Websocket.git Hoa/Websocket</code></pre>
+    <pre><code class="language-shell">$ git clone https://git.hoa-project.net/Library/Websocket.git Hoa/Websocket</code></pre>
     <p>Il est recommandé de <a href="http://git-scm.com/documentation">lire la
     documentation de Git</a> si vous n'êtes pas familier avec cet outil.</p>
     <p>Si vous souhaitez une installation globale et totale avec le central,
     tout en respectant la recommandation sur la localisation de Hoa, vous
     pourrez utiliser un lien symbolique :</p>
-    <pre><code class="language-shell">$ git clone http://git.hoa-project.net/Central.git /usr/local/lib/Hoa.central
+    <pre><code class="language-shell">$ git clone https://git.hoa-project.net/Central.git /usr/local/lib/Hoa.central
 $ ln -s /usr/local/lib/Hoa.central/Hoa /usr/local/lib/Hoa</code></pre>
     <p><img src="hoa://Application/Public/Image/Logo/Pikacode.png"
             alt="Logo de Pikacode" width="100px" class="fright" />
