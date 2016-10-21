@@ -96,6 +96,11 @@
              alt="JoliCode"
              style="max-width: 6em; margin: 0 5% 2em 0" />
       </a>
+      <a href="https://www.phpschool.io/" class="plain">
+        <img src="hoa://Application/Public/Image/Logo/PHPSchool.svg"
+             alt="PHP School"
+             style="max-width: 6em; margin: 0 5% 2em 0" />
+      </a>
       <a href="http://www.inria.fr/en/" class="plain">
         <img src="hoa://Application/Public/Image/Logo/INRIA.png"
              alt="INRIA"
