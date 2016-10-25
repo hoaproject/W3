@@ -33,3 +33,6 @@ msgstr "La conférence <a href=\"http://icst2012.soccerlab.polymtl.ca/\">ICST</a
 
 msgid "Introduction of PHPTour 2011."
 msgstr "Le <a href=\"http://afup.org/pages/phptourlille2011/\">PHPTour</a> est un nouveau cycle de conférences de l'<a href=\"http://afup.org/\">AFUP</a>. Le <time datetime=\"2011-11\">24 et 25 novembre 2011</time>, au sein d'Euratechnologies à Lille, le forum a gentiment accueilli <a href=\"@community\">Ivan Enderlin</a> pour une conférence."
+
+msgid "Introduction of ForumPHP 2016."
+msgstr "Le <a href=\"http://event.afup.org/forum-php-2016/programme/\">ForumPHP</a> est un événement <strong>majeur</strong> pour la communauté PHP francophone depuis 14 ans. Le <time datetime=\"2016-10\">27 et 28 octobre 2016</time>, au Beffroi de Montrouge (Paris, France), le forum a accueilli <a href=\"@community\">Ivan Enderlin</a> pour un atelier sur les WebSockets."
