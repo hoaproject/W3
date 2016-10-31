@@ -41,7 +41,7 @@
 
     <h3 id="Presentation">Présentation</h3>
 
-    <p>La <a href="@keynote:keynote=ForumPHP16/">présentation</a> est
+    <p>La <a href="@keynote:keynote=ForumPHP16/ForumPHP16.html">présentation</a> est
     disponible. Les démonstrations sont accesibles dans le dossier
     <code>Demos</code> (voir le dépôt
     <a href="@github:repository=Keynote"><code>Keynote.git</code></a>). Les
