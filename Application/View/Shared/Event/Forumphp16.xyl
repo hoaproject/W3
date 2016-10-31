@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xyl-use href="hoa://Application/View/Shared/Definition/Map.xyl"?>
+<?xyl-overlay href="hoa://Application/View/Shared/Overlay/Map.xyl"?>
+
+<overlay xmlns="http://hoa-project.net/xyl/xylophone">
+  <yield id="main_content">
+    <h1>ForumPHP 2016</h1>
+
+    <p><img class="fright" src="http://event.afup.org/wp-content/uploads/forum300x148.png" alt="Logo du ForumPHP" /> <_ with="Event">Introduction of ForumPHP 2016.</_></p>
+
+    <map id="location" />
+    <script>
+      Hoa.Document.onReady(function () {
+        var map = Map('location').setView([48.819470478299, 2.3198216560179], 13);
+
+        var icon = L.icon({
+          iconUrl: '<value link="hoa://Application/Public/Map/Marker.svg" />',
+          iconSize: [28, 45],
+          iconAnchor: [14, 44], popupAnchor: [2, -45]
+        });
+
+         L.marker([48.819470478299, 2.3198216560179], {icon: icon})
+           .addTo(map);
+      });
+    </script>
+
+    <h2 id="Atelier_sur_les_WebSockets">Atelier sur les WebSockets, amusons-nous tous ensemble</h2>
+
+    <p>
+      WebSocket est un protocol réseau permettant une communication
+      asynchrone et bi-directionnel entre un serveur et plusieurs
+      clients. Durant cet atelier, nous allons découvrir le protocol à
+      travers un jeu ludique que nous développerons en partie ensemble. Nous
+      verrons entre autre comment créer un jeu multi-joueurs, avec des
+      canaux publics et privés, ainsi qu'un chat pour échanger. Cela fera
+      intervenir des messages textes et binaires échangés entre 2 ou
+      plusieurs participants, et une couche cryptographique pourra être
+      ajoutée. Nous utiliserons <code>Hoa\Websocket</code>, une bibliothèque
+      implémentant un serveur et un client de haute qualité et sûreté.
+    </p>
+
+    <h3 id="Presentation">Présentation</h3>
+
+    <p>La <a href="@keynote:keynote=ForumPHP16/">présentation</a> est
+    disponible. Les démonstrations sont accesibles dans le dossier
+    <code>Demos</code> (voir le dépôt
+    <a href="@github:repository=Keynote"><code>Keynote.git</code></a>). Les
+    exercices se trouvent dans le dépôt
+    <a href="https://github.com/Hywan/ForumPHP2016"><code>Hywan/ForumPHP2016</code></a>.</p>
+  </yield>
+</overlay>

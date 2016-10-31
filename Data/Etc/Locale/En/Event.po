@@ -33,3 +33,6 @@ msgstr "The conference <a href=\"http://icst2012.soccerlab.polymtl.ca/\">ICST</a
 
 msgid "Introduction of PHPTour 2011."
 msgstr "The <a href=\"http://afup.org/pages/phptourlille2011/\">PHPTour</a> is a brand new cycle of the <a href=\"http://afup.org/\">AFUP</a> conferences. The <time datetime=\"2011-11\">24<sup>th</sup> and 25<sup>th</sup> November 2011</time>, at Euratechnologies at Lille (FR), the forum has gently welcomed <a href=\"@community\">Ivan Enderlin</a> for a conference."
+
+msgid "Introduction of ForumPHP 2016."
+msgstr "The <a href=\"http://event.afup.org/forum-php-2016/programme/\">ForumPHP</a> is a <strong>major</strong> event for the PHP French speaking community since more than 14 years. The <time datetime=\"2016-10\">27<sup>th</sup> and 28<sup>th</sup> October 2016</time>, at Le Beffroi of Montrouge (Paris, France), the forum has gently welcomed <a href=\"@community\">Ivan Enderlin</a> for a workshop about WebSocket."
