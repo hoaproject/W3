@@ -96,14 +96,19 @@
              alt="Wallabag"
              style="max-width: 7em; margin: 0 3% 2em 0" />
       </a>
+      <a href="http://jolicode.com/" class="plain">
+        <img src="hoa://Application/Public/Image/Logo/Jolicode.svg"
+             alt="JoliCode"
+             style="max-width: 6em; margin: 0 5% 2em 0" />
+      </a>
       <a href="https://www.phpschool.io/" class="plain">
         <img src="hoa://Application/Public/Image/Logo/PHPSchool.svg"
              alt="PHP School"
              style="max-width: 6em; margin: 0 5% 2em 0" />
       </a>
-      <a href="http://jolicode.com/" class="plain">
-        <img src="hoa://Application/Public/Image/Logo/Jolicode.svg"
-             alt="JoliCode"
+      <a href="http://www.psih.fr/en/" class="plain">
+        <img src="hoa://Application/Public/Image/Logo/PMSIpilot.svg"
+             alt="PSIH and PMSIpilot"
              style="max-width: 6em; margin: 0 5% 2em 0" />
       </a>
       <a href="http://www.inria.fr/en/" class="plain">
