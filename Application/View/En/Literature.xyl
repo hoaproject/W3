@@ -57,7 +57,7 @@
       <li><code>Serialize</code></li>
       <li><a href="@hack:chapter=Session"><em><code>Session</code></em></a></li>
       <li><a href="@hack:chapter=Socket"><em><code>Socket</code></em></a></li>
-      <li><code>Stream</code></li>
+      <li><a href="@hack:chapter=Stream"><em><code>Stream</code></em></a></li>
       <li><code>Stringbuffer</code></li>
       <li><a href="@hack:chapter=Test"><code>Test</code></a></li>
       <li><code>Translate</code></li>
