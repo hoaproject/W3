@@ -146,6 +146,11 @@
              alt="Ouest-France"
              style="max-width: 6em; margin: 0 5% 2em 0" />
       </a>
+      <a href="https://www.brandbrothers.fr/fr/" class="plain">
+        <img src="hoa://Application/Public/Image/Logo/BrandBrothers.svg"
+             alt="Brand Brothers"
+             style="max-width: 6em; margin: 0 5% 2em 0" />
+      </a>
     </div>
 
     <div class="column w50 fright tcenter">
