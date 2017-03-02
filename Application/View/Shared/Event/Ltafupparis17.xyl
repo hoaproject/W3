@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xyl-use href="hoa://Application/View/Shared/Definition/Map.xyl"?>
+<?xyl-overlay href="hoa://Application/View/Shared/Overlay/Map.xyl"?>
+
+<overlay xmlns="http://hoa-project.net/xyl/xylophone">
+  <yield id="main_content">
+    <h1>Lightning Talk AFUP 2017</h1>
+
+    <map id="location" />
+    <script>
+    Hoa.Document.onReady(function ( ) {
+
+        var map = Map('location').setView([48.878322, 2.32837], 13);
+
+        var icon = L.icon({
+            iconUrl: '<value link="hoa://Application/Public/Map/Marker.svg" />',
+            iconSize: [28, 45],
+            iconAnchor: [14, 44],
+            popupAnchor: [2, -45]
+        });
+
+        L.marker([48.878322, 2.328377], {icon: icon})
+         .addTo(map);
+    });
+    </script>
+
+    <h2 id="Hoa_un_ensemble_de_bibliotheques_PHP">Hoa, un ensemble de
+    bibliothèques PHP</h2>
+
+    <p>
+    Lors de cette conférence, Alexis von Glasow (contributeur et hoacker) a
+    présenté Hoa : ce que c'est, ce qu'il est possible de faire avec en donnant
+    des exemples de projet qui l'utilise. Cette conférence a pris le format
+    d'un <em>lightning talk</em> (conférence au format court d'une durée de
+    8min) où ont été présentés les bibliothèques <code>Hoa\Compiler</code>,
+    <code>Hoa\Console</code>, <code>Hoa\Praspel</code>, <code>Hoa\Ruler</code>,
+    <code>Hoa\Websocket</code>.
+    </p>
+
+    <h3>Présentation et démonstrations</h3>
+
+    <p>La <a href="@keynote:keynote=AFUPParis17/LtAFUPParis.pdf">présentation</a>
+    est disponible.</p>
+  </yield>
+</overlay>
+
