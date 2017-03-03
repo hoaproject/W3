@@ -15,7 +15,7 @@
 
         L.tileLayer('<value link="hoa://Application/Public/Map/Tiles/{z}/{x}/{y}.png" />', {
             minZoom: 1,
-            maxZoom: 7
+            maxZoom: 6
         }).addTo(map);
 
         L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
