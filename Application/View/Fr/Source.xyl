@@ -86,7 +86,7 @@ $ ln -s /usr/local/lib/Hoa.central/Hoa /usr/local/lib/Hoa</code></pre>
     Des miroirs existent pour la plupart des projets, notamment sur
     <a href="@github">Github</a>,
     <a href="https://gitlab.com/hoaproject">Gitlab</a> et
-    <a href="https://pikacode.com/hoaproject/">Pikacode</a>. Les noms des
+    <a href="https://v2.pikacode.com/hoaproject/">Pikacode</a>. Les noms des
     projets sont identiques autant que possible. La plus grosse différence est
     pour les bibliothèques : l'accès se fait sans le préfixe
     <code>Library/</code> ou alors <code>Hoathis/</code> est remplacé par

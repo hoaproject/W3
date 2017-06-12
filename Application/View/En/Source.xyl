@@ -83,7 +83,7 @@ $ ln -s /usr/local/lib/Hoa.central/Hoa /usr/local/lib/Hoa</code></pre>
     Mirrors exist for the majority of projects, notably
     <a href="@github">Github</a>,
     <a href="https://gitlab.com/hoaproject">Gitlab</a> and
-    <a href="https://pikacode.com/hoaproject/">Pikacode</a>. Names of projects
+    <a href="https://v2.pikacode.com/hoaproject/">Pikacode</a>. Names of projects
     are identical as much as possible. The most important difference is for
     libraries: there is no <code>Library/</code> prefix, or
     <code>Hoathis/</code> is replaced by <code>Hoathis-</code>. Thus:</p>
