@@ -36,6 +36,10 @@
         Ivan Enderlin
       </li>
       <li>
+        <div class="avatar fleft" style="margin-right: .5em;"><img src="https://github.com/armen.png?size=60" /></div>
+        Armen Baghumian
+      </li>
+      <li>
         <div class="avatar fleft" style="margin-right: .5em;"><img src="https://github.com/tyx.png?size=60" /></div>
         Timothée Barray
       </li>
