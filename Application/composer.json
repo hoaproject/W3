@@ -1,18 +1,18 @@
 {
     "require": {
-        "hoa/consistency": "~1.0",
-        "hoa/database"   : "~0.0",
-        "hoa/dispatcher" : "~1.0",
-        "hoa/exception"  : "~1.0",
-        "hoa/file"       : "~1.0",
-        "hoa/http"       : "~1.0",
-        "hoa/locale"     : "~2.0",
-        "hoa/promise"    : "~0.0",
-        "hoa/protocol"   : "~1.0",
-        "hoa/router"     : "~3.0",
-        "hoa/translate"  : "~0.0",
-        "hoa/xyl"        : "~1.0",
-        "league/commonmark": "^0.13",
-        "hoa/mime": "~3.0"
+        "hoa/consistency"  : "~1.0",
+        "hoa/database"     : "~0.0",
+        "hoa/dispatcher"   : "~1.0",
+        "hoa/exception"    : "~1.0",
+        "hoa/file"         : "~1.0",
+        "hoa/http"         : "~1.0",
+        "hoa/locale"       : "~2.0",
+        "hoa/mime"         : "~3.0",
+        "hoa/promise"      : "~0.0",
+        "hoa/protocol"     : "~1.0",
+        "hoa/router"       : "~3.0",
+        "hoa/translate"    : "~0.0",
+        "hoa/xyl"          : "~1.0",
+        "league/commonmark": "~0.15.6"
     }
 }
