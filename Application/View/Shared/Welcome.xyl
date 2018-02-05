@@ -167,12 +167,6 @@
              alt="PHPStorm"
              style="max-width: 5em; margin: 0 5% 2em 0" />
       </a>
-      <a href="https://unixstickers.com/" class="plain">
-        <img src="hoa://Application/Public/Image/Logo/UnixStickers.png"
-             alt="UnixStickers"
-             style="max-width: 11em; margin: 0 5% 2em 0" />
-      </a>
-      <br />
       <a href="https://v2.pikacode.com/" class="plain">
         <img src="hoa://Application/Public/Image/Logo/Pikacode.png"
              alt="Pikacode"
