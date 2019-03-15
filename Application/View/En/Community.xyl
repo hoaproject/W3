@@ -36,6 +36,10 @@
         Ivan Enderlin
       </li>
       <li>
+        <div class="avatar fleft" style="margin-right: .5em;"><img src="https://github.com/atefBB.png?size=60" /></div>
+        Atef Ben Ali
+      </li>
+      <li>
         <div class="avatar fleft" style="margin-right: .5em;"><img src="https://github.com/armen.png?size=60" /></div>
         Armen Baghumian
       </li>
@@ -192,6 +196,10 @@
         Zack Katz
       </li>
       <li>
+        <div class="avatar fleft" style="margin-right: .5em;"><img src="https://github.com/rexfordkelly.png?size=60" /></div>
+        Rex Kelly
+      </li>
+      <li>
         <div class="avatar fleft" style="margin-right: .5em;"><img src="https://github.com/Metalaka.png?size=60" /></div>
         Matthieu de Laubrie
       </li>
@@ -244,12 +252,20 @@
         Matthieu Napoli
       </li>
       <li>
+        <div class="avatar fleft" style="margin-right: .5em;"><img src="https://github.com/SilverFire.png?size=60" /></div>
+        Dmytro Naumenko
+      </li>
+      <li>
         <div class="avatar fleft" style="margin-right: .5em;"><img src="https://github.com/serafimarts.png?size=60" /></div>
         Kirill Nesmeyanov
       </li>
       <li>
         <div class="avatar fleft" style="margin-right: .5em;"><img src="https://github.com/ncosmin2001.png?size=60" /></div>
         Cosmin Nitu
+      </li>
+      <li>
+        <div class="avatar fleft" style="margin-right: .5em;"><img src="https://github.com/taylorotwell.png?size=60" /></div>
+        Taylor Otwell
       </li>
       <li>
         <div class="avatar fleft" style="margin-right: .5em;"><img src="https://github.com/rparpa.png?size=60" /></div>
@@ -320,6 +336,10 @@
         Alex Walker
       </li>
       <li>
+        <div class="avatar fleft" style="margin-right: .5em;"><img src="https://github.com/jwage.png?size=60" /></div>
+        Jonathan H. Wage
+      </li>
+      <li>
         <div class="avatar fleft" style="margin-right: .5em;"><img src="https://github.com/wakqasahmed.png?size=60" /></div>
         Ahmed Waqas
       </li>
@@ -336,28 +356,8 @@
         gitomato
       </li>
       <li>
-        <div class="avatar fleft" style="margin-right: .5em;"><img src="https://github.com/rexfordkelly.png?size=60" /></div>
-        Rex Kelly
-      </li>
-      <li>
         <div class="avatar fleft" style="margin-right: .5em;"><img src="https://github.com/rodion-k.png?size=60" /></div>
         Rodion
-      </li>
-      <li>
-        <div class="avatar fleft" style="margin-right: .5em;"><img src="https://github.com/SilverFire.png?size=60" /></div>
-        Dmytro Naumenko
-      </li>
-      <li>
-        <div class="avatar fleft" style="margin-right: .5em;"><img src="https://github.com/jwage.png?size=60" /></div>
-        Jonathan H. Wage
-      </li>
-      <li>
-        <div class="avatar fleft" style="margin-right: .5em;"><img src="https://github.com/atefBB.png?size=60" /></div>
-        Atef Ben Ali
-      </li>
-      <li>
-        <div class="avatar fleft" style="margin-right: .5em;"><img src="https://github.com/taylorotwell.png?size=60" /></div>
-        Taylor Otwell
       </li>
     </ul>
 
